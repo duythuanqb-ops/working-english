@@ -17,22 +17,27 @@ export default function WordDetailFlashcardModal({
   isOpen,
   onClose,
   wordList = [],
+  words = [],
   initialWordId,
+  wordId,
   onRecordReview,
   speechVoice
 }) {
+  const activeList = wordList.length > 0 ? wordList : words;
+  const activeWordId = initialWordId || wordId;
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
-    if (initialWordId && wordList.length > 0) {
-      const idx = wordList.findIndex((w) => w.id === initialWordId);
+    if (activeWordId && activeList.length > 0) {
+      const idx = activeList.findIndex((w) => w.id === activeWordId);
       if (idx !== -1) {
         setCurrentIndex(idx);
       }
     }
     setIsFlipped(false);
-  }, [initialWordId, wordList]);
+  }, [activeWordId, activeList]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -51,20 +56,20 @@ export default function WordDetailFlashcardModal({
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, currentIndex, wordList.length]);
+  }, [isOpen, currentIndex, activeList.length]);
 
-  if (!isOpen || wordList.length === 0) return null;
+  if (!isOpen || activeList.length === 0) return null;
 
-  const currentWord = wordList[currentIndex] || wordList[0];
+  const currentWord = activeList[currentIndex] || activeList[0];
 
   const handlePrev = () => {
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : wordList.length - 1));
+    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : activeList.length - 1));
   };
 
   const handleNext = () => {
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev < wordList.length - 1 ? prev + 1 : 0));
+    setCurrentIndex((prev) => (prev < activeList.length - 1 ? prev + 1 : 0));
   };
 
   const handleScoreReview = (isCorrect) => {

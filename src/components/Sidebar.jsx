@@ -7,7 +7,9 @@ import {
   Stethoscope,
   Settings,
   Zap,
-  Sparkles
+  Sparkles,
+  Flame,
+  Award
 } from 'lucide-react';
 
 export default function Sidebar({ currentView, setCurrentView, wordCount, dueCount }) {
@@ -22,8 +24,8 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
       id: 'review',
       label: 'Ôn tập & Quiz',
       icon: CalendarCheck,
-      badge: dueCount > 0 ? `${dueCount} cần ôn` : null,
-      badgeHighlight: dueCount > 0
+      badge: dueCount > 0 ? `${dueCount} cần ôn` : 'Đã thuộc',
+      badgeDue: dueCount > 0
     },
     {
       id: 'synonyms',
@@ -52,7 +54,6 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
     if (window.electronAPI && window.electronAPI.openMiniCapture) {
       window.electronAPI.openMiniCapture();
     } else {
-      // In web preview fallback, open a new popup window
       window.open(
         `${window.location.origin}/?view=mini`,
         'MiniCapture',
@@ -60,6 +61,10 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
       );
     }
   };
+
+  const masteredCount = Math.max(0, wordCount - dueCount);
+  const targetCount = Math.max(10, wordCount);
+  const progressPercent = targetCount > 0 ? Math.min(100, Math.round((masteredCount / targetCount) * 100)) : 0;
 
   return (
     <aside className="sidebar">
@@ -95,13 +100,14 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
                 {item.ai && (
                   <span
                     style={{
-                      fontSize: '0.65rem',
-                      fontWeight: 700,
-                      background: 'rgba(168, 85, 247, 0.25)',
-                      color: '#c084fc',
-                      padding: '1px 5px',
+                      fontSize: '0.62rem',
+                      fontWeight: 800,
+                      background: 'rgba(147, 51, 234, 0.12)',
+                      color: '#9333ea',
+                      padding: '1px 6px',
                       borderRadius: '4px',
-                      border: '1px solid rgba(168, 85, 247, 0.4)'
+                      border: '1px solid rgba(147, 51, 234, 0.25)',
+                      letterSpacing: '0.04em'
                     }}
                   >
                     AI
@@ -110,12 +116,7 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
               </div>
               {item.badge !== undefined && item.badge !== null && (
                 <span
-                  className="nav-badge"
-                  style={
-                    item.badgeHighlight
-                      ? { background: 'rgba(239, 68, 68, 0.2)', color: '#f87171' }
-                      : {}
-                  }
+                  className={`nav-badge ${item.badgeDue ? 'nav-badge-due' : ''}`}
                 >
                   {item.badge}
                 </span>
@@ -125,11 +126,39 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
         })}
       </nav>
 
-      {/* Sidebar Footer: Quick Capture Trigger */}
+      {/* Sidebar Footer: Daily Progress & Quick Capture */}
       <div className="sidebar-footer">
+        <div className="sidebar-goal-card">
+          <div className="goal-card-header">
+            <span>Tiến độ ghi nhớ</span>
+            <span style={{ color: 'var(--primary)' }}>{progressPercent}%</span>
+          </div>
+          <div className="goal-progress-bar">
+            <div
+              className="goal-progress-fill"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginTop: '8px',
+              fontSize: '0.72rem',
+              color: 'var(--text-muted)'
+            }}
+          >
+            <span>{masteredCount}/{targetCount} từ hoàn thành</span>
+            <Award size={13} color="var(--primary)" />
+          </div>
+        </div>
+
         <button className="quick-capture-btn" onClick={handleOpenMini}>
-          <Zap size={16} />
-          <span>Tra & Note Nhanh</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Zap size={15} color="var(--primary)" />
+            <span>Tra & Note Nhanh</span>
+          </div>
           <span className="quick-capture-shortcut">⌘⇧E</span>
         </button>
       </div>
