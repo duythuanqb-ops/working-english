@@ -1,10 +1,12 @@
 import { INITIAL_WORDS } from '../data/starterWords';
+import { GRAMMAR_CHAPTERS } from '../data/grammarHandbook';
 
 const STORAGE_KEYS = {
   WORDS: 'working_english_words_v1',
   SETTINGS: 'working_english_settings_v1',
   SYNONYMS: 'working_english_synonyms_v1',
-  QUIZ_HISTORY: 'working_english_quiz_history_v1'
+  QUIZ_HISTORY: 'working_english_quiz_history_v1',
+  GRAMMAR: 'working_english_grammar_chapters_v1'
 };
 
 const DEFAULT_SETTINGS = {
@@ -16,7 +18,7 @@ const DEFAULT_SETTINGS = {
   dailyReviewTarget: 10,
   speechRate: 1.0,
   speechVoice: 'US', // 'US' | 'UK'
-  theme: 'dark'
+  theme: 'light'
 };
 
 export const storageService = {
@@ -160,5 +162,109 @@ export const storageService = {
       console.error('Failed to save quiz history:', e);
     }
     return newEntry;
+  },
+
+  /* ==========================================================================
+     Grammar Handbook Persistence & Custom User Rules
+     ========================================================================== */
+
+  getGrammarChapters: () => {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.GRAMMAR);
+      if (!data) {
+        localStorage.setItem(STORAGE_KEYS.GRAMMAR, JSON.stringify(GRAMMAR_CHAPTERS));
+        return GRAMMAR_CHAPTERS;
+      }
+      return JSON.parse(data);
+    } catch (e) {
+      console.error('Failed to load grammar chapters:', e);
+      return GRAMMAR_CHAPTERS;
+    }
+  },
+
+  saveGrammarChapters: (chapters) => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.GRAMMAR, JSON.stringify(chapters));
+    } catch (e) {
+      console.error('Failed to save grammar chapters:', e);
+    }
+  },
+
+  addGrammarSection: (chapterId, sectionData) => {
+    const chapters = storageService.getGrammarChapters();
+    const newSection = {
+      subId: `custom-sec-${Date.now()}`,
+      isCustom: true,
+      ...sectionData
+    };
+
+    const updated = chapters.map((ch) => {
+      if (ch.id === chapterId) {
+        return {
+          ...ch,
+          sections: [newSection, ...ch.sections]
+        };
+      }
+      return ch;
+    });
+
+    storageService.saveGrammarChapters(updated);
+    return updated;
+  },
+
+  deleteGrammarSection: (chapterId, subId) => {
+    const chapters = storageService.getGrammarChapters();
+    const updated = chapters.map((ch) => {
+      if (ch.id === chapterId) {
+        return {
+          ...ch,
+          sections: ch.sections.filter((s) => s.subId !== subId)
+        };
+      }
+      return ch;
+    });
+    storageService.saveGrammarChapters(updated);
+    return updated;
+  },
+
+  updateGrammarSection: (chapterId, subId, updatedData) => {
+    const chapters = storageService.getGrammarChapters();
+    const updated = chapters.map((ch) => {
+      if (ch.id === chapterId) {
+        return {
+          ...ch,
+          sections: ch.sections.map((s) => (s.subId === subId ? { ...s, ...updatedData } : s))
+        };
+      }
+      return ch;
+    });
+    storageService.saveGrammarChapters(updated);
+    return updated;
+  },
+
+  addGrammarChapter: (chapterData) => {
+    const chapters = storageService.getGrammarChapters();
+    const newChapter = {
+      id: `custom-ch-${Date.now()}`,
+      icon: 'BookMarked',
+      isCustom: true,
+      sections: [],
+      ...chapterData
+    };
+    const updated = [...chapters, newChapter];
+    storageService.saveGrammarChapters(updated);
+    return updated;
+  },
+
+  deleteGrammarChapter: (chapterId) => {
+    const chapters = storageService.getGrammarChapters();
+    const updated = chapters.filter((ch) => ch.id !== chapterId);
+    storageService.saveGrammarChapters(updated);
+    return updated;
+  },
+
+  resetGrammarToDefault: () => {
+    storageService.saveGrammarChapters(GRAMMAR_CHAPTERS);
+    return GRAMMAR_CHAPTERS;
   }
 };

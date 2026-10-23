@@ -87,8 +87,86 @@ export const aiService = {
     }
 
     return fallbackSynonymAnalysis(query);
+  },
+
+  /**
+   * Auto generate grammar formulas, usage, workplace examples and common mistakes
+   */
+  enrichGrammarRule: async (ruleName) => {
+    const query = ruleName.trim();
+    if (!query) throw new Error('Vui lòng nhập tên quy tắc hoặc cấu trúc.');
+
+    const settings = storageService.getSettings();
+    const provider = settings.aiProvider || 'gemini';
+    const hasKey =
+      (provider === 'gemini' && settings.geminiApiKey) ||
+      (provider === 'openai' && settings.openaiApiKey);
+
+    if (hasKey) {
+      try {
+        if (provider === 'gemini') {
+          return await enrichGrammarWithGemini(query, settings.geminiApiKey, settings.geminiModel);
+        } else {
+          return await enrichGrammarWithOpenAI(query, settings.openaiApiKey, settings.openaiModel);
+        }
+      } catch (e) {
+        console.warn('AI grammar enrichment failed, using local template:', e);
+      }
+    }
+
+    return fallbackGrammarEnrichment(query);
   }
 };
+
+async function enrichGrammarWithGemini(query, apiKey, model) {
+  const prompt = `
+Bạn là chuyên gia ngữ pháp tiếng Anh công sở.
+Hãy biên soạn tài liệu cho quy tắc/cấu trúc: "${query}".
+Trả về duy nhất định dạng JSON sau:
+{
+  "title": "Tên quy tắc ngữ pháp chuẩn",
+  "formula": "Công thức ngữ pháp chi tiết (ví dụ: S + had + hardly + V3 when...)",
+  "usage": "Cách dùng thực tế và sắc thái trong công việc/giao tiếp",
+  "signals": "Dấu hiệu nhận biết nếu có",
+  "workplaceExample": "Câu ví dụ thực tế trong môi trường công sở/họp/email",
+  "exampleVi": "Dịch nghĩa tiếng Việt của câu ví dụ",
+  "commonMistake": "Lỗi cạm bẫy người học hay mắc phải và cách sửa đúng"
+}
+`;
+  return await callGemini(prompt, apiKey, model);
+}
+
+async function enrichGrammarWithOpenAI(query, apiKey, model) {
+  const messages = [
+    { role: 'system', content: 'Bạn là chuyên gia ngữ pháp tiếng Anh. Luôn trả về JSON theo schema.' },
+    {
+      role: 'user',
+      content: `Biên soạn quy tắc: "${query}". Trả về JSON:
+      {
+        "title": "Tên quy tắc",
+        "formula": "Công thức",
+        "usage": "Cách dùng",
+        "signals": "Dấu hiệu",
+        "workplaceExample": "Ví dụ công sở",
+        "exampleVi": "Dịch",
+        "commonMistake": "Lỗi hay gặp"
+      }`
+    }
+  ];
+  return await callOpenAI(messages, apiKey, model);
+}
+
+function fallbackGrammarEnrichment(query) {
+  return {
+    title: query,
+    formula: `Cấu trúc liên quan đến: ${query}`,
+    usage: `Quy tắc và cách dùng cho chuyên đề "${query}". Bạn có thể tự chỉnh sửa theo ý muốn hoặc thêm Gemini API Key để AI viết đầy đủ.`,
+    signals: 'Thường gặp trong bài thi TOEIC/IELTS và email giao tiếp.',
+    workplaceExample: `Our team applied this rule in the latest project documentation.`,
+    exampleVi: `Nhóm của chúng tôi đã áp dụng quy tắc này trong tài liệu dự án mới nhất.`,
+    commonMistake: `Lưu ý hòa hợp chủ vị và dạng thức của động từ khi sử dụng ${query}.`
+  };
+}
 
 /* ==========================================================================
    Google Gemini Implementations

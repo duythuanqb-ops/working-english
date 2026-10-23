@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BookMarked,
   Search,
@@ -12,10 +12,15 @@ import {
   GitBranch,
   Network,
   Compass,
-  Mail
+  Mail,
+  Plus,
+  Trash2,
+  Sparkles,
+  Edit3
 } from 'lucide-react';
-import { GRAMMAR_CHAPTERS } from '../data/grammarHandbook';
+import { storageService } from '../services/storageService';
 import { ttsService } from '../services/ttsService';
+import AddGrammarModal from './AddGrammarModal';
 
 const ICON_MAP = {
   Clock: Clock,
@@ -24,17 +29,29 @@ const ICON_MAP = {
   Network: Network,
   Compass: Compass,
   Mail: Mail,
-  AlertTriangle: AlertTriangle
+  AlertTriangle: AlertTriangle,
+  BookMarked: BookMarked
 };
 
 export default function GrammarView({ onTryInDoctor, speechVoice }) {
-  const [selectedChapterId, setSelectedChapterId] = useState(GRAMMAR_CHAPTERS[0].id);
+  const [chapters, setChapters] = useState([]);
+  const [selectedChapterId, setSelectedChapterId] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [editingRule, setEditingRule] = useState(null);
+
+  useEffect(() => {
+    const loaded = storageService.getGrammarChapters();
+    setChapters(loaded);
+    if (loaded.length > 0 && !selectedChapterId) {
+      setSelectedChapterId(loaded[0].id);
+    }
+  }, []);
 
   const currentChapter =
-    GRAMMAR_CHAPTERS.find((ch) => ch.id === selectedChapterId) || GRAMMAR_CHAPTERS[0];
+    chapters.find((ch) => ch.id === selectedChapterId) || chapters[0] || { sections: [] };
 
-  const filteredSections = currentChapter.sections.filter((sec) => {
+  const filteredSections = (currentChapter.sections || []).filter((sec) => {
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
     return (
@@ -44,6 +61,54 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
       (sec.workplaceExample && sec.workplaceExample.toLowerCase().includes(q))
     );
   });
+
+  const handleOpenAdd = () => {
+    setEditingRule(null);
+    setIsAddModalOpen(true);
+  };
+
+  const handleOpenEdit = (section) => {
+    setEditingRule({ ...section, chapterId: currentChapter.id });
+    setIsAddModalOpen(true);
+  };
+
+  const handleSaveNewRule = ({ isEdit, subId, isNewChapter, newChapterTitle, newChapterDesc, chapterId, ruleData }) => {
+    if (isEdit) {
+      const updated = storageService.updateGrammarSection(chapterId, subId, ruleData);
+      setChapters(updated);
+      setSelectedChapterId(chapterId);
+    } else if (isNewChapter) {
+      const updatedWithChapter = storageService.addGrammarChapter({
+        title: newChapterTitle,
+        description: newChapterDesc || 'Chuyên đề ngữ pháp do bạn tạo'
+      });
+      const newChId = updatedWithChapter[updatedWithChapter.length - 1].id;
+      const finalChapters = storageService.addGrammarSection(newChId, ruleData);
+      setChapters(finalChapters);
+      setSelectedChapterId(newChId);
+    } else {
+      const updated = storageService.addGrammarSection(chapterId, ruleData);
+      setChapters(updated);
+      setSelectedChapterId(chapterId);
+    }
+  };
+
+  const handleDeleteSection = (chapterId, subId) => {
+    if (confirm('Bạn có chắc chắn muốn xóa quy tắc ngữ pháp này?')) {
+      const updated = storageService.deleteGrammarSection(chapterId, subId);
+      setChapters(updated);
+    }
+  };
+
+  const handleDeleteChapter = (chapterId) => {
+    if (confirm('Bạn có chắc chắn muốn xóa toàn bộ chuyên đề này cùng các quy tắc bên trong?')) {
+      const updated = storageService.deleteGrammarChapter(chapterId);
+      setChapters(updated);
+      if (selectedChapterId === chapterId && updated.length > 0) {
+        setSelectedChapterId(updated[0].id);
+      }
+    }
+  };
 
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: '20px', height: '100%' }}>
@@ -58,45 +123,94 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
           overflowY: 'auto'
         }}
       >
-        <div style={{ padding: '0 8px 12px 8px', borderBottom: '1px solid var(--border-subtle)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-            <BookMarked size={18} color="var(--primary)" />
-            <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)' }}>
-              Mục Lục Ngữ Pháp
-            </h3>
+        <div style={{ padding: '0 8px 12px 8px', borderBottom: '1px solid var(--border-subtle)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
+              <BookMarked size={18} color="var(--primary)" />
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                Mục Lục Ngữ Pháp
+              </h3>
+            </div>
+            <p style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
+              {chapters.length} chuyên đề ngữ pháp
+            </p>
           </div>
-          <p style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
-            Đầy đủ 7 chuyên đề ngữ pháp thực chiến
-          </p>
+
+          <button
+            className="btn btn-secondary"
+            style={{ padding: '4px 8px', fontSize: '0.74rem' }}
+            onClick={handleOpenAdd}
+            title="Thêm chuyên đề hoặc quy tắc mới"
+          >
+            <Plus size={13} />
+          </button>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginTop: '10px' }}>
-          {GRAMMAR_CHAPTERS.map((ch) => {
+          {chapters.map((ch) => {
             const Icon = ICON_MAP[ch.icon] || BookMarked;
             const isSelected = ch.id === selectedChapterId;
             return (
-              <button
+              <div
                 key={ch.id}
-                onClick={() => setSelectedChapterId(ch.id)}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '10px',
-                  padding: '10px 12px',
                   borderRadius: 'var(--radius-md)',
                   background: isSelected ? '#eef2ff' : 'transparent',
                   border: `1px solid ${isSelected ? '#c7d2fe' : 'transparent'}`,
-                  color: isSelected ? 'var(--primary)' : 'var(--text-secondary)',
-                  fontSize: '0.82rem',
-                  fontWeight: isSelected ? 700 : 500,
-                  textAlign: 'left',
-                  cursor: 'pointer',
                   transition: 'all 0.15s ease'
                 }}
               >
-                <Icon size={16} color={isSelected ? 'var(--primary)' : 'var(--text-muted)'} />
-                <span style={{ flex: 1, lineHeight: 1.3 }}>{ch.title}</span>
-              </button>
+                <button
+                  onClick={() => setSelectedChapterId(ch.id)}
+                  style={{
+                    flex: 1,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    padding: '10px 12px',
+                    background: 'transparent',
+                    border: 'none',
+                    color: isSelected ? 'var(--primary)' : 'var(--text-secondary)',
+                    fontSize: '0.82rem',
+                    fontWeight: isSelected ? 700 : 500,
+                    textAlign: 'left',
+                    cursor: 'pointer'
+                  }}
+                >
+                  <Icon size={16} color={isSelected ? 'var(--primary)' : 'var(--text-muted)'} />
+                  <span style={{ flex: 1, lineHeight: 1.3 }}>{ch.title}</span>
+                  {ch.isCustom && (
+                    <span style={{ fontSize: '0.62rem', background: '#ecfdf5', color: '#059669', padding: '1px 5px', borderRadius: '3px' }}>
+                      Tự tạo
+                    </span>
+                  )}
+                </button>
+                {ch.isCustom && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleDeleteChapter(ch.id);
+                    }}
+                    title="Xóa chuyên đề tự tạo này"
+                    style={{
+                      background: 'transparent',
+                      border: 'none',
+                      cursor: 'pointer',
+                      padding: '8px 10px',
+                      color: '#ef4444',
+                      display: 'flex',
+                      alignItems: 'center',
+                      opacity: 0.7
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
+                    onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.7')}
+                  >
+                    <Trash2 size={13} />
+                  </button>
+                )}
+              </div>
             );
           })}
         </div>
@@ -121,147 +235,233 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
             background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)'
           }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
-            <div>
-              <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '4px' }}>
-                {currentChapter.title}
-              </h2>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '14px' }}>
+            <div style={{ flex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '4px' }}>
+                  {currentChapter.title}
+                </h2>
+                {currentChapter.isCustom && (
+                  <span style={{ fontSize: '0.72rem', background: '#ecfdf5', color: '#059669', border: '1px solid #a7f3d0', padding: '2px 8px', borderRadius: '4px', fontWeight: 600 }}>
+                    Chuyên đề người dùng tạo
+                  </span>
+                )}
+              </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
                 {currentChapter.description}
               </p>
             </div>
 
-            <div className="search-wrapper" style={{ width: '240px' }}>
-              <Search size={15} className="search-icon" />
-              <input
-                type="text"
-                className="input-field search-input"
-                placeholder="Tìm quy tắc, ví dụ..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <div className="search-wrapper" style={{ width: '220px' }}>
+                <Search size={15} className="search-icon" />
+                <input
+                  type="text"
+                  className="input-field search-input"
+                  placeholder="Tìm quy tắc, ví dụ..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </div>
+
+              <button className="btn btn-primary" onClick={handleOpenAdd}>
+                <Plus size={15} />
+                <span>Thêm Quy Tắc Mới</span>
+              </button>
             </div>
           </div>
         </div>
 
         {/* Sections List */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-          {filteredSections.map((sec) => (
+          {filteredSections.length === 0 ? (
             <div
-              key={sec.subId}
-              className="card"
               style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '12px',
-                borderLeft: '4px solid var(--primary)'
+                textAlign: 'center',
+                padding: '40px 20px',
+                background: '#ffffff',
+                borderRadius: 'var(--radius-lg)',
+                border: '1px dashed var(--border-medium)'
               }}
             >
-              {/* Title & Action */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                  {sec.title}
-                </h4>
-
-                <button
-                  className="btn btn-secondary"
-                  style={{ padding: '5px 10px', fontSize: '0.76rem' }}
-                  onClick={() => onTryInDoctor(sec.workplaceExample || '')}
-                  title="Mở sang Bác sĩ Sửa lỗi để thử nghiệm câu này"
-                >
-                  <Stethoscope size={13} color="var(--accent-purple)" />
-                  <span>Thử câu trên Bác sĩ Sửa lỗi</span>
-                </button>
-              </div>
-
-              {/* Formula / Structure */}
-              {sec.formula && (
-                <div
-                  style={{
-                    background: '#eef2ff',
-                    border: '1px solid #c7d2fe',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '8px 14px',
-                    fontFamily: 'monospace',
-                    fontSize: '0.85rem',
-                    color: '#3730a3',
-                    fontWeight: 600
-                  }}
-                >
-                  <strong>Công thức:</strong> {sec.formula}
-                </div>
-              )}
-
-              {/* Usage & Signals */}
-              {sec.usage && (
-                <div style={{ fontSize: '0.86rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                  <strong style={{ color: 'var(--text-main)' }}>Cách dùng:</strong> {sec.usage}
-                </div>
-              )}
-
-              {sec.signals && (
-                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                  <strong style={{ color: 'var(--text-main)' }}>Dấu hiệu nhận biết:</strong> {sec.signals}
-                </div>
-              )}
-
-              {/* Workplace Example */}
-              {sec.workplaceExample && (
-                <div
-                  style={{
-                    background: '#f8fafc',
-                    border: '1px solid var(--border-subtle)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '12px 16px',
-                    marginTop: '4px'
-                  }}
-                >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600 }}>
-                      "{sec.workplaceExample}"
-                    </p>
-                    <button
-                      className="audio-btn"
-                      style={{ width: '26px', height: '26px' }}
-                      onClick={() => ttsService.speak(sec.workplaceExample, { voiceType: speechVoice })}
-                      title="Nghe đọc ví dụ"
-                    >
-                      <Volume2 size={13} />
-                    </button>
-                  </div>
-                  {sec.exampleVi && (
-                    <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '4px' }}>
-                      ➔ {sec.exampleVi}
-                    </p>
-                  )}
-                </div>
-              )}
-
-              {/* Common Mistake Alert */}
-              {sec.commonMistake && (
-                <div
-                  style={{
-                    background: '#fef2f2',
-                    border: '1px solid #fecaca',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '8px 12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    fontSize: '0.8rem',
-                    color: '#991b1b'
-                  }}
-                >
-                  <AlertTriangle size={15} color="#dc2626" style={{ minWidth: '15px' }} />
-                  <span>
-                    <strong>Cạm bẫy hay sai:</strong> {sec.commonMistake}
-                  </span>
-                </div>
-              )}
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '14px' }}>
+                Chưa có quy tắc nào trong mục này hoặc không khớp với tìm kiếm.
+              </p>
+              <button className="btn btn-primary" onClick={handleOpenAdd}>
+                <Plus size={15} /> Thêm quy tắc ngữ pháp đầu tiên
+              </button>
             </div>
-          ))}
+          ) : (
+            filteredSections.map((sec) => (
+              <div
+                key={sec.subId}
+                className="card"
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '12px',
+                  borderLeft: '4px solid var(--primary)',
+                  position: 'relative'
+                }}
+              >
+                {/* Title & Action */}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                      {sec.title}
+                    </h4>
+                    {sec.isCustom && (
+                      <span
+                        style={{
+                          fontSize: '0.68rem',
+                          background: '#eef2ff',
+                          color: 'var(--primary)',
+                          border: '1px solid #c7d2fe',
+                          padding: '1px 6px',
+                          borderRadius: '4px',
+                          fontWeight: 600
+                        }}
+                      >
+                        Tự thêm
+                      </span>
+                    )}
+                  </div>
+
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <button
+                      className="btn btn-secondary"
+                      style={{ padding: '5px 10px', fontSize: '0.76rem' }}
+                      onClick={() => onTryInDoctor(sec.workplaceExample || '')}
+                      title="Mở sang Bác sĩ Sửa lỗi để thử nghiệm câu này"
+                    >
+                      <Stethoscope size={13} color="var(--accent-purple)" />
+                      <span>Thử câu trên Bác sĩ Sửa lỗi</span>
+                    </button>
+
+                    <button
+                      className="btn-icon"
+                      onClick={() => handleOpenEdit(sec)}
+                      title="Chỉnh sửa quy tắc ngữ pháp này"
+                      style={{ padding: '5px' }}
+                    >
+                      <Edit3 size={14} color="var(--primary)" />
+                    </button>
+
+                    {sec.isCustom && (
+                      <button
+                        className="btn-icon"
+                        onClick={() => handleDeleteSection(currentChapter.id, sec.subId)}
+                        title="Xóa quy tắc tự thêm này"
+                        style={{ padding: '5px' }}
+                      >
+                        <Trash2 size={14} color="#ef4444" />
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                {/* Formula / Structure */}
+                {sec.formula && (
+                  <div
+                    style={{
+                      background: '#eef2ff',
+                      border: '1px solid #c7d2fe',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '8px 14px',
+                      fontFamily: 'monospace',
+                      fontSize: '0.85rem',
+                      color: '#3730a3',
+                      fontWeight: 600
+                    }}
+                  >
+                    <strong>Công thức:</strong> {sec.formula}
+                  </div>
+                )}
+
+                {/* Usage & Signals */}
+                {sec.usage && (
+                  <div style={{ fontSize: '0.86rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                    <strong style={{ color: 'var(--text-main)' }}>Cách dùng:</strong> {sec.usage}
+                  </div>
+                )}
+
+                {sec.signals && (
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+                    <strong style={{ color: 'var(--text-main)' }}>Dấu hiệu nhận biết:</strong> {sec.signals}
+                  </div>
+                )}
+
+                {/* Workplace Example */}
+                {sec.workplaceExample && (
+                  <div
+                    style={{
+                      background: '#f8fafc',
+                      border: '1px solid var(--border-subtle)',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '12px 16px',
+                      marginTop: '4px'
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                      <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600 }}>
+                        "{sec.workplaceExample}"
+                      </p>
+                      <button
+                        className="audio-btn"
+                        style={{ width: '26px', height: '26px' }}
+                        onClick={() => ttsService.speak(sec.workplaceExample, { voiceType: speechVoice })}
+                        title="Nghe đọc ví dụ"
+                      >
+                        <Volume2 size={13} />
+                      </button>
+                    </div>
+                    {sec.exampleVi && (
+                      <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '4px' }}>
+                        ➔ {sec.exampleVi}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                {/* Common Mistake Alert */}
+                {sec.commonMistake && (
+                  <div
+                    style={{
+                      background: '#fef2f2',
+                      border: '1px solid #fecaca',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '8px 12px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      fontSize: '0.8rem',
+                      color: '#991b1b'
+                    }}
+                  >
+                    <AlertTriangle size={15} color="#dc2626" style={{ minWidth: '15px' }} />
+                    <span>
+                      <strong>Cạm bẫy hay sai:</strong> {sec.commonMistake}
+                    </span>
+                  </div>
+                )}
+              </div>
+            ))
+          )}
         </div>
       </div>
+
+      {/* Add / Edit Grammar Modal */}
+      <AddGrammarModal
+        isOpen={isAddModalOpen}
+        onClose={() => {
+          setIsAddModalOpen(false);
+          setEditingRule(null);
+        }}
+        chapters={chapters}
+        activeChapterId={selectedChapterId}
+        onSaveRule={handleSaveNewRule}
+        editingRule={editingRule}
+      />
     </div>
   );
 }
