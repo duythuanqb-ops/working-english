@@ -7,9 +7,7 @@ import {
   Volume2,
   Sparkles,
   Trophy,
-  HelpCircle,
   ArrowRight,
-  Flame,
   Award
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -48,7 +46,6 @@ export default function DailyReviewView({
 
   // Words that need review
   const dueWords = useMemo(() => {
-    // Return words sorted by lowest box and longest time not reviewed
     return [...words].sort((a, b) => (a.box || 1) - (b.box || 1));
   }, [words]);
 
@@ -56,12 +53,10 @@ export default function DailyReviewView({
   const generateRandomQuiz = (count = quizCount) => {
     if (words.length < 2) return;
 
-    // Shuffle and pick subset of words
     const shuffledPool = [...words].sort(() => 0.5 - Math.random());
     const selectedWords = shuffledPool.slice(0, Math.min(count, words.length));
 
     const generated = selectedWords.map((targetWord) => {
-      // Pick random question type
       let qType = quizType;
       if (qType === 'mixed') {
         const types = ['meaning', 'blank'];
@@ -71,7 +66,6 @@ export default function DailyReviewView({
         qType = types[Math.floor(Math.random() * types.length)];
       }
 
-      // Generate wrong options from other words
       const otherWords = words.filter((w) => w.id !== targetWord.id);
       const shuffledOthers = [...otherWords].sort(() => 0.5 - Math.random());
 
@@ -141,7 +135,6 @@ export default function DailyReviewView({
     setQuizCompleted(false);
   };
 
-  // Handle Answer Selection in Quiz
   const handleSelectOption = (opt) => {
     if (isAnswerSubmitted) return;
     setSelectedAnswer(opt);
@@ -152,14 +145,11 @@ export default function DailyReviewView({
 
     if (isCorrect) {
       setScore((prev) => prev + 1);
-      // Advance Leitner box
       onRecordReview(currentQ.targetWord.id, true);
     } else {
-      // Decrease Leitner box
       onRecordReview(currentQ.targetWord.id, false);
     }
 
-    // Play pronunciation of word
     ttsService.speak(currentQ.targetWord.word, { voiceType: speechVoice });
   };
 
@@ -170,7 +160,6 @@ export default function DailyReviewView({
       setIsAnswerSubmitted(false);
     } else {
       setQuizCompleted(true);
-      // Trigger celebration confetti
       confetti({
         particleCount: 100,
         spread: 70,
@@ -179,7 +168,6 @@ export default function DailyReviewView({
     }
   };
 
-  // Flashcards navigation
   const currentFcWord = dueWords[fcIndex];
 
   const handleFcAnswer = (isKnown) => {
@@ -195,25 +183,22 @@ export default function DailyReviewView({
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* Leitner Box Progress & Mode Selector */}
       <div
+        className="card"
         style={{
           display: 'grid',
           gridTemplateColumns: '1fr auto',
           gap: '20px',
           alignItems: 'center',
-          background: 'var(--bg-card)',
-          padding: '20px 24px',
-          borderRadius: 'var(--radius-lg)',
-          border: '1px solid var(--border-subtle)',
-          backdropFilter: 'blur(16px)'
+          padding: '20px 24px'
         }}
       >
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
             <CalendarCheck size={20} color="var(--primary)" />
-            <h2 style={{ fontSize: '1.15rem', fontWeight: 700 }}>
+            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--text-main)' }}>
               Tiến Độ Ôn Tập Ngắt Quãng (Spaced Repetition)
             </h2>
           </div>
@@ -230,8 +215,8 @@ export default function DailyReviewView({
                 <div
                   key={boxNum}
                   style={{
-                    background: boxNum === 5 ? 'rgba(16, 185, 129, 0.1)' : 'rgba(255, 255, 255, 0.04)',
-                    border: `1px solid ${boxNum === 5 ? 'rgba(16, 185, 129, 0.3)' : 'var(--border-subtle)'}`,
+                    background: boxNum === 5 ? '#ecfdf5' : '#f8fafc',
+                    border: `1px solid ${boxNum === 5 ? '#a7f3d0' : 'var(--border-subtle)'}`,
                     borderRadius: 'var(--radius-md)',
                     padding: '8px 10px',
                     textAlign: 'center'
@@ -242,9 +227,9 @@ export default function DailyReviewView({
                   </div>
                   <div
                     style={{
-                      fontSize: '1.1rem',
+                      fontSize: '1.15rem',
                       fontWeight: 700,
-                      color: boxNum === 5 ? '#34d399' : '#f8fafc',
+                      color: boxNum === 5 ? '#059669' : 'var(--text-main)',
                       margin: '2px 0'
                     }}
                   >
@@ -287,8 +272,8 @@ export default function DailyReviewView({
         <div className="card" style={{ padding: '28px' }}>
           {quizQuestions.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '40px 10px' }}>
-              <Trophy size={48} color="var(--primary)" style={{ opacity: 0.7, marginBottom: '14px' }} />
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '8px' }}>
+              <Trophy size={48} color="var(--primary)" style={{ opacity: 0.8, marginBottom: '14px' }} />
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '8px' }}>
                 Tự Tạo Bài Kiểm Tra Ngẫu Nhiên Hàng Ngày
               </h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '520px', margin: '0 auto 24px auto' }}>
@@ -306,8 +291,8 @@ export default function DailyReviewView({
                     style={{
                       padding: '6px 14px',
                       borderRadius: 'var(--radius-md)',
-                      background: quizCount === num ? 'var(--primary)' : 'rgba(255, 255, 255, 0.06)',
-                      border: '1px solid var(--border-subtle)',
+                      background: quizCount === num ? 'var(--primary)' : '#ffffff',
+                      border: `1px solid ${quizCount === num ? 'var(--primary)' : 'var(--border-medium)'}`,
                       color: quizCount === num ? '#fff' : 'var(--text-secondary)',
                       fontWeight: 600,
                       cursor: 'pointer'
@@ -323,10 +308,9 @@ export default function DailyReviewView({
               </button>
             </div>
           ) : quizCompleted ? (
-            /* Quiz Results Screen */
             <div style={{ textAlign: 'center', padding: '30px 10px' }}>
               <Award size={64} color="#f59e0b" style={{ marginBottom: '16px' }} />
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '6px' }}>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '6px' }}>
                 Hoàn Thành Bài Kiểm Tra!
               </h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '20px' }}>
@@ -339,9 +323,9 @@ export default function DailyReviewView({
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '8px',
-                  background: 'rgba(16, 185, 129, 0.15)',
-                  border: '1px solid rgba(16, 185, 129, 0.3)',
-                  color: '#34d399',
+                  background: '#ecfdf5',
+                  border: '1px solid #a7f3d0',
+                  color: '#059669',
                   padding: '8px 18px',
                   borderRadius: '9999px',
                   fontSize: '0.88rem',
@@ -363,14 +347,12 @@ export default function DailyReviewView({
               </div>
             </div>
           ) : (
-            /* Active Quiz Question */
             <div>
-              {/* Question Header & Progress Bar */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
                 <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)' }}>
                   Câu {currentQIndex + 1} / {quizQuestions.length}
                 </span>
-                <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#38bdf8' }}>
+                <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--primary)' }}>
                   Điểm số: {score} đúng
                 </span>
               </div>
@@ -379,7 +361,7 @@ export default function DailyReviewView({
                 style={{
                   height: '6px',
                   width: '100%',
-                  background: 'rgba(255, 255, 255, 0.08)',
+                  background: '#e2e8f0',
                   borderRadius: '9999px',
                   overflow: 'hidden',
                   marginBottom: '24px'
@@ -389,25 +371,24 @@ export default function DailyReviewView({
                   style={{
                     height: '100%',
                     width: `${((currentQIndex + 1) / quizQuestions.length) * 100}%`,
-                    background: 'linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%)',
+                    background: 'var(--primary)',
                     transition: 'width 0.3s ease'
                   }}
                 />
               </div>
 
-              {/* Question Body */}
               {(() => {
                 const q = quizQuestions[currentQIndex];
                 return (
                   <div>
                     <div style={{ marginBottom: '20px' }}>
-                      <h4 style={{ fontSize: '1.15rem', fontWeight: 600, color: '#fff', marginBottom: '8px' }}>
+                      <h4 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '8px' }}>
                         {q.question}
                       </h4>
 
                       {q.ipa && (
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
-                          <span style={{ fontSize: '0.9rem', color: '#93c5fd', fontFamily: 'monospace' }}>
+                          <span style={{ fontSize: '0.9rem', color: 'var(--primary)', fontFamily: 'monospace' }}>
                             {q.ipa}
                           </span>
                           <button
@@ -424,18 +405,18 @@ export default function DailyReviewView({
                       {q.sentence && (
                         <div
                           style={{
-                            background: 'rgba(15, 23, 42, 0.8)',
-                            border: '1px solid var(--border-medium)',
+                            background: '#f8fafc',
+                            border: '1px solid var(--border-subtle)',
                             borderRadius: 'var(--radius-md)',
                             padding: '14px 18px',
                             margin: '14px 0'
                           }}
                         >
-                          <p style={{ fontSize: '1.05rem', color: '#f8fafc', fontWeight: 500 }}>
+                          <p style={{ fontSize: '1.05rem', color: 'var(--text-main)', fontWeight: 600 }}>
                             {q.sentence}
                           </p>
                           {q.sentenceVi && (
-                            <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginTop: '4px' }}>
+                            <p style={{ fontSize: '0.84rem', color: 'var(--text-muted)', marginTop: '4px' }}>
                               ➔ {q.sentenceVi}
                             </p>
                           )}
@@ -443,16 +424,15 @@ export default function DailyReviewView({
                       )}
                     </div>
 
-                    {/* Options Grid */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '10px', marginBottom: '20px' }}>
                       {q.options.map((opt, optIdx) => {
                         let btnStyle = {
                           textAlign: 'left',
                           padding: '14px 18px',
                           borderRadius: 'var(--radius-md)',
-                          background: 'rgba(255, 255, 255, 0.04)',
-                          border: '1px solid var(--border-subtle)',
-                          color: '#f8fafc',
+                          background: '#ffffff',
+                          border: '1px solid var(--border-medium)',
+                          color: 'var(--text-main)',
                           fontSize: '0.92rem',
                           fontWeight: 500,
                           cursor: isAnswerSubmitted ? 'default' : 'pointer',
@@ -464,13 +444,14 @@ export default function DailyReviewView({
 
                         if (isAnswerSubmitted) {
                           if (opt === q.correctAnswer) {
-                            btnStyle.background = 'rgba(16, 185, 129, 0.2)';
+                            btnStyle.background = '#ecfdf5';
                             btnStyle.borderColor = '#10b981';
-                            btnStyle.color = '#6ee7b7';
+                            btnStyle.color = '#065f46';
+                            btnStyle.fontWeight = 700;
                           } else if (opt === selectedAnswer && opt !== q.correctAnswer) {
-                            btnStyle.background = 'rgba(239, 68, 68, 0.2)';
+                            btnStyle.background = '#fef2f2';
                             btnStyle.borderColor = '#ef4444';
-                            btnStyle.color = '#fca5a5';
+                            btnStyle.color = '#991b1b';
                           }
                         }
 
@@ -492,12 +473,11 @@ export default function DailyReviewView({
                       })}
                     </div>
 
-                    {/* Feedback & Next Button */}
                     {isAnswerSubmitted && (
                       <div
                         style={{
-                          background: 'rgba(99, 102, 241, 0.1)',
-                          border: '1px solid rgba(99, 102, 241, 0.3)',
+                          background: '#eef2ff',
+                          border: '1px solid #c7d2fe',
                           borderRadius: 'var(--radius-md)',
                           padding: '14px 18px',
                           display: 'flex',
@@ -506,7 +486,7 @@ export default function DailyReviewView({
                         }}
                       >
                         <div style={{ flex: 1, marginRight: '16px' }}>
-                          <span style={{ fontSize: '0.85rem', color: '#c7d2fe', fontWeight: 500 }}>
+                          <span style={{ fontSize: '0.86rem', color: '#312e81', fontWeight: 600 }}>
                             💡 {q.explanation}
                           </span>
                         </div>
@@ -530,7 +510,7 @@ export default function DailyReviewView({
           {dueWords.length === 0 ? (
             <div className="card" style={{ textAlign: 'center', padding: '50px 20px' }}>
               <CheckCircle2 size={48} color="#10b981" style={{ marginBottom: '14px' }} />
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '6px' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '6px' }}>
                 Tuyệt Vời! Hôm Nay Đã Ôn Hết Từ
               </h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>
@@ -543,7 +523,6 @@ export default function DailyReviewView({
                 Thẻ số <strong>{fcIndex + 1}</strong> / {dueWords.length} (Nhấp vào thẻ để lật mặt sau)
               </div>
 
-              {/* 3D Flip Flashcard */}
               <div className="flashcard-perspective">
                 <div
                   className={`flashcard-inner ${isFlipped ? 'flipped' : ''}`}
@@ -561,18 +540,18 @@ export default function DailyReviewView({
                     </div>
 
                     <div style={{ textAlign: 'center', margin: 'auto 0' }}>
-                      <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#fff', marginBottom: '8px' }}>
+                      <h2 style={{ fontSize: '2.8rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '8px' }}>
                         {currentFcWord.word}
                       </h2>
                       {currentFcWord.ipa && (
-                        <p style={{ fontSize: '1.15rem', color: '#93c5fd', fontFamily: 'monospace' }}>
+                        <p style={{ fontSize: '1.15rem', color: 'var(--primary)', fontFamily: 'monospace' }}>
                           {currentFcWord.ipa}
                         </p>
                       )}
                       <div style={{ marginTop: '16px' }}>
                         <button
                           className="audio-btn"
-                          style={{ width: '42px', height: '42px' }}
+                          style={{ width: '44px', height: '44px' }}
                           onClick={(e) => {
                             e.stopPropagation();
                             ttsService.speak(currentFcWord.word, { voiceType: speechVoice });
@@ -594,7 +573,7 @@ export default function DailyReviewView({
                   {/* Back Face */}
                   <div className="flashcard-face flashcard-back">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '1rem', fontWeight: 700, color: '#fff' }}>
+                      <span style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--text-main)' }}>
                         {currentFcWord.word}
                       </span>
                       <button
@@ -610,7 +589,7 @@ export default function DailyReviewView({
                     </div>
 
                     <div style={{ margin: 'auto 0' }}>
-                      <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#a5b4fc', marginBottom: '6px' }}>
+                      <div style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '6px' }}>
                         {currentFcWord.meaningVi}
                       </div>
                       {currentFcWord.meaningEn && (
@@ -619,18 +598,17 @@ export default function DailyReviewView({
                         </div>
                       )}
 
-                      {/* Examples */}
                       {currentFcWord.examples && currentFcWord.examples.length > 0 && (
                         <div
                           style={{
-                            background: 'rgba(0, 0, 0, 0.3)',
+                            background: '#f8fafc',
                             padding: '10px 14px',
                             borderRadius: 'var(--radius-md)',
                             border: '1px solid var(--border-subtle)',
                             marginTop: '10px'
                           }}
                         >
-                          <p style={{ fontSize: '0.85rem', color: '#f8fafc' }}>
+                          <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', fontWeight: 600 }}>
                             "{currentFcWord.examples[0].en}"
                           </p>
                           <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '2px' }}>
@@ -652,10 +630,10 @@ export default function DailyReviewView({
                 <button
                   className="btn"
                   style={{
-                    background: 'rgba(239, 68, 68, 0.15)',
-                    border: '1px solid rgba(239, 68, 68, 0.4)',
-                    color: '#f87171',
-                    padding: '12px 28px'
+                    background: '#fef2f2',
+                    border: '1px solid #fecaca',
+                    color: '#dc2626',
+                    padding: '10px 24px'
                   }}
                   onClick={() => handleFcAnswer(false)}
                 >
@@ -666,10 +644,10 @@ export default function DailyReviewView({
                 <button
                   className="btn"
                   style={{
-                    background: 'rgba(16, 185, 129, 0.18)',
-                    border: '1px solid rgba(16, 185, 129, 0.4)',
-                    color: '#34d399',
-                    padding: '12px 28px'
+                    background: '#ecfdf5',
+                    border: '1px solid #a7f3d0',
+                    color: '#059669',
+                    padding: '10px 24px'
                   }}
                   onClick={() => handleFcAnswer(true)}
                 >

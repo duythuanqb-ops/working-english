@@ -133,6 +133,7 @@ export default function App() {
               words={words}
               onDeleteWord={handleDeleteWord}
               onOpenAddModal={() => setIsAddModalOpen(true)}
+              onRecordReview={handleRecordReview}
               speechVoice={settings.speechVoice || 'US'}
             />
           )}

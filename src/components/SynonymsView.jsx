@@ -95,19 +95,19 @@ export default function SynonymsView({
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
       {/* AI Synonym Explorer Box */}
       <div
         className="card"
         style={{
-          background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(19, 27, 46, 0.9) 100%)',
-          border: '1px solid rgba(168, 85, 247, 0.3)',
+          background: 'linear-gradient(135deg, #ffffff 0%, #faf5ff 100%)',
+          border: '1px solid #e9d5ff',
           padding: '24px'
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-          <Sparkles size={22} color="#c084fc" />
-          <h2 style={{ fontSize: '1.25rem', fontWeight: 700 }}>
+          <Sparkles size={22} color="var(--accent-purple)" />
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-main)' }}>
             AI Khám Phá & So Sánh Sắc Thái Từ Đồng Nghĩa
           </h2>
         </div>
@@ -150,12 +150,13 @@ export default function SynonymsView({
             style={{
               marginTop: '20px',
               padding: '18px',
-              background: 'rgba(15, 23, 42, 0.75)',
+              background: '#ffffff',
               borderRadius: 'var(--radius-md)',
-              border: '1px solid var(--border-subtle)'
+              border: '1px solid var(--border-medium)',
+              boxShadow: 'var(--shadow-sm)'
             }}
           >
-            <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#e0e7ff', marginBottom: '6px' }}>
+            <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '4px' }}>
               {aiResult.groupName || `Nhóm từ đồng nghĩa cho "${searchWord}"`}
             </h3>
             {aiResult.coreConceptVi && (
@@ -169,7 +170,7 @@ export default function SynonymsView({
                 <div
                   key={idx}
                   style={{
-                    background: 'rgba(255, 255, 255, 0.04)',
+                    background: '#f8fafc',
                     border: '1px solid var(--border-subtle)',
                     borderRadius: 'var(--radius-md)',
                     padding: '14px'
@@ -177,11 +178,11 @@ export default function SynonymsView({
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#f8fafc' }}>
+                      <span style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)' }}>
                         {w.word}
                       </span>
                       {w.ipa && (
-                        <span style={{ fontSize: '0.78rem', color: '#93c5fd', fontFamily: 'monospace' }}>
+                        <span style={{ fontSize: '0.78rem', color: 'var(--primary)', fontFamily: 'monospace' }}>
                           {w.ipa}
                         </span>
                       )}
@@ -196,20 +197,20 @@ export default function SynonymsView({
                   </div>
 
                   {w.meaningVi && (
-                    <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#a5b4fc', marginBottom: '6px' }}>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--primary)', marginBottom: '6px' }}>
                       {w.meaningVi}
                     </div>
                   )}
 
                   {w.nuance && (
-                    <div style={{ fontSize: '0.8rem', color: '#cbd5e1', marginBottom: '8px', lineHeight: 1.4 }}>
-                      <strong style={{ color: '#38bdf8' }}>Sắc thái:</strong> {w.nuance}
+                    <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginBottom: '8px', lineHeight: 1.4 }}>
+                      <strong style={{ color: 'var(--text-main)' }}>Sắc thái:</strong> {w.nuance}
                     </div>
                   )}
 
                   {w.exampleEn && (
                     <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', borderTop: '1px solid var(--border-subtle)', paddingTop: '6px' }}>
-                      <span style={{ color: '#f1f5f9' }}>"{w.exampleEn}"</span>
+                      <span style={{ color: 'var(--text-main)', fontWeight: 600 }}>"{w.exampleEn}"</span>
                       {w.exampleVi && <div style={{ marginTop: '2px' }}>➔ {w.exampleVi}</div>}
                     </div>
                   )}
@@ -223,7 +224,7 @@ export default function SynonymsView({
       {/* User's Synonym Groups & Clusters */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: '#fff' }}>
+          <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--text-main)' }}>
             Thư Viện Nhóm Từ Đồng Nghĩa Của Bạn
           </h3>
           <p style={{ fontSize: '0.84rem', color: 'var(--text-muted)' }}>
@@ -239,7 +240,7 @@ export default function SynonymsView({
       {/* Create New Group Modal */}
       {isCreatingGroup && (
         <div className="card" style={{ padding: '20px', border: '1px solid var(--border-medium)' }}>
-          <h4 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '14px' }}>
+          <h4 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '14px' }}>
             Tạo Nhóm Từ Đồng Nghĩa Mới
           </h4>
           <form onSubmit={handleCreateGroup} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -301,7 +302,7 @@ export default function SynonymsView({
         {[...synonymGroups, ...defaultClusters].map((group) => (
           <div key={group.id} className="card" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#f8fafc' }}>
+              <h4 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-main)' }}>
                 {group.title}
               </h4>
               {synonymGroups.some((g) => g.id === group.id) && (
@@ -311,7 +312,7 @@ export default function SynonymsView({
                   title="Xóa nhóm này"
                   style={{ padding: '4px' }}
                 >
-                  <Trash2 size={14} color="var(--text-muted)" />
+                  <Trash2 size={14} color="#ef4444" />
                 </button>
               )}
             </div>
@@ -324,7 +325,7 @@ export default function SynonymsView({
                   <div
                     key={i}
                     style={{
-                      background: 'rgba(255, 255, 255, 0.05)',
+                      background: '#f8fafc',
                       border: '1px solid var(--border-subtle)',
                       borderRadius: 'var(--radius-md)',
                       padding: '8px 12px',
@@ -335,7 +336,7 @@ export default function SynonymsView({
                     }}
                   >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '0.92rem', fontWeight: 700, color: '#e0e7ff' }}>
+                      <span style={{ fontSize: '0.92rem', fontWeight: 700, color: 'var(--text-main)' }}>
                         {wordName}
                       </span>
                       <button

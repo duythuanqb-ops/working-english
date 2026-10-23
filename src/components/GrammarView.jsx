@@ -34,7 +34,6 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
   const currentChapter =
     GRAMMAR_CHAPTERS.find((ch) => ch.id === selectedChapterId) || GRAMMAR_CHAPTERS[0];
 
-  // Filter sections by search query
   const filteredSections = currentChapter.sections.filter((sec) => {
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
@@ -62,7 +61,9 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
         <div style={{ padding: '0 8px 12px 8px', borderBottom: '1px solid var(--border-subtle)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
             <BookMarked size={18} color="var(--primary)" />
-            <h3 style={{ fontSize: '0.95rem', fontWeight: 700 }}>Mục Lục Ngữ Pháp</h3>
+            <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)' }}>
+              Mục Lục Ngữ Pháp
+            </h3>
           </div>
           <p style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
             Đầy đủ 7 chuyên đề ngữ pháp thực chiến
@@ -83,11 +84,11 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
                   gap: '10px',
                   padding: '10px 12px',
                   borderRadius: 'var(--radius-md)',
-                  background: isSelected ? 'rgba(99, 102, 241, 0.18)' : 'transparent',
-                  border: `1px solid ${isSelected ? 'rgba(99, 102, 241, 0.35)' : 'transparent'}`,
-                  color: isSelected ? '#fff' : 'var(--text-secondary)',
+                  background: isSelected ? '#eef2ff' : 'transparent',
+                  border: `1px solid ${isSelected ? '#c7d2fe' : 'transparent'}`,
+                  color: isSelected ? 'var(--primary)' : 'var(--text-secondary)',
                   fontSize: '0.82rem',
-                  fontWeight: isSelected ? 600 : 500,
+                  fontWeight: isSelected ? 700 : 500,
                   textAlign: 'left',
                   cursor: 'pointer',
                   transition: 'all 0.15s ease'
@@ -117,12 +118,12 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
           className="card"
           style={{
             padding: '20px 24px',
-            background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%)'
+            background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)'
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
             <div>
-              <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff', marginBottom: '4px' }}>
+              <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '4px' }}>
                 {currentChapter.title}
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem' }}>
@@ -158,7 +159,7 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
             >
               {/* Title & Action */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#f8fafc' }}>
+                <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)' }}>
                   {sec.title}
                 </h4>
 
@@ -168,7 +169,7 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
                   onClick={() => onTryInDoctor(sec.workplaceExample || '')}
                   title="Mở sang Bác sĩ Sửa lỗi để thử nghiệm câu này"
                 >
-                  <Stethoscope size={13} color="#a855f7" />
+                  <Stethoscope size={13} color="var(--accent-purple)" />
                   <span>Thử câu trên Bác sĩ Sửa lỗi</span>
                 </button>
               </div>
@@ -177,13 +178,14 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
               {sec.formula && (
                 <div
                   style={{
-                    background: 'rgba(99, 102, 241, 0.1)',
-                    border: '1px solid rgba(99, 102, 241, 0.25)',
+                    background: '#eef2ff',
+                    border: '1px solid #c7d2fe',
                     borderRadius: 'var(--radius-md)',
                     padding: '8px 14px',
                     fontFamily: 'monospace',
                     fontSize: '0.85rem',
-                    color: '#c7d2fe'
+                    color: '#3730a3',
+                    fontWeight: 600
                   }}
                 >
                   <strong>Công thức:</strong> {sec.formula}
@@ -192,14 +194,14 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
 
               {/* Usage & Signals */}
               {sec.usage && (
-                <div style={{ fontSize: '0.86rem', color: '#cbd5e1', lineHeight: 1.5 }}>
-                  <strong style={{ color: '#93c5fd' }}>Cách dùng:</strong> {sec.usage}
+                <div style={{ fontSize: '0.86rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                  <strong style={{ color: 'var(--text-main)' }}>Cách dùng:</strong> {sec.usage}
                 </div>
               )}
 
               {sec.signals && (
                 <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                  <strong style={{ color: '#38bdf8' }}>Dấu hiệu nhận biết:</strong> {sec.signals}
+                  <strong style={{ color: 'var(--text-main)' }}>Dấu hiệu nhận biết:</strong> {sec.signals}
                 </div>
               )}
 
@@ -207,7 +209,7 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
               {sec.workplaceExample && (
                 <div
                   style={{
-                    background: 'rgba(15, 23, 42, 0.7)',
+                    background: '#f8fafc',
                     border: '1px solid var(--border-subtle)',
                     borderRadius: 'var(--radius-md)',
                     padding: '12px 16px',
@@ -215,7 +217,7 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <p style={{ fontSize: '0.9rem', color: '#f8fafc', fontWeight: 600 }}>
+                    <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600 }}>
                       "{sec.workplaceExample}"
                     </p>
                     <button
@@ -239,18 +241,18 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
               {sec.commonMistake && (
                 <div
                   style={{
-                    background: 'rgba(239, 68, 68, 0.1)',
-                    border: '1px solid rgba(239, 68, 68, 0.25)',
+                    background: '#fef2f2',
+                    border: '1px solid #fecaca',
                     borderRadius: 'var(--radius-md)',
                     padding: '8px 12px',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px',
                     fontSize: '0.8rem',
-                    color: '#fca5a5'
+                    color: '#991b1b'
                   }}
                 >
-                  <AlertTriangle size={15} color="#ef4444" style={{ minWidth: '15px' }} />
+                  <AlertTriangle size={15} color="#dc2626" style={{ minWidth: '15px' }} />
                   <span>
                     <strong>Cạm bẫy hay sai:</strong> {sec.commonMistake}
                   </span>

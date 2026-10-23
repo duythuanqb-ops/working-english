@@ -61,19 +61,19 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {/* Header Banner */}
       <div
         className="card"
         style={{
-          background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(88, 28, 135, 0.25) 100%)',
-          border: '1px solid rgba(168, 85, 247, 0.35)',
+          background: 'linear-gradient(135deg, #ffffff 0%, #faf5ff 100%)',
+          border: '1px solid #e9d5ff',
           padding: '24px'
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-          <Stethoscope size={24} color="#c084fc" />
-          <h2 style={{ fontSize: '1.25rem', fontWeight: 800 }}>
+          <Stethoscope size={24} color="var(--accent-purple)" />
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)' }}>
             Bác Sĩ Ngữ Pháp & Hiệu Đính Tự Động (Grammar Doctor)
           </h2>
         </div>
@@ -95,8 +95,8 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
               }}
               style={{
                 fontSize: '0.74rem',
-                background: 'rgba(255, 255, 255, 0.05)',
-                border: '1px solid var(--border-subtle)',
+                background: '#ffffff',
+                border: '1px solid var(--border-medium)',
                 color: 'var(--text-secondary)',
                 padding: '4px 9px',
                 borderRadius: '6px',
@@ -112,7 +112,7 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
 
       {/* Input Form */}
       <div className="card" style={{ padding: '20px' }}>
-        <label style={{ display: 'block', fontSize: '0.86rem', fontWeight: 600, color: '#f8fafc', marginBottom: '8px' }}>
+        <label style={{ display: 'block', fontSize: '0.86rem', fontWeight: 600, color: 'var(--text-main)', marginBottom: '8px' }}>
           Nhập câu, email hoặc đoạn văn tiếng Anh của bạn:
         </label>
         <textarea
@@ -125,7 +125,7 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
         />
 
         {errorMsg && (
-          <div style={{ color: '#f87171', fontSize: '0.84rem', marginTop: '8px' }}>
+          <div style={{ color: '#dc2626', fontSize: '0.84rem', marginTop: '8px' }}>
             {errorMsg}
           </div>
         )}
@@ -160,31 +160,25 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
             style={{
               padding: '16px 20px',
               borderRadius: 'var(--radius-lg)',
-              background: analysisResult.hasErrors
-                ? 'rgba(239, 68, 68, 0.12)'
-                : 'rgba(16, 185, 129, 0.12)',
-              border: `1px solid ${
-                analysisResult.hasErrors
-                  ? 'rgba(239, 68, 68, 0.35)'
-                  : 'rgba(16, 185, 129, 0.35)'
-              }`,
+              background: analysisResult.hasErrors ? '#fef2f2' : '#ecfdf5',
+              border: `1px solid ${analysisResult.hasErrors ? '#fecaca' : '#a7f3d0'}`,
               display: 'flex',
               alignItems: 'center',
               gap: '12px'
             }}
           >
             {analysisResult.hasErrors ? (
-              <AlertTriangle size={24} color="#ef4444" />
+              <AlertTriangle size={24} color="#dc2626" />
             ) : (
-              <CheckCircle2 size={24} color="#10b981" />
+              <CheckCircle2 size={24} color="#059669" />
             )}
             <div>
-              <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: analysisResult.hasErrors ? '#fca5a5' : '#6ee7b7' }}>
+              <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: analysisResult.hasErrors ? '#b91c1c' : '#047857' }}>
                 {analysisResult.hasErrors
                   ? `Phát hiện ${analysisResult.issues?.length || 'một số'} lỗi ngữ pháp / diễn đạt cần sửa`
                   : 'Xuất sắc! Câu văn của bạn hoàn toàn chính xác ngữ pháp'}
               </h3>
-              <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginTop: '2px' }}>
+              <p style={{ fontSize: '0.84rem', color: 'var(--text-secondary)', marginTop: '2px' }}>
                 {analysisResult.generalAdviceVi}
               </p>
             </div>
@@ -194,17 +188,17 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
           <div className="card" style={{ padding: '20px' }}>
             {analysisResult.hasErrors && (
               <div style={{ marginBottom: '16px' }}>
-                <span style={{ fontSize: '0.78rem', color: '#f87171', fontWeight: 700, textTransform: 'uppercase' }}>
+                <span style={{ fontSize: '0.78rem', color: '#dc2626', fontWeight: 700, textTransform: 'uppercase' }}>
                   Câu gốc của bạn (chứa lỗi):
                 </span>
                 <p
                   style={{
                     fontSize: '1rem',
-                    color: '#e2e8f0',
-                    background: 'rgba(239, 68, 68, 0.07)',
+                    color: '#991b1b',
+                    background: '#fef2f2',
                     padding: '12px 16px',
                     borderRadius: 'var(--radius-md)',
-                    border: '1px solid rgba(239, 68, 68, 0.2)',
+                    border: '1px solid #fecaca',
                     marginTop: '6px',
                     textDecoration: 'line-through'
                   }}
@@ -216,7 +210,7 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
 
             <div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.78rem', color: '#34d399', fontWeight: 700, textTransform: 'uppercase' }}>
+                <span style={{ fontSize: '0.78rem', color: '#059669', fontWeight: 700, textTransform: 'uppercase' }}>
                   ✅ Câu sửa lại chuẩn xác:
                 </span>
                 <div style={{ display: 'flex', gap: '8px' }}>
@@ -233,7 +227,7 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                     style={{ padding: '4px 10px', fontSize: '0.76rem' }}
                     onClick={() => handleCopy(analysisResult.correctedSentence)}
                   >
-                    {copied ? <Check size={13} color="#10b981" /> : <Copy size={13} />}
+                    {copied ? <Check size={13} color="#059669" /> : <Copy size={13} />}
                     <span>{copied ? 'Đã sao chép' : 'Sao chép'}</span>
                   </button>
                 </div>
@@ -243,11 +237,11 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                 style={{
                   fontSize: '1.08rem',
                   fontWeight: 600,
-                  color: '#f8fafc',
-                  background: 'rgba(16, 185, 129, 0.1)',
+                  color: '#065f46',
+                  background: '#ecfdf5',
                   padding: '14px 18px',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid rgba(16, 185, 129, 0.3)',
+                  border: '1px solid #a7f3d0',
                   marginTop: '6px'
                 }}
               >
@@ -258,7 +252,7 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
             {/* Professional Native Business Version */}
             {analysisResult.professionalVersion && (
               <div style={{ marginTop: '16px', borderTop: '1px solid var(--border-subtle)', paddingTop: '14px' }}>
-                <span style={{ fontSize: '0.78rem', color: '#38bdf8', fontWeight: 700, textTransform: 'uppercase' }}>
+                <span style={{ fontSize: '0.78rem', color: '#0284c7', fontWeight: 700, textTransform: 'uppercase' }}>
                   💼 Phiên bản viết nâng cao chuẩn công sở (Native Business Tone):
                 </span>
                 <div
@@ -266,14 +260,14 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    background: 'rgba(56, 189, 248, 0.08)',
-                    border: '1px solid rgba(56, 189, 248, 0.25)',
+                    background: '#f0f9ff',
+                    border: '1px solid #bae6fd',
                     borderRadius: 'var(--radius-md)',
                     padding: '12px 16px',
                     marginTop: '6px'
                   }}
                 >
-                  <p style={{ fontSize: '0.94rem', color: '#f8fafc', fontWeight: 500 }}>
+                  <p style={{ fontSize: '0.94rem', color: '#0369a1', fontWeight: 600 }}>
                     "{analysisResult.professionalVersion}"
                   </p>
                   <button
@@ -292,8 +286,8 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
           {analysisResult.issues && analysisResult.issues.length > 0 && (
             <div className="card" style={{ padding: '22px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
-                <Lightbulb size={18} color="#f59e0b" />
-                <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#fff' }}>
+                <Lightbulb size={18} color="#d97706" />
+                <h4 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)' }}>
                   Phân Tích Chi Tiết Từng Lỗi Sai & Bản Chất Ngữ Pháp
                 </h4>
               </div>
@@ -303,7 +297,7 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                   <div
                     key={idx}
                     style={{
-                      background: 'rgba(15, 23, 42, 0.7)',
+                      background: '#f8fafc',
                       border: '1px solid var(--border-subtle)',
                       borderRadius: 'var(--radius-md)',
                       padding: '14px 18px',
@@ -315,8 +309,9 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
                       <span
                         style={{
-                          background: 'rgba(239, 68, 68, 0.2)',
-                          color: '#f87171',
+                          background: '#fef2f2',
+                          color: '#dc2626',
+                          border: '1px solid #fecaca',
                           padding: '3px 8px',
                           borderRadius: '4px',
                           fontWeight: 700,
@@ -329,8 +324,9 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                       <ArrowRight size={15} color="var(--text-muted)" />
                       <span
                         style={{
-                          background: 'rgba(16, 185, 129, 0.2)',
-                          color: '#34d399',
+                          background: '#ecfdf5',
+                          color: '#059669',
+                          border: '1px solid #a7f3d0',
                           padding: '3px 8px',
                           borderRadius: '4px',
                           fontWeight: 700,
@@ -343,11 +339,13 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                         <span
                           style={{
                             fontSize: '0.74rem',
-                            color: '#93c5fd',
-                            background: 'rgba(59, 130, 246, 0.15)',
+                            color: 'var(--primary)',
+                            background: '#eef2ff',
+                            border: '1px solid #c7d2fe',
                             padding: '2px 8px',
                             borderRadius: '4px',
-                            marginLeft: 'auto'
+                            marginLeft: 'auto',
+                            fontWeight: 600
                           }}
                         >
                           Quy tắc: {issue.ruleName}
@@ -355,8 +353,8 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                       )}
                     </div>
 
-                    <p style={{ fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.5, marginTop: '4px' }}>
-                      <strong>Giải thích:</strong> {issue.explanationVi}
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginTop: '4px' }}>
+                      <strong style={{ color: 'var(--text-main)' }}>Giải thích:</strong> {issue.explanationVi}
                     </p>
                   </div>
                 ))}
