@@ -7,6 +7,7 @@ import SynonymsView from './components/SynonymsView';
 import GrammarView from './components/GrammarView';
 import GrammarDoctorView from './components/GrammarDoctorView';
 import SettingsView from './components/SettingsView';
+import DictionaryView from './components/DictionaryView';
 import AddWordModal from './components/AddWordModal';
 import MiniCaptureView from './components/MiniCaptureView';
 import { storageService } from './services/storageService';
@@ -89,6 +90,8 @@ export default function App() {
     switch (currentView) {
       case 'vocab':
         return { title: 'Sổ Tay Từ Vựng Tiếng Anh', subtitle: 'Kho từ vựng công sở cá nhân' };
+      case 'dictionary':
+        return { title: 'Từ Điển Công Sở & Quốc Tế', subtitle: 'Tra cứu chuyên sâu nghĩa công sở, phát âm IPA & định nghĩa Oxford' };
       case 'review':
         return { title: 'Ôn Tập & Kiểm Tra Hàng Ngày', subtitle: 'Ghi nhớ ngắt quãng (Spaced Repetition)' };
       case 'synonyms':
@@ -134,6 +137,15 @@ export default function App() {
               onDeleteWord={handleDeleteWord}
               onOpenAddModal={() => setIsAddModalOpen(true)}
               onRecordReview={handleRecordReview}
+              speechVoice={settings.speechVoice || 'US'}
+              onStartReview={() => setCurrentView('review')}
+            />
+          )}
+
+          {currentView === 'dictionary' && (
+            <DictionaryView
+              words={words}
+              onSaveWord={handleSaveNewWord}
               speechVoice={settings.speechVoice || 'US'}
             />
           )}

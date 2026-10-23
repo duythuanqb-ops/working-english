@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   BookOpen,
+  Languages,
   CalendarCheck,
   Repeat,
   BookMarked,
@@ -21,6 +22,11 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
       badge: wordCount
     },
     {
+      id: 'dictionary',
+      label: 'Từ điển Tra cứu',
+      icon: Languages
+    },
+    {
       id: 'review',
       label: 'Ôn tập & Quiz',
       icon: CalendarCheck,
@@ -39,7 +45,7 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
     },
     {
       id: 'doctor',
-      label: 'Bác sĩ Sửa lỗi',
+      label: 'Sửa lỗi',
       icon: Stethoscope,
       ai: true
     },

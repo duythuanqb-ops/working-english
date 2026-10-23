@@ -6,7 +6,8 @@ const STORAGE_KEYS = {
   SETTINGS: 'working_english_settings_v1',
   SYNONYMS: 'working_english_synonyms_v1',
   QUIZ_HISTORY: 'working_english_quiz_history_v1',
-  GRAMMAR: 'working_english_grammar_chapters_v1'
+  GRAMMAR: 'working_english_grammar_chapters_v1',
+  SEARCH_HISTORY: 'working_english_dict_history_v1'
 };
 
 const DEFAULT_SETTINGS = {
@@ -275,5 +276,43 @@ export const storageService = {
   resetGrammarToDefault: () => {
     storageService.saveGrammarChapters(GRAMMAR_CHAPTERS);
     return GRAMMAR_CHAPTERS;
+  },
+
+  /* ==========================================================================
+     Dictionary Search History
+     ========================================================================== */
+
+  getSearchHistory: () => {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.SEARCH_HISTORY);
+      if (!data) return [];
+      return JSON.parse(data);
+    } catch (e) {
+      return [];
+    }
+  },
+
+  addSearchHistory: (term) => {
+    if (!term || typeof term !== 'string') return [];
+    const cleanTerm = term.trim().toLowerCase();
+    if (!cleanTerm) return [];
+    const history = storageService.getSearchHistory();
+    const filtered = history.filter((item) => item.toLowerCase() !== cleanTerm);
+    const updated = [cleanTerm, ...filtered].slice(0, 20); // Keep 20 recent
+    try {
+      localStorage.setItem(STORAGE_KEYS.SEARCH_HISTORY, JSON.stringify(updated));
+    } catch (e) {
+      console.error('Failed to save search history:', e);
+    }
+    return updated;
+  },
+
+  clearSearchHistory: () => {
+    try {
+      localStorage.removeItem(STORAGE_KEYS.SEARCH_HISTORY);
+    } catch (e) {
+      console.error('Failed to clear search history:', e);
+    }
+    return [];
   }
 };

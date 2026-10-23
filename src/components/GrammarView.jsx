@@ -332,10 +332,10 @@ export default function GrammarView({ onTryInDoctor, speechVoice }) {
                       className="btn btn-secondary"
                       style={{ padding: '5px 10px', fontSize: '0.76rem' }}
                       onClick={() => onTryInDoctor(sec.workplaceExample || '')}
-                      title="Mở sang Bác sĩ Sửa lỗi để thử nghiệm câu này"
+                      title="Mở sang Sửa lỗi để thử nghiệm câu này"
                     >
                       <Stethoscope size={13} color="var(--accent-purple)" />
-                      <span>Thử câu trên Bác sĩ Sửa lỗi</span>
+                      <span>Thử câu trên Sửa lỗi</span>
                     </button>
 
                     <button
