@@ -578,57 +578,38 @@ export default function DailyReviewView({
                 </div>
               </div>
 
-              {/* Bottom Tactile Action Controls with Keyboard Badges */}
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  gap: '14px',
-                  marginTop: '20px'
-                }}
-              >
+              {/* Bottom Action Controls */}
+              <div className="review-actions">
                 <button
                   className="btn"
                   onClick={() => handleFlashcardResult(false)}
-                  style={{
-                    background: '#fef2f2',
-                    border: '1px solid #fecaca',
-                    color: '#dc2626',
-                    flex: 1,
-                    maxWidth: '180px'
-                  }}
+                  style={{ background: '#fef2f2', border: '1px solid #fecaca', color: '#dc2626' }}
                   title="Chưa nhớ - Giảm về Hộp 1"
                 >
                   <XCircle size={16} />
-                  <span>Quên / Chưa Thuộc</span>
-                  <kbd style={{ background: '#ffffff', padding: '1px 5px', borderRadius: '4px', fontSize: '0.7rem', border: '1px solid #fca5a5' }}>1</kbd>
+                  <span>Chưa nhớ</span>
+                  <kbd>1</kbd>
                 </button>
 
                 <button
                   className="btn btn-secondary"
                   onClick={() => setIsFlipped(!isFlipped)}
-                  style={{ flex: 1, maxWidth: '160px' }}
+                  title="Lật thẻ"
                 >
                   <RotateCcw size={15} />
-                  <span>Lật Thẻ</span>
-                  <kbd style={{ background: '#f1f5f9', padding: '1px 5px', borderRadius: '4px', fontSize: '0.7rem', border: '1px solid #cbd5e1' }}>Space</kbd>
+                  <span>Lật</span>
+                  <kbd>Space</kbd>
                 </button>
 
                 <button
                   className="btn"
                   onClick={() => handleFlashcardResult(true)}
-                  style={{
-                    background: '#ecfdf5',
-                    border: '1px solid #a7f3d0',
-                    color: '#059669',
-                    flex: 1,
-                    maxWidth: '180px'
-                  }}
+                  style={{ background: '#ecfdf5', border: '1px solid #a7f3d0', color: '#059669' }}
                   title="Đã nhớ tốt - Tăng lên Hộp tiếp theo"
                 >
                   <CheckCircle2 size={16} />
-                  <span>Đã Nhớ Rõ</span>
-                  <kbd style={{ background: '#ffffff', padding: '1px 5px', borderRadius: '4px', fontSize: '0.7rem', border: '1px solid #6ee7b7' }}>2</kbd>
+                  <span>Đã nhớ</span>
+                  <kbd>2</kbd>
                 </button>
               </div>
             </div>

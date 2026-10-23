@@ -100,7 +100,7 @@ export default function WordDetailFlashcardModal({
     <div className="modal-overlay" onClick={onClose}>
       <div
         className="modal-content"
-        style={{ maxWidth: '640px', background: 'transparent', border: 'none', boxShadow: 'none' }}
+        style={{ maxWidth: '640px', background: 'transparent', border: 'none', boxShadow: 'none', overflowY: 'auto', overflowX: 'visible', padding: '4px' }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Navigation Bar Above Flashcard */}
@@ -122,7 +122,7 @@ export default function WordDetailFlashcardModal({
               <ChevronLeft size={18} />
             </button>
             <span style={{ fontSize: '0.84rem', fontWeight: 600, color: 'var(--text-secondary)' }}>
-              Từ {currentIndex + 1} / {wordList.length}
+              Từ {currentIndex + 1} / {activeList.length}
             </span>
             <button className="btn-icon" onClick={handleNext} title="Từ tiếp theo (→)">
               <ChevronRight size={18} />
@@ -230,10 +230,7 @@ export default function WordDetailFlashcardModal({
             </div>
 
             {/* BACK FACE */}
-            <div
-              className="flashcard-face flashcard-back"
-              style={{ overflowY: 'auto', maxHeight: '480px' }}
-            >
+            <div className="flashcard-face flashcard-back">
               <div
                 style={{
                   display: 'flex',

@@ -1325,7 +1325,7 @@ input, textarea, button, select {
 .flashcard-inner {
   position: relative;
   width: 100%;
-  min-height: 290px;
+  display: grid;
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
@@ -1335,15 +1335,18 @@ input, textarea, button, select {
   transform: rotateY(180deg);
 }
 
+/* Both faces share one grid cell -> container height = tallest face (no overflow) */
 .flashcard-face {
-  position: absolute;
-  inset: 0;
+  grid-area: 1 / 1;
+  min-height: 300px;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: var(--radius-xl);
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 16px;
   background: #ffffff;
   border: 1px solid var(--border-medium);
   box-shadow: var(--shadow-elevated);
@@ -1353,6 +1356,31 @@ input, textarea, button, select {
   transform: rotateY(180deg);
   background: #ffffff;
   border-color: #c7d2fe;
+}
+
+/* Review action buttons: equal columns, labels never wrap */
+.review-actions {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.review-actions .btn {
+  white-space: nowrap;
+  justify-content: center;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+}
+
+.review-actions kbd {
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid currentColor;
+  opacity: 0.7;
 }
 
 /* ==========================================================================
@@ -1492,4 +1520,272 @@ input, textarea, button, select {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+/* ==========================================================================
+   Vocabulary Library v3 — calm, scannable (progressive disclosure)
+   List shows only: word, IPA, meaning, mastery. Details live in the flashcard.
+   ========================================================================== */
+
+.lib-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lib-toolbar .search-wrapper {
+  flex: 1 1 260px;
+  max-width: none;
+}
+
+/* Segmented box tabs — single source of truth for box filtering */
+.box-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.box-tabs::-webkit-scrollbar { display: none; }
+
+.box-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.box-tab:hover { color: var(--text-main); }
+
+.box-tab.active {
+  background: #ffffff;
+  color: var(--text-main);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.box-tab-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.box-tab-count {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.box-tab.active .box-tab-count { color: var(--primary); }
+
+/* Word card */
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.word-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 18px 16px;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+  animation: cardEntrance 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.word-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18px;
+  bottom: 18px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--accent, var(--primary));
+  opacity: 0.85;
+}
+
+.word-card:hover {
+  transform: translateY(-2px);
+  border-color: #c7d2fe;
+  box-shadow: 0 10px 24px -8px rgba(79, 70, 229, 0.18);
+}
+
+.word-card:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.word-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.word-card-word {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.word-card-ipa {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: 'SF Mono', ui-monospace, Menlo, monospace;
+}
+
+.word-card-meaning {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: calc(0.9rem * 1.45 * 2);
+}
+
+.word-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.word-card-pos {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+/* 5-segment mastery bar */
+.mastery {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mastery-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent, var(--primary));
+  white-space: nowrap;
+}
+
+.mastery-bar {
+  display: flex;
+  gap: 3px;
+}
+
+.mastery-seg {
+  width: 14px;
+  height: 5px;
+  border-radius: 3px;
+  background: #e2e8f0;
+}
+
+.mastery-seg.on { background: var(--accent, var(--primary)); }
+
+/* Hover-only quiet actions */
+.word-card-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.icon-ghost {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+.icon-ghost:hover { background: #eef2ff; color: var(--primary); }
+.icon-ghost.danger:hover { background: #fef2f2; color: #dc2626; }
+
+.word-card .icon-ghost.danger { opacity: 0; }
+.word-card:hover .icon-ghost.danger,
+.word-card:focus-within .icon-ghost.danger { opacity: 1; }
+
+/* Compact list rows */
+.word-list {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.word-row {
+  display: grid;
+  grid-template-columns: 36px minmax(160px, 1.1fr) 2fr auto 64px;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  animation: cardEntrance 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.word-row:last-child { border-bottom: none; }
+.word-row:hover { background: #f8fafc; }
+.word-row .icon-ghost.danger { opacity: 0; }
+.word-row:hover .icon-ghost.danger { opacity: 1; }
+
+.word-row-meaning {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes cardEntrance {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word-card, .word-row, .flashcard-inner, .custom-select-menu {
+    animation: none !important;
+    transition: none !important;
+  }
 }
