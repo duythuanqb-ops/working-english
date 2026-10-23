@@ -136,8 +136,8 @@ export default function VocabularyView({
     });
 
     if (shuffledSeed > 0) {
-      // Deterministic shuffle based on seed
-      list = [...list].sort(() => Math.sin(shuffledSeed++) - 0.5);
+      let seed = shuffledSeed;
+      list = [...list].sort(() => Math.sin(seed++) - 0.5);
     } else {
       switch (sortBy) {
         case 'a-z':
