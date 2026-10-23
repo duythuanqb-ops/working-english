@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { ttsService } from '../services/ttsService';
 import { aiService } from '../services/aiService';
+import CustomSelect from './CustomSelect';
 
 export default function SettingsView({
   settings,
@@ -229,14 +230,15 @@ export default function SettingsView({
                 <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
                   Model
                 </label>
-                <select
-                  className="select-field"
+                <CustomSelect
                   value={geminiModel}
-                  onChange={(e) => setGeminiModel(e.target.value)}
-                >
-                  <option value="gemini-2.0-flash">Gemini 2.0 Flash (Cực nhanh, mới nhất)</option>
-                  <option value="gemini-1.5-flash">Gemini 1.5 Flash (Ổn định)</option>
-                </select>
+                  onChange={(val) => setGeminiModel(val)}
+                  options={[
+                    { value: 'gemini-2.0-flash', label: 'Gemini 2.0 Flash (Cực nhanh, mới nhất)' },
+                    { value: 'gemini-1.5-flash', label: 'Gemini 1.5 Flash (Ổn định)' }
+                  ]}
+                  style={{ width: '100%' }}
+                />
               </div>
 
               <div style={{ display: 'flex', alignItems: 'flex-end' }}>
@@ -298,14 +300,15 @@ export default function SettingsView({
               <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
                 Model
               </label>
-              <select
-                className="select-field"
+              <CustomSelect
                 value={openaiModel}
-                onChange={(e) => setOpenaiModel(e.target.value)}
-              >
-                <option value="gpt-4o-mini">GPT-4o-mini (Nhanh & Tiết kiệm)</option>
-                <option value="gpt-4o">GPT-4o (Thông minh toàn diện)</option>
-              </select>
+                onChange={(val) => setOpenaiModel(val)}
+                options={[
+                  { value: 'gpt-4o-mini', label: 'GPT-4o-mini (Nhanh & Tiết kiệm)' },
+                  { value: 'gpt-4o', label: 'GPT-4o (Thông minh toàn diện)' }
+                ]}
+                style={{ width: '100%' }}
+              />
             </div>
           </div>
         )}
@@ -350,29 +353,31 @@ export default function SettingsView({
             <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
               Giọng phát âm mặc định
             </label>
-            <select
-              className="select-field"
+            <CustomSelect
               value={speechVoice}
-              onChange={(e) => setSpeechVoice(e.target.value)}
-            >
-              <option value="US">Tiếng Anh - Mỹ (English US)</option>
-              <option value="UK">Tiếng Anh - Anh (English UK)</option>
-            </select>
+              onChange={(val) => setSpeechVoice(val)}
+              options={[
+                { value: 'US', label: '🇺🇸 Tiếng Anh - Mỹ (English US)' },
+                { value: 'UK', label: '🇬🇧 Tiếng Anh - Anh (English UK)' }
+              ]}
+              style={{ width: '100%' }}
+            />
           </div>
 
           <div>
             <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
               Tốc độ đọc
             </label>
-            <select
-              className="select-field"
+            <CustomSelect
               value={speechRate}
-              onChange={(e) => setSpeechRate(parseFloat(e.target.value))}
-            >
-              <option value="0.8">0.8x (Chậm, rõ âm cho người mới)</option>
-              <option value="1.0">1.0x (Chuẩn tự nhiên)</option>
-              <option value="1.2">1.2x (Nhanh, phản xạ cao)</option>
-            </select>
+              onChange={(val) => setSpeechRate(parseFloat(val))}
+              options={[
+                { value: 0.8, label: '0.8x (Chậm, rõ âm cho người mới)' },
+                { value: 1.0, label: '1.0x (Chuẩn tự nhiên)' },
+                { value: 1.2, label: '1.2x (Nhanh, phản xạ cao)' }
+              ]}
+              style={{ width: '100%' }}
+            />
           </div>
         </div>
 

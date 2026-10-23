@@ -29,7 +29,16 @@ export const storageService = {
         localStorage.setItem(STORAGE_KEYS.WORDS, JSON.stringify(INITIAL_WORDS));
         return INITIAL_WORDS;
       }
-      return JSON.parse(data);
+      const existing = JSON.parse(data);
+      // Auto-merge new curated starter words if any are missing
+      const existingIds = new Set(existing.map((w) => w.id));
+      const missingStarters = INITIAL_WORDS.filter((w) => !existingIds.has(w.id));
+      if (missingStarters.length > 0) {
+        const merged = [...existing, ...missingStarters];
+        localStorage.setItem(STORAGE_KEYS.WORDS, JSON.stringify(merged));
+        return merged;
+      }
+      return existing;
     } catch (e) {
       console.error('Failed to load words from storage:', e);
       return INITIAL_WORDS;

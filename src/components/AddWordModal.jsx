@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, Sparkles, Loader2, Volume2, Plus, Trash2 } from 'lucide-react';
 import { aiService } from '../services/aiService';
 import { ttsService } from '../services/ttsService';
+import CustomSelect from './CustomSelect';
 
 export default function AddWordModal({ isOpen, onClose, onSave, speechVoice }) {
   const [word, setWord] = useState('');
@@ -223,18 +224,19 @@ export default function AddWordModal({ isOpen, onClose, onSave, speechVoice }) {
                 <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
                   Loại từ
                 </label>
-                <select
-                  className="select-field"
+                <CustomSelect
                   value={partOfSpeech}
-                  onChange={(e) => setPartOfSpeech(e.target.value)}
-                >
-                  <option value="noun">Danh từ (n)</option>
-                  <option value="verb">Động từ (v)</option>
-                  <option value="adjective">Tính từ (adj)</option>
-                  <option value="adverb">Trạng từ (adv)</option>
-                  <option value="phrase">Cụm từ (phrase)</option>
-                  <option value="idiom">Thành ngữ (idiom)</option>
-                </select>
+                  onChange={(val) => setPartOfSpeech(val)}
+                  options={[
+                    { value: 'noun', label: 'Danh từ (noun)' },
+                    { value: 'verb', label: 'Động từ (verb)' },
+                    { value: 'adjective', label: 'Tính từ (adj)' },
+                    { value: 'adverb', label: 'Trạng từ (adv)' },
+                    { value: 'phrase', label: 'Cụm từ (phrase)' },
+                    { value: 'idiom', label: 'Thành ngữ (idiom)' }
+                  ]}
+                  style={{ width: '100%' }}
+                />
               </div>
             </div>
 

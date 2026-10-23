@@ -176,5 +176,222 @@ export const INITIAL_WORDS = [
     dateAdded: new Date(Date.now() - 10 * 24 * 3600 * 1000).toISOString(),
     lastReviewed: new Date().toISOString(),
     tags: ["Strategy", "Business", "Productivity"]
+  },
+  {
+    id: "word-7",
+    word: "Bottleneck",
+    ipa: "/ˈbɑː.t̬əl.nek/",
+    partOfSpeech: "noun",
+    meaningVi: "Điểm nghẽn, nút thắt cổ chai cản trở tiến độ của cả quy trình",
+    meaningEn: "A problem, delay, or place where progress is blocked or slowed down.",
+    examples: [
+      {
+        en: "Code reviews became a major bottleneck before we established clear SLA guidelines.",
+        vi: "Việc duyệt code đã trở thành điểm nghẽn lớn trước khi chúng tôi thiết lập SLA rõ ràng.",
+        context: "DevOps Workflow"
+      }
+    ],
+    synonyms: ["Obstacle", "Impediment", "Choke point", "Hurdle"],
+    antonyms: ["Catalyst", "Aid"],
+    collocations: ["Identify a bottleneck", "Clear a bottleneck", "Production bottleneck"],
+    box: 1,
+    reviewCount: 1,
+    correctCount: 0,
+    dateAdded: new Date(Date.now() - 1 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: null,
+    tags: ["Operations", "Tech", "Management"]
+  },
+  {
+    id: "word-8",
+    word: "Pivotal",
+    ipa: "/ˈpɪv.ə.t̬əl/",
+    partOfSpeech: "adj",
+    meaningVi: "Mang tính then chốt, bước ngoặt định đoạt thành bại",
+    meaningEn: "Crucial; having a very important effect on what happens in the future.",
+    examples: [
+      {
+        en: "Securing this strategic partnership played a pivotal role in our European expansion.",
+        vi: "Việc ký kết đối tác chiến lược này đóng vai trò then chốt trong kế hoạch mở rộng sang châu Âu.",
+        context: "Strategic Expansion"
+      }
+    ],
+    synonyms: ["Crucial", "Vital", "Decisive", "Momentous"],
+    antonyms: ["Insignificant", "Minor", "Trivial"],
+    collocations: ["Pivotal role", "Pivotal moment", "Pivotal decision"],
+    box: 5,
+    reviewCount: 8,
+    correctCount: 8,
+    dateAdded: new Date(Date.now() - 20 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: new Date().toISOString(),
+    tags: ["Strategy", "Management"]
+  },
+  {
+    id: "word-9",
+    word: "Redundant",
+    ipa: "/rɪˈdʌn.dənt/",
+    partOfSpeech: "adj",
+    meaningVi: "Dư thừa, lặp lại không cần thiết hoặc dự phòng an toàn",
+    meaningEn: "Unnecessary because it is more than is needed, or duplicated for safety backup.",
+    examples: [
+      {
+        en: "We eliminated redundant approval layers to speed up customer refunds.",
+        vi: "Chúng tôi đã loại bỏ các tầng phê duyệt dư thừa để hoàn tiền cho khách hàng nhanh hơn.",
+        context: "Process Optimization"
+      }
+    ],
+    synonyms: ["Superfluous", "Excessive", "Duplicate"],
+    antonyms: ["Essential", "Necessary", "Unique"],
+    collocations: ["Make redundant", "Redundant systems", "Redundant features"],
+    box: 3,
+    reviewCount: 4,
+    correctCount: 4,
+    dateAdded: new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: new Date().toISOString(),
+    tags: ["Operations", "Management"]
+  },
+  {
+    id: "word-10",
+    word: "Benchmark",
+    ipa: "/ˈbentʃ.mɑːrk/",
+    partOfSpeech: "noun",
+    meaningVi: "Tiêu chuẩn so sánh, cột mốc chuẩn mực để đánh giá hiệu suất",
+    meaningEn: "A standard by which other things can be judged or measured.",
+    examples: [
+      {
+        en: "Our customer satisfaction score is now the benchmark for the entire fintech industry.",
+        vi: "Điểm hài lòng khách hàng của chúng tôi hiện là chuẩn mực cho toàn ngành fintech.",
+        context: "Quality Assurance"
+      }
+    ],
+    synonyms: ["Standard", "Criterion", "Yardstick", "Touchstone"],
+    antonyms: ["Deviation", "Anomaly"],
+    collocations: ["Set a benchmark", "Industry benchmark", "Benchmark performance"],
+    box: 4,
+    reviewCount: 6,
+    correctCount: 6,
+    dateAdded: new Date(Date.now() - 12 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: new Date().toISOString(),
+    tags: ["Strategy", "Finance", "Productivity"]
+  },
+  {
+    id: "word-11",
+    word: "Proactive",
+    ipa: "/proʊˈæk.tɪv/",
+    partOfSpeech: "adj",
+    meaningVi: "Chủ động kiểm soát và hành động trước thay vì chỉ phản ứng thụ động",
+    meaningEn: "Controlling a situation by making things happen rather than waiting for things to happen.",
+    examples: [
+      {
+        en: "Taking a proactive approach to risk mitigation saved the client millions in audit penalties.",
+        vi: "Cách tiếp cận chủ động giảm thiểu rủi ro đã giúp khách hàng tiết kiệm hàng triệu đô la tiền phạt kiểm toán.",
+        context: "Compliance & Risk"
+      }
+    ],
+    synonyms: ["Forward-thinking", "Enterprising", "Preemptive"],
+    antonyms: ["Reactive", "Passive"],
+    collocations: ["Proactive approach", "Proactive measures", "Proactive communication"],
+    box: 3,
+    reviewCount: 5,
+    correctCount: 5,
+    dateAdded: new Date(Date.now() - 6 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: new Date().toISOString(),
+    tags: ["Management", "Productivity"]
+  },
+  {
+    id: "word-12",
+    word: "Pragmatic",
+    ipa: "/præɡˈmæt̬.ɪk/",
+    partOfSpeech: "adj",
+    meaningVi: "Thực tế, thực dụng, giải quyết dựa trên tính khả thi thay vì lý thuyết suông",
+    meaningEn: "Solving problems in a sensible way that suits the conditions that really exist.",
+    examples: [
+      {
+        en: "We need a pragmatic roadmap that delivers value in Q2 rather than an idealistic 3-year plan.",
+        vi: "Chúng ta cần một lộ trình thực tế mang lại giá trị trong quý 2 thay vì một kế hoạch 3 năm lý tưởng hóa.",
+        context: "Product Strategy"
+      }
+    ],
+    synonyms: ["Practical", "Realistic", "Sensible", "Down-to-earth"],
+    antonyms: ["Idealistic", "Impractical", "Dogmatic"],
+    collocations: ["Pragmatic approach", "Pragmatic solution", "Pragmatic decision"],
+    box: 4,
+    reviewCount: 6,
+    correctCount: 6,
+    dateAdded: new Date(Date.now() - 14 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: new Date().toISOString(),
+    tags: ["Strategy", "Business"]
+  },
+  {
+    id: "word-13",
+    word: "Facilitate",
+    ipa: "/fəˈsɪl.ə.teɪt/",
+    partOfSpeech: "verb",
+    meaningVi: "Tạo điều kiện thuận lợi, làm cho một quá trình diễn ra dễ dàng hơn",
+    meaningEn: "To make something possible or easier.",
+    examples: [
+      {
+        en: "The modern CRM tool was adopted to facilitate collaboration across cross-functional squads.",
+        vi: "Công cụ CRM hiện đại được áp dụng để tạo điều kiện thuận lợi cho việc cộng tác giữa các đội nhóm.",
+        context: "Team Collaboration"
+      }
+    ],
+    synonyms: ["Enable", "Expedite", "Assist", "Ease"],
+    antonyms: ["Hinder", "Impede", "Obstruct"],
+    collocations: ["Facilitate communication", "Facilitate growth", "Facilitate discussions"],
+    box: 5,
+    reviewCount: 9,
+    correctCount: 9,
+    dateAdded: new Date(Date.now() - 25 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: new Date().toISOString(),
+    tags: ["Management", "Tech", "Productivity"]
+  },
+  {
+    id: "word-14",
+    word: "Stipulate",
+    ipa: "/ˈstɪp.jə.leɪt/",
+    partOfSpeech: "verb",
+    meaningVi: "Quy định rõ ràng, đưa thành điều khoản bắt buộc trong hợp đồng",
+    meaningEn: "To state exactly what must be done or what can happen in an agreement or law.",
+    examples: [
+      {
+        en: "The master service agreement stipulates that intellectual property belongs exclusively to the client.",
+        vi: "Hợp đồng dịch vụ khung quy định rõ sở hữu trí tuệ thuộc về riêng khách hàng.",
+        context: "Legal & Contracts"
+      }
+    ],
+    synonyms: ["Specify", "Demand", "Prescribe", "Condition"],
+    antonyms: ["Waive", "Imply"],
+    collocations: ["Contract stipulates", "Stipulate terms", "Expressly stipulate"],
+    box: 1,
+    reviewCount: 1,
+    correctCount: 0,
+    dateAdded: new Date(Date.now() - 2 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: null,
+    tags: ["Legal", "Contract", "Business"]
+  },
+  {
+    id: "word-15",
+    word: "Holistic",
+    ipa: "/hoʊˈlɪs.tɪk/",
+    partOfSpeech: "adj",
+    meaningVi: "Toàn diện, tổng thể, nhìn nhận toàn bộ hệ thống thay vì từng bộ phận rời rạc",
+    meaningEn: "Dealing with or treating the whole of something or someone and not just a part.",
+    examples: [
+      {
+        en: "We need a holistic employee well-being program encompassing mental health and flexible hours.",
+        vi: "Chúng ta cần một chương trình phúc lợi nhân viên toàn diện bao gồm cả sức khỏe tinh thần và giờ làm linh hoạt.",
+        context: "Human Resources"
+      }
+    ],
+    synonyms: ["Comprehensive", "Integrated", "All-inclusive", "Exhaustive"],
+    antonyms: ["Fragmented", "Partial", "Narrow"],
+    collocations: ["Holistic view", "Holistic approach", "Holistic strategy"],
+    box: 5,
+    reviewCount: 7,
+    correctCount: 7,
+    dateAdded: new Date(Date.now() - 18 * 24 * 3600 * 1000).toISOString(),
+    lastReviewed: new Date().toISOString(),
+    tags: ["HR", "Management", "Strategy"]
   }
 ];
+

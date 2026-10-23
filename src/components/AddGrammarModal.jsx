@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Sparkles, Loader2, Plus, BookMarked, Edit3 } from 'lucide-react';
 import { aiService } from '../services/aiService';
+import CustomSelect from './CustomSelect';
 
 export default function AddGrammarModal({
   isOpen,
@@ -194,17 +195,12 @@ export default function AddGrammarModal({
                   />
                 </div>
               ) : (
-                <select
-                  className="select-field"
+                <CustomSelect
                   value={selectedChapterId}
-                  onChange={(e) => setSelectedChapterId(e.target.value)}
-                >
-                  {chapters.map((ch) => (
-                    <option key={ch.id} value={ch.id}>
-                      {ch.title}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(val) => setSelectedChapterId(val)}
+                  options={chapters.map((ch) => ({ value: ch.id, label: ch.title }))}
+                  style={{ width: '100%' }}
+                />
               )}
             </div>
 
