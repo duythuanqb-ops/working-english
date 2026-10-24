@@ -713,6 +713,127 @@ export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }
                 {result.meaningVi}
               </div>
             </div>
+
+            {/* Prominent Quick Synonyms & Antonyms in Main Card */}
+            {((result.synonyms && result.synonyms.length > 0) || (result.antonyms && result.antonyms.length > 0)) && (
+              <div
+                style={{
+                  marginTop: '16px',
+                  paddingTop: '14px',
+                  borderTop: '1px solid #f1f5f9',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '10px'
+                }}
+              >
+                {result.synonyms && result.synonyms.length > 0 && (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                    <span
+                      style={{
+                        fontSize: '0.78rem',
+                        fontWeight: 800,
+                        color: '#7e22ce',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        background: '#faf5ff',
+                        padding: '3px 8px',
+                        borderRadius: '6px',
+                        border: '1px solid #f3e8ff'
+                      }}
+                    >
+                      <Repeat size={12} />
+                      Từ đồng nghĩa:
+                    </span>
+                    {result.synonyms.map((syn, idx) => (
+                      <button
+                        key={idx}
+                        type="button"
+                        onClick={() => {
+                          setSearchTerm(syn);
+                          handleSearch(syn);
+                        }}
+                        style={{
+                          padding: '4px 10px',
+                          borderRadius: '8px',
+                          background: '#ffffff',
+                          color: '#6b21a8',
+                          fontSize: '0.84rem',
+                          fontWeight: 600,
+                          border: '1px solid #e9d5ff',
+                          cursor: 'pointer',
+                          transition: 'all 0.15s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.background = '#f3e8ff';
+                          e.target.style.transform = 'translateY(-1px)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.background = '#ffffff';
+                          e.target.style.transform = 'translateY(0)';
+                        }}
+                        title={`Click để tra ngay từ "${syn}"`}
+                      >
+                        {syn} ↗
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {result.antonyms && result.antonyms.length > 0 && (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                    <span
+                      style={{
+                        fontSize: '0.78rem',
+                        fontWeight: 800,
+                        color: '#be123c',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        background: '#fff1f2',
+                        padding: '3px 8px',
+                        borderRadius: '6px',
+                        border: '1px solid #ffe4e6'
+                      }}
+                    >
+                      Từ trái nghĩa:
+                    </span>
+                    {result.antonyms.map((ant, idx) => (
+                      <button
+                        key={idx}
+                        type="button"
+                        onClick={() => {
+                          setSearchTerm(ant);
+                          handleSearch(ant);
+                        }}
+                        style={{
+                          padding: '4px 10px',
+                          borderRadius: '8px',
+                          background: '#ffffff',
+                          color: '#9f1239',
+                          fontSize: '0.84rem',
+                          fontWeight: 600,
+                          border: '1px solid #fecdd3',
+                          cursor: 'pointer',
+                          transition: 'all 0.15s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.background = '#ffe4e6';
+                          e.target.style.transform = 'translateY(-1px)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.background = '#ffffff';
+                          e.target.style.transform = 'translateY(0)';
+                        }}
+                        title={`Click để tra ngay từ "${ant}"`}
+                      >
+                        {ant} ↗
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Navigation Tabs (Anh - Việt / Anh - Anh / Ngữ Cảnh Công Sở) */}
@@ -1001,53 +1122,6 @@ export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }
                 </div>
               </div>
 
-              {/* Synonyms & Antonyms */}
-              {result.synonyms && result.synonyms.length > 0 && (
-                <div
-                  className="card"
-                  style={{
-                    padding: '20px 24px',
-                    background: '#ffffff',
-                    border: '1px solid var(--border-medium)',
-                    borderRadius: '16px'
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-                    <Repeat size={17} style={{ color: 'var(--primary)' }} />
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                      Từ Đồng Nghĩa (Click để tra ngay)
-                    </h4>
-                  </div>
-
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                    {result.synonyms.map((syn, idx) => (
-                      <button
-                        key={idx}
-                        type="button"
-                        onClick={() => {
-                          setSearchTerm(syn);
-                          handleSearch(syn);
-                        }}
-                        style={{
-                          padding: '5px 12px',
-                          borderRadius: '10px',
-                          background: '#faf5ff',
-                          color: '#9333ea',
-                          fontSize: '0.84rem',
-                          fontWeight: 600,
-                          border: '1px solid #f3e8ff',
-                          cursor: 'pointer',
-                          transition: 'all 0.15s ease'
-                        }}
-                        onMouseEnter={(e) => (e.target.style.background = '#f3e8ff')}
-                        onMouseLeave={(e) => (e.target.style.background = '#faf5ff')}
-                      >
-                        {syn}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           )}
 

@@ -333,8 +333,37 @@ export const dictionaryService = {
       );
     }
 
-    // Deduplicate synonyms
-    const cleanSynonyms = Array.from(new Set(synonyms)).slice(0, 8);
+    // Deduplicate and enrich synonyms
+    const lowerQueryWord = query.toLowerCase();
+    const initialWordMatch = INITIAL_WORDS.find((w) => w.word.toLowerCase() === lowerQueryWord);
+    if (initialWordMatch?.synonyms) {
+      synonyms.push(...initialWordMatch.synonyms);
+    }
+    if (savedInNotebook?.synonyms) {
+      synonyms.push(...savedInNotebook.synonyms);
+    }
+
+    // If still sparse, fetch similar/synonym words from Datamuse
+    if (synonyms.length < 3) {
+      try {
+        const datamuseRes = await fetchWithTimeout(
+          `https://api.datamuse.com/words?ml=${encodeURIComponent(query)}&max=8`,
+          {},
+          1500
+        );
+        if (datamuseRes.ok) {
+          const data = await datamuseRes.json();
+          const wordsFound = data
+            .map((d) => d.word)
+            .filter((w) => w && !w.includes(' ') && w.toLowerCase() !== lowerQueryWord);
+          synonyms.push(...wordsFound);
+        }
+      } catch (e) {
+        // ignore Datamuse network errors silently
+      }
+    }
+
+    const cleanSynonyms = Array.from(new Set(synonyms.map((s) => s.trim()))).filter(Boolean).slice(0, 10);
 
     return {
       word: query,

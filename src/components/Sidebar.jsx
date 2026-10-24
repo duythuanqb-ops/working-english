@@ -10,7 +10,8 @@ import {
   Zap,
   Sparkles,
   Flame,
-  Award
+  Award,
+  GraduationCap
 } from 'lucide-react';
 
 export default function Sidebar({ currentView, setCurrentView, wordCount, dueCount }) {
@@ -25,6 +26,12 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
       id: 'dictionary',
       label: 'Từ điển Tra cứu',
       icon: Languages
+    },
+    {
+      id: 'toeic',
+      label: 'Luyện thi TOEIC',
+      icon: GraduationCap,
+      badge: 'PRO'
     },
     {
       id: 'review',

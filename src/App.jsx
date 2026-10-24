@@ -8,6 +8,7 @@ import GrammarView from './components/GrammarView';
 import GrammarDoctorView from './components/GrammarDoctorView';
 import SettingsView from './components/SettingsView';
 import DictionaryView from './components/DictionaryView';
+import ToeicPracticeView from './components/ToeicPracticeView';
 import AddWordModal from './components/AddWordModal';
 import MiniCaptureView from './components/MiniCaptureView';
 import { storageService } from './services/storageService';
@@ -92,6 +93,8 @@ export default function App() {
         return { title: 'Sổ Tay Từ Vựng Tiếng Anh', subtitle: 'Kho từ vựng công sở cá nhân' };
       case 'dictionary':
         return { title: 'Từ Điển Công Sở & Quốc Tế', subtitle: 'Tra cứu chuyên sâu nghĩa công sở, phát âm IPA & định nghĩa Oxford' };
+      case 'toeic':
+        return { title: 'Luyện Thi TOEIC Công Sở', subtitle: 'Ngữ pháp Part 5, bẫy nghe Part 2 & 600 từ vựng cốt lõi ETS' };
       case 'review':
         return { title: 'Ôn Tập & Kiểm Tra Hàng Ngày', subtitle: 'Ghi nhớ ngắt quãng (Spaced Repetition)' };
       case 'synonyms':
@@ -144,6 +147,14 @@ export default function App() {
 
           {currentView === 'dictionary' && (
             <DictionaryView
+              words={words}
+              onSaveWord={handleSaveNewWord}
+              speechVoice={settings.speechVoice || 'US'}
+            />
+          )}
+
+          {currentView === 'toeic' && (
+            <ToeicPracticeView
               words={words}
               onSaveWord={handleSaveNewWord}
               speechVoice={settings.speechVoice || 'US'}
