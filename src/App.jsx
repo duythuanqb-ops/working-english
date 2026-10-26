@@ -1,21 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import Sidebar from './components/Sidebar';
 import TopBar from './components/TopBar';
-import VocabularyView from './components/VocabularyView';
-import DailyReviewView from './components/DailyReviewView';
-import SynonymsView from './components/SynonymsView';
-import GrammarView from './components/GrammarView';
-import GrammarDoctorView from './components/GrammarDoctorView';
-import SettingsView from './components/SettingsView';
-import DictionaryView from './components/DictionaryView';
-import ToeicPracticeView from './components/ToeicPracticeView';
-import IeltsPracticeView from './components/IeltsPracticeView';
-import TidModule from './components/tid/TidModule';
 import AddWordModal from './components/AddWordModal';
 import MiniCaptureView from './components/MiniCaptureView';
-import { Overview, Stats, History } from './components/tid/vocabulary/Overview';
 import './components/tid/vocabulary/vocab.css';
 import { storageService } from './services/storageService';
+
+// Lazy-loaded Views for maximum performance and fast screen switches
+const VocabularyView = lazy(() => import('./components/VocabularyView'));
+const DailyReviewView = lazy(() => import('./components/DailyReviewView'));
+const SynonymsView = lazy(() => import('./components/SynonymsView'));
+const GrammarView = lazy(() => import('./components/GrammarView'));
+const GrammarDoctorView = lazy(() => import('./components/GrammarDoctorView'));
+const SettingsView = lazy(() => import('./components/SettingsView'));
+const DictionaryView = lazy(() => import('./components/DictionaryView'));
+const ToeicPracticeView = lazy(() => import('./components/ToeicPracticeView'));
+const IeltsPracticeView = lazy(() => import('./components/IeltsPracticeView'));
+const TidModule = lazy(() => import('./components/tid/TidModule'));
+
+// Overview module parts
+const OverviewComponent = lazy(() =>
+  import('./components/tid/vocabulary/Overview').then((mod) => ({ default: mod.Overview }))
+);
+const StatsComponent = lazy(() =>
+  import('./components/tid/vocabulary/Overview').then((mod) => ({ default: mod.Stats }))
+);
+const HistoryComponent = lazy(() =>
+  import('./components/tid/vocabulary/Overview').then((mod) => ({ default: mod.History }))
+);
+
+function ViewLoading() {
+  return (
+    <div className="flex h-full w-full items-center justify-center p-8 text-slate-400">
+      <div className="flex flex-col items-center gap-3">
+        <div className="h-8 w-8 animate-spin rounded-full border-2 border-indigo-500 border-t-transparent" />
+        <span className="text-sm font-medium">Đang tải...</span>
+      </div>
+    </div>
+  );
+}
+
 
 export default function App() {
   // Check if opened as mini capture window or with custom topic id
@@ -148,128 +172,130 @@ export default function App() {
         />
 
         <main className="content-body">
-          {currentView === 'overview' && (
-            <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
-              <div className="mx-auto max-w-6xl">
-                <Overview
-                  onPick={() => {
-                    setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
-                    setCurrentView('ielts-dictionary');
-                  }}
-                  onReview={(r) => {
-                    if (r?.sel) {
-                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
-                    } else {
+          <Suspense fallback={<ViewLoading />}>
+            {currentView === 'overview' && (
+              <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
+                <div className="mx-auto max-w-6xl">
+                  <OverviewComponent
+                    onPick={() => {
                       setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
-                    }
-                    setCurrentView('ielts-dictionary');
-                  }}
-                />
+                      setCurrentView('ielts-dictionary');
+                    }}
+                    onReview={(r) => {
+                      if (r?.sel) {
+                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
+                      } else {
+                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
+                      }
+                      setCurrentView('ielts-dictionary');
+                    }}
+                  />
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {currentView === 'stats' && (
-            <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
-              <div className="mx-auto max-w-6xl flex flex-col gap-6">
-                <Stats />
-                <History
-                  onReview={(r) => {
-                    if (r?.sel) {
-                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
-                    } else {
-                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
-                    }
-                    setCurrentView('ielts-dictionary');
-                  }}
-                />
+            {currentView === 'stats' && (
+              <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
+                <div className="mx-auto max-w-6xl flex flex-col gap-6">
+                  <StatsComponent />
+                  <HistoryComponent
+                    onReview={(r) => {
+                      if (r?.sel) {
+                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
+                      } else {
+                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
+                      }
+                      setCurrentView('ielts-dictionary');
+                    }}
+                  />
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {currentView === 'vocab' && (
-            <VocabularyView
-              words={words}
-              onDeleteWord={handleDeleteWord}
-              onOpenAddModal={() => setIsAddModalOpen(true)}
-              onRecordReview={handleRecordReview}
-              speechVoice={settings.speechVoice || 'US'}
-              onStartReview={() => setCurrentView('review')}
-            />
-          )}
+            {currentView === 'vocab' && (
+              <VocabularyView
+                words={words}
+                onDeleteWord={handleDeleteWord}
+                onOpenAddModal={() => setIsAddModalOpen(true)}
+                onRecordReview={handleRecordReview}
+                speechVoice={settings.speechVoice || 'US'}
+                onStartReview={() => setCurrentView('review')}
+              />
+            )}
 
-          {currentView === 'dictionary' && (
-            <DictionaryView
-              words={words}
-              onSaveWord={handleSaveNewWord}
-              speechVoice={settings.speechVoice || 'US'}
-            />
-          )}
+            {currentView === 'dictionary' && (
+              <DictionaryView
+                words={words}
+                onSaveWord={handleSaveNewWord}
+                speechVoice={settings.speechVoice || 'US'}
+              />
+            )}
 
-          {currentView === 'toeic' && (
-            <ToeicPracticeView
-              words={words}
-              onSaveWord={handleSaveNewWord}
-              speechVoice={settings.speechVoice || 'US'}
-            />
-          )}
+            {currentView === 'toeic' && (
+              <ToeicPracticeView
+                words={words}
+                onSaveWord={handleSaveNewWord}
+                speechVoice={settings.speechVoice || 'US'}
+              />
+            )}
 
-          {currentView === 'ielts' && (
-            <IeltsPracticeView
-              words={words}
-              onSaveWord={handleSaveNewWord}
-              speechVoice={settings.speechVoice || 'US'}
-            />
-          )}
+            {currentView === 'ielts' && (
+              <IeltsPracticeView
+                words={words}
+                onSaveWord={handleSaveNewWord}
+                speechVoice={settings.speechVoice || 'US'}
+              />
+            )}
 
-          {currentView === 'ielts-dictionary' && (
-            <TidModule
-              speechVoice={settings.speechVoice || 'US'}
-              onSaveWord={handleSaveNewWord}
-              tidRoute={tidRoute}
-              onClearTidRoute={() => setTidRoute(null)}
-            />
-          )}
+            {currentView === 'ielts-dictionary' && (
+              <TidModule
+                speechVoice={settings.speechVoice || 'US'}
+                onSaveWord={handleSaveNewWord}
+                tidRoute={tidRoute}
+                onClearTidRoute={() => setTidRoute(null)}
+              />
+            )}
 
-          {currentView === 'review' && (
-            <DailyReviewView
-              words={words}
-              onRecordReview={handleRecordReview}
-              speechVoice={settings.speechVoice || 'US'}
-            />
-          )}
+            {currentView === 'review' && (
+              <DailyReviewView
+                words={words}
+                onRecordReview={handleRecordReview}
+                speechVoice={settings.speechVoice || 'US'}
+              />
+            )}
 
-          {currentView === 'synonyms' && (
-            <SynonymsView
-              words={words}
-              synonymGroups={synonymGroups}
-              onSaveSynonymGroups={handleSaveSynonymGroups}
-              speechVoice={settings.speechVoice || 'US'}
-            />
-          )}
+            {currentView === 'synonyms' && (
+              <SynonymsView
+                words={words}
+                synonymGroups={synonymGroups}
+                onSaveSynonymGroups={handleSaveSynonymGroups}
+                speechVoice={settings.speechVoice || 'US'}
+              />
+            )}
 
-          {currentView === 'grammar' && (
-            <GrammarView
-              onTryInDoctor={handleTryInDoctor}
-              speechVoice={settings.speechVoice || 'US'}
-            />
-          )}
+            {currentView === 'grammar' && (
+              <GrammarView
+                onTryInDoctor={handleTryInDoctor}
+                speechVoice={settings.speechVoice || 'US'}
+              />
+            )}
 
-          {currentView === 'doctor' && (
-            <GrammarDoctorView
-              initialSentence={doctorInitialSentence}
-              speechVoice={settings.speechVoice || 'US'}
-            />
-          )}
+            {currentView === 'doctor' && (
+              <GrammarDoctorView
+                initialSentence={doctorInitialSentence}
+                speechVoice={settings.speechVoice || 'US'}
+              />
+            )}
 
-          {currentView === 'settings' && (
-            <SettingsView
-              settings={settings}
-              onSaveSettings={handleSaveSettings}
-              words={words}
-              onRestoreWords={handleRestoreWords}
-            />
-          )}
+            {currentView === 'settings' && (
+              <SettingsView
+                settings={settings}
+                onSaveSettings={handleSaveSettings}
+                words={words}
+                onRestoreWords={handleRestoreWords}
+              />
+            )}
+          </Suspense>
         </main>
       </div>
 

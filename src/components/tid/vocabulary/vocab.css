@@ -18,10 +18,10 @@
 .td-spin { animation: tdSpin 24s linear infinite; }
 .fc-caret { animation: fcCaret 1s steps(2) infinite; }
 @keyframes tdPop { 0% { transform: translateY(22px) scale(.97); opacity: 0 } to { transform: none; opacity: 1 } }
-@keyframes tdFloat { 0% { translate: 0 0 } to { translate: 0 -8px } }
-@keyframes tdBob { 0% { translate: 0; rotate: -4deg } to { translate: 0 -9px; rotate: 5deg } }
-@keyframes tdNudge { 0% { translate: 0 -3px } to { translate: 0 3px } }
-@keyframes tdSpin { to { rotate: 360deg } }
+@keyframes tdFloat { 0% { transform: translate3d(0, 0, 0); } to { transform: translate3d(0, -8px, 0); } }
+@keyframes tdBob { 0% { transform: translate3d(0, 0, 0) rotate(-4deg); } to { transform: translate3d(0, -9px, 0) rotate(5deg); } }
+@keyframes tdNudge { 0% { transform: translate3d(0, -3px, 0); } to { transform: translate3d(0, 3px, 0); } }
+@keyframes tdSpin { to { transform: rotate(360deg); } }
 @keyframes fcCaret { 0% { opacity: 1 } 50% { opacity: 0 } }
 @keyframes tidTwinkle { 0%, 100% { opacity: .25; transform: scale(.8) } 50% { opacity: 1; transform: scale(1.1) } }
 @keyframes vcShake { 0%, 100% { transform: translateX(0) } 25% { transform: translateX(-6px) } 75% { transform: translateX(6px) } }
