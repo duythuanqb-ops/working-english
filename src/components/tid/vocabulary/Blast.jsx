@@ -215,7 +215,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
 
   const start = () => {
     if (!pool.length) return;
-    st.current = { items: [], last: 0, spawnIn: 0, queue: [], lives: 3 };
+    st.current = { items: [], last: 0, spawnIn: 0, queue: [], lives: 3, typed: '' };
     setItems([]); setMissed([]); setFlash(null); setTyped(''); setLasers([]); setHitWords({}); setStats({ score: 0, hits: 0, streak: 0, best: 0, lives: 3 });
     setOver(false); setPaused(false); setPlaying(true); setCount(3);
     requestAnimationFrame(() => inputRef.current?.focus());
@@ -255,6 +255,28 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
         setFlash({ ok: false, prompt: escaped[0].prompt, answer: escaped[0].answer });
         setStats(v => ({ ...v, streak: 0, lives: s.lives }));
         if (s.lives === 0) { setOver(true); logActivity(); }
+
+        // Tự động làm trắng input khi từ rơi qua vạch đáy
+        const curTyped = norm(s.typed || '');
+        if (curTyped) {
+          const curClean = curTyped.replace(/\s+/g, '');
+          const wasAimingEscaped = escaped.some(e =>
+            e.accepts.some(a => {
+              const normA = norm(a);
+              return normA.startsWith(curTyped) || normA.replace(/\s+/g, '').startsWith(curClean);
+            })
+          );
+          const stillMatchesAny = s.items.some(it =>
+            it.accepts.some(a => {
+              const normA = norm(a);
+              return normA.startsWith(curTyped) || normA.replace(/\s+/g, '').startsWith(curClean);
+            })
+          );
+          if (wasAimingEscaped || !stillMatchesAny) {
+            s.typed = '';
+            setTyped('');
+          }
+        }
       }
       setItems(s.items.map(it => ({ ...it })));
       if (s.lives > 0) raf = requestAnimationFrame(tick);
@@ -314,57 +336,126 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
   // Fire laser and update typing
   const handleInputChange = (e) => {
     const val = e.target.value.slice(0, 48);
-    const prev = typed;
     const newNorm = norm(val);
-    const prevNorm = norm(prev);
+    const newClean = newNorm.replace(/\s+/g, '');
 
-    if (newNorm.length > prevNorm.length) {
-      let targetItem = null;
-      if (aim) {
-        const cur = st.current.items.find(it => it.key === aim.key);
-        if (cur && cur.accepts.some(a => a.startsWith(newNorm) || a.replace(/\s+/g, '').startsWith(newNorm.replace(/\s+/g, '')))) {
-          targetItem = cur;
+    if (!newNorm) {
+      setTyped('');
+      if (st.current) st.current.typed = '';
+      return;
+    }
+
+    // Check if newNorm hits and finishes a word completely!
+    const hitItem = st.current.items.find(it =>
+      it.accepts.some(a => {
+        const normA = norm(a);
+        return normA === newNorm || normA.replace(/\s+/g, '') === newClean;
+      })
+    );
+
+    if (hitItem) {
+      playLaserSound();
+      playBoomSound();
+
+      let targetXPercent = hitItem.x;
+      if (playAreaRef.current) {
+        const rect = playAreaRef.current.getBoundingClientRect();
+        if (rect.width) {
+          const rawX = (hitItem.x / 100) * rect.width;
+          const clampedX = Math.max(140, Math.min(rect.width - 140, rawX));
+          targetXPercent = (clampedX / rect.width) * 100;
         }
       }
-      if (!targetItem) {
-        const matched = st.current.items.filter(it =>
-          it.accepts.some(a => a.startsWith(newNorm) || a.replace(/\s+/g, '').startsWith(newNorm.replace(/\s+/g, '')))
-        );
-        if (matched.length) {
-          targetItem = matched.sort((a, b) => b.y - a.y)[0];
-        }
-      }
 
-      if (targetItem) {
-        playLaserSound();
-        const laserId = `${Date.now()}-${Math.random()}`;
-        let targetXPercent = targetItem.x;
-        if (playAreaRef.current) {
-          const rect = playAreaRef.current.getBoundingClientRect();
-          if (rect.width) {
-            const rawX = (targetItem.x / 100) * rect.width;
-            const clampedX = Math.max(140, Math.min(rect.width - 140, rawX));
-            targetXPercent = (clampedX / rect.width) * 100;
-          }
+      const laserId = `${Date.now()}-${Math.random()}`;
+      setLasers(prev => [
+        ...prev,
+        {
+          id: laserId,
+          x1: 50,
+          y1: 94,
+          x2: targetXPercent,
+          y2: Math.max(10, Math.min(88, hitItem.y * 100))
         }
-        setLasers(prevLasers => [
-          ...prevLasers,
-          {
-            id: laserId,
-            x1: 50,
-            y1: 94,
-            x2: targetXPercent,
-            y2: Math.max(10, Math.min(88, targetItem.y * 100))
-          }
-        ]);
-        setHitWords(prev => ({ ...prev, [targetItem.key]: Date.now() }));
-        setTimeout(() => {
-          setLasers(prevLasers => prevLasers.filter(l => l.id !== laserId));
-        }, 250);
+      ]);
+      setTimeout(() => setLasers(prev => prev.filter(l => l.id !== laserId)), 250);
+
+      // Remove from items and trigger boom
+      st.current.items = st.current.items.filter(i => i !== hitItem);
+      setItems(st.current.items.map(it => ({ ...it })));
+      setBooms(b => [...b, { key: hitItem.key, x: hitItem.x, y: hitItem.y }]);
+      setTimeout(() => setBooms(b => b.filter(x => x.key !== hitItem.key)), 500);
+
+      // Auto-clear input immediately!
+      setTyped('');
+      if (st.current) st.current.typed = '';
+      setFlash({ ok: true, prompt: hitItem.prompt, answer: hitItem.answer });
+      setStats(v => {
+        const streak = v.streak + 1;
+        const best = Math.max(v.best, streak);
+        if (best > record) save('blast_record', best, setRecord);
+        return {
+          ...v,
+          streak,
+          best,
+          hits: v.hits + 1,
+          score: v.score + 10 * Math.min(5, 1 + Math.floor(streak / STREAK_STEP))
+        };
+      });
+      return;
+    }
+
+    // Normal typing: check if it matches a prefix of a word
+    let targetItem = null;
+    if (aim) {
+      const cur = st.current.items.find(it => it.key === aim.key);
+      if (cur && cur.accepts.some(a => {
+        const normA = norm(a);
+        return normA.startsWith(newNorm) || normA.replace(/\s+/g, '').startsWith(newClean);
+      })) {
+        targetItem = cur;
+      }
+    }
+    if (!targetItem) {
+      const matched = st.current.items.filter(it =>
+        it.accepts.some(a => {
+          const normA = norm(a);
+          return normA.startsWith(newNorm) || normA.replace(/\s+/g, '').startsWith(newClean);
+        })
+      );
+      if (matched.length) {
+        targetItem = matched.sort((a, b) => b.y - a.y)[0];
       }
     }
 
+    if (targetItem) {
+      playLaserSound();
+      const laserId = `${Date.now()}-${Math.random()}`;
+      let targetXPercent = targetItem.x;
+      if (playAreaRef.current) {
+        const rect = playAreaRef.current.getBoundingClientRect();
+        if (rect.width) {
+          const rawX = (targetItem.x / 100) * rect.width;
+          const clampedX = Math.max(140, Math.min(rect.width - 140, rawX));
+          targetXPercent = (clampedX / rect.width) * 100;
+        }
+      }
+      setLasers(prev => [
+        ...prev,
+        {
+          id: laserId,
+          x1: 50,
+          y1: 94,
+          x2: targetXPercent,
+          y2: Math.max(10, Math.min(88, targetItem.y * 100))
+        }
+      ]);
+      setHitWords(prev => ({ ...prev, [targetItem.key]: Date.now() }));
+      setTimeout(() => setLasers(prev => prev.filter(l => l.id !== laserId)), 250);
+    }
+
     setTyped(val);
+    if (st.current) st.current.typed = val;
   };
 
   useEffect(() => {
@@ -381,10 +472,11 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     if (hit) {
       playBoomSound();
       st.current.items = st.current.items.filter(i => i !== hit);
-      setItems([...st.current.items]);
+      setItems(st.current.items.map(it => ({ ...it })));
       setBooms(b => [...b, { key: hit.key, x: hit.x, y: hit.y }]);
       setTimeout(() => setBooms(b => b.filter(x => x.key !== hit.key)), 500);
       setTyped('');
+      if (st.current) st.current.typed = '';
       setFlash({ ok: true, prompt: hit.prompt, answer: hit.answer });
       setStats(v => {
         const streak = v.streak + 1;
@@ -396,9 +488,9 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
   }, [typed, running]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!running || !typed.trim() || aim) { setNoMatch(false); return; }
-    const a = setTimeout(() => setNoMatch(true), 220);
-    const b = setTimeout(() => { setTyped(''); setNoMatch(false); }, 800);
-    return () => { clearTimeout(a); clearTimeout(b); };
+    setNoMatch(true);
+    const b = setTimeout(() => { setTyped(''); if (st.current) st.current.typed = ''; setNoMatch(false); }, 300);
+    return () => clearTimeout(b);
   }, [typed, aim, running]);
   useEffect(() => { if (!flash) return; const t = setTimeout(() => setFlash(null), 2500); return () => clearTimeout(t); }, [flash]);
 
