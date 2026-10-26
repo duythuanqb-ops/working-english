@@ -158,6 +158,17 @@ export default function VocabularyView({
     return list;
   }, [words, searchQuery, selectedBox, selectedTag, sortBy, shuffledSeed]);
 
+  // Progressive DOM rendering (pagination) to keep memory low and scrolling ultra-fast
+  const [displayLimit, setDisplayLimit] = useState(36);
+
+  useEffect(() => {
+    setDisplayLimit(36);
+  }, [searchQuery, selectedBox, selectedTag, sortBy, shuffledSeed, viewMode]);
+
+  const displayedWords = useMemo(() => {
+    return visibleWords.slice(0, displayLimit);
+  }, [visibleWords, displayLimit]);
+
   // Reset revealed cards when recall mode changes
   useEffect(() => {
     setRevealedIds(new Set());
@@ -579,8 +590,9 @@ export default function VocabularyView({
       ) : viewMode === 'grid' ? (
         
         /* MODE A: Smart Learning Cards Grid */
-        <div className="word-grid">
-          {visibleWords.map((w, i) => {
+        <div>
+          <div className="word-grid">
+            {displayedWords.map((w, i) => {
             const box = w.box || 1;
             const isRevealed = revealedIds.has(w.id);
             const isMeaningHidden = recallMode === 'hide-meaning' && !isRevealed;
@@ -730,6 +742,25 @@ export default function VocabularyView({
               </div>
             );
           })}
+          </div>
+          {displayLimit < visibleWords.length && (
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
+              <button
+                type="button"
+                className="btn btn-secondary"
+                onClick={() => setDisplayLimit((prev) => prev + 36)}
+                style={{
+                  padding: '10px 24px',
+                  fontWeight: 700,
+                  borderRadius: '12px',
+                  fontSize: '0.9rem',
+                  boxShadow: 'var(--shadow-sm)'
+                }}
+              >
+                Xem thêm ({visibleWords.length - displayLimit} từ còn lại)
+              </button>
+            </div>
+          )}
         </div>
       ) : viewMode === 'kanban' ? (
 
@@ -885,71 +916,92 @@ export default function VocabularyView({
       ) : (
 
         /* MODE C: Compact Learning List */
-        <div className="word-list">
-          {visibleWords.map((w, i) => {
-            const box = w.box || 1;
-            const isRevealed = revealedIds.has(w.id);
-            const isMeaningHidden = recallMode === 'hide-meaning' && !isRevealed;
+        <div>
+          <div className="word-list">
+            {displayedWords.map((w, i) => {
+              const box = w.box || 1;
+              const isRevealed = revealedIds.has(w.id);
+              const isMeaningHidden = recallMode === 'hide-meaning' && !isRevealed;
 
-            return (
-              <div
-                key={w.id}
-                className="word-row"
-                style={{
-                  '--accent': boxMeta(box).color,
-                  animationDelay: `${Math.min(i * 12, 250)}ms`
-                }}
-                onClick={() => setFlashcardWordId(w.id)}
-              >
-                <button
-                  className="icon-ghost"
-                  onClick={(e) => speak(e, w.word)}
-                  title="Nghe phát âm"
-                >
-                  <Volume2 size={16} />
-                </button>
-
-                <div style={{ minWidth: 0 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <span style={{ fontWeight: 800, color: 'var(--text-main)', fontSize: '0.98rem' }}>
-                      {w.word}
-                    </span>
-                    <span className={`pos-badge ${getPosClass(w.partOfSpeech)}`} style={{ padding: '1px 5px', fontSize: '0.62rem' }}>
-                      {w.partOfSpeech || 'term'}
-                    </span>
-                  </div>
-                  {w.ipa && <div className="word-card-ipa">{w.ipa}</div>}
-                </div>
-
+              return (
                 <div
-                  className="word-row-meaning"
-                  style={{ position: 'relative' }}
-                  onClick={(e) => isMeaningHidden && toggleReveal(w.id, e)}
+                  key={w.id}
+                  className="word-row"
+                  style={{
+                    '--accent': boxMeta(box).color,
+                    animationDelay: `${Math.min(i * 12, 250)}ms`
+                  }}
+                  onClick={() => setFlashcardWordId(w.id)}
                 >
-                  <span className={isMeaningHidden ? 'smart-recall-blur' : ''}>
-                    {w.meaningVi}
-                  </span>
-                  {isMeaningHidden && (
-                    <span className="recall-hint-badge" style={{ marginLeft: '8px' }}>
-                      <Eye size={11} /> Ẩn nghĩa
-                    </span>
-                  )}
-                </div>
-
-                <MasteryBar box={box} />
-
-                <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '4px' }}>
                   <button
-                    className="icon-ghost danger"
-                    onClick={(e) => remove(e, w.id)}
-                    title="Xóa"
+                    className="icon-ghost"
+                    onClick={(e) => speak(e, w.word)}
+                    title="Nghe phát âm"
                   >
-                    <Trash2 size={15} />
+                    <Volume2 size={16} />
                   </button>
+
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <span style={{ fontWeight: 800, color: 'var(--text-main)', fontSize: '0.98rem' }}>
+                        {w.word}
+                      </span>
+                      <span className={`pos-badge ${getPosClass(w.partOfSpeech)}`} style={{ padding: '1px 5px', fontSize: '0.62rem' }}>
+                        {w.partOfSpeech || 'term'}
+                      </span>
+                    </div>
+                    {w.ipa && <div className="word-card-ipa">{w.ipa}</div>}
+                  </div>
+
+                  <div
+                    className="word-row-meaning"
+                    style={{ position: 'relative' }}
+                    onClick={(e) => isMeaningHidden && toggleReveal(w.id, e)}
+                  >
+                    <span className={isMeaningHidden ? 'smart-recall-blur' : ''}>
+                      {w.meaningVi}
+                    </span>
+                    {isMeaningHidden && (
+                      <span className="recall-hint-badge" style={{ marginLeft: '8px' }}>
+                        <Eye size={11} /> Ẩn nghĩa
+                      </span>
+                    )}
+                  </div>
+
+                  <MasteryBar box={box} />
+
+                  <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '4px' }}>
+                    <button
+                      className="icon-ghost danger"
+                      onClick={(e) => remove(e, w.id)}
+                      title="Xóa"
+                    >
+                      <Trash2 size={15} />
+                    </button>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          {displayLimit < visibleWords.length && (
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
+              <button
+                type="button"
+                className="btn btn-secondary"
+                onClick={() => setDisplayLimit((prev) => prev + 36)}
+                style={{
+                  padding: '10px 24px',
+                  fontWeight: 700,
+                  borderRadius: '12px',
+                  fontSize: '0.9rem',
+                  boxShadow: 'var(--shadow-sm)'
+                }}
+              >
+                Xem thêm ({visibleWords.length - displayLimit} từ còn lại)
+              </button>
+            </div>
+          )}
         </div>
       )}
 

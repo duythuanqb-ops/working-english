@@ -8,24 +8,24 @@
 @media (prefers-reduced-motion: reduce) { .px-root *, .px-root ::before, .px-root ::after { animation: none !important; } }
 
 @keyframes pxsBlink { 0%, 92%, to { transform: scaleY(1) } 95% { transform: scaleY(.1) } }
-@keyframes pxsBulb { 0% { filter: drop-shadow(0 0 4px #cfefff); border-color: #fff } to { filter: none; border-color: #8fd3f4 } }
+@keyframes pxsBulb { 0%, to { border-color: #8fd3f4 } }
 @keyframes pxsCabSoft { 0%, to { transform: rotate(-.8deg) } 50% { transform: rotate(.8deg) } }
 @keyframes pxsCab { 0%, to { transform: rotate(-2.5deg) } 50% { transform: rotate(2.5deg) } }
-@keyframes pxsChill { 0%, to { transform: translateY(0) rotate(-2deg) } 50% { transform: translateY(-5px) rotate(2deg) } }
+@keyframes pxsChill { 0%, to { transform: translate3d(0, 0, 0) rotate(-2deg) } 50% { transform: translate3d(0, -5px, 0) rotate(2deg) } }
 @keyframes pxsDig { 0%, to { transform: rotate(0) } 50% { transform: rotate(-24deg) } }
-@keyframes pxsDrift { 0% { transform: translate(-30px) } to { transform: translate(40px) } }
-@keyframes pxsFloat { 0%, to { transform: translateY(0) rotate(-6deg) } 50% { transform: translateY(-8px) rotate(-3deg) } }
+@keyframes pxsDrift { 0% { transform: translate3d(-30px, 0, 0) } to { transform: translate3d(40px, 0, 0) } }
+@keyframes pxsFloat { 0%, to { transform: translate3d(0, 0, 0) rotate(-6deg) } 50% { transform: translate3d(0, -8px, 0) rotate(-3deg) } }
 @keyframes pxsGrow { 0% { transform: scaleY(.6) } 50% { transform: scaleY(1) } to { transform: scaleY(.6) } }
-@keyframes pxsKick { 0%, to { transform: translate(0) rotate(0) } 40% { transform: translate(260px, -90px) rotate(360deg) } 60% { transform: translate(380px) rotate(540deg) } }
-@keyframes pxsNote { 0% { opacity: 0; transform: translate(0) } 25% { opacity: 1 } to { opacity: 0; transform: translate(24px, -70px) } }
-@keyframes pxsPeng { 0% { transform: translate(0) scaleX(1) } 48% { transform: translate(180px) scaleX(1) } 50% { transform: translate(180px) scaleX(-1) } 98% { transform: translate(0) scaleX(-1) } to { transform: translate(0) scaleX(1) } }
-@keyframes pxsSnowBounce { 0%, to { transform: translateY(0) scale(1) } 40% { transform: translateY(-10px) scale(.97, 1.03) } 80% { transform: translateY(0) scale(1.04, .96) } }
-@keyframes pxsSnow { 0% { transform: translate(0) } to { transform: translate(var(--sx), var(--sh)) } }
-@keyframes pxsSpot { 0%, to { opacity: .8; transform: translate(-20px) } 50% { opacity: 1; transform: translate(20px) } }
+@keyframes pxsKick { 0%, to { transform: translate3d(0, 0, 0) rotate(0) } 40% { transform: translate3d(260px, -90px, 0) rotate(360deg) } 60% { transform: translate3d(380px, 0, 0) rotate(540deg) } }
+@keyframes pxsNote { 0% { opacity: 0; transform: translate3d(0, 0, 0) } 25% { opacity: 1 } to { opacity: 0; transform: translate3d(24px, -70px, 0) } }
+@keyframes pxsPeng { 0% { transform: translate3d(0, 0, 0) scaleX(1) } 48% { transform: translate3d(180px, 0, 0) scaleX(1) } 50% { transform: translate3d(180px, 0, 0) scaleX(-1) } 98% { transform: translate3d(0, 0, 0) scaleX(-1) } to { transform: translate3d(0, 0, 0) scaleX(1) } }
+@keyframes pxsSnowBounce { 0%, to { transform: translate3d(0, 0, 0) scale(1) } 40% { transform: translate3d(0, -10px, 0) scale(.97, 1.03) } 80% { transform: translate3d(0, 0, 0) scale(1.04, .96) } }
+@keyframes pxsSnow { 0% { transform: translate3d(0, 0, 0) } to { transform: translate3d(var(--sx), var(--sh), 0) } }
+@keyframes pxsSpot { 0%, to { opacity: .8; transform: translate3d(-20px, 0, 0) } 50% { opacity: 1; transform: translate3d(20px, 0, 0) } }
 @keyframes pxsSway { 0%, to { transform: rotate(-4deg) } 50% { transform: rotate(4deg) } }
 @keyframes pxsTwinkle { 0%, to { opacity: 1 } 50% { opacity: .25 } }
 @keyframes pxsWaddle { 0% { transform: rotate(-8deg) } to { transform: rotate(8deg) } }
-@keyframes pxsWave { 0% { background-position-x: 0 } to { background-position-x: 180px } }
+@keyframes pxsWave { 0%, to { opacity: 0.95; } }
 @keyframes pxsWaveArm { 0%, to { transform: rotate(-30deg) } 50% { transform: rotate(-55deg) } }
 
 /* Roulette */

@@ -469,12 +469,11 @@ input, textarea, button, select {
 }
 
 .streak-flame-icon {
-  animation: flamePulse 2s infinite ease-in-out;
+  transition: transform var(--transition-fast);
 }
 
-@keyframes flamePulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15) rotate(4deg); }
+.streak-pill:hover .streak-flame-icon {
+  transform: scale(1.18) rotate(4deg);
 }
 
 /* Pronunciation Voice Segmented Pill */
@@ -1454,8 +1453,7 @@ input, textarea, button, select {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: var(--bg-modal);
-  backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1790,8 +1788,8 @@ input, textarea, button, select {
 }
 
 @keyframes cardEntrance {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translate3d(0, 8px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
 }
 
 @media (prefers-reduced-motion: reduce) {

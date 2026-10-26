@@ -11,22 +11,19 @@
 .wr-px-art [style*=pxwWalk] { will-change: transform; }
 
 @keyframes pxwSwing { 0%, to { transform: rotate(-6deg) } 50% { transform: rotate(6deg) } }
-@keyframes pxwBob { 0%, to { transform: translateY(0) } 50% { transform: translateY(-5px) } }
-@keyframes pxwStep { 0%, to { transform: translateY(0) } 50% { transform: translateY(-4px) } }
+@keyframes pxwBob { 0%, to { transform: translate3d(0, 0, 0) } 50% { transform: translate3d(0, -5px, 0) } }
+@keyframes pxwStep { 0%, to { transform: translate3d(0, 0, 0) } 50% { transform: translate3d(0, -4px, 0) } }
 @keyframes pxwWalk {
-  0% { transform: translate(0) scaleX(1) } 49% { transform: translate(52vw) scaleX(1) }
-  50% { transform: translate(52vw) scaleX(-1) } 99% { transform: translate(0) scaleX(-1) } to { transform: translate(0) scaleX(1) }
+  0% { transform: translate3d(0, 0, 0) scaleX(1) } 49% { transform: translate3d(52vw, 0, 0) scaleX(1) }
+  50% { transform: translate3d(52vw, 0, 0) scaleX(-1) } 99% { transform: translate3d(0, 0, 0) scaleX(-1) } to { transform: translate3d(0, 0, 0) scaleX(1) }
 }
-@keyframes pxwDrift { 0% { transform: translate(-30px) } to { transform: translate(50px) } }
-@keyframes pxwKite { 0%, to { transform: translate(0) rotate(-8deg) } 50% { transform: translate(18px, -14px) rotate(8deg) } }
-@keyframes pxwWave { 0% { background-position: 0 0, 0 8px } to { background-position: 80px 0, -40px 8px } }
-@keyframes pxwCrest { 0% { background-position: 0 0 } to { background-position: 24px 0 } }
+@keyframes pxwDrift { 0% { transform: translate3d(-30px, 0, 0) } to { transform: translate3d(50px, 0, 0) } }
+@keyframes pxwKite { 0%, to { transform: translate3d(0, 0, 0) rotate(-8deg) } 50% { transform: translate3d(18px, -14px, 0) rotate(8deg) } }
+@keyframes pxwWave { 0%, to { opacity: 0.95; } }
+@keyframes pxwCrest { 0%, to { opacity: 0.9; } }
 @keyframes pxwBadge { 0%, to { transform: rotate(-1.2deg) } 50% { transform: rotate(1.2deg) } }
-@keyframes pxwGlint {
-  0% { background-position: 0 0, 0 10px, 20px 24px, 10px 40px, 40px 58px, 0 0 }
-  to { background-position: 0 0, 80px 10px, -50px 24px, 70px 40px, -50px 58px, 0 0 }
-}
-@keyframes pxwShimmer { 0%, to { opacity: .35 } 50% { opacity: .8 } }
+@keyframes pxwGlint { 0%, to { opacity: 0.9; } }
+@keyframes pxwShimmer { 0%, to { opacity: .45 } 50% { opacity: .75 } }
 
 @media (prefers-reduced-motion: reduce) {
   .wr-px-root *, .wr-px-root ::before, .wr-px-root ::after { animation: none !important; }

@@ -61,11 +61,21 @@ function buildPool(words, dir, diff) {
 }
 
 const Stars = React.memo(() => (
-  <div className="pointer-events-none absolute inset-0 overflow-hidden">
-    {[['10%', '15%', 14, 3, 0], ['25%', '30%', 10, 4, 1], ['15%', '60%', 18, 3.5, 0.5], ['40%', '80%', 12, 4.5, 2], ['65%', '75%', 16, 3, 1.5], ['80%', '40%', 10, 5, 0.8], ['55%', '20%', 14, 4, 2.5], ['30%', '45%', 12, 3.2, 1.2], ['75%', '85%', 14, 3.8, 0.3], ['50%', '65%', 10, 4.2, 1.8]].map(([top, left, size, dur, delay], i) => (
-      <svg key={i} viewBox="0 0 24 24" style={{ position: 'absolute', top, left, width: size, height: size, animation: `tidTwinkle ${dur}s ease-in-out ${delay}s infinite`, willChange: 'transform, opacity' }}>
-        <path d="M12 0C12.7 6.4 17.6 11.3 24 12 17.6 12.7 12.7 17.6 12 24 11.3 17.6 6.4 12.7 0 12 6.4 11.3 11.3 6.4 12 0Z" fill="#EAF1FF" />
-      </svg>
+  <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-60">
+    {[['10%', '15%', 6], ['25%', '30%', 4], ['15%', '60%', 8], ['40%', '80%', 5], ['65%', '75%', 6], ['80%', '40%', 4], ['55%', '20%', 5], ['30%', '45%', 6], ['75%', '85%', 7], ['50%', '65%', 4]].map(([top, left, size], i) => (
+      <span
+        key={i}
+        style={{
+          position: 'absolute',
+          top,
+          left,
+          width: size,
+          height: size,
+          borderRadius: '50%',
+          background: '#EAF1FF',
+          opacity: 0.8
+        }}
+      />
     ))}
   </div>
 ));
@@ -297,6 +307,17 @@ const WordCard = React.memo(function WordCard({
       </div>
     </>
   );
+}, (prev, next) => {
+  return (
+    prev.item?.key === next.item?.key &&
+    prev.isAimed === next.isAimed &&
+    prev.isNearest === next.isNearest &&
+    prev.wasHit === next.wasHit &&
+    prev.typed === next.typed &&
+    prev.isWarning === next.isWarning &&
+    prev.diff === next.diff &&
+    Math.abs((prev.aimRatio || 0) - (next.aimRatio || 0)) < 0.05
+  );
 });
 
 const GameHeader = React.memo(function GameHeader({
@@ -349,7 +370,7 @@ const Spaceship = React.memo(function Spaceship({ angle }) {
         width="54"
         height="54"
         viewBox="0 0 44 44"
-        className="drop-shadow-[0_0_18px_rgba(138,138,246,0.9)]"
+        className="overflow-visible"
         aria-hidden
       >
         <path d="M19 35 L22 43 L25 35 Z" fill="#F6C453" opacity="0.95" />
@@ -537,7 +558,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
           }
         }
       }
-      setItems(s.items.map(it => ({ ...it })));
+      setItems([...s.items]);
       if (s.lives > 0) raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
