@@ -60,15 +60,15 @@ function buildPool(words, dir, diff) {
   return out;
 }
 
-const Stars = () => (
+const Stars = React.memo(() => (
   <div className="pointer-events-none absolute inset-0 overflow-hidden">
     {[['10%', '15%', 14, 3, 0], ['25%', '30%', 10, 4, 1], ['15%', '60%', 18, 3.5, 0.5], ['40%', '80%', 12, 4.5, 2], ['65%', '75%', 16, 3, 1.5], ['80%', '40%', 10, 5, 0.8], ['55%', '20%', 14, 4, 2.5], ['30%', '45%', 12, 3.2, 1.2], ['75%', '85%', 14, 3.8, 0.3], ['50%', '65%', 10, 4.2, 1.8]].map(([top, left, size, dur, delay], i) => (
-      <svg key={i} viewBox="0 0 24 24" style={{ position: 'absolute', top, left, width: size, height: size, animation: `tidTwinkle ${dur}s ease-in-out ${delay}s infinite` }}>
+      <svg key={i} viewBox="0 0 24 24" style={{ position: 'absolute', top, left, width: size, height: size, animation: `tidTwinkle ${dur}s ease-in-out ${delay}s infinite`, willChange: 'transform, opacity' }}>
         <path d="M12 0C12.7 6.4 17.6 11.3 24 12 17.6 12.7 12.7 17.6 12 24 11.3 17.6 6.4 12.7 0 12 6.4 11.3 11.3 6.4 12 0Z" fill="#EAF1FF" />
       </svg>
     ))}
   </div>
-);
+));
 const btnDark = { border: '1px solid #1E3A5F', background: '#132A54', color: '#8BA6CA' };
 const opt = on => ({ background: on ? '#1D3A78' : '#0F1F45', border: on ? '2px solid #F6C453' : '2px solid #1E3A5F' });
 
@@ -187,6 +187,253 @@ function getMatchProgress(answer, accepts, typedStr) {
   };
 }
 
+const WordCard = React.memo(function WordCard({
+  item,
+  isAimed,
+  isNearest,
+  wasHit,
+  typed,
+  diff,
+  aimRatio,
+  isWarning
+}) {
+  const answerChars = useMemo(() => Array.from(item.answer.trim()), [item.answer]);
+  const baseHintCount = HINT_LETTERS[diff] ?? 1;
+
+  const matchInfo = useMemo(() => {
+    if (isAimed) return getMatchProgress(item.answer, item.accepts, typed);
+    if (isNearest) return getMatchProgress(item.answer, item.accepts, '');
+    return { matchedLen: 0, nextIdx: -1, isMatched: false };
+  }, [isAimed, isNearest, item.answer, item.accepts, typed]);
+
+  return (
+    <>
+      <div
+        className={`pointer-events-auto max-w-[260px] rounded-[16px] px-3.5 py-2 text-[15px] font-black leading-tight shadow-xl ${wasHit ? 'scale-105 brightness-125' : ''}`}
+        style={{
+          background: isAimed ? '#F6C453' : isNearest ? '#163261' : '#132A54',
+          color: isAimed ? '#1b1d22' : '#EAF1FF',
+          border: `2px solid ${isAimed ? '#F6C453' : isNearest ? '#8A8AF6' : isWarning ? '#F87171' : '#2E5AA8'}`,
+          boxShadow: isAimed
+            ? '0 0 22px rgba(246,196,83,0.55)'
+            : isNearest
+            ? '0 0 16px rgba(138,138,246,0.45)'
+            : '0 4px 12px rgba(0,0,0,0.3)'
+        }}
+      >
+        <div className="flex items-center justify-center gap-1.5">
+          {isNearest && !isAimed && (
+            <span className="text-[13px] animate-bounce" title="Mục tiêu gần nhất">🎯</span>
+          )}
+          <span>{item.prompt}</span>
+        </div>
+        {isAimed && (
+          <div className="mt-1.5 h-[3px] overflow-hidden rounded-full bg-black/20">
+            <div className="h-full bg-[#1b1d22]" style={{ width: `${aimRatio * 100}%` }} />
+          </div>
+        )}
+      </div>
+
+      <div className="mt-2 flex flex-wrap justify-center gap-[4px]">
+        {answerChars.map((ch, i) => {
+          if (ch === ' ') {
+            return (
+              <span key={i} className="flex h-[24px] w-2.5 items-center justify-center text-[#5F7AA8] opacity-60">
+                ·
+              </span>
+            );
+          }
+
+          const isTyped = matchInfo.isMatched && i < matchInfo.matchedLen;
+          const isNext = (isAimed || isNearest) && i === matchInfo.nextIdx;
+          const isHinted = !isAimed && !isNearest && i < baseHintCount;
+
+          if (isTyped) {
+            return (
+              <span
+                key={i}
+                className="flex h-[24px] min-w-[16px] items-center justify-center rounded-[5px] bg-[#4ADE80]/20 border border-[#4ADE80] px-1 text-[13px] font-black leading-none text-[#4ADE80] shadow-[0_0_10px_rgba(74,222,128,0.7)]"
+              >
+                {ch.toUpperCase()}
+              </span>
+            );
+          }
+
+          if (isNext) {
+            return (
+              <div key={i} className="relative flex flex-col items-center">
+                <span
+                  className="flex h-[26px] min-w-[18px] -translate-y-[2px] items-center justify-center rounded-[6px] bg-[#F6C453]/35 border-2 border-[#F6C453] px-1.5 text-[14px] font-black leading-none text-[#F6C453] animate-pulse shadow-[0_0_16px_rgba(246,196,83,0.95)] scale-110 z-10"
+                >
+                  {ch.toUpperCase()}
+                </span>
+                <span className="absolute -bottom-2 text-[9px] text-[#F6C453] leading-none animate-bounce">
+                  ▲
+                </span>
+              </div>
+            );
+          }
+
+          if (isHinted) {
+            return (
+              <span
+                key={i}
+                className="flex h-[24px] min-w-[16px] items-center justify-center border-b-2 border-[#5F7AA8] px-1 text-[12px] font-bold leading-none text-[#8BA6CA]"
+              >
+                {ch.toUpperCase()}
+              </span>
+            );
+          }
+
+          return (
+            <span
+              key={i}
+              className="flex h-[24px] min-w-[16px] items-end justify-center border-b-2 border-[#40608F]/80 pb-0.5 text-[12px] font-black text-transparent"
+            >
+              _
+            </span>
+          );
+        })}
+      </div>
+    </>
+  );
+});
+
+const GameHeader = React.memo(function GameHeader({
+  score,
+  level,
+  streak,
+  record,
+  diffLabel,
+  speed,
+  paused,
+  onTogglePause,
+  lives
+}) {
+  return (
+    <div className="flex h-[62px] shrink-0 items-center gap-6 pl-6 pr-[122px]" style={{ background: '#0B1B3D', borderBottom: '1px solid #1E3A5F' }}>
+      <div><div className="text-[9.5px] font-black tracking-[.14em] text-[#5F7AA8]">ĐIỂM</div><div className="text-[21px] font-black leading-none text-[#F6C453]">{score}</div></div>
+      <div><div className="text-[9.5px] font-black tracking-[.14em] text-[#5F7AA8]">CẤP</div><div className="text-[21px] font-black leading-none text-[#8A8AF6]">{level}</div></div>
+      <div>
+        <div className="text-[9.5px] font-black tracking-[.14em] text-[#5F7AA8]">CHUỖI{record > 0 && <span className="text-[#40608F]"> · KỶ LỤC {record}</span>}</div>
+        <div className="flex items-baseline gap-[6px]">
+          <div className="text-[21px] font-black leading-none" style={{ color: streak >= STREAK_STEP ? '#4ADE80' : '#E6EDFF' }}>{streak >= STREAK_STEP ? '🔥' : ''}{streak}</div>
+          <span className="text-[10px] font-black text-[#5F7AA8]">liên tục</span>
+          {streak >= STREAK_STEP && <span className="rounded-full px-[6px] py-[2px] text-[10.5px] font-black" style={{ background: 'rgba(74,222,128,.16)', color: '#4ADE80' }}>x{Math.min(5, 1 + Math.floor(streak / STREAK_STEP))}</span>}
+        </div>
+      </div>
+      <div className="ml-auto flex items-center gap-3">
+        <span className="hidden rounded-full px-[9px] py-[4px] text-[10px] font-black tracking-[.1em] lg:inline" style={{ background: '#132A54', color: '#8BA6CA' }}>{diffLabel} · TỐC ĐỘ {speed}</span>
+        <button type="button" onMouseDown={e => e.preventDefault()} onClick={onTogglePause} title={paused ? 'Chơi tiếp (Esc)' : 'Tạm dừng (Esc)'} className="flex h-[32px] w-[32px] items-center justify-center rounded-[10px] transition-colors" style={btnDark}>
+          {paused ? <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg> : <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></svg>}
+        </button>
+        <div className="flex items-center gap-[5px]">
+          {[0, 1, 2].map(n => <svg key={n} width="19" height="19" viewBox="0 0 24 24" fill={n < lives ? '#F56565' : 'rgba(255,255,255,.15)'}><path d="M12 21s-7.6-4.8-9.6-9.1A5.4 5.4 0 0 1 12 6.4a5.4 5.4 0 0 1 9.6 5.5C19.6 16.2 12 21 12 21Z" /></svg>)}
+        </div>
+      </div>
+    </div>
+  );
+});
+
+const Spaceship = React.memo(function Spaceship({ angle }) {
+  return (
+    <div
+      className="pointer-events-none absolute bottom-3 left-1/2 z-20"
+      style={{
+        transform: `translateX(-50%) rotate(${angle}deg)`,
+        transformOrigin: '50% 65%',
+        willChange: 'transform'
+      }}
+    >
+      <svg
+        width="54"
+        height="54"
+        viewBox="0 0 44 44"
+        className="drop-shadow-[0_0_18px_rgba(138,138,246,0.9)]"
+        aria-hidden
+      >
+        <path d="M19 35 L22 43 L25 35 Z" fill="#F6C453" opacity="0.95" />
+        <path d="M20 35 L22 40 L24 35 Z" fill="#FFFFFF" />
+        <ellipse cx="14" cy="37" rx="2" ry="4" fill="#ED7A13" opacity="0.75" />
+        <ellipse cx="30" cy="37" rx="2" ry="4" fill="#ED7A13" opacity="0.75" />
+        <path
+          d="M22 3 L37 37 L22 30 L7 37 Z"
+          fill="#8A8AF6"
+          stroke="#EAF1FF"
+          strokeWidth="2.5"
+          strokeLinejoin="round"
+        />
+        <ellipse cx="22" cy="22" rx="3.5" ry="6" fill="#1D3A78" stroke="#EAF1FF" strokeWidth="1" />
+        <circle cx="22" cy="10" r="2.5" fill="#F6C453" />
+        <line x1="22" y1="3" x2="22" y2="10" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
+      </svg>
+    </div>
+  );
+});
+
+const GameBottomBar = React.memo(function GameBottomBar({
+  noMatch,
+  aim,
+  aimNextChar,
+  nearestItem,
+  nearestFirstChar,
+  dirLabel,
+  typed,
+  over,
+  flash,
+  inputRef,
+  handleInputChange,
+  onKeyDown
+}) {
+  return (
+    <div className="shrink-0 px-6 pb-5 pt-3" style={{ background: '#0B1B3D', borderTop: '1px solid #1E3A5F' }}>
+      <div className="mb-2 h-[18px] truncate px-4 text-center text-[11px] font-black tracking-[.12em]">
+        {noMatch ? (
+          <span className="text-[#FCA5A5] animate-pulse">✘ CHƯA ĐÚNG — BẤM BACKSPACE ĐỂ XÓA SỬA HOẶC ENTER ĐỂ GÕ LẠI</span>
+        ) : aim ? (
+          <span className="text-[#F6C453] drop-shadow-[0_0_8px_rgba(246,196,83,0.5)]">
+            🎯 ĐANG NGẮM: {aim.answer.toUpperCase()}
+            {aimNextChar ? (
+              <span className="ml-2 inline-flex items-center rounded-md bg-[#F6C453]/25 px-2 py-0.5 text-[#F6C453] border border-[#F6C453]">
+                PHÍM TIẾP: {aimNextChar.toUpperCase()}
+              </span>
+            ) : null}
+          </span>
+        ) : nearestItem ? (
+          <span className="text-[#8A8AF6]">
+            🎯 MỤC TIÊU GẦN NHẤT: {nearestItem.prompt.toUpperCase()}
+            {nearestFirstChar ? (
+              <span className="ml-2 inline-flex items-center rounded-md bg-[#8A8AF6]/25 px-2 py-0.5 text-[#E6EDFF] border border-[#8A8AF6]">
+                GÕ [{nearestFirstChar.toUpperCase()}] ĐỂ BẮN
+              </span>
+            ) : null}
+          </span>
+        ) : (
+          <span className="text-[#5F7AA8]">{dirLabel ? 'GÕ TỪ TIẾNG ANH' : 'GÕ NGHĨA TIẾNG VIỆT — KHÔNG DẤU CŨNG ĐƯỢC'}</span>
+        )}
+      </div>
+      <input
+        ref={inputRef}
+        value={typed}
+        onChange={handleInputChange}
+        onKeyDown={onKeyDown}
+        disabled={over}
+        autoFocus
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="off"
+        spellCheck={false}
+        placeholder={over ? '—' : 'Gõ đáp án…'}
+        className={`mx-auto block w-full max-w-[560px] rounded-[16px] border-2 px-5 py-3 text-center text-[19px] font-black outline-none transition-colors ${noMatch ? 'border-[#F87171] text-[#FCA5A5]' : aim ? 'border-[#F6C453] text-[#EAF1FF]' : 'border-[#2E5AA8] text-[#EAF1FF] focus:border-[#F6C453]'}`}
+        style={{ background: '#132A54' }}
+      />
+      <div className="mt-2 h-[20px] truncate text-center text-[13px] font-bold">
+        {flash && <span style={{ color: flash.ok ? '#86EFAC' : '#FCA5A5' }}>{flash.ok ? '✔' : '✘'} {flash.prompt} → <span className="text-[#E6EDFF]">{flash.answer}</span></span>}
+      </div>
+    </div>
+  );
+});
+
 export default function Blast({ words, full, onToggleFull, onExit }) {
   const [dir, setDir] = useState(() => getSetting('blast_dir', 'vi_en'));
   const [diff, setDiff] = useState(() => getSetting('blast_diff', 'normal'));
@@ -207,11 +454,29 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
   const [noMatch, setNoMatch] = useState(false);
   const inputRef = useRef(null);
   const playAreaRef = useRef(null);
+  const playAreaSizeRef = useRef({ width: 800, height: 600 });
   const st = useRef({ items: [], last: 0, spawnIn: 0, queue: [], lives: 3 });
   const pool = useMemo(() => buildPool(words, dir, diff), [words, dir, diff]);
   const level = Math.floor(stats.hits / 8) + 1;
   const mult = SPEEDS.find(s => s.id === speed)?.mult ?? 1;
   const save = (k, v, set) => { set(v); setSetting(k, v); };
+
+  // Observe play area size changes without forcing reflows during animation frames
+  useEffect(() => {
+    if (!playAreaRef.current) return;
+    const updateSize = () => {
+      if (playAreaRef.current) {
+        const { clientWidth, clientHeight } = playAreaRef.current;
+        if (clientWidth && clientHeight) {
+          playAreaSizeRef.current = { width: clientWidth, height: clientHeight };
+        }
+      }
+    };
+    updateSize();
+    const ro = new ResizeObserver(updateSize);
+    ro.observe(playAreaRef.current);
+    return () => ro.disconnect();
+  }, [running]);
 
   const start = () => {
     if (!pool.length) return;
@@ -279,13 +544,16 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     return () => cancelAnimationFrame(raf);
   }, [running, pool, mult, level]);
 
+  // Keys string to prevent redundant computations on animation frames
+  const itemKeys = useMemo(() => items.map(i => i.key).join(','), [items]);
+
   // ---- typing: a match shoots the word, a dead prefix clears the box ----
   const aim = useMemo(() => {
     const t = norm(typed);
     if (!t) return null;
     const tClean = t.replace(/\s+/g, '');
     let best = null;
-    items.forEach(it => it.accepts.forEach(a => {
+    st.current.items.forEach(it => it.accepts.forEach(a => {
       const normA = norm(a);
       const aClean = normA.replace(/\s+/g, '');
       if ((normA.length >= t.length && normA.startsWith(t)) || (aClean.length >= tClean.length && aClean.startsWith(tClean))) {
@@ -294,38 +562,32 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
       }
     }));
     return best;
-  }, [typed, items]);
+  }, [typed, itemKeys]);
 
-  // Identify nearest falling item (lowest on screen, largest y) or currently aimed item
+  // Identify nearest falling item or currently aimed item
   const nearestItem = useMemo(() => {
     if (!items.length) return null;
     if (aim) {
       const targeted = items.find(it => it.key === aim.key);
       if (targeted) return targeted;
     }
-    return [...items].sort((a, b) => b.y - a.y)[0];
-  }, [items, aim]);
+    return items[0] || null;
+  }, [aim?.key, itemKeys]);
 
-  // Calculate arrow angle pointing to nearestItem (ship at center bottom)
+  // Calculate arrow angle pointing to nearestItem without forcing synchronous layout reflow
   const arrowAngle = useMemo(() => {
     if (!nearestItem) return 0;
-    let dx = nearestItem.x - 50;
-    let dy = (nearestItem.y * 85) - 92;
-    if (playAreaRef.current) {
-      const rect = playAreaRef.current.getBoundingClientRect();
-      if (rect.width && rect.height) {
-        const shipX = rect.width / 2;
-        const shipY = rect.height - 24;
-        let targetX = (nearestItem.x / 100) * rect.width;
-        targetX = Math.max(140, Math.min(rect.width - 140, targetX));
-        const targetY = (nearestItem.y * rect.height) - (nearestItem.y * 70) + 24;
-        dx = targetX - shipX;
-        dy = targetY - shipY;
-      }
-    }
+    const { width, height } = playAreaSizeRef.current;
+    const shipX = width / 2;
+    const shipY = height - 24;
+    let targetX = (nearestItem.x / 100) * width;
+    targetX = Math.max(140, Math.min(width - 140, targetX));
+    const targetY = (nearestItem.y * (height - 70)) + 24;
+    const dx = targetX - shipX;
+    const dy = targetY - shipY;
     const rad = Math.atan2(dx, -dy);
     return Math.round(rad * (180 / Math.PI));
-  }, [nearestItem, items]);
+  }, [nearestItem?.key, nearestItem?.x, Math.round((nearestItem?.y || 0) * 100)]);
 
   // Fire laser and update typing
   const handleInputChange = (e) => {
@@ -352,13 +614,11 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
       playBoomSound();
 
       let targetXPercent = hitItem.x;
-      if (playAreaRef.current) {
-        const rect = playAreaRef.current.getBoundingClientRect();
-        if (rect.width) {
-          const rawX = (hitItem.x / 100) * rect.width;
-          const clampedX = Math.max(140, Math.min(rect.width - 140, rawX));
-          targetXPercent = (clampedX / rect.width) * 100;
-        }
+      const width = playAreaSizeRef.current.width || 800;
+      if (width) {
+        const rawX = (hitItem.x / 100) * width;
+        const clampedX = Math.max(140, Math.min(width - 140, rawX));
+        targetXPercent = (clampedX / width) * 100;
       }
 
       const laserId = `${Date.now()}-${Math.random()}`;
@@ -426,13 +686,11 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
       playLaserSound();
       const laserId = `${Date.now()}-${Math.random()}`;
       let targetXPercent = targetItem.x;
-      if (playAreaRef.current) {
-        const rect = playAreaRef.current.getBoundingClientRect();
-        if (rect.width) {
-          const rawX = (targetItem.x / 100) * rect.width;
-          const clampedX = Math.max(140, Math.min(rect.width - 140, rawX));
-          targetXPercent = (clampedX / rect.width) * 100;
-        }
+      const width = playAreaSizeRef.current.width || 800;
+      if (width) {
+        const rawX = (targetItem.x / 100) * width;
+        const clampedX = Math.max(140, Math.min(width - 140, rawX));
+        targetXPercent = (clampedX / width) * 100;
       }
       setLasers(prev => [
         ...prev,
@@ -451,6 +709,14 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     setTyped(val);
     if (st.current) st.current.typed = val;
   };
+
+  const handleKeyDown = useCallback(e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      setTyped('');
+      if (st.current) st.current.typed = '';
+    }
+  }, []);
 
   useEffect(() => {
     if (!running) return;
@@ -486,22 +752,22 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
   }, [typed, aim, running]);
   useEffect(() => { if (!flash) return; const t = setTimeout(() => setFlash(null), 2500); return () => clearTimeout(t); }, [flash]);
 
-  // Derived next characters for status bar
+  // Derived next characters for status bar (cached on itemKeys to prevent 60fps re-runs)
   const aimItem = useMemo(() => {
     if (!aim) return null;
     return items.find(it => it.key === aim.key) || null;
-  }, [aim, items]);
+  }, [aim?.key, itemKeys]);
 
   const aimProgress = useMemo(() => {
     if (!aimItem) return null;
     return getMatchProgress(aimItem.answer, aimItem.accepts, typed);
-  }, [aimItem, typed]);
+  }, [aimItem?.key, typed]);
 
   const aimNextChar = useMemo(() => {
     if (!aimItem || !aimProgress || aimProgress.nextIdx < 0) return null;
     const chars = Array.from(aimItem.answer.trim());
     return chars[aimProgress.nextIdx] || null;
-  }, [aimItem, aimProgress]);
+  }, [aimItem?.key, aimProgress]);
 
   const nearestFirstChar = useMemo(() => {
     if (!nearestItem) return null;
@@ -509,7 +775,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     if (prog.nextIdx < 0) return null;
     const chars = Array.from(nearestItem.answer.trim());
     return chars[prog.nextIdx] || null;
-  }, [nearestItem]);
+  }, [nearestItem?.key]);
 
   // Esc = pause; any key focuses the input; pause when the window loses focus
   useEffect(() => {
@@ -581,257 +847,126 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
         </div>
       ) : (
         <div className="absolute inset-0 flex flex-col">
-          <div className="flex h-[62px] shrink-0 items-center gap-6 pl-6 pr-[122px]" style={{ background: '#0B1B3D', borderBottom: '1px solid #1E3A5F' }}>
-            <div><div className="text-[9.5px] font-black tracking-[.14em] text-[#5F7AA8]">ĐIỂM</div><div className="text-[21px] font-black leading-none text-[#F6C453]">{stats.score}</div></div>
-            <div><div className="text-[9.5px] font-black tracking-[.14em] text-[#5F7AA8]">CẤP</div><div className="text-[21px] font-black leading-none text-[#8A8AF6]">{level}</div></div>
-            <div>
-              <div className="text-[9.5px] font-black tracking-[.14em] text-[#5F7AA8]">CHUỖI{record > 0 && <span className="text-[#40608F]"> · KỶ LỤC {record}</span>}</div>
-              <div className="flex items-baseline gap-[6px]">
-                <div className="text-[21px] font-black leading-none" style={{ color: stats.streak >= STREAK_STEP ? '#4ADE80' : '#E6EDFF' }}>{stats.streak >= STREAK_STEP ? '🔥' : ''}{stats.streak}</div>
-                <span className="text-[10px] font-black text-[#5F7AA8]">liên tục</span>
-                {stats.streak >= STREAK_STEP && <span className="rounded-full px-[6px] py-[2px] text-[10.5px] font-black" style={{ background: 'rgba(74,222,128,.16)', color: '#4ADE80' }}>x{Math.min(5, 1 + Math.floor(stats.streak / STREAK_STEP))}</span>}
-              </div>
-            </div>
-            <div className="ml-auto flex items-center gap-3">
-              <span className="hidden rounded-full px-[9px] py-[4px] text-[10px] font-black tracking-[.1em] lg:inline" style={{ background: '#132A54', color: '#8BA6CA' }}>{DIFFS.find(d => d.id === diff)?.label.toUpperCase()} · TỐC ĐỘ {speed}</span>
-              <button type="button" onMouseDown={e => e.preventDefault()} onClick={() => setPaused(p => !p)} title={paused ? 'Chơi tiếp (Esc)' : 'Tạm dừng (Esc)'} className="flex h-[32px] w-[32px] items-center justify-center rounded-[10px] transition-colors" style={btnDark}>
-                {paused ? <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg> : <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></svg>}
-              </button>
-              <div className="flex items-center gap-[5px]">
-                {[0, 1, 2].map(n => <svg key={n} width="19" height="19" viewBox="0 0 24 24" fill={n < stats.lives ? '#F56565' : 'rgba(255,255,255,.15)'}><path d="M12 21s-7.6-4.8-9.6-9.1A5.4 5.4 0 0 1 12 6.4a5.4 5.4 0 0 1 9.6 5.5C19.6 16.2 12 21 12 21Z" /></svg>)}
-              </div>
-            </div>
+          <GameHeader
+            score={stats.score}
+            level={level}
+            streak={stats.streak}
+            record={record}
+            diffLabel={DIFFS.find(d => d.id === diff)?.label.toUpperCase()}
+            speed={speed}
+            paused={paused}
+            onTogglePause={() => setPaused(p => !p)}
+            lives={stats.lives}
+          />
+          <div className="relative h-[4px] shrink-0 bg-[#132A54]">
+            <div className="absolute inset-y-0 left-0 bg-[#8A8AF6]" style={{ width: `${((stats.hits % 8) / 8) * 100}%` }} />
           </div>
-          <div className="relative h-[4px] shrink-0 bg-[#132A54]"><div className="absolute inset-y-0 left-0 bg-[#8A8AF6] transition-all" style={{ width: `${((stats.hits % 8) / 8) * 100}%` }} /></div>
           <div ref={playAreaRef} className="relative flex-1 overflow-hidden" onMouseDown={e => { e.preventDefault(); inputRef.current?.focus(); }}>
             <Stars />
 
             {/* Laser beams overlay */}
-            <svg className="pointer-events-none absolute inset-0 z-10 h-full w-full overflow-hidden">
-              <defs>
-                <filter id="laserGlow" x="-30%" y="-30%" width="160%" height="160%">
-                  <feGaussianBlur stdDeviation="4" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-              {lasers.map(l => (
-                <g key={l.id} className="vc-shot">
-                  {/* Outer laser glow */}
-                  <line
-                    x1={`${l.x1}%`}
-                    y1={`${l.y1}%`}
-                    x2={`${l.x2}%`}
-                    y2={`${l.y2}%`}
-                    stroke="#F6C453"
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                    opacity="0.5"
-                    filter="url(#laserGlow)"
-                  />
-                  {/* Mid cyan/purple beam */}
-                  <line
-                    x1={`${l.x1}%`}
-                    y1={`${l.y1}%`}
-                    x2={`${l.x2}%`}
-                    y2={`${l.y2}%`}
-                    stroke="#8A8AF6"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    opacity="0.9"
-                  />
-                  {/* Core white beam */}
-                  <line
-                    x1={`${l.x1}%`}
-                    y1={`${l.y1}%`}
-                    x2={`${l.x2}%`}
-                    y2={`${l.y2}%`}
-                    stroke="#FFFFFF"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  {/* Muzzle flash at ship nozzle */}
-                  <circle cx={`${l.x1}%`} cy={`${l.y1}%`} r="9" fill="#F6C453" opacity="0.9" filter="url(#laserGlow)" />
-                  <circle cx={`${l.x1}%`} cy={`${l.y1}%`} r="4" fill="#FFFFFF" />
+            {lasers.length > 0 && (
+              <svg className="pointer-events-none absolute inset-0 z-10 h-full w-full overflow-hidden">
+                {lasers.map(l => (
+                  <g key={l.id} className="vc-shot">
+                    {/* Outer laser glow */}
+                    <line
+                      x1={`${l.x1}%`}
+                      y1={`${l.y1}%`}
+                      x2={`${l.x2}%`}
+                      y2={`${l.y2}%`}
+                      stroke="#F6C453"
+                      strokeWidth="8"
+                      strokeLinecap="round"
+                      opacity="0.4"
+                    />
+                    {/* Mid cyan/purple beam */}
+                    <line
+                      x1={`${l.x1}%`}
+                      y1={`${l.y1}%`}
+                      x2={`${l.x2}%`}
+                      y2={`${l.y2}%`}
+                      stroke="#8A8AF6"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      opacity="0.9"
+                    />
+                    {/* Core white beam */}
+                    <line
+                      x1={`${l.x1}%`}
+                      y1={`${l.y1}%`}
+                      x2={`${l.x2}%`}
+                      y2={`${l.y2}%`}
+                      stroke="#FFFFFF"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                    {/* Muzzle flash at ship nozzle */}
+                    <circle cx={`${l.x1}%`} cy={`${l.y1}%`} r="8" fill="#F6C453" opacity="0.8" />
+                    <circle cx={`${l.x1}%`} cy={`${l.y1}%`} r="3.5" fill="#FFFFFF" />
 
-                  {/* Impact spark at target word */}
-                  <circle cx={`${l.x2}%`} cy={`${l.y2}%`} r="18" fill="#F6C453" opacity="0.6" filter="url(#laserGlow)" />
-                  <circle cx={`${l.x2}%`} cy={`${l.y2}%`} r="10" fill="#ED7A13" opacity="0.8" />
-                  <circle cx={`${l.x2}%`} cy={`${l.y2}%`} r="4" fill="#FFFFFF" />
-                </g>
-              ))}
-            </svg>
+                    {/* Impact spark at target word */}
+                    <circle cx={`${l.x2}%`} cy={`${l.y2}%`} r="14" fill="#F6C453" opacity="0.6" />
+                    <circle cx={`${l.x2}%`} cy={`${l.y2}%`} r="8" fill="#ED7A13" opacity="0.8" />
+                    <circle cx={`${l.x2}%`} cy={`${l.y2}%`} r="3.5" fill="#FFFFFF" />
+                  </g>
+                ))}
+              </svg>
+            )}
 
+            {/* Hardware-accelerated falling words */}
             {items.map(it => {
               const isAimed = aim?.key === it.key;
               const isNearest = !aim && nearestItem?.key === it.key;
               const wasHit = hitWords[it.key] && (Date.now() - hitWords[it.key] < 220);
-              const answerChars = Array.from(it.answer.trim());
-              const baseHintCount = HINT_LETTERS[diff] ?? 1;
-
-              // Calculate match progress and next character
-              let matchInfo;
-              if (isAimed) {
-                matchInfo = getMatchProgress(it.answer, it.accepts, typed);
-              } else if (isNearest) {
-                matchInfo = getMatchProgress(it.answer, it.accepts, '');
-              } else {
-                matchInfo = { matchedLen: 0, nextIdx: -1, isMatched: false };
-              }
+              const playAreaH = playAreaSizeRef.current.height || 600;
+              const yPx = Math.round(it.y * (playAreaH - 70));
 
               return (
                 <div
                   key={it.key}
-                  className="absolute -translate-x-1/2 text-center pointer-events-none"
+                  className="pointer-events-none absolute text-center"
                   style={{
                     left: `clamp(140px, ${it.x}%, calc(100% - 140px))`,
-                    top: `calc(${it.y * 100}% - ${it.y * 70}px)`,
+                    top: 0,
+                    transform: `translate3d(-50%, ${yPx}px, 0)`,
+                    willChange: 'transform',
                     zIndex: isAimed ? 15 : isNearest ? 12 : 5
                   }}
                 >
-                  {/* Word card container */}
-                  <div
-                    className={`pointer-events-auto max-w-[260px] rounded-[16px] px-3.5 py-2 text-[15px] font-black leading-tight shadow-xl transition-transform duration-75 ${wasHit ? 'scale-105 brightness-125' : ''}`}
-                    style={{
-                      background: isAimed ? '#F6C453' : isNearest ? '#163261' : '#132A54',
-                      color: isAimed ? '#1b1d22' : '#EAF1FF',
-                      border: `2px solid ${isAimed ? '#F6C453' : isNearest ? '#8A8AF6' : it.y > 0.75 ? '#F87171' : '#2E5AA8'}`,
-                      boxShadow: isAimed
-                        ? '0 0 22px rgba(246,196,83,0.55)'
-                        : isNearest
-                        ? '0 0 16px rgba(138,138,246,0.45)'
-                        : '0 4px 12px rgba(0,0,0,0.3)'
-                    }}
-                  >
-                    <div className="flex items-center justify-center gap-1.5">
-                      {isNearest && !isAimed && (
-                        <span className="text-[13px] animate-bounce" title="Mục tiêu gần nhất">🎯</span>
-                      )}
-                      <span>{it.prompt}</span>
-                    </div>
-                    {isAimed && (
-                      <div className="mt-1.5 h-[3px] overflow-hidden rounded-full bg-black/20">
-                        <div className="h-full bg-[#1b1d22] transition-all" style={{ width: `${aim.r * 100}%` }} />
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Letter slots with NEXT character revealed and highlighted */}
-                  <div className="mt-2 flex flex-wrap justify-center gap-[4px]">
-                    {answerChars.map((ch, i) => {
-                      if (ch === ' ') {
-                        return (
-                          <span key={i} className="flex h-[24px] w-2.5 items-center justify-center text-[#5F7AA8] opacity-60">
-                            ·
-                          </span>
-                        );
-                      }
-
-                      const isTyped = matchInfo.isMatched && i < matchInfo.matchedLen;
-                      const isNext = (isAimed || isNearest) && i === matchInfo.nextIdx;
-                      const isHinted = !isAimed && !isNearest && i < baseHintCount;
-
-                      if (isTyped) {
-                        return (
-                          <span
-                            key={i}
-                            className="flex h-[24px] min-w-[16px] items-center justify-center rounded-[5px] bg-[#4ADE80]/20 border border-[#4ADE80] px-1 text-[13px] font-black leading-none text-[#4ADE80] shadow-[0_0_10px_rgba(74,222,128,0.7)]"
-                          >
-                            {ch.toUpperCase()}
-                          </span>
-                        );
-                      }
-
-                      if (isNext) {
-                        return (
-                          <div key={i} className="relative flex flex-col items-center">
-                            <span
-                              className="flex h-[26px] min-w-[18px] -translate-y-[2px] items-center justify-center rounded-[6px] bg-[#F6C453]/35 border-2 border-[#F6C453] px-1.5 text-[14px] font-black leading-none text-[#F6C453] animate-pulse shadow-[0_0_16px_rgba(246,196,83,0.95)] scale-110 transition-all z-10"
-                            >
-                              {ch.toUpperCase()}
-                            </span>
-                            <span className="absolute -bottom-2 text-[9px] text-[#F6C453] leading-none animate-bounce">
-                              ▲
-                            </span>
-                          </div>
-                        );
-                      }
-
-                      if (isHinted) {
-                        return (
-                          <span
-                            key={i}
-                            className="flex h-[24px] min-w-[16px] items-center justify-center border-b-2 border-[#5F7AA8] px-1 text-[12px] font-bold leading-none text-[#8BA6CA]"
-                          >
-                            {ch.toUpperCase()}
-                          </span>
-                        );
-                      }
-
-                      return (
-                        <span
-                          key={i}
-                          className="flex h-[24px] min-w-[16px] items-end justify-center border-b-2 border-[#40608F]/80 pb-0.5 text-[12px] font-black text-transparent"
-                        >
-                          _
-                        </span>
-                      );
-                    })}
-                  </div>
+                  <WordCard
+                    item={it}
+                    isAimed={isAimed}
+                    isNearest={isNearest}
+                    wasHit={wasHit}
+                    typed={isAimed ? typed : ''}
+                    diff={diff}
+                    aimRatio={isAimed ? aim.r : 0}
+                    isWarning={it.y > 0.75}
+                  />
                 </div>
               );
             })}
 
-            {booms.map(b => (
-              <span
-                key={b.key}
-                className="vc-boom pointer-events-none absolute h-20 w-20 -translate-x-1/2 -translate-y-1/2 rounded-full z-25"
-                style={{
-                  left: `clamp(140px, ${b.x}%, calc(100% - 140px))`,
-                  top: `calc(${b.y * 100}% - ${b.y * 70}px)`,
-                  background: 'radial-gradient(#F6C453,#ED7A13 55%,transparent 70%)'
-                }}
-              />
-            ))}
-
-            {/* Spaceship arrow rotating to track the nearest / aimed falling word */}
-            <div
-              className="pointer-events-none absolute bottom-3 left-1/2 z-20 transition-transform duration-100 ease-out"
-              style={{
-                transform: `translateX(-50%) rotate(${arrowAngle}deg)`,
-                transformOrigin: '50% 65%'
-              }}
-            >
-              <svg
-                width="54"
-                height="54"
-                viewBox="0 0 44 44"
-                className="drop-shadow-[0_0_18px_rgba(138,138,246,0.9)]"
-                aria-hidden
-              >
-                {/* Thruster exhaust flame */}
-                <path d="M19 35 L22 43 L25 35 Z" fill="#F6C453" opacity="0.95" />
-                <path d="M20 35 L22 40 L24 35 Z" fill="#FFFFFF" />
-                {/* Dual wing thruster flame sparks */}
-                <ellipse cx="14" cy="37" rx="2" ry="4" fill="#ED7A13" opacity="0.75" />
-                <ellipse cx="30" cy="37" rx="2" ry="4" fill="#ED7A13" opacity="0.75" />
-                {/* Spaceship hull */}
-                <path
-                  d="M22 3 L37 37 L22 30 L7 37 Z"
-                  fill="#8A8AF6"
-                  stroke="#EAF1FF"
-                  strokeWidth="2.5"
-                  strokeLinejoin="round"
+            {booms.map(b => {
+              const playAreaH = playAreaSizeRef.current.height || 600;
+              const yPx = Math.round(b.y * (playAreaH - 70));
+              return (
+                <span
+                  key={b.key}
+                  className="vc-boom pointer-events-none absolute h-20 w-20 rounded-full z-25"
+                  style={{
+                    left: `clamp(140px, ${b.x}%, calc(100% - 140px))`,
+                    top: 0,
+                    transform: `translate3d(-50%, ${yPx}px, 0)`,
+                    background: 'radial-gradient(#F6C453,#ED7A13 55%,transparent 70%)'
+                  }}
                 />
-                {/* Cockpit canopy */}
-                <ellipse cx="22" cy="22" rx="3.5" ry="6" fill="#1D3A78" stroke="#EAF1FF" strokeWidth="1" />
-                {/* Laser cannon tip */}
-                <circle cx="22" cy="10" r="2.5" fill="#F6C453" />
-                <line x1="22" y1="3" x2="22" y2="10" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
-              </svg>
-            </div>
+              );
+            })}
+
+            {/* Spaceship arrow rotating smoothly with will-change */}
+            <Spaceship angle={arrowAngle} />
 
             {!over && count > 0 && (
               <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-2 text-center" style={{ background: 'rgba(5,13,31,.7)' }}>
@@ -883,40 +1018,20 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
               </div>
             )}
           </div>
-          <div className="shrink-0 px-6 pb-5 pt-3" style={{ background: '#0B1B3D', borderTop: '1px solid #1E3A5F' }}>
-            <div className="mb-2 h-[18px] truncate px-4 text-center text-[11px] font-black tracking-[.12em]">
-              {noMatch ? (
-                <span className="text-[#FCA5A5] animate-pulse">✘ CHƯA ĐÚNG — BẤM BACKSPACE ĐỂ XÓA SỬA HOẶC ENTER ĐỂ GÕ LẠI</span>
-              ) : aim ? (
-                <span className="text-[#F6C453] drop-shadow-[0_0_8px_rgba(246,196,83,0.5)]">
-                  🎯 ĐANG NGẮM: {aim.answer.toUpperCase()}
-                  {aimNextChar ? (
-                    <span className="ml-2 inline-flex items-center rounded-md bg-[#F6C453]/25 px-2 py-0.5 text-[#F6C453] border border-[#F6C453]">
-                      PHÍM TIẾP: {aimNextChar.toUpperCase()}
-                    </span>
-                  ) : null}
-                </span>
-              ) : nearestItem ? (
-                <span className="text-[#8A8AF6]">
-                  🎯 MỤC TIÊU GẦN NHẤT: {nearestItem.prompt.toUpperCase()}
-                  {nearestFirstChar ? (
-                    <span className="ml-2 inline-flex items-center rounded-md bg-[#8A8AF6]/25 px-2 py-0.5 text-[#E6EDFF] border border-[#8A8AF6]">
-                      GÕ [{nearestFirstChar.toUpperCase()}] ĐỂ BẮN
-                    </span>
-                  ) : null}
-                </span>
-              ) : (
-                <span className="text-[#5F7AA8]">{dirLabel ? 'GÕ TỪ TIẾNG ANH' : 'GÕ NGHĨA TIẾNG VIỆT — KHÔNG DẤU CŨNG ĐƯỢC'}</span>
-              )}
-            </div>
-            <input ref={inputRef} value={typed} onChange={handleInputChange} onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); setTyped(''); if (st.current) st.current.typed = ''; } }}
-              disabled={over} autoFocus autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false} placeholder={over ? '—' : 'Gõ đáp án…'}
-              className={`mx-auto block w-full max-w-[560px] rounded-[16px] border-2 px-5 py-3 text-center text-[19px] font-black outline-none transition-colors ${noMatch ? 'border-[#F87171] text-[#FCA5A5]' : aim ? 'border-[#F6C453] text-[#EAF1FF]' : 'border-[#2E5AA8] text-[#EAF1FF] focus:border-[#F6C453]'}`}
-              style={{ background: '#132A54' }} />
-            <div className="mt-2 h-[20px] truncate text-center text-[13px] font-bold">
-              {flash && <span style={{ color: flash.ok ? '#86EFAC' : '#FCA5A5' }}>{flash.ok ? '✔' : '✘'} {flash.prompt} → <span className="text-[#E6EDFF]">{flash.answer}</span></span>}
-            </div>
-          </div>
+          <GameBottomBar
+            noMatch={noMatch}
+            aim={aim}
+            aimNextChar={aimNextChar}
+            nearestItem={nearestItem}
+            nearestFirstChar={nearestFirstChar}
+            dirLabel={dirLabel}
+            typed={typed}
+            over={over}
+            flash={flash}
+            inputRef={inputRef}
+            handleInputChange={handleInputChange}
+            onKeyDown={handleKeyDown}
+          />
         </div>
       )}
     </div>
