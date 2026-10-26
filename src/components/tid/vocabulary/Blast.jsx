@@ -256,7 +256,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
         setStats(v => ({ ...v, streak: 0, lives: s.lives }));
         if (s.lives === 0) { setOver(true); logActivity(); }
 
-        // Tự động làm trắng input khi từ rơi qua vạch đáy
+        // Tự động làm trắng input khi từ đang ngắm rơi qua vạch đáy
         const curTyped = norm(s.typed || '');
         if (curTyped) {
           const curClean = curTyped.replace(/\s+/g, '');
@@ -266,13 +266,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
               return normA.startsWith(curTyped) || normA.replace(/\s+/g, '').startsWith(curClean);
             })
           );
-          const stillMatchesAny = s.items.some(it =>
-            it.accepts.some(a => {
-              const normA = norm(a);
-              return normA.startsWith(curTyped) || normA.replace(/\s+/g, '').startsWith(curClean);
-            })
-          );
-          if (wasAimingEscaped || !stillMatchesAny) {
+          if (wasAimingEscaped) {
             s.typed = '';
             setTyped('');
           }
@@ -489,8 +483,6 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
   useEffect(() => {
     if (!running || !typed.trim() || aim) { setNoMatch(false); return; }
     setNoMatch(true);
-    const b = setTimeout(() => { setTyped(''); if (st.current) st.current.typed = ''; setNoMatch(false); }, 300);
-    return () => clearTimeout(b);
   }, [typed, aim, running]);
   useEffect(() => { if (!flash) return; const t = setTimeout(() => setFlash(null), 2500); return () => clearTimeout(t); }, [flash]);
 
@@ -894,7 +886,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
           <div className="shrink-0 px-6 pb-5 pt-3" style={{ background: '#0B1B3D', borderTop: '1px solid #1E3A5F' }}>
             <div className="mb-2 h-[18px] truncate px-4 text-center text-[11px] font-black tracking-[.12em]">
               {noMatch ? (
-                <span className="text-[#FCA5A5] animate-pulse">✘ KHÔNG KHỚP TỪ NÀO — ĐANG DỌN Ô GÕ…</span>
+                <span className="text-[#FCA5A5] animate-pulse">✘ CHƯA ĐÚNG — BẤM BACKSPACE ĐỂ XÓA SỬA HOẶC ENTER ĐỂ GÕ LẠI</span>
               ) : aim ? (
                 <span className="text-[#F6C453] drop-shadow-[0_0_8px_rgba(246,196,83,0.5)]">
                   🎯 ĐANG NGẮM: {aim.answer.toUpperCase()}
@@ -917,10 +909,10 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
                 <span className="text-[#5F7AA8]">{dirLabel ? 'GÕ TỪ TIẾNG ANH' : 'GÕ NGHĨA TIẾNG VIỆT — KHÔNG DẤU CŨNG ĐƯỢC'}</span>
               )}
             </div>
-            <input ref={inputRef} value={typed} onChange={handleInputChange} onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); setTyped(''); } }}
+            <input ref={inputRef} value={typed} onChange={handleInputChange} onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); setTyped(''); if (st.current) st.current.typed = ''; } }}
               disabled={over} autoFocus autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false} placeholder={over ? '—' : 'Gõ đáp án…'}
-              className={`mx-auto block w-full max-w-[560px] rounded-[16px] border-2 px-5 py-3 text-center text-[19px] font-black outline-none transition-colors ${noMatch ? 'border-[#F87171]' : aim ? 'border-[#F6C453]' : 'border-[#2E5AA8] focus:border-[#F6C453]'}`}
-              style={{ background: '#132A54', color: '#EAF1FF' }} />
+              className={`mx-auto block w-full max-w-[560px] rounded-[16px] border-2 px-5 py-3 text-center text-[19px] font-black outline-none transition-colors ${noMatch ? 'border-[#F87171] text-[#FCA5A5]' : aim ? 'border-[#F6C453] text-[#EAF1FF]' : 'border-[#2E5AA8] text-[#EAF1FF] focus:border-[#F6C453]'}`}
+              style={{ background: '#132A54' }} />
             <div className="mt-2 h-[20px] truncate text-center text-[13px] font-bold">
               {flash && <span style={{ color: flash.ok ? '#86EFAC' : '#FCA5A5' }}>{flash.ok ? '✔' : '✘'} {flash.prompt} → <span className="text-[#E6EDFF]">{flash.answer}</span></span>}
             </div>
