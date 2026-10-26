@@ -240,8 +240,8 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
         const p = s.queue.pop();
         if (p) {
           const used = s.items.map(i => i.x);
-          let x = 8 + Math.random() * 74;
-          for (let k = 0; k < 6 && used.some(u => Math.abs(u - x) < 16); k++) x = 8 + Math.random() * 74;
+          let x = 16 + Math.random() * 68;
+          for (let k = 0; k < 6 && used.some(u => Math.abs(u - x) < 18); k++) x = 16 + Math.random() * 68;
           s.items.push({ ...p, key: `${p.id}-${now}`, x, y: 0 });
           s.spawnIn = (fall / maxOn) * (0.75 + Math.random() * 0.5);
         }
@@ -300,7 +300,8 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
       if (rect.width && rect.height) {
         const shipX = rect.width / 2;
         const shipY = rect.height - 24;
-        const targetX = (nearestItem.x / 100) * rect.width;
+        let targetX = (nearestItem.x / 100) * rect.width;
+        targetX = Math.max(140, Math.min(rect.width - 140, targetX));
         const targetY = (nearestItem.y * rect.height) - (nearestItem.y * 70) + 24;
         dx = targetX - shipX;
         dy = targetY - shipY;
@@ -337,13 +338,22 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
       if (targetItem) {
         playLaserSound();
         const laserId = `${Date.now()}-${Math.random()}`;
+        let targetXPercent = targetItem.x;
+        if (playAreaRef.current) {
+          const rect = playAreaRef.current.getBoundingClientRect();
+          if (rect.width) {
+            const rawX = (targetItem.x / 100) * rect.width;
+            const clampedX = Math.max(140, Math.min(rect.width - 140, rawX));
+            targetXPercent = (clampedX / rect.width) * 100;
+          }
+        }
         setLasers(prevLasers => [
           ...prevLasers,
           {
             id: laserId,
             x1: 50,
             y1: 94,
-            x2: targetItem.x,
+            x2: targetXPercent,
             y2: Math.max(10, Math.min(88, targetItem.y * 100))
           }
         ]);
@@ -592,14 +602,14 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
                   key={it.key}
                   className="absolute -translate-x-1/2 text-center pointer-events-none"
                   style={{
-                    left: `${it.x}%`,
+                    left: `clamp(140px, ${it.x}%, calc(100% - 140px))`,
                     top: `calc(${it.y * 100}% - ${it.y * 70}px)`,
                     zIndex: isAimed ? 15 : isNearest ? 12 : 5
                   }}
                 >
                   {/* Word card container */}
                   <div
-                    className={`pointer-events-auto max-w-[280px] rounded-[16px] px-3.5 py-2 text-[15px] font-black leading-tight shadow-xl transition-transform duration-75 ${wasHit ? 'scale-105 brightness-125' : ''}`}
+                    className={`pointer-events-auto max-w-[260px] rounded-[16px] px-3.5 py-2 text-[15px] font-black leading-tight shadow-xl transition-transform duration-75 ${wasHit ? 'scale-105 brightness-125' : ''}`}
                     style={{
                       background: isAimed ? '#F6C453' : isNearest ? '#163261' : '#132A54',
                       color: isAimed ? '#1b1d22' : '#EAF1FF',
@@ -694,7 +704,11 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
               <span
                 key={b.key}
                 className="vc-boom pointer-events-none absolute h-20 w-20 -translate-x-1/2 -translate-y-1/2 rounded-full z-25"
-                style={{ left: `${b.x}%`, top: `calc(${b.y * 100}% - ${b.y * 70}px)`, background: 'radial-gradient(#F6C453,#ED7A13 55%,transparent 70%)' }}
+                style={{
+                  left: `clamp(140px, ${b.x}%, calc(100% - 140px))`,
+                  top: `calc(${b.y * 100}% - ${b.y * 70}px)`,
+                  background: 'radial-gradient(#F6C453,#ED7A13 55%,transparent 70%)'
+                }}
               />
             ))}
 
