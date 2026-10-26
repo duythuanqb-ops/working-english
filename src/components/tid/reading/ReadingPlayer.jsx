@@ -437,7 +437,7 @@ export default function ReadingPlayer({ testId, mode = 'practice', passage, gap 
             <header className="z-30 flex shrink-0 items-center border-b border-[#c1c1c1] bg-white">
               <button type="button" onClick={onBack} title="Thoát" className="flex shrink-0 items-center p-4 py-3.5">
                 <span className="relative h-[36px] w-[36px] overflow-hidden rounded-lg border border-slate-100 shadow-sm">
-                  <img src={asset('assets/tid/logo.webp')} alt="The IELTS Dictionary Logo" className="h-full w-full object-cover" />
+                  <img src={asset('assets/tid/logo.webp')} alt="WorkingEnglish Logo" className="h-full w-full object-cover" />
                 </span>
               </button>
               <div className="min-w-0 flex-1 self-start px-4 pt-[3px]">

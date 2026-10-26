@@ -1,29 +1,21 @@
-// IELTS Vocabulary area — replica of theieltsdictionary.com /practice/vocabulary, /dashboard (Bộ từ · Tổng quan) and
-// /practice/flashcard. Sub-pages are local state; all word data is bundled (src/data/tid/vocabulary).
-import React, { Suspense, lazy, useCallback, useState } from 'react';
+// Vocabulary Hub — "Bộ từ" (SetsPage) and Flashcard practice (Flashcard, Blast, Match)
+import React, { Suspense, lazy, useCallback, useEffect, useState } from 'react';
+import { ArrowLeft, Moon, Sun } from 'lucide-react';
 import './vocab.css';
 import VocabHome, { CuratedPage } from './VocabHome';
-import Sidebar from './Sidebar';
 import SetsPage from './SetsPage';
 import SaveWordPopup from './SaveWordPopup';
-import { History, Overview, Stats } from './Overview';
 import { buildSession, index } from './decks';
 import { getSetting, setSetting } from './store';
 
 const Flashcard = lazy(() => import('./Flashcard'));
 const GrammarHub = lazy(() => import('../grammar/GrammarHub'));
 
-const HEAD = {
-  overview: ['Tổng quan · Tiến độ luyện tập', 'Chào bạn, hôm nay ôn từ nhé!'],
-  flashcard: ['Flashcard · Ôn tập', 'Lật thẻ, nhớ từ lâu hơn'],
-  stats: ['Thống kê', 'Tiến độ từng bộ từ'],
-  history: ['Lịch sử làm bài', 'Các phiên học & lịch ôn'],
-};
 const Loading = ({ dark }) => <div className={`p-20 text-center font-bold ${dark ? 'text-white/60' : 'text-slate-400'}`}>Đang chuẩn bị học liệu...</div>;
 
-export default function VocabularyHub({ onBack, onSaveWord, speechVoice }) {
-  const [view, setView] = useState('home'); // home | curated | dash | grammar
-  const [page, setPage] = useState('sets');
+export default function VocabularyHub({ onBack, onSaveWord, speechVoice, tidRoute }) {
+  const [view, setView] = useState(() => tidRoute?.view || 'home'); // home | curated | dash | grammar
+  const [page, setPage] = useState(() => tidRoute?.page || 'sets');
   const [tab, setTab] = useState('topics');
   const [session, setSession] = useState(null);
   const [mode, setMode] = useState('flashcard');
@@ -40,14 +32,16 @@ export default function VocabularyHub({ onBack, onSaveWord, speechVoice }) {
       setSession(s); setMode(m); setSetting('last_session', sel);
     } finally { setBusy(false); }
   }, []);
-  const nav = p => {
-    if (p === 'flashcard' && !session) {
-      const last = getSetting('last_session', null);
-      if (last) return study(last);
-      return setPage('sets');
+
+  useEffect(() => {
+    if (tidRoute) {
+      if (tidRoute.page) setPage(tidRoute.page);
+      if (tidRoute.view) setView(tidRoute.view);
+      if (tidRoute.sessionSel) {
+        study(tidRoute.sessionSel);
+      }
     }
-    setPage(p);
-  };
+  }, [tidRoute, study]);
 
   if (view === 'home') return <VocabHome onBack={onBack} onOpenSets={() => openDash('sets')} onOpenCurated={() => setView('curated')} onOpenGrammar={() => setView('grammar')} />;
   if (view === 'curated') return <CuratedPage onClose={() => setView('home')} onExplore={() => openDash('sets', 'cambridge')} />;
@@ -60,20 +54,49 @@ export default function VocabularyHub({ onBack, onSaveWord, speechVoice }) {
   }
 
   const t = index.tabs.find(x => x.id === tab);
-  const [eyebrow, heading] = page === 'sets' ? [t.eyebrow, t.heading] : HEAD[page] || HEAD.overview;
+
   return (
     <div className={`vc-dash ${dark ? 'dark' : ''} flex h-full w-full overflow-hidden bg-[var(--d-bg)] text-[var(--d-ink)] transition-colors duration-500`}>
-      <Sidebar active={page} onNav={nav} eyebrow={eyebrow} heading={heading} dark={dark}
-        onToggleDark={() => { setDark(d => { setSetting('dark', !d); return !d; }); }}
-        onHome={() => setView('home')} onExit={onBack}
-        onSearch={(word, r) => setLookup({ word, anchor: { x: r.left + 10, bottom: r.bottom } })} />
       <main className="relative flex h-full min-w-0 flex-1 flex-col overflow-hidden bg-[var(--d-bg)]">
-        <div className="relative flex-1 overflow-y-auto px-3 py-3 md:px-[18px] md:py-[18px]">
+        {page === 'sets' && (
+          <header className="sticky top-0 z-30 flex items-center justify-between border-b border-[var(--d-line)] bg-[var(--d-surf)]/90 px-4 py-3 md:px-6 backdrop-blur-md">
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => setView('home')}
+                className="flex h-9 items-center gap-2 rounded-xl bg-[var(--d-surf2)] px-3 text-sm font-bold text-[var(--d-ink)] transition-transform hover:-translate-y-0.5 hover:bg-[var(--d-line)]"
+              >
+                <ArrowLeft size={16} /> Quay lại trang từ vựng
+              </button>
+              <div className="hidden h-5 w-px bg-[var(--d-line)] sm:block" />
+              <div className="hidden sm:block">
+                <h1 className="text-sm font-extrabold text-[var(--d-ink)] md:text-base">
+                  {t?.heading || 'Kho Bộ Từ Vựng Theo Chủ Đề'}
+                </h1>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setDark(d => {
+                    setSetting('dark', !d);
+                    return !d;
+                  });
+                }}
+                className="flex h-9 w-9 items-center justify-center rounded-xl bg-[var(--d-surf2)] text-[var(--d-ink)] transition-all hover:bg-[var(--d-line)]"
+                title="Chế độ sáng / tối"
+              >
+                {dark ? <Sun size={17} /> : <Moon size={17} />}
+              </button>
+            </div>
+          </header>
+        )}
+
+        <div className="relative flex-1 overflow-y-auto px-3 py-3 md:px-[22px] md:py-[18px]">
           <div className="relative z-10 mx-auto flex w-full min-w-0 max-w-[1600px] flex-col gap-6">
             {page === 'sets' && <SetsPage tab={tab} onTab={setTab} onStudy={sel => study(sel)} />}
-            {page === 'overview' && <Overview onPick={() => setPage('sets')} onReview={r => (r.sel ? study(r.sel) : setPage('sets'))} />}
-            {page === 'stats' && <Stats />}
-            {page === 'history' && <History onReview={r => (r.sel ? study(r.sel) : setPage('sets'))} />}
             {page === 'flashcard' && (busy || !session
               ? (
                 <div className="flex flex-col items-center gap-6 py-24">

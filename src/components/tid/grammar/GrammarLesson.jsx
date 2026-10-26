@@ -229,7 +229,7 @@ export default function GrammarLesson({ lessonId, onExit, onSaveWord, speechVoic
       <header className="mx-auto mb-4 flex w-full max-w-[1500px] flex-none flex-wrap items-center justify-between gap-3 rounded-[20px] border-4 border-[#111] bg-white px-4 py-3.5 shadow-[8px_8px_0_rgba(0,0,0,0.15)] md:mb-5 md:px-7 md:py-5">
         <div className="flex items-center gap-3">
           <button onClick={onExit} aria-label="Quay lại Grammar" className="flex h-9 w-9 flex-none items-center justify-center rounded-xl border-2 border-[#111] bg-[#f4f1e6] text-[#111] transition-transform hover:-translate-y-0.5"><ArrowLeft size={16} /></button>
-          <h1 className={`${QS} text-[17px] font-extrabold leading-tight text-[#111] md:text-[26px]`}>NGỮ PHÁP IELTS <span className="text-[#8a8672]">| The IELTS Dictionary (TID)</span></h1>
+          <h1 className={`${QS} text-[17px] font-extrabold leading-tight text-[#111] md:text-[26px]`}>NGỮ PHÁP TIẾNG ANH CHUYÊN SÂU</h1>
         </div>
         <div className="flex items-center gap-2">
           <button onClick={() => setSound(s => !s)} aria-label={sound ? 'Tắt âm thanh' : 'Bật âm thanh'} className="flex h-9 w-9 items-center justify-center rounded-xl border-2 border-[#111] bg-white text-[#111] transition-transform hover:-translate-y-0.5">{sound ? <Volume2 size={16} /> : <VolumeX size={16} />}</button>

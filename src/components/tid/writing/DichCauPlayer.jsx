@@ -277,7 +277,7 @@ export default function DichCauPlayer({ exercise, onBack, onNext, nextLabel, onS
           <button type="button" onClick={onBack} title="Quay lại" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/15 text-white transition-colors hover:bg-white/25"><ChevronLeft size={18} /></button>
           <div className="flex min-w-0 items-baseline gap-2.5">
             <span className="whitespace-nowrap font-[family-name:var(--font-quicksand)] text-[24px] font-extrabold uppercase leading-none text-white md:text-[26px]">Dịch câu</span>
-            <span className="hidden whitespace-nowrap font-[family-name:var(--font-quicksand)] text-[11px] font-bold uppercase tracking-[3px] text-white/55 2xl:inline">The IELTS Dictionary</span>
+            <span className="hidden whitespace-nowrap font-[family-name:var(--font-quicksand)] text-[11px] font-bold uppercase tracking-[3px] text-white/55 2xl:inline">WorkingEnglish</span>
           </div>
         </div>
         <div className="hidden min-w-0 flex-1 flex-wrap items-center justify-center gap-1.5 xl:flex">

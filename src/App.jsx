@@ -13,6 +13,8 @@ import IeltsPracticeView from './components/IeltsPracticeView';
 import TidModule from './components/tid/TidModule';
 import AddWordModal from './components/AddWordModal';
 import MiniCaptureView from './components/MiniCaptureView';
+import { Overview, Stats, History } from './components/tid/vocabulary/Overview';
+import './components/tid/vocabulary/vocab.css';
 import { storageService } from './services/storageService';
 
 export default function App() {
@@ -27,6 +29,7 @@ export default function App() {
 
   // State
   const [currentView, setCurrentView] = useState(customTopicId ? 'ielts-dictionary' : 'vocab');
+  const [tidRoute, setTidRoute] = useState(null);
   const [words, setWords] = useState([]);
   const [settings, setSettings] = useState(storageService.getSettings());
   const [synonymGroups, setSynonymGroups] = useState([]);
@@ -92,6 +95,10 @@ export default function App() {
   // Header Titles
   const getHeaderInfo = () => {
     switch (currentView) {
+      case 'overview':
+        return { title: 'Tổng Quan Tiến Độ Học Tập', subtitle: 'Chuỗi ngày học liên tục, mục tiêu từ vựng & lịch ôn tập' };
+      case 'stats':
+        return { title: 'Thống Kê Tiến Độ Bộ Từ', subtitle: 'Tỉ lệ ghi nhớ từng chủ đề & lịch sử luyện tập' };
       case 'vocab':
         return { title: 'Sổ Tay Từ Vựng Tiếng Anh', subtitle: 'Kho từ vựng công sở cá nhân' };
       case 'dictionary':
@@ -101,7 +108,7 @@ export default function App() {
       case 'ielts':
         return { title: 'Luyện Thi IELTS Quốc Tế', subtitle: 'Trọn bộ đề thi Cambridge 10–20 mô phỏng thi thật • 4 kỹ năng có bấm giờ & chấm band' };
       case 'ielts-dictionary':
-        return { title: 'The IELTS Dictionary • 100+ Đề 4 Kỹ Năng', subtitle: 'Listening chép chính tả, Reading song ngữ & báo, Speaking Forecast & Writing 9 bước' };
+        return { title: 'Luyện 4 Kỹ Năng Toàn Diện', subtitle: 'Listening chép chính tả, Reading song ngữ & báo, Speaking Forecast & Writing 9 bước' };
       case 'review':
         return { title: 'Ôn Tập & Kiểm Tra Hàng Ngày', subtitle: 'Ghi nhớ ngắt quãng (Spaced Repetition)' };
       case 'synonyms':
@@ -141,6 +148,45 @@ export default function App() {
         />
 
         <main className="content-body">
+          {currentView === 'overview' && (
+            <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
+              <div className="mx-auto max-w-6xl">
+                <Overview
+                  onPick={() => {
+                    setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
+                    setCurrentView('ielts-dictionary');
+                  }}
+                  onReview={(r) => {
+                    if (r?.sel) {
+                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
+                    } else {
+                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
+                    }
+                    setCurrentView('ielts-dictionary');
+                  }}
+                />
+              </div>
+            </div>
+          )}
+
+          {currentView === 'stats' && (
+            <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
+              <div className="mx-auto max-w-6xl flex flex-col gap-6">
+                <Stats />
+                <History
+                  onReview={(r) => {
+                    if (r?.sel) {
+                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
+                    } else {
+                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
+                    }
+                    setCurrentView('ielts-dictionary');
+                  }}
+                />
+              </div>
+            </div>
+          )}
+
           {currentView === 'vocab' && (
             <VocabularyView
               words={words}
@@ -180,6 +226,8 @@ export default function App() {
             <TidModule
               speechVoice={settings.speechVoice || 'US'}
               onSaveWord={handleSaveNewWord}
+              tidRoute={tidRoute}
+              onClearTidRoute={() => setTidRoute(null)}
             />
           )}
 

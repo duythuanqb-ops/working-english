@@ -14,7 +14,7 @@ export function Navbar({ onBack, right }) {
       <div className="relative mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
         <button type="button" onClick={onBack} className="flex shrink-0 items-center gap-3 text-2xl font-extrabold tracking-tighter text-black">
           <span className="relative h-[48px] w-[48px] overflow-hidden rounded-xl border border-slate-100 shadow-sm"><img src={asset('assets/tid/logo.webp')} alt="" className="absolute inset-0 h-full w-full object-cover" /></span>
-          <span className="hidden sm:block">The IELTS <span className="text-herb-500">Dictionary</span></span>
+          <span className="hidden sm:block">Luyện Từ Vựng <span className="text-herb-500">Chuyên Sâu</span></span>
         </button>
         <div className="flex items-center gap-2">
           {right}
@@ -44,7 +44,7 @@ export default function VocabHome({ onBack, onOpenSets, onOpenCurated, onOpenGra
       <main className="mx-auto w-full max-w-6xl px-4 pb-16 pt-12 md:px-6 md:pt-16">
         <div className="td-pop">
           <button type="button" onClick={onBack} className="mb-6 inline-flex items-center gap-2 text-sm font-bold text-slate-400 transition-all hover:gap-3 hover:text-herb-600"><ArrowLeft className="h-4 w-4" />Về trang chủ</button>
-          <h1 className="mb-8 max-w-4xl text-5xl font-medium leading-[1.1] tracking-tight text-[#18181b] md:text-7xl">Xây dựng thói quen học từ<br />vựng 1 cách khoa học và<br />bền vững cùng TID</h1>
+          <h1 className="mb-8 max-w-4xl text-5xl font-medium leading-[1.1] tracking-tight text-[#18181b] md:text-7xl">Xây dựng thói quen học từ<br />vựng 1 cách khoa học và<br />bền vững hiệu quả</h1>
         </div>
         <div className="mb-16 overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white shadow-2xl shadow-herb-900/5">
           <img src={A('vocab-page.webp')} alt="Đọc · Nghe · Ghi lại · Đặt câu · Ghi nhớ lâu hơn" className="h-auto w-full object-cover transition-transform duration-1000 hover:scale-[1.02]" />
@@ -56,7 +56,7 @@ export default function VocabHome({ onBack, onOpenSets, onOpenCurated, onOpenGra
             <div className="group relative overflow-hidden rounded-[2rem] border border-herb-100 bg-herb-50 p-8 font-semibold text-herb-900">
               <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-herb-200 opacity-20 transition-transform duration-700 group-hover:scale-150" />
               <Sparkles className="mb-4 text-herb-500" />
-              <p>Chúng mình khuyên bạn nên học từ vựng thông qua bài đọc hoặc nghe<br />(<span className="text-herb-600 underline decoration-2 underline-offset-4">context-based learning</span>). Khi gặp cụm từ mới, hãy note lại vào sổ từ vựng của TID và cố gắng tự đặt câu với nó (<span className="italic text-herb-600">contextualized learning + generative use</span>). Việc này giúp bạn hiểu cách dùng từ trong ngữ cảnh và ghi nhớ lâu hơn.</p>
+              <p>Chúng mình khuyên bạn nên học từ vựng thông qua bài đọc hoặc nghe<br />(<span className="text-herb-600 underline decoration-2 underline-offset-4">context-based learning</span>). Khi gặp cụm từ mới, hãy note lại vào sổ từ vựng và cố gắng tự đặt câu với nó (<span className="italic text-herb-600">contextualized learning + generative use</span>). Việc này giúp bạn hiểu cách dùng từ trong ngữ cảnh và ghi nhớ lâu hơn.</p>
             </div>
             <p>Vì vậy, điểm mấu chốt không nằm ở việc bạn lấy từ vựng từ đâu, mà là cách bạn xử lý chúng, hay còn gọi là <span className="font-bold text-slate-900">depth of processing</span>.</p>
             <p className="text-lg text-slate-400">Tuy nhiên, tụi mình vẫn sẽ để một số bộ từ vựng mẫu ở dưới để hộ trợ việc học từ vựng của các bạn nha</p>
@@ -88,7 +88,7 @@ export default function VocabHome({ onBack, onOpenSets, onOpenCurated, onOpenGra
               <Waves />
               <div className="relative z-10 flex h-full flex-col justify-between p-8">
                 <div className="flex flex-col gap-3">
-                  <span className="text-[11px] font-black uppercase tracking-[0.22em] text-white/70">TID COLLECTION</span>
+                  <span className="text-[11px] font-black uppercase tracking-[0.22em] text-white/70">VOCABULARY COLLECTION</span>
                   <h2 className="text-3xl font-semibold leading-[1.12] text-white" style={{ fontFamily: 'var(--font-playfair), serif' }}>Từ vựng<br />tuyển chọn</h2>
                   <div className="h-px w-20 bg-white/30" />
                   <p className="mb-1 text-[14px] font-medium leading-relaxed text-white/85">Tổng hợp tất cả các từ vựng<br />để đạt <span className="font-semibold text-white">9.0 IELTS Reading.</span></p>
@@ -106,7 +106,7 @@ export default function VocabHome({ onBack, onOpenSets, onOpenCurated, onOpenGra
             <div className="relative col-span-1 flex min-h-[380px] flex-col justify-center overflow-hidden rounded-[2.5rem] bg-[#6B8D41] p-8 shadow-lg shadow-[#6B8D41]/20 sm:col-span-2 md:p-12 lg:col-span-2">
               <div className="pointer-events-none absolute inset-0 opacity-[0.15]" style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
               <div className="relative z-10 flex max-w-[60%] flex-col justify-center">
-                <div className="mb-6 inline-flex w-fit items-center justify-center rounded-lg bg-white px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.15em] text-[#6B8D41] shadow-sm">THEIELTSDICTIONARY</div>
+                <div className="mb-6 inline-flex w-fit items-center justify-center rounded-lg bg-white px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.15em] text-[#6B8D41] shadow-sm">WORKING ENGLISH</div>
                 <h2 className="mb-5 font-[family-name:var(--font-nunito)] text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-[56px]">Kho từ vựng<br />khổng lồ</h2>
                 <p className="mb-8 max-w-[95%] text-[15px] font-medium leading-relaxed text-white/90">Hàng ngàn từ vựng IELTS theo chủ đề, có ví dụ và audio, giúp bạn học nhanh và nhớ lâu hơn.</p>
                 <button type="button" onClick={onOpenSets} className="group inline-flex w-fit items-center justify-center gap-2 rounded-full bg-white px-8 py-3.5 font-bold text-[#6B8D41] shadow-[0_10px_20px_rgba(0,0,0,0.1)] transition-all hover:scale-[1.02] active:scale-95">Truy cập<ArrowRight size={18} className="text-[#6B8D41] transition-transform group-hover:translate-x-1" /></button>
@@ -148,7 +148,7 @@ export function CuratedPage({ onClose, onExplore }) {
         </div>
         <Panel className="grid gap-6 p-6 md:grid-cols-2">
           <div>
-            <div className="flex gap-3"><IconBox><BookOpen size={20} /></IconBox><p className="m-0 text-[15px] leading-relaxed text-white/90">Sau khi phân tích 40 đề Reading trong Cambridge IELTS 7–18, team học thuật của TID rút ra được,</p></div>
+            <div className="flex gap-3"><IconBox><BookOpen size={20} /></IconBox><p className="m-0 text-[15px] leading-relaxed text-white/90">Sau khi phân tích 40 đề Reading trong Cambridge IELTS 7–18, đội ngũ học thuật rút ra được,</p></div>
             <p className="m-0 mt-6 text-[15px] text-white/70">Có tổng cộng</p>
             <div className="text-[64px] font-black leading-none" style={{ fontFamily: 'var(--font-playfair), serif' }}>116,165</div>
             <p className="m-0 mt-2 text-[15px] text-white/85">từ trong bộ sách huyền thoại này.</p>
@@ -169,7 +169,7 @@ export function CuratedPage({ onClose, onExplore }) {
         </Panel>
         <Panel className="mt-5 flex items-center gap-4 p-6">
           <IconBox><Target size={20} /></IconBox>
-          <p className="m-0 text-[15px] leading-relaxed text-white/90">TID rút ra được rằng, chỉ <b>2,442 từ</b> xuất hiện thường xuyên đã chiếm tới <b>93.3%</b> nội dung đề thi, nên học thuộc 2,442 từ thường gặp trước khi học IELTS để tránh lãng phí thời gian, công sức tra từ điển và ghi nhớ những từ không cần thiết.</p>
+          <p className="m-0 text-[15px] leading-relaxed text-white/90">Nghiên cứu rút ra được rằng, chỉ <b>2,442 từ</b> xuất hiện thường xuyên đã chiếm tới <b>93.3%</b> nội dung đề thi, nên học thuộc 2,442 từ thường gặp trước khi học IELTS để tránh lãng phí thời gian, công sức tra từ điển và ghi nhớ những từ không cần thiết.</p>
         </Panel>
         <Panel className="mt-5 flex flex-col gap-4 p-6 md:flex-row md:items-center">
           <IconBox><ClipboardList size={20} /></IconBox>

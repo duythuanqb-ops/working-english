@@ -103,7 +103,7 @@ function ResultScreen({ mode, videoId, title, elapsed, done, total, stats, onJum
   const [msg] = useState(() => { const r = total ? done / total : 1; const pool = r === 1 ? TOP : r >= 0.5 ? MID : LOW; return pool[Math.floor(Math.random() * pool.length)]; });
   const [share, setShare] = useState(false);
   const [copied, setCopied] = useState(false);
-  const text = `Mình vừa luyện ${mode === 'dictation' ? 'Dictation' : 'Shadowing'} ${fmtSecs(elapsed)} với video "${title}" trên The IELTS Dictionary 🌞`;
+  const text = `Mình vừa luyện ${mode === 'dictation' ? 'Dictation' : 'Shadowing'} ${fmtSecs(elapsed)} với video "${title}" trên WorkingEnglish 🌞`;
   const mmss = `${String(Math.floor(elapsed / 60)).padStart(2, '0')}:${String(elapsed % 60).padStart(2, '0')}`;
   return (
     <div className="tid-root fixed inset-0 z-[9999] overflow-y-auto bg-herb font-nunito">

@@ -465,7 +465,7 @@ function Reader({ meta, saved, onToggleSave, onBack, onSaveWord }) {
             <button type="button" onClick={onBack} title="Quay lại" className="mr-1 flex cursor-pointer items-center justify-center text-white transition-colors hover:text-white/80"><ArrowLeft className="h-7 w-7" /></button>
             <span className="whitespace-nowrap font-serif text-2xl font-bold italic text-white sm:text-3xl">đọc song ngữ</span>
             <span className="hidden font-black text-white/40 sm:inline">•</span>
-            <span className="hidden whitespace-nowrap font-mono text-[10px] uppercase tracking-widest text-white/80 sm:inline sm:text-xs">THE IELTS DICTIONARY</span>
+            <span className="hidden whitespace-nowrap font-mono text-[10px] uppercase tracking-widest text-white/80 sm:inline sm:text-xs">WORKING ENGLISH</span>
           </div>
           <div className="ml-auto flex select-none flex-wrap items-center gap-2 text-[10px] font-bold text-white sm:gap-3 sm:text-xs">
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/15 px-3 py-1.5 sm:px-4">

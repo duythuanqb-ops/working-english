@@ -1,4 +1,4 @@
-/* The IELTS Dictionary module — Tailwind v4 scoped to src/components/tid only.
+/* Advanced Learning Module — Tailwind v4 scoped to src/components/tid only.
    Utilities are emitted unlayered so they beat the app's global `* { margin:0; padding:0 }` reset. */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400..700&family=Inter:wght@400..900&family=Bungee&family=Baloo+2:wght@400..800&family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@400..800&family=Nunito:wght@400..900&family=Newsreader:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..800&family=Plus+Jakarta+Sans:wght@400..800&display=swap');
 @import "tailwindcss/theme.css" layer(theme);

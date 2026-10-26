@@ -257,7 +257,7 @@ export default function Flashcard({ session, initialMode = 'flashcard', onPickSe
   const doShuffle = () => { setOrder(shuffle(words.map((_, i) => i))); setPos(0); setDone(false); setTally({ known: new Set(), review: new Set(), unknown: new Set() }); };
   const saveWord = () => {
     if (!onSaveWord || saved[w.w]) return;
-    onSaveWord(toNotebookWord({ word: w.w, ipa: w.ipa, pos: w.pos, meaningVi: w.vi, meaningEn: w.en, example: w.ex, exampleVi: w.exVi, synonyms: w.syn, antonyms: w.ant, tags: ['IELTS', w.deck].filter(Boolean), context: 'IELTS Dictionary · Flashcard' }));
+    onSaveWord(toNotebookWord({ word: w.w, ipa: w.ipa, pos: w.pos, meaningVi: w.vi, meaningEn: w.en, example: w.ex, exampleVi: w.exVi, synonyms: w.syn, antonyms: w.ant, tags: ['IELTS', w.deck].filter(Boolean), context: 'Flashcard · Luyện Từ' }));
     setSaved(s => ({ ...s, [w.w]: true }));
   };
 

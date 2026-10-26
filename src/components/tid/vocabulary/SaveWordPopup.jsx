@@ -15,7 +15,7 @@ export function toNotebookWord({ word, ipa, pos, meaningVi, meaningEn, example, 
     meaningVi: meaningVi || dict?.meaningVi || '',
     meaningEn: meaningEn || dict?.lexicalMeanings?.[0]?.definitions?.[0]?.definition || '',
     examples: [
-      ...(example ? [{ en: example, vi: exampleVi || '', context: context || 'IELTS Dictionary' }] : []),
+      ...(example ? [{ en: example, vi: exampleVi || '', context: context || 'Bộ Từ Vựng' }] : []),
       ...((dict?.bilingualExamples || []).slice(0, 2)),
     ],
     synonyms: synonyms || dict?.synonyms || [],

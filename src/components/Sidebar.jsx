@@ -11,16 +11,28 @@ import {
   Sparkles,
   Flame,
   Award,
-  GraduationCap
+  GraduationCap,
+  LayoutGrid,
+  TrendingUp
 } from 'lucide-react';
 
 export default function Sidebar({ currentView, setCurrentView, wordCount, dueCount }) {
   const navItems = [
     {
+      id: 'overview',
+      label: 'Tổng quan',
+      icon: LayoutGrid
+    },
+    {
       id: 'vocab',
       label: 'Sổ từ vựng',
       icon: BookOpen,
       badge: wordCount
+    },
+    {
+      id: 'stats',
+      label: 'Thống kê',
+      icon: TrendingUp
     },
     {
       id: 'dictionary',
@@ -41,7 +53,7 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
     },
     {
       id: 'ielts-dictionary',
-      label: 'IELTS 4 Kỹ Năng',
+      label: 'Luyện 4 Kỹ Năng',
       icon: Sparkles,
       badge: '100+'
     },

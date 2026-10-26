@@ -76,22 +76,37 @@ function PracticeHome({ onOpen }) {
           <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-herb-400 to-herb-700 text-white shadow-lg">
             <MessageSquare className="h-8 w-8" />
           </div>
-          <h3 className="text-2xl font-bold text-moss">Cộng đồng TID</h3>
-          <p className="mt-3 text-sm leading-relaxed text-slate-500">Bảng tin hỏi bài, giải đáp câu khó, chia sẻ kinh nghiệm học cùng giáo viên và bạn học. (Chỉ có trên website)</p>
+          <h3 className="text-2xl font-bold text-moss">Cộng đồng học tập</h3>
+          <p className="mt-3 text-sm leading-relaxed text-slate-500">Bảng tin hỏi bài, giải đáp câu khó, chia sẻ kinh nghiệm học cùng giáo viên và bạn học. (Tính năng sắp ra mắt)</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default function TidModule({ onSaveWord, speechVoice }) {
-  const [area, setArea] = useState(null);
+export default function TidModule({ onSaveWord, speechVoice, tidRoute, onClearTidRoute }) {
+  const [area, setArea] = useState(() => tidRoute?.area || null);
+
+  React.useEffect(() => {
+    if (tidRoute?.area) {
+      setArea(tidRoute.area);
+    }
+  }, [tidRoute]);
+
   const Area = area && AREAS[area];
   return (
     <div className="tid-root h-full overflow-y-auto bg-[#fbfcf8]">
       {Area ? (
         <Suspense fallback={<div className="p-20 text-center font-bold text-slate-400">Đang tải…</div>}>
-          <Area onBack={() => setArea(null)} onSaveWord={onSaveWord} speechVoice={speechVoice} />
+          <Area
+            onBack={() => {
+              setArea(null);
+              if (onClearTidRoute) onClearTidRoute();
+            }}
+            onSaveWord={onSaveWord}
+            speechVoice={speechVoice}
+            tidRoute={tidRoute}
+          />
         </Suspense>
       ) : (
         <PracticeHome onOpen={setArea} />
