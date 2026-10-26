@@ -46,7 +46,7 @@ function createMainWindow() {
   });
 
   if (isDev) {
-    mainWindow.loadURL('http://localhost:5173');
+    mainWindow.loadURL('http://localhost:5174');
     // Open DevTools in dev mode if needed
     // mainWindow.webContents.openDevTools({ mode: 'detach' });
   } else {
@@ -95,7 +95,7 @@ function createMiniWindow() {
   });
 
   const miniUrl = isDev 
-    ? 'http://localhost:5173/?view=mini' 
+    ? 'http://localhost:5174/?view=mini' 
     : `file://${path.join(__dirname, '../dist/index.html')}?view=mini`;
 
   miniWindow.loadURL(miniUrl);

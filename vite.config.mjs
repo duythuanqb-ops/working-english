@@ -42,7 +42,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss(), serveExamMedia()],
   base: './',
   server: {
-    port: 5173,
+    port: 5174,
     strictPort: true
   },
   build: {
