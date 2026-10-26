@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-3",
+  "testNum": 3,
+  "title": "TOEIC SW Writing Test 3 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-3/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-3/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-3/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-3/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-3/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom\n: Steven Appleby\nTo\n: Martha Simon\nSubject\n: Small Business Magazine\nSent\n:\nJune 11, 20—\nDear Ms. Simon:\nI work for Small Business Magazine. I am writing an article about small-business owners in your city, and I would like to interview you for the article. Would you be available to meet with me sometime next week?\nThank you.\nSteven Appleby\nDirections: Respond to the e-mail as if you are Martha Simon. Say ONE time you are available and ask TWO questions.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From</span><span>: Steven Appleby</span></p><p><span>To</span><span>: Martha Simon<br/></span><span>Subject</span><span>: Small Business Magazine </span></p><p><span>Sent</span><span>:</span><span> </span><span>June 11, 20—</span></p><p><span>Dear Ms. Simon:</span></p><p><span>I work for Small Business Magazine. I am writing an article about small-business owners in your city, and I would like to interview you for the article. Would you be available to meet with me sometime next week?</span></p><p><span>Thank you. </span></p><p><span>Steven Appleby </span></p><p><span>Directions: Respond to the e-mail as if you are Martha Simon. Say ONE time you are available and ask TWO questions.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: Samantha Hawkins\nTo: Hampton Human Resources\nSubject: Positions at Hampton\nSent: August 10, 20—\nDear Sir or Madam,\nI am interested in applying for a position at Hampton Inc. I recently graduated from the university and am interested in any openings you may have in your Marketing Department. If you have any positions open, please let me know what they are and how I can apply.\nThank you.\nSamantha Hawkins\nDirections: Respond to the e-mail as if you are a human resources officer at Hampton, Inc. In your e-mail, ask ONE question and give TWO pieces of information.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Samantha Hawkins</span></p><p><span>To: Hampton Human Resources</span></p><p><span>Subject: Positions at Hampton</span></p><p><span>Sent: August 10, 20— </span></p><p><span>Dear Sir or Madam, </span></p><p><span>I am interested in applying for a position at Hampton Inc. I recently graduated from the university and am interested in any openings you may have in your Marketing Department. If you have any positions open, please let me know what they are and how I can apply.</span></p><p><span>Thank you. </span></p><p><span>Samantha Hawkins </span></p><p><span><br/></span><span>Directions: Respond to the e-mail as if you are a human resources officer at Hampton, Inc. In your e-mail, ask ONE question and give TWO pieces of information.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "What are the advantages or disadvantages of living near work? Give reasons or examples to support your opinion."
+    }
+  ]
+}

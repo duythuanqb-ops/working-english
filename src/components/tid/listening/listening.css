@@ -1,0 +1,265 @@
+/* Listening area styles — copied from theieltsdictionary.com pixel theme (px-*) and dictation theme (dct-*). */
+.px-root { font-family: "Be Vietnam Pro", system-ui, sans-serif; color: #1f2a1a; }
+.px-root img { image-rendering: pixelated; }
+.px-display { font-family: "Bungee", sans-serif; font-weight: 400; }
+.px-outline {
+  color: #fdf5e0;
+  -webkit-text-stroke: var(--px-stroke, 8px) #1f2a1a;
+  paint-order: stroke fill;
+  text-shadow: 0 var(--px-drop, 6px) 0 #1f2a1a;
+}
+.px-root :focus-visible { outline-offset: 3px; outline: 3px solid #2f3a7a; }
+.px-art:not([data-px-live]) * { animation-play-state: paused !important; }
+.px-art img { display: inline; max-width: none; }
+@media (prefers-reduced-motion: reduce) {
+  .px-root *, .px-root :before, .px-root :after { animation: none !important; }
+}
+.lis-dct { font-family: "Be Vietnam Pro", system-ui, sans-serif; }
+.dct-star { animation-name: dctTwinkle; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+@keyframes dctTwinkle { 0%, 100% { opacity: .25 } 50% { opacity: 1 } }
+.dct-bob { animation: dctBob 1.2s steps(2) infinite; }
+@keyframes dctBob { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-3px) } }
+@keyframes dctCloud { 0% { transform: translateX(0) } 100% { transform: translateX(40px) } }
+.lis-yt-frame iframe { width: 100%; height: 100%; display: block; }
+@keyframes pxlBob {
+
+    0%,
+    to {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-6px)
+    }
+}
+
+@keyframes pxlDrift {
+    0% {
+        transform: translate(-30px)
+    }
+
+    to {
+        transform: translate(40px)
+    }
+}
+
+@keyframes pxlTwinkle {
+
+    0%,
+    to {
+        opacity: 1
+    }
+
+    50% {
+        opacity: .25
+    }
+}
+
+@keyframes pxlBraid {
+
+    0%,
+    to {
+        transform: rotate(-2deg)
+    }
+
+    50% {
+        transform: rotate(2deg)
+    }
+}
+
+@keyframes pxlPrincess {
+
+    0%,
+    to {
+        transform: translateY(0)rotate(-3deg)
+    }
+
+    50% {
+        transform: translateY(-2px)rotate(3deg)
+    }
+}
+
+@keyframes pxlHeartUp {
+    0% {
+        opacity: 0;
+        transform: translate(0)scale(.6)
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(14px, -40px)scale(1.1)
+    }
+}
+
+@keyframes pxlWitchX {
+    0% {
+        transform: translate(110vw)
+    }
+
+    to {
+        transform: translate(-160px)
+    }
+}
+
+@keyframes pxlWitchBob {
+
+    0%,
+    to {
+        transform: translateY(0)rotate(-4deg)
+    }
+
+    50% {
+        transform: translateY(-10px)rotate(3deg)
+    }
+}
+
+@keyframes pxlCape {
+    0% {
+        transform: scaleX(1)
+    }
+
+    to {
+        transform: scaleX(.8)skewY(-6deg)
+    }
+}
+
+@keyframes pxlClimb {
+
+    0%,
+    15% {
+        transform: translateY(0)
+    }
+
+    55%,
+    70% {
+        transform: translateY(-34px)rotate(-3deg)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes pxlSword {
+
+    0%,
+    to {
+        transform: rotate(8deg)
+    }
+
+    50% {
+        transform: rotate(18deg)
+    }
+}
+
+@keyframes pxlFlag {
+    0% {
+        transform: scaleX(1)
+    }
+
+    to {
+        transform: scaleX(.75)skewY(6deg)
+    }
+}
+
+@keyframes pxlFlame {
+    0% {
+        transform: scale(1)rotate(-4deg)
+    }
+
+    to {
+        transform: scale(.9, 1.15)rotate(4deg)
+    }
+}
+
+@keyframes pxlBat {
+
+    0%,
+    to {
+        transform: translate(0)
+    }
+
+    50% {
+        transform: translate(30px, -16px)
+    }
+}
+
+@keyframes pxlFlap2 {
+    0% {
+        transform: scaleY(1)
+    }
+
+    to {
+        transform: scaleY(-.6)
+    }
+}
+
+@keyframes pxlGhostX {
+    0% {
+        transform: translate(0)
+    }
+
+    to {
+        transform: translate(112vw)
+    }
+}
+
+@keyframes pxlGhostY {
+
+    0%,
+    to {
+        transform: translateY(0)rotate(-6deg)
+    }
+
+    50% {
+        transform: translateY(-34px)rotate(6deg)
+    }
+}
+
+@keyframes pxlGhostFade {
+
+    0%,
+    to {
+        opacity: .95
+    }
+
+    50% {
+        opacity: .6
+    }
+}
+
+@keyframes pxlNote {
+    0% {
+        opacity: 0;
+        transform: translate(0)
+    }
+
+    25% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(24px, -70px)
+    }
+}
+
+@keyframes pxFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+:root{--dct-1d211a:#1d211a;--dct-1d4ed8:#1d4ed8;--dct-1e3006:#1e3006;--dct-1f5a33:#1f5a33;--dct-255833:#255833;--dct-2e6b3f:#2e6b3f;--dct-4b4f47:#4b4f47;--dct-64748b:#64748b;--dct-6a8042:#6a8042;--dct-6b6f66:#6b6f66;--dct-7c4a03:#7c4a03;--dct-8a8d84:#8a8d84;--dct-9a2b12:#9a2b12;--dct-9cc5a6:#9cc5a6;--dct-a3a69c:#a3a69c;--dct-b45309:#b45309;--dct-b9bcb1:#b9bcb1;--dct-b9dcc2:#b9dcc2;--dct-c2410c:#c2410c;--dct-c62828:#c62828;--dct-c95f16:#c95f16;--dct-c9cbc3:#c9cbc3;--dct-cfd3c8:#cfd3c8;--dct-cfe6d5:#cfe6d5;--dct-d4d6cf:#d4d6cf;--dct-d64545:#d64545;--dct-dcdcd5:#dcdcd5;--dct-e36f1e:#e36f1e;--dct-e5e7eb:#e5e7eb;--dct-e6e6e1:#e6e6e1;--dct-e8f0fe:#e8f0fe;--dct-e9e9e4:#e9e9e4;--dct-eaf3ec:#eaf3ec;--dct-ecece6:#ecece6;--dct-eef2e6:#eef2e6;--dct-efe4d2:#efe4d2;--dct-efefea:#efefea;--dct-f1f1ec:#f1f1ec;--dct-f1f7f2:#f1f7f2;--dct-f3d9a8:#f3d9a8;--dct-f3f3ef:#f3f3ef;--dct-f6f6f3:#f6f6f3;--dct-f7c4ba:#f7c4ba;--dct-f7f8f4:#f7f8f4;--dct-f8f8f5:#f8f8f5;--dct-fbd9d3:#fbd9d3;--dct-fbfdfb:#fbfdfb;--dct-fdecec:#fdecec;--dct-ffd99a:#ffd99a;--dct-ffe7c2:#ffe7c2;--dct-fff1d6:#fff1d6;--dct-fff1e6:#fff1e6;--dct-fff6e9:#fff6e9;--dct-fff8eb:#fff8eb;--dct-ffffff:#ffffff}
+.dct-night{--dct-1d211a:#f1eff2;--dct-1d4ed8:#3371ff;--dct-1e3006:#f0e7fc;--dct-1f5a33:#36804f;--dct-255833:#3d7d4f;--dct-2e6b3f:#49955e;--dct-4b4f47:#6d7268;--dct-64748b:#8ca0bd;--dct-6a8042:#94af62;--dct-6b6f66:#959a8f;--dct-7c4a03:#aa6c13;--dct-8a8d84:#bcbfb4;--dct-9a2b12:#d04526;--dct-9cc5a6:#d2ffdf;--dct-a3a69c:#dbdfd2;--dct-b45309:#f0771a;--dct-b9bcb1:#f6faec;--dct-b9dcc2:#4c564e;--dct-c2410c:#ff601e;--dct-c62828:#ff4141;--dct-c95f16:#ff862b;--dct-c9cbc3:#50514f;--dct-cfd3c8:#525350;--dct-cfe6d5:#525954;--dct-d4d6cf:#545452;--dct-d64545:#ff6565;--dct-dcdcd5:#565654;--dct-e36f1e:#ff9a35;--dct-e5e7eb:#1f2736;--dct-e6e6e1:#595958;--dct-e8f0fe:#1d2a43;--dct-e9e9e4:#22282f;--dct-eaf3ec:#1e2c32;--dct-ecece6:#23292f;--dct-eef2e6:#222c2d;--dct-efe4d2:#5c5853;--dct-efefea:#242a31;--dct-f1f1ec:#242a32;--dct-f1f7f2:#222d35;--dct-f3d9a8:#5d5546;--dct-f3f3ef:#252b33;--dct-f6f6f3:#262c35;--dct-f7c4ba:#5e4f4c;--dct-f7f8f4:#252c35;--dct-f8f8f5:#262c35;--dct-fbd9d3:#5f5553;--dct-fbfdfb:#262e38;--dct-fdecec:#2f2531;--dct-ffd99a:#615542;--dct-ffe7c2:#352510;--dct-fff1d6:#30291d;--dct-fff1e6:#2f282a;--dct-fff6e9:#2d2b2b;--dct-fff8eb:#2c2c2c;--dct-ffffff:#151a24}
+@keyframes lisShake { 0%, 100% { transform: translateX(0) } 20% { transform: translateX(-6px) } 40% { transform: translateX(6px) } 60% { transform: translateX(-4px) } 80% { transform: translateX(4px) } }

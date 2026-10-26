@@ -1,0 +1,1484 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2026-reading-test-8",
+  "testNum": 15,
+  "collection": "Bộ đề Parroto IELTS 2026",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2026 - Reading Test 8",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 40,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab684d85280c9d52b74f896",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-6</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-6</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab684d85280c9d52b74f897",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 7-13</strong></p><p>Complete the table below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h4 style=\"text-align:center\">Birds and climate change in Britain</h4><table border=\"1\" style=\"border-collapse:collapse;width:100%\"><thead><tr><th>Species</th><th>Notes</th></tr></thead><tbody><tr><td>Great tit</td><td>a [7] species that stays in Britain all year<br>lays eggs about two [8] earlier than in the mid-twentieth century</td></tr><tr><td>Pied flycatcher</td><td>spends the winter in West [9]<br>timing of migration depends on the length of the [10]</td></tr><tr><td>Cuckoo</td><td>movements studied using [11] tags</td></tr><tr><td>Dartford warbler</td><td>lives on [12] in southern England<br>has spread north thanks to milder [13]</td></tr></tbody></table>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab684d85280c9d52b74f89c",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>.</p><p>Which paragraph contains the following information?</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab684d85280c9d52b74f89d",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 18-23</strong></p><p>Look at the following statements (Questions 18-23) and the list of people below.</p><p>Match each statement with the correct person or people, <strong>A-E</strong>.</p><p><strong>NB</strong> You may use any letter more than once.</p><p><strong>List of People</strong><br>A &nbsp; Paula Ríos<br>B &nbsp; Andrea Quispe, Luis Herrera and Hannah Ford<br>C &nbsp; Tomás Vidal<br>D &nbsp; Martín Keller<br>E &nbsp; Sofía Mendes</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab684d85280c9d52b74f89e",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 24-26</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">Extracting lithium from brine</h3><p>Brine is pumped from under the salt crust into large [24], where it is left for over a year while the sun removes the water. Lithium producers claim that this process requires much less [25] than obtaining lithium from rock. However, critics say that it uses up huge quantities of [26] in an extremely dry region.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab684d85280c9d52b74f8a2",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-30</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab684d85280c9d52b74f8a3",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 31-35</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">Activity and rest among the Hadza</h3><p>Research has shown that the Hadza are much more physically [31] than typical office workers, but they also spend several hours a day [32]. When they rest, they usually sit in positions such as squatting and [33], which keep their leg [34] working. Surprisingly, the number of [35] they use each day is about the same as that of people in industrialised countries.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab684d85280c9d52b74f8a4",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 36-40</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>36-40</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab684d85280c9d52b74f8a6",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f896",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 1: &#39; Many factors lie behind these changes , from the loss of hedgerows to the use of pesticides&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8a7",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f896",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 2: chicks are fed on caterpillars, and &#39; caterpillar numbers reach their peak for only two or three weeks in late spring&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8a8",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f896",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 2: &#39;mismatch&#39; describes what happens &#39; when the timing of a bird&#39;s breeding no longer coincides with the peak in its food supply &#39;, not a problem with nest sites."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8a9",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f896",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 3 says caterpillars &#39;have been emerging earlier&#39;, but nothing is said about their size."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8aa",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f896",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 4: &#39; thousands of volunteers also check nests ... creating a record that professional scientists alone could never have produced&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8ab",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f896",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 5: great tits now lay about two weeks earlier, and &#39; for the most part they have kept pace with the earlier caterpillar peak &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8ac",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f897",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "resident",
+      "acceptedAnswers": [
+        "resident"
+      ],
+      "explanation": "Answer: resident Paragraph 5: &#39;The great tit is a resident species that spends the whole year in Britain&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8ad",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f897",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "weeks",
+      "acceptedAnswers": [
+        "weeks"
+      ],
+      "explanation": "Answer: weeks Paragraph 5: great tits &#39;now lay their eggs about two weeks earlier&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8ae",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f897",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "Africa",
+      "acceptedAnswers": [
+        "Africa"
+      ],
+      "explanation": "Answer: Africa Paragraph 6: &#39;The pied flycatcher spends the winter in West Africa &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8af",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f897",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "day",
+      "acceptedAnswers": [
+        "day"
+      ],
+      "explanation": "Answer: day Paragraph 6: its journey is &#39;controlled largely by the length of the day in Africa, which is not affected by climate change&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b0",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f897",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "satellite",
+      "acceptedAnswers": [
+        "satellite"
+      ],
+      "explanation": "Answer: satellite Paragraph 7: &#39;scientists have fitted cuckoos with tiny satellite tags&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b1",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f897",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "heathland",
+      "acceptedAnswers": [
+        "heathland"
+      ],
+      "explanation": "Answer: heathland Paragraph 8: the Dartford warbler is &#39;a small bird that lives on heathland in southern England&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b2",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab684d85280c9d52b74f897",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "winters",
+      "acceptedAnswers": [
+        "winters"
+      ],
+      "explanation": "Answer: winters Paragraph 8: &#39;A series of milder winters has since allowed it to recover and spread much further north&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b3",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Paragraph C: lithium is used &#39; above all in electric vehicles, whose rapidly growing sales have caused demand for the metal to soar &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b4",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F Paragraph F: &#39; The largest of these salt flats covers more than ten thousand square kilometres &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b5",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E Paragraph E explains the formation: &#39; rain and melting snow have carried dissolved minerals down from the surrounding volcanic mountains into these basins &#39;, the water evaporates, and lagoons at the edges support microbes, insects and flamingos."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b6",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Paragraph D: the three countries &#39;have very different laws, and there is no shared agreement on how the resource should be managed &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b7",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89d",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D (Martín Keller) Paragraph F: &#39; Using brine makes far more sense than continuing to dig enormous open-pit mines on land. &#39;"
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b8",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89d",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Quispe, Herrera and Ford) Paragraph D: the paper describes &#39; the same failure to respect the rights of indigenous communities &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8b9",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89d",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Paula Ríos) Paragraph B: &#39; the knowledge locked in these ecosystems may prove to be worth far more than the metal &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8ba",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89d",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E (Sofía Mendes) Paragraph F: &#39; Large-scale pumping will be the most serious threat these birds have ever faced as a result of human activity &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8bb",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89d",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Quispe, Herrera and Ford) Paragraph D: they warn that &#39; far too little is known about the underground water systems &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8bc",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89d",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (Tomás Vidal) Paragraph E: &#39; everyone I work with agrees that there should be no pumping close to the lagoons &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8bd",
+      "qNum": 24,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "ponds",
+      "acceptedAnswers": [
+        "ponds"
+      ],
+      "explanation": "Answer: ponds Paragraph C: &#39;Companies pump the brine to the surface and into vast artificial ponds , where the sun gradually evaporates the water&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8be",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "energy",
+      "acceptedAnswers": [
+        "energy"
+      ],
+      "explanation": "Answer: energy Paragraph C: &#39;Producers argue that this method uses far less energy than extracting lithium from hard rock.&#39;"
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8bf",
+      "qNum": 26,
+      "partNum": 2,
+      "groupId": "6ab684d85280c9d52b74f89e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "water",
+      "acceptedAnswers": [
+        "water"
+      ],
+      "explanation": "Answer: water Paragraph C: critics point out that &#39;it consumes enormous amounts of water in one of the driest regions on the planet&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c0",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a2",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "comparing two different theories about human evolution"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "explaining why he dislikes going to the gym"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "outlining a common belief about human activity"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "criticising people who do not exercise enough"
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C The paragraph opens &#39; It is widely assumed that human beings were designed by evolution to be constantly on the move&#39; and goes on to describe this view. The writer later rejects it, so he is not criticising inactive people (D)."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c1",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a2",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It was based on careful scientific research."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It attracted mainly young people."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It reflected the values that were common at that time."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It changed the way that people viewed their ancestors."
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C &#39; It fitted well with the spirit of the time , which placed great emphasis on individual responsibility and self-improvement.&#39; The claims came from &#39;popular books&#39;, not careful research (A)."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c2",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a2",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "They are less active than people used to believe."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Their days include long periods of rest as well as activity."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "They are unwilling to take part in scientific studies."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Their way of life is changing as a result of modern technology."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B The Hadza were &#39;far more physically active&#39; than office workers, &#39; Yet they also spent a surprisingly large part of each day resting &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c3",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a2",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "doing physical exercise for its own sake is not a traditional human behaviour."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "hunter-gatherers are healthier than people in modern societies."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "few traditional communities still live by hunting and gathering."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "people in traditional communities rarely work hard."
+          }
+        }
+      ],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A &#39; Nobody ever went for a run or did physical exercise for its own sake &#39;, and his hosts found the idea of jogging absurd. People did work hard when needed (D)."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c4",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "active",
+      "acceptedAnswers": [
+        "active"
+      ],
+      "explanation": "Answer: active Paragraph 4: they &#39;were far more physically active than the average office worker&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c5",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "resting / sitting",
+      "acceptedAnswers": [
+        "resting",
+        "sitting"
+      ],
+      "explanation": "Answer: resting Paragraph 4: &#39;they also spent a surprisingly large part of each day resting , often several hours, sitting in the shade&#39;. &#39;sitting&#39; is also accepted."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c6",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "kneeling",
+      "acceptedAnswers": [
+        "kneeling"
+      ],
+      "explanation": "Answer: kneeling Paragraph 6: &#39;they tend to rest in positions such as squatting and kneeling &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c7",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "muscles",
+      "acceptedAnswers": [
+        "muscles"
+      ],
+      "explanation": "Answer: muscles Paragraph 6: these positions &#39;keep the leg muscles working at a low level&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c8",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "calories",
+      "acceptedAnswers": [
+        "calories"
+      ],
+      "explanation": "Answer: calories Paragraph 6: the number of calories the Hadza burned in a day was &#39;roughly the same as for office workers in industrialised countries&#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8c9",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The writer describes how his hosts spent their time and what they thought of jogging, but never compares their health with that of the Hadza."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8ca",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO Paragraph 7: &#39; Individuals who used up energy without good reason would have been at a disadvantage. &#39;"
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8cb",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES Paragraph 8: &#39; The desire to avoid unnecessary effort is a perfectly natural part of being human &#39;."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8cc",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 9 explains how modern life has removed the need to move, but the writer does not compare people in rural and urban areas."
+    },
+    {
+      "qid": "6ab684d85280c9d52b74f8cd",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab684d85280c9d52b74f8a4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO Paragraph 10: &#39; simply telling people to try harder is unlikely to work &#39;; campaigns based on that message &#39;have achieved disappointingly little&#39;."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h4 style=\"text-align:center\">Birds and climate change in Britain</h4><table border=\"1\" style=\"border-collapse:collapse;width:100%\"><thead><tr><th>Species</th><th>Notes</th></tr></thead><tbody><tr><td>Great tit</td><td>a [7] species that stays in Britain all year<br>lays eggs about two [8] earlier than in the mid-twentieth century</td></tr><tr><td>Pied flycatcher</td><td>spends the winter in West [9]<br>timing of migration depends on the length of the [10]</td></tr><tr><td>Cuckoo</td><td>movements studied using [11] tags</td></tr><tr><td>Dartford warbler</td><td>lives on [12] in southern England<br>has spread north thanks to milder [13]</td></tr></tbody></table>",
+        "groups": [
+          {
+            "id": "6ab684d85280c9d52b74f896",
+            "directions": "<p><strong>Questions 1-6</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-6</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8a6",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 1: &#39; Many factors lie behind these changes , from the loss of hedgerows to the use of pesticides&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8a7",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 2: chicks are fed on caterpillars, and &#39; caterpillar numbers reach their peak for only two or three weeks in late spring&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8a8",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 2: &#39;mismatch&#39; describes what happens &#39; when the timing of a bird&#39;s breeding no longer coincides with the peak in its food supply &#39;, not a problem with nest sites."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8a9",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 3 says caterpillars &#39;have been emerging earlier&#39;, but nothing is said about their size."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8aa",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 4: &#39; thousands of volunteers also check nests ... creating a record that professional scientists alone could never have produced&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8ab",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 5: great tits now lay about two weeks earlier, and &#39; for the most part they have kept pace with the earlier caterpillar peak &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab684d85280c9d52b74f897",
+            "directions": "<p><strong>Questions 7-13</strong></p><p>Complete the table below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h4 style=\"text-align:center\">Birds and climate change in Britain</h4><table border=\"1\" style=\"border-collapse:collapse;width:100%\"><thead><tr><th>Species</th><th>Notes</th></tr></thead><tbody><tr><td>Great tit</td><td>a [7] species that stays in Britain all year<br>lays eggs about two [8] earlier than in the mid-twentieth century</td></tr><tr><td>Pied flycatcher</td><td>spends the winter in West [9]<br>timing of migration depends on the length of the [10]</td></tr><tr><td>Cuckoo</td><td>movements studied using [11] tags</td></tr><tr><td>Dartford warbler</td><td>lives on [12] in southern England<br>has spread north thanks to milder [13]</td></tr></tbody></table>",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8ac",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "resident",
+                "acceptedAnswers": [
+                  "resident"
+                ],
+                "explanation": "Answer: resident Paragraph 5: &#39;The great tit is a resident species that spends the whole year in Britain&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8ad",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "weeks",
+                "acceptedAnswers": [
+                  "weeks"
+                ],
+                "explanation": "Answer: weeks Paragraph 5: great tits &#39;now lay their eggs about two weeks earlier&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8ae",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Africa",
+                "acceptedAnswers": [
+                  "Africa"
+                ],
+                "explanation": "Answer: Africa Paragraph 6: &#39;The pied flycatcher spends the winter in West Africa &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8af",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "day",
+                "acceptedAnswers": [
+                  "day"
+                ],
+                "explanation": "Answer: day Paragraph 6: its journey is &#39;controlled largely by the length of the day in Africa, which is not affected by climate change&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b0",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "satellite",
+                "acceptedAnswers": [
+                  "satellite"
+                ],
+                "explanation": "Answer: satellite Paragraph 7: &#39;scientists have fitted cuckoos with tiny satellite tags&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b1",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "heathland",
+                "acceptedAnswers": [
+                  "heathland"
+                ],
+                "explanation": "Answer: heathland Paragraph 8: the Dartford warbler is &#39;a small bird that lives on heathland in southern England&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b2",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "winters",
+                "acceptedAnswers": [
+                  "winters"
+                ],
+                "explanation": "Answer: winters Paragraph 8: &#39;A series of milder winters has since allowed it to recover and spread much further north&#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<h3 style=\"text-align:center\">Extracting lithium from brine</h3><p>Brine is pumped from under the salt crust into large [24], where it is left for over a year while the sun removes the water. Lithium producers claim that this process requires much less [25] than obtaining lithium from rock. However, critics say that it uses up huge quantities of [26] in an extremely dry region.</p>",
+        "groups": [
+          {
+            "id": "6ab684d85280c9d52b74f89c",
+            "directions": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>.</p><p>Which paragraph contains the following information?</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8b3",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Paragraph C: lithium is used &#39; above all in electric vehicles, whose rapidly growing sales have caused demand for the metal to soar &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b4",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F Paragraph F: &#39; The largest of these salt flats covers more than ten thousand square kilometres &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b5",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E Paragraph E explains the formation: &#39; rain and melting snow have carried dissolved minerals down from the surrounding volcanic mountains into these basins &#39;, the water evaporates, and lagoons at the edges support microbes, insects and flamingos."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b6",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Paragraph D: the three countries &#39;have very different laws, and there is no shared agreement on how the resource should be managed &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab684d85280c9d52b74f89d",
+            "directions": "<p><strong>Questions 18-23</strong></p><p>Look at the following statements (Questions 18-23) and the list of people below.</p><p>Match each statement with the correct person or people, <strong>A-E</strong>.</p><p><strong>NB</strong> You may use any letter more than once.</p><p><strong>List of People</strong><br>A &nbsp; Paula Ríos<br>B &nbsp; Andrea Quispe, Luis Herrera and Hannah Ford<br>C &nbsp; Tomás Vidal<br>D &nbsp; Martín Keller<br>E &nbsp; Sofía Mendes</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8b7",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D (Martín Keller) Paragraph F: &#39; Using brine makes far more sense than continuing to dig enormous open-pit mines on land. &#39;"
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b8",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Quispe, Herrera and Ford) Paragraph D: the paper describes &#39; the same failure to respect the rights of indigenous communities &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8b9",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Paula Ríos) Paragraph B: &#39; the knowledge locked in these ecosystems may prove to be worth far more than the metal &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8ba",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E (Sofía Mendes) Paragraph F: &#39; Large-scale pumping will be the most serious threat these birds have ever faced as a result of human activity &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8bb",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Quispe, Herrera and Ford) Paragraph D: they warn that &#39; far too little is known about the underground water systems &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8bc",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (Tomás Vidal) Paragraph E: &#39; everyone I work with agrees that there should be no pumping close to the lagoons &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab684d85280c9d52b74f89e",
+            "directions": "<p><strong>Questions 24-26</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Extracting lithium from brine</h3><p>Brine is pumped from under the salt crust into large [24], where it is left for over a year while the sun removes the water. Lithium producers claim that this process requires much less [25] than obtaining lithium from rock. However, critics say that it uses up huge quantities of [26] in an extremely dry region.</p>",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8bd",
+                "qNum": 24,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "ponds",
+                "acceptedAnswers": [
+                  "ponds"
+                ],
+                "explanation": "Answer: ponds Paragraph C: &#39;Companies pump the brine to the surface and into vast artificial ponds , where the sun gradually evaporates the water&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8be",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "energy",
+                "acceptedAnswers": [
+                  "energy"
+                ],
+                "explanation": "Answer: energy Paragraph C: &#39;Producers argue that this method uses far less energy than extracting lithium from hard rock.&#39;"
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8bf",
+                "qNum": 26,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "water",
+                "acceptedAnswers": [
+                  "water"
+                ],
+                "explanation": "Answer: water Paragraph C: critics point out that &#39;it consumes enormous amounts of water in one of the driest regions on the planet&#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<h3 style=\"text-align:center\">Activity and rest among the Hadza</h3><p>Research has shown that the Hadza are much more physically [31] than typical office workers, but they also spend several hours a day [32]. When they rest, they usually sit in positions such as squatting and [33], which keep their leg [34] working. Surprisingly, the number of [35] they use each day is about the same as that of people in industrialised countries.</p>",
+        "groups": [
+          {
+            "id": "6ab684d85280c9d52b74f8a2",
+            "directions": "<p><strong>Questions 27-30</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8c0",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "comparing two different theories about human evolution"
+                  },
+                  {
+                    "key": "B",
+                    "text": "explaining why he dislikes going to the gym"
+                  },
+                  {
+                    "key": "C",
+                    "text": "outlining a common belief about human activity"
+                  },
+                  {
+                    "key": "D",
+                    "text": "criticising people who do not exercise enough"
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C The paragraph opens &#39; It is widely assumed that human beings were designed by evolution to be constantly on the move&#39; and goes on to describe this view. The writer later rejects it, so he is not criticising inactive people (D)."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8c1",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It was based on careful scientific research."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It attracted mainly young people."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It reflected the values that were common at that time."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It changed the way that people viewed their ancestors."
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C &#39; It fitted well with the spirit of the time , which placed great emphasis on individual responsibility and self-improvement.&#39; The claims came from &#39;popular books&#39;, not careful research (A)."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8c2",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "They are less active than people used to believe."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Their days include long periods of rest as well as activity."
+                  },
+                  {
+                    "key": "C",
+                    "text": "They are unwilling to take part in scientific studies."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Their way of life is changing as a result of modern technology."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B The Hadza were &#39;far more physically active&#39; than office workers, &#39; Yet they also spent a surprisingly large part of each day resting &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8c3",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "doing physical exercise for its own sake is not a traditional human behaviour."
+                  },
+                  {
+                    "key": "B",
+                    "text": "hunter-gatherers are healthier than people in modern societies."
+                  },
+                  {
+                    "key": "C",
+                    "text": "few traditional communities still live by hunting and gathering."
+                  },
+                  {
+                    "key": "D",
+                    "text": "people in traditional communities rarely work hard."
+                  }
+                ],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A &#39; Nobody ever went for a run or did physical exercise for its own sake &#39;, and his hosts found the idea of jogging absurd. People did work hard when needed (D)."
+              }
+            ]
+          },
+          {
+            "id": "6ab684d85280c9d52b74f8a3",
+            "directions": "<p><strong>Questions 31-35</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Activity and rest among the Hadza</h3><p>Research has shown that the Hadza are much more physically [31] than typical office workers, but they also spend several hours a day [32]. When they rest, they usually sit in positions such as squatting and [33], which keep their leg [34] working. Surprisingly, the number of [35] they use each day is about the same as that of people in industrialised countries.</p>",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8c4",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "active",
+                "acceptedAnswers": [
+                  "active"
+                ],
+                "explanation": "Answer: active Paragraph 4: they &#39;were far more physically active than the average office worker&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8c5",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "resting / sitting",
+                "acceptedAnswers": [
+                  "resting",
+                  "sitting"
+                ],
+                "explanation": "Answer: resting Paragraph 4: &#39;they also spent a surprisingly large part of each day resting , often several hours, sitting in the shade&#39;. &#39;sitting&#39; is also accepted."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8c6",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "kneeling",
+                "acceptedAnswers": [
+                  "kneeling"
+                ],
+                "explanation": "Answer: kneeling Paragraph 6: &#39;they tend to rest in positions such as squatting and kneeling &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8c7",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "muscles",
+                "acceptedAnswers": [
+                  "muscles"
+                ],
+                "explanation": "Answer: muscles Paragraph 6: these positions &#39;keep the leg muscles working at a low level&#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8c8",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "calories",
+                "acceptedAnswers": [
+                  "calories"
+                ],
+                "explanation": "Answer: calories Paragraph 6: the number of calories the Hadza burned in a day was &#39;roughly the same as for office workers in industrialised countries&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab684d85280c9d52b74f8a4",
+            "directions": "<p><strong>Questions 36-40</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>36-40</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab684d85280c9d52b74f8c9",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The writer describes how his hosts spent their time and what they thought of jogging, but never compares their health with that of the Hadza."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8ca",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO Paragraph 7: &#39; Individuals who used up energy without good reason would have been at a disadvantage. &#39;"
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8cb",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES Paragraph 8: &#39; The desire to avoid unnecessary effort is a perfectly natural part of being human &#39;."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8cc",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 9 explains how modern life has removed the need to move, but the writer does not compare people in rural and urban areas."
+              },
+              {
+                "qid": "6ab684d85280c9d52b74f8cd",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO Paragraph 10: &#39; simply telling people to try harder is unlikely to work &#39;; campaigns based on that message &#39;have achieved disappointingly little&#39;."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

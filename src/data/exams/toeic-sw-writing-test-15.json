@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-15",
+  "testNum": 15,
+  "title": "TOEIC SW Writing Test 15 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-15/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-15/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-15/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-15/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-15/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Bill Britten, Teachers’ Association Chairman\nTo: TA Members\nSubject: Summer Concert Participant Recruitment\nSent: May 28, 3:45 PM.\nWe're going to hold our annual summer concert festival from July 7 to 11. If you have any students interested in playing in our orchestra, please give us their names and the instruments they play so they can join in this wonderful event. Please reply by e-mail no later than June 6. Thanks in advance for your assistance.\nDirections: Respond to the\ne-mail\nas if you are a member of the Teachers’ Association. In your\ne-mail\n, ask TWO questions and give ONE piece of information about the event.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Bill Britten, Teachers’ Association Chairman</span></p><p><span>To: TA Members</span></p><p><span>Subject: Summer Concert Participant Recruitment</span></p><p><span>Sent: May 28, 3:45 PM.</span></p><p><span>We're going to hold our annual summer concert festival from July 7 to 11. If you have any students interested in playing in our orchestra, please give us their names and the instruments they play so they can join in this wonderful event. Please reply by e-mail no later than June 6. Thanks in advance for your assistance.</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are a member of the Teachers’ Association. In your </span><span>e-mail</span><span>, ask TWO questions and give ONE piece of information about the event.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: P. Spata\nTo: A. Means\nSubject: Welcome\nSent: November 9, 4:08 P.M.\nWelcome!\nI'm happy to have you in our department. Please tell me if there is anything I can do to make your transition here more comfortable. And let me know if you have any questions about working in our office.\nDirections: Respond to the\ne-mail\nas if you are A. Means. In your\ne-mail\n, ask TWO questions about working in the new office and make ONE request.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: P. Spata</span></p><p><span>To: A. Means</span></p><p><span>Subject: Welcome</span></p><p><span>Sent: November 9, 4:08 P.M.</span></p><p><span>Welcome!</span></p><p><span>I'm happy to have you in our department. Please tell me if there is anything I can do to make your transition here more comfortable. And let me know if you have any questions about working in our office.</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are A. Means. In your </span><span>e-mail</span><span>, ask TWO questions about working in the new office and make ONE request.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays Some workers must work at night. What are the advantages and disadvantages of night-shift work? Give reasons and examples to support your opinion."
+    }
+  ]
+}

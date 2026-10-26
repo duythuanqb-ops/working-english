@@ -1,0 +1,118 @@
+{
+  "id": "toeic-sw-speaking-test-13",
+  "testNum": 13,
+  "title": "TOEIC SW Speaking Test 13 (Bản Gốc STUDY4)",
+  "category": "toeic-speaking",
+  "durationMinutes": 20,
+  "tasks": [
+    {
+      "id": "spk-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q2)",
+      "partName": "Đọc to đoạn văn (Read a Text Aloud)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 45,
+      "prompt": "Read the text aloud. You will be evaluated on pronunciation, intonation, and rhythm.",
+      "textToRead": "Read the text aloud Attention, passengers. We'll be landing in Los Angeles in about 20 minutes. Please put all bags in the overhead compartments, under the seat in front of you, or give them to a flight attendant for safe storage. I'll be coming around to take any trash or other items you no longer need. If you need information on a connecting flight, please see our agent at the gate in Los Angeles. On behalf of myself and the rest of the crew, thank you for flying Tyson Air, and have a great day.",
+      "texts": [
+        "Read the text aloud Attention, passengers. We'll be landing in Los Angeles in about 20 minutes. Please put all bags in the overhead compartments, under the seat in front of you, or give them to a flight attendant for safe storage. I'll be coming around to take any trash or other items you no longer need. If you need information on a connecting flight, please see our agent at the gate in Los Angeles. On behalf of myself and the rest of the crew, thank you for flying Tyson Air, and have a great day.",
+        "Read the text aloud We here at WXLY radio station apologize for the interruption to the program Dana White's News Hour . We seem to be having a problem with the transmitter at our local broadcast station. Our repair technicians are already on the job, and I'm sure they'll have the problem fixed in no time. As soon as they do, we'll continue with more of your favorite news programming on Dana White’s News Hour . Please stay with us."
+      ],
+      "scoringFocus": [
+        "Ngắt nghỉ: Nghỉ ngắn ở dấu phẩy (,) và nghỉ rõ ở cuối câu (.)",
+        "Ngữ điệu câu liệt kê và câu hỏi.",
+        "Phát âm chuẩn xác các âm đuôi (-s, -ed, -tion)."
+      ]
+    },
+    {
+      "id": "spk-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q3 - Q4)",
+      "partName": "Miêu tả bức tranh (Describe a Picture)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 30,
+      "prompt": "Describe the picture on your screen in as much detail as possible.",
+      "photos": [
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-speaking-test-13/part2/q3.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Miêu tả bức tranh chi tiết về bối cảnh, con người, hành động và các chi tiết phụ.",
+          "sampleBand8Answer": "In this photograph, we observe an active and well-illuminated setting. In the foreground, people are focused on their individual tasks while interacting productively. In the middle ground, essential tools and work materials are neatly arranged across the table. In the background, the architectural background and natural lighting establish a modern and organized atmosphere. Overall, the entire scene conveys a strong sense of teamwork and efficiency."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-speaking-test-13/part2/q4.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Miêu tả bức tranh chi tiết về bối cảnh, con người, hành động và các chi tiết phụ.",
+          "sampleBand8Answer": "In this photograph, we observe an active and well-illuminated setting. In the foreground, people are focused on their individual tasks while interacting productively. In the middle ground, essential tools and work materials are neatly arranged across the table. In the background, the architectural background and natural lighting establish a modern and organized atmosphere. Overall, the entire scene conveys a strong sense of teamwork and efficiency."
+        }
+      ]
+    },
+    {
+      "id": "spk-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q5 - Q7)",
+      "partName": "Trả lời câu hỏi tình huống (Respond to Questions)",
+      "scenario": "Imagine that a British marketing firm is doing research in your country. You have agreed to participate in a telephone interview about shopping for electronics.",
+      "prepTimeSec": 3,
+      "questions": [
+        {
+          "qNum": "Question 5",
+          "question": "How often do you shop for electronic products and where do you go to buy them?",
+          "modelAnswer": "I shop for electronic gadgets about twice a year, and I usually buy them from authorized electronics superstores or official brand websites."
+        },
+        {
+          "qNum": "Question 6",
+          "question": "What is the most recent electronic product you purchased?",
+          "modelAnswer": "The most recent electronic product I purchased was a pair of wireless noise-canceling earbuds for my daily commute."
+        },
+        {
+          "qNum": "Question 7",
+          "question": "What kinds of factors influence your decision when buying an electronic product?",
+          "modelAnswer": "The primary factors that influence my purchase are long-term durability, official customer warranty support, and positive user reviews online."
+        }
+      ]
+    },
+    {
+      "id": "spk-4",
+      "taskNum": 4,
+      "part": "Part 4 (Q8 - Q10)",
+      "partName": "Trả lời theo thông tin cho sẵn (Respond using Information Provided)",
+      "prepTimeSec": 45,
+      "scenario": "Bạn sẽ nhận được một lịch trình/thông tin công việc và trả lời 3 câu hỏi liên quan.",
+      "scheduleText": "Respond to questions using the information provided\nHello. My name is Wendy Gates, and I'm interested in attending your health insurance seminar. But before I decide whether to come or not, I'd like to ask you a few questions about it, if that's all right.\nQuestion 8: Can you tell me where the seminar is being held and what\ntime it starts?\nQuestion 9: I heard there would be four seminar programs. Can I take part in all of them?\nQuestion 10: I want to know more details of the afternoon portion of the seminar. What will be taking place after lunch?",
+      "scheduleHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><div><p>Respond to questions using the information provided</p><p><img alt=\"\" src=\"/exams/toeic-sw-speaking-test-13/part4/schedule.png\" style=\"width: 624.00px; height: 413.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);\" title=\"\"/></p><p><span>Hello. My name is Wendy Gates, and I'm interested in attending your health insurance seminar. But before I decide whether to come or not, I'd like to ask you a few questions about it, if that's all right.</span></p><p><span>Question 8: Can you tell me where the seminar is being held and what </span><span>time it starts?</span></p><p><span>Question 9: I heard there would be four seminar programs. Can I take part in all of them?</span></p><p><span>Question 10: I want to know more details of the afternoon portion of the seminar. What will be taking place after lunch?</span></p></div></div>\n</div>\n</div>\n</div>",
+      "questions": [
+        {
+          "qNum": "Question 8 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "According to the provided schedule, the event is scheduled to start promptly at 9:00 A.M. in the main auditorium."
+        },
+        {
+          "qNum": "Question 9 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "Actually, that information is not correct. The session has been rescheduled to the morning, and all participants are invited to attend."
+        },
+        {
+          "qNum": "Question 10 (30s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 30,
+          "modelAnswer": "Certainly. There are two sessions scheduled in the afternoon: first, a workshop from 1:30 to 2:45 P.M., followed by a closing discussion at 3:00 P.M."
+        }
+      ]
+    },
+    {
+      "id": "spk-5",
+      "taskNum": 5,
+      "part": "Part 5 (Q11)",
+      "partName": "Trình bày quan điểm (Express an Opinion)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 60,
+      "prompt": "Many people prefer driving their own cars, while others would rather use public transportation. Which do you prefer? Explain why.",
+      "sampleBand8Answer": "I firmly support this stance for two key reasons. First, this approach grants individuals significant flexibility and helps reduce daily cognitive fatigue. Second, having such balanced conditions promotes sustained motivation and superior long-term performance. Therefore, I believe this is unquestionably the most effective choice."
+    }
+  ]
+}

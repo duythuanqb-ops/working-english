@@ -11,7 +11,9 @@
     "build": "vite build",
     "dist": "npm run build && electron-builder --mac",
     "dist:dmg": "npm run build && electron-builder --mac dmg",
-    "dist:dir": "npm run build && electron-builder --mac --dir"
+    "dist:dir": "npm run build && electron-builder --mac --dir",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:all": "npm run build && electron-builder --mac --win"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
@@ -20,11 +22,13 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "@vitejs/plugin-react": "^4.3.4",
     "concurrently": "^9.1.2",
     "cross-env": "^7.0.3",
     "electron": "^34.2.0",
     "electron-builder": "^25.1.8",
+    "tailwindcss": "^4.1.11",
     "vite": "^6.2.0",
     "wait-on": "^8.0.2"
   },
@@ -43,6 +47,9 @@
     "mac": {
       "icon": "build/icon.icns",
       "category": "public.app-category.education",
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "Ứng dụng cần quyền sử dụng microphone để ghi âm luyện nói Speaking, Shadowing và Lồng tiếng."
+      },
       "target": [
         {
           "target": "dmg",
@@ -54,6 +61,24 @@
       "darkModeSupport": true,
       "minimumSystemVersion": "11.0.0",
       "identity": null
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "WorkingEnglish"
     },
     "dmg": {
       "title": "${productName} ${version}",

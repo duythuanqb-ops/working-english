@@ -88,10 +88,13 @@
    Base Reset & Typography
    ========================================================================== */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Layered so it stays a true reset: any unlayered rule (incl. Tailwind space-* utilities in the TID module) wins. */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 body {
@@ -279,6 +282,16 @@ input, textarea, button, select {
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.nav-item-left span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav-badge {
@@ -289,6 +302,8 @@ input, textarea, button, select {
   padding: 2px 8px;
   border-radius: var(--radius-pill);
   transition: all var(--transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-badge-due {

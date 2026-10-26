@@ -1,0 +1,35 @@
+/* Vocabulary area — dashboard tokens + keyframes copied from theieltsdictionary.com (.tid-dash / td-* rules). */
+.vc-dash {
+  --d-bg: #e9edf3; --d-surf: #fff; --d-surf2: #f1f3f7; --d-card: #fff; --d-ink: #1b1d22;
+  --d-mute: #6b7080; --d-line: #e4e7ed; --d-accent: #4f7cf7;
+  font-family: var(--font-jakarta), var(--font-sans);
+}
+.vc-dash.dark {
+  --d-bg: #0e1014; --d-surf: #171a20; --d-surf2: #232833; --d-card: #1f232b; --d-ink: #eef0f4;
+  --d-mute: #8d93a0; --d-line: #2a2f39; --d-accent: #4f7cf7;
+}
+.vc-noscroll { scrollbar-width: none; }
+.vc-noscroll::-webkit-scrollbar { display: none; }
+
+.td-pop { animation: tdPop .65s cubic-bezier(.3, 1.35, .5, 1) both; }
+.td-float { animation: tdFloat 2.6s ease-in-out infinite alternate; }
+.td-bob { animation: tdBob 2.2s ease-in-out infinite alternate; }
+.td-nudge { animation: tdNudge 1.1s ease-in-out infinite alternate; }
+.td-spin { animation: tdSpin 24s linear infinite; }
+.fc-caret { animation: fcCaret 1s steps(2) infinite; }
+@keyframes tdPop { 0% { transform: translateY(22px) scale(.97); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes tdFloat { 0% { translate: 0 0 } to { translate: 0 -8px } }
+@keyframes tdBob { 0% { translate: 0; rotate: -4deg } to { translate: 0 -9px; rotate: 5deg } }
+@keyframes tdNudge { 0% { translate: 0 -3px } to { translate: 0 3px } }
+@keyframes tdSpin { to { rotate: 360deg } }
+@keyframes fcCaret { 0% { opacity: 1 } 50% { opacity: 0 } }
+@keyframes tidTwinkle { 0%, 100% { opacity: .25; transform: scale(.8) } 50% { opacity: 1; transform: scale(1.1) } }
+@keyframes vcShake { 0%, 100% { transform: translateX(0) } 25% { transform: translateX(-6px) } 75% { transform: translateX(6px) } }
+.vc-shake { animation: vcShake .28s ease-in-out 2; }
+@keyframes vcBoom { 0% { transform: scale(.4); opacity: 1 } to { transform: scale(2.2); opacity: 0 } }
+.vc-boom { animation: vcBoom .5s ease-out forwards; }
+@keyframes vcShot { 0% { opacity: 1 } to { opacity: 0 } }
+.vc-shot { animation: vcShot .25s ease-out forwards; }
+@media (prefers-reduced-motion: reduce) {
+  .vc-dash *, .vc-home * { animation: none !important; }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-4",
+  "testNum": 4,
+  "title": "TOEIC SW Writing Test 4 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-4/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-4/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-4/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-4/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-4/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Mark Hayes\nTo: Easton Office Supply Company\nSubject: Order\nSent: November 30,20—\nI put in a large order for office supplies from your company several weeks ago. I received the order yesterday; however, it was not complete. It did not contain the two boxes of manila envelopes that I ordered. Can you please resolve this problem for me?\nThank you.\nMark Hayes\nDirections: Respond to the\ne-mail\nas if you are an employee of the\nEaston\nOffice Supply Company. In your\ne-mail\n, explain TWO problems and make ONE request.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Mark Hayes</span></p><p><span>To: Easton Office Supply Company </span></p><p><span>Subject: Order<br/>Sent: November 30,20—</span></p><p><span>I put in a large order for office supplies from your company several weeks ago. I received the order yesterday; however, it was not complete. It did not contain the two boxes of manila envelopes that I ordered. Can you please resolve this problem for me?</span></p><p><span>Thank you. </span></p><p><span>Mark Hayes </span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are an employee of the </span><span>Easton</span><span> Office Supply Company. In your </span><span>e-mail</span><span>, explain TWO problems and make ONE request. </span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: Mary Wilson\nTo: All staff\nSubject: Tokyo visit\nSent: April 15, 20—\nGreetings to all,\nAs you know, next week we will receive guests from our Tokyo office. I need some ideas for interesting activities and places of interest they should visit. Also, I would like to know if any of you are available to take our visitors out for a meal or to visit some special place.\nThanks for your help.\nMary Wilson\nDirections: Respond to the\ne-mail\nas if you are a staff member. In your\ne-mail\n, make TWO suggestions and offer to help with ONE task.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Mary Wilson </span></p><p><span>To: All staff </span></p><p><span>Subject: Tokyo visit </span></p><p><span>Sent: April 15, 20—</span></p><p><span>Greetings to all,</span></p><p><span>As you know, next week we will receive guests from our Tokyo office. I need some ideas for interesting activities and places of interest they should visit. Also, I would like to know if any of you are available to take our visitors out for a meal or to visit some special place.</span></p><p><span>Thanks for your help. </span></p><p><span>Mary Wilson </span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are a staff member. In your </span><span>e-mail</span><span>, make TWO suggestions and offer to help with ONE task. </span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Some people prefer to work for a large company, while others prefer to work in a small office. Which size company do you prefer to work in? Use specific examples to support your choice."
+    }
+  ]
+}

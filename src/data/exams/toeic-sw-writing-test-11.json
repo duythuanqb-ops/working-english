@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-11",
+  "testNum": 11,
+  "title": "TOEIC SW Writing Test 11 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-11/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-11/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-11/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-11/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-11/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Jenny Cooper, Manager, Hotel Marina\nTo: Marcus Farley\nSubject: Your stay\nSent: March 6, 4:21 PM.\nDear Mr. Farley,\nI hope you enjoyed your recent stay at Hotel Marina. It was a pleasure having you! If you have any advice you would like to give us about our facilities and services, please let me know.\nThank you,\nJenny Cooper\nDirections: Respond to the\ne-mail\nas if you are Marcus Farley. In your\ne-mail\n, make THREE suggestions about how the hotel could be improved.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Jenny Cooper, Manager, Hotel Marina</span></p><p><span>To: Marcus Farley</span></p><p><span>Subject: Your stay</span></p><p><span>Sent: March 6, 4:21 PM.</span></p><p><span>Dear Mr. Farley,</span></p><p><span>I hope you enjoyed your recent stay at Hotel Marina. It was a pleasure having you! If you have any advice you would like to give us about our facilities and services, please let me know.</span></p><p><span>Thank you,</span></p><p><span>Jenny Cooper</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are Marcus Farley. In your </span><span>e-mail</span><span>, make THREE suggestions about how the hotel could be improved. </span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: C. Torina, Customer Service Representative\nTo: J. Samuel, Director of Shipping\nSubject: Delivery delay\nSent: June 25, 11:07 A.M.\nI heard from one of our customers, Jenny Smith, that she still hasn't received the wedding invitation cards she ordered. We promised to make this delivery by June 15. She seems to be quite upset. Can you look into this, please?\nDirections: Respond to the\ne-mail\nas if you are J. Samuel. In your\ne-mail\n, describe TWO steps you will take to handle the situation and make ONE request.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: C. Torina, Customer Service Representative</span></p><p><span>To: J. Samuel, Director of Shipping</span></p><p><span>Subject: Delivery delay</span></p><p><span>Sent: June 25, 11:07 A.M.</span></p><p><span>I heard from one of our customers, Jenny Smith, that she still hasn't received the wedding invitation cards she ordered. We promised to make this delivery by June 15. She seems to be quite upset. Can you look into this, please? </span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are J. Samuel. In your </span><span>e-mail</span><span>, describe TWO steps you will take to handle the situation and make ONE request.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays Do you think it is a good idea for teenagers to have jobs while they are still students? Support your opinion by using specific reasons and details."
+    }
+  ]
+}

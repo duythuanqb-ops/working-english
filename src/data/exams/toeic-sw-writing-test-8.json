@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-8",
+  "testNum": 8,
+  "title": "TOEIC SW Writing Test 8 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-8/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-8/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-8/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-8/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-8/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Gayle Owens, Partner, Temping Agency\nTo: Aidan Smith, Operator, Grayling Exports\nSubject: Any vacancies?\nSent: March 23, 5:21 PM.\nDear Mr. Aidan Smith,\nHello! I was speaking with your associate, Paul Baker, who told me that you might need some temping staff over summer. We have some excellent people available at the moment with expertise in a wide range of fields.\nPlease let me know if we can help you with anything.\nFaithfully,\nGayle Owens\nDirections: Respond to the email as if you are Aidan Smith. In your email, make TWO requests for temping staff.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Gayle Owens, Partner, Temping Agency</span></p><p><span>To: Aidan Smith, Operator, Grayling Exports</span></p><p><span>Subject: Any vacancies?</span></p><p><span>Sent: March 23, 5:21 PM.</span></p><p><span>Dear Mr. Aidan Smith,</span></p><p><span>Hello! I was speaking with your associate, Paul Baker, who told me that you might need some temping staff over summer. We have some excellent people available at the moment with expertise in a wide range of fields.</span></p><p><span>Please let me know if we can help you with anything.</span></p><p><span>Faithfully,</span></p><p><span>Gayle Owens<br/><br/></span><span>Directions: Respond to the email as if you are Aidan Smith. In your email, make TWO requests for temping staff.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: Ava Taylor, Secretary to the President\nTo: All employees\nRe: Staff meeting\nSent: August 7, 9:03 A.M.\nGood morning!\nRemember that our monthly staff meeting will be held tomorrow in conference room 2. The meeting starts at 3 o’clock and is expected to last an hour. I hope to see you all there tomorrow.\nThank you,\nAva Taylor\nDirection:\nRespond to the email as if you are a member of the staff. In your email,\nmake THREE requests related to the meeting.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Ava Taylor, Secretary to the President</span></p><p><span>To: All employees</span></p><p><span>Re: Staff meeting</span></p><p><span>Sent: August 7, 9:03 A.M.</span></p><p><span>Good morning! </span></p><p><span>Remember that our monthly staff meeting will be held tomorrow in conference room 2. The meeting starts at 3 o’clock and is expected to last an hour. I hope to see you all there tomorrow.</span></p><p><span>Thank you,</span></p><p><span>Ava Taylor</span></p><p><span>Direction: </span><span>Respond to the email as if you are a member of the staff. In your email, </span><span>make THREE requests related to the meeting.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays Do you agree or disagree with the following statement? “Companies should give each employee the same benefits package.” Use specific reasons and examples to support your opinion."
+    }
+  ]
+}

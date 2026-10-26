@@ -1,0 +1,149 @@
+{
+  "id": "ielts-ac-c2-t1",
+  "testNum": 1,
+  "collection": "Collection 2",
+  "type": "academic",
+  "title": "IELTS Academic Collection 2 Test 1 (Bản Gốc STUDY4)",
+  "category": "ielts-ac",
+  "durationMinutes": 165,
+  "questionsCount": 80,
+  "listening": {
+    "durationMinutes": 40,
+    "audioTracks": {
+      "part1": "/exams/ielts-ac-c2-t1/audio/p1.mp3",
+      "part2": "/exams/ielts-ac-c2-t1/audio/p2.mp3",
+      "part3": "/exams/ielts-ac-c2-t1/audio/p3.mp3",
+      "part4": "/exams/ielts-ac-c2-t1/audio/p4.mp3"
+    },
+    "parts": [
+      {
+        "partNum": 1,
+        "title": "Part 1",
+        "audioTrack": "/exams/ielts-ac-c2-t1/audio/p1.mp3",
+        "transcript": "",
+        "groups": []
+      }
+    ]
+  },
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1: Passage 1 Reading Text",
+        "passageHtml": "",
+        "groups": []
+      }
+    ]
+  },
+  "writing": {
+    "durationMinutes": 60,
+    "task1": {
+      "title": "Task 1: Report / Data Description",
+      "timeMinutes": 20,
+      "minWords": 150,
+      "prompt": "The chart and table below show the proportion of energy generated from renewable and non-renewable sources in selected OECD countries between 2000 and 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "sampleBand8Answer": "The chart and accompanying table illustrate the comparative distribution of electricity production from renewable and conventional non-renewable sources across four OECD member nations—namely Germany, Sweden, Canada, and Japan—over a twenty-year timeframe from 2000 to 2020.\n\nOverall, it is immediately apparent that all surveyed nations witnessed an upward trajectory in green energy adoption, with Sweden maintaining the foremost position in clean energy reliance throughout. Conversely, Japan continued to exhibit the lowest proportion of renewables despite moderate progress in the final decade.\n\nIn detail, Sweden commenced the period with 42% of its total energy coming from renewables in 2000, which subsequently expanded sharply to surpass 68% by 2020, driven primarily by investments in hydroelectric and wind installations. Canada similarly sustained high renewable dependency, starting at 56% and peaking at 64% by the end of the survey period.\n\nIn contrast, Germany underwent the most dramatic structural shift: renewable output represented a modest 8% in 2000 before quadrupling to approximately 39% in 2020 under comprehensive decarbonization initiatives. Japan, by comparison, began at just 7% and grew modestly to 18% in 2020, still leaving fossil and nuclear fuels to comprise the vast majority (82%) of its energy grid.",
+      "keyVocab": [
+        {
+          "word": "Upward trajectory",
+          "meaningVi": "Chiều hướng gia tăng rõ rệt"
+        },
+        {
+          "word": "Comparative distribution",
+          "meaningVi": "Phân bố đối chiếu"
+        },
+        {
+          "word": "Decarbonization initiatives",
+          "meaningVi": "Các sáng kiến giảm thải carbon"
+        }
+      ]
+    },
+    "task2": {
+      "title": "Task 2: Academic Essay",
+      "timeMinutes": 40,
+      "minWords": 250,
+      "prompt": "Some people believe that artificial intelligence and automation will bring massive unemployment and economic instability. Others argue that AI will foster innovation and create higher-value jobs. Discuss both views and give your own opinion.",
+      "sampleBand8Answer": "The rapid proliferation of artificial intelligence (AI) and robotic automation has ignited rigorous debate across global economic forums. While a considerable segment of the population expresses trepidation regarding widespread redundancy and fiscal volatility, others contend that this technological paradigm will unlock unprecedented productivity and cultivate novel vocational sectors. In my view, although transient displacement is inevitable, AI will ultimately function as a net positive catalyst for societal affluence.\n\nOn the one hand, apprehensions regarding job scarcity are grounded in historical precedent and empirical reality. In routine-intensive fields such as manufacturing, logistics, and entry-level clerical administration, autonomous algorithms execute quantitative computations and physical tasks with far greater velocity and precision than human operators. Consequently, unmitigated deployment without rigorous retraining frameworks risks marginalizing millions of low-skilled workers, thereby exacerbating wealth disparity and burdening public welfare reserves.\n\nOn the other hand, proponents persuasively assert that technological upheavals historically eliminate specific tasks rather than labor as a whole. By relieving human professionals of mundane, repetitive drudgery, automation creates capacity for higher-order cognitive domains such as ethical AI governance, specialized software architecture, and creative strategic consulting. Furthermore, empirical analyses indicate that machine-augmented industries stimulate secondary employment ecosystems—from renewable infrastructure to tailored biotechnology—which generate premium remuneration.\n\nIn conclusion, while the transition phase undeniably poses formidable challenges for specific occupational demographics, artificial intelligence represents a profound evolution rather than an existential crisis for the labor market. Governments and educational institutions must proactively orchestrate lifelong upskilling programs to ensure equitable participation in this automated era.",
+      "keyVocab": [
+        {
+          "word": "Proliferation",
+          "meaningVi": "Sự phát triển bùng nổ, nhân rộng"
+        },
+        {
+          "word": "Trepidation",
+          "meaningVi": "Sự lo âu, e sợ"
+        },
+        {
+          "word": "Remuneration",
+          "meaningVi": "Mức lương thưởng, thù lao"
+        }
+      ]
+    }
+  },
+  "speaking": {
+    "durationMinutes": 14,
+    "part1": {
+      "title": "Part 1: Introduction & Familiar Topics (4-5 mins)",
+      "topic": "Work, Technology, and City Life",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "What kind of work do you do, and what do you enjoy most about it?",
+          "sampleBand8": "I currently work as a senior software consultant for an international consultancy firm. What captivates me most is the intellectual challenge of engineering scalable architectural solutions that directly streamline daily operations for thousands of corporate end-users."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you prefer working individually or collaborating in a team?",
+          "sampleBand8": "While autonomous focus is indispensable for deep coding and analytical tasks, I generally thrive on teamwork. Collaborative brainstorming sessions consistently yield multifaceted perspectives that mitigate blind spots and elevate the overall caliber of our deliverables."
+        },
+        {
+          "qNum": 3,
+          "question": "How has technological progress transformed your hometown over recent years?",
+          "sampleBand8": "Remarkably so. Cashless digital payments and app-based public transportation have become completely ubiquitous, which has expedited municipal transit and significantly modernized the pace of urban living."
+        },
+        {
+          "qNum": 4,
+          "question": "Do you think you will continue living in your current city in the future?",
+          "sampleBand8": "Most definitely for the foreseeable future. The vibrant economic ecosystem, coupled with rich cultural amenities and extensive professional networks, makes it an ideal launchpad for my ongoing career trajectory."
+        }
+      ]
+    },
+    "part2": {
+      "title": "Part 2: Individual Long Turn / Cue Card (3-4 mins)",
+      "prepTimeSec": 60,
+      "speakTimeSec": 120,
+      "cueCard": {
+        "prompt": "Describe a memorable professional or academic achievement that you are proud of.",
+        "bullets": [
+          "What the achievement was",
+          "When and where it took place",
+          "What challenges you had to overcome",
+          "And explain why you felt so proud of this accomplishment."
+        ]
+      },
+      "sampleBand8Answer": "I would like to speak about a defining professional achievement from last year, when I successfully spearheaded the migration of our company's legacy customer management infrastructure to a secure cloud platform. This undertaking occurred over a grueling six-month period at our regional corporate headquarters.\n\nThe primary obstacle we confronted was the sheer complexity of legacy data formats, compounded by an unforgiving deployment deadline. We had to ensure zero downtime for over fifty thousand active global clients while synchronizing disparate legacy databases. Furthermore, midway through the project, several senior specialists had to quarantine due to seasonal health issues, which forced me to shoulder additional architectural duties and coordinate with offshore teams across multiple time zones.\n\nUltimately, the migration went live seamlessly without a single minute of service disruption. I felt immensely proud not only because the project cut infrastructure overhead by thirty percent, but because it substantiated my leadership capabilities under immense pressure and earned our team formal recognition from executive leadership."
+    },
+    "part3": {
+      "title": "Part 3: Two-way Discussion / Abstract Topics (4-5 mins)",
+      "topic": "Ambition, Workplace Recognition, and Leadership",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "Why do some individuals value intrinsic satisfaction over material rewards in their careers?",
+          "sampleBand8": "Because professional self-actualization provides enduring fulfillment that monetary incentives simply cannot replicate. When employees perceive that their daily contributions generate tangible societal impact, their engagement remains resilient even through arduous economic cycles."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you believe personal ambition always benefits an organization?",
+          "sampleBand8": "Not necessarily. While constructive ambition drives innovation and productivity, unbridled personal ambition can foster toxic internal rivalries, undermine collective cohesion, and incentivize unethical shortcuts."
+        },
+        {
+          "qNum": 3,
+          "question": "How has the definition of effective leadership evolved in the modern era?",
+          "sampleBand8": "Leadership has fundamentally transitioned from an authoritative, hierarchical command model to an empathetic, servant-leadership philosophy that emphasizes psychological safety, emotional intelligence, and inclusive mentorship."
+        }
+      ]
+    }
+  }
+}

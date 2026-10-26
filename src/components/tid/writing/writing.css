@@ -1,0 +1,51 @@
+/* Writing area — pixel-art helpers + keyframes copied from theieltsdictionary.com (px-* / pxw* rules). */
+.wr-px-root { font-family: var(--font-be-vietnam), system-ui, sans-serif; color: #1f2a1a; }
+.wr-px-root img { image-rendering: pixelated; }
+.wr-px-display { font-family: var(--font-bungee), sans-serif; font-weight: 400; }
+.wr-px-outline {
+  color: #fdf5e0;
+  -webkit-text-stroke: var(--px-stroke, 8px) #1f2a1a;
+  paint-order: stroke fill;
+  text-shadow: 0 var(--px-drop, 6px) 0 #1f2a1a;
+}
+.wr-px-art [style*=pxwWalk] { will-change: transform; }
+
+@keyframes pxwSwing { 0%, to { transform: rotate(-6deg) } 50% { transform: rotate(6deg) } }
+@keyframes pxwBob { 0%, to { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+@keyframes pxwStep { 0%, to { transform: translateY(0) } 50% { transform: translateY(-4px) } }
+@keyframes pxwWalk {
+  0% { transform: translate(0) scaleX(1) } 49% { transform: translate(52vw) scaleX(1) }
+  50% { transform: translate(52vw) scaleX(-1) } 99% { transform: translate(0) scaleX(-1) } to { transform: translate(0) scaleX(1) }
+}
+@keyframes pxwDrift { 0% { transform: translate(-30px) } to { transform: translate(50px) } }
+@keyframes pxwKite { 0%, to { transform: translate(0) rotate(-8deg) } 50% { transform: translate(18px, -14px) rotate(8deg) } }
+@keyframes pxwWave { 0% { background-position: 0 0, 0 8px } to { background-position: 80px 0, -40px 8px } }
+@keyframes pxwCrest { 0% { background-position: 0 0 } to { background-position: 24px 0 } }
+@keyframes pxwBadge { 0%, to { transform: rotate(-1.2deg) } 50% { transform: rotate(1.2deg) } }
+@keyframes pxwGlint {
+  0% { background-position: 0 0, 0 10px, 20px 24px, 10px 40px, 40px 58px, 0 0 }
+  to { background-position: 0 0, 80px 10px, -50px 24px, 70px 40px, -50px 58px, 0 0 }
+}
+@keyframes pxwShimmer { 0%, to { opacity: .35 } 50% { opacity: .8 } }
+
+@media (prefers-reduced-motion: reduce) {
+  .wr-px-root *, .wr-px-root ::before, .wr-px-root ::after { animation: none !important; }
+}
+
+/* Dịch câu player: wrong-letter chip shake */
+@keyframes chipShake {
+  0%, 100% { transform: translateX(0) }
+  20% { transform: translateX(-4px) } 40% { transform: translateX(4px) }
+  60% { transform: translateX(-3px) } 80% { transform: translateX(3px) }
+}
+@keyframes wrFadeIn { from { opacity: 0; transform: translateY(12px) scale(.96) } to { opacity: 1; transform: none } }
+.wr-pop { animation: wrFadeIn .22s ease-out; }
+
+/* Guide / sample html coming from the site (task 1 guide_html) */
+.wr-guide h3 { font-size: 18px; font-weight: 900; margin: 0 0 8px; color: #1e3006; }
+.wr-guide h5 { font-size: 15px; font-weight: 800; margin: 14px 0 6px; color: #1e3006; }
+.wr-guide p { margin: 0 0 10px; line-height: 1.7; }
+.wr-guide ul { list-style: disc; padding-left: 22px; margin: 0 0 10px; }
+.wr-guide li { margin: 2px 0; line-height: 1.6; }
+.wr-guide hr { border: 0; border-top: 2px dashed #cbd5e1; margin: 14px 0; }
+.wr-guide strong { font-weight: 800; }

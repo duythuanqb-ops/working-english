@@ -9,21 +9,24 @@ import GrammarDoctorView from './components/GrammarDoctorView';
 import SettingsView from './components/SettingsView';
 import DictionaryView from './components/DictionaryView';
 import ToeicPracticeView from './components/ToeicPracticeView';
+import IeltsPracticeView from './components/IeltsPracticeView';
+import TidModule from './components/tid/TidModule';
 import AddWordModal from './components/AddWordModal';
 import MiniCaptureView from './components/MiniCaptureView';
 import { storageService } from './services/storageService';
 
 export default function App() {
-  // Check if opened as mini capture window
+  // Check if opened as mini capture window or with custom topic id
   const urlParams = new URLSearchParams(window.location.search);
   const isMini = urlParams.get('view') === 'mini';
+  const customTopicId = urlParams.get('id');
 
   if (isMini) {
     return <MiniCaptureView />;
   }
 
   // State
-  const [currentView, setCurrentView] = useState('vocab');
+  const [currentView, setCurrentView] = useState(customTopicId ? 'ielts-dictionary' : 'vocab');
   const [words, setWords] = useState([]);
   const [settings, setSettings] = useState(storageService.getSettings());
   const [synonymGroups, setSynonymGroups] = useState([]);
@@ -94,7 +97,11 @@ export default function App() {
       case 'dictionary':
         return { title: 'Từ Điển Công Sở & Quốc Tế', subtitle: 'Tra cứu chuyên sâu nghĩa công sở, phát âm IPA & định nghĩa Oxford' };
       case 'toeic':
-        return { title: 'Luyện Thi TOEIC Công Sở', subtitle: 'Ngữ pháp Part 5, bẫy nghe Part 2 & 600 từ vựng cốt lõi ETS' };
+        return { title: 'Luyện Thi TOEIC Quốc Tế', subtitle: 'Kho đề thi chuẩn ETS & đa nguồn • Đầy đủ Listening, Reading, Speaking & Writing' };
+      case 'ielts':
+        return { title: 'Luyện Thi IELTS Quốc Tế', subtitle: 'Trọn bộ đề thi Cambridge 10–20 mô phỏng thi thật • 4 kỹ năng có bấm giờ & chấm band' };
+      case 'ielts-dictionary':
+        return { title: 'The IELTS Dictionary • 100+ Đề 4 Kỹ Năng', subtitle: 'Listening chép chính tả, Reading song ngữ & báo, Speaking Forecast & Writing 9 bước' };
       case 'review':
         return { title: 'Ôn Tập & Kiểm Tra Hàng Ngày', subtitle: 'Ghi nhớ ngắt quãng (Spaced Repetition)' };
       case 'synonyms':
@@ -158,6 +165,21 @@ export default function App() {
               words={words}
               onSaveWord={handleSaveNewWord}
               speechVoice={settings.speechVoice || 'US'}
+            />
+          )}
+
+          {currentView === 'ielts' && (
+            <IeltsPracticeView
+              words={words}
+              onSaveWord={handleSaveNewWord}
+              speechVoice={settings.speechVoice || 'US'}
+            />
+          )}
+
+          {currentView === 'ielts-dictionary' && (
+            <TidModule
+              speechVoice={settings.speechVoice || 'US'}
+              onSaveWord={handleSaveNewWord}
             />
           )}
 

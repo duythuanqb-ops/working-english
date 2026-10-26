@@ -1,0 +1,1253 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2026-reading-test-4",
+  "testNum": 7,
+  "collection": "Bộ đề Parroto IELTS 2026",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2026 - Reading Test 4",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 40,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab65d5b98c2461d94a8b0d3",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-7</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">The life and work of Katsushika Hokusai</h3><ul><li>As a teenager, worked for a woodblock [1]</li><li>Early prints mostly showed kabuki [2]</li><li>Learned about perspective by studying Dutch [3]</li><li>From 1814, produced books containing thousands of [4] of daily life</li><li>Thirty-six Views of Mount Fuji: used a newly imported [5] to create a strong blue colour</li><li>Lost many drawings in a [6] in 1839</li><li>Was helped in old age by his [7], who was also a talented artist</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab65d5b98c2461d94a8b0d4",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 8-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>8-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab65d5b98c2461d94a8b0d8",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>.</p><p>Which paragraph contains the following information?</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab65d5b98c2461d94a8b0d9",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 18-22</strong></p><p>Complete the sentences below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<ul><li>In Ladakh, the ice melts slowly because the water freezes into giant [18].</li><li>In Morocco, fog is collected on panels made of fine plastic [19].</li><li>In Kenya, water is stored in the [20] that builds up behind low concrete walls.</li><li>In Burkina Faso, farmers add [21] to small pits in order to attract termites.</li><li>In Singapore, most recycled water is supplied to [22] rather than to homes.</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab65d5b98c2461d94a8b0da",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 23-26</strong></p><p>Look at the following statements (Questions 23-26) and the list of people below.</p><p>Match each statement with the correct person, <strong>A-E</strong>.</p><p><strong>List of People</strong><br>A &nbsp; Karma Angmo<br>B &nbsp; Leila Amrani<br>C &nbsp; Joseph Mwangi<br>D &nbsp; Aminata Ouédraogo<br>E &nbsp; Daniel Lim</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab65d5b98c2461d94a8b0de",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-31</strong></p><p>Reading Passage 3 has seven paragraphs, <strong>A-G</strong>.</p><p>Which paragraph contains the following information?</p><p><strong>NB</strong> You may use any letter more than once.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab65d5b98c2461d94a8b0df",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 32-36</strong></p><p>Look at the following statements (Questions 32-36) and the list of people below.</p><p>Match each statement with the correct person, <strong>A-E</strong>.</p><p><strong>List of People</strong><br>A &nbsp; Peter Lekishon<br>B &nbsp; Amara Njoroge<br>C &nbsp; Tomas Varga<br>D &nbsp; Ruth Kamau<br>E &nbsp; Oliver Grant</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab65d5b98c2461d94a8b0e0",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 37-40</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">Difficulties and benefits of beehive fences</h3><p>In dry periods, when there is a shortage of [37], bees may abandon their hives, leaving fields unprotected. Hives can also be invaded by insects such as [38], and some ecologists fear that honeybees may take nectar that would otherwise be used by wild [39]. However, the fences bring advantages as well: the bees can improve crop yields, and farmers can earn money by selling [40].</p>",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e2",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "carver",
+      "acceptedAnswers": [
+        "carver"
+      ],
+      "explanation": "Answer: carver Paragraph 2: &#39;At around fourteen, he was sent to work for a woodblock carver &#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e3",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "actors",
+      "acceptedAnswers": [
+        "actors"
+      ],
+      "explanation": "Answer: actors Paragraph 3: &#39;Most of these early works were portraits of actors from the kabuki theatre&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e4",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "engravings",
+      "acceptedAnswers": [
+        "engravings"
+      ],
+      "explanation": "Answer: engravings Paragraph 4: he learned about perspective, &#39;which he discovered in Dutch engravings that had reached Japan through the port of Nagasaki&#39;. Nagasaki is where they arrived, not what he studied."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e5",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "sketches",
+      "acceptedAnswers": [
+        "sketches"
+      ],
+      "explanation": "Answer: sketches Paragraph 6: the Manga series &#39;contains thousands of sketches of people at work, animals, plants...&#39;, forming &#39;a remarkable record of daily life&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e6",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "pigment",
+      "acceptedAnswers": [
+        "pigment"
+      ],
+      "explanation": "Answer: pigment Paragraph 7: the prints used &#39;Prussian blue, a synthetic pigment that had recently started to arrive from Europe&#39;. The note needs a noun after &#39;imported&#39;; &#39;Prussian blue&#39; is two words and is the name of the colour."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e7",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "fire",
+      "acceptedAnswers": [
+        "fire"
+      ],
+      "explanation": "Answer: fire Paragraph 10: &#39;In 1839, a fire destroyed his studio, and a large number of his drawings were lost.&#39;"
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e8",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "daughter",
+      "acceptedAnswers": [
+        "daughter"
+      ],
+      "explanation": "Answer: daughter Paragraph 10: &#39;his daughter Ōi, herself a gifted painter, lived with him and assisted him in his work&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0e9",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 2: Hokusai wrote that &#39; from the age of six he had been passionate about copying the shapes of things around him&#39;. He only went to the woodblock workshop at around fourteen, so his interest began much earlier."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0ea",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 3: &#39;he published his first prints under the name Shunrō , which his teacher had given him&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0eb",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 4: after his teacher&#39;s death, &#39;Hokusai left the Katsukawa studio and set out to learn from as many artistic traditions as he could&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0ec",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 7: &#39;The series proved so popular that the publisher extended it with ten additional prints .&#39;"
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0ed",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 8 says the picture is &#39;one of the most widely reproduced images in the history of art&#39;, but nothing is said about Hokusai&#39;s own opinion of it."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0ee",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab65d5b98c2461d94a8b0d4",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 11 says that &#39;Even in his eighties, Hokusai continued to paint almost every day&#39;, but it does not compare the amount he produced then with any other period."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0ef",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d8",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Paragraph C explains the fog collectors: &#39; As the fog blows through, tiny droplets stick to the threads, merge into larger drops and run down into a gutter &#39;. Paragraph B also mentions air, but there water is sprayed into the air to freeze, not collected from it."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f0",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d8",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A Paragraph A: a 2023 report warned that &#39; global demand for fresh water could exceed supply by 40 per cent by the end of this decade&#39;. The 40 per cent in paragraph F refers to how much of Singapore&#39;s demand NEWater meets now, not a forecast."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f1",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d8",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Paragraph D: &#39;a sand dam costs far less to build than a deep borehole and requires very little maintenance&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f2",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d8",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F Paragraph F: &#39; Persuading the public to accept recycled water was not straightforward , so officials drank it in front of cameras, bottled versions were handed out... and a visitor centre was opened&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f3",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d9",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "cones",
+      "acceptedAnswers": [
+        "cones"
+      ],
+      "explanation": "Answer: cones Paragraph B: &#39;The water freezes layer by layer into giant cones ... Because a cone exposes relatively little of its surface to the sun, the ice melts slowly&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f4",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d9",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "mesh",
+      "acceptedAnswers": [
+        "mesh"
+      ],
+      "explanation": "Answer: mesh Paragraph C: &#39;Each collector is a large panel of fine plastic mesh stretched between two posts.&#39;"
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f5",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d9",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "sand",
+      "acceptedAnswers": [
+        "sand"
+      ],
+      "explanation": "Answer: sand Paragraph D: the river &#39;carries sand downstream, which settles behind the wall&#39;, and &#39;Up to a third of the volume of this sand can be water, stored between the grains&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f6",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d9",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "manure",
+      "acceptedAnswers": [
+        "manure"
+      ],
+      "explanation": "Answer: manure Paragraph E: &#39;A handful of animal manure is placed in each pit&#39;, and &#39;the manure attracts termites&#39;. Seeds are also put in the pits, but they do not attract termites."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f7",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0d9",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "factories",
+      "acceptedAnswers": [
+        "factories"
+      ],
+      "explanation": "Answer: factories Paragraph F: NEWater is so pure that &#39;most of it is piped to factories &#39;, while only a small proportion goes into reservoirs for drinking."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f8",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0da",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Leila Amrani) Paragraph C: equipment &#39; only keeps working if the people who use it are trained to look after it and have a say in how the water is shared&#39;, and projects &#39;imposed from outside&#39; are likely to fail."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0f9",
+      "qNum": 24,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0da",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E (Daniel Lim) Paragraph F: for a small island without large rivers or lakes, &#39; Managing it well is absolutely a matter of survival for us. &#39;"
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0fa",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0da",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Karma Angmo) Paragraph B: the stupas &#39;are not a permanent answer&#39;, and &#39; we will have to keep rethinking the designs for decades to come &#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0fb",
+      "qNum": 26,
+      "partNum": 2,
+      "groupId": "6ab65d5b98c2461d94a8b0da",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (Joseph Mwangi) Paragraph D: twenty years ago only a handful of districts asked about sand dams, but &#39;Now, as droughts become longer, we are getting requests from places where the rivers used to run all year &#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0fc",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0de",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Paragraph D: &#39; the fences also have a second purpose: to protect the elephants themselves &#39;, because farmers who lose fewer crops are less likely to harm elephants."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0fd",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0de",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "G",
+      "acceptedAnswers": [],
+      "explanation": "Answer: G Paragraph G ends: if these approaches work more widely, &#39; beehives may prove to be one of the most promising tools available for helping people and elephants to share the same land&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0fe",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0de",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Paragraph B: &#39; When an elephant pushes against the wire, the hives swing, and the disturbed bees pour out. &#39; Stings around the eyes and trunk are painful, so elephants move away."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b0ff",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0de",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Paragraph C: &#39; The evidence suggests that beehive fences can be highly effective. &#39; Njoroge&#39;s trial and Varga&#39;s study both support this."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b100",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0de",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Paragraph B: &#39; Once they have been stung, they learn to associate the sound of buzzing with danger &#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b101",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0df",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D (Ruth Kamau) Paragraph D: &#39; The same fence protects both the harvest and the herd. &#39;"
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b102",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0df",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E (Oliver Grant) Paragraph E: &#39; People may say what they think the researchers want to hear, so reports of changed attitudes should be treated with some caution &#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b103",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0df",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Amara Njoroge) Paragraph E: &#39; If only a few farms in a village have fences, the elephants go next door instead &#39;, and the neighbour &#39;may decide to deal with the elephants himself&#39;. Njoroge also appears in paragraph C, but her comment on this point is in E."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b104",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0df",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (Tomas Varga) Paragraph C: &#39; Provided the hives are occupied and the fences are properly maintained, this is the most effective deterrent we have for the money &#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b105",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0df",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Peter Lekishon) Paragraph B: &#39; Keeping bees for a fence is not the same as keeping them for honey &#39;: for honey you want gentle colonies, for a fence &#39;lively bees that will defend their hive&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b106",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0e0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "flowers",
+      "acceptedAnswers": [
+        "flowers"
+      ],
+      "explanation": "Answer: flowers Paragraph F: &#39;when flowers are scarce, entire colonies may abandon their hives&#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b107",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0e0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "ants",
+      "acceptedAnswers": [
+        "ants"
+      ],
+      "explanation": "Answer: ants Paragraph F: &#39;Hives can also be invaded by insects such as ants &#39;. Honey badgers also damage hives, but they are not insects (and the name is two words)."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b108",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0e0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "pollinators",
+      "acceptedAnswers": [
+        "pollinators"
+      ],
+      "explanation": "Answer: pollinators Paragraph F: large numbers of honeybee colonies &#39;may increase competition for nectar with wild pollinators &#39;."
+    },
+    {
+      "qid": "6ab65d5b98c2461d94a8b109",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab65d5b98c2461d94a8b0e0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "honey",
+      "acceptedAnswers": [
+        "honey"
+      ],
+      "explanation": "Answer: honey Paragraph G: &#39;Families can also earn extra income by selling honey &#39;."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">The life and work of Katsushika Hokusai</h3><ul><li>As a teenager, worked for a woodblock [1]</li><li>Early prints mostly showed kabuki [2]</li><li>Learned about perspective by studying Dutch [3]</li><li>From 1814, produced books containing thousands of [4] of daily life</li><li>Thirty-six Views of Mount Fuji: used a newly imported [5] to create a strong blue colour</li><li>Lost many drawings in a [6] in 1839</li><li>Was helped in old age by his [7], who was also a talented artist</li></ul>",
+        "groups": [
+          {
+            "id": "6ab65d5b98c2461d94a8b0d3",
+            "directions": "<p><strong>Questions 1-7</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The life and work of Katsushika Hokusai</h3><ul><li>As a teenager, worked for a woodblock [1]</li><li>Early prints mostly showed kabuki [2]</li><li>Learned about perspective by studying Dutch [3]</li><li>From 1814, produced books containing thousands of [4] of daily life</li><li>Thirty-six Views of Mount Fuji: used a newly imported [5] to create a strong blue colour</li><li>Lost many drawings in a [6] in 1839</li><li>Was helped in old age by his [7], who was also a talented artist</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e2",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "carver",
+                "acceptedAnswers": [
+                  "carver"
+                ],
+                "explanation": "Answer: carver Paragraph 2: &#39;At around fourteen, he was sent to work for a woodblock carver &#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e3",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "actors",
+                "acceptedAnswers": [
+                  "actors"
+                ],
+                "explanation": "Answer: actors Paragraph 3: &#39;Most of these early works were portraits of actors from the kabuki theatre&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e4",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "engravings",
+                "acceptedAnswers": [
+                  "engravings"
+                ],
+                "explanation": "Answer: engravings Paragraph 4: he learned about perspective, &#39;which he discovered in Dutch engravings that had reached Japan through the port of Nagasaki&#39;. Nagasaki is where they arrived, not what he studied."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e5",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "sketches",
+                "acceptedAnswers": [
+                  "sketches"
+                ],
+                "explanation": "Answer: sketches Paragraph 6: the Manga series &#39;contains thousands of sketches of people at work, animals, plants...&#39;, forming &#39;a remarkable record of daily life&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e6",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pigment",
+                "acceptedAnswers": [
+                  "pigment"
+                ],
+                "explanation": "Answer: pigment Paragraph 7: the prints used &#39;Prussian blue, a synthetic pigment that had recently started to arrive from Europe&#39;. The note needs a noun after &#39;imported&#39;; &#39;Prussian blue&#39; is two words and is the name of the colour."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e7",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "fire",
+                "acceptedAnswers": [
+                  "fire"
+                ],
+                "explanation": "Answer: fire Paragraph 10: &#39;In 1839, a fire destroyed his studio, and a large number of his drawings were lost.&#39;"
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e8",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "daughter",
+                "acceptedAnswers": [
+                  "daughter"
+                ],
+                "explanation": "Answer: daughter Paragraph 10: &#39;his daughter Ōi, herself a gifted painter, lived with him and assisted him in his work&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab65d5b98c2461d94a8b0d4",
+            "directions": "<p><strong>Questions 8-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>8-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b0e9",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 2: Hokusai wrote that &#39; from the age of six he had been passionate about copying the shapes of things around him&#39;. He only went to the woodblock workshop at around fourteen, so his interest began much earlier."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0ea",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 3: &#39;he published his first prints under the name Shunrō , which his teacher had given him&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0eb",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 4: after his teacher&#39;s death, &#39;Hokusai left the Katsukawa studio and set out to learn from as many artistic traditions as he could&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0ec",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 7: &#39;The series proved so popular that the publisher extended it with ten additional prints .&#39;"
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0ed",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 8 says the picture is &#39;one of the most widely reproduced images in the history of art&#39;, but nothing is said about Hokusai&#39;s own opinion of it."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0ee",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 11 says that &#39;Even in his eighties, Hokusai continued to paint almost every day&#39;, but it does not compare the amount he produced then with any other period."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<ul><li>In Ladakh, the ice melts slowly because the water freezes into giant [18].</li><li>In Morocco, fog is collected on panels made of fine plastic [19].</li><li>In Kenya, water is stored in the [20] that builds up behind low concrete walls.</li><li>In Burkina Faso, farmers add [21] to small pits in order to attract termites.</li><li>In Singapore, most recycled water is supplied to [22] rather than to homes.</li></ul>",
+        "groups": [
+          {
+            "id": "6ab65d5b98c2461d94a8b0d8",
+            "directions": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>.</p><p>Which paragraph contains the following information?</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b0ef",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Paragraph C explains the fog collectors: &#39; As the fog blows through, tiny droplets stick to the threads, merge into larger drops and run down into a gutter &#39;. Paragraph B also mentions air, but there water is sprayed into the air to freeze, not collected from it."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f0",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A Paragraph A: a 2023 report warned that &#39; global demand for fresh water could exceed supply by 40 per cent by the end of this decade&#39;. The 40 per cent in paragraph F refers to how much of Singapore&#39;s demand NEWater meets now, not a forecast."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f1",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Paragraph D: &#39;a sand dam costs far less to build than a deep borehole and requires very little maintenance&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f2",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F Paragraph F: &#39; Persuading the public to accept recycled water was not straightforward , so officials drank it in front of cameras, bottled versions were handed out... and a visitor centre was opened&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab65d5b98c2461d94a8b0d9",
+            "directions": "<p><strong>Questions 18-22</strong></p><p>Complete the sentences below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<ul><li>In Ladakh, the ice melts slowly because the water freezes into giant [18].</li><li>In Morocco, fog is collected on panels made of fine plastic [19].</li><li>In Kenya, water is stored in the [20] that builds up behind low concrete walls.</li><li>In Burkina Faso, farmers add [21] to small pits in order to attract termites.</li><li>In Singapore, most recycled water is supplied to [22] rather than to homes.</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f3",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "cones",
+                "acceptedAnswers": [
+                  "cones"
+                ],
+                "explanation": "Answer: cones Paragraph B: &#39;The water freezes layer by layer into giant cones ... Because a cone exposes relatively little of its surface to the sun, the ice melts slowly&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f4",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "mesh",
+                "acceptedAnswers": [
+                  "mesh"
+                ],
+                "explanation": "Answer: mesh Paragraph C: &#39;Each collector is a large panel of fine plastic mesh stretched between two posts.&#39;"
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f5",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "sand",
+                "acceptedAnswers": [
+                  "sand"
+                ],
+                "explanation": "Answer: sand Paragraph D: the river &#39;carries sand downstream, which settles behind the wall&#39;, and &#39;Up to a third of the volume of this sand can be water, stored between the grains&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f6",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "manure",
+                "acceptedAnswers": [
+                  "manure"
+                ],
+                "explanation": "Answer: manure Paragraph E: &#39;A handful of animal manure is placed in each pit&#39;, and &#39;the manure attracts termites&#39;. Seeds are also put in the pits, but they do not attract termites."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f7",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "factories",
+                "acceptedAnswers": [
+                  "factories"
+                ],
+                "explanation": "Answer: factories Paragraph F: NEWater is so pure that &#39;most of it is piped to factories &#39;, while only a small proportion goes into reservoirs for drinking."
+              }
+            ]
+          },
+          {
+            "id": "6ab65d5b98c2461d94a8b0da",
+            "directions": "<p><strong>Questions 23-26</strong></p><p>Look at the following statements (Questions 23-26) and the list of people below.</p><p>Match each statement with the correct person, <strong>A-E</strong>.</p><p><strong>List of People</strong><br>A &nbsp; Karma Angmo<br>B &nbsp; Leila Amrani<br>C &nbsp; Joseph Mwangi<br>D &nbsp; Aminata Ouédraogo<br>E &nbsp; Daniel Lim</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f8",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Leila Amrani) Paragraph C: equipment &#39; only keeps working if the people who use it are trained to look after it and have a say in how the water is shared&#39;, and projects &#39;imposed from outside&#39; are likely to fail."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0f9",
+                "qNum": 24,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E (Daniel Lim) Paragraph F: for a small island without large rivers or lakes, &#39; Managing it well is absolutely a matter of survival for us. &#39;"
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0fa",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Karma Angmo) Paragraph B: the stupas &#39;are not a permanent answer&#39;, and &#39; we will have to keep rethinking the designs for decades to come &#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0fb",
+                "qNum": 26,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (Joseph Mwangi) Paragraph D: twenty years ago only a handful of districts asked about sand dams, but &#39;Now, as droughts become longer, we are getting requests from places where the rivers used to run all year &#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<h3 style=\"text-align:center\">Difficulties and benefits of beehive fences</h3><p>In dry periods, when there is a shortage of [37], bees may abandon their hives, leaving fields unprotected. Hives can also be invaded by insects such as [38], and some ecologists fear that honeybees may take nectar that would otherwise be used by wild [39]. However, the fences bring advantages as well: the bees can improve crop yields, and farmers can earn money by selling [40].</p>",
+        "groups": [
+          {
+            "id": "6ab65d5b98c2461d94a8b0de",
+            "directions": "<p><strong>Questions 27-31</strong></p><p>Reading Passage 3 has seven paragraphs, <strong>A-G</strong>.</p><p>Which paragraph contains the following information?</p><p><strong>NB</strong> You may use any letter more than once.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b0fc",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Paragraph D: &#39; the fences also have a second purpose: to protect the elephants themselves &#39;, because farmers who lose fewer crops are less likely to harm elephants."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0fd",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "acceptedAnswers": [],
+                "explanation": "Answer: G Paragraph G ends: if these approaches work more widely, &#39; beehives may prove to be one of the most promising tools available for helping people and elephants to share the same land&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0fe",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Paragraph B: &#39; When an elephant pushes against the wire, the hives swing, and the disturbed bees pour out. &#39; Stings around the eyes and trunk are painful, so elephants move away."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b0ff",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Paragraph C: &#39; The evidence suggests that beehive fences can be highly effective. &#39; Njoroge&#39;s trial and Varga&#39;s study both support this."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b100",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Paragraph B: &#39; Once they have been stung, they learn to associate the sound of buzzing with danger &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab65d5b98c2461d94a8b0df",
+            "directions": "<p><strong>Questions 32-36</strong></p><p>Look at the following statements (Questions 32-36) and the list of people below.</p><p>Match each statement with the correct person, <strong>A-E</strong>.</p><p><strong>List of People</strong><br>A &nbsp; Peter Lekishon<br>B &nbsp; Amara Njoroge<br>C &nbsp; Tomas Varga<br>D &nbsp; Ruth Kamau<br>E &nbsp; Oliver Grant</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b101",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D (Ruth Kamau) Paragraph D: &#39; The same fence protects both the harvest and the herd. &#39;"
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b102",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E (Oliver Grant) Paragraph E: &#39; People may say what they think the researchers want to hear, so reports of changed attitudes should be treated with some caution &#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b103",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Amara Njoroge) Paragraph E: &#39; If only a few farms in a village have fences, the elephants go next door instead &#39;, and the neighbour &#39;may decide to deal with the elephants himself&#39;. Njoroge also appears in paragraph C, but her comment on this point is in E."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b104",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (Tomas Varga) Paragraph C: &#39; Provided the hives are occupied and the fences are properly maintained, this is the most effective deterrent we have for the money &#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b105",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Peter Lekishon) Paragraph B: &#39; Keeping bees for a fence is not the same as keeping them for honey &#39;: for honey you want gentle colonies, for a fence &#39;lively bees that will defend their hive&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab65d5b98c2461d94a8b0e0",
+            "directions": "<p><strong>Questions 37-40</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Difficulties and benefits of beehive fences</h3><p>In dry periods, when there is a shortage of [37], bees may abandon their hives, leaving fields unprotected. Hives can also be invaded by insects such as [38], and some ecologists fear that honeybees may take nectar that would otherwise be used by wild [39]. However, the fences bring advantages as well: the bees can improve crop yields, and farmers can earn money by selling [40].</p>",
+            "questions": [
+              {
+                "qid": "6ab65d5b98c2461d94a8b106",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "flowers",
+                "acceptedAnswers": [
+                  "flowers"
+                ],
+                "explanation": "Answer: flowers Paragraph F: &#39;when flowers are scarce, entire colonies may abandon their hives&#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b107",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "ants",
+                "acceptedAnswers": [
+                  "ants"
+                ],
+                "explanation": "Answer: ants Paragraph F: &#39;Hives can also be invaded by insects such as ants &#39;. Honey badgers also damage hives, but they are not insects (and the name is two words)."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b108",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pollinators",
+                "acceptedAnswers": [
+                  "pollinators"
+                ],
+                "explanation": "Answer: pollinators Paragraph F: large numbers of honeybee colonies &#39;may increase competition for nectar with wild pollinators &#39;."
+              },
+              {
+                "qid": "6ab65d5b98c2461d94a8b109",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "honey",
+                "acceptedAnswers": [
+                  "honey"
+                ],
+                "explanation": "Answer: honey Paragraph G: &#39;Families can also earn extra income by selling honey &#39;."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

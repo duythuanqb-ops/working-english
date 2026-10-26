@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-6",
+  "testNum": 6,
+  "title": "TOEIC SW Writing Test 6 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-6/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-6/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-6/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-6/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-6/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Directions\n: Respond to an email\nFrom: George Pinkney\nTo: Social Committee members\nSubject: Meeting\nSent: April 2, 20—\nIt is time for a meeting of the Social Committee. We need to start planning the annual year-end party. I would like all members of the committee to meet next Friday morning from 9 to 11 in Conference Room A. Please let me know as soon as possible if you are available to attend this meeting.\nThank you.\nGeorge Pinkney\nSocial Committee Chair\nDirections: Respond to the\ne-mail\nas if you are a member of the Social Committee. In your\ne-mail\n, explain ONE problem and make TWO suggestions.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p><span>Directions</span><span>: Respond to an email</span></p><p><span>From: George Pinkney</span></p><p><span>To: Social Committee members</span></p><p><span>Subject: Meeting</span></p><p><span>Sent: April 2, 20—</span></p><p><span>It is time for a meeting of the Social Committee. We need to start planning the annual year-end party. I would like all members of the committee to meet next Friday morning from 9 to 11 in Conference Room A. Please let me know as soon as possible if you are available to attend this meeting.</span></p><p><span>Thank you.</span></p><p><span>George Pinkney</span></p><p><span>Social Committee Chair</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are a member of the Social Committee. In your </span><span>e-mail</span><span>, explain ONE problem and make TWO suggestions.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: Journal of Business News\nTo: Business professionals\nSubject: Subscribe\nSent: December 2, 2 0 -\nDear Business Professional,\nThe\nJournal Of Business News\nbrings you all the latest news about important developments in the international business world. It is read by thousands of business people just like you in over 40 countries around the world. Subscribe today and receive a 30% discount off the regular price.\nDirections: Respond to the\ne-mail\nas if you are a businessperson interested in subscribing to the Journal of Business News. In your\ne-mail\n, ask THREE questions.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Journal of Business News</span></p><p><span>To: Business professionals</span></p><p><span>Subject: Subscribe</span></p><p><span>Sent: December 2, 2 0 -</span></p><p><span>Dear Business Professional,</span></p><p><span>The </span><span>Journal Of Business News </span><span>brings you all the latest news about important developments in the international business world. It is read by thousands of business people just like you in over 40 countries around the world. Subscribe today and receive a 30% discount off the regular price.</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are a businessperson interested in subscribing to the Journal of Business News. In your </span><span>e-mail</span><span>, ask THREE questions.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Do you agree or disagree with the following statement? It is more important to work at a job you enjoy than to make a lot of money. Support your answer with specific reasons and examples."
+    }
+  ]
+}

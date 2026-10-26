@@ -1,0 +1,1455 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2026-reading-test-3",
+  "testNum": 5,
+  "collection": "Bộ đề Parroto IELTS 2026",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2026 - Reading Test 3",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 38,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab648e3874e206b1e84e267",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-7</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">The history of canned food</h3><h4>1795, France</h4><ul><li>A prize was offered for a way of preserving food for [1].</li></ul><h4>1810, France</h4><ul><li>Appert sealed food in glass bottles using cork and [2], then heated them.</li></ul><h4>1860s, France</h4><ul><li>Pasteur explained that food goes bad because of [3].</li></ul><h4>1813, London</h4><ul><li>The first canning factory was opened by two [4].</li></ul><h4>Early nineteenth century</h4><ul><li>Cans were difficult to open; instructions suggested using a hammer and a [5].</li></ul><h4>1870, USA</h4><ul><li>A safer can opener used a [6] to cut the lid.</li></ul><h4>1897, USA</h4><ul><li>Removing most of the [7] from soup allowed it to be sold more cheaply.</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab648e3874e206b1e84e268",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 8-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>8-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab648e3874e206b1e84e26c",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-19</strong></p><p>Reading Passage 2 has six sections, <strong>A-F</strong>.</p><p>Choose the correct heading for each section from the list of headings below.</p><p><strong>List of Headings</strong><br>i &nbsp; A dispute about a well-known description<br>ii &nbsp; Physical features that increase the risk<br>iii &nbsp; Reasons for optimism<br>iv &nbsp; A single cause behind every decline<br>v &nbsp; An exhibition with a dual purpose<br>vi &nbsp; Several threats of different kinds<br>vii &nbsp; Research into practical solutions</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab648e3874e206b1e84e26d",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 20-23</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab648e3874e206b1e84e26e",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 24-26</strong></p><p>Complete the sentences below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<ul><li>Many amphibians take in water and some [24] through their skin.</li><li>Amphibians are important because they consume large quantities of [25].</li><li>A fungal disease that damages the [26] has led to the loss of many species.</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab648e3874e206b1e84e272",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-33</strong></p><p>Look at the following statements (Questions 27-33) and the list of experts below.</p><p>Match each statement with the correct expert, <strong>A</strong>, <strong>B</strong> or <strong>C</strong>.</p><p><strong>NB</strong> You may use any letter more than once.</p><p><strong>List of Experts</strong><br>A &nbsp; Alan Whitford<br>B &nbsp; Sofia Lindqvist<br>C &nbsp; Ruth Adebayo</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab648e3874e206b1e84e273",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 34-36</strong></p><p>Complete each sentence with the correct ending, <strong>A-D</strong>, below.</p><p>A &nbsp; the cost of caring for an ageing population.<br>B &nbsp; the importance of good health rather than a longer life.<br>C &nbsp; who would benefit from new treatments.<br>D &nbsp; the effect of longer lives on the natural world.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab648e3874e206b1e84e274",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 37-40</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab648e3874e206b1e84e276",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e267",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "troops",
+      "acceptedAnswers": [
+        "troops"
+      ],
+      "explanation": "Answer: troops Paragraph 2: the French government offered a prize to anyone who could find &#39;a better way of preserving food for its troops &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e277",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e267",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "wax",
+      "acceptedAnswers": [
+        "wax"
+      ],
+      "explanation": "Answer: wax Paragraph 2: Appert would &#39;seal them tightly with cork and wax , and then heat the bottles in boiling water&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e278",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e267",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "microorganisms",
+      "acceptedAnswers": [
+        "microorganisms"
+      ],
+      "explanation": "Answer: microorganisms Paragraph 3: Pasteur &#39;showed that food is spoiled by microorganisms &#39;. &#39;Goes bad&#39; paraphrases &#39;is spoiled&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e279",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e267",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "engineers",
+      "acceptedAnswers": [
+        "engineers"
+      ],
+      "explanation": "Answer: engineers Paragraph 4: Durand&#39;s patent was acquired by &#39;two engineers , Bryan Donkin and John Hall, who opened a canning factory in London in 1813&#39;. Durand himself was a merchant who does not seem to have made cans."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e27a",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e267",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "chisel",
+      "acceptedAnswers": [
+        "chisel"
+      ],
+      "explanation": "Answer: chisel Paragraph 5: instructions &#39;advised users to cut around the top with a chisel and hammer&#39;. Bayonets and knives were what soldiers sometimes used, not what the instructions suggested."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e27b",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e267",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "wheel",
+      "acceptedAnswers": [
+        "wheel"
+      ],
+      "explanation": "Answer: wheel Paragraph 6: &#39;A much safer design, which used a rotating wheel to cut the lid, appeared in 1870&#39;. The 1858 opener used a curved blade."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e27c",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e267",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "water",
+      "acceptedAnswers": [
+        "water"
+      ],
+      "explanation": "Answer: water Paragraph 9: a chemist &#39;developed a way of removing most of the water from soup, so that the product could be sold in smaller cans at a lower price&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e27d",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e268",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 2 says that Appert &#39;was eventually awarded the prize in 1810&#39; and published a book, but it gives no information about what he did with the money."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e27e",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e268",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 4: glass bottles &#39; broke easily , which made them unsuitable for use on ships or on the battlefield &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e27f",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e268",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 4: &#39;Durand does not appear to have manufactured any cans himself &#39;. His patent was acquired by others."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e280",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e268",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 6: &#39;it was almost fifty years before anyone invented a tool designed specifically for opening cans&#39;. The patent for cans dates from 1810 and the first opener from 1858."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e281",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e268",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 7: some historians suggest lead poisoning, but &#39; The theory remains controversial , however, and other researchers believe that cold, hunger and disease were the main causes&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e282",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab648e3874e206b1e84e268",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 9 says that condensed soup &#39;was an enormous commercial success&#39;, but it does not compare its popularity in cities and rural areas."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e283",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26c",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "v",
+      "acceptedAnswers": [],
+      "explanation": "Answer: v Section A describes the new Amphibian House, which &#39;is intended to do two things &#39;: make people love amphibians, and show that they are disappearing and what scientists are doing about it."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e284",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26c",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "ii",
+      "acceptedAnswers": [],
+      "explanation": "Answer: ii Section B explains that &#39; their bodies make them unusually sensitive &#39;: permeable skin, a double life in water and on land, and eggs without a hard shell."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e285",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26c",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "i",
+      "acceptedAnswers": [],
+      "explanation": "Answer: i Section C: amphibians are often called &#39;canaries in the coal mine&#39;, but &#39; Not all biologists are happy with the comparison &#39;, and Hargreaves explains why."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e286",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26c",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "vi",
+      "acceptedAnswers": [],
+      "explanation": "Answer: vi Section D lists habitat loss, a fungal disease, climate change and pollution. These are several threats of different kinds. Heading iv (a single cause) is contradicted by this list."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e287",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26c",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "vii",
+      "acceptedAnswers": [],
+      "explanation": "Answer: vii Section E: &#39;a team of scientists is working to reduce these threats &#39;, testing bacteria against the fungus, water temperature and breeding techniques."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e288",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26c",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "iii",
+      "acceptedAnswers": [],
+      "explanation": "Answer: iii Section F: species thought to be lost have returned to the wild, and Osei says &#39; We want every visitor to leave believing that these animals have a future. &#39;"
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e289",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26d",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "the introduction of predatory fish"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "the collection of frogs for the pet trade"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "chemicals used in agriculture"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "increased levels of noise"
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "the drying out of breeding sites"
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C, E Section D: climate change &#39; dry out the ponds and streams in which amphibians breed &#39; (E), and &#39; Pollution from farm chemicals adds further pressure&#39; (C). Predatory fish, the pet trade and noise are not mentioned."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e28a",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26d",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "creating new wetland habitats near the zoo"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "using bacteria to help frogs resist disease"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "training local people to monitor frog populations"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "recreating weather conditions that trigger breeding"
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "developing a vaccine against the fungus"
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B, D Section E: one project treats frogs &#39; with beneficial bacteria &#39; to protect them from the fungus (B), and &#39; we have built a system that imitates a tropical storm &#39; because some species breed only after heavy rain (D). A vaccine (E) is not mentioned."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e28b",
+      "qNum": 24,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "oxygen",
+      "acceptedAnswers": [
+        "oxygen"
+      ],
+      "explanation": "Answer: oxygen Section B: &#39;many species absorb water and even part of the oxygen they need through it&#39;, meaning through their skin."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e28c",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "insects",
+      "acceptedAnswers": [
+        "insects"
+      ],
+      "explanation": "Answer: insects Section C: &#39;In many forests, they eat vast numbers of insects &#39;. &#39;Large quantities&#39; paraphrases &#39;vast numbers&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e28d",
+      "qNum": 26,
+      "partNum": 2,
+      "groupId": "6ab648e3874e206b1e84e26e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "skin",
+      "acceptedAnswers": [
+        "skin"
+      ],
+      "explanation": "Answer: skin Section D: &#39;a fungal disease called chytridiomycosis, which attacks the skin &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e28e",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e272",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Alan Whitford) Paragraph 1: Whitford said that treatments &#39; should first be tested on people who were already ill , rather than being sold to wealthy customers who simply want to stay young&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e28f",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e272",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (Ruth Adebayo) Paragraph 8: &#39;Adebayo, by contrast, argued that the fears about overpopulation were exaggerated &#39;, because birth rates are falling. Whitford holds the opposite view (paragraph 7)."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e290",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e272",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Alan Whitford) Paragraph 3: Whitford predicted that &#39; it would be at least several decades before anything could be said to slow ageing itself&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e291",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e272",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Sofia Lindqvist) Paragraph 4: Lindqvist believes that &#39;a large proportion of the gains still available will come from reducing inequalities in health within countries, rather than from new technology &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e292",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e272",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (Ruth Adebayo) Paragraph 5: Adebayo argued that this attitude is harmful &#39; because people who fear getting old often avoid thinking about how they would like to live when they are old &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e293",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e272",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Sofia Lindqvist) Paragraph 6: Lindqvist added that &#39; longer working lives were not necessarily a bad thing &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e294",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e272",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Alan Whitford) Paragraph 9: Whitford tells his students that ancient myths contain &#39; better warnings about science than many scientific papers &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e295",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e273",
+      "type": "MATCHING_ENDINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Whitford wants to keep people &#39;healthy for longer&#39; rather than making them live to 150, and Lindqvist &#39; agreed that the priority should be health rather than length of life &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e296",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e273",
+      "type": "MATCHING_ENDINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Adebayo: &#39; We should be very careful about whose lives are being extended &#39;, because only the rich might afford treatments. Whitford objects to treatments &#39;being sold to wealthy customers who simply want to stay young&#39;. Both are concerned about who benefits."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e297",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e273",
+      "type": "MATCHING_ENDINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Whitford worries that a growing population &#39; would put even more pressure on resources &#39;, but Adebayo argues that &#39;the fears about overpopulation were exaggerated&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e298",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e274",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It has increased as scientific knowledge has improved."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It reflects a tendency to regard ageing as an illness."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It is based on a misunderstanding of how the body ages."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It shows that older people are more valued than before."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Paragraph 5: the enthusiasm &#39;says more about modern attitudes to old age than about science&#39;, and &#39; We have come to see ageing as a disease, something to be cured &#39;. D is the opposite: older people are treated &#39;as a problem to be solved&#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e299",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e274",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "They should be managed by private companies."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "They have always been too generous."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "They were not designed for people living so long after retirement."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "They encourage people to stop working too early."
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Paragraph 6: &#39;many pension systems were designed at a time when people rarely lived more than a few years after retiring &#39;."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e29a",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e274",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Myths about ageing are more popular than scientific explanations."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "A longer life without continued health would be undesirable."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Ancient cultures had a surprisingly accurate understanding of ageing."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Students should read more literature as part of their studies."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Paragraph 9: Tithonus &#39; was granted eternal life but not eternal youth , and so grew older and weaker for ever&#39;, and Whitford says &#39;That is precisely the outcome we need to avoid&#39;. So a long life without health is undesirable."
+    },
+    {
+      "qid": "6ab648e3874e206b1e84e29b",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab648e3874e206b1e84e274",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "warning that myths can give a misleading view of science"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "explaining why myths about death are similar across cultures"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "recommending that people's experiences recorded in myths are considered"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "arguing that scientists should stop researching ageing"
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Adebayo says myths &#39;record what people in many different times and places have felt about death&#39;, and &#39; we need to listen to that experience as well as to the scientists &#39;. This is a recommendation. She does not ask scientists to stop their research (D)."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">The history of canned food</h3><h4>1795, France</h4><ul><li>A prize was offered for a way of preserving food for [1].</li></ul><h4>1810, France</h4><ul><li>Appert sealed food in glass bottles using cork and [2], then heated them.</li></ul><h4>1860s, France</h4><ul><li>Pasteur explained that food goes bad because of [3].</li></ul><h4>1813, London</h4><ul><li>The first canning factory was opened by two [4].</li></ul><h4>Early nineteenth century</h4><ul><li>Cans were difficult to open; instructions suggested using a hammer and a [5].</li></ul><h4>1870, USA</h4><ul><li>A safer can opener used a [6] to cut the lid.</li></ul><h4>1897, USA</h4><ul><li>Removing most of the [7] from soup allowed it to be sold more cheaply.</li></ul>",
+        "groups": [
+          {
+            "id": "6ab648e3874e206b1e84e267",
+            "directions": "<p><strong>Questions 1-7</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The history of canned food</h3><h4>1795, France</h4><ul><li>A prize was offered for a way of preserving food for [1].</li></ul><h4>1810, France</h4><ul><li>Appert sealed food in glass bottles using cork and [2], then heated them.</li></ul><h4>1860s, France</h4><ul><li>Pasteur explained that food goes bad because of [3].</li></ul><h4>1813, London</h4><ul><li>The first canning factory was opened by two [4].</li></ul><h4>Early nineteenth century</h4><ul><li>Cans were difficult to open; instructions suggested using a hammer and a [5].</li></ul><h4>1870, USA</h4><ul><li>A safer can opener used a [6] to cut the lid.</li></ul><h4>1897, USA</h4><ul><li>Removing most of the [7] from soup allowed it to be sold more cheaply.</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e276",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "troops",
+                "acceptedAnswers": [
+                  "troops"
+                ],
+                "explanation": "Answer: troops Paragraph 2: the French government offered a prize to anyone who could find &#39;a better way of preserving food for its troops &#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e277",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "wax",
+                "acceptedAnswers": [
+                  "wax"
+                ],
+                "explanation": "Answer: wax Paragraph 2: Appert would &#39;seal them tightly with cork and wax , and then heat the bottles in boiling water&#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e278",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "microorganisms",
+                "acceptedAnswers": [
+                  "microorganisms"
+                ],
+                "explanation": "Answer: microorganisms Paragraph 3: Pasteur &#39;showed that food is spoiled by microorganisms &#39;. &#39;Goes bad&#39; paraphrases &#39;is spoiled&#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e279",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "engineers",
+                "acceptedAnswers": [
+                  "engineers"
+                ],
+                "explanation": "Answer: engineers Paragraph 4: Durand&#39;s patent was acquired by &#39;two engineers , Bryan Donkin and John Hall, who opened a canning factory in London in 1813&#39;. Durand himself was a merchant who does not seem to have made cans."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e27a",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "chisel",
+                "acceptedAnswers": [
+                  "chisel"
+                ],
+                "explanation": "Answer: chisel Paragraph 5: instructions &#39;advised users to cut around the top with a chisel and hammer&#39;. Bayonets and knives were what soldiers sometimes used, not what the instructions suggested."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e27b",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "wheel",
+                "acceptedAnswers": [
+                  "wheel"
+                ],
+                "explanation": "Answer: wheel Paragraph 6: &#39;A much safer design, which used a rotating wheel to cut the lid, appeared in 1870&#39;. The 1858 opener used a curved blade."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e27c",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "water",
+                "acceptedAnswers": [
+                  "water"
+                ],
+                "explanation": "Answer: water Paragraph 9: a chemist &#39;developed a way of removing most of the water from soup, so that the product could be sold in smaller cans at a lower price&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab648e3874e206b1e84e268",
+            "directions": "<p><strong>Questions 8-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>8-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e27d",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 2 says that Appert &#39;was eventually awarded the prize in 1810&#39; and published a book, but it gives no information about what he did with the money."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e27e",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 4: glass bottles &#39; broke easily , which made them unsuitable for use on ships or on the battlefield &#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e27f",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 4: &#39;Durand does not appear to have manufactured any cans himself &#39;. His patent was acquired by others."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e280",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 6: &#39;it was almost fifty years before anyone invented a tool designed specifically for opening cans&#39;. The patent for cans dates from 1810 and the first opener from 1858."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e281",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 7: some historians suggest lead poisoning, but &#39; The theory remains controversial , however, and other researchers believe that cold, hunger and disease were the main causes&#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e282",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 9 says that condensed soup &#39;was an enormous commercial success&#39;, but it does not compare its popularity in cities and rural areas."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<ul><li>Many amphibians take in water and some [24] through their skin.</li><li>Amphibians are important because they consume large quantities of [25].</li><li>A fungal disease that damages the [26] has led to the loss of many species.</li></ul>",
+        "groups": [
+          {
+            "id": "6ab648e3874e206b1e84e26c",
+            "directions": "<p><strong>Questions 14-19</strong></p><p>Reading Passage 2 has six sections, <strong>A-F</strong>.</p><p>Choose the correct heading for each section from the list of headings below.</p><p><strong>List of Headings</strong><br>i &nbsp; A dispute about a well-known description<br>ii &nbsp; Physical features that increase the risk<br>iii &nbsp; Reasons for optimism<br>iv &nbsp; A single cause behind every decline<br>v &nbsp; An exhibition with a dual purpose<br>vi &nbsp; Several threats of different kinds<br>vii &nbsp; Research into practical solutions</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e283",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "v",
+                "acceptedAnswers": [],
+                "explanation": "Answer: v Section A describes the new Amphibian House, which &#39;is intended to do two things &#39;: make people love amphibians, and show that they are disappearing and what scientists are doing about it."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e284",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "ii",
+                "acceptedAnswers": [],
+                "explanation": "Answer: ii Section B explains that &#39; their bodies make them unusually sensitive &#39;: permeable skin, a double life in water and on land, and eggs without a hard shell."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e285",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "i",
+                "acceptedAnswers": [],
+                "explanation": "Answer: i Section C: amphibians are often called &#39;canaries in the coal mine&#39;, but &#39; Not all biologists are happy with the comparison &#39;, and Hargreaves explains why."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e286",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "vi",
+                "acceptedAnswers": [],
+                "explanation": "Answer: vi Section D lists habitat loss, a fungal disease, climate change and pollution. These are several threats of different kinds. Heading iv (a single cause) is contradicted by this list."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e287",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "vii",
+                "acceptedAnswers": [],
+                "explanation": "Answer: vii Section E: &#39;a team of scientists is working to reduce these threats &#39;, testing bacteria against the fungus, water temperature and breeding techniques."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e288",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "iii",
+                "acceptedAnswers": [],
+                "explanation": "Answer: iii Section F: species thought to be lost have returned to the wild, and Osei says &#39; We want every visitor to leave believing that these animals have a future. &#39;"
+              }
+            ]
+          },
+          {
+            "id": "6ab648e3874e206b1e84e26d",
+            "directions": "<p><strong>Questions 20-23</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e289",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the introduction of predatory fish"
+                  },
+                  {
+                    "key": "B",
+                    "text": "the collection of frogs for the pet trade"
+                  },
+                  {
+                    "key": "C",
+                    "text": "chemicals used in agriculture"
+                  },
+                  {
+                    "key": "D",
+                    "text": "increased levels of noise"
+                  },
+                  {
+                    "key": "E",
+                    "text": "the drying out of breeding sites"
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C, E Section D: climate change &#39; dry out the ponds and streams in which amphibians breed &#39; (E), and &#39; Pollution from farm chemicals adds further pressure&#39; (C). Predatory fish, the pet trade and noise are not mentioned."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e28a",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "creating new wetland habitats near the zoo"
+                  },
+                  {
+                    "key": "B",
+                    "text": "using bacteria to help frogs resist disease"
+                  },
+                  {
+                    "key": "C",
+                    "text": "training local people to monitor frog populations"
+                  },
+                  {
+                    "key": "D",
+                    "text": "recreating weather conditions that trigger breeding"
+                  },
+                  {
+                    "key": "E",
+                    "text": "developing a vaccine against the fungus"
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B, D Section E: one project treats frogs &#39; with beneficial bacteria &#39; to protect them from the fungus (B), and &#39; we have built a system that imitates a tropical storm &#39; because some species breed only after heavy rain (D). A vaccine (E) is not mentioned."
+              }
+            ]
+          },
+          {
+            "id": "6ab648e3874e206b1e84e26e",
+            "directions": "<p><strong>Questions 24-26</strong></p><p>Complete the sentences below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<ul><li>Many amphibians take in water and some [24] through their skin.</li><li>Amphibians are important because they consume large quantities of [25].</li><li>A fungal disease that damages the [26] has led to the loss of many species.</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e28b",
+                "qNum": 24,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "oxygen",
+                "acceptedAnswers": [
+                  "oxygen"
+                ],
+                "explanation": "Answer: oxygen Section B: &#39;many species absorb water and even part of the oxygen they need through it&#39;, meaning through their skin."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e28c",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "insects",
+                "acceptedAnswers": [
+                  "insects"
+                ],
+                "explanation": "Answer: insects Section C: &#39;In many forests, they eat vast numbers of insects &#39;. &#39;Large quantities&#39; paraphrases &#39;vast numbers&#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e28d",
+                "qNum": 26,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "skin",
+                "acceptedAnswers": [
+                  "skin"
+                ],
+                "explanation": "Answer: skin Section D: &#39;a fungal disease called chytridiomycosis, which attacks the skin &#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<p>Reading Passage 3</p>",
+        "groups": [
+          {
+            "id": "6ab648e3874e206b1e84e272",
+            "directions": "<p><strong>Questions 27-33</strong></p><p>Look at the following statements (Questions 27-33) and the list of experts below.</p><p>Match each statement with the correct expert, <strong>A</strong>, <strong>B</strong> or <strong>C</strong>.</p><p><strong>NB</strong> You may use any letter more than once.</p><p><strong>List of Experts</strong><br>A &nbsp; Alan Whitford<br>B &nbsp; Sofia Lindqvist<br>C &nbsp; Ruth Adebayo</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e28e",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Alan Whitford) Paragraph 1: Whitford said that treatments &#39; should first be tested on people who were already ill , rather than being sold to wealthy customers who simply want to stay young&#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e28f",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (Ruth Adebayo) Paragraph 8: &#39;Adebayo, by contrast, argued that the fears about overpopulation were exaggerated &#39;, because birth rates are falling. Whitford holds the opposite view (paragraph 7)."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e290",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Alan Whitford) Paragraph 3: Whitford predicted that &#39; it would be at least several decades before anything could be said to slow ageing itself&#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e291",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Sofia Lindqvist) Paragraph 4: Lindqvist believes that &#39;a large proportion of the gains still available will come from reducing inequalities in health within countries, rather than from new technology &#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e292",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (Ruth Adebayo) Paragraph 5: Adebayo argued that this attitude is harmful &#39; because people who fear getting old often avoid thinking about how they would like to live when they are old &#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e293",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Sofia Lindqvist) Paragraph 6: Lindqvist added that &#39; longer working lives were not necessarily a bad thing &#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e294",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Alan Whitford) Paragraph 9: Whitford tells his students that ancient myths contain &#39; better warnings about science than many scientific papers &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab648e3874e206b1e84e273",
+            "directions": "<p><strong>Questions 34-36</strong></p><p>Complete each sentence with the correct ending, <strong>A-D</strong>, below.</p><p>A &nbsp; the cost of caring for an ageing population.<br>B &nbsp; the importance of good health rather than a longer life.<br>C &nbsp; who would benefit from new treatments.<br>D &nbsp; the effect of longer lives on the natural world.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e295",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Whitford wants to keep people &#39;healthy for longer&#39; rather than making them live to 150, and Lindqvist &#39; agreed that the priority should be health rather than length of life &#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e296",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Adebayo: &#39; We should be very careful about whose lives are being extended &#39;, because only the rich might afford treatments. Whitford objects to treatments &#39;being sold to wealthy customers who simply want to stay young&#39;. Both are concerned about who benefits."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e297",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Whitford worries that a growing population &#39; would put even more pressure on resources &#39;, but Adebayo argues that &#39;the fears about overpopulation were exaggerated&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab648e3874e206b1e84e274",
+            "directions": "<p><strong>Questions 37-40</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab648e3874e206b1e84e298",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It has increased as scientific knowledge has improved."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It reflects a tendency to regard ageing as an illness."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It is based on a misunderstanding of how the body ages."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It shows that older people are more valued than before."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Paragraph 5: the enthusiasm &#39;says more about modern attitudes to old age than about science&#39;, and &#39; We have come to see ageing as a disease, something to be cured &#39;. D is the opposite: older people are treated &#39;as a problem to be solved&#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e299",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "They should be managed by private companies."
+                  },
+                  {
+                    "key": "B",
+                    "text": "They have always been too generous."
+                  },
+                  {
+                    "key": "C",
+                    "text": "They were not designed for people living so long after retirement."
+                  },
+                  {
+                    "key": "D",
+                    "text": "They encourage people to stop working too early."
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Paragraph 6: &#39;many pension systems were designed at a time when people rarely lived more than a few years after retiring &#39;."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e29a",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Myths about ageing are more popular than scientific explanations."
+                  },
+                  {
+                    "key": "B",
+                    "text": "A longer life without continued health would be undesirable."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Ancient cultures had a surprisingly accurate understanding of ageing."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Students should read more literature as part of their studies."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Paragraph 9: Tithonus &#39; was granted eternal life but not eternal youth , and so grew older and weaker for ever&#39;, and Whitford says &#39;That is precisely the outcome we need to avoid&#39;. So a long life without health is undesirable."
+              },
+              {
+                "qid": "6ab648e3874e206b1e84e29b",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "warning that myths can give a misleading view of science"
+                  },
+                  {
+                    "key": "B",
+                    "text": "explaining why myths about death are similar across cultures"
+                  },
+                  {
+                    "key": "C",
+                    "text": "recommending that people's experiences recorded in myths are considered"
+                  },
+                  {
+                    "key": "D",
+                    "text": "arguing that scientists should stop researching ageing"
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Adebayo says myths &#39;record what people in many different times and places have felt about death&#39;, and &#39; we need to listen to that experience as well as to the scientists &#39;. This is a recommendation. She does not ask scientists to stop their research (D)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

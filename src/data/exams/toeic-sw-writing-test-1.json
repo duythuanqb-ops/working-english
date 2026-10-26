@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-1",
+  "testNum": 1,
+  "title": "TOEIC SW Writing Test 1 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-1/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-1/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-1/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-1/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-1/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom\n:\n[email protected]\nTo\n: Anna Billings\nSubject\n: Daily Jobseeker update\nSent\n: March 14, 20—\nDear Daily Jobseeker subscriber,\nHere is the most recent job opening:\nMarleyhome Inc. is looking for an experienced accountant to fill a vacancy in its Accounting Department. The company needs someone with an accounting degree and at least three years of experience. Contact Ralph Kramer,\n[email protected]\n.\nDirections: Respond to the e-mail as if you are interested in applying for the position. Make ONE statement about your professional background and TWO requests for information about the job.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From</span><span>: </span><span><a class=\"__cf_email__\" data-cfemail=\"50252034312435103431393c293a3f322335353b35227e333f3d\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a></span></p><p><span>To</span><span>: Anna Billings</span></p><p><span>Subject</span><span>: Daily Jobseeker update</span></p><p><span>Sent</span><span>: March 14, 20—</span></p><p><span>Dear Daily Jobseeker subscriber,</span></p><p><span>Here is the most recent job opening:</span></p><p><span>Marleyhome Inc. is looking for an experienced accountant to fill a vacancy in its Accounting Department. The company needs someone with an accounting degree and at least three years of experience. Contact Ralph Kramer, <a class=\"__cf_email__\" data-cfemail=\"0775586c75666a6275476a66756b627e6f686a622964686a\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>. </span></p><p><span>Directions: Respond to the e-mail as if you are interested in applying for the position. Make ONE statement about your professional background and TWO requests for information about the job.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom:\nElisa Hays, Front Desk Supervisor\nTo:\nFront desk agents, Hotel Mediterraneo\nSubject:\nReservation system\nSent:\nDecember 1, 20—\nIt has come to my attention that several of you have experienced problems with the reservation system recently. In order to address these problems, we need to compile a complete list of the issues that each of you have encountered. Please send me this list at your earliest convenience.\nSincerely,\nElisa Hays\nFront Desk Supervisor\nDirections: Respond to the e-mail as if you are a front desk agent at Hotel Mediterraneo. In your e-mail, describe THREE problems with the reservation system.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From:</span><span> Elisa Hays, Front Desk Supervisor </span></p><p><span>To:</span><span> Front desk agents, Hotel Mediterraneo </span></p><p><span>Subject:</span><span> Reservation system<br/></span><span>Sent:</span><span> December 1, 20—</span></p><p><span>It has come to my attention that several of you have experienced problems with the reservation system recently. In order to address these problems, we need to compile a complete list of the issues that each of you have encountered. Please send me this list at your earliest convenience.                                        </span></p><p><span>Sincerely,<br/>Elisa Hays<br/>Front Desk Supervisor </span></p><p><span>Directions: Respond to the e-mail as if you are a front desk agent at Hotel Mediterraneo. In your e-mail, describe THREE problems with the reservation system.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Many people enjoy spending time playing and watching sports. Why do you think sports are important to people? Give specific reasons and examples to support your opinion."
+    }
+  ]
+}

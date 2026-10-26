@@ -1,5 +1,27 @@
-const { app, BrowserWindow, globalShortcut, ipcMain, screen } = require('electron');
+const { app, BrowserWindow, globalShortcut, ipcMain, screen, protocol, session } = require('electron');
 const path = require('path');
+const { fileURLToPath } = require('url');
+const { getExamsDir, checkExamMediaStatus, downloadAndExtractMedia } = require('./mediaManager');
+
+// The renderer references exam media as absolute "/exams/..." paths, which under loadFile become file:///exams/... or file:///C:/exams/... on Windows
+function mapExamMediaRequests() {
+  protocol.interceptFileProtocol('file', (request, callback) => {
+    let urlPath;
+    try {
+      urlPath = fileURLToPath(request.url);
+    } catch {
+      urlPath = request.url;
+    }
+    // Match /exams/... on macOS/Linux or C:\exams\... / C:/exams/... on Windows
+    const match = urlPath.match(/(?:^[a-zA-Z]:)?[/\\]exams[/\\](.*)$/);
+    if (match) {
+      const relPath = match[1];
+      callback(path.join(getExamsDir(), relPath));
+    } else {
+      callback(urlPath);
+    }
+  });
+}
 
 let mainWindow = null;
 let miniWindow = null;
@@ -12,8 +34,8 @@ function createMainWindow() {
     height: 800,
     minWidth: 960,
     minHeight: 650,
-    titleBarStyle: 'hiddenInset',
-    trafficLightPosition: { x: 18, y: 18 },
+    titleBarStyle: process.platform === 'darwin' ? 'hiddenInset' : 'default',
+    ...(process.platform === 'darwin' ? { trafficLightPosition: { x: 18, y: 18 } } : {}),
     backgroundColor: '#0f172a',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -131,7 +153,46 @@ ipcMain.on('save-quick-word', (_event, wordData) => {
   }
 });
 
+// Media Download & Status Handlers (GitHub Releases)
+ipcMain.handle('get-exam-media-status', () => {
+  return checkExamMediaStatus();
+});
+
+ipcMain.handle('download-exam-media', async (_event, type) => {
+  try {
+    const status = await downloadAndExtractMedia(type, (progress) => {
+      if (mainWindow && mainWindow.webContents) {
+        mainWindow.webContents.send('exam-media-progress', progress);
+      }
+    });
+    return { success: true, status };
+  } catch (err) {
+    console.error('Failed to download exam media:', err);
+    return { success: false, error: err.message };
+  }
+});
+
 app.whenReady().then(() => {
+  if (!isDev) mapExamMediaRequests();
+
+  // YouTube Referer & Origin interceptor (fixes error 150/152/153 on file://)
+  session.defaultSession.webRequest.onBeforeSendHeaders(
+    { urls: ['*://*.youtube.com/*', '*://*.googlevideo.com/*', '*://*.ytimg.com/*'] },
+    (details, callback) => {
+      details.requestHeaders['Referer'] = 'https://www.youtube.com';
+      details.requestHeaders['Origin'] = 'https://www.youtube.com';
+      callback({ cancel: false, requestHeaders: details.requestHeaders });
+    }
+  );
+
+  // Auto-grant media/microphone permissions
+  session.defaultSession.setPermissionRequestHandler((_webContents, permission, callback) => {
+    if (permission === 'media') {
+      return callback(true);
+    }
+    callback(false);
+  });
+
   createMainWindow();
 
   // Register global hotkey for Quick Capture: Option+Space or Command+Shift+E

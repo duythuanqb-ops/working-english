@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-14",
+  "testNum": 14,
+  "title": "TOEIC SW Writing Test 14 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-14/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-14/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-14/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-14/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-14/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Cameron Contos, Passageways Travel Company\nTo: Customer list\nSubject: A great vacation package\nSent: December 22, 9:23 A.M.\nDear Passageways customers,\nYou are our valued clients and we want to share a great travel package with you. We are offering an unbelievable, once in a lifetime opportunity for you to explore the Galapagos Islands. The first 200 customers who respond to this advertisement will receive a 10% discount on their hotel fares.\nDirections: Respond to the\ne-mail\nas if you are a Passageways Travel customer. In your\ne-mail\n, ask TWO questions and make ONE request regarding the travel package.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Cameron Contos, Passageways Travel Company</span></p><p><span>To: Customer list</span></p><p><span>Subject: A great vacation package</span></p><p><span>Sent: December 22, 9:23 A.M.</span></p><p><span>Dear Passageways customers,</span></p><p><span>You are our valued clients and we want to share a great travel package with you. We are offering an unbelievable, once in a lifetime opportunity for you to explore the Galapagos Islands. The first 200 customers who respond to this advertisement will receive a 10% discount on their hotel fares.</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are a Passageways Travel customer. In your </span><span>e-mail</span><span>, ask TWO questions and make ONE request regarding the travel package.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: A. Chae, General Company\nTo: Fine Prints\nSubject: Printing accident\nSent: May 2, 10:32 A.M.\nDear Fine Prints,\nYour company recently prepared letterheads for us. However, I've just noticed that you printed our old address by mistake. I have to send out hundreds of letters to our customers for a new promotion. Please\ne-mail\nme about this as soon as possible.\nThank you,\nA. Chae\nDirections: Respond to the\ne-mail\nas if you are an employee at Fine Prints. In your\ne-mail\n, make TWO suggestions for how to handle the problem and provide ONE piece of information you think will be useful.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: A. Chae, General Company</span></p><p><span>To: Fine Prints</span></p><p><span>Subject: Printing accident</span></p><p><span>Sent: May 2, 10:32 A.M.</span></p><p><span>Dear Fine Prints,</span></p><p><span>Your company recently prepared letterheads for us. However, I've just noticed that you printed our old address by mistake. I have to send out hundreds of letters to our customers for a new promotion. Please </span><span>e-mail</span><span> me about this as soon as possible.</span></p><p><span>Thank you,</span></p><p><span>A. Chae</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are an employee at Fine Prints. In your </span><span>e-mail</span><span>, make TWO suggestions for how to handle the problem and provide ONE piece of information you think will be useful.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays What do you think are the most important characteristics for a job you have had or you want to have? Use specific details and examples to support your opinion."
+    }
+  ]
+}

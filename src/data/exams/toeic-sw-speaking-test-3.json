@@ -1,0 +1,118 @@
+{
+  "id": "toeic-sw-speaking-test-3",
+  "testNum": 3,
+  "title": "TOEIC SW Speaking Test 3 (Bản Gốc STUDY4)",
+  "category": "toeic-speaking",
+  "durationMinutes": 20,
+  "tasks": [
+    {
+      "id": "spk-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q2)",
+      "partName": "Đọc to đoạn văn (Read a Text Aloud)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 45,
+      "prompt": "Read the text aloud. You will be evaluated on pronunciation, intonation, and rhythm.",
+      "textToRead": "Read the text aloud Good afternoon, everyone, and welcome to the county fair ! It's wonderful to have you here today as we celebrate the 120th anniversary of our city. We commemorate this day with great pride . Please make sure you visit the exhibits and game booths . Later today there will be competitive events, such as our famous pie-baking contest . I strongly suggest that you get over to the pie table early, or there might not be anything left. It is also my pleasure to introduce you to our mayor, Mr. James Moon. Mr. Moon will lead us in singing our national anthem. Then we’ll begin the festivities .",
+      "texts": [
+        "Read the text aloud Good afternoon, everyone, and welcome to the county fair ! It's wonderful to have you here today as we celebrate the 120th anniversary of our city. We commemorate this day with great pride . Please make sure you visit the exhibits and game booths . Later today there will be competitive events, such as our famous pie-baking contest . I strongly suggest that you get over to the pie table early, or there might not be anything left. It is also my pleasure to introduce you to our mayor, Mr. James Moon. Mr. Moon will lead us in singing our national anthem. Then we’ll begin the festivities .",
+        "Read the text aloud Are you ready for an adventure? Extreme Sports Center offers the latest in adventurous outdoor sports: sky diving, hang gliding, scuba diving, or rock climbing. We can expedite the process of getting you a scuba diving permit and train you to dive in just a few intensive sessions. Our specialized training sessions with expert instructors will give you all the basics . We also organize packages for extreme sport vacations. So wherever you want to go, we’ll take you there! Go Extreme!"
+      ],
+      "scoringFocus": [
+        "Ngắt nghỉ: Nghỉ ngắn ở dấu phẩy (,) và nghỉ rõ ở cuối câu (.)",
+        "Ngữ điệu câu liệt kê và câu hỏi.",
+        "Phát âm chuẩn xác các âm đuôi (-s, -ed, -tion)."
+      ]
+    },
+    {
+      "id": "spk-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q3 - Q4)",
+      "partName": "Miêu tả bức tranh (Describe a Picture)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 30,
+      "prompt": "Describe the picture on your screen in as much detail as possible.",
+      "photos": [
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-speaking-test-3/part2/q3.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Quang cảnh một nhà hàng ẩm thực với các nhân viên và khách đang dùng bữa.",
+          "sampleBand8Answer": "This image captures an upscale indoor restaurant during dinner service. In the foreground, a server dressed in a black uniform is politely setting wine glasses on a round dining table. In the background, numerous patrons are seated comfortably, enjoying their meals and conversing with one another. The dining area is decorated with warm hanging lamps and framed artwork along the walls. Overall, the atmosphere seems elegant, welcoming, and relaxed."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-speaking-test-3/part2/q4.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Khu vực quầy thu ngân và mua sắm nhộn nhịp tại một trung tâm thương mại.",
+          "sampleBand8Answer": "This is a photograph taken inside a retail apparel store. In the foreground, a customer is standing at the cashier counter while the sales clerk scans merchandise into a branded shopping bag. On the shelves behind them, neatly folded sweaters and accessories are displayed under bright halogen lights. Other shoppers can be seen browsing clothing racks in the background. The store appears clean, vibrant, and well-maintained."
+        }
+      ]
+    },
+    {
+      "id": "spk-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q5 - Q7)",
+      "partName": "Trả lời câu hỏi tình huống (Respond to Questions)",
+      "scenario": "Imagine that a European marketing firm is doing research in your country. You have agreed to participate in a phone survey about how people spend their free time.",
+      "prepTimeSec": 3,
+      "questions": [
+        {
+          "qNum": "Question 5",
+          "question": "What is your favorite thing to do when you have free time?",
+          "modelAnswer": "My favorite thing to do during my free time is reading non-fiction books and listening to acoustic music, which helps me completely decompress after demanding workdays."
+        },
+        {
+          "qNum": "Question 6",
+          "question": "How much free time do you have during the week, and where do you spend your free time?",
+          "modelAnswer": "I usually have around two hours of free time each weekday evening, and I typically spend it at home in my study room or taking a brisk walk in a nearby park."
+        },
+        {
+          "qNum": "Question 7",
+          "question": "How do you think the quality of your activities during your free time could be improved?",
+          "modelAnswer": "I think the quality of my leisure time could be improved by cutting down on passive smartphone scrolling and instead engaging in outdoor sports or taking up structured weekend cooking workshops with friends."
+        }
+      ]
+    },
+    {
+      "id": "spk-4",
+      "taskNum": 4,
+      "part": "Part 4 (Q8 - Q10)",
+      "partName": "Trả lời theo thông tin cho sẵn (Respond using Information Provided)",
+      "prepTimeSec": 45,
+      "scenario": "Bạn sẽ nhận được một lịch trình/thông tin công việc và trả lời 3 câu hỏi liên quan.",
+      "scheduleText": "Respond to questions using the information provided\nWhat you’ll hear\nQuestion 8:\nHi. This is Martha in the Public Relations Office. I’m supposed to pick up Mr. Green when he arrives. Can you tell me the exact date and time of his arrival?\nQuestion 9:\nI’m also supposed to transport him to his lunch with the Board of Directors. If I pick him up at the office at 12:15, would that be early enough?\nQuestion 10:\nWhat about after lunch? Will he be needing transportation to any other place that afternoon or evening?",
+      "scheduleHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><div><p>Respond to questions using the information provided</p><p><img alt=\"\" src=\"/exams/toeic-sw-speaking-test-3/part4/schedule.png\" style=\"width: 624.00px; height: 336.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);\" title=\"\"/></p><p><span>What you’ll hear</span></p><p><span>Question 8: </span><span>Hi. This is Martha in the Public Relations Office. I’m supposed to pick up Mr. Green when he arrives. Can you tell me the exact date and time of his arrival?</span></p><p><span>Question 9: </span><span>I’m also supposed to transport him to his lunch with the Board of Directors. If I pick him up at the office at 12:15, would that be early enough?</span></p><p><span>Question 10: </span><span>What about after lunch? Will he be needing transportation to any other place that afternoon or evening?</span></p></div></div>\n</div>\n</div>\n</div>",
+      "questions": [
+        {
+          "qNum": "Question 8 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "The workshop begins at 10:00 A.M. and will be led by our chief software architect."
+        },
+        {
+          "qNum": "Question 9 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "Actually, parking is complimentary for all attendees who display their event confirmation badge on the dashboard."
+        },
+        {
+          "qNum": "Question 10 (30s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 30,
+          "modelAnswer": "There are two hands-on sessions in the afternoon: first, an API integration tutorial at 1:30 P.M., followed by a security testing lab from 3:00 to 4:30 P.M."
+        }
+      ]
+    },
+    {
+      "id": "spk-5",
+      "taskNum": 5,
+      "part": "Part 5 (Q11)",
+      "partName": "Trình bày quan điểm (Express an Opinion)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 60,
+      "prompt": "Do you agree or disagree with the following statement? “It’s more important to eat a good diet than to exercise a lot.” Support your choice with reasons and details.",
+      "sampleBand8Answer": "I strongly agree that maintaining a balanced, nutritious diet is more critical to overall health than exercising vigorously. While regular physical exercise strengthens muscles and cardiovascular endurance, poor nutritional habits can easily counteract those benefits and lead to chronic metabolic disorders. Eating whole foods rich in micronutrients provides the fundamental building blocks for cellular repair, sustained energy levels, and mental clarity. Therefore, establishing a healthy diet should always be the primary foundation of wellness."
+    }
+  ]
+}

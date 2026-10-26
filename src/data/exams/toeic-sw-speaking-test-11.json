@@ -1,0 +1,118 @@
+{
+  "id": "toeic-sw-speaking-test-11",
+  "testNum": 11,
+  "title": "TOEIC SW Speaking Test 11 (Bản Gốc STUDY4)",
+  "category": "toeic-speaking",
+  "durationMinutes": 20,
+  "tasks": [
+    {
+      "id": "spk-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q2)",
+      "partName": "Đọc to đoạn văn (Read a Text Aloud)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 45,
+      "prompt": "Read the text aloud. You will be evaluated on pronunciation, intonation, and rhythm.",
+      "textToRead": "Good afternoon everybody, and thank you for flying with West Air. My name is Paula Griggs, and I’m the head flight attendant on today’s aircraft. If you have any questions during your flight, please don't hesitate to ask me or one of the other attendants for assistance. The pilot is preparing the plane for takeoff, so this is an excellent opportunity to review the in-flight safety guidelines. Please take the time to study the material stored in front of your seat. Thank you.",
+      "texts": [
+        "Good afternoon everybody, and thank you for flying with West Air. My name is Paula Griggs, and I’m the head flight attendant on today’s aircraft. If you have any questions during your flight, please don't hesitate to ask me or one of the other attendants for assistance. The pilot is preparing the plane for takeoff, so this is an excellent opportunity to review the in-flight safety guidelines. Please take the time to study the material stored in front of your seat. Thank you.",
+        "If you're ever in the mood for tasty Italian food, then you should head down to Maria’s, the new restaurant down on the waterfront. Having only opened for business last month, we have quickly established ourselves as one of the most popular family restaurants in the area. With our amazing range of delicious dishes, wonderful atmosphere and surprisingly affordable prices, you'll never want to eat anywhere else. We also have a special children's menu which your little ones will just love! Call us now at 354-9082 to make a reservation."
+      ],
+      "scoringFocus": [
+        "Ngắt nghỉ: Nghỉ ngắn ở dấu phẩy (,) và nghỉ rõ ở cuối câu (.)",
+        "Ngữ điệu câu liệt kê và câu hỏi.",
+        "Phát âm chuẩn xác các âm đuôi (-s, -ed, -tion)."
+      ]
+    },
+    {
+      "id": "spk-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q3 - Q4)",
+      "partName": "Miêu tả bức tranh (Describe a Picture)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 30,
+      "prompt": "Describe the picture on your screen in as much detail as possible.",
+      "photos": [
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-speaking-test-11/part2/q3.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Miêu tả bức tranh chi tiết về bối cảnh, con người, hành động và các chi tiết phụ.",
+          "sampleBand8Answer": "In this photograph, we observe an active and well-illuminated setting. In the foreground, people are focused on their individual tasks while interacting productively. In the middle ground, essential tools and work materials are neatly arranged across the table. In the background, the architectural background and natural lighting establish a modern and organized atmosphere. Overall, the entire scene conveys a strong sense of teamwork and efficiency."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-speaking-test-11/part2/q4.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Miêu tả bức tranh chi tiết về bối cảnh, con người, hành động và các chi tiết phụ.",
+          "sampleBand8Answer": "In this photograph, we observe an active and well-illuminated setting. In the foreground, people are focused on their individual tasks while interacting productively. In the middle ground, essential tools and work materials are neatly arranged across the table. In the background, the architectural background and natural lighting establish a modern and organized atmosphere. Overall, the entire scene conveys a strong sense of teamwork and efficiency."
+        }
+      ]
+    },
+    {
+      "id": "spk-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q5 - Q7)",
+      "partName": "Trả lời câu hỏi tình huống (Respond to Questions)",
+      "scenario": "Imagine that a British marketing firm is doing research in your country. You have agreed to participate in a telephone interview about cell phones.",
+      "prepTimeSec": 3,
+      "questions": [
+        {
+          "qNum": "Question 5",
+          "question": "How much did you pay for your cell phone, and how old is it?",
+          "modelAnswer": "I paid about eight hundred dollars for my smartphone, and I have been using it for approximately two years."
+        },
+        {
+          "qNum": "Question 6",
+          "question": "What's the most important feature you look at when you choose a new cell phone?",
+          "modelAnswer": "The most critical feature for me is long battery life, followed by a fast processor for handling multitasking and work emails."
+        },
+        {
+          "qNum": "Question 7",
+          "question": "What do you like or dislike about using your cell phone and why?",
+          "modelAnswer": "I really appreciate the high-resolution camera and reliable navigation apps, although I dislike getting distracting social media notifications throughout the day."
+        }
+      ]
+    },
+    {
+      "id": "spk-4",
+      "taskNum": 4,
+      "part": "Part 4 (Q8 - Q10)",
+      "partName": "Trả lời theo thông tin cho sẵn (Respond using Information Provided)",
+      "prepTimeSec": 45,
+      "scenario": "Bạn sẽ nhận được một lịch trình/thông tin công việc và trả lời 3 câu hỏi liên quan.",
+      "scheduleText": "Respond to questions using the information provided\nExcuse me, my name is Jenny Robson and I’m a professor at the Swanback Community College. I’m interested in taking my first-year class along to see the arts and culture festivals. I just have a couple of questions about the event.\nQuestion 8: When is the event being held this year and what time does it start?\nQuestion 9: I heard Ruth Miller is making the opening speech this year. Is this correct?\nQuestion 10: My students will have to leave the festival after lunch to participate in another class. What parts of the afternoon program are they likely to miss?",
+      "scheduleHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><div><p>Respond to questions using the information provided</p><p><img alt=\"\" src=\"/exams/toeic-sw-speaking-test-11/part4/schedule.png\" style=\"width: 612.00px; height: 338.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);\" title=\"\"/></p><p><span>Excuse me, my name is Jenny Robson and I’m a professor at the Swanback Community College. I’m interested in taking my first-year class along to see the arts and culture festivals. I just have a couple of questions about the event. </span></p><p><span>Question 8: When is the event being held this year and what time does it start? </span></p><p><span>Question 9: I heard Ruth Miller is making the opening speech this year. Is this correct? </span></p><p><span>Question 10: My students will have to leave the festival after lunch to participate in another class. What parts of the afternoon program are they likely to miss? </span></p></div></div>\n</div>\n</div>\n</div>",
+      "questions": [
+        {
+          "qNum": "Question 8 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "According to the provided schedule, the event is scheduled to start promptly at 9:00 A.M. in the main auditorium."
+        },
+        {
+          "qNum": "Question 9 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "Actually, that information is not correct. The session has been rescheduled to the morning, and all participants are invited to attend."
+        },
+        {
+          "qNum": "Question 10 (30s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 30,
+          "modelAnswer": "Certainly. There are two sessions scheduled in the afternoon: first, a workshop from 1:30 to 2:45 P.M., followed by a closing discussion at 3:00 P.M."
+        }
+      ]
+    },
+    {
+      "id": "spk-5",
+      "taskNum": 5,
+      "part": "Part 5 (Q11)",
+      "partName": "Trình bày quan điểm (Express an Opinion)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 60,
+      "prompt": "Some people think that all young people should be able to attend college for free. What is your opinion about free education? Support your answers with reasons and details.",
+      "sampleBand8Answer": "I firmly support this stance for two key reasons. First, this approach grants individuals significant flexibility and helps reduce daily cognitive fatigue. Second, having such balanced conditions promotes sustained motivation and superior long-term performance. Therefore, I believe this is unquestionably the most effective choice."
+    }
+  ]
+}

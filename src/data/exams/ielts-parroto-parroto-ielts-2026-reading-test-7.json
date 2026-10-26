@@ -1,0 +1,1492 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2026-reading-test-7",
+  "testNum": 13,
+  "collection": "Bộ đề Parroto IELTS 2026",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2026 - Reading Test 7",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 40,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab6690e6fba848f315ec81d",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-7</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-7</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6690e6fba848f315ec81e",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 8-13</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">The White Sands footprints</h3><h4>Dating the footprints</h4><ul><li>Researchers dug a [8] next to the prints.</li><li>They dated seeds of ditch [9] found above and below the prints.</li><li>To answer critics, they also dated pollen from [10] trees.</li><li>Grains of [11] were dated by finding when they were last exposed to sunlight.</li></ul><h4>What the footprints show</h4><ul><li>Most were made by teenagers and [12].</li><li>No stone [13] have been found at the site, so it is hard to identify the people.</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6690e6fba848f315ec822",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has eight paragraphs, <strong>A-H</strong>.</p><p>Which paragraph contains the following information?</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6690e6fba848f315ec823",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 18-22</strong></p><p>Complete the sentences below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<ul><li>Seagrass meadows can store [18] in the sediment for very long periods.</li><li>Many species of fish use seagrass meadows as [19] when they are young.</li><li>Extra nutrients from fertilisers cause [20] to grow, reducing the light that reaches seagrass.</li><li>When seagrass dies, [21] is released, which makes the water cloudier.</li><li>The [22] on traditional moorings damage seagrass as boats move around.</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6690e6fba848f315ec824",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 23-26</strong></p><p>Look at the following statements (Questions 23-26) and the list of experts below.</p><p>Match each statement with the correct expert, <strong>A-D</strong>.</p><p><strong>List of Experts</strong><br>A &nbsp; Helen Frost<br>B &nbsp; Tom Aldous<br>C &nbsp; Rafael Ortega<br>D &nbsp; Grace Whitlow</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6690e6fba848f315ec828",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-30</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6690e6fba848f315ec829",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 31-34</strong></p><p>Complete each sentence with the correct ending, <strong>A-F</strong>, below.</p><p>A &nbsp; but there are concerns about their safety record.<br>B &nbsp; because their software can be adapted for each region.<br>C &nbsp; but they still have important limitations.<br>D &nbsp; despite the high cost of the technology.<br>E &nbsp; because they can draw on years of experience.<br>F &nbsp; and follow the driving customs of each place.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6690e6fba848f315ec82a",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 35-40</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>35-40</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab6690e6fba848f315ec82c",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 2: &#39; in the late 2000s a park ranger recognised the first human footprints there &#39;, long before the 2021 announcement."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec82d",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 2: ghost tracks &#39; are invisible for most of the year and appear only briefly &#39; when the moisture is right."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec82e",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 3 says ditch grass &#39;had grown along the edge of the lake&#39; in the past, but says nothing about whether it still grows in the area today."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec82f",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 4: the dominant view was about 13,000 years ago, &#39; Later discoveries pushed this date back to around 16,000 years ago &#39;, and &#39;few researchers had seriously considered&#39; an earlier date."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec830",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 6: &#39; the researchers returned to the site and tested two completely different materials &#39;, pollen and quartz, dated by different techniques."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec831",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 7 says most prints &#39;appear to have been made by teenagers and children&#39;, but nothing is said about whether the researchers found this surprising."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec832",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 7: sloth prints show the animal rising up and turning, &#39; possibly in response to people who were following it &#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec833",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "trench",
+      "acceptedAnswers": [
+        "trench"
+      ],
+      "explanation": "Answer: trench Paragraph 3: &#39;the researchers dug a trench beside them and examined the layers of sediment&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec834",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "grass",
+      "acceptedAnswers": [
+        "grass"
+      ],
+      "explanation": "Answer: grass Paragraph 3: &#39;they found thousands of seeds from ditch grass , an aquatic plant&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec835",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "conifer",
+      "acceptedAnswers": [
+        "conifer"
+      ],
+      "explanation": "Answer: conifer Paragraph 6: &#39;The first was pollen from conifer trees, which take their carbon from the air&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec836",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "quartz",
+      "acceptedAnswers": [
+        "quartz"
+      ],
+      "explanation": "Answer: quartz Paragraph 6: &#39;The second was grains of quartz , which were dated using a technique that measures when the grains were last exposed to sunlight.&#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec837",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "children",
+      "acceptedAnswers": [
+        "children"
+      ],
+      "explanation": "Answer: children Paragraph 7: &#39;Most of them appear to have been made by teenagers and children &#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec838",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab6690e6fba848f315ec81e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "tools",
+      "acceptedAnswers": [
+        "tools"
+      ],
+      "explanation": "Answer: tools Paragraph 8: &#39;So far, no stone tools have been found alongside the White Sands footprints, which makes it harder to identify who these people were.&#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec839",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec822",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "G",
+      "acceptedAnswers": [],
+      "explanation": "Answer: G Paragraph G: &#39; protecting seagrass must go hand in hand with supporting the people who use the coast &#39;, and local people who &#39;can see that healthy meadows mean more fish&#39; defend them."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec83a",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec822",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A Paragraph A: &#39; around a third of the world&#39;s seagrass has been lost since the late nineteenth century&#39;. The &#39;fifth&#39; in D refers to fisheries, not losses."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec83b",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec822",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H Paragraph H: &#39;there are signs that attitudes are changing&#39;, and &#39; Now people are starting to understand that it matters. &#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec83c",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec822",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Paragraph B describes traditional uses (mattresses, insulation, roofs) and says &#39; these meadows are part of local history and identity &#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec83d",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec823",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "carbon",
+      "acceptedAnswers": [
+        "carbon"
+      ],
+      "explanation": "Answer: carbon Paragraph C: meadows &#39;are also remarkably effective at storing carbon , much of which is locked away in the sediment&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec83e",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec823",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "nurseries",
+      "acceptedAnswers": [
+        "nurseries"
+      ],
+      "explanation": "Answer: nurseries Paragraph D: &#39;many commercially important species of fish use the meadows as nurseries , spending the early part of their lives there&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec83f",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec823",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "algae",
+      "acceptedAnswers": [
+        "algae"
+      ],
+      "explanation": "Answer: algae Paragraph E: &#39;the extra nutrients encourage the rapid growth of algae , which block the sunlight that seagrass needs&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec840",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec823",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "sediment",
+      "acceptedAnswers": [
+        "sediment"
+      ],
+      "explanation": "Answer: sediment Paragraph E: when the plants die, &#39; sediment is released into the water, making it even cloudier&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec841",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec823",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "chains",
+      "acceptedAnswers": [
+        "chains"
+      ],
+      "explanation": "Answer: chains Paragraph E: moorings are attached to buoys by chains, and &#39;as boats swing with the wind and tide, the chains scrape away circles of seagrass&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec842",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec824",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Helen Frost) Paragraph G: Frost believes projects succeed only when local people are fully involved: &#39; If fishing communities and boat owners are part of the decision-making ... they become the meadows&#39; strongest defenders&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec843",
+      "qNum": 24,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec824",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (Rafael Ortega) Paragraph H: &#39; Some countries have made seagrass protection a priority, while others have barely begun to think about it ,&#39; says Ortega."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec844",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec824",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D (Grace Whitlow) Paragraph F: Whitlow believes most damage is not intentional: &#39; I&#39;ve never met anyone who wanted to harm seagrass &#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec845",
+      "qNum": 26,
+      "partNum": 2,
+      "groupId": "6ab6690e6fba848f315ec824",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Tom Aldous) Paragraph C: restoration &#39;does not require expensive technology&#39;: volunteers collect and plant seeds by hand. &#39; It&#39;s slow work, but it isn&#39;t complicated. &#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec846",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec828",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "The writer felt uncomfortable for the whole journey."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Hartmann had designed the car they were travelling in."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "The weather caused the car to drive dangerously."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Certain situations on the road caused the car to hesitate."
+          }
+        }
+      ],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D When a van stops, &#39; the car pauses for a long time, apparently unsure &#39;, and at road works &#39;it slows almost to a stop&#39;. The writer begins to relax (A), nothing says Hartmann designed the car (B), and the car is cautious rather than dangerous (C)."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec847",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec828",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "the fact that it always follows the same route"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "the small number of passengers it carries"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "the advanced sensors it uses"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "the support of the university authorities"
+          }
+        }
+      ],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A The shuttle &#39;follows exactly the same path every day&#39;, and &#39; That predictability is what makes it possible &#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec848",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec828",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "the public showed little interest in driverless cars at the time."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "radio was a promising technology for guiding vehicles."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "predictions about driverless cars have often been too optimistic."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "car manufacturers were the first to invest seriously in automation."
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C The exhibition predicted automated motorways &#39;by around 1960&#39;, and &#39; Similar predictions have been made in almost every decade since &#39;, while the subtitle notes they have been promised &#39;within ten years&#39; for decades. The exhibition was &#39;popular&#39; (A), and serious investment came from technology companies (D)."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec849",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec828",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "People will soon get used to it."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "People's reluctance to do it is understandable."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It will reduce the cost of travel for everyone."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Companies have now found a solution to the problem."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B After Ferreira says people are uncomfortable sharing, the writer comments: &#39; That can hardly have come as a surprise. &#39; Whether sharing becomes normal &#39;will depend on how widely the technology is adopted&#39; (A, D)."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec84a",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec829",
+      "type": "MATCHING_ENDINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Services &#39;have expanded particularly rapidly in China&#39;, but &#39; Even there, however, the technology has significant limitations. &#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec84b",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec829",
+      "type": "MATCHING_ENDINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E &#39; They cope well with unexpected situations because they can draw on years of experience of how other people behave.&#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec84c",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec829",
+      "type": "MATCHING_ENDINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F A driverless car &#39;must find other ways to show its intentions&#39;, and &#39; it must also follow local driving customs , which vary widely&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec84d",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec829",
+      "type": "MATCHING_ENDINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B &#39; Because each vehicle&#39;s software can be adjusted for the place where it operates , driverless cars might actually help to preserve these regional habits&#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec84e",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec82a",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO &#39; Professional drivers are unlikely to regard it as progress , and many are already campaigning against it.&#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec84f",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec82a",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES &#39; Whether driverless cars will make ordinary people&#39;s daily lives better is also still an open question. &#39;"
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec850",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec82a",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO The writer says the opposite: driverless cars could let older people go out &#39; without depending on relatives, allowing them to remain independent for longer &#39;."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec851",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec82a",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The writer discusses what may be lost for people who enjoy driving, but says nothing about driving tests."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec852",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec82a",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The writer says &#39;Many people enjoy driving for its own sake&#39;, but gives no information about what kind of cars they prefer."
+    },
+    {
+      "qid": "6ab6690e6fba848f315ec853",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab6690e6fba848f315ec82a",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES Final paragraph: &#39; the reasons people drive have never been purely practical &#39;, and the pleasure of driving will survive."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">The White Sands footprints</h3><h4>Dating the footprints</h4><ul><li>Researchers dug a [8] next to the prints.</li><li>They dated seeds of ditch [9] found above and below the prints.</li><li>To answer critics, they also dated pollen from [10] trees.</li><li>Grains of [11] were dated by finding when they were last exposed to sunlight.</li></ul><h4>What the footprints show</h4><ul><li>Most were made by teenagers and [12].</li><li>No stone [13] have been found at the site, so it is hard to identify the people.</li></ul>",
+        "groups": [
+          {
+            "id": "6ab6690e6fba848f315ec81d",
+            "directions": "<p><strong>Questions 1-7</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-7</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec82c",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 2: &#39; in the late 2000s a park ranger recognised the first human footprints there &#39;, long before the 2021 announcement."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec82d",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 2: ghost tracks &#39; are invisible for most of the year and appear only briefly &#39; when the moisture is right."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec82e",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 3 says ditch grass &#39;had grown along the edge of the lake&#39; in the past, but says nothing about whether it still grows in the area today."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec82f",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 4: the dominant view was about 13,000 years ago, &#39; Later discoveries pushed this date back to around 16,000 years ago &#39;, and &#39;few researchers had seriously considered&#39; an earlier date."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec830",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 6: &#39; the researchers returned to the site and tested two completely different materials &#39;, pollen and quartz, dated by different techniques."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec831",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 7 says most prints &#39;appear to have been made by teenagers and children&#39;, but nothing is said about whether the researchers found this surprising."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec832",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 7: sloth prints show the animal rising up and turning, &#39; possibly in response to people who were following it &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6690e6fba848f315ec81e",
+            "directions": "<p><strong>Questions 8-13</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The White Sands footprints</h3><h4>Dating the footprints</h4><ul><li>Researchers dug a [8] next to the prints.</li><li>They dated seeds of ditch [9] found above and below the prints.</li><li>To answer critics, they also dated pollen from [10] trees.</li><li>Grains of [11] were dated by finding when they were last exposed to sunlight.</li></ul><h4>What the footprints show</h4><ul><li>Most were made by teenagers and [12].</li><li>No stone [13] have been found at the site, so it is hard to identify the people.</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec833",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "trench",
+                "acceptedAnswers": [
+                  "trench"
+                ],
+                "explanation": "Answer: trench Paragraph 3: &#39;the researchers dug a trench beside them and examined the layers of sediment&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec834",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "grass",
+                "acceptedAnswers": [
+                  "grass"
+                ],
+                "explanation": "Answer: grass Paragraph 3: &#39;they found thousands of seeds from ditch grass , an aquatic plant&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec835",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "conifer",
+                "acceptedAnswers": [
+                  "conifer"
+                ],
+                "explanation": "Answer: conifer Paragraph 6: &#39;The first was pollen from conifer trees, which take their carbon from the air&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec836",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "quartz",
+                "acceptedAnswers": [
+                  "quartz"
+                ],
+                "explanation": "Answer: quartz Paragraph 6: &#39;The second was grains of quartz , which were dated using a technique that measures when the grains were last exposed to sunlight.&#39;"
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec837",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "children",
+                "acceptedAnswers": [
+                  "children"
+                ],
+                "explanation": "Answer: children Paragraph 7: &#39;Most of them appear to have been made by teenagers and children &#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec838",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "tools",
+                "acceptedAnswers": [
+                  "tools"
+                ],
+                "explanation": "Answer: tools Paragraph 8: &#39;So far, no stone tools have been found alongside the White Sands footprints, which makes it harder to identify who these people were.&#39;"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<ul><li>Seagrass meadows can store [18] in the sediment for very long periods.</li><li>Many species of fish use seagrass meadows as [19] when they are young.</li><li>Extra nutrients from fertilisers cause [20] to grow, reducing the light that reaches seagrass.</li><li>When seagrass dies, [21] is released, which makes the water cloudier.</li><li>The [22] on traditional moorings damage seagrass as boats move around.</li></ul>",
+        "groups": [
+          {
+            "id": "6ab6690e6fba848f315ec822",
+            "directions": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has eight paragraphs, <strong>A-H</strong>.</p><p>Which paragraph contains the following information?</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec839",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "acceptedAnswers": [],
+                "explanation": "Answer: G Paragraph G: &#39; protecting seagrass must go hand in hand with supporting the people who use the coast &#39;, and local people who &#39;can see that healthy meadows mean more fish&#39; defend them."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec83a",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A Paragraph A: &#39; around a third of the world&#39;s seagrass has been lost since the late nineteenth century&#39;. The &#39;fifth&#39; in D refers to fisheries, not losses."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec83b",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H Paragraph H: &#39;there are signs that attitudes are changing&#39;, and &#39; Now people are starting to understand that it matters. &#39;"
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec83c",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Paragraph B describes traditional uses (mattresses, insulation, roofs) and says &#39; these meadows are part of local history and identity &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6690e6fba848f315ec823",
+            "directions": "<p><strong>Questions 18-22</strong></p><p>Complete the sentences below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<ul><li>Seagrass meadows can store [18] in the sediment for very long periods.</li><li>Many species of fish use seagrass meadows as [19] when they are young.</li><li>Extra nutrients from fertilisers cause [20] to grow, reducing the light that reaches seagrass.</li><li>When seagrass dies, [21] is released, which makes the water cloudier.</li><li>The [22] on traditional moorings damage seagrass as boats move around.</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec83d",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "carbon",
+                "acceptedAnswers": [
+                  "carbon"
+                ],
+                "explanation": "Answer: carbon Paragraph C: meadows &#39;are also remarkably effective at storing carbon , much of which is locked away in the sediment&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec83e",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "nurseries",
+                "acceptedAnswers": [
+                  "nurseries"
+                ],
+                "explanation": "Answer: nurseries Paragraph D: &#39;many commercially important species of fish use the meadows as nurseries , spending the early part of their lives there&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec83f",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "algae",
+                "acceptedAnswers": [
+                  "algae"
+                ],
+                "explanation": "Answer: algae Paragraph E: &#39;the extra nutrients encourage the rapid growth of algae , which block the sunlight that seagrass needs&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec840",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "sediment",
+                "acceptedAnswers": [
+                  "sediment"
+                ],
+                "explanation": "Answer: sediment Paragraph E: when the plants die, &#39; sediment is released into the water, making it even cloudier&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec841",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "chains",
+                "acceptedAnswers": [
+                  "chains"
+                ],
+                "explanation": "Answer: chains Paragraph E: moorings are attached to buoys by chains, and &#39;as boats swing with the wind and tide, the chains scrape away circles of seagrass&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6690e6fba848f315ec824",
+            "directions": "<p><strong>Questions 23-26</strong></p><p>Look at the following statements (Questions 23-26) and the list of experts below.</p><p>Match each statement with the correct expert, <strong>A-D</strong>.</p><p><strong>List of Experts</strong><br>A &nbsp; Helen Frost<br>B &nbsp; Tom Aldous<br>C &nbsp; Rafael Ortega<br>D &nbsp; Grace Whitlow</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec842",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Helen Frost) Paragraph G: Frost believes projects succeed only when local people are fully involved: &#39; If fishing communities and boat owners are part of the decision-making ... they become the meadows&#39; strongest defenders&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec843",
+                "qNum": 24,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (Rafael Ortega) Paragraph H: &#39; Some countries have made seagrass protection a priority, while others have barely begun to think about it ,&#39; says Ortega."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec844",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D (Grace Whitlow) Paragraph F: Whitlow believes most damage is not intentional: &#39; I&#39;ve never met anyone who wanted to harm seagrass &#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec845",
+                "qNum": 26,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Tom Aldous) Paragraph C: restoration &#39;does not require expensive technology&#39;: volunteers collect and plant seeds by hand. &#39; It&#39;s slow work, but it isn&#39;t complicated. &#39;"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<p>Reading Passage 3</p>",
+        "groups": [
+          {
+            "id": "6ab6690e6fba848f315ec828",
+            "directions": "<p><strong>Questions 27-30</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec846",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "The writer felt uncomfortable for the whole journey."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Hartmann had designed the car they were travelling in."
+                  },
+                  {
+                    "key": "C",
+                    "text": "The weather caused the car to drive dangerously."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Certain situations on the road caused the car to hesitate."
+                  }
+                ],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D When a van stops, &#39; the car pauses for a long time, apparently unsure &#39;, and at road works &#39;it slows almost to a stop&#39;. The writer begins to relax (A), nothing says Hartmann designed the car (B), and the car is cautious rather than dangerous (C)."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec847",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the fact that it always follows the same route"
+                  },
+                  {
+                    "key": "B",
+                    "text": "the small number of passengers it carries"
+                  },
+                  {
+                    "key": "C",
+                    "text": "the advanced sensors it uses"
+                  },
+                  {
+                    "key": "D",
+                    "text": "the support of the university authorities"
+                  }
+                ],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A The shuttle &#39;follows exactly the same path every day&#39;, and &#39; That predictability is what makes it possible &#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec848",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the public showed little interest in driverless cars at the time."
+                  },
+                  {
+                    "key": "B",
+                    "text": "radio was a promising technology for guiding vehicles."
+                  },
+                  {
+                    "key": "C",
+                    "text": "predictions about driverless cars have often been too optimistic."
+                  },
+                  {
+                    "key": "D",
+                    "text": "car manufacturers were the first to invest seriously in automation."
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C The exhibition predicted automated motorways &#39;by around 1960&#39;, and &#39; Similar predictions have been made in almost every decade since &#39;, while the subtitle notes they have been promised &#39;within ten years&#39; for decades. The exhibition was &#39;popular&#39; (A), and serious investment came from technology companies (D)."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec849",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "People will soon get used to it."
+                  },
+                  {
+                    "key": "B",
+                    "text": "People's reluctance to do it is understandable."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It will reduce the cost of travel for everyone."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Companies have now found a solution to the problem."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B After Ferreira says people are uncomfortable sharing, the writer comments: &#39; That can hardly have come as a surprise. &#39; Whether sharing becomes normal &#39;will depend on how widely the technology is adopted&#39; (A, D)."
+              }
+            ]
+          },
+          {
+            "id": "6ab6690e6fba848f315ec829",
+            "directions": "<p><strong>Questions 31-34</strong></p><p>Complete each sentence with the correct ending, <strong>A-F</strong>, below.</p><p>A &nbsp; but there are concerns about their safety record.<br>B &nbsp; because their software can be adapted for each region.<br>C &nbsp; but they still have important limitations.<br>D &nbsp; despite the high cost of the technology.<br>E &nbsp; because they can draw on years of experience.<br>F &nbsp; and follow the driving customs of each place.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec84a",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Services &#39;have expanded particularly rapidly in China&#39;, but &#39; Even there, however, the technology has significant limitations. &#39;"
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec84b",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E &#39; They cope well with unexpected situations because they can draw on years of experience of how other people behave.&#39;"
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec84c",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F A driverless car &#39;must find other ways to show its intentions&#39;, and &#39; it must also follow local driving customs , which vary widely&#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec84d",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B &#39; Because each vehicle&#39;s software can be adjusted for the place where it operates , driverless cars might actually help to preserve these regional habits&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6690e6fba848f315ec82a",
+            "directions": "<p><strong>Questions 35-40</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>35-40</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6690e6fba848f315ec84e",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO &#39; Professional drivers are unlikely to regard it as progress , and many are already campaigning against it.&#39;"
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec84f",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES &#39; Whether driverless cars will make ordinary people&#39;s daily lives better is also still an open question. &#39;"
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec850",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO The writer says the opposite: driverless cars could let older people go out &#39; without depending on relatives, allowing them to remain independent for longer &#39;."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec851",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The writer discusses what may be lost for people who enjoy driving, but says nothing about driving tests."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec852",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The writer says &#39;Many people enjoy driving for its own sake&#39;, but gives no information about what kind of cars they prefer."
+              },
+              {
+                "qid": "6ab6690e6fba848f315ec853",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES Final paragraph: &#39; the reasons people drive have never been purely practical &#39;, and the pleasure of driving will survive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

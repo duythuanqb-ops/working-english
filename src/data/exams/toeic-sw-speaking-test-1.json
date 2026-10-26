@@ -1,0 +1,118 @@
+{
+  "id": "toeic-sw-speaking-test-1",
+  "testNum": 1,
+  "title": "TOEIC SW Speaking Test 1 (Bản Gốc STUDY4)",
+  "category": "toeic-speaking",
+  "durationMinutes": 20,
+  "tasks": [
+    {
+      "id": "spk-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q2)",
+      "partName": "Đọc to đoạn văn (Read a Text Aloud)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 45,
+      "prompt": "Read the text aloud. You will be evaluated on pronunciation, intonation, and rhythm.",
+      "textToRead": "The city’s annual summer festival will take place next Saturday and Sunday. There will be activities that are fun for the whole family. You can try a variety of food, hear different kinds of music, and enjoy games for all ages. Tickets cost fifteen dollars at the gate. However, if you buy your ticket in advance, you will get a ten percent discount. Tickets are available at many local stores, as well as at City Hall. Don’t miss this fun event!",
+      "texts": [
+        "The city’s annual summer festival will take place next Saturday and Sunday. There will be activities that are fun for the whole family. You can try a variety of food, hear different kinds of music, and enjoy games for all ages. Tickets cost fifteen dollars at the gate. However, if you buy your ticket in advance, you will get a ten percent discount. Tickets are available at many local stores, as well as at City Hall. Don’t miss this fun event!",
+        "Could we have your attention, please ? We’d like to take this time to thank you for attending this athletic banquet. This has been a fantastic year for our team and our athletes. We now hold a new record for most wins in our states division. Your support has allowed us to purchase new uniforms and a new scoreboard for our field. To show our appreciation for the coaches, the staff, and our fans, we'd like to invite you to view the new scoreboard, enjoy some refreshments, and meet the team. Let's give a round of applause for the three candidates for player of the year."
+      ],
+      "scoringFocus": [
+        "Ngắt nghỉ: Nghỉ ngắn ở dấu phẩy (,) và nghỉ rõ ở cuối câu (.)",
+        "Ngữ điệu câu liệt kê và câu hỏi.",
+        "Phát âm chuẩn xác các âm đuôi (-s, -ed, -tion)."
+      ]
+    },
+    {
+      "id": "spk-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q3 - Q4)",
+      "partName": "Miêu tả bức tranh (Describe a Picture)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 30,
+      "prompt": "Describe the picture on your screen in as much detail as possible.",
+      "photos": [
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-speaking-test-1/part2/q3.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Một văn phòng hiện đại với 2 đồng nghiệp đang trao đổi công việc trước màn hình máy tính xách tay.",
+          "sampleBand8Answer": "This is a photo taken inside a contemporary office. In the center, two colleagues are sitting side by side at a wooden conference desk. The man on the left, wearing a light blue dress shirt, is pointing directly at a data chart on the laptop screen. The woman on the right, dressed in a professional blazer, is listening attentively while holding a notepad. On the table, there are several folders, a smartphone, and a white coffee mug. In the background, large glass windows let in ample natural light. Overall, the atmosphere appears highly productive and collaborative."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-speaking-test-1/part2/q4.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Một nhóm bạn/đồng nghiệp đang ngồi trò chuyện thư giãn và trao đổi ngoài trời trên bãi cỏ công viên.",
+          "sampleBand8Answer": "This photograph was taken outdoors in an urban public park on a bright, sunny afternoon. In the foreground, several people are sitting together on a green lawn, engaging in a lively and casual conversation. One person is reading a printed document while others are gesturing and smiling cheerfully. In the background, modern city skyscrapers rise behind tall leafy trees under a clear blue sky. Overall, the scene looks remarkably peaceful and enjoyable as people unwind outdoors."
+        }
+      ]
+    },
+    {
+      "id": "spk-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q5 - Q7)",
+      "partName": "Trả lời câu hỏi tình huống (Respond to Questions)",
+      "scenario": "Imagine that an American marketing firm is doing research in your country. You have agreed to participate in a telephone survey about food shopping.",
+      "prepTimeSec": 3,
+      "questions": [
+        {
+          "qNum": "Question 5",
+          "question": "What types of food stores are there in your neighborhood?",
+          "modelAnswer": "In my neighborhood, there is a large modern supermarket just a five-minute walk away, along with several local grocery stores and organic fruit stands that offer fresh daily produce."
+        },
+        {
+          "qNum": "Question 6",
+          "question": "How often do you go food shopping and when do you usually go?",
+          "modelAnswer": "I usually go food shopping twice a week, typically on Wednesday evenings after work and on Saturday mornings when the fresh supplies are newly restocked."
+        },
+        {
+          "qNum": "Question 7",
+          "question": "Describe what you buy and why you make those purchases.",
+          "modelAnswer": "Whenever I go food shopping, I primarily buy fresh vegetables, lean chicken breast, and whole-grain bread for healthy home cooking. In addition, I purchase dairy items and seasonal fruit to prepare quick, nutritious breakfast smoothies before heading to the office."
+        }
+      ]
+    },
+    {
+      "id": "spk-4",
+      "taskNum": 4,
+      "part": "Part 4 (Q8 - Q10)",
+      "partName": "Trả lời theo thông tin cho sẵn (Respond using Information Provided)",
+      "prepTimeSec": 45,
+      "scenario": "Bạn sẽ nhận được một lịch trình/thông tin công việc và trả lời 3 câu hỏi liên quan.",
+      "scheduleText": "Respond to questions using the information provided\nDanville City Tours\nAll tours leave from the front of the Piedmont Hotel. Reservations must be made in advance by calling the Tour Office at 593-555-9694. Cost: $75 (adults), $50 (children under 12, must be accompanied by an adult).\n10:00\n10:00-11:00\n11:00\n11:00-1:00\n1:00-2:00\n2:00-3:30\n3:30-5:00\n5:15\n6:00\nBus leaves from the main entrance of the hotel\nBus tour of downtown Danville\nArrive at Danville Museum of History\nGuided museum tour\nLunch at the museum cafe\nWalking tour of Danville City Park and Gardens\nBus tour of Danville waterfront\nArrive back at the Piedmont Hotel\nOptional dinner at the hotel*\n*Must be reserved and paid for when you book your tour tickets. Add $25 per person to the cost of your tour ticket.\nWhat You’ll Hear\nMan: Hello. I’m interested in taking a tour of Danville, but I’m afraid it might be a bit too expensive.\nQuestion 8: Man: Can you tell me how much it costs to take the tour?\nQuestion 9: Man: I heard that the tour includes dinner as well as lunch. Is that correct?\nQuestion 10: Man: Does the tour take place mostly in the morning, or will we also visit some places after lunch?",
+      "scheduleHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to questions using the information provided</p><p><span>Danville City Tours</span></p><p><span>All tours leave from the front of the Piedmont Hotel. Reservations must be made in advance by calling the Tour Office at 593-555-9694. Cost: $75 (adults), $50 (children under 12, must be accompanied by an adult).</span></p><table><tr><td colspan=\"1\" rowspan=\"1\"><p><span>10:00</span></p><p><span>10:00-11:00</span></p><p><span>11:00</span></p><p><span>11:00-1:00</span></p><p><span>1:00-2:00</span></p><p><span>2:00-3:30</span></p><p><span>3:30-5:00</span></p><p><span>5:15</span></p><p><span>6:00</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Bus leaves from the main entrance of the hotel</span></p><p><span>Bus tour of downtown Danville</span></p><p><span>Arrive at Danville Museum of History</span></p><p><span>Guided museum tour</span></p><p><span>Lunch at the museum cafe</span></p><p><span>Walking tour of Danville City Park and Gardens</span></p><p><span>Bus tour of Danville waterfront</span></p><p><span>Arrive back at the Piedmont Hotel</span></p><p><span>Optional dinner at the hotel*</span></p></td></tr></table><p><span>*Must be reserved and paid for when you book your tour tickets. Add $25 per person to the cost of your tour ticket.</span></p><p><span>What You’ll Hear</span></p><p><span>Man: Hello. I’m interested in taking a tour of Danville, but I’m afraid it might be a bit too expensive.</span></p><p><span>Question 8: Man: Can you tell me how much it costs to take the tour?</span></p><p><span>Question 9: Man: I heard that the tour includes dinner as well as lunch. Is that correct?</span></p><p><span>Question 10: Man: Does the tour take place mostly in the morning, or will we also visit some places after lunch?</span></p></div>\n</div>\n</div>\n</div>",
+      "questions": [
+        {
+          "qNum": "Question 8 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "The tour costs seventy-five dollars for adults and fifty dollars for children under twelve years of age."
+        },
+        {
+          "qNum": "Question 9 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "Actually, lunch is included at the museum cafe, but dinner is optional and requires an additional twenty-five dollars per person reserved in advance."
+        },
+        {
+          "qNum": "Question 10 (30s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 30,
+          "modelAnswer": "Yes, after lunch there are two scheduled tours: a walking tour of Danville City Park and Gardens from 2:00 to 3:30, followed by a bus tour of the Danville waterfront from 3:30 to 5:00."
+        }
+      ]
+    },
+    {
+      "id": "spk-5",
+      "taskNum": 5,
+      "part": "Part 5 (Q11)",
+      "partName": "Trình bày quan điểm (Express an Opinion)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 60,
+      "prompt": "Some people enjoy the excitement of city life. Other people prefer the peace and quiet of small-town living. Would you rather live in a big city or a small town? Why? Use specific examples to show your preference.",
+      "sampleBand8Answer": "I would definitely prefer to live in a big city rather than a small town for two main reasons. First, metropolitan cities offer vastly superior career opportunities and modern public transportation. For example, living in a bustling city allows professionals to commute easily via subway and attend international industry conferences. Second, cities provide diverse cultural entertainment, including world-class dining, theater performances, and vibrant shopping districts. Therefore, the convenience and vibrancy of urban living make it my preferred choice."
+    }
+  ]
+}

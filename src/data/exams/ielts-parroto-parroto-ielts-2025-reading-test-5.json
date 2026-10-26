@@ -1,0 +1,1546 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2025-reading-test-5",
+  "testNum": 9,
+  "collection": "Bộ đề Parroto IELTS 2025",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2025 - Reading Test 5",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 39,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab6bfc4ebe8a94b4769947c",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-5</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">The great auk</h3><h4>Appearance and behaviour</h4><ul><li>a flightless seabird with a black back and white front</li><li>originally known by the name [1]</li><li>used its wings for swimming underwater to catch fish</li><li>laid one egg a year on bare [2]</li><li>each egg may have had its own [3]</li></ul><h4>Decline and extinction</h4><ul><li>killed by sailors for food and [4] from the 16th century</li><li>later hunted for its [5], which were used in bedding</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6bfc4ebe8a94b4769947d",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 6-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>6-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6bfc4ebe8a94b47699482",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-20</strong></p><p>Reading Passage 2 has eight sections, <strong>A-H</strong>.</p><p>Which section contains the following information?</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6bfc4ebe8a94b47699483",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 21-22</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6bfc4ebe8a94b47699484",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 23-26</strong></p><p>Complete the sentences below.</p><p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>",
+      "content": "<p>23. Cocoa butter remains [23] when kept at room temperature.</p><p>24. The [24] has almost disappeared from Côte d'Ivoire.</p><p>25. Growers certified by the Cocoa Stewardship Council must use satellite data to map their [25].</p><p>26. Dr Lindo hopes that increasing the number of midges will improve [26] and allow farmers to use less land.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6bfc5ebe8a94b47699488",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-31</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6bfc5ebe8a94b47699489",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 32-35</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>32-35</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6bfc5ebe8a94b4769948a",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 36-40</strong></p><p>Complete the summary using the list of phrases, <strong>A-J</strong>, below.</p><p>Write the correct letter, <strong>A-J</strong>, in boxes 36-40 on your answer sheet.</p><p>A &nbsp; public protests<br>B &nbsp; hidden arrangements<br>C &nbsp; foreign investment<br>D &nbsp; main motive<br>E &nbsp; building materials<br>F &nbsp; forced removal<br>G &nbsp; rapid completion<br>H &nbsp; popular belief<br>I &nbsp; increasing land values<br>J &nbsp; military parades</p>",
+      "content": "<h3 style=\"text-align:center\">The barricade myth and the cost of the project</h3><p>In chapter eight, Hart examines a [36] that the boulevards were designed to stop revolutionaries from blocking the streets. He accepts that military concerns influenced some routes, but shows that they were seldom the [37] for building a street. Hart also explains how the work was financed. Loans were to be repaid through [38] along the new streets. However, as costs rose, Haussmann came to depend on [39] which Parliament did not know about. This eventually led to his [40] from office in 1870.</p>",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab6bfc5ebe8a94b4769948c",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947c",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "penguin",
+      "acceptedAnswers": [
+        "penguin"
+      ],
+      "explanation": "Answer: penguin Paragraph 1: &#39;the name &#39; penguin &#39; was originally used for the great auk&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769948d",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947c",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "rock",
+      "acceptedAnswers": [
+        "rock"
+      ],
+      "explanation": "Answer: rock Paragraph 3: the egg &#39;was laid directly onto the bare rock , without any nest&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769948e",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947c",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "pattern",
+      "acceptedAnswers": [
+        "pattern"
+      ],
+      "explanation": "Answer: pattern Paragraph 3: &#39;it is believed that each one had a unique pattern &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769948f",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947c",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "bait",
+      "acceptedAnswers": [
+        "bait"
+      ],
+      "explanation": "Answer: bait Paragraph 5: &#39;sailors killed them in their thousands for food and for bait &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699490",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947c",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "feathers",
+      "acceptedAnswers": [
+        "feathers"
+      ],
+      "explanation": "Answer: feathers Paragraph 5: &#39;the auks were hunted for their soft feathers , which were used to stuff mattresses and pillows&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699491",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Earlier hunting had little effect, but &#39; This changed from the sixteenth century onwards &#39;, when sailors killed the birds in their thousands."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699492",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE &#39; the ban was difficult to enforce in such remote places &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699493",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE As the birds became rarer, &#39; Museums and wealthy private collectors began to compete for skins and eggs &#39;, and prices rose."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699494",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE They believed it was a witch that had caused a storm, and &#39; they killed it &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699495",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The island was destroyed and the surviving birds moved, but the passage does not say how many birds died."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699496",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN They worked for a dealer, but nothing is said about how much they were paid."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699497",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE &#39; there were unconfirmed reports of sightings off Newfoundland in 1852 &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699498",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab6bfc4ebe8a94b4769947d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The surviving skins and eggs are described, but there is no mention of any plan to bring the species back."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b47699499",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699482",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F Section F: agroforestry farms &#39; can provide habitats for hundreds of species &#39;, store carbon and protect the soil."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769949a",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699482",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "G",
+      "acceptedAnswers": [],
+      "explanation": "Answer: G Section G describes the Cocoa Stewardship Council, its members and its standards."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769949b",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699482",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A Section A: cocoa &#39; is also found in drinks, biscuits, breakfast cereals and ice cream &#39;, as well as skin creams and medicines."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769949c",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699482",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H Section H: &#39; researchers are investigating whether a tiny insect could help farmers produce more cocoa &#39;: the midge."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769949d",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699482",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Section B: &#39; In 1980, world production was around 1.6 million tonnes a year ; by the early 2020s... around five million tonnes&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769949e",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699482",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E Section E: two million poor families depend on cocoa; if demand fell, &#39; it would be these families who would suffer most &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b4769949f",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699482",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Section C: &#39; Populations of western chimpanzees, pygmy hippopotamuses and many species of forest birds have fallen sharply. &#39;"
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a0",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699483",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Its membership has increased rapidly in recent years."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It requires members to make inspection results public."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Its standards took a long time to agree."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It carries out inspections on farms every month."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "It has been praised by all environmental groups."
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B, C &#39; Its standards were developed gradually, through years of negotiation &#39; (C), and &#39; Members must also publish the results of the independent inspections &#39; (B). Critics say inspections are too infrequent (D)."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a1",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699484",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "solid",
+      "acceptedAnswers": [
+        "solid"
+      ],
+      "explanation": "Answer: solid Section A: &#39;Cocoa butter stays solid at room temperature&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a2",
+      "qNum": 24,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699484",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "forest elephant / forest elephants",
+      "acceptedAnswers": [
+        "forest elephant",
+        "forest elephants"
+      ],
+      "explanation": "Answer: forest elephant Section C: &#39;the fate of the forest elephant ... only a few hundred are thought to remain&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a3",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699484",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "farm boundaries / boundaries",
+      "acceptedAnswers": [
+        "farm boundaries",
+        "boundaries"
+      ],
+      "explanation": "Answer: farm boundaries Section G: &#39;growers must map their farm boundaries using satellite data&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a4",
+      "qNum": 26,
+      "partNum": 2,
+      "groupId": "6ab6bfc4ebe8a94b47699484",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "pollination",
+      "acceptedAnswers": [
+        "pollination"
+      ],
+      "explanation": "Answer: pollination Section H: &#39;If we can boost pollination , farmers could produce the same amount of cocoa on much less land&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a5",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699488",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It presents a completely new theory about the history of Paris."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It is mainly intended for specialist historians."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It takes a different approach from earlier books on the subject."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It considers a wide range of aspects of the transformation of Paris."
+          }
+        }
+      ],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D &#39; Drawing on politics, engineering, public health and economics , as well as the letters and diaries of ordinary Parisians&#39;. The book will interest a wide audience (B)."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a6",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699488",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "She explains why Hart is interested in the topic."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "She suggests that Hart has ignored some evidence."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "She compares Hart's view with that of other historians."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "She praises Hart for his use of Haussmann's memoirs."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Haussmann&#39;s memoirs show he wanted the poor removed, and &#39; Hart does not really explain why these statements should be set aside &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a7",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699488",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It contains several errors."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It repeats information from earlier chapters."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It will not appeal to most non-specialist readers."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It relies on out-of-date research."
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Specialists will find it valuable, &#39; but I suspect that many general readers will skip it &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a8",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699488",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It ignores the role of the army in eastern Paris."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It is based on too little evidence."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It repeats a widely accepted view."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It presents a persuasive case."
+          }
+        }
+      ],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D &#39; he argues convincingly that they were rarely the main reason &#39;. He does mention eastern Paris (A), and he challenges the common view (C)."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994a9",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699488",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "the quality of the illustrations"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "the author's admiration for Haussmann"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "the originality of the research"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "the author's conclusions about the future of Paris"
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C &#39; What makes the book stand out is the quality of Hart&#39;s archival research. &#39; His use of property records is &#39;genuinely original&#39;. The maps and photographs are weaknesses (A)."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994aa",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699489",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO &#39; It is not a pleasant picture, but it is a compelling one &#39;, and the walk is &#39;one of the most memorable passages&#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994ab",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699489",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES These chapters &#39; provide an essential foundation for what follows &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994ac",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699489",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The review says they were forced out, but nothing about whether they returned."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994ad",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b47699489",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO &#39; the total cost of the project rose far beyond the original estimates &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994ae",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b4769948a",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H (popular belief) &#39; the widely repeated claim that the boulevards were designed mainly to prevent revolutionaries from blocking the streets &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994af",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b4769948a",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D (main motive) Military considerations &#39; were rarely the main reason for building a particular street &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994b0",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b4769948a",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "I",
+      "acceptedAnswers": [],
+      "explanation": "Answer: I (increasing land values) Loans &#39; were to be repaid from the rising value of land along the new streets &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994b1",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b4769948a",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (hidden arrangements) Haussmann relied on &#39; complicated financial arrangements that were hidden from Parliament &#39;."
+    },
+    {
+      "qid": "6ab6bfc5ebe8a94b476994b2",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab6bfc5ebe8a94b4769948a",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F (forced removal) &#39; He was eventually dismissed in January 1870 &#39;, before the project or the Empire ended."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">The great auk</h3><h4>Appearance and behaviour</h4><ul><li>a flightless seabird with a black back and white front</li><li>originally known by the name [1]</li><li>used its wings for swimming underwater to catch fish</li><li>laid one egg a year on bare [2]</li><li>each egg may have had its own [3]</li></ul><h4>Decline and extinction</h4><ul><li>killed by sailors for food and [4] from the 16th century</li><li>later hunted for its [5], which were used in bedding</li></ul>",
+        "groups": [
+          {
+            "id": "6ab6bfc4ebe8a94b4769947c",
+            "directions": "<p><strong>Questions 1-5</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The great auk</h3><h4>Appearance and behaviour</h4><ul><li>a flightless seabird with a black back and white front</li><li>originally known by the name [1]</li><li>used its wings for swimming underwater to catch fish</li><li>laid one egg a year on bare [2]</li><li>each egg may have had its own [3]</li></ul><h4>Decline and extinction</h4><ul><li>killed by sailors for food and [4] from the 16th century</li><li>later hunted for its [5], which were used in bedding</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b4769948c",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "penguin",
+                "acceptedAnswers": [
+                  "penguin"
+                ],
+                "explanation": "Answer: penguin Paragraph 1: &#39;the name &#39; penguin &#39; was originally used for the great auk&#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769948d",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "rock",
+                "acceptedAnswers": [
+                  "rock"
+                ],
+                "explanation": "Answer: rock Paragraph 3: the egg &#39;was laid directly onto the bare rock , without any nest&#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769948e",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pattern",
+                "acceptedAnswers": [
+                  "pattern"
+                ],
+                "explanation": "Answer: pattern Paragraph 3: &#39;it is believed that each one had a unique pattern &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769948f",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "bait",
+                "acceptedAnswers": [
+                  "bait"
+                ],
+                "explanation": "Answer: bait Paragraph 5: &#39;sailors killed them in their thousands for food and for bait &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699490",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "feathers",
+                "acceptedAnswers": [
+                  "feathers"
+                ],
+                "explanation": "Answer: feathers Paragraph 5: &#39;the auks were hunted for their soft feathers , which were used to stuff mattresses and pillows&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6bfc4ebe8a94b4769947d",
+            "directions": "<p><strong>Questions 6-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>6-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b47699491",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Earlier hunting had little effect, but &#39; This changed from the sixteenth century onwards &#39;, when sailors killed the birds in their thousands."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699492",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE &#39; the ban was difficult to enforce in such remote places &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699493",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE As the birds became rarer, &#39; Museums and wealthy private collectors began to compete for skins and eggs &#39;, and prices rose."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699494",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE They believed it was a witch that had caused a storm, and &#39; they killed it &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699495",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The island was destroyed and the surviving birds moved, but the passage does not say how many birds died."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699496",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN They worked for a dealer, but nothing is said about how much they were paid."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699497",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE &#39; there were unconfirmed reports of sightings off Newfoundland in 1852 &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b47699498",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The surviving skins and eggs are described, but there is no mention of any plan to bring the species back."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<p>23. Cocoa butter remains [23] when kept at room temperature.</p><p>24. The [24] has almost disappeared from Côte d'Ivoire.</p><p>25. Growers certified by the Cocoa Stewardship Council must use satellite data to map their [25].</p><p>26. Dr Lindo hopes that increasing the number of midges will improve [26] and allow farmers to use less land.</p>",
+        "groups": [
+          {
+            "id": "6ab6bfc4ebe8a94b47699482",
+            "directions": "<p><strong>Questions 14-20</strong></p><p>Reading Passage 2 has eight sections, <strong>A-H</strong>.</p><p>Which section contains the following information?</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b47699499",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F Section F: agroforestry farms &#39; can provide habitats for hundreds of species &#39;, store carbon and protect the soil."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769949a",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "acceptedAnswers": [],
+                "explanation": "Answer: G Section G describes the Cocoa Stewardship Council, its members and its standards."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769949b",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A Section A: cocoa &#39; is also found in drinks, biscuits, breakfast cereals and ice cream &#39;, as well as skin creams and medicines."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769949c",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H Section H: &#39; researchers are investigating whether a tiny insect could help farmers produce more cocoa &#39;: the midge."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769949d",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Section B: &#39; In 1980, world production was around 1.6 million tonnes a year ; by the early 2020s... around five million tonnes&#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769949e",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E Section E: two million poor families depend on cocoa; if demand fell, &#39; it would be these families who would suffer most &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b4769949f",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Section C: &#39; Populations of western chimpanzees, pygmy hippopotamuses and many species of forest birds have fallen sharply. &#39;"
+              }
+            ]
+          },
+          {
+            "id": "6ab6bfc4ebe8a94b47699483",
+            "directions": "<p><strong>Questions 21-22</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a0",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Its membership has increased rapidly in recent years."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It requires members to make inspection results public."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Its standards took a long time to agree."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It carries out inspections on farms every month."
+                  },
+                  {
+                    "key": "E",
+                    "text": "It has been praised by all environmental groups."
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B, C &#39; Its standards were developed gradually, through years of negotiation &#39; (C), and &#39; Members must also publish the results of the independent inspections &#39; (B). Critics say inspections are too infrequent (D)."
+              }
+            ]
+          },
+          {
+            "id": "6ab6bfc4ebe8a94b47699484",
+            "directions": "<p><strong>Questions 23-26</strong></p><p>Complete the sentences below.</p><p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>",
+            "contextHtml": "<p>23. Cocoa butter remains [23] when kept at room temperature.</p><p>24. The [24] has almost disappeared from Côte d'Ivoire.</p><p>25. Growers certified by the Cocoa Stewardship Council must use satellite data to map their [25].</p><p>26. Dr Lindo hopes that increasing the number of midges will improve [26] and allow farmers to use less land.</p>",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a1",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "solid",
+                "acceptedAnswers": [
+                  "solid"
+                ],
+                "explanation": "Answer: solid Section A: &#39;Cocoa butter stays solid at room temperature&#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a2",
+                "qNum": 24,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "forest elephant / forest elephants",
+                "acceptedAnswers": [
+                  "forest elephant",
+                  "forest elephants"
+                ],
+                "explanation": "Answer: forest elephant Section C: &#39;the fate of the forest elephant ... only a few hundred are thought to remain&#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a3",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "farm boundaries / boundaries",
+                "acceptedAnswers": [
+                  "farm boundaries",
+                  "boundaries"
+                ],
+                "explanation": "Answer: farm boundaries Section G: &#39;growers must map their farm boundaries using satellite data&#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a4",
+                "qNum": 26,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pollination",
+                "acceptedAnswers": [
+                  "pollination"
+                ],
+                "explanation": "Answer: pollination Section H: &#39;If we can boost pollination , farmers could produce the same amount of cocoa on much less land&#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<h3 style=\"text-align:center\">The barricade myth and the cost of the project</h3><p>In chapter eight, Hart examines a [36] that the boulevards were designed to stop revolutionaries from blocking the streets. He accepts that military concerns influenced some routes, but shows that they were seldom the [37] for building a street. Hart also explains how the work was financed. Loans were to be repaid through [38] along the new streets. However, as costs rose, Haussmann came to depend on [39] which Parliament did not know about. This eventually led to his [40] from office in 1870.</p>",
+        "groups": [
+          {
+            "id": "6ab6bfc5ebe8a94b47699488",
+            "directions": "<p><strong>Questions 27-31</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a5",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It presents a completely new theory about the history of Paris."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It is mainly intended for specialist historians."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It takes a different approach from earlier books on the subject."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It considers a wide range of aspects of the transformation of Paris."
+                  }
+                ],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D &#39; Drawing on politics, engineering, public health and economics , as well as the letters and diaries of ordinary Parisians&#39;. The book will interest a wide audience (B)."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a6",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "She explains why Hart is interested in the topic."
+                  },
+                  {
+                    "key": "B",
+                    "text": "She suggests that Hart has ignored some evidence."
+                  },
+                  {
+                    "key": "C",
+                    "text": "She compares Hart's view with that of other historians."
+                  },
+                  {
+                    "key": "D",
+                    "text": "She praises Hart for his use of Haussmann's memoirs."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Haussmann&#39;s memoirs show he wanted the poor removed, and &#39; Hart does not really explain why these statements should be set aside &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a7",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It contains several errors."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It repeats information from earlier chapters."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It will not appeal to most non-specialist readers."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It relies on out-of-date research."
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Specialists will find it valuable, &#39; but I suspect that many general readers will skip it &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a8",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It ignores the role of the army in eastern Paris."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It is based on too little evidence."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It repeats a widely accepted view."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It presents a persuasive case."
+                  }
+                ],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D &#39; he argues convincingly that they were rarely the main reason &#39;. He does mention eastern Paris (A), and he challenges the common view (C)."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994a9",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the quality of the illustrations"
+                  },
+                  {
+                    "key": "B",
+                    "text": "the author's admiration for Haussmann"
+                  },
+                  {
+                    "key": "C",
+                    "text": "the originality of the research"
+                  },
+                  {
+                    "key": "D",
+                    "text": "the author's conclusions about the future of Paris"
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C &#39; What makes the book stand out is the quality of Hart&#39;s archival research. &#39; His use of property records is &#39;genuinely original&#39;. The maps and photographs are weaknesses (A)."
+              }
+            ]
+          },
+          {
+            "id": "6ab6bfc5ebe8a94b47699489",
+            "directions": "<p><strong>Questions 32-35</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>32-35</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b476994aa",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO &#39; It is not a pleasant picture, but it is a compelling one &#39;, and the walk is &#39;one of the most memorable passages&#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994ab",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES These chapters &#39; provide an essential foundation for what follows &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994ac",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The review says they were forced out, but nothing about whether they returned."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994ad",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO &#39; the total cost of the project rose far beyond the original estimates &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6bfc5ebe8a94b4769948a",
+            "directions": "<p><strong>Questions 36-40</strong></p><p>Complete the summary using the list of phrases, <strong>A-J</strong>, below.</p><p>Write the correct letter, <strong>A-J</strong>, in boxes 36-40 on your answer sheet.</p><p>A &nbsp; public protests<br>B &nbsp; hidden arrangements<br>C &nbsp; foreign investment<br>D &nbsp; main motive<br>E &nbsp; building materials<br>F &nbsp; forced removal<br>G &nbsp; rapid completion<br>H &nbsp; popular belief<br>I &nbsp; increasing land values<br>J &nbsp; military parades</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The barricade myth and the cost of the project</h3><p>In chapter eight, Hart examines a [36] that the boulevards were designed to stop revolutionaries from blocking the streets. He accepts that military concerns influenced some routes, but shows that they were seldom the [37] for building a street. Hart also explains how the work was financed. Loans were to be repaid through [38] along the new streets. However, as costs rose, Haussmann came to depend on [39] which Parliament did not know about. This eventually led to his [40] from office in 1870.</p>",
+            "questions": [
+              {
+                "qid": "6ab6bfc5ebe8a94b476994ae",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H (popular belief) &#39; the widely repeated claim that the boulevards were designed mainly to prevent revolutionaries from blocking the streets &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994af",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D (main motive) Military considerations &#39; were rarely the main reason for building a particular street &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994b0",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "I",
+                "acceptedAnswers": [],
+                "explanation": "Answer: I (increasing land values) Loans &#39; were to be repaid from the rising value of land along the new streets &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994b1",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (hidden arrangements) Haussmann relied on &#39; complicated financial arrangements that were hidden from Parliament &#39;."
+              },
+              {
+                "qid": "6ab6bfc5ebe8a94b476994b2",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F (forced removal) &#39; He was eventually dismissed in January 1870 &#39;, before the project or the Empire ended."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1390 @@
+{
+  "id": "ielts-gt-c2-t4",
+  "testNum": 4,
+  "collection": "Collection 2",
+  "type": "general",
+  "title": "IELTS General Training Collection 2 Test 4 (Bản Gốc STUDY4)",
+  "category": "ielts-gt",
+  "durationMinutes": 165,
+  "questionsCount": 80,
+  "listening": {
+    "durationMinutes": 40,
+    "audioTracks": {
+      "part1": "/exams/ielts-gt-c2-t4/audio/p1.mp3",
+      "part2": "/exams/ielts-gt-c2-t4/audio/p2.mp3",
+      "part3": "/exams/ielts-gt-c2-t4/audio/p3.mp3",
+      "part4": "/exams/ielts-gt-c2-t4/audio/p4.mp3"
+    },
+    "parts": [
+      {
+        "partNum": 1,
+        "title": "Part 1",
+        "audioTrack": "/exams/ielts-gt-c2-t4/audio/p1.mp3",
+        "transcript": "",
+        "groups": []
+      }
+    ]
+  },
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Section 1: Six Ice Cream Makers Worth Melting For",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><b><span>Six Ice Cream Makers Worth Melting For</span></b></p><p><span>Whether you dream of silky gelato or nostalgic soft-serve, there's a machine here with your name on it. From high-tech marvels to hands-on shakers, our six favourite ice cream makers prove that summer's sweetest moments start at home.</span></p><p><b><span>A. The Gelato Maestro</span></b></p><p><span>This is engineering you can taste. A built-in sensor detects the moment your mixture reaches perfect consistency and stops mixing automatically, while twelve hardness settings cover everything from silky frozen yoghurt to firm gelato. The built-in freezer means no pre-chilling, and a cheerful tune announces when dessert is served. Beautifully made, with a price tag to match its ambitions.</span></p><p><b><span>B. The ChillBlitz XL</span></b></p><p><span>Craving ice cream now? The ChillBlitz XL delivers in as little as twenty minutes, every batch as reliable as the last. Three automated programmes mean anyone can master it, and the unusually generous two-litre bowl keeps whole families happy. It hums along louder than most, and the results lean soft rather than scoopable. But when dessert arrives this fast and this consistently, who's waiting for it to firm up?</span></p><p><b><span>C. The ShakeAway</span></b></p><p><span>Part gadget, part party trick. Load ice and salt into the base, pour your ingredients into the stainless-steel tub, and shake for three minutes or more. Measure exactly, shake with commitment, and you'll be rewarded with delightfully soft ice cream, plus an arm workout. Simple, efficient fun for anyone who likes dessert with a side of effort.</span></p><p><b><span>D. The TwirlMate Attachment</span></b></p><p><span>Already own a food mixer? Then you're halfway to ice cream. The TwirlMate is one of fifteen attachments for your trusty mixer; no standalone machine required. Simply freeze the bowl ahead of time, click it into place, and let the mixer do the work. Some recipes are ready in just twenty minutes. Quick, easy, and wonderfully space-saving.</span></p><p><b><span>E. The Penny Whip</span></b></p><p><span>Proof that homemade ice cream needn't cost a fortune. One of the cheapest models in our selection, the Penny Whip is a genuine bargain for budget-conscious dessert lovers. Its paddle is less robust than pricier rivals and the recipe selection is slim, but at this price, you can afford a cookbook and still come out ahead.</span></p><p><b><span>F. The EasyScoop Digital</span></b></p><p><span>Dessert without the drama. Pop on the lid, pour in your ingredients, set the timer on the crystal-clear digital display, and walk away. The included recipe book is packed with tasty ideas to keep inspiration flowing. A handful of customers found it fiddly to disassemble for washing, though our reviewers had no such trouble.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Look at the six advertisements for ice cream makers, A-F. For which ice cream maker are the following statements true? Write the correct letter, A-F, in boxes 1-7 on your answer sheet. NB You may use any letter more than once.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Look at the six advertisements for ice cream makers, A-F. For which ice cream maker are the following statements true? Write the correct letter, A-F, in boxes 1-7 on your answer sheet. NB You may use any letter more than once.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319455",
+                "qNum": 1,
+                "type": "input",
+                "question": "Users of this machine have to use their own muscle power.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "319456",
+                "qNum": 2,
+                "type": "input",
+                "question": "Users of this machine can decide how soft they want their ice cream to be.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "319457",
+                "qNum": 3,
+                "type": "input",
+                "question": "This ice cream maker can be fixed onto an existing kitchen appliance.",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "319458",
+                "qNum": 4,
+                "type": "input",
+                "question": "It is possible to make a larger amount of ice cream at one time than in most other machines.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "319459",
+                "qNum": 5,
+                "type": "input",
+                "question": "This machine is very well designed, but costs a lot.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "319460",
+                "qNum": 6,
+                "type": "input",
+                "question": "People might find it difficult to take this machine apart.",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              },
+              {
+                "qid": "319461",
+                "qNum": 7,
+                "type": "input",
+                "question": "This machine plays a pleasant sound to signal that the ice cream is ready.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "1",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319455",
+                "qNum": 1,
+                "type": "input",
+                "question": "Users of this machine have to use their own muscle power.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "2",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319456",
+                "qNum": 2,
+                "type": "input",
+                "question": "Users of this machine can decide how soft they want their ice cream to be.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "3",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319457",
+                "qNum": 3,
+                "type": "input",
+                "question": "This ice cream maker can be fixed onto an existing kitchen appliance.",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "4",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319458",
+                "qNum": 4,
+                "type": "input",
+                "question": "It is possible to make a larger amount of ice cream at one time than in most other machines.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "5",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319459",
+                "qNum": 5,
+                "type": "input",
+                "question": "This machine is very well designed, but costs a lot.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "6",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319460",
+                "qNum": 6,
+                "type": "input",
+                "question": "People might find it difficult to take this machine apart.",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              }
+            ]
+          },
+          {
+            "directions": "7",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319461",
+                "qNum": 7,
+                "type": "input",
+                "question": "This machine plays a pleasant sound to signal that the ice cream is ready.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "Do the following statements agree with the information given in the text? In boxes 8-14 on your answer sheet, write:TRUE if the statement agrees with the informationFALSE if the statement contradicts the informationNOT GIVEN if there is no information on this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Do the following statements agree with the information given in the text? In boxes 8-14 on your answer sheet, write:</span></p><p><span>TRUE if the statement agrees with the information</span></p><p><span>FALSE if the statement contradicts the information</span></p><p><span>NOT GIVEN if there is no information on this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319462",
+                "qNum": 8,
+                "type": "choice",
+                "question": "People with no cooking experience at all are welcome on the course.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "319463",
+                "qNum": 9,
+                "type": "choice",
+                "question": "Three meals a day are included in the course fee.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "319464",
+                "qNum": 10,
+                "type": "choice",
+                "question": "The course content can be altered if learners request it.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "319465",
+                "qNum": 11,
+                "type": "choice",
+                "question": "The last day is set aside for relaxation.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "319466",
+                "qNum": 12,
+                "type": "choice",
+                "question": "Participants must supply their own protective clothing for the kitchen.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "319467",
+                "qNum": 13,
+                "type": "choice",
+                "question": "The organisers are unable to lend any tools to participants.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "319468",
+                "qNum": 14,
+                "type": "choice",
+                "question": "It is impossible to reach the venue without a car.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "8",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319462",
+                "qNum": 8,
+                "type": "choice",
+                "question": "People with no cooking experience at all are welcome on the course.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "9",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319463",
+                "qNum": 9,
+                "type": "choice",
+                "question": "Three meals a day are included in the course fee.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "10",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319464",
+                "qNum": 10,
+                "type": "choice",
+                "question": "The course content can be altered if learners request it.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "11",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319465",
+                "qNum": 11,
+                "type": "choice",
+                "question": "The last day is set aside for relaxation.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "12",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319466",
+                "qNum": 12,
+                "type": "choice",
+                "question": "Participants must supply their own protective clothing for the kitchen.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "13",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319467",
+                "qNum": 13,
+                "type": "choice",
+                "question": "The organisers are unable to lend any tools to participants.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "14",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319468",
+                "qNum": 14,
+                "type": "choice",
+                "question": "It is impossible to reach the venue without a car.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Section 2: Mechanical Lifting on Site",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><b><span>Mechanical Lifting on Site</span></b></p><p><span>Mechanical lifting is one of the highest-risk activities on any construction site, and for that reason it is governed by strict rules covering the equipment itself, the planning of each lift, and the behaviour of everyone working nearby.</span></p><p><span>To begin with, all lifting equipment must be manufactured to a high standard. One way of confirming this is to check that the machinery carries an official mark, which demonstrates that it meets recognised safety requirements. In certain cases, a piece of equipment may also need to undergo tests before it is put into service for the first time, ensuring it can safely handle the loads it was designed for. Beyond this initial stage, some items require a regular check by an engineer, whose thorough examinations help to identify wear, damage or faults long before they lead to a failure.</span></p><p><span>Where cranes are concerned, a further layer of protection comes in the form of lift plans. A lift plan is drawn up before any crane operation takes place and is used to establish and carry out control measures for any risks that have been identified, such as unstable ground, overhead cables or high winds. Importantly, planning is not left to managers alone: a lifting crew can be consulted during a 'Tool Box Talk', a short briefing in which workers discuss the operation, raise concerns and agree on how the lift will proceed.</span></p><p><span>Preventing accidents with heavy loads also depends on simple, practical precautions. Objects such as barriers can be positioned around the working area to make certain that a suspended load never passes over anyone's head. In addition, a banksman is often appointed; this person's role is to give verbal directions to the crane driver, guiding every movement of the load, particularly when the driver's view is restricted.</span></p><p><span>Finally, it is worth remembering that danger does not come from cranes alone. Secondary lifting equipment — items such as chains, slings, hooks and shackles — is in fact more likely to cause injuries than the crane itself. Because these accessories are handled constantly and can deteriorate quickly, they demand careful selection, correct attachment and frequent inspection.</span></p><p><span>In short, safe mechanical lifting relies on well-made and properly tested equipment, thorough planning that involves the whole crew, and sensible measures on the ground to keep people well away from harm.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Complete the notes below. Choose NO MORE THAN TWO WORDS from the text for each answer. Write your answers in boxes 15–22 on your answer sheet.Mechanical Lifting on SiteSafety depends on machinery quality, preparation, and the (15)_______ of those on site.Standards for lifting machinerymust comply with approved safety specifications, e.g., the presence of a (16)_______ proves that these have been metmay have to pass (17)_______ showing they can cope with their intended loadssome items need periodic inspection by an (18)_______ to spot deterioration or defects earlyGetting ready for crane workSite-specific hazards must be assessed, including:(19)_______ that may not bear the machinery's weight(20)_______ above the siteunsuitable weather conditionsCrew members should contribute through a pre-work safety discussion.Workers can voice worries and confirm the agreed procedure.Protecting people in the lifting zoneput up (21)_______ or similar items to fence off the lift zone from other personnelA designated person called the (22)_______ should communicate with the crane operatorRisks from lifting attachmentsmay create greater injury risks than the crane itself.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Complete the notes below. Choose NO MORE THAN TWO WORDS from the text for each answer. Write your answers in boxes 15–22 on your answer sheet.</span></p><p><b><span>Mechanical Lifting on Site</span></b></p><p><span>Safety depends on machinery quality, preparation, and the (15)_______ of those on site.</span></p><p><b><span>Standards for lifting machinery</span></b></p><p><span>must comply with approved safety specifications, e.g., the presence of a (16)_______ proves that these have been met</span></p><p><span>may have to pass (17)_______ showing they can cope with their intended loads</span></p><p><span>some items need periodic inspection by an (18)_______ to spot deterioration or defects early</span></p><p><b><span>Getting ready for crane work</span></b></p><p><span>Site-specific hazards must be assessed, including:</span></p><p><span>(19)_______ that may not bear the machinery's weight</span></p><p><span>(20)_______ above the site</span></p><p><span>unsuitable weather conditions</span></p><p><span>Crew members should contribute through a pre-work safety discussion.</span></p><p><span>Workers can voice worries and confirm the agreed procedure.</span></p><p><b><span>Protecting people in the lifting zone</span></b></p><p><span>put up (21)_______ or similar items to fence off the lift zone from other personnel</span></p><p><span>A designated person called the (22)_______ should communicate with the crane operator</span></p><p><b><span>Risks from lifting attachments</span></b></p><p><span>may create greater injury risks than the crane itself.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319469",
+                "qNum": 15,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "behavio(u)r",
+                "explanation": "Đáp án chuẩn: behavio(u)r"
+              },
+              {
+                "qid": "319470",
+                "qNum": 16,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "mark",
+                "explanation": "Đáp án chuẩn: mark"
+              },
+              {
+                "qid": "319471",
+                "qNum": 17,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "tests",
+                "explanation": "Đáp án chuẩn: tests"
+              },
+              {
+                "qid": "319472",
+                "qNum": 18,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "engineer",
+                "explanation": "Đáp án chuẩn: engineer"
+              },
+              {
+                "qid": "319473",
+                "qNum": 19,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(unstable) ground",
+                "explanation": "Đáp án chuẩn: (unstable) ground"
+              },
+              {
+                "qid": "319474",
+                "qNum": 20,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(overhead) cables",
+                "explanation": "Đáp án chuẩn: (overhead) cables"
+              },
+              {
+                "qid": "319475",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "barriers",
+                "explanation": "Đáp án chuẩn: barriers"
+              },
+              {
+                "qid": "319476",
+                "qNum": 22,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "banksman",
+                "explanation": "Đáp án chuẩn: banksman"
+              }
+            ]
+          },
+          {
+            "directions": "15",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319469",
+                "qNum": 15,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "behavio(u)r",
+                "explanation": "Đáp án chuẩn: behavio(u)r"
+              }
+            ]
+          },
+          {
+            "directions": "16",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319470",
+                "qNum": 16,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "mark",
+                "explanation": "Đáp án chuẩn: mark"
+              }
+            ]
+          },
+          {
+            "directions": "17",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319471",
+                "qNum": 17,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "tests",
+                "explanation": "Đáp án chuẩn: tests"
+              }
+            ]
+          },
+          {
+            "directions": "18",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319472",
+                "qNum": 18,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "engineer",
+                "explanation": "Đáp án chuẩn: engineer"
+              }
+            ]
+          },
+          {
+            "directions": "19",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319473",
+                "qNum": 19,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(unstable) ground",
+                "explanation": "Đáp án chuẩn: (unstable) ground"
+              }
+            ]
+          },
+          {
+            "directions": "20",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319474",
+                "qNum": 20,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(overhead) cables",
+                "explanation": "Đáp án chuẩn: (overhead) cables"
+              }
+            ]
+          },
+          {
+            "directions": "21",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319475",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "barriers",
+                "explanation": "Đáp án chuẩn: barriers"
+              }
+            ]
+          },
+          {
+            "directions": "22",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319476",
+                "qNum": 22,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "banksman",
+                "explanation": "Đáp án chuẩn: banksman"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the table below. Choose ONE WORD ONLY from the text for each answer. Write your answers in boxes 23-27 on your answer sheet.StrategyEmployees mustThe customerControl your own reactionRecognise that the customer’s frustration usually concerns the (23)_______Usually had (24)_______ that were not fulfilled.Give the customer space to speakGive occasional signs of engagement without interrupting or taking control of the conversation.Will not be receptive to a (25)_______ while still emotionally upset.Clarify the situationAsk focused questions to reconstruct what occurred and show a genuine intention to put matters right.Gradually develops (26)_______ in the employee.Arrange a suitable remedyBe familiar with the company's official (27)_______ to know which remedies are permitted.May choose the business again and encourage others to use it.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Complete the table below. Choose ONE WORD ONLY from the text for each answer. Write your answers in boxes 23-27 on your answer sheet.</span></p><table><tr><td colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center;\"><b><span>Strategy</span></b></p></td><td colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center;\"><b><span>Employees must</span></b></p></td><td colspan=\"1\" rowspan=\"1\"><p style=\"text-align: center;\"><b><span>The customer</span></b></p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><span>Control your own reaction</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Recognise that the customer’s frustration usually concerns the (23)_______</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Usually had (24)_______ that were not fulfilled.</span></p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><span>Give the customer space to speak</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Give occasional signs of engagement without interrupting or taking control of the conversation.</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Will not be receptive to a (25)_______ while still emotionally upset.</span></p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><span>Clarify the situation</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Ask focused questions to reconstruct what occurred and show a genuine intention to put matters right.</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Gradually develops (26)_______ in the employee.</span></p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><span>Arrange a suitable remedy</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>Be familiar with the company's official (27)_______ to know which remedies are permitted.</span></p></td><td colspan=\"1\" rowspan=\"1\"><p><span>May choose the business again and encourage others to use it.</span></p></td></tr></table></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319477",
+                "qNum": 23,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "problem",
+                "explanation": "Đáp án chuẩn: problem"
+              },
+              {
+                "qid": "319478",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "expectations",
+                "explanation": "Đáp án chuẩn: expectations"
+              },
+              {
+                "qid": "319479",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "solution",
+                "explanation": "Đáp án chuẩn: solution"
+              },
+              {
+                "qid": "319480",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "trust",
+                "explanation": "Đáp án chuẩn: trust"
+              },
+              {
+                "qid": "319481",
+                "qNum": 27,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "procedure",
+                "explanation": "Đáp án chuẩn: procedure"
+              }
+            ]
+          },
+          {
+            "directions": "23",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319477",
+                "qNum": 23,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "problem",
+                "explanation": "Đáp án chuẩn: problem"
+              }
+            ]
+          },
+          {
+            "directions": "24",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319478",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "expectations",
+                "explanation": "Đáp án chuẩn: expectations"
+              }
+            ]
+          },
+          {
+            "directions": "25",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319479",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "solution",
+                "explanation": "Đáp án chuẩn: solution"
+              }
+            ]
+          },
+          {
+            "directions": "26",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319480",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "trust",
+                "explanation": "Đáp án chuẩn: trust"
+              }
+            ]
+          },
+          {
+            "directions": "27",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319481",
+                "qNum": 27,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "procedure",
+                "explanation": "Đáp án chuẩn: procedure"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Section 3: The nature of Yawning",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><b><span>The nature of Yawning</span></b></p><p><b><span>A. </span></b><span>While fatigue, drowsiness or boredom easily bring on yawns, scientists are discovering there is more to yawning than most people think. Not much is known about why we yawn or if it serves any useful function. People have already learned that yawning can be infectious. “Contagious yawning” is the increase in likelihood that you will yawn after watching or hearing someone else yawn, but not much is known about the underlying causes, and very little research has been done on the subject. However, scientists at the University of Albany, as well as the University of Leeds and the University of London, have done some exploration.</span></p><p><b><span>B. </span></b><span>It is commonly believed that people yawn as a result of being sleepy or tired because they need oxygen. However, the latest research shows that a yawn can help cool the brain and help it work more effectively, which is quite different from the popular belief that yawning promotes sleep and is a sign of tiredness. Dr Andrew Gallup and his colleagues at the University of Albany in New York State said their experiments on 44 students showed that raising or lowering oxygen and carbon dioxide levels in the blood did not produce that reaction. In the study, participants were shown videos of people laughing and yawning, and researchers counted how many times the volunteers responded to the “contagious yawns”. The researchers found that those who breathed through the nose rather than the mouth were less likely to yawn when watching a video of other people yawning. The same effect was found among those who held a cool pack to their forehead, whereas those who held a warm pack yawned while watching the video. Since yawning occurs when brain temperature rises, sending cool blood to the brain serves to maintain the best levels of mental efficiency.</span></p><p><b><span>C. </span></b><span>Yawning is universal to humans and many animals. Cats, dogs, and fish yawn just like humans do, but they yawn spontaneously. Only humans and chimpanzees, our closest relatives in the animal kingdom, have shown definite contagious yawning. Though much of yawning is due to suggestibility, sometimes people do not need to actually see a person yawn to involuntarily yawn themselves: hearing someone yawning or even reading about yawning can cause the same reaction.</span></p><p><b><span>D. </span></b><span>However, contagious yawning goes beyond mere suggestibility. Recent studies show that contagious yawning is also related to our predisposition toward empathy— the ability to understand and connect with others’ emotional states. So empathy is important, sure, but how could it possibly be related to contagious yawning? Leave it up to psychologists at Leeds University in England to answer that. In their study, researchers selected 40 psychology students and 40 engineering students. Generally, psychology students are more likely to feel empathy for others, while engineering students are thought to be concerned with objects and science. Each student was made to wait individually in a waiting room, along with an undercover assistant who yawned 10 times in as many minutes. The students were then administered an emotional quotient test: students were shown 40 images of eyes and asked what emotion each one displayed. The results of the test support the idea that contagious yawning is linked to empathy. The psychology students—whose future profession requires them to focus on others—yawned an average of 5.5 times contagiously in the waiting room and scored 28 out of 40 on the emotional test. The engineering students—who tend to focus on things like numbers and systems—yawned an average of 1.5 times and scored 25.5 out of 40 on the subsequent test. The difference doesn’t sound like much, but researchers consider it significant. Strangely enough, women, who are generally considered more emotionally attuned, didn’t score any higher than men.</span></p><p><b><span>E. </span></b><span>Another study, led by Atsushi Senju, a cognitive researcher at the University of London, also sought to answer that question. People with autism disorder are considered to be developmentally impaired emotionally. Autistics have trouble connecting with others and find it difficult to feel empathy. Since autistics have difficulty feeling empathy, they shouldn’t be susceptible to contagious yawning. To find out, Senju and his colleagues placed 49 kids aged 7 to 15 in a room with a television. 24 of the test subjects had been diagnosed with autism spectrum disorder; the other 25 were non-autistic kids. The test subjects were shown short clips of people yawning as well as clips of people opening their mouths but not yawning. While the kids with autism had the same lack of reaction to both kinds of clips, the non-autistic kids yawned more after the clips of people yawning.</span></p><p><b><span>F. </span></b><span>There also have been studies that suggest yawning, especially psychological “contagious” yawning, may have developed as a way of keeping a group of animals alert and bonding members of a group into a more united one. If an animal is drowsy or bored, it may not be as alert as it should be to be prepared to spring into action, and its yawning is practically saying, “Hey, I need some rest; you stay awake”. Therefore, a contagious yawn could be an instinctual reaction to a signal from one member of the herd reminding the others to stay alert when danger comes. So the theory suggests evidence that yawning comes from the evolution of early humans to be ready to physically exert themselves at any given moment.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Read paragraphs A-F. Which paragraph contains the following information? NB You may use any letter more than once.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Read paragraphs A-F. Which paragraph contains the following information? NB You may use any letter more than once.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319482",
+                "qNum": 28,
+                "type": "input",
+                "question": "Humans’ imaginations can cause yawning.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "319483",
+                "qNum": 29,
+                "type": "input",
+                "question": "Research shows that yawning is closely related to occupations.",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "319484",
+                "qNum": 30,
+                "type": "input",
+                "question": "An acknowledgement that the reasons behind yawning remain largely unstudied.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "319485",
+                "qNum": 31,
+                "type": "input",
+                "question": "Yawning is used to regulate brain temperature.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "319486",
+                "qNum": 32,
+                "type": "input",
+                "question": "Scientists discovered some evidence disproving the early understanding of yawning.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "28",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319482",
+                "qNum": 28,
+                "type": "input",
+                "question": "Humans’ imaginations can cause yawning.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "29",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319483",
+                "qNum": 29,
+                "type": "input",
+                "question": "Research shows that yawning is closely related to occupations.",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "30",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319484",
+                "qNum": 30,
+                "type": "input",
+                "question": "An acknowledgement that the reasons behind yawning remain largely unstudied.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "31",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319485",
+                "qNum": 31,
+                "type": "input",
+                "question": "Yawning is used to regulate brain temperature.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "32",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319486",
+                "qNum": 32,
+                "type": "input",
+                "question": "Scientists discovered some evidence disproving the early understanding of yawning.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "Match each of the following research results with the university which it comes from? NB You may use any letter more than once.A. University of AlbanyB. University of LeedsC. University of London",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Match each of the following research results with the university which it comes from? NB You may use any letter more than once.</span></p><p data-pool-key=\"A\"><span>A. University of Albany</span></p><p data-pool-key=\"B\"><span>B. University of Leeds</span></p><p data-pool-key=\"C\"><span>C. University of London</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319487",
+                "qNum": 33,
+                "type": "input",
+                "question": "There is no gender difference in the ability to recognise emotions.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "319488",
+                "qNum": 34,
+                "type": "input",
+                "question": "People with certain disorders are less likely to be affected by other people yawning.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "319489",
+                "qNum": 35,
+                "type": "input",
+                "question": "Yawning is associated with the way people breathe.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "319490",
+                "qNum": 36,
+                "type": "input",
+                "question": "People who are trained to feel empathy for others are more likely to yawn than those who are untrained.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "33",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319487",
+                "qNum": 33,
+                "type": "input",
+                "question": "There is no gender difference in the ability to recognise emotions.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "34",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319488",
+                "qNum": 34,
+                "type": "input",
+                "question": "People with certain disorders are less likely to be affected by other people yawning.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "35",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319489",
+                "qNum": 35,
+                "type": "input",
+                "question": "Yawning is associated with the way people breathe.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "36",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319490",
+                "qNum": 36,
+                "type": "input",
+                "question": "People who are trained to feel empathy for others are more likely to yawn than those who are untrained.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the summary below. Choose ONE WORD from the passage for each answer. Write your answers in boxes 37-40 on your answer sheet.Another theory shows that yawning is used for (37)________ individuals into a tighter social unit. For example, a tired animal's yawn tells the rest of the group that it needs (38)________ and that they should keep an eye on their surroundings, so everyone is ready when (39)________ draws near. This theory suggests that yawning is a behaviour that developed through human (40)________.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Complete the summary below. Choose ONE WORD from the passage for each answer. Write your answers in boxes 37-40 on your answer sheet.</span></p><p><span>Another theory shows that yawning is used for (37)________ individuals into a tighter social unit. For example, a tired animal's yawn tells the rest of the group that it needs (38)________ and that they should keep an eye on their surroundings, so everyone is ready when (39)________ draws near. This theory suggests that yawning is a behaviour that developed through human (40)________.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319491",
+                "qNum": 37,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "bonding",
+                "explanation": "Đáp án chuẩn: bonding"
+              },
+              {
+                "qid": "319492",
+                "qNum": 38,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "rest",
+                "explanation": "Đáp án chuẩn: rest"
+              },
+              {
+                "qid": "319493",
+                "qNum": 39,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "danger",
+                "explanation": "Đáp án chuẩn: danger"
+              },
+              {
+                "qid": "319494",
+                "qNum": 40,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "evolution",
+                "explanation": "Đáp án chuẩn: evolution"
+              }
+            ]
+          },
+          {
+            "directions": "37",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319491",
+                "qNum": 37,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "bonding",
+                "explanation": "Đáp án chuẩn: bonding"
+              }
+            ]
+          },
+          {
+            "directions": "38",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319492",
+                "qNum": 38,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "rest",
+                "explanation": "Đáp án chuẩn: rest"
+              }
+            ]
+          },
+          {
+            "directions": "39",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319493",
+                "qNum": 39,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "danger",
+                "explanation": "Đáp án chuẩn: danger"
+              }
+            ]
+          },
+          {
+            "directions": "40",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319494",
+                "qNum": 40,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "evolution",
+                "explanation": "Đáp án chuẩn: evolution"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "durationMinutes": 60,
+    "task1": {
+      "title": "Task 1: Formal / Semi-formal Letter",
+      "timeMinutes": 20,
+      "minWords": 150,
+      "prompt": "You recently stayed at a hotel on an official business trip and encountered several problems during your stay. Write a formal letter to the hotel manager. In your letter: explain why you were staying at the hotel, describe the problems you experienced, and state what actions you expect the manager to take.",
+      "sampleBand8Answer": "Dear Sir or Madam,\n\nI am writing to formally register my disappointment regarding the quality of accommodation during my stay at the Grand Imperial Hotel from October 18th to October 21st (Booking Reference: #GI-98421). I was visiting your city as the keynote speaker at the International Energy Symposium.\n\nRegrettably, multiple deficiencies compromised what ought to have been a restful business visit. First, despite confirming a high-floor executive quiet room weeks prior, I was assigned Room 204 adjacent to the main loading dock, where delivery freight commenced noisily at 5:00 AM each morning. Furthermore, the high-speed Wi-Fi connection advertised in the executive suite failed intermittently throughout my stay, preventing me from accessing critical presentation materials for my conference.\n\nTo compound these issues, when I raised these urgent concerns with the front desk duty supervisor on the morning of October 19th, the staff member appeared dismissive and failed to offer an alternative room or technical support.\n\nIn light of these inconveniences and the substandard service rendered, I request a refund of 50% of the total accommodation fee charged to my corporate card. Additionally, I would appreciate a written assurance detailing the measures you intend to institute to improve staff responsiveness and internet stability.\n\nI look forward to receiving your prompt resolution.\n\nYours faithfully,\nDr. Jonathan Miller",
+      "keyVocab": [
+        {
+          "word": "Register disappointment",
+          "meaningVi": "Chính thức bày tỏ sự thất vọng"
+        },
+        {
+          "word": "Compromise",
+          "meaningVi": "Làm tổn hại, ảnh hưởng xấu đến"
+        },
+        {
+          "word": "Substandard service",
+          "meaningVi": "Dịch vụ dưới chuẩn, không đạt yêu cầu"
+        }
+      ]
+    },
+    "task2": {
+      "title": "Task 2: General Essay",
+      "timeMinutes": 40,
+      "minWords": 250,
+      "prompt": "In many countries today, people are spending less time with their families and more time at work or pursuing individual hobbies. What are the causes of this trend, and what effects does it have on society?",
+      "sampleBand8Answer": "In contemporary society, an increasing number of individuals devote an overwhelming proportion of their daily lives to workplace commitments and autonomous pastimes, resulting in a noticeable decline in familial interaction. This essay will examine the primary catalysts behind this phenomenon and discuss its profound ramifications for community cohesion.\n\nThe primary impetus behind diminishing family time is escalating economic pressure and the competitive nature of the globalized job market. With housing costs and general living expenses soaring in metropolitan hubs, adults frequently find themselves obliged to work excessive overtime or manage secondary freelance gigs to attain financial stability. Concurrently, the pervasive presence of personalized digital entertainment—such as algorithmic social media and on-demand streaming—encourages solitary engagement rather than collective domestic pastimes.\n\nRegarding the impacts, this societal transition generates considerable adverse repercussions. Within the household, the lack of parental presence and meaningful communication can weaken intergenerational bonding, leaving children vulnerable to behavioral issues and emotional isolation. At a broader societal level, the erosion of cohesive family structures diminishes the collective resilience of communities, as strong domestic units have traditionally served as the initial safety net during psychological and financial crises.\n\nIn summary, intense corporate demands and digital individualism represent the chief reasons why people are drifting from domestic life. Unless societies institute sustainable work-life balance policies, familial ties and social well-being will continue to erode.",
+      "keyVocab": [
+        {
+          "word": "Escalating economic pressure",
+          "meaningVi": "Áp lực kinh tế ngày càng gia tăng"
+        },
+        {
+          "word": "Pervasive presence",
+          "meaningVi": "Sự hiện diện phổ biến khắp nơi"
+        },
+        {
+          "word": "Intergenerational bonding",
+          "meaningVi": "Sự gắn kết giữa các thế hệ"
+        }
+      ]
+    }
+  },
+  "speaking": {
+    "durationMinutes": 14,
+    "part1": {
+      "title": "Part 1: Introduction & Familiar Topics (4-5 mins)",
+      "topic": "Work, Technology, and City Life",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "What kind of work do you do, and what do you enjoy most about it?",
+          "sampleBand8": "I currently work as a senior software consultant for an international consultancy firm. What captivates me most is the intellectual challenge of engineering scalable architectural solutions that directly streamline daily operations for thousands of corporate end-users."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you prefer working individually or collaborating in a team?",
+          "sampleBand8": "While autonomous focus is indispensable for deep coding and analytical tasks, I generally thrive on teamwork. Collaborative brainstorming sessions consistently yield multifaceted perspectives that mitigate blind spots and elevate the overall caliber of our deliverables."
+        },
+        {
+          "qNum": 3,
+          "question": "How has technological progress transformed your hometown over recent years?",
+          "sampleBand8": "Remarkably so. Cashless digital payments and app-based public transportation have become completely ubiquitous, which has expedited municipal transit and significantly modernized the pace of urban living."
+        },
+        {
+          "qNum": 4,
+          "question": "Do you think you will continue living in your current city in the future?",
+          "sampleBand8": "Most definitely for the foreseeable future. The vibrant economic ecosystem, coupled with rich cultural amenities and extensive professional networks, makes it an ideal launchpad for my ongoing career trajectory."
+        }
+      ]
+    },
+    "part2": {
+      "title": "Part 2: Individual Long Turn / Cue Card (3-4 mins)",
+      "prepTimeSec": 60,
+      "speakTimeSec": 120,
+      "cueCard": {
+        "prompt": "Describe a memorable professional or academic achievement that you are proud of.",
+        "bullets": [
+          "What the achievement was",
+          "When and where it took place",
+          "What challenges you had to overcome",
+          "And explain why you felt so proud of this accomplishment."
+        ]
+      },
+      "sampleBand8Answer": "I would like to speak about a defining professional achievement from last year, when I successfully spearheaded the migration of our company's legacy customer management infrastructure to a secure cloud platform. This undertaking occurred over a grueling six-month period at our regional corporate headquarters.\n\nThe primary obstacle we confronted was the sheer complexity of legacy data formats, compounded by an unforgiving deployment deadline. We had to ensure zero downtime for over fifty thousand active global clients while synchronizing disparate legacy databases. Furthermore, midway through the project, several senior specialists had to quarantine due to seasonal health issues, which forced me to shoulder additional architectural duties and coordinate with offshore teams across multiple time zones.\n\nUltimately, the migration went live seamlessly without a single minute of service disruption. I felt immensely proud not only because the project cut infrastructure overhead by thirty percent, but because it substantiated my leadership capabilities under immense pressure and earned our team formal recognition from executive leadership."
+    },
+    "part3": {
+      "title": "Part 3: Two-way Discussion / Abstract Topics (4-5 mins)",
+      "topic": "Ambition, Workplace Recognition, and Leadership",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "Why do some individuals value intrinsic satisfaction over material rewards in their careers?",
+          "sampleBand8": "Because professional self-actualization provides enduring fulfillment that monetary incentives simply cannot replicate. When employees perceive that their daily contributions generate tangible societal impact, their engagement remains resilient even through arduous economic cycles."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you believe personal ambition always benefits an organization?",
+          "sampleBand8": "Not necessarily. While constructive ambition drives innovation and productivity, unbridled personal ambition can foster toxic internal rivalries, undermine collective cohesion, and incentivize unethical shortcuts."
+        },
+        {
+          "qNum": 3,
+          "question": "How has the definition of effective leadership evolved in the modern era?",
+          "sampleBand8": "Leadership has fundamentally transitioned from an authoritative, hierarchical command model to an empathetic, servant-leadership philosophy that emphasizes psychological safety, emotional intelligence, and inclusive mentorship."
+        }
+      ]
+    }
+  }
+}

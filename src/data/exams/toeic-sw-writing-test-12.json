@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-12",
+  "testNum": 12,
+  "title": "TOEIC SW Writing Test 12 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-12/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-12/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-12/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-12/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-12/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Ken Smith\nTo: Aaron Devlin, President, First Insurance Agency\nSubject: Interview .\nSent: March 29, 8:16 A.M.\nDear Mr. Devlin,\nI\nhave a job interview scheduled for next Monday at 3:00 P.M. However, I am afraid there have been some changes in my current schedule, so I have to work until late at night that day. Could you possibly reschedule my interview date? I look forward to meeting you soon.\nBest regards,\nKen Smith\nDirections: Respond to the e-mail as if you are Aaron Devlin. In your e-mail, suggest TWO possible times for holding the interview and request ONE item that Ken Smith should bring with him.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Ken Smith</span></p><p><span>To: Aaron Devlin, President, First Insurance Agency</span></p><p><span>Subject: Interview .</span></p><p><span>Sent: March 29, 8:16 A.M.</span></p><p><span>Dear Mr. Devlin,</span></p><p><span>I</span><span> have a job interview scheduled for next Monday at 3:00 P.M. However, I am afraid there have been some changes in my current schedule, so I have to work until late at night that day. Could you possibly reschedule my interview date? I look forward to meeting you soon.</span></p><p><span>Best regards,</span></p><p><span>Ken Smith</span></p><p><span>Directions: Respond to the e-mail as if you are Aaron Devlin. In your e-mail, suggest TWO possible times for holding the interview and request ONE item that Ken Smith should bring with him.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: Randy Emerick, Assistant to Vice-President\nTo: All staff\nSubject: Vice-president's retirement party\nSent: January 27, 1:15 P.M.\nVice-President Jerry Silveria’s retirement party will take place at the Grand Traverse Resort on February 9 at 7:00 P.M. We are asking that employees help with preparations for the party, such as decorations, setting up tables, and so on.\nDirections: Respond to the\ne-mail\nas if you are an employee at this company. In your\ne-mail\n, ask TWO questions and make ONE suggestion about organizing the\nparty.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Randy Emerick, Assistant to Vice-President</span></p><p><span>To: All staff</span></p><p><span>Subject: Vice-president's retirement party</span></p><p><span>Sent: January 27, 1:15 P.M.</span></p><p><span>Vice-President Jerry Silveria’s retirement party will take place at the Grand Traverse Resort on February 9 at 7:00 P.M. We are asking that employees help with preparations for the party, such as decorations, setting up tables, and so on.</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are an employee at this company. In your </span><span>e-mail</span><span>, ask TWO questions and make ONE suggestion about organizing the </span><span>party.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays Some people like taking one long vacation each year. Others enjoy taking several shorter vacations. Which do you prefer? Use specific reasons and examples to explain your choice."
+    }
+  ]
+}

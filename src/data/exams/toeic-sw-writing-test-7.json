@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-7",
+  "testNum": 7,
+  "title": "TOEIC SW Writing Test 7 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-7/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-7/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-7/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-7/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-7/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Marco Facinni, Marketing Director\nTo: Cherie Black, Marketing Representative\nSubject: Promotion opportunity\nSent: March 23, 5:21 PM\nHello Mr. Black,\nI would like to offer you a promotion to the role of marketing supervisor. You are one of our best performing employees, and I’m sure you can handle this responsibility. This position offers an excellent benefits package. Please contact me soon to let me know your decision.\nRegards,\nMarco Facinni\nDirections: Respond to the email as if you're the marketing representative. In your email, describe TWO questions you have about the promotion.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Marco Facinni, Marketing Director</span></p><p><span>To: Cherie Black, Marketing Representative </span></p><p><span>Subject: Promotion opportunity</span></p><p><span>Sent: March 23, 5:21 PM </span></p><p><span>Hello Mr. Black, </span></p><p><span>I would like to offer you a promotion to the role of marketing supervisor. You are one of our best performing employees, and I’m sure you can handle this responsibility. This position offers an excellent benefits package. Please contact me soon to let me know your decision.</span></p><p><span>Regards, </span></p><p><span>Marco Facinni <br/><br/></span><span>Directions: Respond to the email as if you're the marketing representative. In your email, describe TWO questions you have about the promotion.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: Jenny Bierre, Marketing Manager, HyperCom\nTo: Mailing list\nSubject: Great Off-Peak Plan!!\nSent: August 14, 12:22 P.M.\nDear HyperCom customer,\nHyperCom is offering an amazing new cell phone plan. The Off-Peak Plan is just $15 a month. Users can receive unlimited calling time outside normal business hours. This deal can’t be beaten! Please\ncontact us right away if you have any questions about this great offer.\nYours faithfully,\nJenny Bierre\nMarketing Manager, HyperCom\nDirections: Respond to the email as if you are a customer. In your email, make THREE questions.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Jenny Bierre, Marketing Manager, HyperCom</span></p><p><span>To: Mailing list</span></p><p><span>Subject: Great Off-Peak Plan!!</span></p><p><span>Sent: August 14, 12:22 P.M.</span></p><p><span>Dear HyperCom customer,</span></p><p><span>HyperCom is offering an amazing new cell phone plan. The Off-Peak Plan is just $15 a month. Users can receive unlimited calling time outside normal business hours. This deal can’t be beaten! Please </span><span>contact us right away if you have any questions about this great offer.</span></p><p><span>Yours faithfully,</span></p><p><span>Jenny Bierre</span></p><p><span>Marketing Manager, HyperCom</span></p><p><span>Directions: Respond to the email as if you are a customer. In your email, make THREE questions.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays What do you think a candidate should do to prepare for a job interview? Use specific examples and details to support your answer."
+    }
+  ]
+}

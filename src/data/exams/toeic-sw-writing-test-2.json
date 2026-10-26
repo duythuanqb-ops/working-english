@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-2",
+  "testNum": 2,
+  "title": "TOEIC SW Writing Test 2 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-2/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-2/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-2/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-2/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-2/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom:\nDaniel Olivares, Olivares Shipping Inc.\nTo:\nAdministrative Staff\nSubject:\nVacation\nSent:\nFebruary 19, 20 -\nSheila Weston, the head administrative coordinator, will be out of the office from March 10-15. We will need to redistribute her various tasks among the rest of the administrative staff while she’s out. Also, please be advised that you must give at least two weeks’ notice of any plans to take vacation.\nSincerely,\nDaniel Olivares\nOwner, Olivares Shipping, Inc.\nDirections: Respond to the e-mail as if you are on the administrative staff at Olivares Shipping Inc. In your e-mail, give TWO administrative tasks that you can perform while Ms. Weston is gone and ONE range of dates during which you plan to be on vacation.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: </span><span>Daniel Olivares, Olivares Shipping Inc. </span></p><p><span>To: </span><span>Administrative Staff<br/></span><span>Subject:</span><span> Vacation<br/></span><span>Sent: </span><span>February 19, 20 -</span></p><p><span>Sheila Weston, the head administrative coordinator, will be out of the office from March 10-15. We will need to redistribute her various tasks among the rest of the administrative staff while she’s out. Also, please be advised that you must give at least two weeks’ notice of any plans to take vacation.</span></p><p><span>Sincerely,<br/>Daniel Olivares<br/>Owner, Olivares Shipping, Inc. </span></p><p><span>Directions: Respond to the e-mail as if you are on the administrative staff at Olivares Shipping Inc. In your e-mail, give TWO administrative tasks that you can perform while Ms. Weston is gone and ONE range of dates during which you plan to be on vacation.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: Walter Terborg\nTo: Rita Chen\nSubject: Application for employment\nSent: October 10, 20—\nDear Ms. Chen:\nThank you for your interest in the accountant position at Garrison and Associates. I am writing because your online application is currently incomplete. To see which materials are missing, please log in to your online account. Please feel free to contact me if you have any questions about the position or the application process.\nThank you,\nWalter Terborg, Human Resources\nDirections: Respond to the e-mail as if you are Rita Chen. In your e-mail, describe TWO application materials you submitted and ask ONE question about the position.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Walter Terborg </span></p><p><span>To: Rita Chen<br/>Subject: Application for employment </span></p><p><span>Sent: October 10, 20—</span></p><p><span>Dear Ms. Chen: </span></p><p><span>Thank you for your interest in the accountant position at Garrison and Associates. I am writing because your online application is currently incomplete. To see which materials are missing, please log in to your online account. Please feel free to contact me if you have any questions about the position or the application process.</span></p><p><span>Thank you,<br/>Walter Terborg, Human Resources</span></p><p><span>Directions: Respond to the e-mail as if you are Rita Chen. In your e-mail, describe TWO application materials you submitted and ask ONE question about the position.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Modern technology has made it possible for many people to work at home most of the time rather than going to an office every day. What are the advantages and disadvantages of working at home? Support your answer with specific reasons and examples."
+    }
+  ]
+}

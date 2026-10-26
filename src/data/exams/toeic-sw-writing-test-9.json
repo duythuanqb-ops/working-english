@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-9",
+  "testNum": 9,
+  "title": "TOEIC SW Writing Test 9 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-9/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-9/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-9/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-9/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-9/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: C, Davis, Customer Affairs Manager, Plus Airlines\nTo: V. Miller\nSubject: Your complaint\nSent: September 4, 2:52 PM.\nDear Ms. Miller:\nI understand you had a problem on the Plus Airlines flight\nfrom Moscow to L.A. last Wednesday. Please email me\nback with more information about the problem you en\ncountered so that we can handle this issue effectively.\nYours sincerely,\nC. Davis\nDirections: Respond to the email as if you are V. Miller. In your email, provide TWO pieces of information about the flight.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: C, Davis, Customer Affairs Manager, Plus Airlines</span></p><p><span>To: V. Miller</span></p><p><span>Subject: Your complaint</span></p><p><span>Sent: September 4, 2:52 PM.</span></p><p><span>Dear Ms. Miller:</span></p><p><span>I understand you had a problem on the Plus Airlines flight </span><span>from Moscow to L.A. last Wednesday. Please email me  </span><span>back with more information about the problem you en</span><span>countered so that we can handle this issue effectively.</span></p><p><span>Yours sincerely,</span></p><p><span>C. Davis </span></p><p><span>Directions: Respond to the email as if you are V. Miller. In your email, provide TWO pieces of information about the flight.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: M. Jackson, Customer Relations Manager, Hartford Importers\nTo: G. Watkins, Purchasing Director, Liam Retailing\nSubject: Your shipment\nSent: November 5, 4:26 P.M.\nDear Mr. Watkins:\nI heard from our customer service team that there are some problems with the shipment of electronic goods we sent you last week. I’m sorry for any inconvenience this has caused. Please let me know more details about the nature of the problems.\nWarm regards,\nM. Jackson\nDirections: Respond to the email as if you are G. Watkins. In your email, explain TWO problems you have experienced with the shipment.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: M. Jackson, Customer Relations Manager, Hartford Importers </span></p><p><span>To: G. Watkins, Purchasing Director, Liam Retailing</span></p><p><span>Subject: Your shipment</span></p><p><span>Sent: November 5, 4:26 P.M.</span></p><p><span>Dear Mr. Watkins:</span></p><p><span>I heard from our customer service team that there are some problems with the shipment of electronic goods we sent you last week. I’m sorry for any inconvenience this has caused. Please let me know more details about the nature of the problems.</span></p><p><span>Warm regards, </span></p><p><span>M. Jackson</span></p><p><span>Directions: Respond to the email as if you are G. Watkins. In your email, explain TWO problems you have experienced with the shipment.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays “Most people would prefer to work for themselves rather than someone else.” Do you agree with this statement? Use specific reasons and details to explain your opinion."
+    }
+  ]
+}

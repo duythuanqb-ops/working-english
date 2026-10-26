@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-5",
+  "testNum": 5,
+  "title": "TOEIC SW Writing Test 5 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-5/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-5/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-5/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-5/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-5/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Samuel George\nTo: Janet Jones\nSubject: Changing banks\nSent: February 23, 20—\nDear Ms. Jones,\nWe understand that you have moved your accounts to another bank. We are very sorry to lose your business. To help us provide better service in the future, would you mind telling us why you made the decision to change banks? Thank you very much.\nSincerely,\nSamuel George\nNational City Bank Customer Service\nDirections: Respond to the\ne-mail\nas if you are Janet Jones. In your\ne-mail\n, explain ONE problem and make TWO suggestions.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Samuel George<br/>To: Janet Jones<br/>Subject: Changing banks </span></p><p><span>Sent: February 23, 20—</span></p><p><span>Dear Ms. Jones, </span></p><p><span>We understand that you have moved your accounts to another bank. We are very sorry to lose your business. To help us provide better service in the future, would you mind telling us why you made the decision to change banks? Thank you very much.</span></p><p><span>Sincerely,<br/>Samuel George<br/>National City Bank Customer Service </span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are Janet Jones. In your </span><span>e-mail</span><span>, explain ONE problem and make TWO suggestions. </span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: John Jerkins\nTo: Shirley Park\nSubject: Budget report\nSent: February 23, 20—\nShirley,\nI am working on the annual budget report as you requested. You asked me to have it finished by next Friday; however, it’s taking longer than I thought. Could I have one more week to complete the report? That way I would have time to do a thorough job.\nThank you.\nJohn\nDirections: Respond to the\ne-mail\nas if you are Shirley Park. In your\ne-mail\n, ask ONE question and give TWO pieces of information.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: John Jerkins<br/>To: Shirley Park<br/>Subject: Budget report </span></p><p><span>Sent: February 23, 20—</span></p><p><span>Shirley,</span></p><p><span>I am working on the annual budget report as you requested. You asked me to have it finished by next Friday; however, it’s taking longer than I thought. Could I have one more week to complete the report? That way I would have time to do a thorough job.</span></p><p><span>Thank you. </span></p><p><span>John </span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are Shirley Park. In your </span><span>e-mail</span><span>, ask ONE question and give TWO pieces of information. </span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "At some jobs, employees are allowed to listen to music while they work. What is your opinion of this? Give reasons or examples to support your opinion."
+    }
+  ]
+}

@@ -1,0 +1,3423 @@
+{
+  "id": "toeic-lr-c1-t9",
+  "testNum": 9,
+  "collection": "Collection 1",
+  "title": "TOEIC LR Collection 1 Test 9 (Bản Gốc STUDY4)",
+  "category": "toeic-lr",
+  "durationMinutes": 120,
+  "questionsCount": 200,
+  "audioTrack": "/exams/toeic-lr-c1-t9/audio/full.mp3",
+  "audioTracks": {
+    "part1": "/exams/toeic-lr-c1-t9/audio/full.mp3",
+    "part2": "/exams/toeic-lr-c1-t9/audio/full.mp3",
+    "part3": "/exams/toeic-lr-c1-t9/audio/full.mp3",
+    "part4": "/exams/toeic-lr-c1-t9/audio/full.mp3"
+  },
+  "part1": [
+    {
+      "id": "toeic-lr-c1-t9-p1-1",
+      "qNum": 1,
+      "imageUrl": "/exams/toeic-lr-c1-t9/part1/q1.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 1. Look at the photograph marked number 1 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "D",
+      "explanation": "Đáp án đúng: D",
+      "transcript": "(A) They're walking along a path. (B) They're cutting the grass. (C) They're swimming in a lake. (D) They're fishing from a dock."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p1-2",
+      "qNum": 2,
+      "imageUrl": "/exams/toeic-lr-c1-t9/part1/q2.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 2. Look at the photograph marked number 2 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "C",
+      "explanation": "Đáp án đúng: C",
+      "transcript": "(A) Some monitors have been mounted on a wall. (B) Some binders have been left open. (C) Some boxes have been loaded onto a cart. (D) Some chairs have been lined up against a wall."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p1-3",
+      "qNum": 3,
+      "imageUrl": "/exams/toeic-lr-c1-t9/part1/q3.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 3. Look at the photograph marked number 3 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "B",
+      "explanation": "Đáp án đúng: B",
+      "transcript": "(A) Some cars are lined up along a curb. (B) Some bicycles are parked in a rack. (C) Some bicycles are leaning against a wall. (D) Some crates are stacked near a doorway."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p1-4",
+      "qNum": 4,
+      "imageUrl": "/exams/toeic-lr-c1-t9/part1/q4.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 4. Look at the photograph marked number 4 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "A",
+      "explanation": "Đáp án đúng: A",
+      "transcript": "(A) A customer is carrying a tray of drinks. (B) A customer is reaching for a pastry. (C) A server is leaning over a counter. (D) A server is placing money in a register."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p1-5",
+      "qNum": 5,
+      "imageUrl": "/exams/toeic-lr-c1-t9/part1/q5.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 5. Look at the photograph marked number 5 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "A",
+      "explanation": "Đáp án đúng: A",
+      "transcript": "(A) Some chairs have been stacked against a wall. (B) Some boxes are being sorted. (C) A ladder has been laid on the floor. (D) A table is being folded."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p1-6",
+      "qNum": 6,
+      "imageUrl": "/exams/toeic-lr-c1-t9/part1/q6.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 6. Look at the photograph marked number 6 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "C",
+      "explanation": "Đáp án đúng: C",
+      "transcript": "(A) They're climbing a staircase. (B) They're sitting on a bench. (C) They're crossing a square. (D) They're painting a railing."
+    }
+  ],
+  "part2": [
+    {
+      "id": "toeic-lr-c1-t9-p2-7",
+      "qNum": 7,
+      "questionText": "Question #7",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "Who's covering the front desk during the lunch break today? (A) No, nothing's broken right now. (B) Trevor said he'd take care of it. (C) Over by the pharmacy counter."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-8",
+      "qNum": 8,
+      "questionText": "Question #8",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "We ought to start setting up the banquet tables now. (A) The delivery hasn't arrived yet. (B) It's a lovely room for events. (C) Those tables seat eight people each."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-9",
+      "qNum": 9,
+      "questionText": "Question #9",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "Which platform does the Bayford train leave from? (A) The next one's in about ten minutes. (B) Our training sessions are held upstairs. (C) It goes out from number five."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-10",
+      "qNum": 10,
+      "questionText": "Question #10",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "I think you should hold off on that article. (A) Twice a month, usually. (B) It's already gone to print. (C) Did she hold the door?"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-11",
+      "qNum": 11,
+      "questionText": "Question #11",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "Do you want your finished photos delivered as digital files, or would you prefer to have them printed? (A) Yes, they turned out really well. (B) Sometime early next week, I hope. (C) The paper ones would be perfect."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-12",
+      "qNum": 12,
+      "questionText": "Question #12",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "Where's the staff awards ceremony being held this year? (A) No, she hasn't won an award yet. (B) Sometime in the second week of March. (C) In the main banquet hall downstairs."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-13",
+      "qNum": 13,
+      "questionText": "Question #13",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "How did you manage to clear the whole shipping backlog? (A) By staying a couple hours late each day. (B) They're already loaded onto the delivery trucks. (C) My back's been a bit sore lately."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-14",
+      "qNum": 14,
+      "questionText": "Question #14",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "When do you need your boots resoled by? (A) Sure, they've all been sold out. (B) By Friday, if you can manage it. (C) The dark brown leather pair."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-15",
+      "qNum": 15,
+      "questionText": "Question #15",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "Where can I watch the penguins being fed? (A) They're fed a mix of small fish. (B) Down by the rocky pool near the entrance. (C) At half past eleven every morning."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-16",
+      "qNum": 16,
+      "questionText": "Question #16",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "I'd like to reserve a couple of lanes for tomorrow evening. (A) That reservoir looks quite low today. (B) The middle lane was blocked earlier. (C) How many players will there be?"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-17",
+      "qNum": 17,
+      "questionText": "Question #17",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "Which washer should we service first? (A) Yes, it's been giving us trouble. (B) The one over by the loading dock. (C) A wash cycle costs three dollars."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-18",
+      "qNum": 18,
+      "questionText": "Question #18",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "I really need to find a dependable house painter. (A) Mine did a great job. (B) A soft gray, I think. (C) No, he's a decorator."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-19",
+      "qNum": 19,
+      "questionText": "Question #19",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "You've already got this week's training schedule, don't you? (A) No, I haven't trained anyone yet. (B) Yes, it's up on the board over there. (C) Thanks, that's really thoughtful of you."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-20",
+      "qNum": 20,
+      "questionText": "Question #20",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "What comes with the premium spa package? (A) It's packed almost every afternoon. (B) Over by the changing rooms. (C) You'll get a facial and use of the pool."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-21",
+      "qNum": 21,
+      "questionText": "Question #21",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "How do you usually turn in your monthly report? (A) Please report to the front desk. (B) I upload it to the shared drive. (C) By the last day of the month."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-22",
+      "qNum": 22,
+      "questionText": "Question #22",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "How do I go about reserving one of the private meeting rooms? (A) There's a meeting at noon. (B) The one near the window. (C) Just log in and pick a time."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-23",
+      "qNum": 23,
+      "questionText": "Question #23",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "Is next week's first-aid class going to be run in person, or online? (A) No, I haven't signed up for it yet. (B) Right after the lunch break, I think. (C) In person, at least this time."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-24",
+      "qNum": 24,
+      "questionText": "Question #24",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "Which printer can I use for these wedding invitations? (A) The one that takes thick paper. (B) Yes, they're all invited. (C) About two hundred copies."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-25",
+      "qNum": 25,
+      "questionText": "Question #25",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "I'm surprised the new exercise machines still haven't arrived. (A) Didn't you hear they were delayed? (B) You're welcome to use the treadmill. (C) The tag on the crate."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-26",
+      "qNum": 26,
+      "questionText": "Question #26",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B",
+      "transcript": "Who still hasn't signed the equipment logbook? (A) The mower's working fine now, thanks. (B) I still have to sign mine. (C) Just a couple of extra rakes."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-27",
+      "qNum": 27,
+      "questionText": "Question #27",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "Should we give the new front display to the travel guides or the cookbooks? (A) The cookbooks always sell better up front. (B) Have a great trip, and send us a postcard. (C) They're on the second shelf near the entrance."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-28",
+      "qNum": 28,
+      "questionText": "Question #28",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "Would you mind sweeping up around the styling chairs? (A) Those scissors are in the top drawer. (B) The new mirrors look great. (C) Sorry, I'm with a client right now."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-29",
+      "qNum": 29,
+      "questionText": "Question #29",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "Who's going to lead the new guided brewery tours? (A) That hasn't been settled yet. (B) Sure, put my name down for one. (C) They pour pretty generous samples."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-30",
+      "qNum": 30,
+      "questionText": "Question #30",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A",
+      "transcript": "Why is my prescription taking so long to fill today? (A) Because our supplier's delivery was late today. (B) Not until later this afternoon. (C) You can set up automatic refills anytime."
+    },
+    {
+      "id": "toeic-lr-c1-t9-p2-31",
+      "qNum": 31,
+      "questionText": "Question #31",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C",
+      "transcript": "Where do you think we should hang this new painting? (A) Sometime next week. (B) I really like the frame on it. (C) Above the reception desk."
+    }
+  ],
+  "part3": [
+    {
+      "id": "toeic-lr-c1-t9-conv-1",
+      "convNum": 1,
+      "startQ": 32,
+      "endQ": 34,
+      "scenario": "Đoạn 1 (Câu 32 - 34)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q32",
+          "qNum": 32,
+          "question": "32. Where most likely does the man work?",
+          "options": [
+            "(A) At a print shop",
+            "(B) At a supply room",
+            "(C) At a café",
+            "(D) At a repair center"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q33",
+          "qNum": 33,
+          "question": "33. Why does the woman come to speak with the man?",
+          "options": [
+            "(A) To place an order",
+            "(B) To ask about a menu item",
+            "(C) To request a refund",
+            "(D) To report a broken machine"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q34",
+          "qNum": 34,
+          "question": "34. What does the man say he will do?",
+          "options": [
+            "(A) Repair the machine himself",
+            "(B) Speak to a manager",
+            "(C) Offer a free drink",
+            "(D) Post a warning sign"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-2",
+      "convNum": 2,
+      "startQ": 35,
+      "endQ": 37,
+      "scenario": "Đoạn 2 (Câu 35 - 37)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q35",
+          "qNum": 35,
+          "question": "35. What does the man want to do?",
+          "options": [
+            "(A) Join a hockey team",
+            "(B) Sign up for skating lessons",
+            "(C) Attend a public skating session",
+            "(D) Reserve the rink for a party"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q36",
+          "qNum": 36,
+          "question": "36. What information does the woman ask the man for?",
+          "options": [
+            "(A) His membership number",
+            "(B) His phone number",
+            "(C) His shoe size",
+            "(D) His date of birth"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q37",
+          "qNum": 37,
+          "question": "37. What will the man most likely do next?",
+          "options": [
+            "(A) Pay a rental deposit",
+            "(B) Try on a pair of skates",
+            "(C) Watch a skating demonstration",
+            "(D) Sign a rental waiver"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-3",
+      "convNum": 3,
+      "startQ": 38,
+      "endQ": 40,
+      "scenario": "Đoạn 3 (Câu 38 - 40)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q38",
+          "qNum": 38,
+          "question": "38. What does the woman want the shop to build?",
+          "options": [
+            "(A) A filing cabinet",
+            "(B) A set of chairs",
+            "(C) A reception desk",
+            "(D) A bookshelf"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q39",
+          "qNum": 39,
+          "question": "39. Where will the piece be placed?",
+          "options": [
+            "(A) In a waiting area",
+            "(B) In an examination room",
+            "(C) In a staff break room",
+            "(D) In a storage room"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q40",
+          "qNum": 40,
+          "question": "40. What does the man suggest the woman do next?",
+          "options": [
+            "(A) Approve a design",
+            "(B) Choose a wood finish",
+            "(C) Check some measurements",
+            "(D) Leave a deposit"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-4",
+      "convNum": 4,
+      "startQ": 41,
+      "endQ": 43,
+      "scenario": "Đoạn 4 (Câu 41 - 43)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q41",
+          "qNum": 41,
+          "question": "41. Why is the man calling?",
+          "options": [
+            "(A) To cancel his water service",
+            "(B) To update his delivery address",
+            "(C) To place his first order",
+            "(D) To report an order that never arrived"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q42",
+          "qNum": 42,
+          "question": "42. What does the woman ask the man to provide?",
+          "options": [
+            "(A) His mailing address",
+            "(B) His account number",
+            "(C) His card number",
+            "(D) His order receipt"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q43",
+          "qNum": 43,
+          "question": "43. What does the woman say she will do?",
+          "options": [
+            "(A) Issue a refund",
+            "(B) Contact the delivery driver",
+            "(C) Have him reschedule online",
+            "(D) Schedule a new delivery"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-5",
+      "convNum": 5,
+      "startQ": 44,
+      "endQ": 46,
+      "scenario": "Đoạn 5 (Câu 44 - 46)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q44",
+          "qNum": 44,
+          "question": "44. What type of product is the customer shopping for?",
+          "options": [
+            "(A) A garment bag",
+            "(B) A laptop bag",
+            "(C) A travel backpack",
+            "(D) A rolling suitcase"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q45",
+          "qNum": 45,
+          "question": "45. What does the woman say she is currently doing?",
+          "options": [
+            "(A) Checking the store's inventory",
+            "(B) Ringing up a customer's purchase",
+            "(C) Setting out recently arrived merchandise",
+            "(D) Restocking an empty shelf"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q46",
+          "qNum": 46,
+          "question": "46. What is the man concerned about?",
+          "options": [
+            "(A) The durability of the wheels",
+            "(B) Compliance with airline size and weight limits",
+            "(C) The price of the case",
+            "(D) The color options available"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-6",
+      "convNum": 6,
+      "startQ": 47,
+      "endQ": 49,
+      "scenario": "Đoạn 6 (Câu 47 - 49)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q47",
+          "qNum": 47,
+          "question": "47. Where most likely does this conversation take place?",
+          "options": [
+            "(A) At a public library",
+            "(B) At a bookbinding shop",
+            "(C) At a stationery store",
+            "(D) At a used bookstore"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q48",
+          "qNum": 48,
+          "question": "48. Why most likely is the man at the business?",
+          "options": [
+            "(A) To buy a rare book",
+            "(B) To return a damaged book",
+            "(C) To have documents photocopied",
+            "(D) To have a manuscript bound"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q49",
+          "qNum": 49,
+          "question": "49. According to the woman, what must the man do before work begins?",
+          "options": [
+            "(A) Pay a deposit",
+            "(B) Sign a contract",
+            "(C) Approve a cover proof",
+            "(D) Provide a digital file"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-7",
+      "convNum": 7,
+      "startQ": 50,
+      "endQ": 52,
+      "scenario": "Đoạn 7 (Câu 50 - 52)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q50",
+          "qNum": 50,
+          "question": "50. Where most likely are the speakers?",
+          "options": [
+            "(A) At a restaurant",
+            "(B) At a brewery",
+            "(C) At a hotel",
+            "(D) At a farm"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q51",
+          "qNum": 51,
+          "question": "51. How did the woman learn about the tour?",
+          "options": [
+            "(A) A friend recommended it.",
+            "(B) She read about it online.",
+            "(C) She saw a sign nearby.",
+            "(D) She visited last year."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q52",
+          "qNum": 52,
+          "question": "52. What does the woman imply when she says, \"I'm also buying gifts for my whole team\"?",
+          "options": [
+            "(A) She works at a nearby office.",
+            "(B) She wants a group discount.",
+            "(C) She is planning a party.",
+            "(D) She needs to buy several items."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-8",
+      "convNum": 8,
+      "startQ": 53,
+      "endQ": 55,
+      "scenario": "Đoạn 8 (Câu 53 - 55)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q53",
+          "qNum": 53,
+          "question": "53. What is the woman planning to do soon?",
+          "options": [
+            "(A) See a doctor",
+            "(B) Take a trip",
+            "(C) Move to a new home",
+            "(D) Start a new job"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q54",
+          "qNum": 54,
+          "question": "54. What problem does the man mention?",
+          "options": [
+            "(A) She cannot collect one of her items today.",
+            "(B) She was given an incorrect item.",
+            "(C) She missed the delivery deadline.",
+            "(D) She was charged too much for her order."
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q55",
+          "qNum": 55,
+          "question": "55. What does the man ask the woman to do?",
+          "options": [
+            "(A) Return later this week",
+            "(B) Call another location",
+            "(C) Provide her mailing address",
+            "(D) Wait for a new shipment"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-9",
+      "convNum": 9,
+      "startQ": 56,
+      "endQ": 58,
+      "scenario": "Đoạn 9 (Câu 56 - 58)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q56",
+          "qNum": 56,
+          "question": "56. Where most likely are the speakers?",
+          "options": [
+            "(A) At an art gallery",
+            "(B) At a furniture showroom",
+            "(C) At a print shop",
+            "(D) At a photography studio"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q57",
+          "qNum": 57,
+          "question": "57. What are the speakers mainly discussing?",
+          "options": [
+            "(A) Pricing some artwork",
+            "(B) Setting up an exhibit",
+            "(C) Rescheduling a delivery",
+            "(D) Revising a work schedule"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q58",
+          "qNum": 58,
+          "question": "58. What does the woman say the men should do?",
+          "options": [
+            "(A) Rearrange the artwork",
+            "(B) Adjust the lighting",
+            "(C) Print some labels",
+            "(D) Contact an artist"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-10",
+      "convNum": 10,
+      "startQ": 59,
+      "endQ": 61,
+      "scenario": "Đoạn 10 (Câu 59 - 61)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q59",
+          "qNum": 59,
+          "question": "59. What is the man trying to do?",
+          "options": [
+            "(A) Move to an earlier flight",
+            "(B) Cancel his evening reservation",
+            "(C) Upgrade to a corporate fare",
+            "(D) Rebook for a later date"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q60",
+          "qNum": 60,
+          "question": "60. What does the man imply when he says, \"getting in tonight would be far too late\"?",
+          "options": [
+            "(A) He is concerned about the extra fee.",
+            "(B) He wants to postpone his presentation.",
+            "(C) He needs to arrive earlier in the day.",
+            "(D) He plans to meet a client at the airport."
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q61",
+          "qNum": 61,
+          "question": "61. What will the woman most likely do next?",
+          "options": [
+            "(A) Print a boarding pass",
+            "(B) Waive the service charge",
+            "(C) Update the man's reservation",
+            "(D) Contact the travel office"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-11",
+      "convNum": 11,
+      "startQ": 62,
+      "endQ": 64,
+      "scenario": "Đoạn 11 (Câu 62 - 64)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "/exams/toeic-lr-c1-t9/part3/q62-64.jpg",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q62",
+          "qNum": 62,
+          "question": "62. Look at the graphic. Which detail on the ticket is now out of date?",
+          "options": [
+            "(A) October 5",
+            "(B) 12",
+            "(C) 8",
+            "(D) 7:30 P.M."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q63",
+          "qNum": 63,
+          "question": "63. Why did the schedule change?",
+          "options": [
+            "(A) A performer was delayed in traffic.",
+            "(B) The concert was oversold.",
+            "(C) The sound system needed repair.",
+            "(D) A new act was added to the program."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q64",
+          "qNum": 64,
+          "question": "64. What does the woman give the man besides his ticket?",
+          "options": [
+            "(A) A program booklet",
+            "(B) An order confirmation",
+            "(C) A café voucher",
+            "(D) A parking pass"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-12",
+      "convNum": 12,
+      "startQ": 65,
+      "endQ": 67,
+      "scenario": "Đoạn 12 (Câu 65 - 67)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "/exams/toeic-lr-c1-t9/part3/q65-67.jpg",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q65",
+          "qNum": 65,
+          "question": "65. Why is the man visiting the convention center?",
+          "options": [
+            "(A) To exhibit at a trade show",
+            "(B) To browse the antiques fair",
+            "(C) To eat at the food court",
+            "(D) To attend a job-recruitment event"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q66",
+          "qNum": 66,
+          "question": "66. Look at the graphic. Which hall does the woman direct the man to?",
+          "options": [
+            "(A) Hall 1",
+            "(B) Hall 2",
+            "(C) Hall 3",
+            "(D) Hall 4"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q67",
+          "qNum": 67,
+          "question": "67. What does the woman caution the man about?",
+          "options": [
+            "(A) The elevator cannot be used",
+            "(B) The event may end soon",
+            "(C) The signs are hard to read",
+            "(D) The entrance is crowded"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-conv-13",
+      "convNum": 13,
+      "startQ": 68,
+      "endQ": 70,
+      "scenario": "Đoạn 13 (Câu 68 - 70)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "/exams/toeic-lr-c1-t9/part3/q68-70.jpg",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-conv-q68",
+          "qNum": 68,
+          "question": "68. Why does the man want to become a member?",
+          "options": [
+            "(A) He received a gift card.",
+            "(B) He visits frequently.",
+            "(C) He is planning a special event.",
+            "(D) He wants a group discount."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q69",
+          "qNum": 69,
+          "question": "69. According to the woman, what does every membership include?",
+          "options": [
+            "(A) Free guest passes",
+            "(B) Discounted parking",
+            "(C) A monthly newsletter",
+            "(D) Priority event tickets"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-conv-q70",
+          "qNum": 70,
+          "question": "70. Look at the graphic. Which membership will the man most likely choose?",
+          "options": [
+            "(A) Individual",
+            "(B) Dual",
+            "(C) Patron",
+            "(D) Family"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    }
+  ],
+  "part4": [
+    {
+      "id": "toeic-lr-c1-t9-talk-1",
+      "convNum": 1,
+      "startQ": 71,
+      "endQ": 73,
+      "scenario": "Đoạn 1 (Câu 71 - 73)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q71",
+          "qNum": 71,
+          "question": "71. What is the speaker mainly announcing?",
+          "options": [
+            "(A) A change to the terminal's schedule",
+            "(B) The launch of an additional route",
+            "(C) A refund policy for unused tickets",
+            "(D) A new mobile ticketing service"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q72",
+          "qNum": 72,
+          "question": "72. According to the speaker, what is one advantage of the service?",
+          "options": [
+            "(A) Shorter waiting times",
+            "(B) Lower ticket fares",
+            "(C) Additional seating options",
+            "(D) More departure routes"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q73",
+          "qNum": 73,
+          "question": "73. What are interested listeners instructed to do?",
+          "options": [
+            "(A) Download an application",
+            "(B) Visit the ticket counter",
+            "(C) Call a customer hotline",
+            "(D) Complete a paper form"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-2",
+      "convNum": 2,
+      "startQ": 74,
+      "endQ": 76,
+      "scenario": "Đoạn 2 (Câu 74 - 76)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q74",
+          "qNum": 74,
+          "question": "74. Who most likely is the announcement for?",
+          "options": [
+            "(A) Delivery drivers",
+            "(B) Store cashiers",
+            "(C) Stockroom workers",
+            "(D) Retail salespeople"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q75",
+          "qNum": 75,
+          "question": "75. What is one characteristic of the running shoes?",
+          "options": [
+            "(A) They come in a variety of colors.",
+            "(B) They are designed for running on trails.",
+            "(C) They are heavier than other models.",
+            "(D) They are sold at a discount."
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q76",
+          "qNum": 76,
+          "question": "76. What does the speaker ask Diego to do?",
+          "options": [
+            "(A) Contact some customers",
+            "(B) Unload a shipment",
+            "(C) Arrange a product display",
+            "(D) Open the store doors"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-3",
+      "convNum": 3,
+      "startQ": 77,
+      "endQ": 79,
+      "scenario": "Đoạn 3 (Câu 77 - 79)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q77",
+          "qNum": 77,
+          "question": "77. Where does the speaker most likely work?",
+          "options": [
+            "(A) At an amusement park",
+            "(B) At a shipping warehouse",
+            "(C) At a movie theater",
+            "(D) At a sports stadium"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q78",
+          "qNum": 78,
+          "question": "78. What are employees required to do?",
+          "options": [
+            "(A) Wear protective clothing",
+            "(B) Carry a communication device",
+            "(C) Report to the front gate",
+            "(D) Sign in before each shift"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q79",
+          "qNum": 79,
+          "question": "79. What does the speaker say has happened this week?",
+          "options": [
+            "(A) Several rides were closed",
+            "(B) More staff were hired",
+            "(C) Attendance was higher than anticipated",
+            "(D) Ticket prices were raised"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-4",
+      "convNum": 4,
+      "startQ": 80,
+      "endQ": 82,
+      "scenario": "Đoạn 4 (Câu 80 - 82)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q80",
+          "qNum": 80,
+          "question": "80. Why is the speaker calling?",
+          "options": [
+            "(A) To schedule a delivery time",
+            "(B) To confirm an order is ready",
+            "(C) To request a customer payment",
+            "(D) To apologize for a delay"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q81",
+          "qNum": 81,
+          "question": "81. What does the speaker imply when she says, \"they seat twelve guests each, the same as the ones you ordered\"?",
+          "options": [
+            "(A) Fewer tables will be needed",
+            "(B) The substitute tables are suitable",
+            "(C) The guest count should be reduced",
+            "(D) The tables must be rearranged"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q82",
+          "qNum": 82,
+          "question": "82. What does the speaker ask the customer to do upon arrival?",
+          "options": [
+            "(A) Pay the remaining balance",
+            "(B) Sign a rental agreement",
+            "(C) Verify that the order is complete",
+            "(D) Show a form of identification"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-5",
+      "convNum": 5,
+      "startQ": 83,
+      "endQ": 85,
+      "scenario": "Đoạn 5 (Câu 83 - 85)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q83",
+          "qNum": 83,
+          "question": "83. What is the broadcast mainly about?",
+          "options": [
+            "(A) A park renovation project",
+            "(B) A gardening class",
+            "(C) A community volunteer event",
+            "(D) A local fundraising campaign"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q84",
+          "qNum": 84,
+          "question": "84. What are participants asked to bring themselves?",
+          "options": [
+            "(A) Some gardening tools",
+            "(B) A few young trees",
+            "(C) Some refreshments",
+            "(D) A pair of gloves"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q85",
+          "qNum": 85,
+          "question": "85. How can interested listeners take part in the event?",
+          "options": [
+            "(A) By calling the park office",
+            "(B) By registering on a website",
+            "(C) By arriving early on Saturday",
+            "(D) By signing up at the park"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-6",
+      "convNum": 6,
+      "startQ": 86,
+      "endQ": 88,
+      "scenario": "Đoạn 6 (Câu 86 - 88)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q86",
+          "qNum": 86,
+          "question": "86. What is the speaker currently working on?",
+          "options": [
+            "(A) Creating brochures to hand out to customers",
+            "(B) Designing the new rewards program",
+            "(C) Preparing materials for employees to use",
+            "(D) Arranging a meeting with the regional office"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q87",
+          "qNum": 87,
+          "question": "87. According to the speaker, what did the staff agree to at a previous meeting?",
+          "options": [
+            "(A) Lower certain account fees for members",
+            "(B) Extend the program to all account holders",
+            "(C) Print promotional materials for the launch",
+            "(D) Set eligibility rules for new members"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q88",
+          "qNum": 88,
+          "question": "88. What does the speaker plan to do before the program launches?",
+          "options": [
+            "(A) Send reminders to program members",
+            "(B) Finalize the design of the guides",
+            "(C) Meet with staff to answer their questions",
+            "(D) Contact the regional office for approval"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-7",
+      "convNum": 7,
+      "startQ": 89,
+      "endQ": 91,
+      "scenario": "Đoạn 7 (Câu 89 - 91)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q89",
+          "qNum": 89,
+          "question": "89. What is the main purpose of the talk?",
+          "options": [
+            "(A) To welcome newly hired employees",
+            "(B) To respond to a customer complaint",
+            "(C) To describe a change to a work process",
+            "(D) To promote a store-wide sale"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q90",
+          "qNum": 90,
+          "question": "90. Why is the store changing the refund process?",
+          "options": [
+            "(A) To reduce the amount of paperwork",
+            "(B) To follow a new company policy",
+            "(C) To train recently hired staff",
+            "(D) To speed up service at the desk"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q91",
+          "qNum": 91,
+          "question": "91. What does the speaker ask the listeners to do?",
+          "options": [
+            "(A) Take a copy of the instructions",
+            "(B) Enter product codes manually",
+            "(C) Touch the item before scanning",
+            "(D) Wait for the store to open"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-8",
+      "convNum": 8,
+      "startQ": 92,
+      "endQ": 94,
+      "scenario": "Đoạn 8 (Câu 92 - 94)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q92",
+          "qNum": 92,
+          "question": "92. Where does the speaker work?",
+          "options": [
+            "(A) At a florist shop",
+            "(B) At a warehouse",
+            "(C) At a plant nursery",
+            "(D) At a farm supply store"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q93",
+          "qNum": 93,
+          "question": "93. What does the speaker imply when she says, \"we'd arranged for the extra weekend crew to come in on Thursday to handle it\"?",
+          "options": [
+            "(A) The seedlings were sent to the wrong address.",
+            "(B) The nursery is short of staff at the moment.",
+            "(C) The storage room has not been set up yet.",
+            "(D) The shipment is larger than they ordered."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q94",
+          "qNum": 94,
+          "question": "94. What is the speaker concerned about?",
+          "options": [
+            "(A) Missing a delivery deadline",
+            "(B) Losing part of a shipment",
+            "(C) Running out of storage space",
+            "(D) Paying for extra labor"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-9",
+      "convNum": 9,
+      "startQ": 95,
+      "endQ": 97,
+      "scenario": "Đoạn 9 (Câu 95 - 97)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "/exams/toeic-lr-c1-t9/part4/q95-97.jpg",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q95",
+          "qNum": 95,
+          "question": "95. What does the customer need the printing for?",
+          "options": [
+            "(A) A product launch",
+            "(B) A trade show",
+            "(C) A training seminar",
+            "(D) An upcoming conference"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q96",
+          "qNum": 96,
+          "question": "96. Look at the graphic. How much will the customer most likely pay?",
+          "options": [
+            "(A) $180",
+            "(B) $340",
+            "(C) $520",
+            "(D) $760"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q97",
+          "qNum": 97,
+          "question": "97. According to the speaker, what can the customer do tomorrow?",
+          "options": [
+            "(A) Wait for proofs to arrive",
+            "(B) Pay for the order",
+            "(C) Send additional files",
+            "(D) View a sample at the shop"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-talk-10",
+      "convNum": 10,
+      "startQ": 98,
+      "endQ": 100,
+      "scenario": "Đoạn 10 (Câu 98 - 100)",
+      "audioScript": "",
+      "audioUrl": "",
+      "imageUrl": "/exams/toeic-lr-c1-t9/part4/q98-100.jpg",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-talk-q98",
+          "qNum": 98,
+          "question": "98. What does the speaker say the company will do next month?",
+          "options": [
+            "(A) It will open its first retail store.",
+            "(B) It will redesign its company logo.",
+            "(C) It will merge with a competitor.",
+            "(D) It will start selling a new range of teas."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q99",
+          "qNum": 99,
+          "question": "99. Look at the graphic. Which design did the company choose for the new label?",
+          "options": [
+            "(A) Design 1",
+            "(B) Design 2",
+            "(C) Design 3",
+            "(D) Design 4"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-talk-q100",
+          "qNum": 100,
+          "question": "100. What does the speaker ask the team to do this week?",
+          "options": [
+            "(A) Update the online store listings.",
+            "(B) Take new product photos.",
+            "(C) Write the product descriptions.",
+            "(D) Approve the final label design."
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    }
+  ],
+  "part5": [
+    {
+      "id": "toeic-lr-c1-t9-p5-101",
+      "qNum": 101,
+      "question": "101. Shoppers at Greenvale Wholesale Club are _____ for the member discount only if they present a valid membership card at checkout.",
+      "options": [
+        "(A) responsible",
+        "(B) suitable",
+        "(C) entitled",
+        "(D) eligible"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-102",
+      "qNum": 102,
+      "question": "102. During peak season, the terminal regulations _____ all travelers to display a valid boarding pass before proceeding to the departure gates.",
+      "options": [
+        "(A) prevent",
+        "(B) confirm",
+        "(C) require",
+        "(D) suggest"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-103",
+      "qNum": 103,
+      "question": "103. The redesigned shelf labels at Brightfield Market allow stockroom staff to _____ find any product during the busy evening rush.",
+      "options": [
+        "(A) easily",
+        "(B) easy",
+        "(C) easier",
+        "(D) easiest"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-104",
+      "qNum": 104,
+      "question": "104. Malik Turner spoke _____ during the session, and his summary of the new procedures was clear.",
+      "options": [
+        "(A) confident",
+        "(B) confidently",
+        "(C) confidence",
+        "(D) confidential"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-105",
+      "qNum": 105,
+      "question": "105. The updated membership terms apply _____ every driver who registered with Loopway before the policy change.",
+      "options": [
+        "(A) for",
+        "(B) to",
+        "(C) of",
+        "(D) by"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-106",
+      "qNum": 106,
+      "question": "106. Volunteers at Deerfield Trade Center post all official _____ on the digital board located near the main conference hall.",
+      "options": [
+        "(A) announce",
+        "(B) announces",
+        "(C) announced",
+        "(D) announcements"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-107",
+      "qNum": 107,
+      "question": "107. The east-side branch of Cobblewood Books was commended for its efficient _____ throughout the busy holiday season.",
+      "options": [
+        "(A) operations",
+        "(B) operate",
+        "(C) operational",
+        "(D) operationally"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-108",
+      "qNum": 108,
+      "question": "108. Visitors to Palmgrove Conservatory must comply _____ the posted photography guidelines when using cameras inside the greenhouse.",
+      "options": [
+        "(A) to",
+        "(B) by",
+        "(C) for",
+        "(D) with"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-109",
+      "qNum": 109,
+      "question": "109. The course completion certificate _____ to each enrolled student at the closing ceremony last Friday.",
+      "options": [
+        "(A) issues",
+        "(B) was issued",
+        "(C) issued",
+        "(D) is issuing"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-110",
+      "qNum": 110,
+      "question": "110. The automated ticket kiosk at Rowley Cinema neither accepts cash payments _____ issues refunds after a screening has begun.",
+      "options": [
+        "(A) and",
+        "(B) but",
+        "(C) nor",
+        "(D) besides"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-111",
+      "qNum": 111,
+      "question": "111. The owner of Fernvale Chocolates commended the seasonal assistants for _____ careful handling of the delicate gift orders.",
+      "options": [
+        "(A) their",
+        "(B) them",
+        "(C) themselves",
+        "(D) they"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-112",
+      "qNum": 112,
+      "question": "112. The management team at Ridgeway Waste Services is _____ to introduce a new curbside recycling schedule across every neighborhood this autumn.",
+      "options": [
+        "(A) capable",
+        "(B) aware",
+        "(C) eager",
+        "(D) possible"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-113",
+      "qNum": 113,
+      "question": "113. New tellers at Halbrook Savings Bank are encouraged to acquaint _____ with the branch security procedures well before the first working day.",
+      "options": [
+        "(A) them",
+        "(B) themselves",
+        "(C) their",
+        "(D) theirs"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-114",
+      "qNum": 114,
+      "question": "114. Under the updated enrollment rules at Brackenridge Community Learning Center, _____ for the evening accounting course must submit a signed registration form by Friday.",
+      "options": [
+        "(A) application",
+        "(B) apply",
+        "(C) applying",
+        "(D) applicants"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-115",
+      "qNum": 115,
+      "question": "115. The redesigned booking portal at Halewood Recreation Center is fully _____ to members whose accounts remain active this year.",
+      "options": [
+        "(A) similar",
+        "(B) accessible",
+        "(C) opposed",
+        "(D) related"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-116",
+      "qNum": 116,
+      "question": "116. At last week's retirement dinner, a commemorative plaque was presented to Harold Winters in _____ of his long and dedicated service.",
+      "options": [
+        "(A) recognize",
+        "(B) recognizes",
+        "(C) recognized",
+        "(D) recognition"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-117",
+      "qNum": 117,
+      "question": "117. The new customer service training program has been remarkably _____ in reducing complaints across all regional offices.",
+      "options": [
+        "(A) successfully",
+        "(B) success",
+        "(C) succeed",
+        "(D) successful"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-118",
+      "qNum": 118,
+      "question": "118. To attract weekend travelers, the marketing team at Verano Suites has introduced a highly _____ pricing plan for its riverside rooms.",
+      "options": [
+        "(A) competitive",
+        "(B) competitively",
+        "(C) competition",
+        "(D) compete"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-119",
+      "qNum": 119,
+      "question": "119. The shuttle buses operated by Oakhurst Shuttle Services are _____ inspected in accordance with the depot's monthly safety checklist.",
+      "options": [
+        "(A) routinely",
+        "(B) promptly",
+        "(C) formerly",
+        "(D) seldom"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-120",
+      "qNum": 120,
+      "question": "120. After examining every submitted sample, the review team at Delbrook Consulting was finally able to _____ a firm conclusion about the vendor's reliability.",
+      "options": [
+        "(A) arrive",
+        "(B) reach",
+        "(C) gather",
+        "(D) decide"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-121",
+      "qNum": 121,
+      "question": "121. _____ the outstanding balance is settled by Friday, the reserved desk at Marlstone Workspaces will be released to another applicant.",
+      "options": [
+        "(A) Rather",
+        "(B) Unless",
+        "(C) Although",
+        "(D) In addition"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "Đáp án đúng: B"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-122",
+      "qNum": 122,
+      "question": "122. Garments processed by Marchmont Dry Cleaners will be held at the front counter _____ the outstanding balance is paid in full.",
+      "options": [
+        "(A) during",
+        "(B) whereas",
+        "(C) until",
+        "(D) how"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-123",
+      "qNum": 123,
+      "question": "123. The reservation system at Wrenfield Car Rental will be offline tonight, _____ print any confirmations that you need before the shutdown begins.",
+      "options": [
+        "(A) because",
+        "(B) but",
+        "(C) so",
+        "(D) thus"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-124",
+      "qNum": 124,
+      "question": "124. The management team at Sablewood Logistics remains _____ to expand its weekend delivery routes as long as regional fuel costs stay unpredictable.",
+      "options": [
+        "(A) reluctant",
+        "(B) eager",
+        "(C) likely",
+        "(D) able"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-125",
+      "qNum": 125,
+      "question": "125. Each display panel at the Ellsworth Expo Center must be _____ attached to the frame before the exhibition opens to visitors.",
+      "options": [
+        "(A) firmly",
+        "(B) firm",
+        "(C) firming",
+        "(D) firmness"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "Đáp án đúng: A"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-126",
+      "qNum": 126,
+      "question": "126. The indoor pool at Millgate Sports Club will be closed _____ a burst water pipe near the changing rooms.",
+      "options": [
+        "(A) during",
+        "(B) because",
+        "(C) therefore",
+        "(D) because of"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-127",
+      "qNum": 127,
+      "question": "127. During Saturday's sale, the televisions at Halbeck Electronics sold so _____ that staff restocked the shelves twice before noon.",
+      "options": [
+        "(A) deep",
+        "(B) wide",
+        "(C) fast",
+        "(D) hard"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-128",
+      "qNum": 128,
+      "question": "128. The design team at Pinewood Studio presented a remarkably _____ concept for the client's new brand logo.",
+      "options": [
+        "(A) creativity",
+        "(B) creativeness",
+        "(C) creative",
+        "(D) creatives"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-129",
+      "qNum": 129,
+      "question": "129. At Halden Fitness Center, only _____ members may use the indoor pool during the supervised morning sessions.",
+      "options": [
+        "(A) confident",
+        "(B) reliable",
+        "(C) agreeable",
+        "(D) registered"
+      ],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": "Đáp án đúng: D"
+    },
+    {
+      "id": "toeic-lr-c1-t9-p5-130",
+      "qNum": 130,
+      "question": "130. The management at Beacon Auto Wash has kept its express service available _____ the sharp rise in water charges this quarter.",
+      "options": [
+        "(A) however",
+        "(B) in addition to",
+        "(C) despite",
+        "(D) therefore"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "Đáp án đúng: C"
+    }
+  ],
+  "part6": [
+    {
+      "id": "toeic-lr-c1-t9-p6-1",
+      "passageNum": 1,
+      "startQ": 131,
+      "endQ": 134,
+      "title": "Bài đọc 1 (Câu 131 - 134)",
+      "passageText": "Growing Software Company to Move Headquarters Downtown\nMeridian Software announced this week that it will --(131)-- a newly renovated building on Carlton Avenue beginning in March. The firm, currently based in an office park on the city's outskirts, chose the downtown location for its proximity to public transportation and the surrounding business community. --(132)--. The larger premises will support the company's continued --(133)-- and its plans to add staff over the coming year.\nThe relocation is expected to bring roughly eighty new jobs to the central district, many of them in engineering and customer support. \"We wanted to be closer to the talent and the partners we rely on every day,\" said Alan Pruitt, the company's chief operating officer. The move will give the company room to grow. --(134)--, it will strengthen the firm's ties to neighboring downtown businesses.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Growing Software Company to Move Headquarters Downtown</b></p><p>Meridian Software announced this week that it will --(131)-- a newly renovated building on Carlton Avenue beginning in March. The firm, currently based in an office park on the city's outskirts, chose the downtown location for its proximity to public transportation and the surrounding business community. --(132)--. The larger premises will support the company's continued --(133)-- and its plans to add staff over the coming year.</p><p>The relocation is expected to bring roughly eighty new jobs to the central district, many of them in engineering and customer support. \"We wanted to be closer to the talent and the partners we rely on every day,\" said Alan Pruitt, the company's chief operating officer. The move will give the company room to grow. --(134)--, it will strengthen the firm's ties to neighboring downtown businesses.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p6-q131",
+          "qNum": 131,
+          "question": "131.",
+          "options": [
+            "(A) vacate",
+            "(B) occupy",
+            "(C) inhabit",
+            "(D) renovate"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q132",
+          "qNum": 132,
+          "question": "132.",
+          "options": [
+            "(A) The company was launched fifteen years ago by a pair of local programmers",
+            "(B) The Carlton Avenue building offers nearly twice the floor space it now uses",
+            "(C) City workers recently repaved several roads throughout the downtown area",
+            "(D) The firm had seriously considered leaving the region altogether last year"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q133",
+          "qNum": 133,
+          "question": "133.",
+          "options": [
+            "(A) expansion",
+            "(B) to expand",
+            "(C) expanded",
+            "(D) expand"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q134",
+          "qNum": 134,
+          "question": "134.",
+          "options": [
+            "(A) On the other hand",
+            "(B) In addition",
+            "(C) Rather",
+            "(D) Until then"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p6-2",
+      "passageNum": 2,
+      "startQ": 135,
+      "endQ": 138,
+      "title": "Bài đọc 2 (Câu 135 - 138)",
+      "passageText": "From:\nOwen Castellano\nTo:\nMs. Fairholme\nDate:\nMarch 14\nSubject:\nYour custom framing order\nDear Ms. Fairholme,\nThank you for bringing your watercolor to Amberton Framing Studio last week. We were pleased to receive it in perfect condition.\nYour custom frame is --(135)-- underway, and the mounting board has already been cut to size. The molding you selected arrived from our supplier yesterday. Assembly should be finished within a few days.\nIf you would prefer a nonreflective glazing instead, we --(136)-- it at no additional charge. This option reduces glare and helps protect the artwork from fading.\nPlease let us know which afternoon next week suits you best for collection. --(137)--. Once we hear from you, we will set aside a fitting time.\nYou may also enroll in our order --(138)-- program. Doing so lets you receive a short message whenever your project reaches a new stage.\nWe look forward to seeing your finished piece soon.\nWarm regards,\nOwen Castellano\nAmberton Framing Studio",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>From:</b> Owen Castellano<br/><b>To:</b> Ms. Fairholme<br/><b>Date:</b> March 14<br/><b>Subject:</b> Your custom framing order</p><p>Dear Ms. Fairholme,</p><p>Thank you for bringing your watercolor to Amberton Framing Studio last week. We were pleased to receive it in perfect condition.</p><p>Your custom frame is --(135)-- underway, and the mounting board has already been cut to size. The molding you selected arrived from our supplier yesterday. Assembly should be finished within a few days.</p><p>If you would prefer a nonreflective glazing instead, we --(136)-- it at no additional charge. This option reduces glare and helps protect the artwork from fading.</p><p>Please let us know which afternoon next week suits you best for collection. --(137)--. Once we hear from you, we will set aside a fitting time.</p><p>You may also enroll in our order --(138)-- program. Doing so lets you receive a short message whenever your project reaches a new stage.</p><p>We look forward to seeing your finished piece soon.</p><p>Warm regards,<br/>Owen Castellano<br/>Amberton Framing Studio</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p6-q135",
+          "qNum": 135,
+          "question": "135.",
+          "options": [
+            "(A) nearly",
+            "(B) barely",
+            "(C) roughly",
+            "(D) well"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q136",
+          "qNum": 136,
+          "question": "136.",
+          "options": [
+            "(A) can substitute",
+            "(B) substitute",
+            "(C) would have substituted",
+            "(D) have been substituting"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q137",
+          "qNum": 137,
+          "question": "137.",
+          "options": [
+            "(A) This spring, framing prices have risen at studios across the region",
+            "(B) If you prefer, we can courier the finished piece to your home address",
+            "(C) We will need your approval before we order any additional molding pieces",
+            "(D) Our front counter stays open until six, so any weekday afternoon works"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q138",
+          "qNum": 138,
+          "question": "138.",
+          "options": [
+            "(A) billing",
+            "(B) shipping",
+            "(C) tracking",
+            "(D) storage"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p6-3",
+      "passageNum": 3,
+      "startQ": 139,
+      "endQ": 142,
+      "title": "Bài đọc 3 (Câu 139 - 142)",
+      "passageText": "From:\nColette Marsh\nTo:\nGrace Harmon\nDate:\nMarch 12\nSubject:\nAn opening in your requested class\nDear Ms. Harmon,\nWhen you joined our waitlist last month, you asked to be notified the moment a place became available in our popular weekend baking --(139)--. I am pleased to confirm that one of our registered participants has withdrawn, so a seat is now yours to claim.\nDuring a single three-hour session, you --(140)-- two classic desserts alongside our head instructor. Each participant is assigned a private station, and all professional-grade tools and equipment are provided.\nThe registration fee covers your ingredients as well as an illustrated recipe booklet to take home. --(141)--. There are no further charges once your place is confirmed.\nPlease reply to this message within three days to secure your seat. We will then finalize your booking, so do feel free to contact --(142)-- with any questions in the meantime.\nWarm regards,\nColette Marsh\nSaffron Lane Cooking Studio",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>From:</b> Colette Marsh<br/><b>To:</b> Grace Harmon<br/><b>Date:</b> March 12<br/><b>Subject:</b> An opening in your requested class</p><p>Dear Ms. Harmon,</p><p>When you joined our waitlist last month, you asked to be notified the moment a place became available in our popular weekend baking --(139)--. I am pleased to confirm that one of our registered participants has withdrawn, so a seat is now yours to claim.</p><p>During a single three-hour session, you --(140)-- two classic desserts alongside our head instructor. Each participant is assigned a private station, and all professional-grade tools and equipment are provided.</p><p>The registration fee covers your ingredients as well as an illustrated recipe booklet to take home. --(141)--. There are no further charges once your place is confirmed.</p><p>Please reply to this message within three days to secure your seat. We will then finalize your booking, so do feel free to contact --(142)-- with any questions in the meantime.</p><p>Warm regards,<br/>Colette Marsh<br/>Saffron Lane Cooking Studio</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p6-q139",
+          "qNum": 139,
+          "question": "139.",
+          "options": [
+            "(A) series",
+            "(B) demonstration",
+            "(C) festival",
+            "(D) workshop"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q140",
+          "qNum": 140,
+          "question": "140.",
+          "options": [
+            "(A) have prepared",
+            "(B) would have prepared",
+            "(C) are preparing",
+            "(D) will prepare"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q141",
+          "qNum": 141,
+          "question": "141.",
+          "options": [
+            "(A) The full amount is due only when you confirm your seat",
+            "(B) Extra printed handouts can be purchased at the desk for a fee",
+            "(C) Our head instructor trained at a respected culinary school",
+            "(D) Gift cards toward future classes may be bought anytime"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q142",
+          "qNum": 142,
+          "question": "142.",
+          "options": [
+            "(A) us",
+            "(B) them",
+            "(C) it",
+            "(D) me"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p6-4",
+      "passageNum": 4,
+      "startQ": 143,
+      "endQ": 146,
+      "title": "Bài đọc 4 (Câu 143 - 146)",
+      "passageText": "From:\nLorraine Beckett\nTo:\nSamuel Ortega\nDate:\nMarch 6\nSubject:\nYour workshop proposal\nDear Dr. Ortega,\nYour proposal for a hands-on workshop --(143)-- by our review committee on March 3. --(144)--. With your permission, a brief description of your session will be listed in the conference --(145)-- so that attendees can decide which talks to join. --(146)--, please review the attached presenter guidelines and confirm the equipment you will need. Each accepted speaker is given a ninety-minute slot, a staffed meeting room, and on-site technical support throughout the day. We would be grateful if you could reply by April 10 to confirm that you are able to present. We look forward to welcoming you to the Northgate Learning Conference.\nSincerely,\nLorraine Beckett, Program Coordinator",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>From:</b> Lorraine Beckett<br/><b>To:</b> Samuel Ortega<br/><b>Date:</b> March 6<br/><b>Subject:</b> Your workshop proposal</p><p>Dear Dr. Ortega,</p><p>Your proposal for a hands-on workshop --(143)-- by our review committee on March 3. --(144)--. With your permission, a brief description of your session will be listed in the conference --(145)-- so that attendees can decide which talks to join. --(146)--, please review the attached presenter guidelines and confirm the equipment you will need. Each accepted speaker is given a ninety-minute slot, a staffed meeting room, and on-site technical support throughout the day. We would be grateful if you could reply by April 10 to confirm that you are able to present. We look forward to welcoming you to the Northgate Learning Conference.</p><p>Sincerely,<br/>Lorraine Beckett, Program Coordinator</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p6-q143",
+          "qNum": 143,
+          "question": "143.",
+          "options": [
+            "(A) will be reviewed",
+            "(B) has been reviewed",
+            "(C) was reviewed",
+            "(D) reviewing"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q144",
+          "qNum": 144,
+          "question": "144.",
+          "options": [
+            "(A) Regrettably, we were unable to include it in this year's conference program",
+            "(B) Our review committee meets several times to plan each year's featured sessions",
+            "(C) I am delighted to say that it was chosen as one of this year's featured sessions",
+            "(D) Thank you for leading such a popular workshop at last year's conference"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q145",
+          "qNum": 145,
+          "question": "145.",
+          "options": [
+            "(A) directory",
+            "(B) program",
+            "(C) newsletter",
+            "(D) proceedings"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p6-q146",
+          "qNum": 146,
+          "question": "146.",
+          "options": [
+            "(A) So that",
+            "(B) First of all",
+            "(C) In the meantime",
+            "(D) As noted above"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    }
+  ],
+  "part7": [
+    {
+      "id": "toeic-lr-c1-t9-p7-1",
+      "passageNum": 1,
+      "startQ": 147,
+      "endQ": 148,
+      "title": "Bài đọc 1 (Câu 147 - 148)",
+      "passageText": "Maple Grove Cooking School: Fall Term Class Schedule\nOur new term of hands-on group classes begins the week of September 8. Choose from the sessions below and reserve your place early, as spaces are limited.\nClass\nFirst Session\nDay and Time\nLevel\nSpaces Left\nFee\nFresh Pasta Basics\nSeptember 9\nTuesday, 6:00 P.M.\nBeginner\n4\n$45\nWeeknight Stir-Fry\nSeptember 11\nThursday, 6:30 P.M.\nBeginner\n6\n$40\nArtisan Bread\nSeptember 13\nSaturday, 10:00 A.M.\nIntermediate\n3\n$55\nHoliday Desserts\nSeptember 20\nSaturday, 2:00 P.M.\nIntermediate\n5\n$50\nAll classes meet in our teaching kitchen at 12 Harrow Lane. To reserve a spot, register on our website or call the front desk. Enrollment must be completed by September 1.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Maple Grove Cooking School: Fall Term Class Schedule</b></p><p>Our new term of hands-on group classes begins the week of September 8. Choose from the sessions below and reserve your place early, as spaces are limited.</p><table><tr><th>Class</th><th>First Session</th><th>Day and Time</th><th>Level</th><th>Spaces Left</th><th>Fee</th></tr><tr><td>Fresh Pasta Basics</td><td>September 9</td><td>Tuesday, 6:00 P.M.</td><td>Beginner</td><td>4</td><td>$45</td></tr><tr><td>Weeknight Stir-Fry</td><td>September 11</td><td>Thursday, 6:30 P.M.</td><td>Beginner</td><td>6</td><td>$40</td></tr><tr><td>Artisan Bread</td><td>September 13</td><td>Saturday, 10:00 A.M.</td><td>Intermediate</td><td>3</td><td>$55</td></tr><tr><td>Holiday Desserts</td><td>September 20</td><td>Saturday, 2:00 P.M.</td><td>Intermediate</td><td>5</td><td>$50</td></tr></table><p>All classes meet in our teaching kitchen at 12 Harrow Lane. To reserve a spot, register on our website or call the front desk. Enrollment must be completed by September 1.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q147",
+          "qNum": 147,
+          "question": "147. What is indicated about Maple Grove Cooking School?",
+          "options": [
+            "(A) It holds classes every day of the week.",
+            "(B) It has recently opened a second location.",
+            "(C) It offers private one-on-one instruction.",
+            "(D) It teaches classes at more than one skill level."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q148",
+          "qNum": 148,
+          "question": "148. What is the latest date on which someone may sign up for a class?",
+          "options": [
+            "(A) September 1",
+            "(B) September 8",
+            "(C) September 9",
+            "(D) September 20"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-2",
+      "passageNum": 2,
+      "startQ": 149,
+      "endQ": 151,
+      "title": "Bài đọc 2 (Câu 149 - 151)",
+      "passageText": "Wexford Fine Jewelry\nFebruary 18\nDear Ms. Coleman,\nBecause you have previously purchased a piece from Wexford Fine Jewelry, we would like to invite you to our complimentary Cleaning and Inspection Clinic, held to help our customers keep the jewelry they own looking its very best.\nDuring your appointment, one of our jewelers will thoroughly clean and polish your item and carefully examine its clasps, prongs, and settings for any early signs of wear. There is no charge for this service. Please note that the clinic will take place only on Saturday, March 8 and Saturday, March 15, and only at our Elmwood Avenue location.\nTo reserve a time, please call our front desk at 555-0142 no later than March 5. Because we are able to offer only a limited number of appointments on each of those days, we recommend contacting us as soon as possible so that we can be sure to reserve a slot for you.\nWe look forward to welcoming you back and to caring for your treasured pieces.\nSincerely,\nPatricia Langley\nStore Manager, Wexford Fine Jewelry",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p>Wexford Fine Jewelry<br/>February 18</p><p>Dear Ms. Coleman,</p><p>Because you have previously purchased a piece from Wexford Fine Jewelry, we would like to invite you to our complimentary Cleaning and Inspection Clinic, held to help our customers keep the jewelry they own looking its very best.</p><p>During your appointment, one of our jewelers will thoroughly clean and polish your item and carefully examine its clasps, prongs, and settings for any early signs of wear. There is no charge for this service. Please note that the clinic will take place only on Saturday, March 8 and Saturday, March 15, and only at our Elmwood Avenue location.</p><p>To reserve a time, please call our front desk at 555-0142 no later than March 5. Because we are able to offer only a limited number of appointments on each of those days, we recommend contacting us as soon as possible so that we can be sure to reserve a slot for you.</p><p>We look forward to welcoming you back and to caring for your treasured pieces.</p><p>Sincerely,</p><p>Patricia Langley<br/>Store Manager, Wexford Fine Jewelry</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q149",
+          "qNum": 149,
+          "question": "149. For whom is the letter most likely intended?",
+          "options": [
+            "(A) People who have bought from the store before",
+            "(B) Employees who work at the store's front desk",
+            "(C) People who plan to shop for new jewelry soon",
+            "(D) Appraisers who evaluate valuable jewelry pieces"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q150",
+          "qNum": 150,
+          "question": "150. What is indicated about the Cleaning and Inspection Clinic?",
+          "options": [
+            "(A) It requires a small fee for each item cleaned",
+            "(B) It can be scheduled on any day in March",
+            "(C) It is offered at only one of the store's locations",
+            "(D) It includes free repairs to items that show wear"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q151",
+          "qNum": 151,
+          "question": "151. Why should Ms. Coleman respond by March 5?",
+          "options": [
+            "(A) To receive a discount on a future purchase",
+            "(B) To claim a complimentary gift from the store",
+            "(C) To avoid an upcoming increase in service prices",
+            "(D) To secure one of a limited number of appointments"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-3",
+      "passageNum": 3,
+      "startQ": 152,
+      "endQ": 153,
+      "title": "Bài đọc 3 (Câu 152 - 153)",
+      "passageText": "Morning Shift Coordination\nAngela Reeves [9:05 A.M.]: Good morning, everyone. Our 10:00 A.M. reservation just called—a friend is dropping them off shortly. Is the compact ready at the counter yet?\nDerek Molina [9:07 A.M.]: Not yet. It's still being cleaned in bay 3, so the keys aren't out front.\nAngela Reeves [9:08 A.M.]: How long until it's finished?\nDerek Molina [9:09 A.M.]: At least twenty more minutes, I'm afraid. It only came back late last night.\nYusuf Kaya [9:10 A.M.]: There's an identical model, same class, sitting free in space 5. I already gave it a quick look-over and everything checks out.\nDerek Molina [9:11 A.M.]: So should I keep washing this one, or should I call the customer about the delay?\nAngela Reeves [9:12 A.M.]: Yusuf, bring that one up front now.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Morning Shift Coordination</b></p><p>Angela Reeves [9:05 A.M.]: Good morning, everyone. Our 10:00 A.M. reservation just called—a friend is dropping them off shortly. Is the compact ready at the counter yet?</p><p>Derek Molina [9:07 A.M.]: Not yet. It's still being cleaned in bay 3, so the keys aren't out front.</p><p>Angela Reeves [9:08 A.M.]: How long until it's finished?</p><p>Derek Molina [9:09 A.M.]: At least twenty more minutes, I'm afraid. It only came back late last night.</p><p>Yusuf Kaya [9:10 A.M.]: There's an identical model, same class, sitting free in space 5. I already gave it a quick look-over and everything checks out.</p><p>Derek Molina [9:11 A.M.]: So should I keep washing this one, or should I call the customer about the delay?</p><p>Angela Reeves [9:12 A.M.]: Yusuf, bring that one up front now.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q152",
+          "qNum": 152,
+          "question": "152. In what type of business do the writers most likely work?",
+          "options": [
+            "(A) Vehicle rental",
+            "(B) Automobile repair",
+            "(C) Parking garage operation",
+            "(D) Taxi service"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q153",
+          "qNum": 153,
+          "question": "153. At 9:12 A.M., what does Ms. Reeves most likely mean when she writes, \"bring that one up front now\"?",
+          "options": [
+            "(A) She wants Derek to continue washing the compact car in bay 3.",
+            "(B) She believes the customer has already arrived at the front counter.",
+            "(C) She intends to telephone the customer herself about the current delay.",
+            "(D) She wants the available car brought to the counter without any delay."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-4",
+      "passageNum": 4,
+      "startQ": 154,
+      "endQ": 155,
+      "title": "Bài đọc 4 (Câu 154 - 155)",
+      "passageText": "Cipher Hollow Escape Rooms — Group Session Booking Request\nUse this form to reserve a private escape-room session for your group. Complete all fields below and submit the form at our front desk.\nGroup or organization name:\nNumber of participants (minimum four per session):\nPreferred date and time:\nContact person and phone number:\nA deposit is charged only after we confirm your requested slot by email. No payment is collected through this form. To change or cancel a confirmed booking, notify us at least 48 hours in advance. Groups of eight or more receive our standard group rate, and all participants must be at least twelve years old.\nNote: The person listed as contact person will act as the group's sole point of contact for all messages about this booking.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Cipher Hollow Escape Rooms — Group Session Booking Request</b></p><p>Use this form to reserve a private escape-room session for your group. Complete all fields below and submit the form at our front desk.</p><p>Group or organization name: <br/>Number of participants (minimum four per session): <br/>Preferred date and time: <br/>Contact person and phone number: </p><p>A deposit is charged only after we confirm your requested slot by email. No payment is collected through this form. To change or cancel a confirmed booking, notify us at least 48 hours in advance. Groups of eight or more receive our standard group rate, and all participants must be at least twelve years old.</p><p>Note: The person listed as contact person will act as the group's sole point of contact for all messages about this booking.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q154",
+          "qNum": 154,
+          "question": "154. What is the purpose of the form?",
+          "options": [
+            "(A) To pay in advance for a session",
+            "(B) To request general information about the venue",
+            "(C) To cancel an existing reservation",
+            "(D) To arrange a private session for a group"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q155",
+          "qNum": 155,
+          "question": "155. What is suggested about the group making the booking?",
+          "options": [
+            "(A) It must consist of a specific fixed number of people",
+            "(B) Its members must all be adults",
+            "(C) One of its members will receive all booking messages",
+            "(D) It will receive a discounted rate automatically"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-5",
+      "passageNum": 5,
+      "startQ": 156,
+      "endQ": 157,
+      "title": "Bài đọc 5 (Câu 156 - 157)",
+      "passageText": "Visitor Notice — Trail Renewal Work\nPosted: March 1\nOver the coming weeks, sections of Larkmoor Wildlife Park will close in turn while our walking paths are resurfaced. The Woodland Walk will close beginning March 4, the Wetland Trail from March 8, and the Hillside Enclosure from March 12. All trails will be open again by the middle of the month.\nVisitors holding an annual membership pass who plan to come during these closures should call the office in advance so that we can direct them to a section that remains open. Single-day ticket holders need not contact us, and guided group tours must still be reserved through our Web site one week ahead.\nPlease note that our Spring Wildlife Weekend returns on April 2.\nLarkmoor Park Office — 555-0148",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Visitor Notice — Trail Renewal Work</b></p><p>Posted: March 1</p><p>Over the coming weeks, sections of Larkmoor Wildlife Park will close in turn while our walking paths are resurfaced. The Woodland Walk will close beginning March 4, the Wetland Trail from March 8, and the Hillside Enclosure from March 12. All trails will be open again by the middle of the month.</p><p>Visitors holding an annual membership pass who plan to come during these closures should call the office in advance so that we can direct them to a section that remains open. Single-day ticket holders need not contact us, and guided group tours must still be reserved through our Web site one week ahead.</p><p>Please note that our Spring Wildlife Weekend returns on April 2.</p><p>Larkmoor Park Office — 555-0148</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q156",
+          "qNum": 156,
+          "question": "156. By when are all of the park's walking trails expected to be open again?",
+          "options": [
+            "(A) In the first week of March",
+            "(B) In the middle of March",
+            "(C) At the end of March",
+            "(D) In the first week of April"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q157",
+          "qNum": 157,
+          "question": "157. Who is instructed to telephone the park office ahead of a visit?",
+          "options": [
+            "(A) Guests who want to join a guided tour",
+            "(B) Visitors who hold a yearly membership pass",
+            "(C) People buying single-day tickets",
+            "(D) Guests attending the Spring Wildlife Weekend"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-6",
+      "passageNum": 6,
+      "startQ": 158,
+      "endQ": 160,
+      "title": "Bài đọc 6 (Câu 158 - 160)",
+      "passageText": "Hollowell Home Repairs — trusted help for every corner of your house\nFrom dripping faucets and sticking doors to cracked tiles, worn fencing, and rooms that need a fresh coat of paint, our experienced team takes on the everyday jobs that homeowners rarely find time to finish. We serve residents throughout the Dunmore area, and each technician arrives fully equipped to complete most work in a single visit.\nChoose from three service plans built for different needs. The Essentials plan covers up to four\nlight\ntasks each season, the Household plan adds priority scheduling, and the Full Home plan includes a room-by-room inspection twice a year. Plan members also save on labor for any additional work they request.\nTo celebrate our spring promotion, which begins on April 3, we are offering a free in-home consultation every Saturday. During the visit, one of our technicians will walk through your home and suggest the plan that suits it best. Reserve your appointment before April 24 to lock in this season's rates.\nHollowell Home Repairs, 52 Brayton Street. Visit www.hollowellhome.example to request your first visit today.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Hollowell Home Repairs — trusted help for every corner of your house</b></p><p>From dripping faucets and sticking doors to cracked tiles, worn fencing, and rooms that need a fresh coat of paint, our experienced team takes on the everyday jobs that homeowners rarely find time to finish. We serve residents throughout the Dunmore area, and each technician arrives fully equipped to complete most work in a single visit.</p><p>Choose from three service plans built for different needs. The Essentials plan covers up to four <b>light</b> tasks each season, the Household plan adds priority scheduling, and the Full Home plan includes a room-by-room inspection twice a year. Plan members also save on labor for any additional work they request.</p><p>To celebrate our spring promotion, which begins on April 3, we are offering a free in-home consultation every Saturday. During the visit, one of our technicians will walk through your home and suggest the plan that suits it best. Reserve your appointment before April 24 to lock in this season's rates.</p><p>Hollowell Home Repairs, 52 Brayton Street. Visit www.hollowellhome.example to request your first visit today.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q158",
+          "qNum": 158,
+          "question": "158. What is suggested about Hollowell Home Repairs?",
+          "options": [
+            "(A) It recently began operating in the Dunmore area.",
+            "(B) It specializes in a single type of repair.",
+            "(C) It performs many different kinds of household jobs.",
+            "(D) It charges no labor fees for additional work."
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q159",
+          "qNum": 159,
+          "question": "159. When can a customer receive a free in-home consultation from Hollowell Home Repairs?",
+          "options": [
+            "(A) On April 3",
+            "(B) On April 24",
+            "(C) Every Saturday",
+            "(D) Twice each year"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q160",
+          "qNum": 160,
+          "question": "160. In the advertisement, the word \"light\" is closest in meaning to",
+          "options": [
+            "(A) bright",
+            "(B) minor",
+            "(C) pale",
+            "(D) cheerful"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-7",
+      "passageNum": 7,
+      "startQ": 161,
+      "endQ": 164,
+      "title": "Bài đọc 7 (Câu 161 - 164)",
+      "passageText": "Tolliver Clock and Watch Workshop\nRestoring fine mechanical timepieces for collectors and households\nTolliver Clock and Watch Workshop specializes in the repair and restoration of mechanical clocks and watches, from pendulum wall clocks and mantel clocks to hand-wound and automatic wristwatches. We have served the district for more than twenty-five years.\nOur benches are dedicated entirely to spring-driven mechanisms, so we do not service battery or quartz movements, and we do not carry out jewelry or eyeglass repair. Restoration of older pieces often requires small parts to be made by hand on site, and every completed repair carries a full twelve-month guarantee covering both parts and labor. How long a repair takes depends on the service it needs, as shown below.\nServices and turnaround\nService\nTypical turnaround\nCleaning and oiling\n2 weeks\nFull movement overhaul\n6 weeks\nAll items must be brought to the workshop in person, as we cannot accept timepieces sent by mail. We recommend bringing any original winding keys or paperwork, although this is not required. A written estimate is prepared for every item, and work begins only after you approve it. To arrange a repair, please telephone the workshop during opening hours. When you call, please tell us the make and movement type of your timepiece so that we can set aside enough time at the bench.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Tolliver Clock and Watch Workshop</b><br/>Restoring fine mechanical timepieces for collectors and households</p><p>Tolliver Clock and Watch Workshop specializes in the repair and restoration of mechanical clocks and watches, from pendulum wall clocks and mantel clocks to hand-wound and automatic wristwatches. We have served the district for more than twenty-five years.</p><p>Our benches are dedicated entirely to spring-driven mechanisms, so we do not service battery or quartz movements, and we do not carry out jewelry or eyeglass repair. Restoration of older pieces often requires small parts to be made by hand on site, and every completed repair carries a full twelve-month guarantee covering both parts and labor. How long a repair takes depends on the service it needs, as shown below.</p><p><b>Services and turnaround</b></p><table><tr><th>Service</th><th>Typical turnaround</th></tr><tr><td>Cleaning and oiling</td><td>2 weeks</td></tr><tr><td>Full movement overhaul</td><td>6 weeks</td></tr></table><p>All items must be brought to the workshop in person, as we cannot accept timepieces sent by mail. We recommend bringing any original winding keys or paperwork, although this is not required. A written estimate is prepared for every item, and work begins only after you approve it. To arrange a repair, please telephone the workshop during opening hours. When you call, please tell us the make and movement type of your timepiece so that we can set aside enough time at the bench.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q161",
+          "qNum": 161,
+          "question": "161. Which item would the workshop most likely agree to repair?",
+          "options": [
+            "(A) A hand-wound pocket watch",
+            "(B) A battery-powered alarm clock",
+            "(C) A silver charm bracelet",
+            "(D) A pair of reading glasses"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q162",
+          "qNum": 162,
+          "question": "162. What is indicated about the workshop?",
+          "options": [
+            "(A) It opened less than twenty years ago.",
+            "(B) It repairs electronic timepieces.",
+            "(C) It manufactures new clocks for sale.",
+            "(D) It guarantees its repairs for one year."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q163",
+          "qNum": 163,
+          "question": "163. What is one condition for having an item serviced by the workshop?",
+          "options": [
+            "(A) Customers must provide original winding keys.",
+            "(B) Payment must be made before work starts.",
+            "(C) Repairs must be finished within two weeks.",
+            "(D) Items must be delivered to the shop in person."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q164",
+          "qNum": 164,
+          "question": "164. What are customers asked to do when they contact the workshop?",
+          "options": [
+            "(A) Provide proof of when the item was bought",
+            "(B) Describe the make and movement of the item",
+            "(C) Confirm the workshop's opening hours",
+            "(D) Pay for a written estimate in advance"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-8",
+      "passageNum": 8,
+      "startQ": 165,
+      "endQ": 168,
+      "title": "Bài đọc 8 (Câu 165 - 168)",
+      "passageText": "Weekend Sale Planning\nMembers: Gregory Sloane, Vincent Marsh, Deborah Quinn, Carla Bishop\nGregory Sloane [9:02 A.M.]: Morning, everyone. Head office just approved our chain-wide weekend sale on running shoes, fitness equipment, and camping gear. Which branches should we include?\nVincent Marsh [9:04 A.M.]: Great news. How many of our stores will actually run it?\nGregory Sloane [9:05 A.M.]: Of our 40 locations, 28 will host the sale. The other 12 are too small to add the extra floor displays, so they will sit this one out.\nDeborah Quinn [9:07 A.M.]: That makes sense. When do we launch?\nGregory Sloane [9:08 A.M.]: I would like everything ready so we can open the promotion three weeks from Friday. Can each of you be set by then?\nVincent Marsh [9:09 A.M.]: That works for me.\nCarla Bishop [9:10 A.M.]: I already briefed the four sales associates I hired last month, so my store is prepared.\nDeborah Quinn [9:12 A.M.]: The timing is fine on my end as well.\nDeborah Quinn [9:13 A.M.]: I will walk my own team through the new display layout tomorrow morning.\nGregory Sloane [9:14 A.M.]: Wonderful. Thank you all.\nVincent Marsh [9:15 A.M.]: One more question — when do we expect the whole campaign to wrap up?\nGregory Sloane [9:16 A.M.]: We plan to roll it out in stages across the participating stores over about four months.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Weekend Sale Planning</b><br/>Members: Gregory Sloane, Vincent Marsh, Deborah Quinn, Carla Bishop</p><p>Gregory Sloane [9:02 A.M.]: Morning, everyone. Head office just approved our chain-wide weekend sale on running shoes, fitness equipment, and camping gear. Which branches should we include?</p><p>Vincent Marsh [9:04 A.M.]: Great news. How many of our stores will actually run it?</p><p>Gregory Sloane [9:05 A.M.]: Of our 40 locations, 28 will host the sale. The other 12 are too small to add the extra floor displays, so they will sit this one out.</p><p>Deborah Quinn [9:07 A.M.]: That makes sense. When do we launch?</p><p>Gregory Sloane [9:08 A.M.]: I would like everything ready so we can open the promotion three weeks from Friday. Can each of you be set by then?</p><p>Vincent Marsh [9:09 A.M.]: That works for me.</p><p>Carla Bishop [9:10 A.M.]: I already briefed the four sales associates I hired last month, so my store is prepared.</p><p>Deborah Quinn [9:12 A.M.]: The timing is fine on my end as well.</p><p>Deborah Quinn [9:13 A.M.]: I will walk my own team through the new display layout tomorrow morning.</p><p>Gregory Sloane [9:14 A.M.]: Wonderful. Thank you all.</p><p>Vincent Marsh [9:15 A.M.]: One more question — when do we expect the whole campaign to wrap up?</p><p>Gregory Sloane [9:16 A.M.]: We plan to roll it out in stages across the participating stores over about four months.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q165",
+          "qNum": 165,
+          "question": "165. Where do the participants most likely work?",
+          "options": [
+            "(A) At a marketing agency",
+            "(B) At a law firm",
+            "(C) At a travel agency",
+            "(D) At a sporting goods store chain"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q166",
+          "qNum": 166,
+          "question": "166. According to the discussion, how many of the chain's stores will not take part in the sale?",
+          "options": [
+            "(A) 4",
+            "(B) 12",
+            "(C) 28",
+            "(D) 40"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q167",
+          "qNum": 167,
+          "question": "167. At 9:09 A.M., what does Marsh most likely mean when he writes, \"That works for me\"?",
+          "options": [
+            "(A) He chose the date for the chain-wide launch.",
+            "(B) His store will be ready by the proposed launch date.",
+            "(C) His store has sold out of the fitness equipment.",
+            "(D) He would rather delay the sale by a few weeks."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q168",
+          "qNum": 168,
+          "question": "168. What is suggested about Bishop and Quinn?",
+          "options": [
+            "(A) They were both hired last month.",
+            "(B) They are concerned about the sale plan.",
+            "(C) They both oversee staff at their stores.",
+            "(D) They regularly shop at the participating stores."
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-9",
+      "passageNum": 9,
+      "startQ": 169,
+      "endQ": 171,
+      "title": "Bài đọc 9 (Câu 169 - 171)",
+      "passageText": "Bramwell Accounting Partners\nJanuary 14\nDear Valued Client,\nThank you for your continued trust in Bramwell Accounting Partners. --[1]--. Over the past year we have looked closely at how our Marbury office can serve you, and we are pleased to report two results.\nWe are delighted to announce the appointment of Andrew Whitcombe as manager of the Marbury office. --[2]--. Mr. Whitcombe joins us from Prescott Financial Services, where he advised the owners of growing companies. A certified public accountant, he brings more than fifteen years of experience to his new position.\nWe are also launching a dedicated advisory service for our small-business clients. --[3]--. Beginning March 1, this service will provide guidance on budgeting, cash flow, and long-term financial planning to any client who operates a registered business. To arrange your first session, please telephone the office or reply directly to this letter.\nWe remain committed to supporting you at every stage of your work. --[4]--. Should you have any questions about either announcement, a member of our staff will be glad to help.\nSincerely,\nKatherine Boyd\nManaging Partner, Bramwell Accounting Partners",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p>Bramwell Accounting Partners<br/>January 14</p><p>Dear Valued Client,</p><p>Thank you for your continued trust in Bramwell Accounting Partners. --[1]--. Over the past year we have looked closely at how our Marbury office can serve you, and we are pleased to report two results.</p><p>We are delighted to announce the appointment of Andrew Whitcombe as manager of the Marbury office. --[2]--. Mr. Whitcombe joins us from Prescott Financial Services, where he advised the owners of growing companies. A certified public accountant, he brings more than fifteen years of experience to his new position.</p><p>We are also launching a dedicated advisory service for our small-business clients. --[3]--. Beginning March 1, this service will provide guidance on budgeting, cash flow, and long-term financial planning to any client who operates a registered business. To arrange your first session, please telephone the office or reply directly to this letter.</p><p>We remain committed to supporting you at every stage of your work. --[4]--. Should you have any questions about either announcement, a member of our staff will be glad to help.</p><p>Sincerely,<br/>Katherine Boyd<br/>Managing Partner, Bramwell Accounting Partners</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q169",
+          "qNum": 169,
+          "question": "169. What is NOT indicated about the newly appointed manager of the Marbury office?",
+          "options": [
+            "(A) He holds a university degree in economics.",
+            "(B) He came to the firm from Prescott Financial Services.",
+            "(C) He has more than fifteen years of experience.",
+            "(D) He is a certified public accountant."
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q170",
+          "qNum": 170,
+          "question": "170. What does the letter say about the new advisory service?",
+          "options": [
+            "(A) It has been available since February.",
+            "(B) It may be used by any client of the firm.",
+            "(C) It includes advice on managing cash flow.",
+            "(D) It is led by the new branch manager."
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q171",
+          "qNum": 171,
+          "question": "171. In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"As we begin a new year, we want to keep you informed of the improvements taking place at our firm.\"",
+          "options": [
+            "(A) [1]",
+            "(B) [2]",
+            "(C) [3]",
+            "(D) [4]"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-10",
+      "passageNum": 10,
+      "startQ": 172,
+      "endQ": 175,
+      "title": "Bài đọc 10 (Câu 172 - 175)",
+      "passageText": "Grace Holloway [9:05 A.M.]: Morning, everyone. We send files to the printer on Friday, so I want a clear picture of where issue 48 stands. Any concerns before then?\nMiles Barton [9:07 A.M.]: The main interview still needs one more read for accuracy. Could we hold that page a little longer?\nGrace Holloway [9:09 A.M.]: If you need more time on the interview, I can move it to the back section and run the travel feature up front instead. That buys you until tomorrow afternoon.\nIris Feldman [9:12 A.M.]: Works for me. I've already reflowed the two-page spread and placed the new photographs, and the cover is nearly finished. I'm just waiting on a final headline before I lock it.\nDesmond Park [9:15 A.M.]: One real problem, though. The recipe column arrived without its ingredient list, so nearly half a page is empty. The contributor sent only the cooking steps.\nGrace Holloway [9:17 A.M.]: That can't go out incomplete. I'll write to the contributor right now and ask for the rest.\nMiles Barton [9:18 A.M.]: And if nothing comes back by noon, I can draft a short sidebar to fill the space.\nGrace Holloway [9:20 A.M.]: Perfect. Same routine as every issue. Let's regroup here at three o'clock to confirm every page is placed before the files go out. Thanks, all.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p>Grace Holloway [9:05 A.M.]: Morning, everyone. We send files to the printer on Friday, so I want a clear picture of where issue 48 stands. Any concerns before then?</p><p>Miles Barton [9:07 A.M.]: The main interview still needs one more read for accuracy. Could we hold that page a little longer?</p><p>Grace Holloway [9:09 A.M.]: If you need more time on the interview, I can move it to the back section and run the travel feature up front instead. That buys you until tomorrow afternoon.</p><p>Iris Feldman [9:12 A.M.]: Works for me. I've already reflowed the two-page spread and placed the new photographs, and the cover is nearly finished. I'm just waiting on a final headline before I lock it.</p><p>Desmond Park [9:15 A.M.]: One real problem, though. The recipe column arrived without its ingredient list, so nearly half a page is empty. The contributor sent only the cooking steps.</p><p>Grace Holloway [9:17 A.M.]: That can't go out incomplete. I'll write to the contributor right now and ask for the rest.</p><p>Miles Barton [9:18 A.M.]: And if nothing comes back by noon, I can draft a short sidebar to fill the space.</p><p>Grace Holloway [9:20 A.M.]: Perfect. Same routine as every issue. Let's regroup here at three o'clock to confirm every page is placed before the files go out. Thanks, all.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q172",
+          "qNum": 172,
+          "question": "172. Who most likely is Iris Feldman?",
+          "options": [
+            "(A) An editor",
+            "(B) A print technician",
+            "(C) A graphic designer",
+            "(D) A writer"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q173",
+          "qNum": 173,
+          "question": "173. At 9:09 A.M., what does Grace Holloway mean when she writes, \"That buys you until tomorrow afternoon\"?",
+          "options": [
+            "(A) She is refusing Miles's request.",
+            "(B) She is asking Miles to work faster.",
+            "(C) She is confirming the interview is finished.",
+            "(D) She is granting extra time by rearranging the page order."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q174",
+          "qNum": 174,
+          "question": "174. What problem is mentioned in the discussion?",
+          "options": [
+            "(A) The printing schedule was canceled.",
+            "(B) A submitted section is missing part of its content.",
+            "(C) A photograph was of poor quality.",
+            "(D) Too many pages were assigned."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q175",
+          "qNum": 175,
+          "question": "175. What is suggested about the editorial team?",
+          "options": [
+            "(A) The magazine is a brand-new publication.",
+            "(B) The team holds these coordination sessions routinely.",
+            "(C) The print deadline will be missed.",
+            "(D) A team member will be absent from the next chat."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-11",
+      "passageNum": 11,
+      "startQ": 176,
+      "endQ": 180,
+      "title": "Bài đọc 11 (Câu 176 - 180)",
+      "passageText": "AROUND THE REGION\nChess Championship to Return This Autumn\nRegional association invites players of every level to compete in Riverton\nBy Colin Ashby, Community Affairs Correspondent\nRIVERTON — September 18\nThe Selby District Chess Association will hold its annual Selby Open Championship at Riverton Civic Hall this autumn, and organizers say they expect one of the strongest turnouts in years. The event is open to players of every skill level, from schoolchildren trying competitive play for the first time to seasoned club members.\nFor more than a decade the association has\nserved\nthe wider county, and alongside the championship it also runs regular monthly tournaments in the neighboring towns of Hadleigh and Penhurst. \"We want this championship to reach every corner of the region, not simply one town,\" said Malcolm Frost, the association's president. He added that membership has climbed steadily each year and that newcomers are always welcome.\nEntries close on October 6, and the championship itself is scheduled for Saturday, October 14. The entry fee is fifteen dollars, which covers all rounds and a light lunch. Interested players may sign up in person at the association's office on weekday afternoons or by telephone during the same hours.\n----------------------\nStrong Field at Selby Open Championship\nContinuing our coverage of the region's amateur competitions\nBy Teresa Colgan\nRIVERTON — December 9\nThe Selby Open Championship was held at Riverton Civic Hall on Saturday, December 6. The contest drew more than 120 players, the largest field it has ever recorded, and spectators filled the hall throughout the day. Organizers reported that every scheduled round finished on time despite the crowded program.\nIn the Open division, Carol Sutton captured first place after a tense final round that lasted well past the afternoon. The junior title went to Simon Hale, a newcomer competing in only his second tournament. Chief judge Raymond Delaney praised the overall standard of play, while association president Malcolm Frost thanked the many volunteers who kept the long day running smoothly.\nFull standings for every division will be posted at the association's office and on its website by December 20, where players may also find details of next year's calendar.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>AROUND THE REGION</b></p><p><b>Chess Championship to Return This Autumn</b></p><p>Regional association invites players of every level to compete in Riverton</p><p>By Colin Ashby, Community Affairs Correspondent</p><p>RIVERTON — September 18</p><p>The Selby District Chess Association will hold its annual Selby Open Championship at Riverton Civic Hall this autumn, and organizers say they expect one of the strongest turnouts in years. The event is open to players of every skill level, from schoolchildren trying competitive play for the first time to seasoned club members.</p><p>For more than a decade the association has <b>served</b> the wider county, and alongside the championship it also runs regular monthly tournaments in the neighboring towns of Hadleigh and Penhurst. \"We want this championship to reach every corner of the region, not simply one town,\" said Malcolm Frost, the association's president. He added that membership has climbed steadily each year and that newcomers are always welcome.</p><p>Entries close on October 6, and the championship itself is scheduled for Saturday, October 14. The entry fee is fifteen dollars, which covers all rounds and a light lunch. Interested players may sign up in person at the association's office on weekday afternoons or by telephone during the same hours.</p></div><p>----------------------</p><div><p><b>Strong Field at Selby Open Championship</b></p><p>Continuing our coverage of the region's amateur competitions</p><p>By Teresa Colgan</p><p>RIVERTON — December 9</p><p>The Selby Open Championship was held at Riverton Civic Hall on Saturday, December 6. The contest drew more than 120 players, the largest field it has ever recorded, and spectators filled the hall throughout the day. Organizers reported that every scheduled round finished on time despite the crowded program.</p><p>In the Open division, Carol Sutton captured first place after a tense final round that lasted well past the afternoon. The junior title went to Simon Hale, a newcomer competing in only his second tournament. Chief judge Raymond Delaney praised the overall standard of play, while association president Malcolm Frost thanked the many volunteers who kept the long day running smoothly.</p><p>Full standings for every division will be posted at the association's office and on its website by December 20, where players may also find details of next year's calendar.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q176",
+          "qNum": 176,
+          "question": "176. What is indicated about the Selby District Chess Association?",
+          "options": [
+            "(A) It is based in Hadleigh.",
+            "(B) It holds events in more than one town.",
+            "(C) It runs the region's oldest chess contest.",
+            "(D) It owns Riverton Civic Hall."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q177",
+          "qNum": 177,
+          "question": "177. In the first article, the word \"served\" in paragraph 2 is closest in meaning to",
+          "options": [
+            "(A) fed",
+            "(B) waited on",
+            "(C) managed",
+            "(D) assisted"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q178",
+          "qNum": 178,
+          "question": "178. What is implied about the Selby Open Championship?",
+          "options": [
+            "(A) It will hold its next round on December 20.",
+            "(B) It had to reschedule several rounds.",
+            "(C) It was held later than originally scheduled.",
+            "(D) It admits only experienced players."
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q179",
+          "qNum": 179,
+          "question": "179. According to the second article, what is indicated about the championship?",
+          "options": [
+            "(A) It drew fewer players than in previous years.",
+            "(B) It was watched by few spectators.",
+            "(C) It set a record for the number of competitors.",
+            "(D) It had to shorten its program."
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q180",
+          "qNum": 180,
+          "question": "180. Who is Carol Sutton?",
+          "options": [
+            "(A) A contest judge",
+            "(B) The association's president",
+            "(C) An event volunteer",
+            "(D) A competition winner"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-12",
+      "passageNum": 12,
+      "startQ": 181,
+      "endQ": 185,
+      "title": "Bài đọc 12 (Câu 181 - 185)",
+      "passageText": "Community Spotlight\nBy Frances Doyle\nThe Larkmead Community Craft Center is looking for a few extra pairs of hands, and it hopes local hobbyists will answer the\ncall\n.\nLeading the effort is Estelle Monroe, who spent more than fifteen years teaching art at a nearby high school before retiring three years ago. Since then she has volunteered at the center every week, and this autumn she takes charge of its expanding beginner workshop program. The classes draw dozens of residents each month, from schoolchildren to retirees, and Monroe says the waiting list keeps growing.\nTo keep pace, the center needs volunteer assistants who can support newcomers during sessions. Assistants set out materials, answer simple questions, and encourage first-timers who feel unsure. The program is meant to welcome enthusiastic hobbyists rather than trained professionals, and Monroe stresses that a friendly, patient manner matters far more than any formal qualifications. There is one practical condition: because assistants work alongside beginners at the worktable, the center asks that each volunteer already practice at least one craft of their own. Anyone interested can complete a short interest form, available at the front desk or on the center's website.\nHave a hobby you love to share? Larkmead wants to hear from you.\n----------------------\nVolunteer Assistant Interest Form\nReference: VA-2025\nYour details\nName: Trevor Nolan\nPhone: 555-0148\nE-mail:\n[email protected]\nAvailability\n(select all that apply):\n[X] Weekday mornings\n[ ] Weekday evenings\n[X] Saturday mornings\n[ ] Sunday afternoons\nWhich crafts do you practice?\nI have been quilting and hand-sewing for nearly ten years, mostly at home in the evenings. I still keep a project going on my worktable at all times.\nWhy would you like to volunteer?\nI am not trained in any formal way, but over the years I have shown several friends and neighbors how to start their first quilt around my kitchen table. I would enjoy doing the same for beginners here, and I have plenty of free time now.\nDeclaration\nPlease note: all volunteers are asked to attend a one-hour orientation session before assisting at their first workshop. By submitting this form, you agree to attend.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Community Spotlight</b></p><p>By Frances Doyle</p><p>The Larkmead Community Craft Center is looking for a few extra pairs of hands, and it hopes local hobbyists will answer the <b>call</b>.</p><p>Leading the effort is Estelle Monroe, who spent more than fifteen years teaching art at a nearby high school before retiring three years ago. Since then she has volunteered at the center every week, and this autumn she takes charge of its expanding beginner workshop program. The classes draw dozens of residents each month, from schoolchildren to retirees, and Monroe says the waiting list keeps growing.</p><p>To keep pace, the center needs volunteer assistants who can support newcomers during sessions. Assistants set out materials, answer simple questions, and encourage first-timers who feel unsure. The program is meant to welcome enthusiastic hobbyists rather than trained professionals, and Monroe stresses that a friendly, patient manner matters far more than any formal qualifications. There is one practical condition: because assistants work alongside beginners at the worktable, the center asks that each volunteer already practice at least one craft of their own. Anyone interested can complete a short interest form, available at the front desk or on the center's website.</p><p><i>Have a hobby you love to share? Larkmead wants to hear from you.</i></p></div><p>----------------------</p><div><p><b>Volunteer Assistant Interest Form</b><br/>Reference: VA-2025</p><p><b>Your details</b><br/>Name: Trevor Nolan<br/>Phone: 555-0148<br/>E-mail: <a class=\"__cf_email__\" data-cfemail=\"1f6b317170737e715f7a677e726f737a317c7072\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a></p><p><b>Availability</b> (select all that apply):<br/>[X] Weekday mornings<br/>[ ] Weekday evenings<br/>[X] Saturday mornings<br/>[ ] Sunday afternoons</p><p><b>Which crafts do you practice?</b><br/>I have been quilting and hand-sewing for nearly ten years, mostly at home in the evenings. I still keep a project going on my worktable at all times.</p><p><b>Why would you like to volunteer?</b><br/>I am not trained in any formal way, but over the years I have shown several friends and neighbors how to start their first quilt around my kitchen table. I would enjoy doing the same for beginners here, and I have plenty of free time now.</p><p><b>Declaration</b><br/>Please note: all volunteers are asked to attend a one-hour orientation session before assisting at their first workshop. By submitting this form, you agree to attend.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q181",
+          "qNum": 181,
+          "question": "181. What does the article indicate about Estelle Monroe?",
+          "options": [
+            "(A) She started the craft center's workshop program.",
+            "(B) She previously held a teaching position.",
+            "(C) She continues to teach at a local school.",
+            "(D) She has assisted the center for over fifteen years."
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q182",
+          "qNum": 182,
+          "question": "182. In the article, the word \"call\" is closest in meaning to",
+          "options": [
+            "(A) visit",
+            "(B) shout",
+            "(C) request",
+            "(D) decision"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q183",
+          "qNum": 183,
+          "question": "183. According to the interest form, what are prospective volunteers asked to do before assisting at a workshop?",
+          "options": [
+            "(A) Attend an orientation session",
+            "(B) Submit a sample of their work",
+            "(C) Complete a skills assessment",
+            "(D) Provide two personal references"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q184",
+          "qNum": 184,
+          "question": "184. What is indicated about Mr. Nolan?",
+          "options": [
+            "(A) He once taught crafts professionally.",
+            "(B) He is available throughout the week.",
+            "(C) He began quilting only recently.",
+            "(D) He satisfies a requirement for volunteer assistants."
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q185",
+          "qNum": 185,
+          "question": "185. Why most likely does Mr. Nolan describe having taught friends and neighbors to quilt?",
+          "options": [
+            "(A) To show that he fits the program's preference for hobbyists",
+            "(B) To prove that his quilting projects are widely admired",
+            "(C) To explain how he first learned the craft of quilting",
+            "(D) To explain why he has more free time these days"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-13",
+      "passageNum": 13,
+      "startQ": 186,
+      "endQ": 190,
+      "title": "Bài đọc 13 (Câu 186 - 190)",
+      "passageText": "To: Daniel Rowe, Birchwood Pantry\nFrom: Helen Whitaker, Cranleigh Fine Foods\nDate: September 2\nSubject: Autumn Restock — Birchwood Pantry: seasonal display refresh\nDear Mr. Rowe,\nI am sorry to tell you that I will not be able to visit the shop in person this year to help you arrange the autumn display, as I usually do. I have recently transferred from our Portsea depot to the company head office, and my new duties now keep me at the desk rather than out on the road visiting retailers.\nTo make the setup as easy as possible, I have enclosed a short guide showing how last season's shelves were arranged, together with a few suggested groupings for the products in the new range.\nIt was always a pleasure to work alongside your team, and I am sure the display will look wonderful. Please do call the head office if you would like any further advice.\nWith best wishes,\nHelen Whitaker\nRegional Sales Representative, Cranleigh Fine Foods\nEnclosure: Display setup guide\n----------------------\nTo: Ms. Deakin, Cranleigh Fine Foods\nFrom: Daniel Rowe, Birchwood Pantry\nDate: September 5\nSubject: Re: \"Autumn Restock — Birchwood Pantry\" | Order AR-4471\nDear Ms. Deakin,\nThank you for confirming that our autumn order will arrive on the fourteenth. To be ready for it, I have already cleared and cleaned the two front shelves and printed new price labels for the whole range.\nI understand from Helen's note that the olive oil will not be sent from your warehouse but will instead be shipped directly from Highford Estate. The estate has since confirmed the dispatch to both of us by e-mail. Please let me know as soon as possible if the delivery time changes, so that I can arrange for staff to receive it.\nKind regards,\nDaniel Rowe\nOwner, Birchwood Pantry\nKettleby\n----------------------\nCranleigh Fine Foods\nHead Office: Alderton\nAutumn Season Wholesale Range for Retailers\nProduct\nSourced from\nPack size\nWholesale price\nCold-pressed olive oil\nHighford Estate, Denby valley\n6 x 500 ml\n$54.00\nQuince preserve\nTempleton Orchard, Colwyn\n12 x 220 g\n$38.00\nFig and walnut chutney\nTempleton Orchard, Colwyn\n12 x 200 g\n$42.00\nWildflower honey\nHalcombe Apiary, Pennard\n8 x 340 g\n$46.00\nSea-salt crackers\nIn-house, Alderton kitchen\n10 x 150 g\n$30.00\nOrders above $200 are delivered free of charge within the delivery region. Smaller orders are subject to a flat delivery charge of $15, added at dispatch. All figures are wholesale prices for the autumn season and are reviewed again in spring.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p>To: Daniel Rowe, Birchwood Pantry<br/>From: Helen Whitaker, Cranleigh Fine Foods<br/>Date: September 2<br/>Subject: Autumn Restock — Birchwood Pantry: seasonal display refresh</p><p>Dear Mr. Rowe,</p><p>I am sorry to tell you that I will not be able to visit the shop in person this year to help you arrange the autumn display, as I usually do. I have recently transferred from our Portsea depot to the company head office, and my new duties now keep me at the desk rather than out on the road visiting retailers.</p><p>To make the setup as easy as possible, I have enclosed a short guide showing how last season's shelves were arranged, together with a few suggested groupings for the products in the new range.</p><p>It was always a pleasure to work alongside your team, and I am sure the display will look wonderful. Please do call the head office if you would like any further advice.</p><p>With best wishes,</p><p>Helen Whitaker<br/>Regional Sales Representative, Cranleigh Fine Foods</p><p>Enclosure: Display setup guide</p></div><p>----------------------</p><div><p>To: Ms. Deakin, Cranleigh Fine Foods<br/>From: Daniel Rowe, Birchwood Pantry<br/>Date: September 5<br/>Subject: Re: \"Autumn Restock — Birchwood Pantry\" | Order AR-4471</p><p>Dear Ms. Deakin,</p><p>Thank you for confirming that our autumn order will arrive on the fourteenth. To be ready for it, I have already cleared and cleaned the two front shelves and printed new price labels for the whole range.</p><p>I understand from Helen's note that the olive oil will not be sent from your warehouse but will instead be shipped directly from Highford Estate. The estate has since confirmed the dispatch to both of us by e-mail. Please let me know as soon as possible if the delivery time changes, so that I can arrange for staff to receive it.</p><p>Kind regards,</p><p>Daniel Rowe<br/>Owner, Birchwood Pantry<br/>Kettleby</p></div><p>----------------------</p><div><p><b>Cranleigh Fine Foods</b><br/>Head Office: Alderton<br/>Autumn Season Wholesale Range for Retailers</p><table><tr><th>Product</th><th>Sourced from</th><th>Pack size</th><th>Wholesale price</th></tr><tr><td>Cold-pressed olive oil</td><td>Highford Estate, Denby valley</td><td>6 x 500 ml</td><td>$54.00</td></tr><tr><td>Quince preserve</td><td>Templeton Orchard, Colwyn</td><td>12 x 220 g</td><td>$38.00</td></tr><tr><td>Fig and walnut chutney</td><td>Templeton Orchard, Colwyn</td><td>12 x 200 g</td><td>$42.00</td></tr><tr><td>Wildflower honey</td><td>Halcombe Apiary, Pennard</td><td>8 x 340 g</td><td>$46.00</td></tr><tr><td>Sea-salt crackers</td><td>In-house, Alderton kitchen</td><td>10 x 150 g</td><td>$30.00</td></tr></table><p>Orders above $200 are delivered free of charge within the delivery region. Smaller orders are subject to a flat delivery charge of $15, added at dispatch. All figures are wholesale prices for the autumn season and are reviewed again in spring.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q186",
+          "qNum": 186,
+          "question": "186. Why did Ms. Whitaker write to Mr. Rowe?",
+          "options": [
+            "(A) To confirm the date of an upcoming delivery",
+            "(B) To apologize for missing her usual visit",
+            "(C) To request advice about arranging the shelves",
+            "(D) To announce a change in wholesale prices"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q187",
+          "qNum": 187,
+          "question": "187. According to the second e-mail, what did Mr. Rowe do?",
+          "options": [
+            "(A) Revised the autumn order",
+            "(B) Postponed the delivery",
+            "(C) Prepared the display shelves",
+            "(D) Contacted Highford Estate directly"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q188",
+          "qNum": 188,
+          "question": "188. What is indicated about Highford Estate?",
+          "options": [
+            "(A) It produces the cold-pressed olive oil",
+            "(B) It is located in Colwyn",
+            "(C) It is the company's head office",
+            "(D) It ships goods to many retailers regularly"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q189",
+          "qNum": 189,
+          "question": "189. Where has Ms. Whitaker most likely relocated?",
+          "options": [
+            "(A) To Alderton",
+            "(B) To Portsea",
+            "(C) To Kettleby",
+            "(D) To Denby valley"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q190",
+          "qNum": 190,
+          "question": "190. What is indicated about delivery in the price list?",
+          "options": [
+            "(A) Every order includes delivery at no charge",
+            "(B) A delivery fee applies to orders of any size",
+            "(C) The delivery charge is collected before dispatch",
+            "(D) Larger orders can qualify for free delivery"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-14",
+      "passageNum": 14,
+      "startQ": 191,
+      "endQ": 195,
+      "title": "Bài đọc 14 (Câu 191 - 195)",
+      "passageText": "Community News\nBy Gordon Pyle\nThe Bramford Historical Society will open its new Local History Center to the public next Saturday, offering residents a permanent home for the town's records, photographs, and everyday objects. The center occupies the former Trescott Flour Mill on Bell Lane, a stone building that stood empty for nearly twenty years before volunteers restored it over two summers. The ground floor holds a reading room and a small exhibit gallery, and the upper floor has been fitted out for workshops and document storage.\n\"A history center is only as rich as the community that fills it,\" said Ronald Ashworth, the society's director. \"I would encourage every household in Bramford to look through their attics and drawers and donate old letters, maps, and family photographs, so that the collection reflects the whole town.\"\nResidents who wish to take part may bring items to the center throughout opening week or ask a volunteer about lending materials for copying. To learn more, call the society office at 555-0148.\n----------------------\nDate: October 3\nTo: Opening-Week Volunteers\nFrom: Cynthia Barlow, Volunteer Coordinator\nSubject: Duties during our first week\nThank you all for signing up to help during the center's first week. Please keep the following points in mind.\n1. Arrive fifteen minutes before your session to set out chairs and materials.\n2. Direct visitors who bring items for donation to the reading room, where they can complete a short form.\n3. The session on caring for old documents may only be led by a volunteer who currently holds an archival preservation certificate, as fragile items will be handled directly.\nI spent several summers helping to clear the old Trescott Flour Mill before its restoration began, so I know the upper floor well. If you are unsure where anything is kept, please ask me.\nCynthia Barlow\nVolunteer Coordinator\n----------------------\nSession\nFocus\nFacilitator\nQualification status\nOpening Talk\nOverview of the town's history\nRonald Ashworth\nNot required\nCaring for Old Documents\nTechniques for protecting fragile papers and photographs\nDiane Foskett\nCertificate expected in spring\nMapping Old Streets\nReading historic district maps\nHarold Craven\nHolds archival preservation certificate\nRecording Memories\nCollecting spoken accounts from longtime residents\nBeatrice Nunn\nHolds first-aid certificate\nQualification status lists the training each facilitator has completed.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><b>Community News</b></p><p>By Gordon Pyle</p><p>The Bramford Historical Society will open its new Local History Center to the public next Saturday, offering residents a permanent home for the town's records, photographs, and everyday objects. The center occupies the former Trescott Flour Mill on Bell Lane, a stone building that stood empty for nearly twenty years before volunteers restored it over two summers. The ground floor holds a reading room and a small exhibit gallery, and the upper floor has been fitted out for workshops and document storage.</p><p>\"A history center is only as rich as the community that fills it,\" said Ronald Ashworth, the society's director. \"I would encourage every household in Bramford to look through their attics and drawers and donate old letters, maps, and family photographs, so that the collection reflects the whole town.\"</p><p>Residents who wish to take part may bring items to the center throughout opening week or ask a volunteer about lending materials for copying. To learn more, call the society office at 555-0148.</p></div><p>----------------------</p><div><p>Date: October 3<br/>To: Opening-Week Volunteers<br/>From: Cynthia Barlow, Volunteer Coordinator<br/>Subject: Duties during our first week</p><p>Thank you all for signing up to help during the center's first week. Please keep the following points in mind.</p><p>1. Arrive fifteen minutes before your session to set out chairs and materials.<br/>2. Direct visitors who bring items for donation to the reading room, where they can complete a short form.<br/>3. The session on caring for old documents may only be led by a volunteer who currently holds an archival preservation certificate, as fragile items will be handled directly.</p><p>I spent several summers helping to clear the old Trescott Flour Mill before its restoration began, so I know the upper floor well. If you are unsure where anything is kept, please ask me.</p><p>Cynthia Barlow<br/>Volunteer Coordinator</p></div><p>----------------------</p><table><tr><th>Session</th><th>Focus</th><th>Facilitator</th><th>Qualification status</th></tr><tr><td>Opening Talk</td><td>Overview of the town's history</td><td>Ronald Ashworth</td><td>Not required</td></tr><tr><td>Caring for Old Documents</td><td>Techniques for protecting fragile papers and photographs</td><td>Diane Foskett</td><td>Certificate expected in spring</td></tr><tr><td>Mapping Old Streets</td><td>Reading historic district maps</td><td>Harold Craven</td><td>Holds archival preservation certificate</td></tr><tr><td>Recording Memories</td><td>Collecting spoken accounts from longtime residents</td><td>Beatrice Nunn</td><td>Holds first-aid certificate</td></tr><tr><td colspan=\"4\">Qualification status lists the training each facilitator has completed.</td></tr></table></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q191",
+          "qNum": 191,
+          "question": "191. What is the main purpose of the article?",
+          "options": [
+            "(A) To announce the opening of a new public facility",
+            "(B) To describe the restoration of a historic building",
+            "(C) To request money for a fundraising campaign",
+            "(D) To advertise a series of paid workshops"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q192",
+          "qNum": 192,
+          "question": "192. In his statement, what does Mr. Ashworth encourage residents to do?",
+          "options": [
+            "(A) Lend materials so that they can be copied",
+            "(B) Contribute items from their homes to the collection",
+            "(C) Help with the restoration of the mill building",
+            "(D) Sign up for one of the coming workshops"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q193",
+          "qNum": 193,
+          "question": "193. What is indicated about Ms. Barlow?",
+          "options": [
+            "(A) She is familiar with the building that now houses the center",
+            "(B) She was a founding member of the local historical society",
+            "(C) She completes the donation forms on behalf of each visitor",
+            "(D) She has known the society's director for many years"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q194",
+          "qNum": 194,
+          "question": "194. Which session would be most useful for a resident who hopes to gather stories told by people who have lived in Bramford for many years?",
+          "options": [
+            "(A) Opening Talk",
+            "(B) Mapping Old Streets",
+            "(C) Caring for Old Documents",
+            "(D) Recording Memories"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q195",
+          "qNum": 195,
+          "question": "195. According to the documents, who will most likely lead the session on caring for old documents?",
+          "options": [
+            "(A) Ronald Ashworth",
+            "(B) Diane Foskett",
+            "(C) Harold Craven",
+            "(D) Beatrice Nunn"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-c1-t9-p7-15",
+      "passageNum": 15,
+      "startQ": 196,
+      "endQ": 200,
+      "title": "Bài đọc 15 (Câu 196 - 200)",
+      "passageText": "To: Furnishings Procurement Panel\nFrom: Bernard Osgood\nSubject: Supplier evaluation for the seasonal textiles line\nDate: July 14\nCC: Regional Buying Office\nReference: Project TX-118\nDear panel members,\nOur review of the two shortlisted mills is nearly finished. Both were measured against our three procurement criteria: dependable delivery schedules, competitive unit pricing, and consistent fabric quality across large orders.\nPelham Loom Works offered the lower unit price, but its lead times were longer and quality varied between sample batches. Ashgrove Weaving Co. matched our quality standard on every sample and quoted firm delivery dates, though at a slightly higher rate. For a line we intend to restock throughout the year, I recommend that we partner with Ashgrove Weaving Co.\nI will circulate the draft contract terms and a delivery timetable next week. Please send me your written approval before then.\nBernard Osgood\nLead Buyer, Home Textiles Department\nDirect extension 2245\n----------------------\nHavenbrook Home Partners with Ashgrove Weaving Co. for New Textiles Range\nBRENTON, August 20 — Havenbrook Home announced today that it has selected Ashgrove Weaving Co. as the supplier for its new seasonal textiles range, which will reach all Havenbrook stores this fall.\nAshgrove Weaving Co. began as a small family workshop in Marlstead and spent its early years producing woven goods from a rented mill in Kingsford. After steady growth, the company moved its operations to a modern facility in Calverton, where it is based today.\nTo introduce the range, Havenbrook Home will host the Autumn Living Showcase on October 6 at its Brenton flagship store. Visitors can view the full collection and meet the design team, and admission is free.\nFor interviews or images, please contact the Havenbrook Home communications office.\n----------------------\nRowanfield Event Services\nInvoice #4472\nDate issued: October 22\nBill to: Havenbrook Home, Brenton\nEvent: Autumn Living Showcase\nEvent date: October 20\nVenue: Havenbrook Home flagship store, Brenton\nGuests served: 140\nDescription\nQuantity\nUnit rate\nAmount\nMain hall rental\n1\n$900\n$900\nCatering per guest\n140\n$18\n$2,520\nEvent staff (hours)\n20\n$25\n$500\nAudio and display setup\n1\n$380\n$380\nSubtotal\n$4,300\nTax\n$344\nTotal due\n$4,644\nPayment is due within 30 days of the issue date.",
+      "passageHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p>To: Furnishings Procurement Panel<br/>From: Bernard Osgood<br/>Subject: Supplier evaluation for the seasonal textiles line<br/>Date: July 14<br/>CC: Regional Buying Office<br/>Reference: Project TX-118</p><p>Dear panel members,</p><p>Our review of the two shortlisted mills is nearly finished. Both were measured against our three procurement criteria: dependable delivery schedules, competitive unit pricing, and consistent fabric quality across large orders.</p><p>Pelham Loom Works offered the lower unit price, but its lead times were longer and quality varied between sample batches. Ashgrove Weaving Co. matched our quality standard on every sample and quoted firm delivery dates, though at a slightly higher rate. For a line we intend to restock throughout the year, I recommend that we partner with Ashgrove Weaving Co.</p><p>I will circulate the draft contract terms and a delivery timetable next week. Please send me your written approval before then.</p><p>Bernard Osgood<br/>Lead Buyer, Home Textiles Department<br/>Direct extension 2245</p></div><p>----------------------</p><div><p><b>Havenbrook Home Partners with Ashgrove Weaving Co. for New Textiles Range</b></p><p>BRENTON, August 20 — Havenbrook Home announced today that it has selected Ashgrove Weaving Co. as the supplier for its new seasonal textiles range, which will reach all Havenbrook stores this fall.</p><p>Ashgrove Weaving Co. began as a small family workshop in Marlstead and spent its early years producing woven goods from a rented mill in Kingsford. After steady growth, the company moved its operations to a modern facility in Calverton, where it is based today.</p><p>To introduce the range, Havenbrook Home will host the Autumn Living Showcase on October 6 at its Brenton flagship store. Visitors can view the full collection and meet the design team, and admission is free.</p><p>For interviews or images, please contact the Havenbrook Home communications office.</p></div><p>----------------------</p><div><p>Rowanfield Event Services<br/>Invoice #4472<br/>Date issued: October 22</p><p>Bill to: Havenbrook Home, Brenton<br/>Event: Autumn Living Showcase<br/>Event date: October 20<br/>Venue: Havenbrook Home flagship store, Brenton<br/>Guests served: 140</p><table><tr><th>Description</th><th>Quantity</th><th>Unit rate</th><th>Amount</th></tr><tr><td>Main hall rental</td><td>1</td><td>$900</td><td>$900</td></tr><tr><td>Catering per guest</td><td>140</td><td>$18</td><td>$2,520</td></tr><tr><td>Event staff (hours)</td><td>20</td><td>$25</td><td>$500</td></tr><tr><td>Audio and display setup</td><td>1</td><td>$380</td><td>$380</td></tr><tr><td>Subtotal</td><td></td><td></td><td>$4,300</td></tr><tr><td>Tax</td><td></td><td></td><td>$344</td></tr><tr><td>Total due</td><td></td><td></td><td>$4,644</td></tr></table><p>Payment is due within 30 days of the issue date.</p></div></div>\n</div>\n</div>",
+      "questions": [
+        {
+          "id": "toeic-lr-c1-t9-p7-q196",
+          "qNum": 196,
+          "question": "196. Why did Mr. Osgood write the e-mail?",
+          "options": [
+            "(A) To share details about the vendors under review",
+            "(B) To request feedback on a research initiative",
+            "(C) To outline his own duties as lead buyer",
+            "(D) To propose a design for a new product line"
+          ],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": "Đáp án đúng: A"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q197",
+          "qNum": 197,
+          "question": "197. According to the e-mail, what does Mr. Osgood say he will send the panel next week?",
+          "options": [
+            "(A) A revised price list from both mills",
+            "(B) Written feedback on the latest fabric samples",
+            "(C) Draft contract terms and a delivery timetable",
+            "(D) A summary of the three procurement criteria"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q198",
+          "qNum": 198,
+          "question": "198. What can be concluded about the procurement panel?",
+          "options": [
+            "(A) It revised its criteria in July",
+            "(B) It sought a new quote from Pelham Loom Works",
+            "(C) It accepted Mr. Osgood's recommendation",
+            "(D) It recently added new members"
+          ],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": "Đáp án đúng: C"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q199",
+          "qNum": 199,
+          "question": "199. Based on the announcement, where most likely is Ashgrove Weaving Co. currently based?",
+          "options": [
+            "(A) Marlstead",
+            "(B) Calverton",
+            "(C) Kingsford",
+            "(D) Brenton"
+          ],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": "Đáp án đúng: B"
+        },
+        {
+          "id": "toeic-lr-c1-t9-p7-q200",
+          "qNum": 200,
+          "question": "200. What is suggested about the Autumn Living Showcase?",
+          "options": [
+            "(A) It exceeded its planned budget",
+            "(B) It attracted more guests than anticipated",
+            "(C) It was moved to a different venue",
+            "(D) It took place later than announced"
+          ],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": "Đáp án đúng: D"
+        }
+      ]
+    }
+  ]
+}

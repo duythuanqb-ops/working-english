@@ -1,0 +1,2599 @@
+{
+  "id": "toeic-lr-sample-t3",
+  "testNum": 3,
+  "collection": "Sample TOEIC Test",
+  "title": "Sample TOEIC Test Test 3 (Bản Gốc STUDY4)",
+  "category": "LR",
+  "durationMinutes": 120,
+  "questionsCount": 200,
+  "audioTrack": null,
+  "audioTracks": null,
+  "part1": [
+    {
+      "id": "toeic-lr-sample-t3-p1-1",
+      "qNum": 1,
+      "imageUrl": "/exams/toeic-lr-sample-t3/part1/q1.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 1. Look at the photograph marked number 1 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "She has some grocery bags.",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "She is holding some flowers.",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "She is reaching out to pick up a vegetable.",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "She is washing the fruits.",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "C",
+      "explanation": "",
+      "transcript": "(A) She has some grocery bags. (B) She is holding some flowers. (C) She is reaching out to pick up a vegetable. (D) She is washing the fruits."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p1-2",
+      "qNum": 2,
+      "imageUrl": "/exams/toeic-lr-sample-t3/part1/q2.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 2. Look at the photograph marked number 2 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "The boy is putting bait on the hook.",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "The father has his right arm around the boy.",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "The boy is reeling in a fish.",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "They are fishing on the pier.",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "D",
+      "explanation": "",
+      "transcript": "(A) The boy is putting bait on the hook. (B) The father has his right arm around the boy. (C) The boy is reeling in a fish. (D) They are fishing on the pier."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p1-3",
+      "qNum": 3,
+      "imageUrl": "/exams/toeic-lr-sample-t3/part1/q3.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 3. Look at the photograph marked number 3 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "He is washing the fruits.",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "He is cutting up some vegetables.",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "There are some glasses of water on the table.",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "She is standing next to him.",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "B",
+      "explanation": "",
+      "transcript": "(A) He is washing the fruits. (B) He is cutting up some vegetables. (C) There are some glasses of water on the table. (D) She is standing next to him."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p1-4",
+      "qNum": 4,
+      "imageUrl": "/exams/toeic-lr-sample-t3/part1/q4.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 4. Look at the photograph marked number 4 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "They are looking at some documents on the table.",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "They are wearing helmets.",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "There are some people working behind them.",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "One of the men is writing on the document.",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "A",
+      "explanation": "",
+      "transcript": "(A) They are looking at some documents on the table. (B) They are wearing helmets. (C) There are some people working behind them. (D) One of the men is writing on the document."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p1-5",
+      "qNum": 5,
+      "imageUrl": "/exams/toeic-lr-sample-t3/part1/q5.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 5. Look at the photograph marked number 5 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "There are some building designs on the table.",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "The woman is drinking a cup of coffee.",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "The woman is writing a recipe.",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "The woman is talking on the phone.",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "D",
+      "explanation": "",
+      "transcript": "(A) There are some building designs on the table. (B) The woman is drinking a cup of coffee. (C) The woman is writing a recipe. (D) The woman is talking on the phone."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p1-6",
+      "qNum": 6,
+      "imageUrl": "/exams/toeic-lr-sample-t3/part1/q6.jpg",
+      "fallbackUrl": "/exams/fallbacks/part1-office.jpg",
+      "audioPrompt": "Number 6. Look at the photograph marked number 6 in your test book.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "The man is typing on the computer.",
+          "textVi": ""
+        },
+        {
+          "key": "B",
+          "text": "They are both looking at the laptop.",
+          "textVi": ""
+        },
+        {
+          "key": "C",
+          "text": "The men are wearing ties.",
+          "textVi": ""
+        },
+        {
+          "key": "D",
+          "text": "The men are checking some blueprints.",
+          "textVi": ""
+        }
+      ],
+      "correctKey": "D",
+      "explanation": "",
+      "transcript": "(A) The man is typing on the computer. (B) They are both looking at the laptop. (C) The men are wearing ties. (D) The men are checking some blueprints."
+    }
+  ],
+  "part2": [
+    {
+      "id": "toeic-lr-sample-t3-p2-7",
+      "qNum": 7,
+      "questionText": "Question #7",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "Who's responsible for the report (A) Sometime in the afternoon. (B) In the news report. (C) It's John Draper."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-8",
+      "qNum": 8,
+      "questionText": "Question #8",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "Where can I buy a ticket? (A) A round-trip ticket. (B) On the official website. (C) By 5:00 at the latest."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-9",
+      "qNum": 9,
+      "questionText": "Question #9",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "Did Mr. Stacks show you the new work schedule? (A) Yes, he was. (B) It's behind schedule. (C) Actually, Ms. Dwain did."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-10",
+      "qNum": 10,
+      "questionText": "Question #10",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "When should I call the travel agency? (A) Sometime before Friday. (B) In my desk drawer. (C) We don't allow refunds."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-11",
+      "qNum": 11,
+      "questionText": "Question #11",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "How many tables should I set up? (A) It's a table for four. (B) There isn't enough time. (C) At least twenty."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-12",
+      "qNum": 12,
+      "questionText": "Question #12",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "Let's take a short break. (A) I'd like that. (B) It's a short-term contract. (C) I put the brakes on."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-13",
+      "qNum": 13,
+      "questionText": "Question #13",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "Why won't the television turn on? (A) Because of a scheduling conflict. (B) Maybe it isn't plugged in. (C) It was yesterday."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-14",
+      "qNum": 14,
+      "questionText": "Question #14",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "Would you rather eat out or pack a lunch? (A) It was delicious. (B) We're preparing for a new product launch. (C) Let's go to a restaurant."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-15",
+      "qNum": 15,
+      "questionText": "Question #15",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "Sam is a really great clerk, isn't he? (A) Yeah, he is very hard-working. (B) Well, the clock is a few minutes slow. (C) No, he just moved last week."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-16",
+      "qNum": 16,
+      "questionText": "Question #16",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "How often does this bus come? A) I will come up with some ideas. (B) Every twenty minutes. (C) The train to Hemsville."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-17",
+      "qNum": 17,
+      "questionText": "Question #17",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "Isn't Mary having a baby? (A) No, it was a baby toy. (B) Of course. I'd love to. (C) Sometime next month, I think."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-18",
+      "qNum": 18,
+      "questionText": "Question #18",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "Is this food enough, or should I prepare more? (A) The restaurant is busy. (B) That will be plenty. (C) I need a pair of gloves."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-19",
+      "qNum": 19,
+      "questionText": "Question #19",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "When will the manager be making the announcement? (A) At around 3:00 P.M. (B) Yes, that's what I heard too. (C) In the auditorium."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-20",
+      "qNum": 20,
+      "questionText": "Question #20",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "Which shirt did you decide to buy for your sister? (A) I decided to hire more employees. (B) Actually, I bought a scarf instead. (C) How much is it?"
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-21",
+      "qNum": 21,
+      "questionText": "Question #21",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "Would you like me to return this book for you? (A) No, I haven't finished it yet. (B) book a room for you. (C) Please help me lift this."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-22",
+      "qNum": 22,
+      "questionText": "Question #22",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "I'm having a hard time choosing what to wear. (A) I bought the clothes last week. (B) Where is the exit? (C) I can give you advice."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-23",
+      "qNum": 23,
+      "questionText": "Question #23",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "Isn't the museum closed on Mondays? (A) Sometime this morning. (B) You're right. (C) We will open a new branch."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-24",
+      "qNum": 24,
+      "questionText": "Question #24",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "Mr. Yamaoka will be dropping by today, won't he? (A) Can you pick it up for me? (B) No, he said he's too busy. (C) Yes, it was his first visit."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-25",
+      "qNum": 25,
+      "questionText": "Question #25",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "I think I need to fill the car up with gas. (A) Take a right turn here, then. (B) It's a natural gas company. (C) Don't forget to pack the truck."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-26",
+      "qNum": 26,
+      "questionText": "Question #26",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "Could you come to the office early tomorrow? (A) It's reflected on the surface. (B) Yes, I met him in the office. (C) What time?"
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-27",
+      "qNum": 27,
+      "questionText": "Question #27",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "Why hasn't the delivery arrived yet? (A) Let me call Ms. Anderson. (B) I've signed the document. (C) A cardboard box."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-28",
+      "qNum": 28,
+      "questionText": "Question #28",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": "",
+      "transcript": "Were you at the workshop this weekend? (A) I’ll visit her next weekend. (B) Yes, I attended with Jake and Melissa. ‘ (C) I was going to shop for groceries."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-29",
+      "qNum": 29,
+      "questionText": "Question #29",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": "",
+      "transcript": "Would you prefer to meet this Wednesday or on Saturday? (A) I won't refer to the matter again. (B) We can meet the deadline. (C) I'm most free on the weekends."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-30",
+      "qNum": 30,
+      "questionText": "Question #30",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "Have you printed a copy of the itinerary for everyone? (A) Yes, right here. (B) A cup of coffee, please. (C) No one knows where she is."
+    },
+    {
+      "id": "toeic-lr-sample-t3-p2-31",
+      "qNum": 31,
+      "questionText": "Question #31",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)"
+      ],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": "",
+      "transcript": "This book is too difficult for me. (A) Then I'll pick out a different one. (B) The library is close by. (C) Try this hat on."
+    }
+  ],
+  "part3": [
+    {
+      "id": "toeic-lr-sample-t3-conv-1",
+      "convNum": 1,
+      "startQ": 32,
+      "endQ": 34,
+      "scenario": "Đoạn hội thoại 1 (Câu 32 - 34)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q32",
+          "qNum": 32,
+          "question": "32.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q33",
+          "qNum": 33,
+          "question": "33.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q34",
+          "qNum": 34,
+          "question": "34.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-2",
+      "convNum": 2,
+      "startQ": 35,
+      "endQ": 37,
+      "scenario": "Đoạn hội thoại 2 (Câu 35 - 37)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q35",
+          "qNum": 35,
+          "question": "35.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q36",
+          "qNum": 36,
+          "question": "36.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q37",
+          "qNum": 37,
+          "question": "37.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-3",
+      "convNum": 3,
+      "startQ": 38,
+      "endQ": 40,
+      "scenario": "Đoạn hội thoại 3 (Câu 38 - 40)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q38",
+          "qNum": 38,
+          "question": "38.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q39",
+          "qNum": 39,
+          "question": "39.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q40",
+          "qNum": 40,
+          "question": "40.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-4",
+      "convNum": 4,
+      "startQ": 41,
+      "endQ": 43,
+      "scenario": "Đoạn hội thoại 4 (Câu 41 - 43)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q41",
+          "qNum": 41,
+          "question": "41.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q42",
+          "qNum": 42,
+          "question": "42.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q43",
+          "qNum": 43,
+          "question": "43.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-5",
+      "convNum": 5,
+      "startQ": 44,
+      "endQ": 46,
+      "scenario": "Đoạn hội thoại 5 (Câu 44 - 46)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q44",
+          "qNum": 44,
+          "question": "44.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q45",
+          "qNum": 45,
+          "question": "45.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q46",
+          "qNum": 46,
+          "question": "46.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-6",
+      "convNum": 6,
+      "startQ": 47,
+      "endQ": 49,
+      "scenario": "Đoạn hội thoại 6 (Câu 47 - 49)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q47",
+          "qNum": 47,
+          "question": "47.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q48",
+          "qNum": 48,
+          "question": "48.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q49",
+          "qNum": 49,
+          "question": "49.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-7",
+      "convNum": 7,
+      "startQ": 50,
+      "endQ": 52,
+      "scenario": "Đoạn hội thoại 7 (Câu 50 - 52)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q50",
+          "qNum": 50,
+          "question": "50.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q51",
+          "qNum": 51,
+          "question": "51.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q52",
+          "qNum": 52,
+          "question": "52.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-8",
+      "convNum": 8,
+      "startQ": 53,
+      "endQ": 55,
+      "scenario": "Đoạn hội thoại 8 (Câu 53 - 55)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q53",
+          "qNum": 53,
+          "question": "53.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q54",
+          "qNum": 54,
+          "question": "54.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q55",
+          "qNum": 55,
+          "question": "55.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-9",
+      "convNum": 9,
+      "startQ": 56,
+      "endQ": 58,
+      "scenario": "Đoạn hội thoại 9 (Câu 56 - 58)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q56",
+          "qNum": 56,
+          "question": "56.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q57",
+          "qNum": 57,
+          "question": "57.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q58",
+          "qNum": 58,
+          "question": "58.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-10",
+      "convNum": 10,
+      "startQ": 59,
+      "endQ": 61,
+      "scenario": "Đoạn hội thoại 10 (Câu 59 - 61)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q59",
+          "qNum": 59,
+          "question": "59.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q60",
+          "qNum": 60,
+          "question": "60.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q61",
+          "qNum": 61,
+          "question": "61.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-11",
+      "convNum": 11,
+      "startQ": 62,
+      "endQ": 64,
+      "scenario": "Đoạn hội thoại 11 (Câu 62 - 64)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q62",
+          "qNum": 62,
+          "question": "62.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q63",
+          "qNum": 63,
+          "question": "63.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q64",
+          "qNum": 64,
+          "question": "64.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-12",
+      "convNum": 12,
+      "startQ": 65,
+      "endQ": 67,
+      "scenario": "Đoạn hội thoại 12 (Câu 65 - 67)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q65",
+          "qNum": 65,
+          "question": "65.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q66",
+          "qNum": 66,
+          "question": "66.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q67",
+          "qNum": 67,
+          "question": "67.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-conv-13",
+      "convNum": 13,
+      "startQ": 68,
+      "endQ": 70,
+      "scenario": "Đoạn hội thoại 13 (Câu 68 - 70)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p3-q68",
+          "qNum": 68,
+          "question": "68.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q69",
+          "qNum": 69,
+          "question": "69.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p3-q70",
+          "qNum": 70,
+          "question": "70.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "part4": [
+    {
+      "id": "toeic-lr-sample-t3-talk-1",
+      "talkNum": 1,
+      "startQ": 71,
+      "endQ": 73,
+      "scenario": "Bài nói chuyện 1 (Câu 71 - 73)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q71",
+          "qNum": 71,
+          "question": "71.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q72",
+          "qNum": 72,
+          "question": "72.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q73",
+          "qNum": 73,
+          "question": "73.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-2",
+      "talkNum": 2,
+      "startQ": 74,
+      "endQ": 76,
+      "scenario": "Bài nói chuyện 2 (Câu 74 - 76)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q74",
+          "qNum": 74,
+          "question": "74.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q75",
+          "qNum": 75,
+          "question": "75.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q76",
+          "qNum": 76,
+          "question": "76.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-3",
+      "talkNum": 3,
+      "startQ": 77,
+      "endQ": 79,
+      "scenario": "Bài nói chuyện 3 (Câu 77 - 79)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q77",
+          "qNum": 77,
+          "question": "77.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q78",
+          "qNum": 78,
+          "question": "78.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q79",
+          "qNum": 79,
+          "question": "79.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-4",
+      "talkNum": 4,
+      "startQ": 80,
+      "endQ": 82,
+      "scenario": "Bài nói chuyện 4 (Câu 80 - 82)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q80",
+          "qNum": 80,
+          "question": "80.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q81",
+          "qNum": 81,
+          "question": "81.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q82",
+          "qNum": 82,
+          "question": "82.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-5",
+      "talkNum": 5,
+      "startQ": 83,
+      "endQ": 85,
+      "scenario": "Bài nói chuyện 5 (Câu 83 - 85)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q83",
+          "qNum": 83,
+          "question": "83.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q84",
+          "qNum": 84,
+          "question": "84.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q85",
+          "qNum": 85,
+          "question": "85.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-6",
+      "talkNum": 6,
+      "startQ": 86,
+      "endQ": 88,
+      "scenario": "Bài nói chuyện 6 (Câu 86 - 88)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q86",
+          "qNum": 86,
+          "question": "86.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q87",
+          "qNum": 87,
+          "question": "87.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q88",
+          "qNum": 88,
+          "question": "88.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-7",
+      "talkNum": 7,
+      "startQ": 89,
+      "endQ": 91,
+      "scenario": "Bài nói chuyện 7 (Câu 89 - 91)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q89",
+          "qNum": 89,
+          "question": "89.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q90",
+          "qNum": 90,
+          "question": "90.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q91",
+          "qNum": 91,
+          "question": "91.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-8",
+      "talkNum": 8,
+      "startQ": 92,
+      "endQ": 94,
+      "scenario": "Bài nói chuyện 8 (Câu 92 - 94)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q92",
+          "qNum": 92,
+          "question": "92.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q93",
+          "qNum": 93,
+          "question": "93.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q94",
+          "qNum": 94,
+          "question": "94.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-9",
+      "talkNum": 9,
+      "startQ": 95,
+      "endQ": 97,
+      "scenario": "Bài nói chuyện 9 (Câu 95 - 97)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q95",
+          "qNum": 95,
+          "question": "95.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q96",
+          "qNum": 96,
+          "question": "96.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q97",
+          "qNum": 97,
+          "question": "97.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-talk-10",
+      "talkNum": 10,
+      "startQ": 98,
+      "endQ": 100,
+      "scenario": "Bài nói chuyện 10 (Câu 98 - 100)",
+      "audioScript": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p4-q98",
+          "qNum": 98,
+          "question": "98.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q99",
+          "qNum": 99,
+          "question": "99.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p4-q100",
+          "qNum": 100,
+          "question": "100.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "part5": [
+    {
+      "id": "toeic-lr-sample-t3-p5-101",
+      "qNum": 101,
+      "question": "101.",
+      "options": [],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-102",
+      "qNum": 102,
+      "question": "102.",
+      "options": [],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-103",
+      "qNum": 103,
+      "question": "103.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-104",
+      "qNum": 104,
+      "question": "104.",
+      "options": [],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-105",
+      "qNum": 105,
+      "question": "105.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-106",
+      "qNum": 106,
+      "question": "106.",
+      "options": [],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-107",
+      "qNum": 107,
+      "question": "107.",
+      "options": [],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-108",
+      "qNum": 108,
+      "question": "108.",
+      "options": [],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-109",
+      "qNum": 109,
+      "question": "109.",
+      "options": [],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-110",
+      "qNum": 110,
+      "question": "110.",
+      "options": [],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-111",
+      "qNum": 111,
+      "question": "111.",
+      "options": [],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-112",
+      "qNum": 112,
+      "question": "112.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-113",
+      "qNum": 113,
+      "question": "113.",
+      "options": [],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-114",
+      "qNum": 114,
+      "question": "114.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-115",
+      "qNum": 115,
+      "question": "115.",
+      "options": [],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-116",
+      "qNum": 116,
+      "question": "116.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-117",
+      "qNum": 117,
+      "question": "117.",
+      "options": [],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-118",
+      "qNum": 118,
+      "question": "118.",
+      "options": [],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-119",
+      "qNum": 119,
+      "question": "119.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-120",
+      "qNum": 120,
+      "question": "120.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-121",
+      "qNum": 121,
+      "question": "121.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-122",
+      "qNum": 122,
+      "question": "122.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-123",
+      "qNum": 123,
+      "question": "123.",
+      "options": [],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-124",
+      "qNum": 124,
+      "question": "124.",
+      "options": [],
+      "correctKey": "D",
+      "correctIndex": 3,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-125",
+      "qNum": 125,
+      "question": "125.",
+      "options": [],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-126",
+      "qNum": 126,
+      "question": "126.",
+      "options": [],
+      "correctKey": "A",
+      "correctIndex": 0,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-127",
+      "qNum": 127,
+      "question": "127.",
+      "options": [],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-128",
+      "qNum": 128,
+      "question": "128.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-129",
+      "qNum": 129,
+      "question": "129.",
+      "options": [],
+      "correctKey": "B",
+      "correctIndex": 1,
+      "explanation": ""
+    },
+    {
+      "id": "toeic-lr-sample-t3-p5-130",
+      "qNum": 130,
+      "question": "130.",
+      "options": [],
+      "correctKey": "C",
+      "correctIndex": 2,
+      "explanation": ""
+    }
+  ],
+  "part6": [
+    {
+      "id": "toeic-lr-sample-t3-p6-pass-1",
+      "passageNum": 1,
+      "startQ": 131,
+      "endQ": 134,
+      "title": "Đoạn văn 1 (Câu 131 - 134)",
+      "text": "",
+      "textHtml": "",
+      "textVi": "",
+      "blanks": [
+        {
+          "id": "toeic-lr-sample-t3-p6-q131",
+          "qNum": 131,
+          "blankIndex": 131,
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q132",
+          "qNum": 132,
+          "blankIndex": 132,
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q133",
+          "qNum": 133,
+          "blankIndex": 133,
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q134",
+          "qNum": 134,
+          "blankIndex": 134,
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p6-pass-2",
+      "passageNum": 2,
+      "startQ": 135,
+      "endQ": 138,
+      "title": "Đoạn văn 2 (Câu 135 - 138)",
+      "text": "",
+      "textHtml": "",
+      "textVi": "",
+      "blanks": [
+        {
+          "id": "toeic-lr-sample-t3-p6-q135",
+          "qNum": 135,
+          "blankIndex": 135,
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q136",
+          "qNum": 136,
+          "blankIndex": 136,
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q137",
+          "qNum": 137,
+          "blankIndex": 137,
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q138",
+          "qNum": 138,
+          "blankIndex": 138,
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p6-pass-3",
+      "passageNum": 3,
+      "startQ": 139,
+      "endQ": 142,
+      "title": "Đoạn văn 3 (Câu 139 - 142)",
+      "text": "",
+      "textHtml": "",
+      "textVi": "A. You must be good with animals. B. Our company is committed to providing the best floral arrangements for our clients, no matter what their needs. C. We use the best fabrics in our designs. D. All people love our commitment to safety.",
+      "blanks": [
+        {
+          "id": "toeic-lr-sample-t3-p6-q139",
+          "qNum": 139,
+          "blankIndex": 139,
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q140",
+          "qNum": 140,
+          "blankIndex": 140,
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q141",
+          "qNum": 141,
+          "blankIndex": 141,
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q142",
+          "qNum": 142,
+          "blankIndex": 142,
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p6-pass-4",
+      "passageNum": 4,
+      "startQ": 143,
+      "endQ": 146,
+      "title": "Đoạn văn 4 (Câu 143 - 146)",
+      "text": "",
+      "textHtml": "",
+      "textVi": "",
+      "blanks": [
+        {
+          "id": "toeic-lr-sample-t3-p6-q143",
+          "qNum": 143,
+          "blankIndex": 143,
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q144",
+          "qNum": 144,
+          "blankIndex": 144,
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q145",
+          "qNum": 145,
+          "blankIndex": 145,
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p6-q146",
+          "qNum": 146,
+          "blankIndex": 146,
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "part7": [
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-1",
+      "passageNum": 1,
+      "startQ": 147,
+      "endQ": 148,
+      "type": "Single Passage (Câu 147 - 148)",
+      "title": "Bài đọc 1 (Câu 147 - 148)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q147",
+          "qNum": 147,
+          "question": "147.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q148",
+          "qNum": 148,
+          "question": "148.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-2",
+      "passageNum": 2,
+      "startQ": 149,
+      "endQ": 150,
+      "type": "Single Passage (Câu 149 - 150)",
+      "title": "Bài đọc 2 (Câu 149 - 150)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q149",
+          "qNum": 149,
+          "question": "149.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q150",
+          "qNum": 150,
+          "question": "150.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-3",
+      "passageNum": 3,
+      "startQ": 151,
+      "endQ": 152,
+      "type": "Single Passage (Câu 151 - 152)",
+      "title": "Bài đọc 3 (Câu 151 - 152)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q151",
+          "qNum": 151,
+          "question": "151.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q152",
+          "qNum": 152,
+          "question": "152.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-4",
+      "passageNum": 4,
+      "startQ": 153,
+      "endQ": 154,
+      "type": "Single Passage (Câu 153 - 154)",
+      "title": "Bài đọc 4 (Câu 153 - 154)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q153",
+          "qNum": 153,
+          "question": "153.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q154",
+          "qNum": 154,
+          "question": "154.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-5",
+      "passageNum": 5,
+      "startQ": 155,
+      "endQ": 157,
+      "type": "Single Passage (Câu 155 - 157)",
+      "title": "Bài đọc 5 (Câu 155 - 157)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q155",
+          "qNum": 155,
+          "question": "155.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q156",
+          "qNum": 156,
+          "question": "156.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q157",
+          "qNum": 157,
+          "question": "157.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-6",
+      "passageNum": 6,
+      "startQ": 158,
+      "endQ": 160,
+      "type": "Single Passage (Câu 158 - 160)",
+      "title": "Bài đọc 6 (Câu 158 - 160)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q158",
+          "qNum": 158,
+          "question": "158.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q159",
+          "qNum": 159,
+          "question": "159.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q160",
+          "qNum": 160,
+          "question": "160.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-7",
+      "passageNum": 7,
+      "startQ": 161,
+      "endQ": 164,
+      "type": "Single Passage (Câu 161 - 164)",
+      "title": "Bài đọc 7 (Câu 161 - 164)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q161",
+          "qNum": 161,
+          "question": "161.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q162",
+          "qNum": 162,
+          "question": "162.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q163",
+          "qNum": 163,
+          "question": "163.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q164",
+          "qNum": 164,
+          "question": "164.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-8",
+      "passageNum": 8,
+      "startQ": 165,
+      "endQ": 167,
+      "type": "Single Passage (Câu 165 - 167)",
+      "title": "Bài đọc 8 (Câu 165 - 167)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q165",
+          "qNum": 165,
+          "question": "165.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q166",
+          "qNum": 166,
+          "question": "166.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q167",
+          "qNum": 167,
+          "question": "167.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-9",
+      "passageNum": 9,
+      "startQ": 168,
+      "endQ": 171,
+      "type": "Single Passage (Câu 168 - 171)",
+      "title": "Bài đọc 9 (Câu 168 - 171)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q168",
+          "qNum": 168,
+          "question": "168.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q169",
+          "qNum": 169,
+          "question": "169.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q170",
+          "qNum": 170,
+          "question": "170.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q171",
+          "qNum": 171,
+          "question": "171.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-10",
+      "passageNum": 10,
+      "startQ": 172,
+      "endQ": 175,
+      "type": "Single Passage (Câu 172 - 175)",
+      "title": "Bài đọc 10 (Câu 172 - 175)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q172",
+          "qNum": 172,
+          "question": "172.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q173",
+          "qNum": 173,
+          "question": "173.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q174",
+          "qNum": 174,
+          "question": "174.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q175",
+          "qNum": 175,
+          "question": "175.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-11",
+      "passageNum": 11,
+      "startQ": 176,
+      "endQ": 180,
+      "type": "Double/Triple Passage (Câu 176 - 180)",
+      "title": "Bài đọc 11 (Câu 176 - 180)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q176",
+          "qNum": 176,
+          "question": "176.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q177",
+          "qNum": 177,
+          "question": "177.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q178",
+          "qNum": 178,
+          "question": "178.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q179",
+          "qNum": 179,
+          "question": "179.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q180",
+          "qNum": 180,
+          "question": "180.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-12",
+      "passageNum": 12,
+      "startQ": 181,
+      "endQ": 185,
+      "type": "Double/Triple Passage (Câu 181 - 185)",
+      "title": "Bài đọc 12 (Câu 181 - 185)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q181",
+          "qNum": 181,
+          "question": "181.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q182",
+          "qNum": 182,
+          "question": "182.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q183",
+          "qNum": 183,
+          "question": "183.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q184",
+          "qNum": 184,
+          "question": "184.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q185",
+          "qNum": 185,
+          "question": "185.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-13",
+      "passageNum": 13,
+      "startQ": 186,
+      "endQ": 190,
+      "type": "Double/Triple Passage (Câu 186 - 190)",
+      "title": "Bài đọc 13 (Câu 186 - 190)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q186",
+          "qNum": 186,
+          "question": "186.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q187",
+          "qNum": 187,
+          "question": "187.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q188",
+          "qNum": 188,
+          "question": "188.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q189",
+          "qNum": 189,
+          "question": "189.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q190",
+          "qNum": 190,
+          "question": "190.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-14",
+      "passageNum": 14,
+      "startQ": 191,
+      "endQ": 195,
+      "type": "Double/Triple Passage (Câu 191 - 195)",
+      "title": "Bài đọc 14 (Câu 191 - 195)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q191",
+          "qNum": 191,
+          "question": "191.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q192",
+          "qNum": 192,
+          "question": "192.",
+          "options": [],
+          "correctKey": "A",
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q193",
+          "qNum": 193,
+          "question": "193.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q194",
+          "qNum": 194,
+          "question": "194.",
+          "options": [],
+          "correctKey": "D",
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q195",
+          "qNum": 195,
+          "question": "195.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "toeic-lr-sample-t3-p7-pass-15",
+      "passageNum": 15,
+      "startQ": 196,
+      "endQ": 200,
+      "type": "Double/Triple Passage (Câu 196 - 200)",
+      "title": "Bài đọc 15 (Câu 196 - 200)",
+      "content": "",
+      "contentHtml": "",
+      "contentVi": "",
+      "imageUrl": "",
+      "questions": [
+        {
+          "id": "toeic-lr-sample-t3-p7-q196",
+          "qNum": 196,
+          "question": "196.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q197",
+          "qNum": 197,
+          "question": "197.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q198",
+          "qNum": 198,
+          "question": "198.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q199",
+          "qNum": 199,
+          "question": "199.",
+          "options": [],
+          "correctKey": "B",
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "toeic-lr-sample-t3-p7-q200",
+          "qNum": 200,
+          "question": "200.",
+          "options": [],
+          "correctKey": "C",
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

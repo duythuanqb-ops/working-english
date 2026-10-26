@@ -1,0 +1,1363 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2025-reading-test-6",
+  "testNum": 11,
+  "collection": "Bộ đề Parroto IELTS 2025",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2025 - Reading Test 6",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 38,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab77d13419a422a38cfc53e",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-6</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-6</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab77d13419a422a38cfc53f",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 7-13</strong></p><p>Complete the table below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h4 style=\"text-align:center\">The study carried out by Rahim's team</h4><table border=\"1\" style=\"border-collapse:collapse;width:100%\"><tbody><tr><td><strong>Aim</strong></td><td>to find out how much the owls hunt over rice fields and what they catch</td></tr><tr><td><strong>Method</strong></td><td>GPS tracking of owls' movements at night<br>analysis of the remains in owl [7]</td></tr><tr><td><strong>Findings</strong></td><td>the owls:<br>- hunted mostly over fields where the rice was nearly ready for [8]<br>- ate mainly rats, but also crop pests such as [9]<br>- may reduce the risk of a disease that is spread through rats' [10]<br>local attitudes to owls are mixed:<br>- some villagers believe the owl's call brings [11]<br>- owls nesting in roofs are unpopular because of the noise and the [12]<br>- farmers who have seen owls hunting value them highly</td></tr><tr><td><strong>Recommendation</strong></td><td>farmers should cooperate with their [13] when putting up nest boxes</td></tr></tbody></table>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab77d14419a422a38cfc545",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-18</strong></p><p>Reading Passage 2 has six sections, <strong>A-F</strong>.</p><p>Which section contains the following information?</p><p>Write the correct letter, <strong>A-F</strong>, in boxes 14-18 on your answer sheet.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab77d14419a422a38cfc546",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 19-22</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD</strong> from the passage for each answer.</p>",
+      "content": "<h4 style=\"text-align:center\">Following families through the records</h4><p>The database allows the team to trace people from their [19] until the end of their lives, and to follow families through seven generations. For example, twin brothers born in 1853 were both measured by the army, and the one who had gone to work in a [20] was the shorter of the two. In 1831, a widow called Brita Holm was taken to court because she would not let her children be [21] against smallpox. Cases like this show that people were often suspicious of new public [22] measures.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab77d14419a422a38cfc547",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 23-26</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab77d14419a422a38cfc54c",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-32</strong></p><p>Reading Passage 3 has eight paragraphs, <strong>A-H</strong>.</p><p>Which paragraph contains the following information?</p><p>Write the correct letter, <strong>A-H</strong>, in boxes 27-32 on your answer sheet.</p><p><strong>NB</strong> You may use any letter more than once.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab77d14419a422a38cfc54d",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 33-36</strong></p><p>Do the following statements agree with the information given in Reading Passage 3?</p><p>In boxes <strong>33-36</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab77d14419a422a38cfc54e",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 37-40</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h4 style=\"text-align:center\">How the research was carried out</h4><p>The researchers started with standard tests, including one that measured how much air Varga's [37] could hold and another that assessed how well she copes with low [38]. Her results were largely normal. However, an ultrasound scan showed that her [39] was much larger than average. In a further test, her heart rate fell to fewer than 30 [40] a minute while she held her breath.</p>",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab77d14419a422a38cfc550",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53e",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 1: &#39; rats destroy more rice each year than all insect pests combined &#39;. The statement says the opposite."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc551",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53e",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Clearing forest for farmland &#39; has actually increased its numbers &#39;, although it has been disastrous for other species (the trap)."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc552",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53e",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN We learn where Rahim works and what she studies, but nothing about who funded the research."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc553",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53e",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE The barn owl &#39;hunts mainly by sound&#39; and &#39; can locate a rat moving through dense vegetation even in complete darkness &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc554",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53e",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Both places are mentioned (&#39;in the roofs of barns and houses or in wooden boxes&#39;), but no preference between them is stated."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc555",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53e",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Rahim: &#39; a single breeding pair, together with their young, can take well over a thousand rodents in a year &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc556",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "pellets",
+      "acceptedAnswers": [
+        "pellets"
+      ],
+      "explanation": "Answer: pellets The team &#39;collected more than 2,000 pellets &#39; and identified the remains inside them."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc557",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "harvest",
+      "acceptedAnswers": [
+        "harvest"
+      ],
+      "explanation": "Answer: harvest &#39;They were most active over fields where the rice was close to harvest &#39;, not over recently planted fields."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc558",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "locusts",
+      "acceptedAnswers": [
+        "locusts"
+      ],
+      "explanation": "Answer: locusts &#39;large insects such as locusts , which can themselves damage crops&#39;. Mice, shrews and frogs are not described as crop pests."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc559",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "urine",
+      "acceptedAnswers": [
+        "urine"
+      ],
+      "explanation": "Answer: urine Leptospirosis is caught &#39;from water contaminated with the animals&#39; urine &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc55a",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "misfortune",
+      "acceptedAnswers": [
+        "misfortune"
+      ],
+      "explanation": "Answer: misfortune &#39;its harsh screech at night is still believed to bring misfortune &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc55b",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "mess",
+      "acceptedAnswers": [
+        "mess"
+      ],
+      "explanation": "Answer: mess Families with nesting owls &#39;often complain about the noise and the mess &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc55c",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab77d13419a422a38cfc53f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "neighbours / neighbors",
+      "acceptedAnswers": [
+        "neighbours",
+        "neighbors"
+      ],
+      "explanation": "Answer: neighbours &#39;nest boxes are most effective when farmers work together with their neighbours &#39;, because one owl hunts over the land of many families."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc55d",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc545",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Brita Holm refused to have her children vaccinated, which the law required, and &#39; she was fined a sum equal to two weeks&#39; wages for a farm labourer &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc55e",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc545",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A Dahl &#39; first came across the doctors&#39; notebooks in a regional archive &#39; as a doctoral student. Section C describes the notebooks&#39; contents, not where they were found."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc55f",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc545",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F &#39;Sweden is an ideal place to study this question&#39; because &#39; the country has kept national population statistics since 1749 &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc560",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc545",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C At military service, &#39; officers noted their height, weight and chest measurement, the state of their eyesight and teeth &#39;. Section D mentions the twins being measured but gives no list of details."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc561",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc545",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E &#39; One approach is to compare households with similar incomes but different surroundings &#39; – then any difference &#39;cannot be explained by money alone&#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc562",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc546",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "baptism",
+      "acceptedAnswers": [
+        "baptism"
+      ],
+      "explanation": "Answer: baptism &#39;We can follow individuals from baptism to burial&#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc563",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc546",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "sawmill",
+      "acceptedAnswers": [
+        "sawmill"
+      ],
+      "explanation": "Answer: sawmill Per &#39;had left at fifteen to work in a sawmill &#39; and was almost five centimetres shorter than Olof, who stayed on the farm."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc564",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc546",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "vaccinated",
+      "acceptedAnswers": [
+        "vaccinated"
+      ],
+      "explanation": "Answer: vaccinated She refused &#39;to allow her three children to be vaccinated against smallpox&#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc565",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc546",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "health",
+      "acceptedAnswers": [
+        "health"
+      ],
+      "explanation": "Answer: health The case &#39;reflects the suspicion with which many people regarded new public health measures&#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc566",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc547",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "The British economy grew more slowly than the American economy in the early nineteenth century."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Adult height can indicate the conditions a person experienced in childhood."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Average heights in the United States rose steadily between 1830 and 1860."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Being in good health can help people to earn more."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "Most economists no longer accept height as a measure of health."
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B, D &#39; adult height reflects how well a person was fed and how much illness they suffered as a child &#39; (B); &#39; healthy workers earn more &#39; (D). Britain grew faster than any other country (A); US heights fell (C); economists treat height as &#39;a useful measure&#39; (E)."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc567",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab77d14419a422a38cfc547",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It was one of the wealthiest countries in Europe."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Its death rates began to fall before it became industrialised."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Its population fell as a result of emigration."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It industrialised earlier than most other European countries."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "A well-known writer linked its population growth partly to a particular crop."
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B, E Sweden &#39;industrialised relatively late, yet its death rates ... began to fall early in the century &#39; (B); Tegnér put population growth down to &#39; peace, vaccination and potatoes &#39; (E). It was among the poorer countries (A, D); the population was growing (C)."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc568",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Researchers want to understand how she survives without air: &#39; What is so remarkable about Ines is the amount of hard physical work she can do while her body is running short of oxygen. &#39;"
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc569",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E The diving reflex: &#39; the heart slows, the blood vessels in the arms and legs narrow, and blood is directed towards the brain and heart &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc56a",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D The Japanese ama &#39; have kept their tradition alive for many centuries &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc56b",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H &#39;Records are nice, but they have never been what matters to me ... What I love is the silence down there &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc56c",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F Hendry: &#39; If you met her on land, you would have no idea what she can do underwater. &#39;"
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc56d",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54c",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E Near the surface the oxygen in the lungs &#39;becomes less concentrated&#39;; &#39; This is why most blackouts happen in the last few metres of the ascent &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc56e",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Unlike divers who wear long fins, &#39; Varga will use nothing but her own arms and legs &#39;, in &#39;constant weight without fins&#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc56f",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN She &#39;spends her time restoring old wooden fishing boats&#39;, but no prizes for this are mentioned."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc570",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Hendry &#39;leads the institute&#39;s diving research unit&#39;, but the passage does not compare it with other groups."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc571",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54d",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE &#39; Every human being has some of the physical equipment needed for free diving. &#39; The diving reflex happens when the face is put into cold water, and &#39;Most people have felt this&#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc572",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "lungs",
+      "acceptedAnswers": [
+        "lungs"
+      ],
+      "explanation": "Answer: lungs &#39;These measured how much air her lungs could hold&#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc573",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "temperatures / temperature",
+      "acceptedAnswers": [
+        "temperatures",
+        "temperature"
+      ],
+      "explanation": "Answer: temperatures &#39;her ability to cope with low temperatures &#39;."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc574",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "spleen",
+      "acceptedAnswers": [
+        "spleen"
+      ],
+      "explanation": "Answer: spleen &#39;Varga&#39;s spleen was around 50 per cent larger than average&#39;. Her lungs were only slightly above average (trap)."
+    },
+    {
+      "qid": "6ab77d14419a422a38cfc575",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab77d14419a422a38cfc54e",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "beats",
+      "acceptedAnswers": [
+        "beats"
+      ],
+      "explanation": "Answer: beats &#39;her heart rate fell to fewer than 30 beats a minute&#39;."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h4 style=\"text-align:center\">The study carried out by Rahim's team</h4><table border=\"1\" style=\"border-collapse:collapse;width:100%\"><tbody><tr><td><strong>Aim</strong></td><td>to find out how much the owls hunt over rice fields and what they catch</td></tr><tr><td><strong>Method</strong></td><td>GPS tracking of owls' movements at night<br>analysis of the remains in owl [7]</td></tr><tr><td><strong>Findings</strong></td><td>the owls:<br>- hunted mostly over fields where the rice was nearly ready for [8]<br>- ate mainly rats, but also crop pests such as [9]<br>- may reduce the risk of a disease that is spread through rats' [10]<br>local attitudes to owls are mixed:<br>- some villagers believe the owl's call brings [11]<br>- owls nesting in roofs are unpopular because of the noise and the [12]<br>- farmers who have seen owls hunting value them highly</td></tr><tr><td><strong>Recommendation</strong></td><td>farmers should cooperate with their [13] when putting up nest boxes</td></tr></tbody></table>",
+        "groups": [
+          {
+            "id": "6ab77d13419a422a38cfc53e",
+            "directions": "<p><strong>Questions 1-6</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-6</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc550",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 1: &#39; rats destroy more rice each year than all insect pests combined &#39;. The statement says the opposite."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc551",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Clearing forest for farmland &#39; has actually increased its numbers &#39;, although it has been disastrous for other species (the trap)."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc552",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN We learn where Rahim works and what she studies, but nothing about who funded the research."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc553",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE The barn owl &#39;hunts mainly by sound&#39; and &#39; can locate a rat moving through dense vegetation even in complete darkness &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc554",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Both places are mentioned (&#39;in the roofs of barns and houses or in wooden boxes&#39;), but no preference between them is stated."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc555",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Rahim: &#39; a single breeding pair, together with their young, can take well over a thousand rodents in a year &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab77d13419a422a38cfc53f",
+            "directions": "<p><strong>Questions 7-13</strong></p><p>Complete the table below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h4 style=\"text-align:center\">The study carried out by Rahim's team</h4><table border=\"1\" style=\"border-collapse:collapse;width:100%\"><tbody><tr><td><strong>Aim</strong></td><td>to find out how much the owls hunt over rice fields and what they catch</td></tr><tr><td><strong>Method</strong></td><td>GPS tracking of owls' movements at night<br>analysis of the remains in owl [7]</td></tr><tr><td><strong>Findings</strong></td><td>the owls:<br>- hunted mostly over fields where the rice was nearly ready for [8]<br>- ate mainly rats, but also crop pests such as [9]<br>- may reduce the risk of a disease that is spread through rats' [10]<br>local attitudes to owls are mixed:<br>- some villagers believe the owl's call brings [11]<br>- owls nesting in roofs are unpopular because of the noise and the [12]<br>- farmers who have seen owls hunting value them highly</td></tr><tr><td><strong>Recommendation</strong></td><td>farmers should cooperate with their [13] when putting up nest boxes</td></tr></tbody></table>",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc556",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pellets",
+                "acceptedAnswers": [
+                  "pellets"
+                ],
+                "explanation": "Answer: pellets The team &#39;collected more than 2,000 pellets &#39; and identified the remains inside them."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc557",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "harvest",
+                "acceptedAnswers": [
+                  "harvest"
+                ],
+                "explanation": "Answer: harvest &#39;They were most active over fields where the rice was close to harvest &#39;, not over recently planted fields."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc558",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "locusts",
+                "acceptedAnswers": [
+                  "locusts"
+                ],
+                "explanation": "Answer: locusts &#39;large insects such as locusts , which can themselves damage crops&#39;. Mice, shrews and frogs are not described as crop pests."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc559",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "urine",
+                "acceptedAnswers": [
+                  "urine"
+                ],
+                "explanation": "Answer: urine Leptospirosis is caught &#39;from water contaminated with the animals&#39; urine &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc55a",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "misfortune",
+                "acceptedAnswers": [
+                  "misfortune"
+                ],
+                "explanation": "Answer: misfortune &#39;its harsh screech at night is still believed to bring misfortune &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc55b",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "mess",
+                "acceptedAnswers": [
+                  "mess"
+                ],
+                "explanation": "Answer: mess Families with nesting owls &#39;often complain about the noise and the mess &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc55c",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "neighbours / neighbors",
+                "acceptedAnswers": [
+                  "neighbours",
+                  "neighbors"
+                ],
+                "explanation": "Answer: neighbours &#39;nest boxes are most effective when farmers work together with their neighbours &#39;, because one owl hunts over the land of many families."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<h4 style=\"text-align:center\">Following families through the records</h4><p>The database allows the team to trace people from their [19] until the end of their lives, and to follow families through seven generations. For example, twin brothers born in 1853 were both measured by the army, and the one who had gone to work in a [20] was the shorter of the two. In 1831, a widow called Brita Holm was taken to court because she would not let her children be [21] against smallpox. Cases like this show that people were often suspicious of new public [22] measures.</p>",
+        "groups": [
+          {
+            "id": "6ab77d14419a422a38cfc545",
+            "directions": "<p><strong>Questions 14-18</strong></p><p>Reading Passage 2 has six sections, <strong>A-F</strong>.</p><p>Which section contains the following information?</p><p>Write the correct letter, <strong>A-F</strong>, in boxes 14-18 on your answer sheet.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc55d",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Brita Holm refused to have her children vaccinated, which the law required, and &#39; she was fined a sum equal to two weeks&#39; wages for a farm labourer &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc55e",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A Dahl &#39; first came across the doctors&#39; notebooks in a regional archive &#39; as a doctoral student. Section C describes the notebooks&#39; contents, not where they were found."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc55f",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F &#39;Sweden is an ideal place to study this question&#39; because &#39; the country has kept national population statistics since 1749 &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc560",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C At military service, &#39; officers noted their height, weight and chest measurement, the state of their eyesight and teeth &#39;. Section D mentions the twins being measured but gives no list of details."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc561",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E &#39; One approach is to compare households with similar incomes but different surroundings &#39; – then any difference &#39;cannot be explained by money alone&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab77d14419a422a38cfc546",
+            "directions": "<p><strong>Questions 19-22</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h4 style=\"text-align:center\">Following families through the records</h4><p>The database allows the team to trace people from their [19] until the end of their lives, and to follow families through seven generations. For example, twin brothers born in 1853 were both measured by the army, and the one who had gone to work in a [20] was the shorter of the two. In 1831, a widow called Brita Holm was taken to court because she would not let her children be [21] against smallpox. Cases like this show that people were often suspicious of new public [22] measures.</p>",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc562",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "baptism",
+                "acceptedAnswers": [
+                  "baptism"
+                ],
+                "explanation": "Answer: baptism &#39;We can follow individuals from baptism to burial&#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc563",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "sawmill",
+                "acceptedAnswers": [
+                  "sawmill"
+                ],
+                "explanation": "Answer: sawmill Per &#39;had left at fifteen to work in a sawmill &#39; and was almost five centimetres shorter than Olof, who stayed on the farm."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc564",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "vaccinated",
+                "acceptedAnswers": [
+                  "vaccinated"
+                ],
+                "explanation": "Answer: vaccinated She refused &#39;to allow her three children to be vaccinated against smallpox&#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc565",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "health",
+                "acceptedAnswers": [
+                  "health"
+                ],
+                "explanation": "Answer: health The case &#39;reflects the suspicion with which many people regarded new public health measures&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab77d14419a422a38cfc547",
+            "directions": "<p><strong>Questions 23-26</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc566",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "The British economy grew more slowly than the American economy in the early nineteenth century."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Adult height can indicate the conditions a person experienced in childhood."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Average heights in the United States rose steadily between 1830 and 1860."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Being in good health can help people to earn more."
+                  },
+                  {
+                    "key": "E",
+                    "text": "Most economists no longer accept height as a measure of health."
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B, D &#39; adult height reflects how well a person was fed and how much illness they suffered as a child &#39; (B); &#39; healthy workers earn more &#39; (D). Britain grew faster than any other country (A); US heights fell (C); economists treat height as &#39;a useful measure&#39; (E)."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc567",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It was one of the wealthiest countries in Europe."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Its death rates began to fall before it became industrialised."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Its population fell as a result of emigration."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It industrialised earlier than most other European countries."
+                  },
+                  {
+                    "key": "E",
+                    "text": "A well-known writer linked its population growth partly to a particular crop."
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B, E Sweden &#39;industrialised relatively late, yet its death rates ... began to fall early in the century &#39; (B); Tegnér put population growth down to &#39; peace, vaccination and potatoes &#39; (E). It was among the poorer countries (A, D); the population was growing (C)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<h4 style=\"text-align:center\">How the research was carried out</h4><p>The researchers started with standard tests, including one that measured how much air Varga's [37] could hold and another that assessed how well she copes with low [38]. Her results were largely normal. However, an ultrasound scan showed that her [39] was much larger than average. In a further test, her heart rate fell to fewer than 30 [40] a minute while she held her breath.</p>",
+        "groups": [
+          {
+            "id": "6ab77d14419a422a38cfc54c",
+            "directions": "<p><strong>Questions 27-32</strong></p><p>Reading Passage 3 has eight paragraphs, <strong>A-H</strong>.</p><p>Which paragraph contains the following information?</p><p>Write the correct letter, <strong>A-H</strong>, in boxes 27-32 on your answer sheet.</p><p><strong>NB</strong> You may use any letter more than once.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc568",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Researchers want to understand how she survives without air: &#39; What is so remarkable about Ines is the amount of hard physical work she can do while her body is running short of oxygen. &#39;"
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc569",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E The diving reflex: &#39; the heart slows, the blood vessels in the arms and legs narrow, and blood is directed towards the brain and heart &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc56a",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D The Japanese ama &#39; have kept their tradition alive for many centuries &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc56b",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H &#39;Records are nice, but they have never been what matters to me ... What I love is the silence down there &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc56c",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F Hendry: &#39; If you met her on land, you would have no idea what she can do underwater. &#39;"
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc56d",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E Near the surface the oxygen in the lungs &#39;becomes less concentrated&#39;; &#39; This is why most blackouts happen in the last few metres of the ascent &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab77d14419a422a38cfc54d",
+            "directions": "<p><strong>Questions 33-36</strong></p><p>Do the following statements agree with the information given in Reading Passage 3?</p><p>In boxes <strong>33-36</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc56e",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Unlike divers who wear long fins, &#39; Varga will use nothing but her own arms and legs &#39;, in &#39;constant weight without fins&#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc56f",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN She &#39;spends her time restoring old wooden fishing boats&#39;, but no prizes for this are mentioned."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc570",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Hendry &#39;leads the institute&#39;s diving research unit&#39;, but the passage does not compare it with other groups."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc571",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE &#39; Every human being has some of the physical equipment needed for free diving. &#39; The diving reflex happens when the face is put into cold water, and &#39;Most people have felt this&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab77d14419a422a38cfc54e",
+            "directions": "<p><strong>Questions 37-40</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h4 style=\"text-align:center\">How the research was carried out</h4><p>The researchers started with standard tests, including one that measured how much air Varga's [37] could hold and another that assessed how well she copes with low [38]. Her results were largely normal. However, an ultrasound scan showed that her [39] was much larger than average. In a further test, her heart rate fell to fewer than 30 [40] a minute while she held her breath.</p>",
+            "questions": [
+              {
+                "qid": "6ab77d14419a422a38cfc572",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "lungs",
+                "acceptedAnswers": [
+                  "lungs"
+                ],
+                "explanation": "Answer: lungs &#39;These measured how much air her lungs could hold&#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc573",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "temperatures / temperature",
+                "acceptedAnswers": [
+                  "temperatures",
+                  "temperature"
+                ],
+                "explanation": "Answer: temperatures &#39;her ability to cope with low temperatures &#39;."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc574",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "spleen",
+                "acceptedAnswers": [
+                  "spleen"
+                ],
+                "explanation": "Answer: spleen &#39;Varga&#39;s spleen was around 50 per cent larger than average&#39;. Her lungs were only slightly above average (trap)."
+              },
+              {
+                "qid": "6ab77d14419a422a38cfc575",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "beats",
+                "acceptedAnswers": [
+                  "beats"
+                ],
+                "explanation": "Answer: beats &#39;her heart rate fell to fewer than 30 beats a minute&#39;."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

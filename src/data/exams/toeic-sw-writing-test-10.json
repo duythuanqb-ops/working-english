@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-10",
+  "testNum": 10,
+  "title": "TOEIC SW Writing Test 10 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-10/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-10/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-10/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-10/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-10/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: M. White, Manager, Digby's Fashion Outlet\nTo: L. Partridge\nSubject: Something wrong?\nSent: December 13, 4:21 PM.\nDear Ms. L. Partridge,\nI received your phone message this morning about there being some problems with the dress you bought from our store last month. Please tell me about these issues in more detail whenever it is convenient.\nFaithfully,\nM. White\nDirections: Respond to the email as if you are L. Partridge. In your email, outline THREE problems with the dress.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: M. White, Manager, Digby's Fashion Outlet</span></p><p><span>To: L. Partridge</span></p><p><span>Subject: Something wrong?</span></p><p><span>Sent: December 13, 4:21 PM.</span></p><p><span>Dear Ms. L. Partridge,</span></p><p><span>I received your phone message this morning about there being some problems with the dress you bought from our store last month. Please tell me about these issues in more detail whenever it is convenient.</span></p><p><span>Faithfully,</span></p><p><span>M. White</span></p><p><span>Directions: Respond to the email as if you are L. Partridge. In your email, outline THREE problems with the dress.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: D. Walker, Director, Peters Shipping\nTo: Z. Lee, Purchasing Manager, Norville Supplies\nSubject: Our service\nSent: January 17, 4:12 PM.\nDear Mr. Lee,\nI understand you tried to contact me this morning to discuss improvements you believe we could make to our ser\nvices. If you'd still like to give me some feedback on how\nwe could perform better, please respond to this email.\nYours,\nD. Walker\nDirections: Respond to the email as if you are Z. Lee. In your email, make TWO suggestions about how the company could improve its services.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: D. Walker, Director, Peters Shipping</span></p><p><span>To: Z. Lee, Purchasing Manager, Norville Supplies</span></p><p><span>Subject: Our service</span></p><p><span>Sent: January 17, 4:12 PM.</span></p><p><span>Dear Mr. Lee, </span></p><p><span>I understand you tried to contact me this morning to discuss improvements you believe we could make to our ser</span><span>vices. If you'd still like to give me some feedback on how </span><span>we could perform better, please respond to this email.</span></p><p><span>Yours,</span></p><p><span>D. Walker</span></p><p><span>Directions: Respond to the email as if you are Z. Lee. In your email, make TWO suggestions about how the company could improve its services.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays Managing a team can be a very difficult job. In your opinion, what qualities make a good boss? Use reasons and examples to support your answer."
+    }
+  ]
+}

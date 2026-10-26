@@ -13,5 +13,12 @@ contextBridge.exposeInMainWorld('electronAPI', {
     ipcRenderer.on('quick-word-added', handler);
     return () => ipcRenderer.removeListener('quick-word-added', handler);
   },
-  sendQuickWord: (wordData) => ipcRenderer.send('save-quick-word', wordData)
+  sendQuickWord: (wordData) => ipcRenderer.send('save-quick-word', wordData),
+  getExamMediaStatus: () => ipcRenderer.invoke('get-exam-media-status'),
+  downloadExamMedia: (type) => ipcRenderer.invoke('download-exam-media', type),
+  onExamMediaProgress: (callback) => {
+    const handler = (_event, data) => callback(data);
+    ipcRenderer.on('exam-media-progress', handler);
+    return () => ipcRenderer.removeListener('exam-media-progress', handler);
+  }
 });

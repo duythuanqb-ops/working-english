@@ -1,0 +1,1514 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2025-reading-test-1",
+  "testNum": 1,
+  "collection": "Bộ đề Parroto IELTS 2025",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2025 - Reading Test 1",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 40,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab6a5f1af8bd4d7fbd41703",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-4</strong></p><p>Reading Passage 1 has eight sections, <strong>A-H</strong>.</p><p>Which section contains the following information?</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f1af8bd4d7fbd41704",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 5-8</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">Packaging made from fungi</h3><p>Concern about plastic waste has led [5] to try making packaging from mycelium, the thread-like part of a mushroom. There are some problems with this material. For example, it can take in [6] from the air, so it cannot be used for many types of food. To make the packaging, fungal threads are combined with farm waste such as the [7] of hemp plants and left to grow in moulds. Compared with polystyrene, it uses much less [8] to produce, and it breaks down quickly in soil.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f1af8bd4d7fbd41705",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 9-13</strong></p><p>Look at the following statements (Questions 9-13) and the list of people below.</p><p>Match each statement with the correct person or people, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p><p><strong>NB</strong> You may use any letter more than once.</p><p><strong>List of People</strong><br>A &nbsp; Martin Hale<br>B &nbsp; Lena Berg<br>C &nbsp; Sarah Quinn<br>D &nbsp; Omar Siddiqui and Clare Dunn</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f2af8bd4d7fbd4170d",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-20</strong></p><p>Reading Passage 2 has seven paragraphs, <strong>A-G</strong>.</p><p>Choose the correct heading for each paragraph from the list of headings below.</p><p><strong>List of Headings</strong><br>i &nbsp; An impressive result in a long-distance trial<br>ii &nbsp; Poor marketing causes a decline in sales<br>iii &nbsp; The strengths and weaknesses of an early technology<br>iv &nbsp; A question for the present day<br>v &nbsp; Technical improvements lead to growing sales<br>vi &nbsp; An elegant vehicle wins public approval<br>vii &nbsp; Owners are disappointed by the car's performance<br>viii &nbsp; A cheaper rival takes over the market</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f2af8bd4d7fbd4170e",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 21-23</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f2af8bd4d7fbd4170f",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 24-26</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD AND/OR A NUMBER</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">The Detroit Electric</h3><p>In a well-known test, a Detroit Electric reportedly travelled [24] miles without needing to be recharged. However, sales declined during the 1920s, and when the company closed in [25], most of its customers were [26] people, many of whom were elderly.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f2af8bd4d7fbd41714",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-30</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f2af8bd4d7fbd41715",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 31-35</strong></p><p>Complete the summary using the list of phrases, <strong>A-I</strong>, below.</p><p>Write the correct letter, <strong>A-I</strong>, in boxes 31-35 on your answer sheet.</p><p>A &nbsp; frequent tests<br>B &nbsp; clear guidance<br>C &nbsp; group rewards<br>D &nbsp; unfamiliar problems<br>E &nbsp; weak foundations<br>F &nbsp; a full explanation<br>G &nbsp; extra homework<br>H &nbsp; a deeper understanding<br>I &nbsp; faster progress</p>",
+      "content": "<h3 style=\"text-align:center\">Research into productive failure</h3><p>Professor Nina Vogel found that students who struggled with a problem before being taught the method developed [31] of the ideas involved. The advantage was most obvious when students were asked to solve [32]. However, struggling only helped if it was followed by [33] from the teacher. Vogel also warns that the approach may not suit students with [34] in basic skills, and that teachers should give [35] about what students should do while they are struggling.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6a5f2af8bd4d7fbd41716",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 36-40</strong></p><p>Do the following statements agree with the views of the writer in Reading Passage 3?</p><p>In boxes <strong>36-40</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the views of the writer<br><strong>NO</strong> if the statement contradicts the views of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41718",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41703",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "G",
+      "acceptedAnswers": [],
+      "explanation": "Answer: G Section G: alternatives &#39;make use of materials that would otherwise be wasted&#39;, and &#39; Some bioplastics are made from the waste left over after sugar has been extracted from sugarcane &#39;. Section E mentions farm waste, but explains how fungal packaging is grown, not industrial by-products."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41719",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41703",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Section D: &#39; Mushroom-based packaging is already being produced in the United States, the Netherlands and the United Kingdom &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4171a",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41703",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Section C: &#39; the oil and gas from which most plastics are made are cheap and available in enormous quantities &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4171b",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41703",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F Section F: Berg says &#39; until they have been used successfully on a large scale... it will be hard to regard them as a genuine replacement for plastic &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4171c",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41704",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "designers",
+      "acceptedAnswers": [
+        "designers"
+      ],
+      "explanation": "Answer: designers Section D: &#39;Growing concern about plastic waste has encouraged designers to experiment with mycelium&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4171d",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41704",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "water",
+      "acceptedAnswers": [
+        "water"
+      ],
+      "explanation": "Answer: water Section E: &#39;The material can absorb water from its surroundings, which makes it unsuitable for many foods&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4171e",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41704",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "husks",
+      "acceptedAnswers": [
+        "husks"
+      ],
+      "explanation": "Answer: husks Section E: &#39;farm waste such as the husks of hemp plants is mixed with fungal threads&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4171f",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41704",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "energy",
+      "acceptedAnswers": [
+        "energy"
+      ],
+      "explanation": "Answer: energy Section E: &#39;Unlike polystyrene, it requires very little energy to make&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41720",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41705",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (Sarah Quinn) Section G: Quinn notes that &#39;the benefits are not always as clear as they seem&#39;, and if raw materials are shipped far, &#39; much of the environmental advantage may be lost &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41721",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41705",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Martin Hale) Section C: &#39; Finding another material that offers all of those benefits at the same time is going to be extremely difficult. &#39;"
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41722",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41705",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (Lena Berg) Section F: Berg reports a sharp rise in orders for paper packaging, &#39; with customers&#39; worries about plastic pollution as the main driving force &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41723",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41705",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D (Siddiqui and Dunn) Section H: alternatives have not achieved widespread use; &#39; They are generally more expensive than conventional plastic &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41724",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab6a5f1af8bd4d7fbd41705",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (Martin Hale) Section B: &#39; The problem is the sheer quantity of plastic that we use once and then throw away. It is the scale that makes it so damaging.&#39;"
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41725",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170d",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "iii",
+      "acceptedAnswers": [],
+      "explanation": "Answer: iii Paragraph A lists the attractions of electric cars (&#39;quiet... no fumes... no hand crank&#39;) and their &#39;serious weaknesses&#39; (heavy batteries, limited range)."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41726",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170d",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "viii",
+      "acceptedAnswers": [],
+      "explanation": "Answer: viii Mass production made the Model T cheap, petrol became cheap, and &#39; Within a few years, petrol cars dominated the market. &#39;"
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41727",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170d",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "vi",
+      "acceptedAnswers": [],
+      "explanation": "Answer: vi The cars had &#39;elegant, closed bodies&#39;, and &#39; Newspapers and magazines praised the car for its quietness and cleanliness&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41728",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170d",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "v",
+      "acceptedAnswers": [],
+      "explanation": "Answer: v The company improved the car (Edison battery, speed, range), and &#39; Orders rose steadily &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41729",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170d",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "vii",
+      "acceptedAnswers": [],
+      "explanation": "Answer: vii For many owners, &#39; the reality was less satisfactory than the advertising had suggested &#39;: no charging stations, costly batteries, reduced range in winter."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4172a",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170d",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "i",
+      "acceptedAnswers": [],
+      "explanation": "Answer: i &#39;In one widely reported test, a Detroit Electric was said to have travelled 211 miles on a single charge &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4172b",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170d",
+      "type": "MATCHING_HEADINGS",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "iv",
+      "acceptedAnswers": [],
+      "explanation": "Answer: iv As electric vehicles return, &#39; it is tempting to wonder how different the history of transport might have been &#39;, a question relevant today."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4172c",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170e",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Their popularity did not last long."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "They were more dangerous to drive."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Few companies were willing to make them."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "They could not be used on the new roads."
+          }
+        }
+      ],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A Paragraph B opens: &#39; The advantage did not last. &#39; Within a few years petrol cars dominated. The hand crank on petrol cars was the dangerous feature (B)."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4172d",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170e",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "copied the design of an existing electric car."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "moved his factory to a new city."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "made use of his experience in a previous business."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "asked Henry Ford for financial support."
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Anderson had made horse-drawn carriages, and &#39; drew heavily on his experience of carriage-making &#39;. Ford&#39;s wife owned a car (D is not stated)."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4172e",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170e",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "increased their top speed to compete with petrol cars."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "offered a longer-lasting battery at an additional cost."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "built its own network of charging stations."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "replaced the lever with a steering wheel."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B &#39; For an extra charge, customers could choose a battery developed by the inventor Thomas Edison &#39;, which lasted much longer. The charging network never appeared (C)."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4172f",
+      "qNum": 24,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "211",
+      "acceptedAnswers": [
+        "211"
+      ],
+      "explanation": "Answer: 211 Paragraph F: the car &#39;was said to have travelled 211 miles on a single charge&#39;. 80 miles was the normal range (trap)."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41730",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "1939",
+      "acceptedAnswers": [
+        "1939"
+      ],
+      "explanation": "Answer: 1939 Paragraph G: &#39;by the time the company finally closed in 1939 &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41731",
+      "qNum": 26,
+      "partNum": 2,
+      "groupId": "6ab6a5f2af8bd4d7fbd4170f",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "wealthy",
+      "acceptedAnswers": [
+        "wealthy"
+      ],
+      "explanation": "Answer: wealthy Paragraph G: &#39;its cars were bought almost entirely by wealthy customers, many of them elderly people&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41732",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41714",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "how few students enjoy mathematics."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "how students respond when they are not taught a method first."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "how difficult the maths curriculum has become."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "how some students disturb the learning of others."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B &#39; I have deliberately not shown them any method. &#39; The paragraph then describes the students&#39; different reactions: drawing charts, arguing, giving up, inventing their own method."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41733",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41714",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It is widely liked."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It works best for the most able students."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It is difficult for teachers to assess."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It is used more in some countries than others."
+          }
+        }
+      ],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A The approach &#39; is popular with almost everyone involved &#39;: students, parents and teachers. It is described as &#39;easy to assess&#39; (C)."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41734",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41714",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "students who are afraid of making mistakes"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "students who need more time to practise"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "students who lack real understanding of what they have learned"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "students who ignore the advice of their teachers"
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Like the driver who panics in an unexpected situation, &#39; students who have only practised a method may produce correct answers without having any real understanding &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41735",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41714",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "problems that students choose for themselves"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "tests that measure how much students remember"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "challenges that slow learning down but make it last longer"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "tasks that are too hard for most students to complete"
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C &#39; tasks which make learning feel slower and harder at the time ... often lead to knowledge that lasts much longer&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41736",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41715",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H (a deeper understanding) &#39;the students who had struggled first showed a deeper understanding of the underlying ideas&#39;. On standard questions both groups did similarly, so not &#39;faster progress&#39; (I)."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41737",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41715",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D (unfamiliar problems) &#39;they were far more successful when asked to solve unfamiliar problems &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41738",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41715",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F (a full explanation) &#39;The benefits appeared only when the period of struggle was followed by a full explanation from the teacher&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd41739",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41715",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E (weak foundations) &#39;the approach may be less suitable for students with weak foundations in basic skills&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4173a",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41715",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (clear guidance) &#39;teachers need to give clear guidance about what students are expected to do while they struggle&#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4173b",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO Paragraph 6: if the idea is true, then &#39; removing every obstacle from students&#39; paths may be doing them a disservice &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4173c",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The writer discusses Vogel&#39;s research and warnings, but says nothing about other teachers trying and abandoning the approach."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4173d",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES Paragraph 9: students are &#39;no longer simply copying&#39; the method; &#39; They recognise it as a solution to a problem they have been wrestling with &#39;."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4173e",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO Paragraph 10: &#39; we have become too anxious to protect students from difficulty &#39;, depriving them of the chance to think for themselves."
+    },
+    {
+      "qid": "6ab6a5f2af8bd4d7fbd4173f",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab6a5f2af8bd4d7fbd41716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The writer talks about curiosity in the writer's own class but gives no information about students&#39; later choices of university subject."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">Packaging made from fungi</h3><p>Concern about plastic waste has led [5] to try making packaging from mycelium, the thread-like part of a mushroom. There are some problems with this material. For example, it can take in [6] from the air, so it cannot be used for many types of food. To make the packaging, fungal threads are combined with farm waste such as the [7] of hemp plants and left to grow in moulds. Compared with polystyrene, it uses much less [8] to produce, and it breaks down quickly in soil.</p>",
+        "groups": [
+          {
+            "id": "6ab6a5f1af8bd4d7fbd41703",
+            "directions": "<p><strong>Questions 1-4</strong></p><p>Reading Passage 1 has eight sections, <strong>A-H</strong>.</p><p>Which section contains the following information?</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41718",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "acceptedAnswers": [],
+                "explanation": "Answer: G Section G: alternatives &#39;make use of materials that would otherwise be wasted&#39;, and &#39; Some bioplastics are made from the waste left over after sugar has been extracted from sugarcane &#39;. Section E mentions farm waste, but explains how fungal packaging is grown, not industrial by-products."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41719",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Section D: &#39; Mushroom-based packaging is already being produced in the United States, the Netherlands and the United Kingdom &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4171a",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Section C: &#39; the oil and gas from which most plastics are made are cheap and available in enormous quantities &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4171b",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F Section F: Berg says &#39; until they have been used successfully on a large scale... it will be hard to regard them as a genuine replacement for plastic &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6a5f1af8bd4d7fbd41704",
+            "directions": "<p><strong>Questions 5-8</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Packaging made from fungi</h3><p>Concern about plastic waste has led [5] to try making packaging from mycelium, the thread-like part of a mushroom. There are some problems with this material. For example, it can take in [6] from the air, so it cannot be used for many types of food. To make the packaging, fungal threads are combined with farm waste such as the [7] of hemp plants and left to grow in moulds. Compared with polystyrene, it uses much less [8] to produce, and it breaks down quickly in soil.</p>",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4171c",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "designers",
+                "acceptedAnswers": [
+                  "designers"
+                ],
+                "explanation": "Answer: designers Section D: &#39;Growing concern about plastic waste has encouraged designers to experiment with mycelium&#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4171d",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "water",
+                "acceptedAnswers": [
+                  "water"
+                ],
+                "explanation": "Answer: water Section E: &#39;The material can absorb water from its surroundings, which makes it unsuitable for many foods&#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4171e",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "husks",
+                "acceptedAnswers": [
+                  "husks"
+                ],
+                "explanation": "Answer: husks Section E: &#39;farm waste such as the husks of hemp plants is mixed with fungal threads&#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4171f",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "energy",
+                "acceptedAnswers": [
+                  "energy"
+                ],
+                "explanation": "Answer: energy Section E: &#39;Unlike polystyrene, it requires very little energy to make&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6a5f1af8bd4d7fbd41705",
+            "directions": "<p><strong>Questions 9-13</strong></p><p>Look at the following statements (Questions 9-13) and the list of people below.</p><p>Match each statement with the correct person or people, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p><p><strong>NB</strong> You may use any letter more than once.</p><p><strong>List of People</strong><br>A &nbsp; Martin Hale<br>B &nbsp; Lena Berg<br>C &nbsp; Sarah Quinn<br>D &nbsp; Omar Siddiqui and Clare Dunn</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41720",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (Sarah Quinn) Section G: Quinn notes that &#39;the benefits are not always as clear as they seem&#39;, and if raw materials are shipped far, &#39; much of the environmental advantage may be lost &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41721",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Martin Hale) Section C: &#39; Finding another material that offers all of those benefits at the same time is going to be extremely difficult. &#39;"
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41722",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (Lena Berg) Section F: Berg reports a sharp rise in orders for paper packaging, &#39; with customers&#39; worries about plastic pollution as the main driving force &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41723",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D (Siddiqui and Dunn) Section H: alternatives have not achieved widespread use; &#39; They are generally more expensive than conventional plastic &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41724",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (Martin Hale) Section B: &#39; The problem is the sheer quantity of plastic that we use once and then throw away. It is the scale that makes it so damaging.&#39;"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<h3 style=\"text-align:center\">The Detroit Electric</h3><p>In a well-known test, a Detroit Electric reportedly travelled [24] miles without needing to be recharged. However, sales declined during the 1920s, and when the company closed in [25], most of its customers were [26] people, many of whom were elderly.</p>",
+        "groups": [
+          {
+            "id": "6ab6a5f2af8bd4d7fbd4170d",
+            "directions": "<p><strong>Questions 14-20</strong></p><p>Reading Passage 2 has seven paragraphs, <strong>A-G</strong>.</p><p>Choose the correct heading for each paragraph from the list of headings below.</p><p><strong>List of Headings</strong><br>i &nbsp; An impressive result in a long-distance trial<br>ii &nbsp; Poor marketing causes a decline in sales<br>iii &nbsp; The strengths and weaknesses of an early technology<br>iv &nbsp; A question for the present day<br>v &nbsp; Technical improvements lead to growing sales<br>vi &nbsp; An elegant vehicle wins public approval<br>vii &nbsp; Owners are disappointed by the car's performance<br>viii &nbsp; A cheaper rival takes over the market</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41725",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "iii",
+                "acceptedAnswers": [],
+                "explanation": "Answer: iii Paragraph A lists the attractions of electric cars (&#39;quiet... no fumes... no hand crank&#39;) and their &#39;serious weaknesses&#39; (heavy batteries, limited range)."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41726",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "viii",
+                "acceptedAnswers": [],
+                "explanation": "Answer: viii Mass production made the Model T cheap, petrol became cheap, and &#39; Within a few years, petrol cars dominated the market. &#39;"
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41727",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "vi",
+                "acceptedAnswers": [],
+                "explanation": "Answer: vi The cars had &#39;elegant, closed bodies&#39;, and &#39; Newspapers and magazines praised the car for its quietness and cleanliness&#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41728",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "v",
+                "acceptedAnswers": [],
+                "explanation": "Answer: v The company improved the car (Edison battery, speed, range), and &#39; Orders rose steadily &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41729",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "vii",
+                "acceptedAnswers": [],
+                "explanation": "Answer: vii For many owners, &#39; the reality was less satisfactory than the advertising had suggested &#39;: no charging stations, costly batteries, reduced range in winter."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4172a",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "i",
+                "acceptedAnswers": [],
+                "explanation": "Answer: i &#39;In one widely reported test, a Detroit Electric was said to have travelled 211 miles on a single charge &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4172b",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "iv",
+                "acceptedAnswers": [],
+                "explanation": "Answer: iv As electric vehicles return, &#39; it is tempting to wonder how different the history of transport might have been &#39;, a question relevant today."
+              }
+            ]
+          },
+          {
+            "id": "6ab6a5f2af8bd4d7fbd4170e",
+            "directions": "<p><strong>Questions 21-23</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4172c",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Their popularity did not last long."
+                  },
+                  {
+                    "key": "B",
+                    "text": "They were more dangerous to drive."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Few companies were willing to make them."
+                  },
+                  {
+                    "key": "D",
+                    "text": "They could not be used on the new roads."
+                  }
+                ],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A Paragraph B opens: &#39; The advantage did not last. &#39; Within a few years petrol cars dominated. The hand crank on petrol cars was the dangerous feature (B)."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4172d",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "copied the design of an existing electric car."
+                  },
+                  {
+                    "key": "B",
+                    "text": "moved his factory to a new city."
+                  },
+                  {
+                    "key": "C",
+                    "text": "made use of his experience in a previous business."
+                  },
+                  {
+                    "key": "D",
+                    "text": "asked Henry Ford for financial support."
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Anderson had made horse-drawn carriages, and &#39; drew heavily on his experience of carriage-making &#39;. Ford&#39;s wife owned a car (D is not stated)."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4172e",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "increased their top speed to compete with petrol cars."
+                  },
+                  {
+                    "key": "B",
+                    "text": "offered a longer-lasting battery at an additional cost."
+                  },
+                  {
+                    "key": "C",
+                    "text": "built its own network of charging stations."
+                  },
+                  {
+                    "key": "D",
+                    "text": "replaced the lever with a steering wheel."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B &#39; For an extra charge, customers could choose a battery developed by the inventor Thomas Edison &#39;, which lasted much longer. The charging network never appeared (C)."
+              }
+            ]
+          },
+          {
+            "id": "6ab6a5f2af8bd4d7fbd4170f",
+            "directions": "<p><strong>Questions 24-26</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD AND/OR A NUMBER</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The Detroit Electric</h3><p>In a well-known test, a Detroit Electric reportedly travelled [24] miles without needing to be recharged. However, sales declined during the 1920s, and when the company closed in [25], most of its customers were [26] people, many of whom were elderly.</p>",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4172f",
+                "qNum": 24,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "211",
+                "acceptedAnswers": [
+                  "211"
+                ],
+                "explanation": "Answer: 211 Paragraph F: the car &#39;was said to have travelled 211 miles on a single charge&#39;. 80 miles was the normal range (trap)."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41730",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "1939",
+                "acceptedAnswers": [
+                  "1939"
+                ],
+                "explanation": "Answer: 1939 Paragraph G: &#39;by the time the company finally closed in 1939 &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41731",
+                "qNum": 26,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "wealthy",
+                "acceptedAnswers": [
+                  "wealthy"
+                ],
+                "explanation": "Answer: wealthy Paragraph G: &#39;its cars were bought almost entirely by wealthy customers, many of them elderly people&#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<h3 style=\"text-align:center\">Research into productive failure</h3><p>Professor Nina Vogel found that students who struggled with a problem before being taught the method developed [31] of the ideas involved. The advantage was most obvious when students were asked to solve [32]. However, struggling only helped if it was followed by [33] from the teacher. Vogel also warns that the approach may not suit students with [34] in basic skills, and that teachers should give [35] about what students should do while they are struggling.</p>",
+        "groups": [
+          {
+            "id": "6ab6a5f2af8bd4d7fbd41714",
+            "directions": "<p><strong>Questions 27-30</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41732",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "how few students enjoy mathematics."
+                  },
+                  {
+                    "key": "B",
+                    "text": "how students respond when they are not taught a method first."
+                  },
+                  {
+                    "key": "C",
+                    "text": "how difficult the maths curriculum has become."
+                  },
+                  {
+                    "key": "D",
+                    "text": "how some students disturb the learning of others."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B &#39; I have deliberately not shown them any method. &#39; The paragraph then describes the students&#39; different reactions: drawing charts, arguing, giving up, inventing their own method."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41733",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It is widely liked."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It works best for the most able students."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It is difficult for teachers to assess."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It is used more in some countries than others."
+                  }
+                ],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A The approach &#39; is popular with almost everyone involved &#39;: students, parents and teachers. It is described as &#39;easy to assess&#39; (C)."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41734",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "students who are afraid of making mistakes"
+                  },
+                  {
+                    "key": "B",
+                    "text": "students who need more time to practise"
+                  },
+                  {
+                    "key": "C",
+                    "text": "students who lack real understanding of what they have learned"
+                  },
+                  {
+                    "key": "D",
+                    "text": "students who ignore the advice of their teachers"
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Like the driver who panics in an unexpected situation, &#39; students who have only practised a method may produce correct answers without having any real understanding &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41735",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "problems that students choose for themselves"
+                  },
+                  {
+                    "key": "B",
+                    "text": "tests that measure how much students remember"
+                  },
+                  {
+                    "key": "C",
+                    "text": "challenges that slow learning down but make it last longer"
+                  },
+                  {
+                    "key": "D",
+                    "text": "tasks that are too hard for most students to complete"
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C &#39; tasks which make learning feel slower and harder at the time ... often lead to knowledge that lasts much longer&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6a5f2af8bd4d7fbd41715",
+            "directions": "<p><strong>Questions 31-35</strong></p><p>Complete the summary using the list of phrases, <strong>A-I</strong>, below.</p><p>Write the correct letter, <strong>A-I</strong>, in boxes 31-35 on your answer sheet.</p><p>A &nbsp; frequent tests<br>B &nbsp; clear guidance<br>C &nbsp; group rewards<br>D &nbsp; unfamiliar problems<br>E &nbsp; weak foundations<br>F &nbsp; a full explanation<br>G &nbsp; extra homework<br>H &nbsp; a deeper understanding<br>I &nbsp; faster progress</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Research into productive failure</h3><p>Professor Nina Vogel found that students who struggled with a problem before being taught the method developed [31] of the ideas involved. The advantage was most obvious when students were asked to solve [32]. However, struggling only helped if it was followed by [33] from the teacher. Vogel also warns that the approach may not suit students with [34] in basic skills, and that teachers should give [35] about what students should do while they are struggling.</p>",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41736",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H (a deeper understanding) &#39;the students who had struggled first showed a deeper understanding of the underlying ideas&#39;. On standard questions both groups did similarly, so not &#39;faster progress&#39; (I)."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41737",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D (unfamiliar problems) &#39;they were far more successful when asked to solve unfamiliar problems &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41738",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F (a full explanation) &#39;The benefits appeared only when the period of struggle was followed by a full explanation from the teacher&#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd41739",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E (weak foundations) &#39;the approach may be less suitable for students with weak foundations in basic skills&#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4173a",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (clear guidance) &#39;teachers need to give clear guidance about what students are expected to do while they struggle&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6a5f2af8bd4d7fbd41716",
+            "directions": "<p><strong>Questions 36-40</strong></p><p>Do the following statements agree with the views of the writer in Reading Passage 3?</p><p>In boxes <strong>36-40</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the views of the writer<br><strong>NO</strong> if the statement contradicts the views of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4173b",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO Paragraph 6: if the idea is true, then &#39; removing every obstacle from students&#39; paths may be doing them a disservice &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4173c",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The writer discusses Vogel&#39;s research and warnings, but says nothing about other teachers trying and abandoning the approach."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4173d",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES Paragraph 9: students are &#39;no longer simply copying&#39; the method; &#39; They recognise it as a solution to a problem they have been wrestling with &#39;."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4173e",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO Paragraph 10: &#39; we have become too anxious to protect students from difficulty &#39;, depriving them of the chance to think for themselves."
+              },
+              {
+                "qid": "6ab6a5f2af8bd4d7fbd4173f",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The writer talks about curiosity in the writer's own class but gives no information about students&#39; later choices of university subject."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

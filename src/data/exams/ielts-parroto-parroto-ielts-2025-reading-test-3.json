@@ -1,0 +1,1568 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2025-reading-test-3",
+  "testNum": 5,
+  "collection": "Bộ đề Parroto IELTS 2025",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2025 - Reading Test 3",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 38,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab6b02db44bf257f3282aad",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-6</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">London's sewer system</h3><h4>The problem</h4><ul><li>Waste from cesspits was sold to farmers as [1]</li><li>After 1848, household waste was carried by sewers into the Thames</li><li>John Snow linked many cholera cases in Soho to a public [2]</li><li>During the Great Stink, [3] in Parliament were soaked in chemicals</li></ul><h4>The solution</h4><ul><li>£3 million was raised through [4]</li><li>Intercepting sewers carried waste to outfalls east of the city</li><li>Waste was released into the river when the [5] was going out</li><li>Bazalgette used [6] cement, which was stronger than traditional types</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6b02db44bf257f3282aae",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 7-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>7-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6b02db44bf257f3282ab2",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has seven sections, <strong>A-G</strong>.</p><p>Which section contains the following information?</p><p><strong>NB</strong> You may use any letter more than once.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6b02db44bf257f3282ab3",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 18-22</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">Libraries of the past</h3><p>The library of Alexandria aimed to collect all the world's knowledge, and books on [18] arriving in the city were copied. The Library of Celsus at Ephesus was also a [19] for the father of the man who built it, and may have held about 12,000 [20]. In medieval libraries, chains were sometimes used to protect books from [21]. In the nineteenth and early twentieth centuries, Andrew Carnegie paid for thousands of library buildings, but towns had to provide land and pay for their [22].</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6b02db44bf257f3282ab4",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 23-26</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6b02db44bf257f3282ab8",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-31</strong></p><p>Complete the summary using the list of phrases, <strong>A-J</strong>, below.</p><p>Write the correct letter, <strong>A-J</strong>, in boxes 27-31 on your answer sheet.</p><p>A &nbsp; careful preparation<br>B &nbsp; slow progress<br>C &nbsp; popular support<br>D &nbsp; public humiliation<br>E &nbsp; foreign invasion<br>F &nbsp; false identity<br>G &nbsp; military victory<br>H &nbsp; loyal friend<br>I &nbsp; financial reward<br>J &nbsp; family group</p>",
+      "content": "<h3 style=\"text-align:center\">The escape to Varennes</h3><p>The escape of Louis XVI and Marie Antoinette was planned mainly by a [27] of the queen, Axel von Fersen. Fersen wanted the family to travel separately, but the king and queen insisted on travelling as one [28]. The children's governess adopted a [29] as a Russian noblewoman. The coach made [30], and the soldiers who were supposed to meet it had left by the time it arrived. After the royal family were arrested, their return to Paris was a [31], as silent crowds watched them pass.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6b02db44bf257f3282ab9",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 32-35</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>32-35</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab6b02db44bf257f3282aba",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 36-40</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab6b02db44bf257f3282abc",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aad",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "fertiliser / fertilizer",
+      "acceptedAnswers": [
+        "fertiliser",
+        "fertilizer"
+      ],
+      "explanation": "Answer: fertiliser Paragraph 1: labourers &#39;sold the contents to farmers outside the city as fertiliser &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282abd",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aad",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "pump",
+      "acceptedAnswers": [
+        "pump"
+      ],
+      "explanation": "Answer: pump Paragraph 2: Snow &#39;traced many of the cases in Soho to a single public pump in Broad Street&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282abe",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aad",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "curtains",
+      "acceptedAnswers": [
+        "curtains"
+      ],
+      "explanation": "Answer: curtains Paragraph 3: in Parliament &#39;the curtains were soaked in chemicals&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282abf",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aad",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "borrowing",
+      "acceptedAnswers": [
+        "borrowing"
+      ],
+      "explanation": "Answer: borrowing Paragraph 3: &#39;The money, some £3 million, was raised by borrowing &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac0",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aad",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "tide",
+      "acceptedAnswers": [
+        "tide"
+      ],
+      "explanation": "Answer: tide Paragraph 4: waste was &#39;released into the river on the outgoing tide &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac1",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aad",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "Portland",
+      "acceptedAnswers": [
+        "Portland"
+      ],
+      "explanation": "Answer: Portland Paragraph 6: &#39;He insisted on using Portland cement, which was stronger than the cements traditionally used&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac2",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aae",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Houses had to connect to sewers, but &#39; they emptied directly into the River Thames &#39;, so more waste reached the river, not less."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac3",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aae",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The passage says £3 million was borrowed, but gives no estimate or final cost to compare."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac4",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aae",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE &#39; Most of the system relied on gravity &#39;; pumping was needed only &#39;at certain points&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac5",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aae",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE He doubled the pipe size, and &#39; His decision is the main reason why the system was still able to cope a century later &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac6",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aae",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE It &#39;was still relatively new&#39;, and &#39; some engineers of the time regarded [it] with suspicion &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac7",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aae",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE The 1866 outbreak occurred &#39; in part of the East End that had not yet been connected to the new system &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac8",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab6b02db44bf257f3282aae",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The passage says only that it &#39;came into operation in 2025&#39;; nothing is said about its schedule."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ac9",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab2",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A Section A: their future is questioned, and &#39; some politicians argue that libraries are an expensive luxury &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282aca",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab2",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F Section F: &#39; the average electric drill is used for only around thirteen minutes in its entire lifetime &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282acb",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab2",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E Section E: Oodi &#39; offers 3D printers, sewing machines, music recording studios , kitchens... and rooms for playing video games&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282acc",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab2",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Section D describes mid-twentieth-century libraries: limited opening hours, fixed shelving, &#39;difficult to adapt&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282acd",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "ships",
+      "acceptedAnswers": [
+        "ships"
+      ],
+      "explanation": "Answer: ships Section B: &#39;books found on ships arriving in the city&#39;s harbour were taken and copied&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ace",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "tomb",
+      "acceptedAnswers": [
+        "tomb"
+      ],
+      "explanation": "Answer: tomb Section B: it &#39;served as his father&#39;s tomb as well as a library&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282acf",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "scrolls",
+      "acceptedAnswers": [
+        "scrolls"
+      ],
+      "explanation": "Answer: scrolls Section B: &#39;It is thought to have held around 12,000 scrolls .&#39;"
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad0",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "theft",
+      "acceptedAnswers": [
+        "theft"
+      ],
+      "explanation": "Answer: theft Section C: books were chained &#39;to prevent theft &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad1",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab3",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "maintenance",
+      "acceptedAnswers": [
+        "maintenance"
+      ],
+      "explanation": "Answer: maintenance Section C: towns had to provide the land and &#39;pay for the library&#39;s maintenance &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad2",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab4",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "They were expensive to build."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "They were too small for their collections."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "They were not open at convenient times."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "They were designed for too narrow a purpose."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "They were built from poor-quality materials."
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C, D They &#39; were designed mainly as places to store and lend books &#39; (D), and &#39; many closed in the evenings and at weekends , precisely when working people had the time to visit&#39; (C). Concrete is mentioned, but not as poor quality."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad3",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab6b02db44bf257f3282ab4",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "providing quieter places for study"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "bringing different groups in society together"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "attracting funding from private companies"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "reducing the cost of producing books"
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "helping people to buy fewer goods"
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B, E &#39; Such spaces help to bring people from very different backgrounds together &#39; (B), and by sharing things &#39; residents can reduce the amount they buy and throw away &#39; (E)."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad4",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab8",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H (loyal friend) Fersen was &#39; a Swedish count who was devoted to the queen &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad5",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab8",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "J",
+      "acceptedAnswers": [],
+      "explanation": "Answer: J (family group) &#39; the king and queen refused to be parted from each other or from their children &#39;, so they travelled together."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad6",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab8",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F (false identity) &#39; the governess travelled as a Russian noblewoman, the Baroness de Korff &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad7",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab8",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B (slow progress) After many small delays, &#39; the coach was several hours behind schedule &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad8",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab8",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D (public humiliation) Crowds lined the roads and &#39; the people watched the coach in almost complete silence &#39;: a humiliating return in front of the public."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ad9",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab9",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The reviewer mentions the sources Fenn uses, but says nothing about why he decided to write the book or about any new discovery."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ada",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab9",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO One of the pleasures of the book &#39; is the way it takes us inside the coach &#39;, with many small details about the journey."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282adb",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab9",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO Fenn argues that Louis &#39;never intended to leave France altogether&#39;, and the reviewer says &#39; I found it a convincing account &#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282adc",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282ab9",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES &#39; He is also admirably fair. &#39; &#39;Neither side is presented as the villain of the story.&#39;"
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282add",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282aba",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "to explain why the Revolution began"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "to describe the situation that led to the king's escape"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "to compare Louis XVI with other French kings"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "to criticise the laws passed by the Revolutionary government"
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B The paragraph explains the king&#39;s reduced powers, life under watch, and that &#39; he had come to believe that he was effectively a prisoner &#39;, then his plan."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ade",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282aba",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "to show that the king did not take the escape seriously"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "to suggest that Fersen had planned the route badly"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "to illustrate how the book makes the journey vivid"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "to argue that the escape could never have succeeded"
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C These details illustrate &#39; One of the pleasures of the book ... the way it takes us inside the coach&#39;."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282adf",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282aba",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "He misjudged how people would react to his escape."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "He deliberately misled the people of Paris."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "He was afraid of the crowds on the return journey."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "He regretted accepting the Revolution's reforms."
+          }
+        }
+      ],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A &#39; What the king appears not to have understood is how the escape would be seen. &#39; His declaration seemed honest to him but proved to Parisians he could not be trusted."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ae0",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282aba",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "His style is sometimes too informal."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "He does not take sides in his account."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "He simplifies the political arguments too much."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "He is more sympathetic to the ordinary people than to the royal family."
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B He is &#39;admirably fair&#39;: &#39; Neither side is presented as the villain of the story. &#39; His style is &#39;never casual&#39; (A)."
+    },
+    {
+      "qid": "6ab6b02db44bf257f3282ae1",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab6b02db44bf257f3282aba",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It does not explain why the monarchy was abolished."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It gives too little attention to the queen."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It relies too heavily on a single source."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It does not consider what might have happened if the escape had succeeded."
+          }
+        }
+      ],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Fenn never asks &#39; what would have happened if the royal family had reached Montmédy? &#39;. He does describe the consequences in detail (A)."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">London's sewer system</h3><h4>The problem</h4><ul><li>Waste from cesspits was sold to farmers as [1]</li><li>After 1848, household waste was carried by sewers into the Thames</li><li>John Snow linked many cholera cases in Soho to a public [2]</li><li>During the Great Stink, [3] in Parliament were soaked in chemicals</li></ul><h4>The solution</h4><ul><li>£3 million was raised through [4]</li><li>Intercepting sewers carried waste to outfalls east of the city</li><li>Waste was released into the river when the [5] was going out</li><li>Bazalgette used [6] cement, which was stronger than traditional types</li></ul>",
+        "groups": [
+          {
+            "id": "6ab6b02db44bf257f3282aad",
+            "directions": "<p><strong>Questions 1-6</strong></p><p>Complete the notes below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">London's sewer system</h3><h4>The problem</h4><ul><li>Waste from cesspits was sold to farmers as [1]</li><li>After 1848, household waste was carried by sewers into the Thames</li><li>John Snow linked many cholera cases in Soho to a public [2]</li><li>During the Great Stink, [3] in Parliament were soaked in chemicals</li></ul><h4>The solution</h4><ul><li>£3 million was raised through [4]</li><li>Intercepting sewers carried waste to outfalls east of the city</li><li>Waste was released into the river when the [5] was going out</li><li>Bazalgette used [6] cement, which was stronger than traditional types</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282abc",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "fertiliser / fertilizer",
+                "acceptedAnswers": [
+                  "fertiliser",
+                  "fertilizer"
+                ],
+                "explanation": "Answer: fertiliser Paragraph 1: labourers &#39;sold the contents to farmers outside the city as fertiliser &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282abd",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pump",
+                "acceptedAnswers": [
+                  "pump"
+                ],
+                "explanation": "Answer: pump Paragraph 2: Snow &#39;traced many of the cases in Soho to a single public pump in Broad Street&#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282abe",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "curtains",
+                "acceptedAnswers": [
+                  "curtains"
+                ],
+                "explanation": "Answer: curtains Paragraph 3: in Parliament &#39;the curtains were soaked in chemicals&#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282abf",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "borrowing",
+                "acceptedAnswers": [
+                  "borrowing"
+                ],
+                "explanation": "Answer: borrowing Paragraph 3: &#39;The money, some £3 million, was raised by borrowing &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac0",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "tide",
+                "acceptedAnswers": [
+                  "tide"
+                ],
+                "explanation": "Answer: tide Paragraph 4: waste was &#39;released into the river on the outgoing tide &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac1",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Portland",
+                "acceptedAnswers": [
+                  "Portland"
+                ],
+                "explanation": "Answer: Portland Paragraph 6: &#39;He insisted on using Portland cement, which was stronger than the cements traditionally used&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6b02db44bf257f3282aae",
+            "directions": "<p><strong>Questions 7-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>7-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282ac2",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Houses had to connect to sewers, but &#39; they emptied directly into the River Thames &#39;, so more waste reached the river, not less."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac3",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The passage says £3 million was borrowed, but gives no estimate or final cost to compare."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac4",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE &#39; Most of the system relied on gravity &#39;; pumping was needed only &#39;at certain points&#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac5",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE He doubled the pipe size, and &#39; His decision is the main reason why the system was still able to cope a century later &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac6",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE It &#39;was still relatively new&#39;, and &#39; some engineers of the time regarded [it] with suspicion &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac7",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE The 1866 outbreak occurred &#39; in part of the East End that had not yet been connected to the new system &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ac8",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The passage says only that it &#39;came into operation in 2025&#39;; nothing is said about its schedule."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<h3 style=\"text-align:center\">Libraries of the past</h3><p>The library of Alexandria aimed to collect all the world's knowledge, and books on [18] arriving in the city were copied. The Library of Celsus at Ephesus was also a [19] for the father of the man who built it, and may have held about 12,000 [20]. In medieval libraries, chains were sometimes used to protect books from [21]. In the nineteenth and early twentieth centuries, Andrew Carnegie paid for thousands of library buildings, but towns had to provide land and pay for their [22].</p>",
+        "groups": [
+          {
+            "id": "6ab6b02db44bf257f3282ab2",
+            "directions": "<p><strong>Questions 14-17</strong></p><p>Reading Passage 2 has seven sections, <strong>A-G</strong>.</p><p>Which section contains the following information?</p><p><strong>NB</strong> You may use any letter more than once.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282ac9",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A Section A: their future is questioned, and &#39; some politicians argue that libraries are an expensive luxury &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282aca",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F Section F: &#39; the average electric drill is used for only around thirteen minutes in its entire lifetime &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282acb",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E Section E: Oodi &#39; offers 3D printers, sewing machines, music recording studios , kitchens... and rooms for playing video games&#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282acc",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Section D describes mid-twentieth-century libraries: limited opening hours, fixed shelving, &#39;difficult to adapt&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6b02db44bf257f3282ab3",
+            "directions": "<p><strong>Questions 18-22</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Libraries of the past</h3><p>The library of Alexandria aimed to collect all the world's knowledge, and books on [18] arriving in the city were copied. The Library of Celsus at Ephesus was also a [19] for the father of the man who built it, and may have held about 12,000 [20]. In medieval libraries, chains were sometimes used to protect books from [21]. In the nineteenth and early twentieth centuries, Andrew Carnegie paid for thousands of library buildings, but towns had to provide land and pay for their [22].</p>",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282acd",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "ships",
+                "acceptedAnswers": [
+                  "ships"
+                ],
+                "explanation": "Answer: ships Section B: &#39;books found on ships arriving in the city&#39;s harbour were taken and copied&#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ace",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "tomb",
+                "acceptedAnswers": [
+                  "tomb"
+                ],
+                "explanation": "Answer: tomb Section B: it &#39;served as his father&#39;s tomb as well as a library&#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282acf",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "scrolls",
+                "acceptedAnswers": [
+                  "scrolls"
+                ],
+                "explanation": "Answer: scrolls Section B: &#39;It is thought to have held around 12,000 scrolls .&#39;"
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ad0",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "theft",
+                "acceptedAnswers": [
+                  "theft"
+                ],
+                "explanation": "Answer: theft Section C: books were chained &#39;to prevent theft &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ad1",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "maintenance",
+                "acceptedAnswers": [
+                  "maintenance"
+                ],
+                "explanation": "Answer: maintenance Section C: towns had to provide the land and &#39;pay for the library&#39;s maintenance &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab6b02db44bf257f3282ab4",
+            "directions": "<p><strong>Questions 23-26</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282ad2",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "They were expensive to build."
+                  },
+                  {
+                    "key": "B",
+                    "text": "They were too small for their collections."
+                  },
+                  {
+                    "key": "C",
+                    "text": "They were not open at convenient times."
+                  },
+                  {
+                    "key": "D",
+                    "text": "They were designed for too narrow a purpose."
+                  },
+                  {
+                    "key": "E",
+                    "text": "They were built from poor-quality materials."
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C, D They &#39; were designed mainly as places to store and lend books &#39; (D), and &#39; many closed in the evenings and at weekends , precisely when working people had the time to visit&#39; (C). Concrete is mentioned, but not as poor quality."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ad3",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "providing quieter places for study"
+                  },
+                  {
+                    "key": "B",
+                    "text": "bringing different groups in society together"
+                  },
+                  {
+                    "key": "C",
+                    "text": "attracting funding from private companies"
+                  },
+                  {
+                    "key": "D",
+                    "text": "reducing the cost of producing books"
+                  },
+                  {
+                    "key": "E",
+                    "text": "helping people to buy fewer goods"
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B, E &#39; Such spaces help to bring people from very different backgrounds together &#39; (B), and by sharing things &#39; residents can reduce the amount they buy and throw away &#39; (E)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<h3 style=\"text-align:center\">The escape to Varennes</h3><p>The escape of Louis XVI and Marie Antoinette was planned mainly by a [27] of the queen, Axel von Fersen. Fersen wanted the family to travel separately, but the king and queen insisted on travelling as one [28]. The children's governess adopted a [29] as a Russian noblewoman. The coach made [30], and the soldiers who were supposed to meet it had left by the time it arrived. After the royal family were arrested, their return to Paris was a [31], as silent crowds watched them pass.</p>",
+        "groups": [
+          {
+            "id": "6ab6b02db44bf257f3282ab8",
+            "directions": "<p><strong>Questions 27-31</strong></p><p>Complete the summary using the list of phrases, <strong>A-J</strong>, below.</p><p>Write the correct letter, <strong>A-J</strong>, in boxes 27-31 on your answer sheet.</p><p>A &nbsp; careful preparation<br>B &nbsp; slow progress<br>C &nbsp; popular support<br>D &nbsp; public humiliation<br>E &nbsp; foreign invasion<br>F &nbsp; false identity<br>G &nbsp; military victory<br>H &nbsp; loyal friend<br>I &nbsp; financial reward<br>J &nbsp; family group</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The escape to Varennes</h3><p>The escape of Louis XVI and Marie Antoinette was planned mainly by a [27] of the queen, Axel von Fersen. Fersen wanted the family to travel separately, but the king and queen insisted on travelling as one [28]. The children's governess adopted a [29] as a Russian noblewoman. The coach made [30], and the soldiers who were supposed to meet it had left by the time it arrived. After the royal family were arrested, their return to Paris was a [31], as silent crowds watched them pass.</p>",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282ad4",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H (loyal friend) Fersen was &#39; a Swedish count who was devoted to the queen &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ad5",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "J",
+                "acceptedAnswers": [],
+                "explanation": "Answer: J (family group) &#39; the king and queen refused to be parted from each other or from their children &#39;, so they travelled together."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ad6",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F (false identity) &#39; the governess travelled as a Russian noblewoman, the Baroness de Korff &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ad7",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B (slow progress) After many small delays, &#39; the coach was several hours behind schedule &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ad8",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D (public humiliation) Crowds lined the roads and &#39; the people watched the coach in almost complete silence &#39;: a humiliating return in front of the public."
+              }
+            ]
+          },
+          {
+            "id": "6ab6b02db44bf257f3282ab9",
+            "directions": "<p><strong>Questions 32-35</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 3?</p><p>In boxes <strong>32-35</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282ad9",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The reviewer mentions the sources Fenn uses, but says nothing about why he decided to write the book or about any new discovery."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ada",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO One of the pleasures of the book &#39; is the way it takes us inside the coach &#39;, with many small details about the journey."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282adb",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO Fenn argues that Louis &#39;never intended to leave France altogether&#39;, and the reviewer says &#39; I found it a convincing account &#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282adc",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES &#39; He is also admirably fair. &#39; &#39;Neither side is presented as the villain of the story.&#39;"
+              }
+            ]
+          },
+          {
+            "id": "6ab6b02db44bf257f3282aba",
+            "directions": "<p><strong>Questions 36-40</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab6b02db44bf257f3282add",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "to explain why the Revolution began"
+                  },
+                  {
+                    "key": "B",
+                    "text": "to describe the situation that led to the king's escape"
+                  },
+                  {
+                    "key": "C",
+                    "text": "to compare Louis XVI with other French kings"
+                  },
+                  {
+                    "key": "D",
+                    "text": "to criticise the laws passed by the Revolutionary government"
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B The paragraph explains the king&#39;s reduced powers, life under watch, and that &#39; he had come to believe that he was effectively a prisoner &#39;, then his plan."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ade",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "to show that the king did not take the escape seriously"
+                  },
+                  {
+                    "key": "B",
+                    "text": "to suggest that Fersen had planned the route badly"
+                  },
+                  {
+                    "key": "C",
+                    "text": "to illustrate how the book makes the journey vivid"
+                  },
+                  {
+                    "key": "D",
+                    "text": "to argue that the escape could never have succeeded"
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C These details illustrate &#39; One of the pleasures of the book ... the way it takes us inside the coach&#39;."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282adf",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "He misjudged how people would react to his escape."
+                  },
+                  {
+                    "key": "B",
+                    "text": "He deliberately misled the people of Paris."
+                  },
+                  {
+                    "key": "C",
+                    "text": "He was afraid of the crowds on the return journey."
+                  },
+                  {
+                    "key": "D",
+                    "text": "He regretted accepting the Revolution's reforms."
+                  }
+                ],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A &#39; What the king appears not to have understood is how the escape would be seen. &#39; His declaration seemed honest to him but proved to Parisians he could not be trusted."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ae0",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "His style is sometimes too informal."
+                  },
+                  {
+                    "key": "B",
+                    "text": "He does not take sides in his account."
+                  },
+                  {
+                    "key": "C",
+                    "text": "He simplifies the political arguments too much."
+                  },
+                  {
+                    "key": "D",
+                    "text": "He is more sympathetic to the ordinary people than to the royal family."
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B He is &#39;admirably fair&#39;: &#39; Neither side is presented as the villain of the story. &#39; His style is &#39;never casual&#39; (A)."
+              },
+              {
+                "qid": "6ab6b02db44bf257f3282ae1",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It does not explain why the monarchy was abolished."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It gives too little attention to the queen."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It relies too heavily on a single source."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It does not consider what might have happened if the escape had succeeded."
+                  }
+                ],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Fenn never asks &#39; what would have happened if the royal family had reached Montmédy? &#39;. He does describe the consequences in detail (A)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

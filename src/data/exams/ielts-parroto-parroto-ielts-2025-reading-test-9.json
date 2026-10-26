@@ -1,0 +1,1370 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2025-reading-test-9",
+  "testNum": 17,
+  "collection": "Bộ đề Parroto IELTS 2025",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2025 - Reading Test 9",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 38,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab78b54a5f9785a40804708",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-5</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-5</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab78b54a5f9785a40804709",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 6-13</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">Longships and knarrs</h3><p>The hull of a Viking ship was made of overlapping planks, which were attached to each other with iron [6]. The planks were split from the trunks of [7] trees rather than being sawn. To make the hull watertight, the gaps were filled with animal hair that had been soaked in [8].</p><p>Longships had a shallow hull, so they could be dragged up onto [9]. Their single square sail was made of [10], and the rowers probably sat on [11] which held their possessions.</p><p>Knarrs were broader and deeper than longships and depended mostly on their [12]. As well as animals and timber, they carried goods such as walrus [13].</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab78b54a5f9785a4080470f",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-19</strong></p><p>Reading Passage 2 has eight sections, <strong>A-H</strong>.</p><p>Which section contains the following information?</p><p>Write the correct letter, <strong>A-H</strong>, in boxes 14-19 on your answer sheet.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab78b54a5f9785a40804710",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 20-22</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">How cropmarks form</h3><p>Cropmarks appear because crops above buried features are affected differently by dry weather. The soft soil in an old ditch holds more [20], so the crops above it remain green. Over buried walls, the soil is thin, and the crops become [21] earlier. In 2018, as well as photographs taken from an aircraft, the survey team received pictures taken by the public using [22].</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab78b54a5f9785a40804711",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 23-26</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab78b54a5f9785a40804716",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-32</strong></p><p>Do the following statements agree with the information given in Reading Passage 3?</p><p>In boxes <strong>27-32</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab78b54a5f9785a40804717",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 33-37</strong></p><p>Reading Passage 3 has eight paragraphs, <strong>A-H</strong>.</p><p>Which paragraph contains the following information?</p><p>Write the correct letter, <strong>A-H</strong>, in boxes 33-37 on your answer sheet.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab78b54a5f9785a40804718",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 38-40</strong></p><p>Complete the sentences below.</p><p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>",
+      "content": "<p>38. Most of a plant's cells only change state after it has experienced several weeks of [38].</p><p>39. Because of warmer winters, some fruit growers have seen uneven flowering and reduced [39].</p><p>40. The research was done using a plant called [40], which is related to cabbage.</p>",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab78b54a5f9785a4080471a",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804708",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Viking ships were built by eye, &#39; without any written plans at all &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080471b",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804708",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN We learn when and why the Oseberg ship was buried, but not its size or how it compares with other ships."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080471c",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804708",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Ships were built &#39;from the outside in&#39;: &#39; Only once the shell of the hull was complete were the internal ribs added &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080471d",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804708",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE The shallow hull let them be dragged onto beaches, &#39; so that their crews could land almost anywhere without the need for a harbour &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080471e",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804708",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE &#39; The rowers were not slaves but the warriors themselves &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080471f",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "rivets",
+      "acceptedAnswers": [
+        "rivets"
+      ],
+      "explanation": "Answer: rivets &#39;each plank was fixed to the one below it with iron rivets &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804720",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "oak",
+      "acceptedAnswers": [
+        "oak"
+      ],
+      "explanation": "Answer: oak &#39;The planks were usually split from trunks of oak rather than sawn&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804721",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "tar",
+      "acceptedAnswers": [
+        "tar"
+      ],
+      "explanation": "Answer: tar &#39;filled with animal hair soaked in tar to keep the water out&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804722",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "beaches",
+      "acceptedAnswers": [
+        "beaches"
+      ],
+      "explanation": "Answer: beaches The shallow hull allowed longships &#39;to be dragged up onto beaches &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804723",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "wool",
+      "acceptedAnswers": [
+        "wool"
+      ],
+      "explanation": "Answer: wool &#39;a single large square sail made of wool &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804724",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "chests",
+      "acceptedAnswers": [
+        "chests"
+      ],
+      "explanation": "Answer: chests With no fixed benches, rowers &#39;are thought to have sat on wooden chests containing their personal belongings&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804725",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "sail",
+      "acceptedAnswers": [
+        "sail"
+      ],
+      "explanation": "Answer: sail Knarrs &#39;relied mainly on their sail , carrying only a few oars&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804726",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab78b54a5f9785a40804709",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "ivory",
+      "acceptedAnswers": [
+        "ivory"
+      ],
+      "explanation": "Answer: ivory &#39;A knarr could carry livestock, timber, wool and walrus ivory &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804727",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a4080470f",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Rain or harvest can make cropmarks disappear, so &#39; archaeologists have to record them as fast as they can before the opportunity is lost &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804728",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a4080470f",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "G",
+      "acceptedAnswers": [],
+      "explanation": "Answer: G The Roman estates produced grain and &#39; also sold wool, leather and cattle &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804729",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a4080470f",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D The ditch and bank &#39; would have served to keep farm animals in and wild animals out &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080472a",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a4080470f",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "F",
+      "acceptedAnswers": [],
+      "explanation": "Answer: F On clay soils, life was hard &#39;in wet years, when the soil stayed flooded and crops could easily fail &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080472b",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a4080470f",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C &#39;It was exhausting&#39; – early starts and &#39; hours circling in a hot, cramped cockpit &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080472c",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a4080470f",
+      "type": "TABLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H More frequent dry summers &#39; could reveal many more sites in the years ahead &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080472d",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a40804710",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "moisture",
+      "acceptedAnswers": [
+        "moisture"
+      ],
+      "explanation": "Answer: moisture Over a filled ditch, &#39;the ground holds more moisture , so the crops above it stay green for longer&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080472e",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a40804710",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "yellow",
+      "acceptedAnswers": [
+        "yellow"
+      ],
+      "explanation": "Answer: yellow Over walls the soil dries quickly and &#39;the crops there turn yellow first&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080472f",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a40804710",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "drones",
+      "acceptedAnswers": [
+        "drones"
+      ],
+      "explanation": "Answer: drones Members of the public took part, &#39;using drones to photograph fields near their homes&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804730",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a40804711",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Most of the sites were burial monuments."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Some sites were on land that was thought to have been avoided by farmers."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "People who were not archaeologists contributed to the survey."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Drone photographs proved more useful than those taken from the aircraft."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "More new sites were found in Wales than in England."
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B, C Farmers were assumed to avoid clay, &#39; Yet a large number of the newly discovered farmsteads lay on exactly this kind of ground &#39; (B); &#39;Members of the public also took part&#39; (C). Many sites were farmsteads, not burial mounds (A); no comparison is made for D or E."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804731",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab78b54a5f9785a40804711",
+      "type": "MULTIPLE_CHOICE_MANY",
+      "answerFormat": "multiple",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "They helped to supply soldiers with food."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "They were owned by army officers."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "They were connected to places where goods could be sold."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "They sent most of their produce overseas."
+          }
+        },
+        {
+          "label": "E",
+          "text": {
+            "en": "They were larger than modern farms in the same area."
+          }
+        }
+      ],
+      "correctAnswer": "",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A, C They &#39; produced grain for the army &#39; (A), and &#39; roads and tracks show how the estates were linked to nearby markets &#39; (C). Nothing is said about ownership (B), exports (D) or modern farms (E)."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804732",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN We are told which institute the team is from, but nothing about the nationalities of its members."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804733",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE &#39; This prevents them from flowering during a mild spell in autumn &#39;, which would expose the flowers to winter."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804734",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE &#39; His claims were later shown to be false &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804735",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE &#39; Each cell makes its own decision, flipping from on to off &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804736",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Once switched off, FLC &#39; stays off even when the weather warms up again &#39;, so the plant remembers the winter for weeks or months."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804737",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804716",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Both apples and cherries need chilling, but the passage does not compare how much each has been affected."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804738",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804717",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "G",
+      "acceptedAnswers": [],
+      "explanation": "Answer: G &#39;If we understand exactly how plants measure the cold, we may be able to breed varieties that need less of it &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a40804739",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804717",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A &#39; The research, published this month in a leading scientific journal &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080473a",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804717",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "H",
+      "acceptedAnswers": [],
+      "explanation": "Answer: H &#39; the team is now working with plant breeders who will test whether the findings can be applied to these crops &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080473b",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804717",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B Flowering in a mild autumn spell &#39; would expose their delicate flowers and seeds to the harsh winter that follows &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080473c",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804717",
+      "type": "MATCHING_FEATURES",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Farmers decide when to sow: &#39; Winter varieties of wheat and barley are sown in autumn so that they experience the cold they need &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080473d",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804718",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "cold",
+      "acceptedAnswers": [
+        "cold"
+      ],
+      "explanation": "Answer: cold &#39;a plant typically needs several weeks of cold before most of its cells have changed state&#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080473e",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804718",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "yields / lower yields",
+      "acceptedAnswers": [
+        "yields",
+        "lower yields"
+      ],
+      "explanation": "Answer: yields &#39;growers have reported uneven flowering and lower yields &#39;."
+    },
+    {
+      "qid": "6ab78b54a5f9785a4080473f",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab78b54a5f9785a40804718",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "thale cress",
+      "acceptedAnswers": [
+        "thale cress"
+      ],
+      "explanation": "Answer: thale cress &#39;The work was carried out on thale cress , a small plant related to cabbage&#39;."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">Longships and knarrs</h3><p>The hull of a Viking ship was made of overlapping planks, which were attached to each other with iron [6]. The planks were split from the trunks of [7] trees rather than being sawn. To make the hull watertight, the gaps were filled with animal hair that had been soaked in [8].</p><p>Longships had a shallow hull, so they could be dragged up onto [9]. Their single square sail was made of [10], and the rowers probably sat on [11] which held their possessions.</p><p>Knarrs were broader and deeper than longships and depended mostly on their [12]. As well as animals and timber, they carried goods such as walrus [13].</p>",
+        "groups": [
+          {
+            "id": "6ab78b54a5f9785a40804708",
+            "directions": "<p><strong>Questions 1-5</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>1-5</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a4080471a",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Viking ships were built by eye, &#39; without any written plans at all &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080471b",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN We learn when and why the Oseberg ship was buried, but not its size or how it compares with other ships."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080471c",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Ships were built &#39;from the outside in&#39;: &#39; Only once the shell of the hull was complete were the internal ribs added &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080471d",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE The shallow hull let them be dragged onto beaches, &#39; so that their crews could land almost anywhere without the need for a harbour &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080471e",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE &#39; The rowers were not slaves but the warriors themselves &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab78b54a5f9785a40804709",
+            "directions": "<p><strong>Questions 6-13</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Longships and knarrs</h3><p>The hull of a Viking ship was made of overlapping planks, which were attached to each other with iron [6]. The planks were split from the trunks of [7] trees rather than being sawn. To make the hull watertight, the gaps were filled with animal hair that had been soaked in [8].</p><p>Longships had a shallow hull, so they could be dragged up onto [9]. Their single square sail was made of [10], and the rowers probably sat on [11] which held their possessions.</p><p>Knarrs were broader and deeper than longships and depended mostly on their [12]. As well as animals and timber, they carried goods such as walrus [13].</p>",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a4080471f",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "rivets",
+                "acceptedAnswers": [
+                  "rivets"
+                ],
+                "explanation": "Answer: rivets &#39;each plank was fixed to the one below it with iron rivets &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804720",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "oak",
+                "acceptedAnswers": [
+                  "oak"
+                ],
+                "explanation": "Answer: oak &#39;The planks were usually split from trunks of oak rather than sawn&#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804721",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "tar",
+                "acceptedAnswers": [
+                  "tar"
+                ],
+                "explanation": "Answer: tar &#39;filled with animal hair soaked in tar to keep the water out&#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804722",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "beaches",
+                "acceptedAnswers": [
+                  "beaches"
+                ],
+                "explanation": "Answer: beaches The shallow hull allowed longships &#39;to be dragged up onto beaches &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804723",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "wool",
+                "acceptedAnswers": [
+                  "wool"
+                ],
+                "explanation": "Answer: wool &#39;a single large square sail made of wool &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804724",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "chests",
+                "acceptedAnswers": [
+                  "chests"
+                ],
+                "explanation": "Answer: chests With no fixed benches, rowers &#39;are thought to have sat on wooden chests containing their personal belongings&#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804725",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "sail",
+                "acceptedAnswers": [
+                  "sail"
+                ],
+                "explanation": "Answer: sail Knarrs &#39;relied mainly on their sail , carrying only a few oars&#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804726",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "ivory",
+                "acceptedAnswers": [
+                  "ivory"
+                ],
+                "explanation": "Answer: ivory &#39;A knarr could carry livestock, timber, wool and walrus ivory &#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<h3 style=\"text-align:center\">How cropmarks form</h3><p>Cropmarks appear because crops above buried features are affected differently by dry weather. The soft soil in an old ditch holds more [20], so the crops above it remain green. Over buried walls, the soil is thin, and the crops become [21] earlier. In 2018, as well as photographs taken from an aircraft, the survey team received pictures taken by the public using [22].</p>",
+        "groups": [
+          {
+            "id": "6ab78b54a5f9785a4080470f",
+            "directions": "<p><strong>Questions 14-19</strong></p><p>Reading Passage 2 has eight sections, <strong>A-H</strong>.</p><p>Which section contains the following information?</p><p>Write the correct letter, <strong>A-H</strong>, in boxes 14-19 on your answer sheet.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a40804727",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Rain or harvest can make cropmarks disappear, so &#39; archaeologists have to record them as fast as they can before the opportunity is lost &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804728",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "acceptedAnswers": [],
+                "explanation": "Answer: G The Roman estates produced grain and &#39; also sold wool, leather and cattle &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804729",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D The ditch and bank &#39; would have served to keep farm animals in and wild animals out &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080472a",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "acceptedAnswers": [],
+                "explanation": "Answer: F On clay soils, life was hard &#39;in wet years, when the soil stayed flooded and crops could easily fail &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080472b",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C &#39;It was exhausting&#39; – early starts and &#39; hours circling in a hot, cramped cockpit &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080472c",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H More frequent dry summers &#39; could reveal many more sites in the years ahead &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab78b54a5f9785a40804710",
+            "directions": "<p><strong>Questions 20-22</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">How cropmarks form</h3><p>Cropmarks appear because crops above buried features are affected differently by dry weather. The soft soil in an old ditch holds more [20], so the crops above it remain green. Over buried walls, the soil is thin, and the crops become [21] earlier. In 2018, as well as photographs taken from an aircraft, the survey team received pictures taken by the public using [22].</p>",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a4080472d",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "moisture",
+                "acceptedAnswers": [
+                  "moisture"
+                ],
+                "explanation": "Answer: moisture Over a filled ditch, &#39;the ground holds more moisture , so the crops above it stay green for longer&#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080472e",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "yellow",
+                "acceptedAnswers": [
+                  "yellow"
+                ],
+                "explanation": "Answer: yellow Over walls the soil dries quickly and &#39;the crops there turn yellow first&#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080472f",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "drones",
+                "acceptedAnswers": [
+                  "drones"
+                ],
+                "explanation": "Answer: drones Members of the public took part, &#39;using drones to photograph fields near their homes&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab78b54a5f9785a40804711",
+            "directions": "<p><strong>Questions 23-26</strong></p><p>Choose <strong>TWO</strong> letters, <strong>A-E</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a40804730",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Most of the sites were burial monuments."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Some sites were on land that was thought to have been avoided by farmers."
+                  },
+                  {
+                    "key": "C",
+                    "text": "People who were not archaeologists contributed to the survey."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Drone photographs proved more useful than those taken from the aircraft."
+                  },
+                  {
+                    "key": "E",
+                    "text": "More new sites were found in Wales than in England."
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B, C Farmers were assumed to avoid clay, &#39; Yet a large number of the newly discovered farmsteads lay on exactly this kind of ground &#39; (B); &#39;Members of the public also took part&#39; (C). Many sites were farmsteads, not burial mounds (A); no comparison is made for D or E."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804731",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "They helped to supply soldiers with food."
+                  },
+                  {
+                    "key": "B",
+                    "text": "They were owned by army officers."
+                  },
+                  {
+                    "key": "C",
+                    "text": "They were connected to places where goods could be sold."
+                  },
+                  {
+                    "key": "D",
+                    "text": "They sent most of their produce overseas."
+                  },
+                  {
+                    "key": "E",
+                    "text": "They were larger than modern farms in the same area."
+                  }
+                ],
+                "correctAnswer": "",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A, C They &#39; produced grain for the army &#39; (A), and &#39; roads and tracks show how the estates were linked to nearby markets &#39; (C). Nothing is said about ownership (B), exports (D) or modern farms (E)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<p>38. Most of a plant's cells only change state after it has experienced several weeks of [38].</p><p>39. Because of warmer winters, some fruit growers have seen uneven flowering and reduced [39].</p><p>40. The research was done using a plant called [40], which is related to cabbage.</p>",
+        "groups": [
+          {
+            "id": "6ab78b54a5f9785a40804716",
+            "directions": "<p><strong>Questions 27-32</strong></p><p>Do the following statements agree with the information given in Reading Passage 3?</p><p>In boxes <strong>27-32</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a40804732",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN We are told which institute the team is from, but nothing about the nationalities of its members."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804733",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE &#39; This prevents them from flowering during a mild spell in autumn &#39;, which would expose the flowers to winter."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804734",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE &#39; His claims were later shown to be false &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804735",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE &#39; Each cell makes its own decision, flipping from on to off &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804736",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Once switched off, FLC &#39; stays off even when the weather warms up again &#39;, so the plant remembers the winter for weeks or months."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804737",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Both apples and cherries need chilling, but the passage does not compare how much each has been affected."
+              }
+            ]
+          },
+          {
+            "id": "6ab78b54a5f9785a40804717",
+            "directions": "<p><strong>Questions 33-37</strong></p><p>Reading Passage 3 has eight paragraphs, <strong>A-H</strong>.</p><p>Which paragraph contains the following information?</p><p>Write the correct letter, <strong>A-H</strong>, in boxes 33-37 on your answer sheet.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a40804738",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "acceptedAnswers": [],
+                "explanation": "Answer: G &#39;If we understand exactly how plants measure the cold, we may be able to breed varieties that need less of it &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a40804739",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A &#39; The research, published this month in a leading scientific journal &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080473a",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "acceptedAnswers": [],
+                "explanation": "Answer: H &#39; the team is now working with plant breeders who will test whether the findings can be applied to these crops &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080473b",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B Flowering in a mild autumn spell &#39; would expose their delicate flowers and seeds to the harsh winter that follows &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080473c",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Farmers decide when to sow: &#39; Winter varieties of wheat and barley are sown in autumn so that they experience the cold they need &#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab78b54a5f9785a40804718",
+            "directions": "<p><strong>Questions 38-40</strong></p><p>Complete the sentences below.</p><p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>",
+            "contextHtml": "<p>38. Most of a plant's cells only change state after it has experienced several weeks of [38].</p><p>39. Because of warmer winters, some fruit growers have seen uneven flowering and reduced [39].</p><p>40. The research was done using a plant called [40], which is related to cabbage.</p>",
+            "questions": [
+              {
+                "qid": "6ab78b54a5f9785a4080473d",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "cold",
+                "acceptedAnswers": [
+                  "cold"
+                ],
+                "explanation": "Answer: cold &#39;a plant typically needs several weeks of cold before most of its cells have changed state&#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080473e",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "yields / lower yields",
+                "acceptedAnswers": [
+                  "yields",
+                  "lower yields"
+                ],
+                "explanation": "Answer: yields &#39;growers have reported uneven flowering and lower yields &#39;."
+              },
+              {
+                "qid": "6ab78b54a5f9785a4080473f",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "thale cress",
+                "acceptedAnswers": [
+                  "thale cress"
+                ],
+                "explanation": "Answer: thale cress &#39;The work was carried out on thale cress , a small plant related to cabbage&#39;."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

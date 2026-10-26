@@ -1,0 +1,1606 @@
+{
+  "id": "ielts-ac-c1-t7",
+  "testNum": 7,
+  "collection": "Collection 1",
+  "type": "academic",
+  "title": "IELTS Academic Collection 1 Test 7 (Bản Gốc STUDY4)",
+  "category": "ielts-ac",
+  "durationMinutes": 165,
+  "questionsCount": 80,
+  "listening": {
+    "durationMinutes": 40,
+    "audioTracks": {
+      "part1": "/exams/ielts-ac-c1-t7/audio/p1.mp3",
+      "part2": "/exams/ielts-ac-c1-t7/audio/p2.mp3",
+      "part3": "/exams/ielts-ac-c1-t7/audio/p3.mp3",
+      "part4": "/exams/ielts-ac-c1-t7/audio/p4.mp3"
+    },
+    "parts": [
+      {
+        "partNum": 1,
+        "title": "Part 1",
+        "audioTrack": "/exams/ielts-ac-c1-t7/audio/p1.mp3",
+        "transcript": "",
+        "groups": []
+      }
+    ]
+  },
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1: Sydney Opera House",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.</span></p><p><b><span>Sydney Opera House</span></b></p><p><i><span>Sydney Opera House is an example of late modern architecture; it is admired internationally and treasured by the people of Australia.</span></i></p><p><span>In 1956, the Premier of New South Wales, Australia, announced an international competition for the design of an opera house for Sydney. It attracted more than 200 entries from around the world and was won by Jørn Utzon, a relatively little-known architect from Denmark. The story goes that during the judging of the competition, one judge, American architect Eero Saarinen, arrived in Sydney after the other three judges had started assessing the entries. He looked through their rejected entries and stopped at the Utzon design, declaring it to be outstanding.</span></p><p><span>It was Utzon’s life and travels that had shaped his design for the Sydney Opera House. Though he had never visited the site, he used his maritime background to study the naval charts of Sydney Harbour. His early exposure to shipbuilding provided the inspiration for the design of the roof, which is a series of curved ‘shells’ that look like the sails of a sailing ship billowing in the wind. From his travels to Mexico, he had the idea of placing his building on a wide horizontal platform.</span></p><p><span>Construction of the platform began in 1959, and throughout the early 1960s, Utzon amended his original designs in order to develop a way to build the large ‘shells’ that cover the two main halls. The construction of the roof brought together some of the world’s best engineers and craftsmen, devising innovative techniques to create a major visual impact in accordance with Utzon’s vision. The design was one of the first examples of the use of computer-aided design for complex shapes.</span></p><p><span>Although Utzon had spectacular plans for the interior, he was unable to realise them. Cost overruns contributed to criticism of the project and, after a change of government, the Minister of Works began questioning Utzon’s schedules and cost estimates. Payments to Utzon were stopped and he was forced to withdraw as chief architect in 1966. Following his resignation, there were protests through the streets led by prominent architect Harry Seidler and others, demanding that Utzon be reinstated as architect. However, Utzon was not reinstated and left Australia in 1966. He never returned, and new architects were appointed to complete the building in his absence. The original cost estimate for the Opera House was $7 million, with the completion date set for 26 January 1963. However, the Opera House was not formally completed until 1973, having cost $102 million.</span></p><p><span>Since its opening in 1973, Sydney Opera House has earned a reputation as a world-class performing-arts centre and become a symbol of both Sydney and Australia. Situated at Bennelong Point on Sydney Harbour, it consists of a series of large precast ‘shells’ made of concrete, each composed of sections of a sphere of 75.2 metres radius, forming the roofs of the structure, set on a monumental platform. The building is 183 metres long and 120 metres wide at its widest point. It is supported on 588 concrete piers, which are sunk approximately 25 metres below sea level.</span></p><p><span>Although the roof structures are commonly referred to as ‘shells’, they are precast concrete panels supported by concrete ribs. The ‘shells’ are covered with 1,056,006 white and cream-coloured tiles manufactured in a factory in Sweden that generally produced stoneware tiles for the paper-mill industry. The design solution and construction of the shell structure took eight years to complete, and the development of the special ceramic tiles took over three years. Apart from the tiles covering the ‘shells’, the building’s exterior is mostly clad with granite quarried in Australia.</span></p><p><span>Contrary to its name, Sydney Opera House includes multiple performance venues. It is among the busiest performing-arts centres in the world, holding over 1,500 performances each year. It hosts a large number of performing-arts companies, including the four resident companies: Opera Australia, the Australian Ballet, the Sydney Theatre Company and the Sydney Symphony Orchestra.</span></p><p><span>With its grand setting and cathedral-like atmosphere, the Concert Hall is Sydney Opera House’s most prestigious performance space. The largest of all interior venues, it delivers outstanding acoustics thanks to its high ceiling and wood panelling. There is a sizable outdoor forecourt from which people ascend to the main entrance. The steps, which lead up from the forecourt to the main performance venues, are nearly 100 metres wide.</span></p><p><span>In 1999, Utzon was re-engaged to develop a set of design principles to act as a guide for future changes to the building. All of this design work he did from his base in Europe. These principles help to ensure that the building’s architectural integrity is maintained. The first alteration to the exterior was the addition of a new colonnade, which shades nine large glass openings in the previously solid exterior wall. This Utzon-led project, completed in 2006, enabled theatre patrons to see the harbour for the first time from the theatre foyers. The design also incorporates the first public lift and interior escalators to assist less-mobile patrons.</span></p><p><span>Since 2007, the cultural, heritage and architectural importance of Sydney Opera House has been protected by its inclusion on the World Heritage List.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Do the following statements agree with the information given in Reading Passage 1? In boxes 1–7 on your answer sheet, writeTRUE if the statement agrees with the informationFALSE if the statement contradicts the informationNOT GIVEN if there is no information on this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Do the following statements agree with the information given in Reading Passage 1? In boxes 1–7 on your answer sheet, write</span></p><p><span>TRUE if the statement agrees with the information</span></p><p><span>FALSE if the statement contradicts the information</span></p><p><span>NOT GIVEN if there is no information on this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310084",
+                "qNum": 1,
+                "type": "choice",
+                "question": "Utzon was famous for his work before he designed the Opera House.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "310085",
+                "qNum": 2,
+                "type": "choice",
+                "question": "Utzon’s design was favoured by the four judges of the competition from the beginning.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "310086",
+                "qNum": 3,
+                "type": "choice",
+                "question": "Utzon’s knowledge of boats gave him the idea for parts of the Opera House.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "310087",
+                "qNum": 4,
+                "type": "choice",
+                "question": "Utzon was impressed by the opera houses he had seen in Mexico.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "310088",
+                "qNum": 5,
+                "type": "choice",
+                "question": "Utzon changed his designs in the 1960s after construction began.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "310089",
+                "qNum": 6,
+                "type": "choice",
+                "question": "Seidler defended Utzon’s role as architect.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "310090",
+                "qNum": 7,
+                "type": "choice",
+                "question": "Utzon went back to Australia in 1973 for the opening of the Opera House.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "1",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310084",
+                "qNum": 1,
+                "type": "choice",
+                "question": "Utzon was famous for his work before he designed the Opera House.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "2",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310085",
+                "qNum": 2,
+                "type": "choice",
+                "question": "Utzon’s design was favoured by the four judges of the competition from the beginning.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "3",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310086",
+                "qNum": 3,
+                "type": "choice",
+                "question": "Utzon’s knowledge of boats gave him the idea for parts of the Opera House.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "4",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310087",
+                "qNum": 4,
+                "type": "choice",
+                "question": "Utzon was impressed by the opera houses he had seen in Mexico.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "5",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310088",
+                "qNum": 5,
+                "type": "choice",
+                "question": "Utzon changed his designs in the 1960s after construction began.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "6",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310089",
+                "qNum": 6,
+                "type": "choice",
+                "question": "Seidler defended Utzon’s role as architect.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "7",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310090",
+                "qNum": 7,
+                "type": "choice",
+                "question": "Utzon went back to Australia in 1973 for the opening of the Opera House.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the notes below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 8 – 13 on your answer sheet.Sydney Opera HouseFinal cost• $ (8)______Construction• A large platform acting as a base for the building• Concrete panels used to make ‘shells’, which are covered in tiles• Over a million tiles from (9)______• (10)______ from Australia covering the outside wallsUse• More than 1,500 performances annually• (11)______ performing-arts companies have their home base at the OperaHouseOutside• A large (12)______ at the foot of a wide staircaseAlterations• A colonnade was added in 2006• Openings made the (13)______ visible from foyers",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete the notes below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 8 – 13 on your answer sheet.</span></p><p><b><span>Sydney Opera House</span></b></p><p><b><span>Final cost</span></b></p><p><span>• $ (8)______</span></p><p><b><span>Construction</span></b></p><p><span>• A large platform acting as a base for the building</span></p><p><span>• Concrete panels used to make ‘shells’, which are covered in tiles</span></p><p><span>• Over a million tiles from (9)______</span></p><p><span>• (10)______ from Australia covering the outside walls</span></p><p><b><span>Use</span></b></p><p><span>• More than 1,500 performances annually</span></p><p><span>• (11)______ performing-arts companies have their home base at the Opera</span></p><p><b><span>House</span></b></p><p><span>Outside</span></p><p><span>• A large (12)______ at the foot of a wide staircase</span></p><p><b><span>Alterations</span></b></p><p><span>• A colonnade was added in 2006</span></p><p><span>• Openings made the (13)______ visible from foyers</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310091",
+                "qNum": 8,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "102 million [OR] 102(,)000(,)000",
+                "explanation": "Đáp án chuẩn: 102 million [OR] 102(,)000(,)000"
+              },
+              {
+                "qid": "310092",
+                "qNum": 9,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Sweden",
+                "explanation": "Đáp án chuẩn: Sweden"
+              },
+              {
+                "qid": "310093",
+                "qNum": 10,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "granite",
+                "explanation": "Đáp án chuẩn: granite"
+              },
+              {
+                "qid": "310094",
+                "qNum": 11,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "four/4",
+                "explanation": "Đáp án chuẩn: four/4"
+              },
+              {
+                "qid": "310095",
+                "qNum": 12,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "forecourt",
+                "explanation": "Đáp án chuẩn: forecourt"
+              },
+              {
+                "qid": "310096",
+                "qNum": 13,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "harbo(u)r",
+                "explanation": "Đáp án chuẩn: harbo(u)r"
+              }
+            ]
+          },
+          {
+            "directions": "8",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310091",
+                "qNum": 8,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "102 million [OR] 102(,)000(,)000",
+                "explanation": "Đáp án chuẩn: 102 million [OR] 102(,)000(,)000"
+              }
+            ]
+          },
+          {
+            "directions": "9",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310092",
+                "qNum": 9,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Sweden",
+                "explanation": "Đáp án chuẩn: Sweden"
+              }
+            ]
+          },
+          {
+            "directions": "10",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310093",
+                "qNum": 10,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "granite",
+                "explanation": "Đáp án chuẩn: granite"
+              }
+            ]
+          },
+          {
+            "directions": "11",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310094",
+                "qNum": 11,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "four/4",
+                "explanation": "Đáp án chuẩn: four/4"
+              }
+            ]
+          },
+          {
+            "directions": "12",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310095",
+                "qNum": 12,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "forecourt",
+                "explanation": "Đáp án chuẩn: forecourt"
+              }
+            ]
+          },
+          {
+            "directions": "13",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310096",
+                "qNum": 13,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "harbo(u)r",
+                "explanation": "Đáp án chuẩn: harbo(u)r"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2: Investment in Shares vs. Investment in Other Assets",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.</span></p><p><b><span>Investment in Shares vs. Investment in Other Assets</span></b></p><p><b><span>Which Gives the Greater Gain?</span></b></p><p><i><span>How one university collected the data to try and answer this question</span></i></p><p data-heading-para=\"A\" data-question-number=\"14\"><b><span>A.</span></b><span> It all began in 1958 with a phone call from Louis Engel, a banker at Merrill Lynch, a US- based financial management company, who wanted to know how investors in shares had performed relative to investors in other assets such as low-risk investments with guaranteed returns. ‘I don’t know, but if you gave me $50,000, I could find out,’ replied Jim Lorie, a dean at the University of Chicago’s business school. Louis Engel soon agreed to provide the funding, and more. The result, in 1960, was the launch of the University’s Center for Research in Security Prices. Half a century later CRSP (pronounced ‘crisp’) data are everywhere. They provided the foundation of at least one-third of all empirical research in finance over the past 40 years, according to a presentation at a symposium held this month. They probably influenced much of the rest.</span></p><p data-heading-para=\"B\" data-question-number=\"15\"><b><span>B. </span></b><span>Getting the CRSP data together was a tough process in what were then the early days of computers. Up to three million pieces of information on all the shares traded on the New York Stock Exchange between 1926 and 1960 were transferred from paper in the exchange’s archive to magnetic tape. A lot of time was spent adjusting prices to take account of complexities in the market. Lorie and his co-researcher, Lawrence Fisher, chose January 1926 as the start date because they wanted the data to span at least one complete business cycle from boom to bust, or vice versa.</span></p><p data-heading-para=\"C\" data-question-number=\"16\"><b><span>C.</span></b><span> When these two economists published the first study based on the CRSP data in 1964, they reported that the annual compound return on the shares over the entire 35-year period was (depending on the tax status of the investor) between 6.8% and 9%. Acknowledging that good data on the performance of other assets were not available, the study claimed that the rate of return on shares was ‘substantially higher than for alternative investment media’, providing the first empirical support for the still-popular idea that shares outperform other investments over the long run. Fisher and Lorie also observed that many people chose to invest in assets with lower returns because they were cautious by nature and were concerned about the risk of loss inherent in investing in the stock market. Economists today call the amount of extra return that investors need to compensate them for this additional risk the ‘equity risk premium’, although they differ greatly on how big investors should expect it to be.</span></p><p data-heading-para=\"D\" data-question-number=\"17\"><b><span>D.</span></b><span> After Fisher and Lorie’s 1964 report there was no stopping the love affair between financial economists and the data that studying these numbers produced. Myron Scholes, now a Nobel laureate, became director of CRSP in 1974, and ensured the database was both kept up to date and made readily available to academic economists everywhere. In turn, this resource became ever more useful as computing power became more affordable. The CRSP database has since been expanded to include a full range of different types of investments. It has been replicated across the world.</span></p><p data-heading-para=\"E\" data-question-number=\"18\"><b><span>E. </span></b><span>One of the earliest uses of CRSP data was by Eugene Fama, an economist at the University of Chicago, to support his ‘efficient-market hypothesis’. He found that over a lengthy period, share prices tended to rise and fall randomly, without showing much of a pattern. Markets are efficient, he said, because all relevant information is reflected in share prices at any given moment, meaning there are no predictable movements in prices for smart investors to exploit. Fama did concede that there was some evidence of temporary short-term predictability in share prices, however. That stipulation has resulted in a vast number of papers based on discovering such ‘variations’ through data mining. In theory, such anomalies are potentially lucrative for investors, but as believers in efficient markets observe with satisfaction, it seems that no sooner are such anomalies discovered and reported in journals than they typically disappear.</span></p><p data-heading-para=\"F\" data-question-number=\"19\"><b><span>F. </span></b><span>However, the sheer volume of material means that financial economists are becoming increasingly specialised, which may have costs as well as benefits. Some economists worry that much of this statistical analysis is creating some interference that drowns out serious thinking about the big questions, such as why the financial system nearly collapsed in 2008 and how a repeat can be avoided. Robert Shiller, an economist at Yale University and a long-time sceptic about the efficient-market hypothesis, feels that with the creation of the CRSP database economists suddenly believed that finance had become scientific. According to Shiller, conventional ideas about investing and financial markets – and about their vulnerabilities – seemed out of date to the new empiricists. He worries that academic departments are full of economists who are so specialised in data analysis that they fail to see and understand the whole. They get a sense of authority from work that contains lots of data. To have seen the 2008 global financial crisis coming, he argues, it would have been better to ‘go back to old-fashioned readings of history, studying institutions and laws. We should have talked to grandpa.’</span></p><p data-heading-para=\"G\" data-question-number=\"20\"><b><span>G.</span></b><span> Scholes responds to this criticism with the contention that the usefulness of this empirical analysis is proven by the fact that demand for it continues to grow. At CRSP’s 50th-anniversary symposium, plans were unveiled to publish indicators on an expanding range of investments, as well as for growth and value stocks. These indicators, CRSP claims, will be more academically rigorous and cheaper than existing ones. For believers in the efficiency of markets, that should be enough to ensure CRSP’s continuing success.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Reading Passage 2 has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–viii, in boxes 14–20 on your answer sheet.List of Headingsi. The growing availability and influence of CRSP dataii. Initial findings of the CRSP projectiii. A request and a far-reaching resultiv. Difficulties in collecting CRSP datav. What the future holdsvi. Too much data for people to have an overall understandingvii. Other university departments which depend on CRSPviii. CRSP data not always being a useful basis for investment",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Reading Passage 2 has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, i–viii, in boxes 14–20 on your answer sheet.</span></p><p><b><span>List of Headings</span></b></p><p data-pool-key=\"i\"><span>i. The growing availability and influence of CRSP data</span></p><p data-pool-key=\"ii\"><span>ii. Initial findings of the CRSP project</span></p><p data-pool-key=\"iii\"><span>iii. A request and a far-reaching result</span></p><p data-pool-key=\"iv\"><span>iv. Difficulties in collecting CRSP data</span></p><p data-pool-key=\"v\"><span>v. What the future holds</span></p><p data-pool-key=\"vi\"><span>vi. Too much data for people to have an overall understanding</span></p><p data-pool-key=\"vii\"><span>vii. Other university departments which depend on CRSP</span></p><p data-pool-key=\"viii\"><span>viii. CRSP data not always being a useful basis for investment</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310097",
+                "qNum": 14,
+                "type": "input",
+                "question": "Paragraph A",
+                "options": [],
+                "correctAnswer": "iii",
+                "explanation": "Đáp án chuẩn: iii"
+              },
+              {
+                "qid": "310098",
+                "qNum": 15,
+                "type": "input",
+                "question": "Paragraph B",
+                "options": [],
+                "correctAnswer": "iv",
+                "explanation": "Đáp án chuẩn: iv"
+              },
+              {
+                "qid": "310099",
+                "qNum": 16,
+                "type": "input",
+                "question": "Paragraph C",
+                "options": [],
+                "correctAnswer": "ii",
+                "explanation": "Đáp án chuẩn: ii"
+              },
+              {
+                "qid": "310100",
+                "qNum": 17,
+                "type": "input",
+                "question": "Paragraph D",
+                "options": [],
+                "correctAnswer": "i",
+                "explanation": "Đáp án chuẩn: i"
+              },
+              {
+                "qid": "310101",
+                "qNum": 18,
+                "type": "input",
+                "question": "Paragraph E",
+                "options": [],
+                "correctAnswer": "viii",
+                "explanation": "Đáp án chuẩn: viii"
+              },
+              {
+                "qid": "310102",
+                "qNum": 19,
+                "type": "input",
+                "question": "Paragraph F",
+                "options": [],
+                "correctAnswer": "vi",
+                "explanation": "Đáp án chuẩn: vi"
+              },
+              {
+                "qid": "310103",
+                "qNum": 20,
+                "type": "input",
+                "question": "Paragraph G",
+                "options": [],
+                "correctAnswer": "v",
+                "explanation": "Đáp án chuẩn: v"
+              }
+            ]
+          },
+          {
+            "directions": "14",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310097",
+                "qNum": 14,
+                "type": "input",
+                "question": "Paragraph A",
+                "options": [],
+                "correctAnswer": "iii",
+                "explanation": "Đáp án chuẩn: iii"
+              }
+            ]
+          },
+          {
+            "directions": "15",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310098",
+                "qNum": 15,
+                "type": "input",
+                "question": "Paragraph B",
+                "options": [],
+                "correctAnswer": "iv",
+                "explanation": "Đáp án chuẩn: iv"
+              }
+            ]
+          },
+          {
+            "directions": "16",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310099",
+                "qNum": 16,
+                "type": "input",
+                "question": "Paragraph C",
+                "options": [],
+                "correctAnswer": "ii",
+                "explanation": "Đáp án chuẩn: ii"
+              }
+            ]
+          },
+          {
+            "directions": "17",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310100",
+                "qNum": 17,
+                "type": "input",
+                "question": "Paragraph D",
+                "options": [],
+                "correctAnswer": "i",
+                "explanation": "Đáp án chuẩn: i"
+              }
+            ]
+          },
+          {
+            "directions": "18",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310101",
+                "qNum": 18,
+                "type": "input",
+                "question": "Paragraph E",
+                "options": [],
+                "correctAnswer": "viii",
+                "explanation": "Đáp án chuẩn: viii"
+              }
+            ]
+          },
+          {
+            "directions": "19",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310102",
+                "qNum": 19,
+                "type": "input",
+                "question": "Paragraph F",
+                "options": [],
+                "correctAnswer": "vi",
+                "explanation": "Đáp án chuẩn: vi"
+              }
+            ]
+          },
+          {
+            "directions": "20",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310103",
+                "qNum": 20,
+                "type": "input",
+                "question": "Paragraph G",
+                "options": [],
+                "correctAnswer": "v",
+                "explanation": "Đáp án chuẩn: v"
+              }
+            ]
+          },
+          {
+            "directions": "Look at the following statements (21–23) and the list of economists below. Match each statement with the correct economist A, B, C or D. Write the correct letter in boxes 21–23 on your answer sheet.List of EconomistsA. Fisher and LorieB. Myron ScholesC. Eugene FamaD. Robert Shiller",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Look at the following statements (21–23) and the list of economists below. Match each statement with the correct economist A, B, C or D. Write the correct letter in boxes 21–23 on your answer sheet.</span></p><p><b><span>List of Economists</span></b></p><p data-pool-key=\"A\"><span>A. Fisher and Lorie</span></p><p data-pool-key=\"B\"><span>B. Myron Scholes</span></p><p data-pool-key=\"C\"><span>C. Eugene Fama</span></p><p data-pool-key=\"D\"><span>D. Robert Shiller</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310104",
+                "qNum": 21,
+                "type": "input",
+                "question": "A traditional approach may have helped predict a financial downturn.",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "310105",
+                "qNum": 22,
+                "type": "input",
+                "question": "Some people invest conservatively and as a result make less money.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310106",
+                "qNum": 23,
+                "type": "input",
+                "question": "It may be possible to forecast share prices but not over the long term.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "21",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310104",
+                "qNum": 21,
+                "type": "input",
+                "question": "A traditional approach may have helped predict a financial downturn.",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "22",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310105",
+                "qNum": 22,
+                "type": "input",
+                "question": "Some people invest conservatively and as a result make less money.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "23",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310106",
+                "qNum": 23,
+                "type": "input",
+                "question": "It may be possible to forecast share prices but not over the long term.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 24–26 on your answer sheet.The beginnings of CRSPIn 1958, a (24)______ working for a financial management company telephoned Jim Lorie to ask how well investments in shares performed in comparison to investments in low-risk assets. Lorie offered to find out and as a result the University of Chicago’s Center for Research in Security Prices (CRSP) was launched. Compiling the CRSP data was difficult because (25)______ were still being developed and information that had previously been on (26)______ needed to be put onto magnetic tape.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete the summary below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 24–26 on your answer sheet.</span></p><p><b><span>The beginnings of CRSP</span></b></p><p><span>In 1958, a (24)______ working for a financial management company telephoned Jim Lorie to ask how well investments in shares performed in comparison to investments in low-risk assets. Lorie offered to find out and as a result the University of Chicago’s Center for Research in Security Prices (CRSP) was launched. Compiling the CRSP data was difficult because (25)______ were still being developed and information that had previously been on (26)______ needed to be put onto magnetic tape.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310107",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "banker",
+                "explanation": "Đáp án chuẩn: banker"
+              },
+              {
+                "qid": "310108",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "computers",
+                "explanation": "Đáp án chuẩn: computers"
+              },
+              {
+                "qid": "310109",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "paper",
+                "explanation": "Đáp án chuẩn: paper"
+              }
+            ]
+          },
+          {
+            "directions": "24",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310107",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "banker",
+                "explanation": "Đáp án chuẩn: banker"
+              }
+            ]
+          },
+          {
+            "directions": "25",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310108",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "computers",
+                "explanation": "Đáp án chuẩn: computers"
+              }
+            ]
+          },
+          {
+            "directions": "26",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310109",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "paper",
+                "explanation": "Đáp án chuẩn: paper"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3: Book Review:",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><div><p><span>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</span></p><p><b><span>Book Review:</span></b></p><p><i><span>The Discovery of Slowness </span></i><span>by Sten Nadolny, translated by Ralph Freedman | Canongate, 311 pp</span></p><p><span><img alt=\"\" src=\"/exams/ielts-ac-c1-t7/images/img_1.png\" title=\"\"/></span></p><p><b><span>A.</span></b><span> The English explorer and writer John Franklin (1786–1847) joined the Navy at the age of 14, and fought at the battle of Trafalgar. When peace came, he turned his attention to Arctic exploration, and in particular to solving the conundrum of the Northwest Passage, a mythical clear-water route through the ice which would, if it existed, link the Pacific Ocean on America’s West Coast with the Atlantic on its East. The first expedition Franklin led to the Arctic was an arduous overland journey lasting from 1819 to 1822, in which he and his twenty-strong team covered 8,880 kilometres on foot. Their expedition was a triumph of surveying – they managed to chart hundreds of kilometres of previously unknown coastline – but food ran out on their journey back to civilization, and the men were forced to eat their belts and their boots (which they boiled up to make leather soup).</span></p><p><b><span>B.</span></b><span> There followed a career as a travel writer and public speaker (‘the man who ate his boots’ was Franklin’s tag-line). Then in 1845, Franklin set off back to the Arctic with two ships – the Erebus and the </span><i><span>Terror </span></i><span>– and 129 men. Nothing was heard of them for 14 years, although more than 30 expeditions were dispatched in search of them. Eventually, it was discovered that Franklin and all his team had perished after their ships were trapped in the ice.</span></p><p><b><span>C.</span></b><span> In his personal correspondence and published memoirs, Franklin comes across as a man dedicated to the external duties of war and exploration, who kept introspection and self- analysis to a minimum. His blandness makes him an amenably malleable subject for a novelist, and Sten Nadolny has taken full advantage of this in his book. Most importantly, Nadolny has endowed John Franklin with a defining trait for which there is no historical evidence: </span><i><span>Langsamkeit </span></i><span>(‘slowness’, or ‘calmness’).</span></p><p><b><span>D. </span></b><span>Slowness influences not only Franklin’s behaviour, but also his vision, his thoughts and his speech. The opening scene of </span><i><span>The Discovery of Slowness</span></i><span> depicts Franklin as a young boy, failing to catch a ball because his reaction time is too slow. Despite the bullying of his peers, Franklin resolves not to fall into step with ‘their way of doing things’. For Nadolny, Franklin’s fascination with the Arctic stems from his desire to find an environment suited to his peculiar slowness. He describes Franklin as a boy dreaming of the ‘time without hours and days’ which exists in the far north, a place ‘where nobody would find him too slow’.</span></p><p><b><span>E.</span></b><span> Ice is a slow mover. The compressed blue ice inside an Alpine crevasse will have fallen as snow several decades earlier. Polar pack ice takes at least two years to form. The film of crystals, which first appears on the surface of the sea, thickens into a silkily pliant layer called nilas; this in turn consolidates into young ice, which then deepens during several seasons to become pack. Ice demands a corresponding patience from those who venture onto it. The explorers who have thrived at high latitudes and at high altitudes haven’t usually been men of great speed. They have tended instead to demonstrate unusual self-possession, a considerable capacity for boredom, and a talent for the uncomplaining endurance of suffering.</span></p><p><b><span>F. </span></b><span>These were all qualities which the historical Franklin possessed in abundance, and so Nadolny’s exaggeration of them isn’t unreasonable. Even as an adult, Franklin’s slowness of thought means that he is unable to speak fluently, so he learns by heart ‘entire fleets of words and batteries of responses’, and speaks a languid, bric-à-brac language. In the Navy, his method of thinking first and acting later initially provokes mockery from his fellow sailors. But Franklin persists in doing things his way, and gradually earns the respect of those around him. To a commodore who tells him to speed up his report of an engagement, he replies: ‘When I tell something, sir, I use my own rhythm.’ A lieutenant says approvingly of him: ‘Because Franklin is so slow, he never loses time.’</span></p><p><b><span>G. </span></b><span>Nadolny also brings his central metaphor of slowness to bear on the novel’s language. The chapters describing Franklin’s early years are a medley of separate fragments, rhetorical questions, associative jumps and exclamation marks. In the later sections recounting Franklin’s first Arctic expedition, Nadolny brilliantly sets the narrative pace to the rhythms of the frozen landscape, and to the ‘slowness which is bred by hunger’.</span></p><p><b><span>H. </span></b><span>Since it was first published in Germany in 1983, </span><i><span>The Discovery of Slowness</span></i><span> has sold more than a million copies and been translated into 15 languages. It has been adopted as a manual and manifesto by European pressure groups and institutions representing causes as diverse as sustainable development, management science and motoring policy, even becoming involved in the debate about speed limits on German roads. The various groups that have taken the novel up have one thing in common: a dislike of the high-speed culture of Post-modernity. Nadolny’s Franklin appeals to them because he is immune to ‘the compulsion to be constantly occupied’, and to the idea that ‘someone was better if he could do the same thing fast’. It’s easy to see where the attraction lies for those in management. The novel is crammed with quotations about time-efficiency, punctiliousness and profitability: ‘What did “too late” mean? They hadn’t waited for it long enough, that’s what it meant.’</span></p></div></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Reading Passage 3 has eight paragraphs, A–H. Which paragraph contains the following information? Write the correct letter, A–H, in boxes 27–31 on your answer sheet.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Reading Passage 3 has eight paragraphs, A–H. Which paragraph contains the following information? Write the correct letter, A–H, in boxes 27–31 on your answer sheet.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310110",
+                "qNum": 27,
+                "type": "input",
+                "question": "a summary of Franklin’s occupation in the period before his first expedition",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310111",
+                "qNum": 28,
+                "type": "input",
+                "question": "a reference to a feature of Franklin’s character in Nadolny’s novel that has no definite basis in fact",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "310112",
+                "qNum": 29,
+                "type": "input",
+                "question": "a connection between the central theme of the novel and an environmental process",
+                "options": [],
+                "correctAnswer": "E",
+                "explanation": "Đáp án chuẩn: E"
+              },
+              {
+                "qid": "310113",
+                "qNum": 30,
+                "type": "input",
+                "question": "a reference to the widespread appeal of Nadolny’s novel",
+                "options": [],
+                "correctAnswer": "H",
+                "explanation": "Đáp án chuẩn: H"
+              },
+              {
+                "qid": "310114",
+                "qNum": 31,
+                "type": "input",
+                "question": "a summary of events following Franklin’s return from his first expedition",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "27",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310110",
+                "qNum": 27,
+                "type": "input",
+                "question": "a summary of Franklin’s occupation in the period before his first expedition",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "28",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310111",
+                "qNum": 28,
+                "type": "input",
+                "question": "a reference to a feature of Franklin’s character in Nadolny’s novel that has no definite basis in fact",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "29",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310112",
+                "qNum": 29,
+                "type": "input",
+                "question": "a connection between the central theme of the novel and an environmental process",
+                "options": [],
+                "correctAnswer": "E",
+                "explanation": "Đáp án chuẩn: E"
+              }
+            ]
+          },
+          {
+            "directions": "30",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310113",
+                "qNum": 30,
+                "type": "input",
+                "question": "a reference to the widespread appeal of Nadolny’s novel",
+                "options": [],
+                "correctAnswer": "H",
+                "explanation": "Đáp án chuẩn: H"
+              }
+            ]
+          },
+          {
+            "directions": "31",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310114",
+                "qNum": 31,
+                "type": "input",
+                "question": "a summary of events following Franklin’s return from his first expedition",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the summary using the list of words, A–L, below. Write the correct letter, A–L, in boxes 32–35 on your answer sheet.A. a bully B. discoveries C. educationalD. family E. isolation F. an outsiderG. personality H. problems I. remotenessJ. a scholar K. sporting L. timelessnessJohn Franklin and the Quality of SlownessLittle is known from Franklin’s correspondence and published writings about his (32)______. The author, Nadolny, suggests that Franklin’s whole life can be explained by the quality of ‘slowness’. He begins the book by showing how this affects the young Franklin’s (33)______ activities, and makes him become (34)______. As a child, it is the quality of (35)______ that attracts Franklin to the Arctic.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete the summary using the list of words, A–L, below. Write the correct letter, A–L, in boxes 32–35 on your answer sheet.</span></p><p data-pool-key=\"A\"><span>A. a bully </span></p><p data-pool-key=\"B\"><span>B. discoveries </span></p><p data-pool-key=\"C\"><span>C. educational</span></p><p data-pool-key=\"D\"><span>D. family </span></p><p data-pool-key=\"E\"><span>E. isolation </span></p><p data-pool-key=\"F\"><span>F. an outsider</span></p><p data-pool-key=\"G\"><span>G. personality </span></p><p data-pool-key=\"H\"><span>H. problems </span></p><p data-pool-key=\"I\"><span>I. remoteness</span></p><p data-pool-key=\"J\"><span>J. a scholar </span></p><p data-pool-key=\"K\"><span>K. sporting </span></p><p data-pool-key=\"L\"><span>L. timelessness</span></p><p><b><span>John Franklin and the Quality of Slowness</span></b></p><p><span>Little is known from Franklin’s correspondence and published writings about his (32)______. The author, Nadolny, suggests that Franklin’s whole life can be explained by the quality of ‘slowness’. He begins the book by showing how this affects the young Franklin’s (33)______ activities, and makes him become (34)______. As a child, it is the quality of (35)______ that attracts Franklin to the Arctic.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310115",
+                "qNum": 32,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              },
+              {
+                "qid": "310116",
+                "qNum": 33,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "K",
+                "explanation": "Đáp án chuẩn: K"
+              },
+              {
+                "qid": "310117",
+                "qNum": 34,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              },
+              {
+                "qid": "310118",
+                "qNum": 35,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "L",
+                "explanation": "Đáp án chuẩn: L"
+              }
+            ]
+          },
+          {
+            "directions": "32",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310115",
+                "qNum": 32,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              }
+            ]
+          },
+          {
+            "directions": "33",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310116",
+                "qNum": 33,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "K",
+                "explanation": "Đáp án chuẩn: K"
+              }
+            ]
+          },
+          {
+            "directions": "34",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310117",
+                "qNum": 34,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              }
+            ]
+          },
+          {
+            "directions": "35",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310118",
+                "qNum": 35,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "L",
+                "explanation": "Đáp án chuẩn: L"
+              }
+            ]
+          },
+          {
+            "directions": "Choose the correct letter, A, B, C or D. Write the correct letter in boxes 36–40 on your answer sheet.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Choose the correct letter, A, B, C or D. Write the correct letter in boxes 36–40 on your answer sheet.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310119",
+                "qNum": 36,
+                "type": "choice",
+                "question": "In paragraph E, the writer describes different types of ice in order to illustrate",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the extreme conditions that Polar explorers have to face.",
+                    "full": "(A) the extreme conditions that Polar explorers have to face."
+                  },
+                  {
+                    "key": "B",
+                    "text": "the unusual quality of the beauty of Polar regions.",
+                    "full": "(B) the unusual quality of the beauty of Polar regions."
+                  },
+                  {
+                    "key": "C",
+                    "text": "the vital importance of preserving the Arctic environment.",
+                    "full": "(C) the vital importance of preserving the Arctic environment."
+                  },
+                  {
+                    "key": "D",
+                    "text": "the personal qualities required of an explorer in Arctic conditions.",
+                    "full": "(D) the personal qualities required of an explorer in Arctic conditions."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "310120",
+                "qNum": 37,
+                "type": "choice",
+                "question": "What is said about the way Franklin communicates?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "He expresses a very limited range of ideas.",
+                    "full": "(A) He expresses a very limited range of ideas."
+                  },
+                  {
+                    "key": "B",
+                    "text": "He is only willing to discuss things he is familiar with.",
+                    "full": "(B) He is only willing to discuss things he is familiar with."
+                  },
+                  {
+                    "key": "C",
+                    "text": "He uses words and phrases that he has previously memorised.",
+                    "full": "(C) He uses words and phrases that he has previously memorised."
+                  },
+                  {
+                    "key": "D",
+                    "text": "He is only fluent when talking about naval matters.",
+                    "full": "(D) He is only fluent when talking about naval matters."
+                  }
+                ],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "310121",
+                "qNum": 38,
+                "type": "choice",
+                "question": "How does the attitude of the other sailors change towards Franklin?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "They no longer notice his slowness.",
+                    "full": "(A) They no longer notice his slowness."
+                  },
+                  {
+                    "key": "B",
+                    "text": "They start to copy his approach to work.",
+                    "full": "(B) They start to copy his approach to work."
+                  },
+                  {
+                    "key": "C",
+                    "text": "They begin to recognise his efforts to overcome his problems.",
+                    "full": "(C) They begin to recognise his efforts to overcome his problems."
+                  },
+                  {
+                    "key": "D",
+                    "text": "They eventually appreciate his good qualities.",
+                    "full": "(D) They eventually appreciate his good qualities."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "310122",
+                "qNum": 39,
+                "type": "choice",
+                "question": "The chapters of The Discovery of Slowness which describe Franklin’s early years contain",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "text from a wide variety of sources.",
+                    "full": "(A) text from a wide variety of sources."
+                  },
+                  {
+                    "key": "B",
+                    "text": "short, disconnected pieces of text.",
+                    "full": "(B) short, disconnected pieces of text."
+                  },
+                  {
+                    "key": "C",
+                    "text": "descriptions of the Arctic landscape.",
+                    "full": "(C) descriptions of the Arctic landscape."
+                  },
+                  {
+                    "key": "D",
+                    "text": "information about other explorers like Franklin.",
+                    "full": "(D) information about other explorers like Franklin."
+                  }
+                ],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "310123",
+                "qNum": 40,
+                "type": "choice",
+                "question": "The Discovery of Slowness has achieved widespread popularity because",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "it reflects many people’s concern about one aspect of modern life.",
+                    "full": "(A) it reflects many people’s concern about one aspect of modern life."
+                  },
+                  {
+                    "key": "B",
+                    "text": "it offers achievable solutions to many of the problems of today.",
+                    "full": "(B) it offers achievable solutions to many of the problems of today."
+                  },
+                  {
+                    "key": "C",
+                    "text": "it tells the story of someone’s triumph over personal problems.",
+                    "full": "(C) it tells the story of someone’s triumph over personal problems."
+                  },
+                  {
+                    "key": "D",
+                    "text": "it shows how life in the past was less pressured than it is now.",
+                    "full": "(D) it shows how life in the past was less pressured than it is now."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "36",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310119",
+                "qNum": 36,
+                "type": "choice",
+                "question": "In paragraph E, the writer describes different types of ice in order to illustrate",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the extreme conditions that Polar explorers have to face.",
+                    "full": "(A) the extreme conditions that Polar explorers have to face."
+                  },
+                  {
+                    "key": "B",
+                    "text": "the unusual quality of the beauty of Polar regions.",
+                    "full": "(B) the unusual quality of the beauty of Polar regions."
+                  },
+                  {
+                    "key": "C",
+                    "text": "the vital importance of preserving the Arctic environment.",
+                    "full": "(C) the vital importance of preserving the Arctic environment."
+                  },
+                  {
+                    "key": "D",
+                    "text": "the personal qualities required of an explorer in Arctic conditions.",
+                    "full": "(D) the personal qualities required of an explorer in Arctic conditions."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "37",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310120",
+                "qNum": 37,
+                "type": "choice",
+                "question": "What is said about the way Franklin communicates?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "He expresses a very limited range of ideas.",
+                    "full": "(A) He expresses a very limited range of ideas."
+                  },
+                  {
+                    "key": "B",
+                    "text": "He is only willing to discuss things he is familiar with.",
+                    "full": "(B) He is only willing to discuss things he is familiar with."
+                  },
+                  {
+                    "key": "C",
+                    "text": "He uses words and phrases that he has previously memorised.",
+                    "full": "(C) He uses words and phrases that he has previously memorised."
+                  },
+                  {
+                    "key": "D",
+                    "text": "He is only fluent when talking about naval matters.",
+                    "full": "(D) He is only fluent when talking about naval matters."
+                  }
+                ],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "38",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310121",
+                "qNum": 38,
+                "type": "choice",
+                "question": "How does the attitude of the other sailors change towards Franklin?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "They no longer notice his slowness.",
+                    "full": "(A) They no longer notice his slowness."
+                  },
+                  {
+                    "key": "B",
+                    "text": "They start to copy his approach to work.",
+                    "full": "(B) They start to copy his approach to work."
+                  },
+                  {
+                    "key": "C",
+                    "text": "They begin to recognise his efforts to overcome his problems.",
+                    "full": "(C) They begin to recognise his efforts to overcome his problems."
+                  },
+                  {
+                    "key": "D",
+                    "text": "They eventually appreciate his good qualities.",
+                    "full": "(D) They eventually appreciate his good qualities."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "39",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310122",
+                "qNum": 39,
+                "type": "choice",
+                "question": "The chapters of The Discovery of Slowness which describe Franklin’s early years contain",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "text from a wide variety of sources.",
+                    "full": "(A) text from a wide variety of sources."
+                  },
+                  {
+                    "key": "B",
+                    "text": "short, disconnected pieces of text.",
+                    "full": "(B) short, disconnected pieces of text."
+                  },
+                  {
+                    "key": "C",
+                    "text": "descriptions of the Arctic landscape.",
+                    "full": "(C) descriptions of the Arctic landscape."
+                  },
+                  {
+                    "key": "D",
+                    "text": "information about other explorers like Franklin.",
+                    "full": "(D) information about other explorers like Franklin."
+                  }
+                ],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "40",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310123",
+                "qNum": 40,
+                "type": "choice",
+                "question": "The Discovery of Slowness has achieved widespread popularity because",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "it reflects many people’s concern about one aspect of modern life.",
+                    "full": "(A) it reflects many people’s concern about one aspect of modern life."
+                  },
+                  {
+                    "key": "B",
+                    "text": "it offers achievable solutions to many of the problems of today.",
+                    "full": "(B) it offers achievable solutions to many of the problems of today."
+                  },
+                  {
+                    "key": "C",
+                    "text": "it tells the story of someone’s triumph over personal problems.",
+                    "full": "(C) it tells the story of someone’s triumph over personal problems."
+                  },
+                  {
+                    "key": "D",
+                    "text": "it shows how life in the past was less pressured than it is now.",
+                    "full": "(D) it shows how life in the past was less pressured than it is now."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "durationMinutes": 60,
+    "task1": {
+      "title": "Task 1: Report / Data Description",
+      "timeMinutes": 20,
+      "minWords": 150,
+      "prompt": "The chart and table below show the proportion of energy generated from renewable and non-renewable sources in selected OECD countries between 2000 and 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "sampleBand8Answer": "The chart and accompanying table illustrate the comparative distribution of electricity production from renewable and conventional non-renewable sources across four OECD member nations—namely Germany, Sweden, Canada, and Japan—over a twenty-year timeframe from 2000 to 2020.\n\nOverall, it is immediately apparent that all surveyed nations witnessed an upward trajectory in green energy adoption, with Sweden maintaining the foremost position in clean energy reliance throughout. Conversely, Japan continued to exhibit the lowest proportion of renewables despite moderate progress in the final decade.\n\nIn detail, Sweden commenced the period with 42% of its total energy coming from renewables in 2000, which subsequently expanded sharply to surpass 68% by 2020, driven primarily by investments in hydroelectric and wind installations. Canada similarly sustained high renewable dependency, starting at 56% and peaking at 64% by the end of the survey period.\n\nIn contrast, Germany underwent the most dramatic structural shift: renewable output represented a modest 8% in 2000 before quadrupling to approximately 39% in 2020 under comprehensive decarbonization initiatives. Japan, by comparison, began at just 7% and grew modestly to 18% in 2020, still leaving fossil and nuclear fuels to comprise the vast majority (82%) of its energy grid.",
+      "keyVocab": [
+        {
+          "word": "Upward trajectory",
+          "meaningVi": "Chiều hướng gia tăng rõ rệt"
+        },
+        {
+          "word": "Comparative distribution",
+          "meaningVi": "Phân bố đối chiếu"
+        },
+        {
+          "word": "Decarbonization initiatives",
+          "meaningVi": "Các sáng kiến giảm thải carbon"
+        }
+      ]
+    },
+    "task2": {
+      "title": "Task 2: Academic Essay",
+      "timeMinutes": 40,
+      "minWords": 250,
+      "prompt": "Some people believe that artificial intelligence and automation will bring massive unemployment and economic instability. Others argue that AI will foster innovation and create higher-value jobs. Discuss both views and give your own opinion.",
+      "sampleBand8Answer": "The rapid proliferation of artificial intelligence (AI) and robotic automation has ignited rigorous debate across global economic forums. While a considerable segment of the population expresses trepidation regarding widespread redundancy and fiscal volatility, others contend that this technological paradigm will unlock unprecedented productivity and cultivate novel vocational sectors. In my view, although transient displacement is inevitable, AI will ultimately function as a net positive catalyst for societal affluence.\n\nOn the one hand, apprehensions regarding job scarcity are grounded in historical precedent and empirical reality. In routine-intensive fields such as manufacturing, logistics, and entry-level clerical administration, autonomous algorithms execute quantitative computations and physical tasks with far greater velocity and precision than human operators. Consequently, unmitigated deployment without rigorous retraining frameworks risks marginalizing millions of low-skilled workers, thereby exacerbating wealth disparity and burdening public welfare reserves.\n\nOn the other hand, proponents persuasively assert that technological upheavals historically eliminate specific tasks rather than labor as a whole. By relieving human professionals of mundane, repetitive drudgery, automation creates capacity for higher-order cognitive domains such as ethical AI governance, specialized software architecture, and creative strategic consulting. Furthermore, empirical analyses indicate that machine-augmented industries stimulate secondary employment ecosystems—from renewable infrastructure to tailored biotechnology—which generate premium remuneration.\n\nIn conclusion, while the transition phase undeniably poses formidable challenges for specific occupational demographics, artificial intelligence represents a profound evolution rather than an existential crisis for the labor market. Governments and educational institutions must proactively orchestrate lifelong upskilling programs to ensure equitable participation in this automated era.",
+      "keyVocab": [
+        {
+          "word": "Proliferation",
+          "meaningVi": "Sự phát triển bùng nổ, nhân rộng"
+        },
+        {
+          "word": "Trepidation",
+          "meaningVi": "Sự lo âu, e sợ"
+        },
+        {
+          "word": "Remuneration",
+          "meaningVi": "Mức lương thưởng, thù lao"
+        }
+      ]
+    }
+  },
+  "speaking": {
+    "durationMinutes": 14,
+    "part1": {
+      "title": "Part 1: Introduction & Familiar Topics (4-5 mins)",
+      "topic": "Work, Technology, and City Life",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "What kind of work do you do, and what do you enjoy most about it?",
+          "sampleBand8": "I currently work as a senior software consultant for an international consultancy firm. What captivates me most is the intellectual challenge of engineering scalable architectural solutions that directly streamline daily operations for thousands of corporate end-users."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you prefer working individually or collaborating in a team?",
+          "sampleBand8": "While autonomous focus is indispensable for deep coding and analytical tasks, I generally thrive on teamwork. Collaborative brainstorming sessions consistently yield multifaceted perspectives that mitigate blind spots and elevate the overall caliber of our deliverables."
+        },
+        {
+          "qNum": 3,
+          "question": "How has technological progress transformed your hometown over recent years?",
+          "sampleBand8": "Remarkably so. Cashless digital payments and app-based public transportation have become completely ubiquitous, which has expedited municipal transit and significantly modernized the pace of urban living."
+        },
+        {
+          "qNum": 4,
+          "question": "Do you think you will continue living in your current city in the future?",
+          "sampleBand8": "Most definitely for the foreseeable future. The vibrant economic ecosystem, coupled with rich cultural amenities and extensive professional networks, makes it an ideal launchpad for my ongoing career trajectory."
+        }
+      ]
+    },
+    "part2": {
+      "title": "Part 2: Individual Long Turn / Cue Card (3-4 mins)",
+      "prepTimeSec": 60,
+      "speakTimeSec": 120,
+      "cueCard": {
+        "prompt": "Describe a memorable professional or academic achievement that you are proud of.",
+        "bullets": [
+          "What the achievement was",
+          "When and where it took place",
+          "What challenges you had to overcome",
+          "And explain why you felt so proud of this accomplishment."
+        ]
+      },
+      "sampleBand8Answer": "I would like to speak about a defining professional achievement from last year, when I successfully spearheaded the migration of our company's legacy customer management infrastructure to a secure cloud platform. This undertaking occurred over a grueling six-month period at our regional corporate headquarters.\n\nThe primary obstacle we confronted was the sheer complexity of legacy data formats, compounded by an unforgiving deployment deadline. We had to ensure zero downtime for over fifty thousand active global clients while synchronizing disparate legacy databases. Furthermore, midway through the project, several senior specialists had to quarantine due to seasonal health issues, which forced me to shoulder additional architectural duties and coordinate with offshore teams across multiple time zones.\n\nUltimately, the migration went live seamlessly without a single minute of service disruption. I felt immensely proud not only because the project cut infrastructure overhead by thirty percent, but because it substantiated my leadership capabilities under immense pressure and earned our team formal recognition from executive leadership."
+    },
+    "part3": {
+      "title": "Part 3: Two-way Discussion / Abstract Topics (4-5 mins)",
+      "topic": "Ambition, Workplace Recognition, and Leadership",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "Why do some individuals value intrinsic satisfaction over material rewards in their careers?",
+          "sampleBand8": "Because professional self-actualization provides enduring fulfillment that monetary incentives simply cannot replicate. When employees perceive that their daily contributions generate tangible societal impact, their engagement remains resilient even through arduous economic cycles."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you believe personal ambition always benefits an organization?",
+          "sampleBand8": "Not necessarily. While constructive ambition drives innovation and productivity, unbridled personal ambition can foster toxic internal rivalries, undermine collective cohesion, and incentivize unethical shortcuts."
+        },
+        {
+          "qNum": 3,
+          "question": "How has the definition of effective leadership evolved in the modern era?",
+          "sampleBand8": "Leadership has fundamentally transitioned from an authoritative, hierarchical command model to an empathetic, servant-leadership philosophy that emphasizes psychological safety, emotional intelligence, and inclusive mentorship."
+        }
+      ]
+    }
+  }
+}

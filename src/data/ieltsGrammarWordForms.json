@@ -1,0 +1,5017 @@
+{
+  "id": "34f1e477-a945-494c-8742-8a75191bd8d6",
+  "lesson_id": "grm-word-forms",
+  "title": "Word Forms — Dạng thức từ",
+  "band": "GRM",
+  "order_index": 1,
+  "sections": [
+    {
+      "id": "a7237f24-ab94-4b93-bdaf-a5baad5edda2",
+      "type": "explanation",
+      "content": "",
+      "heading": "1. Noun ↔ Verb ↔ Adjective ↔ Adverb (Danh từ ↔ Động từ ↔ Tính từ ↔ Trạng từ)"
+    },
+    {
+      "id": "b62f6bd1-b011-4526-acdd-2172b36bf73b",
+      "rows": [
+        [
+          "Chủ ngữ, tân ngữ trực tiếp, tân ngữ của giới từ, bổ ngữ chủ ngữ sau \"be\"",
+          "Ngay sau a/an/the/this/that/his/her/some/many; ngay sau tính từ; ngay sau giới từ (of/for/in/with...)",
+          "Success requires effort. She made a decision. He is proud of his achievement."
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Vai trò",
+        "Vị trí nhận biết",
+        "Ví dụ"
+      ],
+      "heading": "DANH TỪ (Noun)"
+    },
+    {
+      "id": "ab2c0128-6338-480d-a1ef-3f1937854811",
+      "rows": [
+        [
+          "Vị ngữ chính diễn tả hành động hoặc trạng thái",
+          "Đứng ngay sau chủ ngữ, chia theo thì/ngôi; sau trợ động từ (does/did/has/will) giữ nguyên mẫu hoặc phân từ",
+          "He decides / decided / is deciding. She has arrived."
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Vai trò",
+        "Vị trí nhận biết",
+        "Ví dụ"
+      ],
+      "heading": "ĐỘNG TỪ (Verb)"
+    },
+    {
+      "id": "908c2683-6d59-4013-a80b-0e4833c5483a",
+      "rows": [
+        [
+          "Bổ nghĩa, mô tả đặc điểm của danh từ",
+          "Đứng ngay trước danh từ; hoặc sau động từ liên kết (be, seem, become, look, feel, sound, appear, get) — không đứng ngay sau chủ ngữ làm vị ngữ chính",
+          "A decisive leader. She seems decisive. The plan sounds risky."
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Vai trò",
+        "Vị trí nhận biết",
+        "Ví dụ"
+      ],
+      "heading": "TÍNH TỪ (Adjective)"
+    },
+    {
+      "id": "1e41ebb5-9cef-4fd7-865f-ab031d6d92ea",
+      "rows": [
+        [
+          "Bổ nghĩa cho động từ, tính từ/trạng từ khác, hoặc cả câu",
+          "Ngay sau động từ hoặc tân ngữ; ngay trước tính từ/trạng từ nó bổ nghĩa; đầu hoặc cuối câu để nhấn mạnh",
+          "She decided quickly. Extremely decisive. Fortunately, she passed."
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Vai trò",
+        "Vị trí nhận biết",
+        "Ví dụ"
+      ],
+      "heading": "TRẠNG TỪ (Adverb)"
+    },
+    {
+      "id": "e03e7b68-b280-44ea-a50d-43dfd5ed055d",
+      "type": "note",
+      "content": "MẸO LÀM BÀI NHANH\nNhìn từ đứng ngay TRƯỚC và NGAY SAU chỗ trống. Trước là mạo từ/sở hữu cách → cần danh từ. Trước là \"to be/seem/look\" → cần tính từ. Ngay sau chủ ngữ, không có \"to be\" → cần động từ chia. Đứng cạnh động từ hoặc tính từ để bổ nghĩa thêm mức độ/cách thức → cần trạng từ.",
+      "variant": "info"
+    },
+    {
+      "id": "42fbdd90-ad88-466a-b759-4473305fc588",
+      "rows": [
+        [
+          "-ise / -ize",
+          "làm cho trở thành",
+          "modern → modernise; special → specialise; industrial → industrialise",
+          "hiện đại hóa, chuyên môn hóa, công nghiệp hóa"
+        ],
+        [
+          "-ify / -fy",
+          "làm cho trở thành",
+          "simple → simplify; class → classify; pure → purify; just → justify",
+          "đơn giản hóa, phân loại, làm sạch, biện minh"
+        ],
+        [
+          "-en",
+          "làm cho hơn, thường ghép tính từ ngắn",
+          "strong → strengthen; wide → widen; short → shorten; deep → deepen",
+          "củng cố, mở rộng, rút ngắn, làm sâu sắc thêm"
+        ],
+        [
+          "-ate",
+          "làm, tạo ra",
+          "active → activate; different → differentiate; valid → validate",
+          "kích hoạt, phân biệt, xác thực"
+        ],
+        [
+          "en- / em- (tiền tố)",
+          "làm cho",
+          "able → enable; rich → enrich; power → empower",
+          "cho phép, làm giàu, trao quyền"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Hậu tố",
+        "Nghĩa",
+        "Ví dụ",
+        "Dịch"
+      ],
+      "heading": "Hậu tố tạo động từ"
+    },
+    {
+      "id": "bea66356-435e-490e-92c3-a49f9b80f428",
+      "type": "note",
+      "content": "THÔNG TIN\nĐuôi -ise là chuẩn Anh - Anh, -ize là chuẩn Anh - Mỹ. Cả hai đều được chấp nhận trong IELTS nhưng phải nhất quán trong toàn bài. Một số từ chỉ có một dạng duy nhất: advertise, exercise, supervise, compromise không bao giờ viết bằng -ize.",
+      "variant": "info"
+    },
+    {
+      "id": "ca520559-c6d6-4b13-95b7-a9618374021b",
+      "rows": [
+        [
+          "-ful",
+          "có, đầy, mang tính",
+          "useful, helpful, harmful, meaningful, successful",
+          "hữu ích, hữu dụng, có hại, có ý nghĩa, thành công"
+        ],
+        [
+          "-less",
+          "không có, thiếu vắng",
+          "useless, homeless, careless, meaningless, endless",
+          "vô dụng, vô gia cư, bất cẩn, vô nghĩa, vô tận"
+        ],
+        [
+          "-able / -ible",
+          "có thể được",
+          "affordable, reliable, responsible, accessible, visible",
+          "phải chăng, đáng tin, có trách nhiệm, dễ tiếp cận, hữu hình"
+        ],
+        [
+          "-al / -ial",
+          "thuộc về",
+          "national, cultural, financial, industrial, environmental",
+          "thuộc quốc gia, văn hóa, tài chính, công nghiệp, môi trường"
+        ],
+        [
+          "-ive",
+          "có xu hướng, có tính",
+          "effective, creative, expensive, productive, competitive",
+          "hiệu quả, sáng tạo, đắt đỏ, năng suất, cạnh tranh"
+        ],
+        [
+          "-ous / -ious / -eous",
+          "có tính chất",
+          "dangerous, famous, ambitious, obvious, advantageous",
+          "nguy hiểm, nổi tiếng, tham vọng, hiển nhiên, có lợi"
+        ],
+        [
+          "-ic",
+          "thuộc về, mang tính",
+          "economic, dramatic, scientific, specific, realistic",
+          "thuộc kinh tế, kịch tính, khoa học, cụ thể, thực tế"
+        ],
+        [
+          "-ical",
+          "thuộc về, dạng dài hơn",
+          "historical, practical, political, technical, critical",
+          "thuộc lịch sử, thực tiễn, chính trị, kỹ thuật, phê phán"
+        ],
+        [
+          "-y",
+          "có tính chất, thường thông tục",
+          "rainy, healthy, noisy, risky, wealthy",
+          "mưa, khỏe mạnh, ồn ào, rủi ro, giàu có"
+        ],
+        [
+          "-ish",
+          "hơi, khoảng chừng, mang tính",
+          "childish, reddish, selfish, foolish",
+          "trẻ con, hơi đỏ, ích kỷ, ngu ngốc"
+        ],
+        [
+          "-ent / -ant",
+          "trạng thái, tính chất",
+          "different, confident, important, relevant, significant",
+          "khác biệt, tự tin, quan trọng, liên quan, đáng kể"
+        ],
+        [
+          "-ary / -ory",
+          "thuộc về, có chức năng",
+          "necessary, temporary, satisfactory, compulsory",
+          "cần thiết, tạm thời, thỏa đáng, bắt buộc"
+        ],
+        [
+          "-ate",
+          "có tính chất",
+          "accurate, passionate, considerate, fortunate",
+          "chính xác, đam mê, chu đáo, may mắn"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Hậu tố",
+        "Sắc thái",
+        "Ví dụ",
+        "Dịch"
+      ],
+      "heading": "Hậu tố tạo tính từ"
+    },
+    {
+      "id": "3b0c5a70-d720-4d04-8475-2ea5ffbd2f68",
+      "type": "note",
+      "content": "Phân biệt -ic và -ical\nNhiều gốc có cả hai dạng nhưng nghĩa khác nhau. economic là thuộc kinh tế còn economical là tiết kiệm. historic là mang tính lịch sử trọng đại còn historical là thuộc về lịch sử. classic là kinh điển còn classical là cổ điển trong nghệ thuật. electric là chạy bằng điện còn electrical là liên quan đến điện nói chung.",
+      "variant": "info"
+    },
+    {
+      "id": "48aa5b84-f467-4056-b029-e35f7f3c1801",
+      "type": "note",
+      "content": "Phân biệt -able và -ible\nĐuôi -able thường ghép với gốc từ vẫn đứng độc lập được: accept → acceptable, rely → reliable. Đuôi -ible thường ghép với gốc Latin không đứng độc lập: possible, visible, terrible, edible. Không có quy tắc tuyệt đối, phải học thuộc từng từ.",
+      "variant": "info"
+    },
+    {
+      "id": "8ce1bfb3-4182-400c-bb9a-4a78a6e00cdf",
+      "type": "note",
+      "content": "Hậu tố tạo trạng từ\nChỉ có một hậu tố chính là -ly, cùng vài trường hợp hiếm như -ward (backward, forward) và -wise (clockwise, otherwise, likewise). Quy tắc chi tiết đã trình bày ở mục trạng từ phía trên.",
+      "variant": "info"
+    },
+    {
+      "id": "40c91093-b1a4-48c8-9fd9-08ae35c531e5",
+      "type": "exercise",
+      "heading": "1. Noun ↔ Verb ↔ Adjective ↔ Adverb (Danh từ ↔ Động từ ↔ Tính từ ↔ Trạng từ)",
+      "questions": [
+        {
+          "text": "She made a ___ decision to leave the company.",
+          "answer": "B",
+          "number": 1,
+          "options": [
+            "A. decide",
+            "B. decisive",
+            "C. decisively",
+            "D. decision"
+          ],
+          "explanation": "Cần một TÍNH TỪ đứng trước danh từ \"decision\" để bổ nghĩa; \"decisive\" (dứt khoát) là dạng tính từ của \"decide\"."
+        },
+        {
+          "text": "The manager announced the ___ of the merger yesterday.",
+          "answer": "B",
+          "number": 2,
+          "options": [
+            "A. approve",
+            "B. approval",
+            "C. approvingly",
+            "D. approved"
+          ],
+          "explanation": "Sau mạo từ \"the\" và trước giới từ \"of\" cần một DANH TỪ; \"approval\" (sự chấp thuận) là danh từ của \"approve\"."
+        },
+        {
+          "text": "He answered the question ___.",
+          "answer": "C",
+          "number": 3,
+          "options": [
+            "A. confident",
+            "B. confidence",
+            "C. confidently",
+            "D. confide"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"answered\" phải là TRẠNG TỪ; \"confidently\" (một cách tự tin) là dạng trạng từ của \"confident\"."
+        },
+        {
+          "text": "Their ___ to the new policy was immediate.",
+          "answer": "B",
+          "number": 4,
+          "options": [
+            "A. adapt",
+            "B. adaptation",
+            "C. adaptive",
+            "D. adaptively"
+          ],
+          "explanation": "Sau tính từ sở hữu \"their\" cần một DANH TỪ; \"adaptation\" (sự thích nghi) là danh từ của \"adapt\"."
+        },
+        {
+          "text": "The ___ of the building took over two years.",
+          "answer": "B",
+          "number": 5,
+          "options": [
+            "A. construct",
+            "B. construction",
+            "C. constructive",
+            "D. constructively"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"construction\" (việc xây dựng) là danh từ của \"construct\"."
+        },
+        {
+          "text": "She gave a very ___ speech at the conference.",
+          "answer": "B",
+          "number": 6,
+          "options": [
+            "A. impress",
+            "B. impressive",
+            "C. impressively",
+            "D. impression"
+          ],
+          "explanation": "Từ đứng trước danh từ \"speech\" phải là TÍNH TỪ; \"impressive\" (ấn tượng) bổ nghĩa cho \"speech\"."
+        },
+        {
+          "text": "He behaved ___ during the meeting.",
+          "answer": "B",
+          "number": 7,
+          "options": [
+            "A. professional",
+            "B. professionally",
+            "C. professionalism",
+            "D. profession"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"behaved\" là TRẠNG TỪ; \"professionally\" (một cách chuyên nghiệp)."
+        },
+        {
+          "text": "Her ___ helped the team win the contract.",
+          "answer": "C",
+          "number": 8,
+          "options": [
+            "A. persuade",
+            "B. persuasive",
+            "C. persuasion",
+            "D. persuasively"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"persuasion\" (sự thuyết phục) là danh từ của \"persuade\"."
+        },
+        {
+          "text": "The results were ___ better than expected.",
+          "answer": "B",
+          "number": 9,
+          "options": [
+            "A. significant",
+            "B. significantly",
+            "C. significance",
+            "D. signify"
+          ],
+          "explanation": "Từ đứng trước tính từ so sánh \"better\" để bổ nghĩa phải là TRẠNG TỪ; \"significantly\" (đáng kể)."
+        },
+        {
+          "text": "This is a ___ improvement over the previous model.",
+          "answer": "A",
+          "number": 10,
+          "options": [
+            "A. significant",
+            "B. significantly",
+            "C. significance",
+            "D. signify"
+          ],
+          "explanation": "Từ đứng trước danh từ \"improvement\" phải là TÍNH TỪ; \"significant\" (đáng kể) bổ nghĩa cho danh từ."
+        },
+        {
+          "text": "The company is looking for someone with strong ___ skills.",
+          "answer": "B",
+          "number": 11,
+          "options": [
+            "A. analyze",
+            "B. analytical",
+            "C. analytically",
+            "D. analysis"
+          ],
+          "explanation": "Từ đứng trước danh từ \"skills\" phải là TÍNH TỪ; \"analytical\" (mang tính phân tích)."
+        },
+        {
+          "text": "He ___ studied the data before making a decision.",
+          "answer": "B",
+          "number": 12,
+          "options": [
+            "A. careful",
+            "B. carefully",
+            "C. care",
+            "D. carefulness"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"studied\" phải là TRẠNG TỪ; \"carefully\" (một cách cẩn thận)."
+        },
+        {
+          "text": "Her ___ towards her students is admirable.",
+          "answer": "C",
+          "number": 13,
+          "options": [
+            "A. patient",
+            "B. patiently",
+            "C. patience",
+            "D. impatient"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"patience\" (sự kiên nhẫn) là danh từ của \"patient\"."
+        },
+        {
+          "text": "The novel received widespread ___ from critics.",
+          "answer": "A",
+          "number": 14,
+          "options": [
+            "A. praise",
+            "B. praiseworthy",
+            "C. praising",
+            "D. praised"
+          ],
+          "explanation": "Sau tính từ \"widespread\" cần một DANH TỪ; \"praise\" (lời khen) đóng vai trò danh từ ở đây."
+        },
+        {
+          "text": "It was ___ of him to admit his mistake.",
+          "answer": "A",
+          "number": 15,
+          "options": [
+            "A. honest",
+            "B. honestly",
+            "C. honesty",
+            "D. dishonest"
+          ],
+          "explanation": "Cấu trúc \"It was + tính từ + of + O\" cần TÍNH TỪ; \"honest\" (trung thực)."
+        },
+        {
+          "text": "She spoke ___ about her plans for the future.",
+          "answer": "B",
+          "number": 16,
+          "options": [
+            "A. enthusiastic",
+            "B. enthusiastically",
+            "C. enthusiasm",
+            "D. enthusiast"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"spoke\" phải là TRẠNG TỪ; \"enthusiastically\" (một cách nhiệt tình)."
+        },
+        {
+          "text": "His ___ to detail makes him a great editor.",
+          "answer": "C",
+          "number": 17,
+          "options": [
+            "A. attend",
+            "B. attentive",
+            "C. attention",
+            "D. attentively"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"attention\" (sự chú ý) là danh từ trong cụm \"attention to detail\"."
+        },
+        {
+          "text": "The city has undergone ___ changes in the last decade.",
+          "answer": "A",
+          "number": 18,
+          "options": [
+            "A. dramatic",
+            "B. dramatically",
+            "C. drama",
+            "D. dramatize"
+          ],
+          "explanation": "Từ đứng trước danh từ \"changes\" phải là TÍNH TỪ; \"dramatic\" (mạnh mẽ, kịch tính)."
+        },
+        {
+          "text": "They reacted ___ to the unexpected news.",
+          "answer": "B",
+          "number": 19,
+          "options": [
+            "A. calm",
+            "B. calmly",
+            "C. calmness",
+            "D. calming"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"reacted\" phải là TRẠNG TỪ; \"calmly\" (một cách bình tĩnh)."
+        },
+        {
+          "text": "Her research has made a ___ contribution to the field.",
+          "answer": "A",
+          "number": 20,
+          "options": [
+            "A. valuable",
+            "B. value",
+            "C. valuably",
+            "D. valueless"
+          ],
+          "explanation": "Từ đứng trước danh từ \"contribution\" phải là TÍNH TỪ; \"valuable\" (có giá trị)."
+        },
+        {
+          "text": "The ___ of this medicine has not been proven.",
+          "answer": "B",
+          "number": 21,
+          "options": [
+            "A. effective",
+            "B. effectiveness",
+            "C. effectively",
+            "D. effect"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"effectiveness\" (tính hiệu quả) là danh từ trừu tượng của \"effective\"."
+        },
+        {
+          "text": "He ___ completed the marathon despite the heat.",
+          "answer": "C",
+          "number": 22,
+          "options": [
+            "A. success",
+            "B. successful",
+            "C. successfully",
+            "D. succeed"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"completed\" phải là TRẠNG TỪ; \"successfully\" (thành công)."
+        },
+        {
+          "text": "This app has a very ___ interface.",
+          "answer": "A",
+          "number": 23,
+          "options": [
+            "A. intuitive",
+            "B. intuition",
+            "C. intuitively",
+            "D. intuit"
+          ],
+          "explanation": "Từ đứng trước danh từ \"interface\" phải là TÍNH TỪ; \"intuitive\" (trực quan, dễ dùng)."
+        },
+        {
+          "text": "The team worked ___ to meet the deadline.",
+          "answer": "B",
+          "number": 24,
+          "options": [
+            "A. tireless",
+            "B. tirelessly",
+            "C. tiredness",
+            "D. tire"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"worked\" phải là TRẠNG TỪ; \"tirelessly\" (không biết mệt mỏi)."
+        },
+        {
+          "text": "Their ___ in the local community is well known.",
+          "answer": "B",
+          "number": 25,
+          "options": [
+            "A. generous",
+            "B. generosity",
+            "C. generously",
+            "D. generate"
+          ],
+          "explanation": "Sau tính từ sở hữu \"their\" cần DANH TỪ; \"generosity\" (lòng hào phóng) là danh từ của \"generous\"."
+        },
+        {
+          "text": "The plan seems ___ , but it might work.",
+          "answer": "B",
+          "number": 26,
+          "options": [
+            "A. risk",
+            "B. risky",
+            "C. riskily",
+            "D. risking"
+          ],
+          "explanation": "Sau động từ liên kết \"seems\" cần TÍNH TỪ để mô tả chủ ngữ \"the plan\"; \"risky\" (mạo hiểm)."
+        },
+        {
+          "text": "She handled the crisis with remarkable ___ .",
+          "answer": "D",
+          "number": 27,
+          "options": [
+            "A. calm",
+            "B. calmly",
+            "C. calming",
+            "D. calmness"
+          ],
+          "explanation": "Sau tính từ \"remarkable\" và giới từ \"with\" cần DANH TỪ; \"calmness\" (sự bình tĩnh)."
+        },
+        {
+          "text": "His argument was ___ convincing.",
+          "answer": "B",
+          "number": 28,
+          "options": [
+            "A. surprising",
+            "B. surprisingly",
+            "C. surprise",
+            "D. surprised"
+          ],
+          "explanation": "Từ đứng trước tính từ \"convincing\" để bổ nghĩa phải là TRẠNG TỪ; \"surprisingly\" (một cách đáng ngạc nhiên)."
+        },
+        {
+          "text": "The company values ___ in the workplace.",
+          "answer": "B",
+          "number": 29,
+          "options": [
+            "A. diverse",
+            "B. diversity",
+            "C. diversely",
+            "D. diversify"
+          ],
+          "explanation": "Động từ \"values\" cần một DANH TỪ làm tân ngữ; \"diversity\" (sự đa dạng)."
+        },
+        {
+          "text": "He gave a ___ explanation of the process.",
+          "answer": "A",
+          "number": 30,
+          "options": [
+            "A. clear",
+            "B. clearly",
+            "C. clarity",
+            "D. clarify"
+          ],
+          "explanation": "Từ đứng trước danh từ \"explanation\" phải là TÍNH TỪ; \"clear\" (rõ ràng)."
+        },
+        {
+          "text": "The negotiations proceeded ___ despite the tension.",
+          "answer": "B",
+          "number": 31,
+          "options": [
+            "A. smooth",
+            "B. smoothly",
+            "C. smoothness",
+            "D. smoothing"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"proceeded\" phải là TRẠNG TỪ; \"smoothly\" (suôn sẻ)."
+        },
+        {
+          "text": "Her ___ as a leader inspired the whole team.",
+          "answer": "B",
+          "number": 32,
+          "options": [
+            "A. confident",
+            "B. confidence",
+            "C. confidently",
+            "D. confide"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"confidence\" (sự tự tin) là danh từ của \"confident\"."
+        },
+        {
+          "text": "The design is both ___ and functional.",
+          "answer": "A",
+          "number": 33,
+          "options": [
+            "A. attractive",
+            "B. attractively",
+            "C. attraction",
+            "D. attract"
+          ],
+          "explanation": "Sau động từ \"is\" và liên từ \"both...and\" cần TÍNH TỪ song song với \"functional\"; \"attractive\" (hấp dẫn)."
+        },
+        {
+          "text": "They responded ___ to the criticism.",
+          "answer": "B",
+          "number": 34,
+          "options": [
+            "A. defensive",
+            "B. defensively",
+            "C. defensiveness",
+            "D. defend"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"responded\" phải là TRẠNG TỪ; \"defensively\" (một cách phòng thủ)."
+        },
+        {
+          "text": "His ___ of the situation was accurate.",
+          "answer": "B",
+          "number": 35,
+          "options": [
+            "A. assess",
+            "B. assessment",
+            "C. assessing",
+            "D. assessed"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"assessment\" (sự đánh giá) là danh từ của \"assess\"."
+        },
+        {
+          "text": "The instructions were ___ written.",
+          "answer": "B",
+          "number": 36,
+          "options": [
+            "A. poor",
+            "B. poorly",
+            "C. poorness",
+            "D. poverty"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ dạng bị động \"written\" phải là TRẠNG TỪ; \"poorly\" (một cách kém cỏi)."
+        },
+        {
+          "text": "Her voice sounded ___ on the phone.",
+          "answer": "A",
+          "number": 37,
+          "options": [
+            "A. nervous",
+            "B. nervously",
+            "C. nervousness",
+            "D. nerve"
+          ],
+          "explanation": "Sau động từ liên kết \"sounded\" cần TÍNH TỪ để mô tả chủ ngữ \"her voice\"; \"nervous\" (lo lắng)."
+        },
+        {
+          "text": "The ___ of the new law will take effect next month.",
+          "answer": "B",
+          "number": 38,
+          "options": [
+            "A. implement",
+            "B. implementation",
+            "C. implementing",
+            "D. implemented"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"implementation\" (việc thực thi) là danh từ của \"implement\"."
+        },
+        {
+          "text": "He looked at me ___ when I told him the news.",
+          "answer": "B",
+          "number": 39,
+          "options": [
+            "A. suspicious",
+            "B. suspiciously",
+            "C. suspicion",
+            "D. suspect"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"looked\" phải là TRẠNG TỪ; \"suspiciously\" (một cách nghi ngờ)."
+        },
+        {
+          "text": "The company's ___ has grown steadily over the years.",
+          "answer": "C",
+          "number": 40,
+          "options": [
+            "A. profit",
+            "B. profitable",
+            "C. profitability",
+            "D. profitably"
+          ],
+          "explanation": "Sau tính từ sở hữu \"company's\" cần DANH TỪ; \"profitability\" (khả năng sinh lời) là danh từ trừu tượng của \"profitable\"."
+        },
+        {
+          "text": "She remained ___ throughout the difficult interview.",
+          "answer": "B",
+          "number": 41,
+          "options": [
+            "A. compose",
+            "B. composed",
+            "C. composure",
+            "D. composing"
+          ],
+          "explanation": "Sau động từ liên kết \"remained\" cần TÍNH TỪ; \"composed\" (điềm tĩnh) mô tả chủ ngữ \"she\"."
+        },
+        {
+          "text": "The team celebrated their ___ with a big party.",
+          "answer": "B",
+          "number": 42,
+          "options": [
+            "A. victorious",
+            "B. victory",
+            "C. victoriously",
+            "D. conquer"
+          ],
+          "explanation": "Sau tính từ sở hữu \"their\" cần DANH TỪ; \"victory\" (chiến thắng)."
+        },
+        {
+          "text": "He is ___ about the outcome of the trial.",
+          "answer": "B",
+          "number": 43,
+          "options": [
+            "A. optimism",
+            "B. optimistic",
+            "C. optimistically",
+            "D. optimize"
+          ],
+          "explanation": "Sau động từ liên kết \"is\" cần TÍNH TỪ để mô tả chủ ngữ \"he\"; \"optimistic\" (lạc quan)."
+        },
+        {
+          "text": "The ___ between the two theories is subtle.",
+          "answer": "B",
+          "number": 44,
+          "options": [
+            "A. different",
+            "B. difference",
+            "C. differently",
+            "D. differentiate"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"difference\" (sự khác biệt) là danh từ của \"different\"."
+        },
+        {
+          "text": "She ___ disagreed with the proposal.",
+          "answer": "B",
+          "number": 45,
+          "options": [
+            "A. strong",
+            "B. strongly",
+            "C. strength",
+            "D. strengthen"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"disagreed\" phải là TRẠNG TỪ; \"strongly\" (mạnh mẽ)."
+        },
+        {
+          "text": "His ___ made the audience laugh out loud.",
+          "answer": "A",
+          "number": 46,
+          "options": [
+            "A. humor",
+            "B. humorous",
+            "C. humorously",
+            "D. humored"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"humor\" (sự hài hước)."
+        },
+        {
+          "text": "The new policy is ___ unpopular among staff.",
+          "answer": "B",
+          "number": 47,
+          "options": [
+            "A. increasing",
+            "B. increasingly",
+            "C. increase",
+            "D. increased"
+          ],
+          "explanation": "Từ đứng trước tính từ \"unpopular\" để bổ nghĩa phải là TRẠNG TỪ; \"increasingly\" (ngày càng)."
+        },
+        {
+          "text": "Their ___ to help was greatly appreciated.",
+          "answer": "B",
+          "number": 48,
+          "options": [
+            "A. willing",
+            "B. willingness",
+            "C. willingly",
+            "D. will"
+          ],
+          "explanation": "Sau tính từ sở hữu \"their\" cần DANH TỪ; \"willingness\" (sự sẵn lòng) là danh từ của \"willing\"."
+        },
+        {
+          "text": "He answered all the questions ___ .",
+          "answer": "B",
+          "number": 49,
+          "options": [
+            "A. accurate",
+            "B. accurately",
+            "C. accuracy",
+            "D. accurateness"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"answered\" phải là TRẠNG TỪ; \"accurately\" (một cách chính xác)."
+        },
+        {
+          "text": "The ___ of the evidence convinced the jury.",
+          "answer": "B",
+          "number": 50,
+          "options": [
+            "A. strong",
+            "B. strength",
+            "C. strongly",
+            "D. strengthen"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"strength\" (sức mạnh, tính thuyết phục) là danh từ của \"strong\"."
+        }
+      ],
+      "instruction": "Chọn đáp án đúng cho mỗi câu."
+    },
+    {
+      "id": "097fa97c-4296-4440-8247-41729fa17d4e",
+      "type": "explanation",
+      "content": "",
+      "heading": "2. Prefixes & Suffixes (Tiền tố & hậu tố)"
+    },
+    {
+      "id": "348b1cd0-e289-4aca-a795-358f3c87188c",
+      "rows": [
+        [
+          "-tion",
+          "hành động, quá trình, kết quả",
+          "educate → education; produce → production; introduce → introduction",
+          "giáo dục, sản xuất, sự giới thiệu"
+        ],
+        [
+          "-sion",
+          "sau gốc tận cùng d, de, se, mit",
+          "decide → decision; expand → expansion; permit → permission",
+          "quyết định, sự mở rộng, sự cho phép"
+        ],
+        [
+          "-ation",
+          "sau gốc tận cùng -ise, -ify, hoặc gốc ngắn",
+          "organise → organisation; classify → classification; expect → expectation",
+          "tổ chức, sự phân loại, kỳ vọng"
+        ],
+        [
+          "-ment",
+          "kết quả hoặc hành động, giữ nguyên gốc",
+          "develop → development; achieve → achievement; govern → government",
+          "sự phát triển, thành tựu, chính phủ"
+        ],
+        [
+          "-ness",
+          "trạng thái, ghép với tính từ",
+          "happy → happiness; aware → awareness; weak → weakness",
+          "hạnh phúc, nhận thức, điểm yếu"
+        ],
+        [
+          "-ity",
+          "tính chất, ghép với tính từ",
+          "able → ability; secure → security; complex → complexity",
+          "khả năng, an ninh, sự phức tạp"
+        ],
+        [
+          "-ty",
+          "biến thể ngắn của -ity",
+          "safe → safety; cruel → cruelty; loyal → loyalty",
+          "an toàn, sự tàn ác, lòng trung thành"
+        ],
+        [
+          "-ance",
+          "trạng thái, từ tính từ đuôi -ant",
+          "important → importance; relevant → relevance; assist → assistance",
+          "tầm quan trọng, sự liên quan, sự hỗ trợ"
+        ],
+        [
+          "-ence",
+          "trạng thái, từ tính từ đuôi -ent",
+          "different → difference; confident → confidence; exist → existence",
+          "sự khác biệt, sự tự tin, sự tồn tại"
+        ],
+        [
+          "-ism",
+          "học thuyết, hệ tư tưởng, hiện tượng",
+          "capital → capitalism; tour → tourism; race → racism",
+          "chủ nghĩa tư bản, ngành du lịch, phân biệt chủng tộc"
+        ],
+        [
+          "-ship",
+          "trạng thái, quan hệ, chức vụ",
+          "friend → friendship; leader → leadership; member → membership",
+          "tình bạn, sự lãnh đạo, tư cách thành viên"
+        ],
+        [
+          "-hood",
+          "giai đoạn đời người, cộng đồng",
+          "child → childhood; adult → adulthood; neighbour → neighbourhood",
+          "tuổi thơ, tuổi trưởng thành, khu phố"
+        ],
+        [
+          "-dom",
+          "lĩnh vực, trạng thái",
+          "free → freedom; wise → wisdom; king → kingdom",
+          "tự do, trí tuệ, vương quốc"
+        ],
+        [
+          "-al",
+          "hành động, ghép với động từ",
+          "arrive → arrival; refuse → refusal; survive → survival; approve → approval",
+          "sự đến, sự từ chối, sự sống sót, sự phê duyệt"
+        ],
+        [
+          "-ure",
+          "hành động, kết quả",
+          "fail → failure; press → pressure; depart → departure",
+          "thất bại, áp lực, sự khởi hành"
+        ],
+        [
+          "-th",
+          "phẩm chất, kích thước",
+          "grow → growth; strong → strength; wide → width; long → length; deep → depth",
+          "sự tăng trưởng, sức mạnh, chiều rộng, chiều dài, chiều sâu"
+        ],
+        [
+          "-age",
+          "tập hợp, quá trình, mức",
+          "short → shortage; store → storage; use → usage; percent → percentage",
+          "sự thiếu hụt, kho chứa, cách dùng, tỷ lệ phần trăm"
+        ],
+        [
+          "-ing",
+          "danh động từ, hoạt động",
+          "build → building; train → training; find → findings",
+          "tòa nhà, sự đào tạo, các phát hiện"
+        ],
+        [
+          "-cy",
+          "trạng thái, chức vụ",
+          "efficient → efficiency; accurate → accuracy; private → privacy",
+          "hiệu suất, độ chính xác, sự riêng tư"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Hậu tố",
+        "Chức năng",
+        "Ví dụ",
+        "Dịch"
+      ],
+      "heading": "Hậu tố tạo danh từ chỉ sự vật, hành động, khái niệm"
+    },
+    {
+      "id": "a4c98da0-2f3b-4834-93d1-5814e9f62b2b",
+      "rows": [
+        [
+          "-er",
+          "người hoặc vật thực hiện, phổ biến nhất",
+          "teach → teacher; employ → employer; write → writer",
+          "giáo viên, người sử dụng lao động, nhà văn"
+        ],
+        [
+          "-or",
+          "người thực hiện, gốc Latin",
+          "act → actor; direct → director; invest → investor",
+          "diễn viên, giám đốc, nhà đầu tư"
+        ],
+        [
+          "-ist",
+          "người theo ngành, chủ nghĩa, chơi nhạc cụ",
+          "science → scientist; art → artist; piano → pianist",
+          "nhà khoa học, nghệ sĩ, nghệ sĩ dương cầm"
+        ],
+        [
+          "-ee",
+          "người NHẬN hoặc CHỊU tác động",
+          "employ → employee; train → trainee; interview → interviewee",
+          "nhân viên, thực tập sinh, người được phỏng vấn"
+        ],
+        [
+          "-ant / -ent",
+          "người giữ vai trò",
+          "assist → assistant; apply → applicant; study → student",
+          "trợ lý, ứng viên, sinh viên"
+        ],
+        [
+          "-ian",
+          "người thuộc ngành hoặc quốc tịch",
+          "music → musician; library → librarian; Italy → Italian",
+          "nhạc sĩ, thủ thư, người Ý"
+        ],
+        [
+          "-ar",
+          "hiếm gặp",
+          "beg → beggar; lie → liar; scholar",
+          "người ăn xin, kẻ nói dối, học giả"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Hậu tố",
+        "Sắc thái",
+        "Ví dụ",
+        "Dịch"
+      ],
+      "heading": "Hậu tố tạo danh từ chỉ NGƯỜI"
+    },
+    {
+      "id": "fa253def-78e1-4dae-be3c-be2f634a3224",
+      "type": "note",
+      "content": "Cặp -er và -ee - bẫy kinh điển\nĐuôi -er chỉ người CHỦ ĐỘNG, đuôi -ee chỉ người BỊ ĐỘNG. employer là người thuê, employee là người được thuê. Tương tự: interviewer và interviewee, trainer và trainee, payer và payee, examiner và examinee, referee là người được giao xét xử.",
+      "variant": "info"
+    },
+    {
+      "id": "cd47da1e-9a2e-4669-947e-5b1250b4bdd8",
+      "type": "note",
+      "content": "Danh từ đôi - cùng gốc nhưng khác nghĩa\nNhiều gốc từ sinh ra hai danh từ với nghĩa tách bạch. economy là nền kinh tế, economics là môn kinh tế học. production là quá trình sản xuất, product là sản phẩm. variety là sự đa dạng, variation là sự biến thiên. creation là sự sáng tạo ra, creativity là năng lực sáng tạo. Chọn sai một trong hai là mất điểm từ vựng.",
+      "variant": "info"
+    },
+    {
+      "id": "fb97f589-67d0-4fa9-82e8-2080da629949",
+      "type": "exercise",
+      "heading": "2. Prefixes & Suffixes (Tiền tố & hậu tố)",
+      "questions": [
+        {
+          "text": "The instructions were so poorly written that they were completely ___ ; nobody could follow them.",
+          "answer": "C",
+          "number": 1,
+          "options": [
+            "A. understandable",
+            "B. misunderstandable",
+            "C. unclear",
+            "D. understand"
+          ],
+          "explanation": "\"Misunderstandable\" không phải từ tồn tại trong tiếng Anh. Vì \"nobody could follow them\" (không ai làm theo được) mô tả sự khó hiểu, cần tính từ mang nghĩa phủ định \"unclear\" (không rõ ràng), không phải \"understandable\" (dễ hiểu, nghĩa ngược lại)."
+        },
+        {
+          "text": "She felt a deep sense of ___ after losing the match.",
+          "answer": "B",
+          "number": 2,
+          "options": [
+            "A. hopeless",
+            "B. hopelessness",
+            "C. hopelessly",
+            "D. hopeful"
+          ],
+          "explanation": "Sau tính từ \"deep\" và giới từ \"of\" cần DANH TỪ; \"hopelessness\" (sự tuyệt vọng) là danh từ của \"hopeless\"."
+        },
+        {
+          "text": "They had to ___ the whole project after the budget was cut.",
+          "answer": "B",
+          "number": 3,
+          "options": [
+            "A. consider",
+            "B. reconsider",
+            "C. considerate",
+            "D. consideration"
+          ],
+          "explanation": "Tiền tố \"re-\" mang nghĩa \"làm lại\"; \"reconsider\" (xem xét lại) là động từ phù hợp về nghĩa và ngữ pháp (sau \"to\")."
+        },
+        {
+          "text": "His behaviour was ___ compared to the rest of the group.",
+          "answer": "C",
+          "number": 4,
+          "options": [
+            "A. respect",
+            "B. respectful",
+            "C. disrespectful",
+            "D. respectfully"
+          ],
+          "explanation": "Cần TÍNH TỪ sau động từ liên kết \"was\"; tiền tố \"dis-\" tạo nghĩa phủ định \"vô lễ\": disrespectful."
+        },
+        {
+          "text": "The doctor said the disease was ___ , so the patient had to learn to live with it for the rest of his life.",
+          "answer": "B",
+          "number": 5,
+          "options": [
+            "A. curable",
+            "B. incurable",
+            "C. cure",
+            "D. curing"
+          ],
+          "explanation": "Vế sau \"so the patient had to learn to live with it for the rest of his life\" (phải sống chung với bệnh cả đời) cho biết bệnh không thể chữa khỏi → cần tiền tố phủ định \"in-\": incurable (không thể chữa), trái nghĩa với \"curable\" (có thể chữa)."
+        },
+        {
+          "text": "It is ___ to walk on the grass in this park.",
+          "answer": "B",
+          "number": 6,
+          "options": [
+            "A. legal",
+            "B. illegal",
+            "C. legally",
+            "D. legalize"
+          ],
+          "explanation": "Tiền tố \"il-\" (biến thể của \"in-\" trước \"l\") tạo nghĩa phủ định: \"illegal\" (bất hợp pháp)."
+        },
+        {
+          "text": "Her explanation was ___ ; everyone understood immediately.",
+          "answer": "A",
+          "number": 7,
+          "options": [
+            "A. clear",
+            "B. unclear",
+            "C. clearly",
+            "D. clarify"
+          ],
+          "explanation": "Cần TÍNH TỪ mô tả \"explanation\" phù hợp với ngữ cảnh \"mọi người hiểu ngay\": \"clear\" (rõ ràng), không phải \"unclear\"."
+        },
+        {
+          "text": "The company decided to ___ its old logo with a modern design.",
+          "answer": "B",
+          "number": 8,
+          "options": [
+            "A. place",
+            "B. replace",
+            "C. placement",
+            "D. placing"
+          ],
+          "explanation": "Tiền tố \"re-\" mang nghĩa \"thay thế/làm lại\"; \"replace\" (thay thế) là động từ đúng ngữ pháp sau \"to\"."
+        },
+        {
+          "text": "His actions were completely ___ with his words.",
+          "answer": "B",
+          "number": 9,
+          "options": [
+            "A. consistent",
+            "B. inconsistent",
+            "C. consistency",
+            "D. consistently"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; ngữ cảnh \"hành động và lời nói mâu thuẫn\" cần \"inconsistent\" (không nhất quán)."
+        },
+        {
+          "text": "The task seemed ___ , but she finished it anyway.",
+          "answer": "B",
+          "number": 10,
+          "options": [
+            "A. possible",
+            "B. impossible",
+            "C. possibly",
+            "D. possibility"
+          ],
+          "explanation": "Tiền tố \"im-\" (biến thể của \"in-\" trước \"p\") tạo nghĩa phủ định: \"impossible\" (không thể) phù hợp với \"nhưng cô ấy vẫn hoàn thành\"."
+        },
+        {
+          "text": "We need to ___ this contract before signing it.",
+          "answer": "B",
+          "number": 11,
+          "options": [
+            "A. view",
+            "B. review",
+            "C. viewing",
+            "D. viewed"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại/xem lại); \"review\" (xem xét lại) là động từ đúng ngữ pháp sau \"to\"."
+        },
+        {
+          "text": "His comment was rather ___ and hurt her feelings.",
+          "answer": "B",
+          "number": 12,
+          "options": [
+            "A. polite",
+            "B. impolite",
+            "C. politely",
+            "D. politeness"
+          ],
+          "explanation": "Tiền tố \"im-\" tạo nghĩa phủ định; ngữ cảnh \"làm tổn thương cảm xúc\" cần \"impolite\" (bất lịch sự)."
+        },
+        {
+          "text": "The old bridge was ___ after the flood damaged it.",
+          "answer": "C",
+          "number": 13,
+          "options": [
+            "A. build",
+            "B. rebuild",
+            "C. rebuilt",
+            "D. building"
+          ],
+          "explanation": "Tiền tố \"re-\" + động từ ở dạng bị động quá khứ phân từ: \"rebuilt\" (được xây dựng lại) phù hợp sau \"was\"."
+        },
+        {
+          "text": "Please don't ___ my words; that's not what I meant.",
+          "answer": "B",
+          "number": 14,
+          "options": [
+            "A. understand",
+            "B. misunderstand",
+            "C. understanding",
+            "D. understandable"
+          ],
+          "explanation": "Tiền tố \"mis-\" mang nghĩa \"sai/nhầm\"; \"misunderstand\" (hiểu lầm) phù hợp với ngữ cảnh."
+        },
+        {
+          "text": "Her handwriting is completely ___ ; I can't read it.",
+          "answer": "B",
+          "number": 15,
+          "options": [
+            "A. legible",
+            "B. illegible",
+            "C. legibly",
+            "D. legibility"
+          ],
+          "explanation": "Tiền tố \"il-\" tạo nghĩa phủ định; \"illegible\" (không thể đọc được) phù hợp với \"tôi không đọc được\"."
+        },
+        {
+          "text": "He was accused of ___ information to the press in order to make the company look better than it actually was.",
+          "answer": "C",
+          "number": 16,
+          "options": [
+            "A. leaking",
+            "B. releasing",
+            "C. misleading",
+            "D. officially reporting"
+          ],
+          "explanation": "\"In order to make the company look better than it actually was\" (để công ty trông tốt hơn thực tế) cho thấy thông tin bị bóp méo/sai lệch có chủ đích → tiền tố \"mis-\" tạo nghĩa \"sai lệch\": misleading (đánh lừa, gây hiểu lầm)."
+        },
+        {
+          "text": "The team had to ___ their strategy after the setback.",
+          "answer": "B",
+          "number": 17,
+          "options": [
+            "A. think",
+            "B. rethink",
+            "C. thinking",
+            "D. thought"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"rethink\" (suy nghĩ lại) là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "His attitude towards the new policy was quite ___ .",
+          "answer": "C",
+          "number": 18,
+          "options": [
+            "A. approve",
+            "B. approval",
+            "C. disapproving",
+            "D. approvingly"
+          ],
+          "explanation": "Tiền tố \"dis-\" tạo nghĩa phủ định; cần TÍNH TỪ sau \"quite\": \"disapproving\" (không tán thành)."
+        },
+        {
+          "text": "The results of the experiment were ___ .",
+          "answer": "B",
+          "number": 19,
+          "options": [
+            "A. conclusive",
+            "B. inconclusive",
+            "C. conclude",
+            "D. conclusion"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; \"inconclusive\" (chưa có kết luận rõ ràng) là tính từ phù hợp."
+        },
+        {
+          "text": "She had to ___ enter her password because of a typo.",
+          "answer": "B",
+          "number": 20,
+          "options": [
+            "A. type",
+            "B. retype",
+            "C. typing",
+            "D. typed"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"retype\"/\"re-enter\" mang nghĩa nhập lại — chọn \"retype\" là động từ nguyên mẫu đúng ngữ pháp."
+        },
+        {
+          "text": "The manager's decision was widely seen as ___ .",
+          "answer": "B",
+          "number": 21,
+          "options": [
+            "A. fair",
+            "B. unfair",
+            "C. fairly",
+            "D. fairness"
+          ],
+          "explanation": "Tiền tố \"un-\" tạo nghĩa phủ định; cần TÍNH TỪ sau \"as\": \"unfair\" (không công bằng)."
+        },
+        {
+          "text": "He tends to ___ the risks involved in this investment.",
+          "answer": "B",
+          "number": 22,
+          "options": [
+            "A. estimate",
+            "B. underestimate",
+            "C. estimation",
+            "D. estimating"
+          ],
+          "explanation": "Tiền tố \"under-\" mang nghĩa \"đánh giá thấp hơn thực tế\"; \"underestimate\" là động từ đúng sau \"to\"."
+        },
+        {
+          "text": "The company plans to ___ the entire building next year.",
+          "answer": "B",
+          "number": 23,
+          "options": [
+            "A. decorate",
+            "B. redecorate",
+            "C. decoration",
+            "D. decorated"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"redecorate\" (trang trí lại) là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "Her tone of voice was ___ , which made him nervous.",
+          "answer": "A",
+          "number": 24,
+          "options": [
+            "A. threatening",
+            "B. unthreatening",
+            "C. threat",
+            "D. threaten"
+          ],
+          "explanation": "Ngữ cảnh \"khiến anh ấy lo lắng\" phù hợp với tính từ mang nghĩa gốc \"threatening\" (đe dọa), không phải phủ định."
+        },
+        {
+          "text": "Because there wasn't enough work for everyone, the company had to ___ some staff, giving them fewer hours than they needed.",
+          "answer": "B",
+          "number": 25,
+          "options": [
+            "A. overemploy",
+            "B. underemploy",
+            "C. employment",
+            "D. unemployed"
+          ],
+          "explanation": "\"Giving them fewer hours than they needed\" (cho họ ít giờ làm hơn mức họ cần) mô tả chính xác nghĩa của tiền tố \"under-\" (dưới mức cần thiết): underemploy (sử dụng lao động dưới mức, không đủ giờ làm)."
+        },
+        {
+          "text": "His argument was based on ___ information.",
+          "answer": "B",
+          "number": 26,
+          "options": [
+            "A. accurate",
+            "B. inaccurate",
+            "C. accuracy",
+            "D. accurately"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; cần TÍNH TỪ trước danh từ \"information\": \"inaccurate\" (không chính xác)."
+        },
+        {
+          "text": "The team needs to ___ its approach to marketing.",
+          "answer": "B",
+          "number": 27,
+          "options": [
+            "A. design",
+            "B. redesign",
+            "C. designing",
+            "D. designer"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"redesign\" (thiết kế lại) là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "It would be ___ of you to ignore her warning.",
+          "answer": "B",
+          "number": 28,
+          "options": [
+            "A. wise",
+            "B. unwise",
+            "C. wisely",
+            "D. wisdom"
+          ],
+          "explanation": "Cấu trúc \"It would be + tính từ + of you\" cần tính từ; tiền tố \"un-\" tạo nghĩa phủ định: \"unwise\" (không khôn ngoan)."
+        },
+        {
+          "text": "He was found guilty of ___ company funds.",
+          "answer": "B",
+          "number": 29,
+          "options": [
+            "A. using",
+            "B. misusing",
+            "C. usage",
+            "D. user"
+          ],
+          "explanation": "Tiền tố \"mis-\" mang nghĩa \"sai trái\"; \"misusing\" (lạm dụng/sử dụng sai) phù hợp với ngữ cảnh phạm tội."
+        },
+        {
+          "text": "The professor asked the students to ___ their essays.",
+          "answer": "B",
+          "number": 30,
+          "options": [
+            "A. write",
+            "B. rewrite",
+            "C. writing",
+            "D. written"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"rewrite\" (viết lại) là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "Their behaviour during the ceremony was completely ___ .",
+          "answer": "B",
+          "number": 31,
+          "options": [
+            "A. appropriate",
+            "B. inappropriate",
+            "C. appropriately",
+            "D. appropriateness"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; cần TÍNH TỪ sau \"was\": \"inappropriate\" (không phù hợp)."
+        },
+        {
+          "text": "The witness's account of events was ___ .",
+          "answer": "B",
+          "number": 32,
+          "options": [
+            "A. reliable",
+            "B. unreliable",
+            "C. reliably",
+            "D. reliability"
+          ],
+          "explanation": "Tiền tố \"un-\" tạo nghĩa phủ định; \"unreliable\" (không đáng tin cậy) là tính từ phù hợp."
+        },
+        {
+          "text": "She decided to ___ the entire chapter before submitting her thesis.",
+          "answer": "B",
+          "number": 33,
+          "options": [
+            "A. write",
+            "B. rewrite",
+            "C. written",
+            "D. writer"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"rewrite\" là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "His comments were seen as highly ___ by his colleagues.",
+          "answer": "B",
+          "number": 34,
+          "options": [
+            "A. appropriate",
+            "B. inappropriate",
+            "C. appropriately",
+            "D. appropriateness"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; cần TÍNH TỪ sau \"as\": \"inappropriate\" (không phù hợp)."
+        },
+        {
+          "text": "The plan is ___ ; there are too many flaws.",
+          "answer": "B",
+          "number": 35,
+          "options": [
+            "A. practical",
+            "B. impractical",
+            "C. practically",
+            "D. practicality"
+          ],
+          "explanation": "Tiền tố \"im-\" tạo nghĩa phủ định; ngữ cảnh \"quá nhiều lỗ hổng\" cần \"impractical\" (không thực tế)."
+        },
+        {
+          "text": "He was asked to ___ the report before the meeting.",
+          "answer": "B",
+          "number": 36,
+          "options": [
+            "A. submit",
+            "B. resubmit",
+            "C. submission",
+            "D. submitting"
+          ],
+          "explanation": "Tiền tố \"re-\" (nộp lại); \"resubmit\" là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "The witness had gotten a clear look at the suspect's face, so she was able to give the police an ___ description that led to his arrest.",
+          "answer": "A",
+          "number": 37,
+          "options": [
+            "A. accurate",
+            "B. inaccurate",
+            "C. accuracy",
+            "D. accurately"
+          ],
+          "explanation": "\"Had gotten a clear look at the suspect's face\" (đã nhìn rõ mặt nghi phạm) và \"led to his arrest\" (dẫn đến việc bắt được nghi phạm) cho thấy lời miêu tả phải chính xác → \"accurate\" (chính xác), không phải \"inaccurate\" (không chính xác, sẽ không giúp bắt được ai)."
+        },
+        {
+          "text": "The manager's tone was ___ , which upset the whole team.",
+          "answer": "B",
+          "number": 38,
+          "options": [
+            "A. respectful",
+            "B. disrespectful",
+            "C. respect",
+            "D. respectfully"
+          ],
+          "explanation": "Tiền tố \"dis-\" tạo nghĩa phủ định; ngữ cảnh \"khiến cả đội khó chịu\" cần \"disrespectful\" (thiếu tôn trọng)."
+        },
+        {
+          "text": "We had to ___ our travel plans due to the storm.",
+          "answer": "B",
+          "number": 39,
+          "options": [
+            "A. schedule",
+            "B. reschedule",
+            "C. scheduling",
+            "D. scheduled"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại/dời lịch); \"reschedule\" là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "His actions were completely ___ with company policy.",
+          "answer": "B",
+          "number": 40,
+          "options": [
+            "A. compatible",
+            "B. incompatible",
+            "C. compatibly",
+            "D. compatibility"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; ngữ cảnh mâu thuẫn với chính sách cần \"incompatible\" (không tương thích)."
+        },
+        {
+          "text": "The government decided to ___ the old law.",
+          "answer": "B",
+          "number": 41,
+          "options": [
+            "A. enact",
+            "B. re-enact",
+            "C. enactment",
+            "D. enacting"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại/ban hành lại); \"re-enact\" là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "Her behaviour towards the guests was quite ___ .",
+          "answer": "B",
+          "number": 42,
+          "options": [
+            "A. polite",
+            "B. impolite",
+            "C. politely",
+            "D. politeness"
+          ],
+          "explanation": "Tiền tố \"im-\" tạo nghĩa phủ định; cần TÍNH TỪ sau \"quite\": \"impolite\" (bất lịch sự)."
+        },
+        {
+          "text": "The manager decided to ___ the meeting to next week.",
+          "answer": "C",
+          "number": 43,
+          "options": [
+            "A. schedule",
+            "B. postpone",
+            "C. reschedule",
+            "D. scheduling"
+          ],
+          "explanation": "Tiền tố \"re-\" mang nghĩa \"dời lại/sắp xếp lại\"; \"reschedule\" phù hợp nhất với cấu trúc \"to + mốc thời gian mới\"."
+        },
+        {
+          "text": "His explanation of the theory was quite ___ .",
+          "answer": "B",
+          "number": 44,
+          "options": [
+            "A. complete",
+            "B. incomplete",
+            "C. completely",
+            "D. completeness"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; \"incomplete\" (chưa đầy đủ) là tính từ phù hợp sau \"was\"."
+        },
+        {
+          "text": "The teacher asked the class to ___ the exercise.",
+          "answer": "B",
+          "number": 45,
+          "options": [
+            "A. do",
+            "B. redo",
+            "C. doing",
+            "D. done"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"redo\" là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "His remarks were considered ___ by the board.",
+          "answer": "B",
+          "number": 46,
+          "options": [
+            "A. acceptable",
+            "B. unacceptable",
+            "C. acceptably",
+            "D. acceptance"
+          ],
+          "explanation": "Tiền tố \"un-\" tạo nghĩa phủ định; cần TÍNH TỪ sau \"considered\": \"unacceptable\" (không thể chấp nhận)."
+        },
+        {
+          "text": "They had to ___ the building after the earthquake.",
+          "answer": "B",
+          "number": 47,
+          "options": [
+            "A. build",
+            "B. rebuild",
+            "C. building",
+            "D. builder"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"rebuild\" là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "The instructions were ___ , causing a lot of confusion.",
+          "answer": "B",
+          "number": 48,
+          "options": [
+            "A. clear",
+            "B. unclear",
+            "C. clearly",
+            "D. clarity"
+          ],
+          "explanation": "Tiền tố \"un-\" tạo nghĩa phủ định; ngữ cảnh \"gây nhầm lẫn\" cần \"unclear\" (không rõ ràng)."
+        },
+        {
+          "text": "We need to ___ the water in the tank; it's dirty.",
+          "answer": "B",
+          "number": 49,
+          "options": [
+            "A. fill",
+            "B. refill",
+            "C. filling",
+            "D. filled"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"refill\" (đổ đầy lại) là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "Given that he had just been robbed and was still in shock, his decision to call the police immediately seemed completely ___ .",
+          "answer": "A",
+          "number": 50,
+          "options": [
+            "A. reasonable",
+            "B. unreasonable",
+            "C. reasonably",
+            "D. reason"
+          ],
+          "explanation": "Vế đầu \"he had just been robbed... in shock\" (vừa bị cướp, vẫn còn sốc) giải thích lý do hành động gọi cảnh sát ngay là hợp lý, hợp logic → \"reasonable\" (hợp lý), không phải \"unreasonable\" (vô lý) vì hành động này hoàn toàn dễ hiểu trong tình huống đó."
+        },
+        {
+          "text": "The politician was accused of ___ the public.",
+          "answer": "B",
+          "number": 51,
+          "options": [
+            "A. leading",
+            "B. misleading",
+            "C. leader",
+            "D. leadership"
+          ],
+          "explanation": "Tiền tố \"mis-\" mang nghĩa \"sai lệch\"; \"misleading\" (đánh lừa) phù hợp với ngữ cảnh cáo buộc."
+        },
+        {
+          "text": "The company decided to ___ its entire product line.",
+          "answer": "B",
+          "number": 52,
+          "options": [
+            "A. launch",
+            "B. relaunch",
+            "C. launching",
+            "D. launched"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"relaunch\" (ra mắt lại) là động từ nguyên mẫu đúng sau \"to\"."
+        }
+      ],
+      "instruction": "Chọn đáp án đúng cho mỗi câu."
+    },
+    {
+      "id": "448bd4c4-ac41-49ad-bbd0-911ec0ac4880",
+      "type": "explanation",
+      "content": "",
+      "heading": "3. Word Families (Họ từ)"
+    },
+    {
+      "id": "2f1a13e4-5702-4bbe-bcfa-01e2833558a2",
+      "type": "explanation",
+      "content": "Đây là phần cho điểm cao nhất khi ôn thi. Nguyên tắc học: luôn học theo cụm bốn ô cùng lúc, và với mỗi từ ghi thêm một collocation đi kèm. Dấu gạch ngang nghĩa là dạng đó không tồn tại hoặc rất hiếm dùng.",
+      "heading": ""
+    },
+    {
+      "id": "54537c5f-b3be-41f1-ba6d-de62dd1d1634",
+      "rows": [
+        [
+          "analyse",
+          "analysis",
+          "analyst",
+          "analytical",
+          "analytically"
+        ],
+        [
+          "achieve",
+          "achievement",
+          "achiever",
+          "achievable",
+          "-"
+        ],
+        [
+          "apply",
+          "application",
+          "applicant",
+          "applicable",
+          "-"
+        ],
+        [
+          "assess",
+          "assessment",
+          "assessor",
+          "assessable",
+          "-"
+        ],
+        [
+          "assume",
+          "assumption",
+          "-",
+          "assumed",
+          "presumably"
+        ],
+        [
+          "benefit",
+          "benefit",
+          "beneficiary",
+          "beneficial",
+          "beneficially"
+        ],
+        [
+          "compete",
+          "competition",
+          "competitor",
+          "competitive",
+          "competitively"
+        ],
+        [
+          "conclude",
+          "conclusion",
+          "-",
+          "conclusive",
+          "conclusively"
+        ],
+        [
+          "consider",
+          "consideration",
+          "-",
+          "considerable / considerate",
+          "considerably"
+        ],
+        [
+          "contribute",
+          "contribution",
+          "contributor",
+          "contributory",
+          "-"
+        ],
+        [
+          "create",
+          "creation / creativity",
+          "creator",
+          "creative",
+          "creatively"
+        ],
+        [
+          "decide",
+          "decision",
+          "decision-maker",
+          "decisive",
+          "decisively"
+        ],
+        [
+          "depend",
+          "dependence",
+          "dependant",
+          "dependent / dependable",
+          "dependently"
+        ],
+        [
+          "develop",
+          "development",
+          "developer",
+          "developed / developing",
+          "-"
+        ],
+        [
+          "differ",
+          "difference",
+          "-",
+          "different",
+          "differently"
+        ],
+        [
+          "educate",
+          "education",
+          "educator",
+          "educational",
+          "educationally"
+        ],
+        [
+          "employ",
+          "employment",
+          "employer / employee",
+          "employed / unemployed",
+          "-"
+        ],
+        [
+          "encourage",
+          "encouragement",
+          "-",
+          "encouraging / encouraged",
+          "encouragingly"
+        ],
+        [
+          "establish",
+          "establishment",
+          "-",
+          "established",
+          "-"
+        ],
+        [
+          "evaluate",
+          "evaluation",
+          "evaluator",
+          "evaluative",
+          "-"
+        ],
+        [
+          "examine",
+          "examination",
+          "examiner / examinee",
+          "-",
+          "-"
+        ],
+        [
+          "explain",
+          "explanation",
+          "-",
+          "explanatory",
+          "-"
+        ],
+        [
+          "identify",
+          "identity / identification",
+          "-",
+          "identical / identifiable",
+          "identically"
+        ],
+        [
+          "improve",
+          "improvement",
+          "-",
+          "improved",
+          "-"
+        ],
+        [
+          "indicate",
+          "indication / indicator",
+          "-",
+          "indicative",
+          "-"
+        ],
+        [
+          "influence",
+          "influence",
+          "-",
+          "influential",
+          "influentially"
+        ],
+        [
+          "interpret",
+          "interpretation",
+          "interpreter",
+          "interpretive",
+          "-"
+        ],
+        [
+          "investigate",
+          "investigation",
+          "investigator",
+          "investigative",
+          "-"
+        ],
+        [
+          "know",
+          "knowledge",
+          "-",
+          "knowledgeable",
+          "knowingly"
+        ],
+        [
+          "maintain",
+          "maintenance",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "measure",
+          "measurement",
+          "-",
+          "measurable",
+          "measurably"
+        ],
+        [
+          "observe",
+          "observation",
+          "observer",
+          "observant",
+          "-"
+        ],
+        [
+          "participate",
+          "participation",
+          "participant",
+          "participatory",
+          "-"
+        ],
+        [
+          "persuade",
+          "persuasion",
+          "-",
+          "persuasive",
+          "persuasively"
+        ],
+        [
+          "prove",
+          "proof",
+          "-",
+          "proven",
+          "-"
+        ],
+        [
+          "react",
+          "reaction",
+          "-",
+          "reactive",
+          "-"
+        ],
+        [
+          "relate",
+          "relation / relationship",
+          "relative",
+          "relative / related",
+          "relatively"
+        ],
+        [
+          "require",
+          "requirement",
+          "-",
+          "required",
+          "-"
+        ],
+        [
+          "respond",
+          "response",
+          "respondent",
+          "responsive",
+          "responsively"
+        ],
+        [
+          "signify",
+          "significance",
+          "-",
+          "significant",
+          "significantly"
+        ],
+        [
+          "solve",
+          "solution",
+          "-",
+          "solvable",
+          "-"
+        ],
+        [
+          "succeed",
+          "success",
+          "-",
+          "successful",
+          "successfully"
+        ],
+        [
+          "suggest",
+          "suggestion",
+          "-",
+          "suggestive",
+          "-"
+        ],
+        [
+          "think",
+          "thought",
+          "thinker",
+          "thoughtful / thoughtless",
+          "thoughtfully"
+        ],
+        [
+          "vary",
+          "variety / variation",
+          "-",
+          "various / variable",
+          "variously"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Động từ",
+        "Danh từ sự việc",
+        "Danh từ người",
+        "Tính từ",
+        "Trạng từ"
+      ],
+      "heading": "Họ từ nhóm học thuật và xã hội"
+    },
+    {
+      "id": "87a956a4-a66c-466f-9ae4-12dad96cf23a",
+      "rows": [
+        [
+          "compete",
+          "competition",
+          "competitor",
+          "competitive",
+          "competitively"
+        ],
+        [
+          "consume",
+          "consumption",
+          "consumer",
+          "consumable",
+          "-"
+        ],
+        [
+          "economise",
+          "economy / economics",
+          "economist",
+          "economic / economical",
+          "economically"
+        ],
+        [
+          "finance",
+          "finance",
+          "financier",
+          "financial",
+          "financially"
+        ],
+        [
+          "industrialise",
+          "industry / industrialisation",
+          "industrialist",
+          "industrial / industrious",
+          "industrially"
+        ],
+        [
+          "invest",
+          "investment",
+          "investor",
+          "-",
+          "-"
+        ],
+        [
+          "produce",
+          "production / product / productivity",
+          "producer",
+          "productive",
+          "productively"
+        ],
+        [
+          "profit",
+          "profit",
+          "-",
+          "profitable",
+          "profitably"
+        ],
+        [
+          "trade",
+          "trade",
+          "trader",
+          "-",
+          "-"
+        ],
+        [
+          "pollute",
+          "pollution / pollutant",
+          "polluter",
+          "polluted",
+          "-"
+        ],
+        [
+          "conserve",
+          "conservation",
+          "conservationist",
+          "conservative",
+          "conservatively"
+        ],
+        [
+          "sustain",
+          "sustainability",
+          "-",
+          "sustainable",
+          "sustainably"
+        ],
+        [
+          "recycle",
+          "recycling",
+          "-",
+          "recyclable",
+          "-"
+        ],
+        [
+          "destroy",
+          "destruction",
+          "-",
+          "destructive",
+          "destructively"
+        ],
+        [
+          "preserve",
+          "preservation",
+          "-",
+          "preserved",
+          "-"
+        ],
+        [
+          "innovate",
+          "innovation",
+          "innovator",
+          "innovative",
+          "innovatively"
+        ],
+        [
+          "automate",
+          "automation",
+          "-",
+          "automatic / automated",
+          "automatically"
+        ],
+        [
+          "communicate",
+          "communication",
+          "communicator",
+          "communicative",
+          "communicatively"
+        ],
+        [
+          "digitise",
+          "digitisation",
+          "-",
+          "digital",
+          "digitally"
+        ],
+        [
+          "access",
+          "access / accessibility",
+          "-",
+          "accessible",
+          "-"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Động từ",
+        "Danh từ sự việc",
+        "Danh từ người",
+        "Tính từ",
+        "Trạng từ"
+      ],
+      "heading": "Họ từ nhóm kinh tế, môi trường, công nghệ"
+    },
+    {
+      "id": "4d3ce3e5-1d02-4b95-92a5-7a3507b5cac0",
+      "type": "exercise",
+      "heading": "3. Word Families (Họ từ)",
+      "questions": [
+        {
+          "text": "The government introduced several ___ reforms last year.",
+          "answer": "B",
+          "number": 1,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economically"
+          ],
+          "explanation": "Từ đứng trước danh từ \"reforms\" phải là TÍNH TỪ; \"economic\" (thuộc về kinh tế) mô tả loại cải cách."
+        },
+        {
+          "text": "Buying in bulk is a more ___ option for large families.",
+          "answer": "C",
+          "number": 2,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economise"
+          ],
+          "explanation": "\"Economical\" (tiết kiệm, ít tốn kém) khác với \"economic\" (thuộc kinh tế) — ở đây ngữ cảnh nói về việc tiết kiệm tiền."
+        },
+        {
+          "text": "We need to ___ our spending this month.",
+          "answer": "D",
+          "number": 3,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economise"
+          ],
+          "explanation": "Cần một ĐỘNG TỪ sau \"to\"; \"economise\" (tiết kiệm/cắt giảm chi tiêu) là động từ của họ từ \"economy\"."
+        },
+        {
+          "text": "The company reported strong ___ growth in the last quarter.",
+          "answer": "B",
+          "number": 4,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economically"
+          ],
+          "explanation": "Từ đứng trước danh từ \"growth\" phải là TÍNH TỪ; \"economic\" (kinh tế) mô tả loại tăng trưởng."
+        },
+        {
+          "text": "The global ___ has been affected by rising oil prices.",
+          "answer": "A",
+          "number": 5,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economise"
+          ],
+          "explanation": "Cần DANH TỪ sau mạo từ \"the\" và tính từ \"global\"; \"economy\" (nền kinh tế) là danh từ gốc."
+        },
+        {
+          "text": "She always shops ___ to save money for her family.",
+          "answer": "D",
+          "number": 6,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economically"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"shops\" phải là TRẠNG TỪ; \"economically\" (một cách tiết kiệm)."
+        },
+        {
+          "text": "The country's ___ policies aim to reduce unemployment.",
+          "answer": "B",
+          "number": 7,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economically"
+          ],
+          "explanation": "Từ đứng trước danh từ \"policies\" phải là TÍNH TỪ; \"economic\" (thuộc kinh tế)."
+        },
+        {
+          "text": "This small car is very ___ to run.",
+          "answer": "C",
+          "number": 8,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economise"
+          ],
+          "explanation": "Ngữ cảnh nói về việc tiết kiệm nhiên liệu/chi phí vận hành cần \"economical\" (tiết kiệm), không phải \"economic\"."
+        },
+        {
+          "text": "He studied ___ at university before becoming a banker.",
+          "answer": "B",
+          "number": 9,
+          "options": [
+            "A. economy",
+            "B. economics",
+            "C. economic",
+            "D. economical"
+          ],
+          "explanation": "Tên môn học là DANH TỪ riêng biệt: \"economics\" (kinh tế học), khác với \"economy\" (nền kinh tế)."
+        },
+        {
+          "text": "The factory tried to ___ on production costs.",
+          "answer": "D",
+          "number": 10,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economise"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau giới từ \"on\"; \"economise on\" (tiết kiệm ở khoản mục nào đó) là cụm động từ đúng."
+        },
+        {
+          "text": "Photography has become his ___ ; he takes pictures every weekend.",
+          "answer": "A",
+          "number": 11,
+          "options": [
+            "A. hobby",
+            "B. hobbyist",
+            "C. hobbies",
+            "D. hobbyish"
+          ],
+          "explanation": "Cần DANH TỪ số ít sau tính từ sở hữu \"his\"; \"hobby\" (sở thích) là từ đúng."
+        },
+        {
+          "text": "She has several ___ , including painting and gardening.",
+          "answer": "B",
+          "number": 12,
+          "options": [
+            "A. hobby",
+            "B. hobbies",
+            "C. hobbyist",
+            "D. hobbying"
+          ],
+          "explanation": "Sau \"several\" (vài) cần DANH TỪ SỐ NHIỀU; \"hobbies\" là số nhiều của \"hobby\"."
+        },
+        {
+          "text": "He is a passionate ___ who collects rare stamps.",
+          "answer": "B",
+          "number": 13,
+          "options": [
+            "A. hobby",
+            "B. hobbyist",
+            "C. hobbies",
+            "D. hobbying"
+          ],
+          "explanation": "Cần DANH TỪ chỉ người sau mạo từ \"a\" và tính từ \"passionate\"; \"hobbyist\" (người có sở thích/đam mê) chỉ người."
+        },
+        {
+          "text": "The scientist made an important ___ about the origins of the universe.",
+          "answer": "B",
+          "number": 14,
+          "options": [
+            "A. discover",
+            "B. discovery",
+            "C. discovering",
+            "D. discovered"
+          ],
+          "explanation": "Sau tính từ \"important\" cần DANH TỪ; \"discovery\" (khám phá) là danh từ của \"discover\"."
+        },
+        {
+          "text": "Columbus is credited with the ___ of America.",
+          "answer": "B",
+          "number": 15,
+          "options": [
+            "A. discover",
+            "B. discovery",
+            "C. discovering",
+            "D. discovered"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"discovery\" (sự khám phá) là danh từ của \"discover\"."
+        },
+        {
+          "text": "Scientists hope to ___ a cure for the disease soon.",
+          "answer": "A",
+          "number": 16,
+          "options": [
+            "A. discover",
+            "B. discovery",
+            "C. discovering",
+            "D. discovered"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"to\"; \"discover\" (khám phá) là dạng động từ gốc."
+        },
+        {
+          "text": "The team's latest ___ could change modern medicine.",
+          "answer": "B",
+          "number": 17,
+          "options": [
+            "A. discover",
+            "B. discovery",
+            "C. discovering",
+            "D. discovered"
+          ],
+          "explanation": "Sau tính từ sở hữu và \"latest\" cần DANH TỪ; \"discovery\" là danh từ đúng."
+        },
+        {
+          "text": "He is known as a great ___ in the field of physics.",
+          "answer": "B",
+          "number": 18,
+          "options": [
+            "A. discover",
+            "B. discoverer",
+            "C. discovery",
+            "D. discovering"
+          ],
+          "explanation": "Cần DANH TỪ chỉ NGƯỜI sau \"a great\"; \"discoverer\" (người khám phá) chỉ người thực hiện hành động."
+        },
+        {
+          "text": "The ___ of electricity changed the world forever.",
+          "answer": "B",
+          "number": 19,
+          "options": [
+            "A. discover",
+            "B. discovery",
+            "C. discoverer",
+            "D. discovering"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ chỉ sự việc; \"discovery\" (sự khám phá) là đáp án đúng, không phải người."
+        },
+        {
+          "text": "This medicine has proven ___ in treating the disease.",
+          "answer": "B",
+          "number": 20,
+          "options": [
+            "A. effect",
+            "B. effective",
+            "C. effectively",
+            "D. effectiveness"
+          ],
+          "explanation": "Sau động từ liên kết \"proven\" cần TÍNH TỪ; \"effective\" (hiệu quả) mô tả \"this medicine\"."
+        },
+        {
+          "text": "The new policy will ___ everyone in the company.",
+          "answer": "B",
+          "number": 21,
+          "options": [
+            "A. effect",
+            "B. affect",
+            "C. effective",
+            "D. effectively"
+          ],
+          "explanation": "Cần ĐỘNG TỪ nghĩa \"ảnh hưởng đến\"; \"affect\" là động từ, dễ nhầm với danh từ \"effect\" (kết quả)."
+        },
+        {
+          "text": "The ___ of the medicine wore off after a few hours.",
+          "answer": "A",
+          "number": 22,
+          "options": [
+            "A. effect",
+            "B. affect",
+            "C. effective",
+            "D. effectively"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"effect\" (tác dụng/kết quả) là danh từ đúng, khác với động từ \"affect\"."
+        },
+        {
+          "text": "The team implemented the changes very ___ .",
+          "answer": "C",
+          "number": 23,
+          "options": [
+            "A. effect",
+            "B. effective",
+            "C. effectively",
+            "D. effectiveness"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"implemented\" phải là TRẠNG TỪ; \"effectively\" (một cách hiệu quả)."
+        },
+        {
+          "text": "The ___ of the new law will be reviewed next year.",
+          "answer": "C",
+          "number": 24,
+          "options": [
+            "A. effect",
+            "B. effective",
+            "C. effectiveness",
+            "D. effectively"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ trừu tượng; \"effectiveness\" (tính hiệu quả) là danh từ của \"effective\"."
+        },
+        {
+          "text": "His speech had a powerful ___ on the audience.",
+          "answer": "A",
+          "number": 25,
+          "options": [
+            "A. effect",
+            "B. affect",
+            "C. effective",
+            "D. effectively"
+          ],
+          "explanation": "Sau tính từ \"powerful\" cần DANH TỪ; \"effect\" (tác động/ảnh hưởng) là danh từ đúng."
+        },
+        {
+          "text": "Doctors are trying to ___ the spread of the virus.",
+          "answer": "B",
+          "number": 26,
+          "options": [
+            "A. effect",
+            "B. affect",
+            "C. effective",
+            "D. effectiveness"
+          ],
+          "explanation": "Cần ĐỘNG TỪ nghĩa \"ảnh hưởng/tác động đến\"; \"affect\" là động từ đúng ở đây."
+        },
+        {
+          "text": "She is a talented ___ who has performed all over the world.",
+          "answer": "B",
+          "number": 27,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Cần DANH TỪ chỉ NGƯỜI sau \"a talented\"; \"musician\" (nhạc sĩ/nhạc công) chỉ người."
+        },
+        {
+          "text": "He has always loved ___ since he was a child.",
+          "answer": "A",
+          "number": 28,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Cần DANH TỪ (không đếm được) làm tân ngữ của \"loved\"; \"music\" (âm nhạc) là danh từ gốc."
+        },
+        {
+          "text": "The film has a very ___ soundtrack.",
+          "answer": "C",
+          "number": 29,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Từ đứng trước danh từ \"soundtrack\" phải là TÍNH TỪ; \"musical\" (thuộc về âm nhạc)."
+        },
+        {
+          "text": "She sang the song very ___ during the audition.",
+          "answer": "D",
+          "number": 30,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"sang\" phải là TRẠNG TỪ; \"musically\" (một cách du dương/có tính nhạc)."
+        },
+        {
+          "text": "His ___ talent was obvious from a young age.",
+          "answer": "C",
+          "number": 31,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Từ đứng trước danh từ \"talent\" phải là TÍNH TỪ; \"musical\" (về âm nhạc)."
+        },
+        {
+          "text": "The ___ performed a beautiful symphony last night.",
+          "answer": "B",
+          "number": 32,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Cần DANH TỪ chỉ NGƯỜI/nhóm người biểu diễn; \"musician(s)\" (nhạc công) là danh từ chỉ người."
+        },
+        {
+          "text": "She has a natural ___ for languages.",
+          "answer": "A",
+          "number": 33,
+          "options": [
+            "A. ability",
+            "B. able",
+            "C. ably",
+            "D. enable"
+          ],
+          "explanation": "Sau tính từ \"natural\" cần DANH TỪ; \"ability\" (khả năng) là danh từ của \"able\"."
+        },
+        {
+          "text": "He is ___ to solve complex problems quickly.",
+          "answer": "B",
+          "number": 34,
+          "options": [
+            "A. ability",
+            "B. able",
+            "C. ably",
+            "D. enable"
+          ],
+          "explanation": "Cấu trúc \"be + tính từ + to V\" cần TÍNH TỪ; \"able\" (có khả năng)."
+        },
+        {
+          "text": "She performed the task ___ despite the pressure.",
+          "answer": "C",
+          "number": 35,
+          "options": [
+            "A. ability",
+            "B. able",
+            "C. ably",
+            "D. enable"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"performed\" phải là TRẠNG TỪ; \"ably\" (một cách tài tình)."
+        },
+        {
+          "text": "This software will ___ users to work more efficiently.",
+          "answer": "D",
+          "number": 36,
+          "options": [
+            "A. ability",
+            "B. able",
+            "C. ably",
+            "D. enable"
+          ],
+          "explanation": "Cần ĐỘNG TỪ làm vị ngữ chính; \"enable\" (giúp có thể làm gì) là động từ của họ từ \"able\"."
+        },
+        {
+          "text": "His ___ to lead the team impressed everyone.",
+          "answer": "A",
+          "number": 37,
+          "options": [
+            "A. ability",
+            "B. able",
+            "C. ably",
+            "D. enable"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"ability\" (khả năng) là danh từ đúng."
+        },
+        {
+          "text": "The government's ___ policy aims to boost trade.",
+          "answer": "B",
+          "number": 38,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economise"
+          ],
+          "explanation": "Từ đứng trước danh từ \"policy\" phải là TÍNH TỪ; \"economic\" (kinh tế)."
+        },
+        {
+          "text": "He runs his household very ___ .",
+          "answer": "D",
+          "number": 39,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economically"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"runs\" phải là TRẠNG TỪ; \"economically\" (một cách tiết kiệm)."
+        },
+        {
+          "text": "Her latest ___ has attracted attention from major labels.",
+          "answer": "A",
+          "number": 40,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" và \"latest\" cần DANH TỪ; \"music\" (tác phẩm âm nhạc/bài hát) ở nghĩa cụ thể này."
+        },
+        {
+          "text": "The ___ who first identified the link between the gene and the disease was later awarded a Nobel Prize.",
+          "answer": "B",
+          "number": 41,
+          "options": [
+            "A. discover",
+            "B. discoverer",
+            "C. discovery",
+            "D. discovering"
+          ],
+          "explanation": "Cần DANH TỪ CHỈ NGƯỜI làm chủ ngữ của \"who first identified...\" và \"was later awarded\"; hậu tố \"-er\" tạo danh từ chỉ người \"discoverer\" (người khám phá), khác với \"discovery\" (sự khám phá, chỉ sự việc)."
+        },
+        {
+          "text": "This treatment has proven remarkably ___ .",
+          "answer": "B",
+          "number": 42,
+          "options": [
+            "A. effect",
+            "B. effective",
+            "C. effectively",
+            "D. effectiveness"
+          ],
+          "explanation": "Sau động từ liên kết \"proven\" cần TÍNH TỪ; \"effective\" (hiệu quả)."
+        },
+        {
+          "text": "He ___ his time between work and hobbies.",
+          "answer": "D",
+          "number": 43,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economises"
+          ],
+          "explanation": "Cần ĐỘNG TỪ chia theo chủ ngữ \"he\"; \"economises\" (tiết kiệm/phân bổ hợp lý) là dạng chia ngôi ba số ít của \"economise\"."
+        },
+        {
+          "text": "Her ___ nature helped the family save a lot of money.",
+          "answer": "C",
+          "number": 44,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. economically"
+          ],
+          "explanation": "Từ đứng trước danh từ \"nature\" phải là TÍNH TỪ; \"economical\" (tiết kiệm) mô tả tính cách."
+        },
+        {
+          "text": "The ___ of penicillin revolutionized modern medicine.",
+          "answer": "B",
+          "number": 45,
+          "options": [
+            "A. discover",
+            "B. discovery",
+            "C. discoverer",
+            "D. discovering"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ chỉ sự việc; \"discovery\" (sự khám phá) là đáp án đúng."
+        },
+        {
+          "text": "This new drug is far more ___ than the old one.",
+          "answer": "B",
+          "number": 46,
+          "options": [
+            "A. effect",
+            "B. effective",
+            "C. effectively",
+            "D. effectiveness"
+          ],
+          "explanation": "Sau \"more\" trong cấu trúc so sánh cần TÍNH TỪ; \"effective\" (hiệu quả)."
+        },
+        {
+          "text": "He plays several instruments; he's very ___ .",
+          "answer": "C",
+          "number": 47,
+          "options": [
+            "A. music",
+            "B. musician",
+            "C. musical",
+            "D. musically"
+          ],
+          "explanation": "Sau động từ liên kết \"is\" cần TÍNH TỪ mô tả tính cách/năng khiếu; \"musical\" (có năng khiếu âm nhạc)."
+        },
+        {
+          "text": "She showed great ___ in handling the crisis.",
+          "answer": "A",
+          "number": 48,
+          "options": [
+            "A. ability",
+            "B. able",
+            "C. ably",
+            "D. enable"
+          ],
+          "explanation": "Sau tính từ \"great\" cần DANH TỪ; \"ability\" (khả năng)."
+        },
+        {
+          "text": "The training program aims to ___ employees with new skills.",
+          "answer": "D",
+          "number": 49,
+          "options": [
+            "A. ability",
+            "B. able",
+            "C. ably",
+            "D. enable"
+          ],
+          "explanation": "Cần ĐỘNG TỪ nguyên mẫu sau \"to\"; \"enable\" (trang bị/giúp có khả năng)."
+        },
+        {
+          "text": "His theory led to a major scientific ___ .",
+          "answer": "B",
+          "number": 50,
+          "options": [
+            "A. discover",
+            "B. discovery",
+            "C. discoverer",
+            "D. discovering"
+          ],
+          "explanation": "Sau tính từ \"scientific\" cần DANH TỪ; \"discovery\" (khám phá) là danh từ đúng."
+        },
+        {
+          "text": "The company's new strategy proved highly ___ .",
+          "answer": "D",
+          "number": 51,
+          "options": [
+            "A. economy",
+            "B. economic",
+            "C. economical",
+            "D. effective"
+          ],
+          "explanation": "Sau động từ liên kết \"proved\" và trạng từ \"highly\" cần TÍNH TỪ; ngữ cảnh nói về hiệu quả chiến lược nên chọn \"effective\" (hiệu quả)."
+        }
+      ],
+      "instruction": "Chọn đáp án đúng cho mỗi câu."
+    },
+    {
+      "id": "6b20dbdc-cbf2-4705-b743-b65588b2346b",
+      "type": "explanation",
+      "content": "",
+      "heading": "4. Common Word Formation Patterns (Quy tắc cấu tạo từ phổ biến)"
+    },
+    {
+      "id": "8befe92f-af19-4e53-b3ee-e51dc82d39dd",
+      "rows": [
+        [
+          "-ate",
+          "bỏ e rồi thêm -ion",
+          "educate → education; create → creation; communicate → communication"
+        ],
+        [
+          "-ct",
+          "thêm -ion",
+          "act → action; predict → prediction; construct → construction"
+        ],
+        [
+          "-de",
+          "đổi thành -sion",
+          "decide → decision; conclude → conclusion; divide → division"
+        ],
+        [
+          "-it",
+          "đổi thành -ission",
+          "permit → permission; admit → admission; transmit → transmission"
+        ],
+        [
+          "-ise / -ize",
+          "thêm -ation",
+          "organise → organisation; realise → realisation"
+        ],
+        [
+          "-fy",
+          "đổi thành -fication",
+          "classify → classification; simplify → simplification"
+        ],
+        [
+          "-ain",
+          "đổi thành -anation hoặc -enance",
+          "explain → explanation; maintain → maintenance"
+        ],
+        [
+          "-ceive",
+          "đổi thành -ception",
+          "receive → reception; perceive → perception"
+        ],
+        [
+          "-scribe",
+          "đổi thành -scription",
+          "describe → description; subscribe → subscription"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Đuôi động từ",
+        "Cách đổi",
+        "Ví dụ"
+      ],
+      "heading": "Mẫu 1 - Động từ sang danh từ"
+    },
+    {
+      "id": "ccd39e70-0ede-4cab-b69d-01e4d4c8240b",
+      "rows": [
+        [
+          "-ent",
+          "đổi thành -ence",
+          "different → difference; confident → confidence; independent → independence"
+        ],
+        [
+          "-ant",
+          "đổi thành -ance",
+          "important → importance; relevant → relevance; tolerant → tolerance"
+        ],
+        [
+          "-ous",
+          "đổi thành -ity hoặc -ousness",
+          "curious → curiosity; generous → generosity; conscious → consciousness"
+        ],
+        [
+          "-able",
+          "đổi thành -ability",
+          "able → ability; responsible → responsibility; available → availability"
+        ],
+        [
+          "-ate",
+          "đổi thành -acy",
+          "accurate → accuracy; private → privacy; adequate → adequacy"
+        ],
+        [
+          "tính từ ngắn",
+          "thêm -ness",
+          "happy → happiness; weak → weakness; dark → darkness"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Đuôi tính từ",
+        "Cách đổi",
+        "Ví dụ"
+      ],
+      "heading": "Mẫu 2 - Tính từ sang danh từ"
+    },
+    {
+      "id": "b71a52fe-059e-49d2-8148-faf1fb8193a3",
+      "rows": [
+        [
+          "thêm -al",
+          "nature → natural; culture → cultural; region → regional; profession → professional"
+        ],
+        [
+          "thêm -ful hoặc -less",
+          "care → careful, careless; hope → hopeful, hopeless; power → powerful, powerless"
+        ],
+        [
+          "thêm -y",
+          "wealth → wealthy; noise → noisy; health → healthy; risk → risky"
+        ],
+        [
+          "thêm -ous",
+          "danger → dangerous; fame → famous; mystery → mysterious; ambition → ambitious"
+        ],
+        [
+          "thêm -ic",
+          "science → scientific; history → historic; economy → economic"
+        ],
+        [
+          "thêm -ly",
+          "friend → friendly; cost → costly; month → monthly"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Cách đổi",
+        "Ví dụ"
+      ],
+      "heading": "Mẫu 3 - Danh từ sang tính từ"
+    },
+    {
+      "id": "64f682af-d28c-44c2-968e-7a5b39e56391",
+      "type": "explanation",
+      "content": "Mẫu 4 - Zero derivation, tức là không đổi hình thái khi đổi từ loại. Nhóm này rất lớn trong tiếng Anh hiện đại: water, email, impact, focus, research, study, increase, decrease, influence, benefit, result, support, control, record, report, question, answer, work, help.",
+      "heading": ""
+    },
+    {
+      "id": "a29d0785-0d94-48af-ad08-46c0a3739f74",
+      "rows": [
+        [
+          "water",
+          "nước (n)",
+          "tưới nước (v)",
+          "\"We need clean water.\"",
+          "\"She waters the plants every day.\""
+        ],
+        [
+          "email",
+          "thư điện tử (n)",
+          "gửi email (v)",
+          "\"I received your email.\"",
+          "\"Please email me the report.\""
+        ],
+        [
+          "impact",
+          "tác động (n)",
+          "tác động đến (v)",
+          "\"The impact was huge.\"",
+          "\"This policy will impact many people.\""
+        ],
+        [
+          "focus",
+          "sự tập trung (n)",
+          "tập trung vào (v)",
+          "\"Keep your focus.\"",
+          "\"Let's focus on the main issue.\""
+        ],
+        [
+          "research",
+          "nghiên cứu (n)",
+          "nghiên cứu (v)",
+          "\"This is based on research.\"",
+          "\"Scientists research new vaccines.\""
+        ],
+        [
+          "study",
+          "việc học (n)",
+          "học/nghiên cứu (v)",
+          "\"Study takes time.\"",
+          "\"I study English every day.\""
+        ],
+        [
+          "increase / decrease",
+          "sự tăng/giảm (n)",
+          "tăng/giảm (v)",
+          "\"There was an increase in sales.\"",
+          "\"Sales increased last year.\""
+        ],
+        [
+          "influence",
+          "ảnh hưởng (n)",
+          "gây ảnh hưởng (v)",
+          "\"She has a strong influence.\"",
+          "\"Parents influence their children.\""
+        ],
+        [
+          "benefit",
+          "lợi ích (n)",
+          "có lợi (v)",
+          "\"This has many benefits.\"",
+          "\"You will benefit from this course.\""
+        ],
+        [
+          "result",
+          "kết quả (n)",
+          "dẫn đến kết quả (v)",
+          "\"The result was positive.\"",
+          "\"Hard work results in success.\""
+        ],
+        [
+          "support",
+          "sự hỗ trợ (n)",
+          "hỗ trợ (v)",
+          "\"Thank you for your support.\"",
+          "\"We support local farmers.\""
+        ],
+        [
+          "control",
+          "sự kiểm soát (n)",
+          "kiểm soát (v)",
+          "\"He lost control.\"",
+          "\"She controls the entire budget.\""
+        ],
+        [
+          "record",
+          "hồ sơ/bản ghi (n)",
+          "ghi lại (v)",
+          "\"Check your medical record.\"",
+          "\"Please record this conversation.\""
+        ],
+        [
+          "report",
+          "báo cáo (n)",
+          "báo cáo (v)",
+          "\"Submit your report.\"",
+          "\"Employees must report any issues.\""
+        ],
+        [
+          "question",
+          "câu hỏi (n)",
+          "đặt câu hỏi/nghi ngờ (v)",
+          "\"That's a good question.\"",
+          "\"Nobody questioned his decision.\""
+        ],
+        [
+          "answer",
+          "câu trả lời (n)",
+          "trả lời (v)",
+          "\"I don't know the answer.\"",
+          "\"Please answer the phone.\""
+        ],
+        [
+          "work",
+          "công việc (n)",
+          "làm việc (v)",
+          "\"I have a lot of work.\"",
+          "\"She works at a hospital.\""
+        ],
+        [
+          "help",
+          "sự giúp đỡ (n)",
+          "giúp đỡ (v)",
+          "\"I need your help.\"",
+          "\"Can you help me with this?\""
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Từ",
+        "Là danh từ",
+        "Là động từ",
+        "Ví dụ (danh từ)",
+        "Ví dụ (động từ)"
+      ],
+      "heading": "Ví dụ minh hoạ — cùng một từ, hai vai trò khác nhau:"
+    },
+    {
+      "id": "52243b95-5659-470c-9c73-0b9fef8d0760",
+      "type": "note",
+      "content": "CÁCH NHẬN BIẾT TRONG CÂU\nVì hình thái từ giống hệt nhau, cách duy nhất để biết đó là danh từ hay động từ là nhìn vào VỊ TRÍ trong câu: sau mạo từ (a/an/the) hoặc tính từ sở hữu (my/his) → danh từ (\"the impact\", \"my research\"); ngay sau chủ ngữ và mang đuôi -s/-ed/-ing khi chia thì → động từ (\"it impacts\", \"she researched\"). Một số từ khi chuyển loại có thể đổi trọng âm (VD: REcord (n) vs reCORD (v)), nhưng phần lớn các từ trong nhóm này (water, focus, help...) giữ nguyên cả trọng âm.",
+      "variant": "info"
+    },
+    {
+      "id": "509abf59-50cc-4f15-ba61-7a741d4cd1b3",
+      "rows": [
+        [
+          "record",
+          "REcord - bản ghi, kỷ lục",
+          "reCORD - ghi lại"
+        ],
+        [
+          "increase",
+          "INcrease - sự gia tăng",
+          "inCREASE - làm tăng"
+        ],
+        [
+          "decrease",
+          "DEcrease - sự sụt giảm",
+          "deCREASE - làm giảm"
+        ],
+        [
+          "present",
+          "PREsent - món quà, hiện tại",
+          "preSENT - trình bày"
+        ],
+        [
+          "conduct",
+          "CONduct - hành vi",
+          "conDUCT - tiến hành"
+        ],
+        [
+          "object",
+          "OBject - vật thể, đối tượng",
+          "obJECT - phản đối"
+        ],
+        [
+          "subject",
+          "SUBject - chủ đề, môn học",
+          "subJECT - bắt phải chịu"
+        ],
+        [
+          "conflict",
+          "CONflict - xung đột",
+          "conFLICT - mâu thuẫn với"
+        ],
+        [
+          "contrast",
+          "CONtrast - sự tương phản",
+          "conTRAST - đối chiếu"
+        ],
+        [
+          "import / export",
+          "IMport / EXport - hàng nhập, hàng xuất",
+          "imPORT / exPORT - nhập khẩu, xuất khẩu"
+        ],
+        [
+          "progress",
+          "PROgress - tiến bộ",
+          "proGRESS - tiến triển"
+        ],
+        [
+          "permit",
+          "PERmit - giấy phép",
+          "perMIT - cho phép"
+        ],
+        [
+          "insult",
+          "INsult - lời xúc phạm",
+          "inSULT - xúc phạm"
+        ],
+        [
+          "suspect",
+          "SUSpect - nghi phạm",
+          "susPECT - nghi ngờ"
+        ],
+        [
+          "rebel",
+          "REbel - kẻ nổi loạn",
+          "reBEL - nổi loạn"
+        ]
+      ],
+      "type": "table",
+      "headers": [
+        "Từ",
+        "Danh từ nhấn âm 1",
+        "Động từ nhấn âm 2"
+      ],
+      "heading": "Mẫu 5 - Đổi trọng âm giữa danh từ và động từ"
+    },
+    {
+      "id": "c2473087-aa4c-4ca6-b6cc-38949a73b935",
+      "type": "note",
+      "content": "MẸO\nQuy tắc chung dễ nhớ: danh từ và tính từ thường nhấn âm ĐẦU, động từ thường nhấn âm SAU. Điều này quan trọng cho phần Speaking và Listening, vì nhấn sai trọng âm có thể khiến người nghe hiểu nhầm từ loại.",
+      "variant": "info"
+    },
+    {
+      "id": "8898044b-51fd-4766-8186-bea6788dfb53",
+      "type": "note",
+      "content": "Hậu tố kéo trọng âm\nMột số hậu tố luôn kéo trọng âm về âm tiết ngay TRƯỚC nó: -tion, -sion, -ity, -ical, -ic, -ial, -ious. Ví dụ: EDucate nhưng eduCAtion; ABle nhưng aBIlity; ECOnomy nhưng ecoNOMic. Hậu tố -ment, -ness, -ful, -less, -ly thì không làm đổi trọng âm gốc.",
+      "variant": "info"
+    },
+    {
+      "id": "a6ef677b-142b-4f48-89db-c36db6c602dc",
+      "type": "exercise",
+      "heading": "4. Common Word Formation Patterns (Quy tắc cấu tạo từ phổ biến)",
+      "questions": [
+        {
+          "text": "The teacher gave a clear ___ of the experiment.",
+          "answer": "B",
+          "number": 1,
+          "options": [
+            "A. explain",
+            "B. explanation",
+            "C. explanatory",
+            "D. explanatorily"
+          ],
+          "explanation": "Sau tính từ \"clear\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"explain\" thành danh từ \"explanation\"."
+        },
+        {
+          "text": "He drives ___ , even in heavy traffic.",
+          "answer": "C",
+          "number": 2,
+          "options": [
+            "A. care",
+            "B. careful",
+            "C. carefully",
+            "D. careless"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"drives\" phải là TRẠNG TỪ; hậu tố \"-ly\" biến tính từ \"careful\" thành trạng từ \"carefully\"."
+        },
+        {
+          "text": "This job requires someone who is very ___ .",
+          "answer": "C",
+          "number": 3,
+          "options": [
+            "A. detail",
+            "B. details",
+            "C. detailed",
+            "D. detailedly"
+          ],
+          "explanation": "Sau động từ liên kết \"is\" cần TÍNH TỪ; hậu tố \"-ed\" biến danh từ \"detail\" thành tính từ \"detailed\" (tỉ mỉ)."
+        },
+        {
+          "text": "Her ___ towards the project was impressive.",
+          "answer": "B",
+          "number": 4,
+          "options": [
+            "A. commit",
+            "B. commitment",
+            "C. committed",
+            "D. committedly"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; hậu tố \"-ment\" biến động từ \"commit\" thành danh từ \"commitment\"."
+        },
+        {
+          "text": "The manager's ___ was clear from his tone of voice.",
+          "answer": "B",
+          "number": 5,
+          "options": [
+            "A. frustrate",
+            "B. frustration",
+            "C. frustrated",
+            "D. frustratingly"
+          ],
+          "explanation": "Sau tính từ sở hữu \"manager's\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"frustrate\" thành danh từ \"frustration\"."
+        },
+        {
+          "text": "The news left everyone feeling ___ .",
+          "answer": "C",
+          "number": 6,
+          "options": [
+            "A. confuse",
+            "B. confusion",
+            "C. confused",
+            "D. confusingly"
+          ],
+          "explanation": "Sau động từ \"feeling\" cần TÍNH TỪ mô tả cảm giác; hậu tố \"-ed\" biến động từ \"confuse\" thành tính từ \"confused\" (bối rối)."
+        },
+        {
+          "text": "His argument was quite ___ ; nobody could follow it.",
+          "answer": "C",
+          "number": 7,
+          "options": [
+            "A. confuse",
+            "B. confusion",
+            "C. confusing",
+            "D. confusedly"
+          ],
+          "explanation": "Sau động từ liên kết \"was\" cần TÍNH TỪ mô tả tính chất của \"argument\"; hậu tố \"-ing\" tạo tính từ \"confusing\" (gây bối rối, chủ động gây ra cảm giác đó)."
+        },
+        {
+          "text": "The company announced a new ___ strategy.",
+          "answer": "B",
+          "number": 8,
+          "options": [
+            "A. market",
+            "B. marketing",
+            "C. marketed",
+            "D. marketable"
+          ],
+          "explanation": "Từ đứng trước danh từ \"strategy\" cần TÍNH TỪ/DANH TỪ bổ nghĩa; \"marketing\" (tiếp thị) đóng vai trò bổ nghĩa cho danh từ."
+        },
+        {
+          "text": "This product is highly ___ due to its unique features.",
+          "answer": "D",
+          "number": 9,
+          "options": [
+            "A. market",
+            "B. marketing",
+            "C. marketed",
+            "D. marketable"
+          ],
+          "explanation": "Sau trạng từ \"highly\" cần TÍNH TỪ; hậu tố \"-able\" biến động từ \"market\" thành tính từ \"marketable\" (dễ bán, có thể bán được)."
+        },
+        {
+          "text": "Her ___ to the team was invaluable.",
+          "answer": "B",
+          "number": 10,
+          "options": [
+            "A. contribute",
+            "B. contribution",
+            "C. contributed",
+            "D. contributing"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"contribute\" thành danh từ \"contribution\"."
+        },
+        {
+          "text": "The results were ___ ; nobody expected such an outcome.",
+          "answer": "B",
+          "number": 11,
+          "options": [
+            "A. surprise",
+            "B. surprising",
+            "C. surprised",
+            "D. surprisingly"
+          ],
+          "explanation": "Sau động từ liên kết \"were\" cần TÍNH TỪ mang nghĩa chủ động \"gây ngạc nhiên\"; hậu tố \"-ing\" tạo tính từ \"surprising\"."
+        },
+        {
+          "text": "She was ___ by the sudden change of plans.",
+          "answer": "C",
+          "number": 12,
+          "options": [
+            "A. surprise",
+            "B. surprising",
+            "C. surprised",
+            "D. surprisingly"
+          ],
+          "explanation": "Sau động từ liên kết bị động \"was\" cần TÍNH TỪ mang nghĩa bị động \"cảm thấy ngạc nhiên\"; hậu tố \"-ed\" tạo tính từ \"surprised\"."
+        },
+        {
+          "text": "The government's ___ of the new law caused controversy.",
+          "answer": "B",
+          "number": 13,
+          "options": [
+            "A. implement",
+            "B. implementation",
+            "C. implemented",
+            "D. implementing"
+          ],
+          "explanation": "Sau tính từ sở hữu \"government's\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"implement\" thành danh từ \"implementation\"."
+        },
+        {
+          "text": "His ___ behaviour worried his parents.",
+          "answer": "C",
+          "number": 14,
+          "options": [
+            "A. rebel",
+            "B. rebellion",
+            "C. rebellious",
+            "D. rebelliously"
+          ],
+          "explanation": "Từ đứng trước danh từ \"behaviour\" phải là TÍNH TỪ; hậu tố \"-ious\" biến danh từ \"rebellion\" thành tính từ \"rebellious\" (nổi loạn)."
+        },
+        {
+          "text": "The ___ against the government spread quickly.",
+          "answer": "B",
+          "number": 15,
+          "options": [
+            "A. rebel",
+            "B. rebellion",
+            "C. rebellious",
+            "D. rebelliously"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"rebellion\" (cuộc nổi dậy) là danh từ đúng."
+        },
+        {
+          "text": "She responded to the criticism quite ___ .",
+          "answer": "D",
+          "number": 16,
+          "options": [
+            "A. defend",
+            "B. defense",
+            "C. defensive",
+            "D. defensively"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"responded\" phải là TRẠNG TỪ; hậu tố \"-ly\" biến tính từ \"defensive\" thành trạng từ \"defensively\"."
+        },
+        {
+          "text": "His tone was ___ when questioned about the mistake.",
+          "answer": "C",
+          "number": 17,
+          "options": [
+            "A. defend",
+            "B. defense",
+            "C. defensive",
+            "D. defensively"
+          ],
+          "explanation": "Sau động từ liên kết \"was\" cần TÍNH TỪ; hậu tố \"-ive\" biến danh từ \"defense\" thành tính từ \"defensive\" (phòng thủ)."
+        },
+        {
+          "text": "The ___ of the building took longer than expected.",
+          "answer": "B",
+          "number": 18,
+          "options": [
+            "A. construct",
+            "B. construction",
+            "C. constructive",
+            "D. constructively"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"construct\" thành danh từ \"construction\"."
+        },
+        {
+          "text": "Her feedback was very ___ and helped me improve.",
+          "answer": "C",
+          "number": 19,
+          "options": [
+            "A. construct",
+            "B. construction",
+            "C. constructive",
+            "D. constructively"
+          ],
+          "explanation": "Sau động từ liên kết \"was\" cần TÍNH TỪ; hậu tố \"-ive\" biến danh từ \"construction\" thành tính từ \"constructive\" (mang tính xây dựng)."
+        },
+        {
+          "text": "He criticized the plan quite ___ , offering solutions.",
+          "answer": "D",
+          "number": 20,
+          "options": [
+            "A. construct",
+            "B. construction",
+            "C. constructive",
+            "D. constructively"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"criticized\" phải là TRẠNG TỪ; hậu tố \"-ly\" biến tính từ \"constructive\" thành trạng từ \"constructively\"."
+        },
+        {
+          "text": "Their ___ of the new technology was slow at first.",
+          "answer": "B",
+          "number": 21,
+          "options": [
+            "A. adopt",
+            "B. adoption",
+            "C. adoptive",
+            "D. adoptively"
+          ],
+          "explanation": "Sau tính từ sở hữu \"their\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"adopt\" thành danh từ \"adoption\"."
+        },
+        {
+          "text": "The child was raised by his ___ parents.",
+          "answer": "C",
+          "number": 22,
+          "options": [
+            "A. adopt",
+            "B. adoption",
+            "C. adoptive",
+            "D. adoptively"
+          ],
+          "explanation": "Từ đứng trước danh từ \"parents\" phải là TÍNH TỪ; \"adoptive\" (nuôi dưỡng, không ruột thịt) mô tả loại cha mẹ."
+        },
+        {
+          "text": "This machine has several useful ___ .",
+          "answer": "D",
+          "number": 23,
+          "options": [
+            "A. function",
+            "B. functional",
+            "C. functionally",
+            "D. functionalities"
+          ],
+          "explanation": "Sau \"several useful\" cần DANH TỪ đếm được ở dạng số nhiều; hậu tố \"-ity\" tạo danh từ \"functionality\" (tính năng) → số nhiều \"functionalities\". (\"functions\" cũng đúng nhưng không có trong các lựa chọn.)"
+        },
+        {
+          "text": "The kitchen is small but very ___ .",
+          "answer": "B",
+          "number": 24,
+          "options": [
+            "A. function",
+            "B. functional",
+            "C. functionally",
+            "D. functionality"
+          ],
+          "explanation": "Sau động từ liên kết \"is\" cần TÍNH TỪ; hậu tố \"-al\" biến danh từ \"function\" thành tính từ \"functional\" (thực dụng, hoạt động tốt)."
+        },
+        {
+          "text": "The device works ___ despite its simple design.",
+          "answer": "C",
+          "number": 25,
+          "options": [
+            "A. function",
+            "B. functional",
+            "C. functionally",
+            "D. functionality"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"works\" phải là TRẠNG TỪ; hậu tố \"-ly\" biến tính từ \"functional\" thành trạng từ \"functionally\"."
+        },
+        {
+          "text": "Her ___ of the situation helped the team make a decision.",
+          "answer": "B",
+          "number": 26,
+          "options": [
+            "A. assess",
+            "B. assessment",
+            "C. assessed",
+            "D. assessing"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; hậu tố \"-ment\" biến động từ \"assess\" thành danh từ \"assessment\"."
+        },
+        {
+          "text": "The teacher gave a ___ evaluation of the students' work.",
+          "answer": "A",
+          "number": 27,
+          "options": [
+            "A. thorough",
+            "B. thoroughly",
+            "C. thoroughness",
+            "D. thoroughy"
+          ],
+          "explanation": "Từ đứng trước danh từ \"evaluation\" phải là TÍNH TỪ; \"thorough\" (kỹ lưỡng) là dạng gốc."
+        },
+        {
+          "text": "He reviewed the document ___ before submitting it.",
+          "answer": "B",
+          "number": 28,
+          "options": [
+            "A. thorough",
+            "B. thoroughly",
+            "C. thoroughness",
+            "D. thor"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"reviewed\" phải là TRẠNG TỪ; hậu tố \"-ly\" biến tính từ \"thorough\" thành trạng từ \"thoroughly\"."
+        },
+        {
+          "text": "Her ___ in completing the task impressed her boss.",
+          "answer": "C",
+          "number": 29,
+          "options": [
+            "A. thorough",
+            "B. thoroughly",
+            "C. thoroughness",
+            "D. thoroughy"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; hậu tố \"-ness\" biến tính từ \"thorough\" thành danh từ \"thoroughness\" (sự kỹ lưỡng)."
+        },
+        {
+          "text": "The politician's speech was full of ___ .",
+          "answer": "B",
+          "number": 30,
+          "options": [
+            "A. exaggerate",
+            "B. exaggeration",
+            "C. exaggerated",
+            "D. exaggeratedly"
+          ],
+          "explanation": "Sau \"full of\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"exaggerate\" thành danh từ \"exaggeration\" (sự phóng đại)."
+        },
+        {
+          "text": "His account of the event seemed ___ .",
+          "answer": "C",
+          "number": 31,
+          "options": [
+            "A. exaggerate",
+            "B. exaggeration",
+            "C. exaggerated",
+            "D. exaggeratedly"
+          ],
+          "explanation": "Sau động từ liên kết \"seemed\" cần TÍNH TỪ; hậu tố \"-ed\" biến động từ \"exaggerate\" thành tính từ \"exaggerated\" (bị phóng đại)."
+        },
+        {
+          "text": "She described the accident quite ___ .",
+          "answer": "D",
+          "number": 32,
+          "options": [
+            "A. exaggerate",
+            "B. exaggeration",
+            "C. exaggerated",
+            "D. exaggeratedly"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"described\" phải là TRẠNG TỪ; hậu tố \"-ly\" biến tính từ \"exaggerated\" thành trạng từ \"exaggeratedly\"."
+        },
+        {
+          "text": "The scientist's ___ led to a breakthrough.",
+          "answer": "B",
+          "number": 33,
+          "options": [
+            "A. persist",
+            "B. persistence",
+            "C. persistent",
+            "D. persistently"
+          ],
+          "explanation": "Sau tính từ sở hữu \"scientist's\" cần DANH TỪ; hậu tố \"-ence\" biến tính từ \"persistent\" thành danh từ \"persistence\" (sự kiên trì)."
+        },
+        {
+          "text": "She remained ___ despite many setbacks.",
+          "answer": "C",
+          "number": 34,
+          "options": [
+            "A. persist",
+            "B. persistence",
+            "C. persistent",
+            "D. persistently"
+          ],
+          "explanation": "Sau động từ liên kết \"remained\" cần TÍNH TỪ; \"persistent\" (kiên trì) là tính từ đúng."
+        },
+        {
+          "text": "He ___ pursued his dream despite the obstacles.",
+          "answer": "D",
+          "number": 35,
+          "options": [
+            "A. persist",
+            "B. persistence",
+            "C. persistent",
+            "D. persistently"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"pursued\" phải là TRẠNG TỪ; hậu tố \"-ly\" biến tính từ \"persistent\" thành trạng từ \"persistently\"."
+        },
+        {
+          "text": "The company's ___ helped it survive the recession.",
+          "answer": "D",
+          "number": 36,
+          "options": [
+            "A. adapt",
+            "B. adaptation",
+            "C. adaptable",
+            "D. adaptability"
+          ],
+          "explanation": "Sau tính từ sở hữu \"company's\" cần DANH TỪ trừu tượng; hậu tố \"-ity\" biến tính từ \"adaptable\" thành danh từ \"adaptability\" (khả năng thích ứng)."
+        },
+        {
+          "text": "This software is highly ___ to different needs.",
+          "answer": "C",
+          "number": 37,
+          "options": [
+            "A. adapt",
+            "B. adaptation",
+            "C. adaptable",
+            "D. adaptability"
+          ],
+          "explanation": "Sau trạng từ \"highly\" cần TÍNH TỪ; hậu tố \"-able\" biến động từ \"adapt\" thành tính từ \"adaptable\" (có thể thích ứng)."
+        },
+        {
+          "text": "The film is a modern ___ of a classic novel.",
+          "answer": "B",
+          "number": 38,
+          "options": [
+            "A. adapt",
+            "B. adaptation",
+            "C. adaptable",
+            "D. adaptability"
+          ],
+          "explanation": "Sau mạo từ \"a\" và tính từ \"modern\" cần DANH TỪ; hậu tố \"-tion\" biến động từ \"adapt\" thành danh từ \"adaptation\" (bản chuyển thể)."
+        },
+        {
+          "text": "The results of the survey were quite ___ .",
+          "answer": "C",
+          "number": 39,
+          "options": [
+            "A. reveal",
+            "B. revelation",
+            "C. revealing",
+            "D. revealingly"
+          ],
+          "explanation": "Sau động từ liên kết \"were\" cần TÍNH TỪ; hậu tố \"-ing\" biến động từ \"reveal\" thành tính từ \"revealing\" (tiết lộ nhiều điều)."
+        },
+        {
+          "text": "Her ___ about the company's finances shocked everyone.",
+          "answer": "B",
+          "number": 40,
+          "options": [
+            "A. reveal",
+            "B. revelation",
+            "C. revealing",
+            "D. revealingly"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; hậu tố \"-tion\" (dạng bất quy tắc) tạo danh từ \"revelation\" (sự tiết lộ)."
+        },
+        {
+          "text": "The teacher's method was surprisingly ___ .",
+          "answer": "B",
+          "number": 41,
+          "options": [
+            "A. effect",
+            "B. effective",
+            "C. effectively",
+            "D. effectiveness"
+          ],
+          "explanation": "Sau động từ liên kết \"was\" và trạng từ \"surprisingly\" cần TÍNH TỪ; hậu tố \"-ive\" tạo tính từ \"effective\" (hiệu quả)."
+        },
+        {
+          "text": "Her ___ helped resolve the conflict quickly.",
+          "answer": "B",
+          "number": 42,
+          "options": [
+            "A. mediate",
+            "B. mediation",
+            "C. mediator",
+            "D. mediating"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ chỉ hành động; hậu tố \"-tion\" tạo danh từ \"mediation\" (sự hòa giải)."
+        },
+        {
+          "text": "He works as a ___ between the two companies.",
+          "answer": "C",
+          "number": 43,
+          "options": [
+            "A. mediate",
+            "B. mediation",
+            "C. mediator",
+            "D. mediating"
+          ],
+          "explanation": "Cần DANH TỪ chỉ NGƯỜI sau \"a\"; hậu tố \"-or\" tạo danh từ \"mediator\" (người hòa giải)."
+        },
+        {
+          "text": "The new regulations are ___ enforced across the country.",
+          "answer": "B",
+          "number": 44,
+          "options": [
+            "A. strict",
+            "B. strictly",
+            "C. strictness",
+            "D. stricten"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ dạng bị động \"enforced\" phải là TRẠNG TỪ; hậu tố \"-ly\" tạo trạng từ \"strictly\" (một cách nghiêm ngặt)."
+        },
+        {
+          "text": "The teacher is known for her ___ .",
+          "answer": "C",
+          "number": 45,
+          "options": [
+            "A. strict",
+            "B. strictly",
+            "C. strictness",
+            "D. stricten"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; hậu tố \"-ness\" biến tính từ \"strict\" thành danh từ \"strictness\" (tính nghiêm khắc)."
+        },
+        {
+          "text": "His ___ of the rules left no room for exceptions.",
+          "answer": "B",
+          "number": 46,
+          "options": [
+            "A. strict",
+            "B. interpretation",
+            "C. strictness",
+            "D. stricten"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ chỉ hành động; \"interpretation\" (cách diễn giải) phù hợp với ngữ cảnh về quy tắc."
+        },
+        {
+          "text": "Her explanation of the process was ___ .",
+          "answer": "A",
+          "number": 47,
+          "options": [
+            "A. clear",
+            "B. clearly",
+            "C. clarity",
+            "D. clarify"
+          ],
+          "explanation": "Sau động từ liên kết \"was\" cần TÍNH TỪ; \"clear\" (rõ ràng) là dạng gốc phù hợp nhất."
+        },
+        {
+          "text": "The professor spoke with great ___ about the topic.",
+          "answer": "C",
+          "number": 48,
+          "options": [
+            "A. clear",
+            "B. clearly",
+            "C. clarity",
+            "D. clarify"
+          ],
+          "explanation": "Sau \"with great\" cần DANH TỪ; hậu tố \"-ity\" biến tính từ \"clear\" thành danh từ \"clarity\" (sự rõ ràng)."
+        },
+        {
+          "text": "Could you please ___ what you meant by that comment?",
+          "answer": "D",
+          "number": 49,
+          "options": [
+            "A. clear",
+            "B. clearly",
+            "C. clarity",
+            "D. clarify"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"please\"; \"clarify\" (làm rõ) là động từ của họ từ \"clear\"."
+        },
+        {
+          "text": "The new employee showed great ___ during training.",
+          "answer": "B",
+          "number": 50,
+          "options": [
+            "A. adapt",
+            "B. adaptability",
+            "C. adaptation",
+            "D. adaptable"
+          ],
+          "explanation": "Sau \"great\" cần DANH TỪ trừu tượng; hậu tố \"-ity\" tạo danh từ \"adaptability\" (khả năng thích nghi)."
+        }
+      ],
+      "instruction": "Chọn đáp án đúng cho mỗi câu."
+    },
+    {
+      "id": "9c0da8aa-cce3-4287-8e9e-f2359484858e",
+      "type": "explanation",
+      "content": "",
+      "heading": "5. Bài tập tổng hợp (100 câu trộn từ tất cả các mục Word Forms)"
+    },
+    {
+      "id": "092c968c-49cf-45f1-99d0-2c24cf084e30",
+      "type": "exercise",
+      "heading": "5. Bài tập tổng hợp (100 câu trộn từ tất cả các mục Word Forms)",
+      "questions": [
+        {
+          "text": "Her ___ to detail is what makes her an excellent editor.",
+          "answer": "C",
+          "number": 1,
+          "options": [
+            "A. meticulous",
+            "B. meticulously",
+            "C. meticulousness",
+            "D. meticulate"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"meticulousness\" (tính tỉ mỉ) là danh từ của \"meticulous\"."
+        },
+        {
+          "text": "The teenager continued to ___ his parents' wishes.",
+          "answer": "D",
+          "number": 2,
+          "options": [
+            "A. defiant",
+            "B. defiance",
+            "C. defiantly",
+            "D. defy"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"to\"; \"defy\" (bất chấp, chống đối) là dạng nguyên mẫu."
+        },
+        {
+          "text": "The team had to ___ the entire budget after costs rose.",
+          "answer": "B",
+          "number": 3,
+          "options": [
+            "A. view",
+            "B. review",
+            "C. preview",
+            "D. overview"
+          ],
+          "explanation": "Tiền tố \"re-\" (xem lại); \"review\" (xem xét lại) phù hợp với ngữ cảnh chi phí tăng cần rà soát lại."
+        },
+        {
+          "text": "The instructions were so ___ that even experts got confused.",
+          "answer": "A",
+          "number": 4,
+          "options": [
+            "A. complex",
+            "B. complexity",
+            "C. complexly",
+            "D. complicate"
+          ],
+          "explanation": "Sau động từ liên kết \"were\" cần TÍNH TỪ; \"complex\" (phức tạp) mô tả \"the instructions\"."
+        },
+        {
+          "text": "The region has become increasingly ___ in recent years.",
+          "answer": "C",
+          "number": 5,
+          "options": [
+            "A. prosper",
+            "B. prosperity",
+            "C. prosperous",
+            "D. prosperously"
+          ],
+          "explanation": "Sau động từ liên kết \"has become\" và trạng từ \"increasingly\" cần TÍNH TỪ; \"prosperous\" (thịnh vượng)."
+        },
+        {
+          "text": "The novel's ___ kept readers engaged until the last page.",
+          "answer": "A",
+          "number": 6,
+          "options": [
+            "A. suspense",
+            "B. suspenseful",
+            "C. suspensefully",
+            "D. suspend"
+          ],
+          "explanation": "Sau tính từ sở hữu \"novel's\" cần DANH TỪ; \"suspense\" (sự hồi hộp) là danh từ."
+        },
+        {
+          "text": "Wide (adj) : Widen (v) :: Short (adj) : ___ (v)",
+          "answer": "A",
+          "number": 7,
+          "options": [
+            "A. shorten",
+            "B. shortly",
+            "C. shortage",
+            "D. shortness"
+          ],
+          "explanation": "Hậu tố \"-en\" biến tính từ thành động từ mang nghĩa \"làm cho...\": \"wide→widen\", tương tự \"short→shorten\"."
+        },
+        {
+          "text": "She is a highly ___ surgeon with years of experience.",
+          "answer": "D",
+          "number": 8,
+          "options": [
+            "A. skill",
+            "B. skillful",
+            "C. skillfully",
+            "D. skilled"
+          ],
+          "explanation": "Từ đứng trước danh từ \"surgeon\" phải là TÍNH TỪ; \"skilled\" (lành nghề) mô tả trình độ."
+        },
+        {
+          "text": "He tried to ___ the new student on the first day.",
+          "answer": "D",
+          "number": 9,
+          "options": [
+            "A. friend",
+            "B. friendly",
+            "C. friendliness",
+            "D. befriend"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"to\"; \"befriend\" (kết bạn với) là động từ được tạo bằng tiền tố \"be-\"."
+        },
+        {
+          "text": "Farmer (n) : Farm (n) :: Teacher (n) : ___ (v)",
+          "answer": "A",
+          "number": 10,
+          "options": [
+            "A. teach",
+            "B. teaches",
+            "C. teaching",
+            "D. taught"
+          ],
+          "explanation": "Đây là quan hệ giữa danh từ chỉ người làm nghề và động từ gốc: \"farmer\" từ \"farm\" (v), tương tự \"teacher\" từ \"teach\" (v, dạng nguyên mẫu)."
+        },
+        {
+          "text": "She felt completely ___ by the amount of homework.",
+          "answer": "C",
+          "number": 11,
+          "options": [
+            "A. overwhelm",
+            "B. overwhelming",
+            "C. overwhelmed",
+            "D. overwhelmingly"
+          ],
+          "explanation": "Sau động từ \"felt\" cần TÍNH TỪ mang nghĩa bị động \"cảm thấy bị choáng ngợp\"; \"overwhelmed\"."
+        },
+        {
+          "text": "He ___ explained why he had missed the deadline.",
+          "answer": "C",
+          "number": 12,
+          "options": [
+            "A. apology",
+            "B. apologetic",
+            "C. apologetically",
+            "D. apologize"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"explained\" phải là TRẠNG TỪ; \"apologetically\" (một cách hối lỗi)."
+        },
+        {
+          "text": "Act (v) : Actor (n) :: Direct (v) : ___ (n)",
+          "answer": "A",
+          "number": 13,
+          "options": [
+            "A. director",
+            "B. directing",
+            "C. direction",
+            "D. directly"
+          ],
+          "explanation": "Hậu tố \"-or\" biến động từ thành danh từ chỉ người: \"act→actor\", tương tự \"direct→director\"."
+        },
+        {
+          "text": "The committee's ___ was questioned after the scandal.",
+          "answer": "A",
+          "number": 14,
+          "options": [
+            "A. integrity",
+            "B. integral",
+            "C. integrate",
+            "D. integrally"
+          ],
+          "explanation": "Sau tính từ sở hữu \"committee's\" cần DANH TỪ; \"integrity\" (sự liêm chính)."
+        },
+        {
+          "text": "The politician's speech was full of empty ___ .",
+          "answer": "A",
+          "number": 15,
+          "options": [
+            "A. promise",
+            "B. promising",
+            "C. promised",
+            "D. promisingly"
+          ],
+          "explanation": "Sau tính từ \"empty\" cần DANH TỪ số nhiều; \"promises\" (lời hứa) là danh từ của \"promise\" (ở đây dùng dạng số ít làm gốc để nhận diện từ loại)."
+        },
+        {
+          "text": "His ___ for the mistake calmed everyone down.",
+          "answer": "A",
+          "number": 16,
+          "options": [
+            "A. apology",
+            "B. apologetic",
+            "C. apologetically",
+            "D. apologize"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"apology\" (lời xin lỗi)."
+        },
+        {
+          "text": "His ___ towards other cultures made him popular abroad.",
+          "answer": "C",
+          "number": 17,
+          "options": [
+            "A. tolerate",
+            "B. tolerant",
+            "C. tolerance",
+            "D. tolerantly"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"tolerance\" (sự khoan dung) là danh từ của \"tolerant\"."
+        },
+        {
+          "text": "He was ___ to attend the meeting due to illness.",
+          "answer": "B",
+          "number": 18,
+          "options": [
+            "A. able",
+            "B. unable",
+            "C. ability",
+            "D. enable"
+          ],
+          "explanation": "Tiền tố \"un-\" tạo nghĩa phủ định; ngữ cảnh \"do bị ốm\" cần \"unable\" (không thể)."
+        },
+        {
+          "text": "He performed the task ___ despite the tight deadline.",
+          "answer": "C",
+          "number": 19,
+          "options": [
+            "A. capable",
+            "B. capability",
+            "C. capably",
+            "D. incapable"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"performed\" phải là TRẠNG TỪ; \"capably\" (một cách tài năng)."
+        },
+        {
+          "text": "He ___ to finish the project by Friday.",
+          "answer": "C",
+          "number": 20,
+          "options": [
+            "A. promise",
+            "B. promising",
+            "C. promised",
+            "D. promisingly"
+          ],
+          "explanation": "Cần ĐỘNG TỪ chia ở quá khứ; \"promised\" (đã hứa) là dạng quá khứ của \"promise\"."
+        },
+        {
+          "text": "The ___ of the machine makes it hard to repair.",
+          "answer": "B",
+          "number": 21,
+          "options": [
+            "A. complex",
+            "B. complexity",
+            "C. complexly",
+            "D. complicate"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; hậu tố \"-ity\" biến tính từ \"complex\" thành danh từ \"complexity\" (tính phức tạp)."
+        },
+        {
+          "text": "She had to ___ the essay after the teacher rejected it.",
+          "answer": "B",
+          "number": 22,
+          "options": [
+            "A. write",
+            "B. rewrite",
+            "C. written",
+            "D. writer"
+          ],
+          "explanation": "Tiền tố \"re-\" (làm lại); \"rewrite\" là động từ nguyên mẫu đúng sau \"to\"."
+        },
+        {
+          "text": "The professor is an ___ in ancient history.",
+          "answer": "A",
+          "number": 23,
+          "options": [
+            "A. expert",
+            "B. expertise",
+            "C. expertly",
+            "D. expertness"
+          ],
+          "explanation": "Cần DANH TỪ chỉ NGƯỜI sau mạo từ \"an\"; \"expert\" (chuyên gia) chỉ người."
+        },
+        {
+          "text": "The jury voted ___ to acquit the defendant.",
+          "answer": "B",
+          "number": 24,
+          "options": [
+            "A. unanimous",
+            "B. unanimously",
+            "C. unanimity",
+            "D. unanimousness"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"voted\" phải là TRẠNG TỪ; \"unanimously\" (một cách nhất trí)."
+        },
+        {
+          "text": "The new software will ___ with existing systems.",
+          "answer": "C",
+          "number": 25,
+          "options": [
+            "A. integrity",
+            "B. integral",
+            "C. integrate",
+            "D. integrally"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"will\"; \"integrate\" (tích hợp) là dạng động từ."
+        },
+        {
+          "text": "Simple (adj) : Simplify (v) :: Clear (adj) : ___ (v)",
+          "answer": "A",
+          "number": 26,
+          "options": [
+            "A. clarify",
+            "B. clearify",
+            "C. clearing",
+            "D. clearance"
+          ],
+          "explanation": "Hậu tố \"-ify\" biến tính từ thành động từ: \"simple→simplify\", tương tự \"clear→clarify\" (dạng bất quy tắc)."
+        },
+        {
+          "text": "The negotiations were ___ handled by both parties.",
+          "answer": "C",
+          "number": 27,
+          "options": [
+            "A. skill",
+            "B. skillful",
+            "C. skillfully",
+            "D. skilled"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ dạng bị động \"handled\" phải là TRẠNG TỪ; \"skillfully\" (một cách khéo léo)."
+        },
+        {
+          "text": "The witness's story was ___ by new evidence.",
+          "answer": "C",
+          "number": 28,
+          "options": [
+            "A. prove",
+            "B. disprove",
+            "C. disproved",
+            "D. proving"
+          ],
+          "explanation": "Cần quá khứ phân từ sau động từ bị động \"was\"; tiền tố \"dis-\" tạo nghĩa phủ định: \"disproved\" (bị bác bỏ)."
+        },
+        {
+          "text": "Silent (adj) : Silence (n) :: Patient (adj) : ___ (n)",
+          "answer": "A",
+          "number": 29,
+          "options": [
+            "A. patience",
+            "B. patiently",
+            "C. impatient",
+            "D. patienthood"
+          ],
+          "explanation": "Hậu tố \"-ence\" biến tính từ thành danh từ trừu tượng: \"silent→silence\", tương tự \"patient→patience\"."
+        },
+        {
+          "text": "He was found guilty of ___ the company's funds for personal use.",
+          "answer": "B",
+          "number": 30,
+          "options": [
+            "A. use",
+            "B. misuse",
+            "C. using",
+            "D. usage"
+          ],
+          "explanation": "Tiền tố \"mis-\" mang nghĩa \"sai trái\"; \"misuse\" (lạm dụng, sử dụng sai mục đích) phù hợp với ngữ cảnh phạm tội."
+        },
+        {
+          "text": "Happy (adj) : Happiness (n) :: Sad (adj) : ___ (n)",
+          "answer": "B",
+          "number": 31,
+          "options": [
+            "A. sadly",
+            "B. sadness",
+            "C. saddening",
+            "D. saden"
+          ],
+          "explanation": "Hậu tố \"-ness\" biến tính từ thành danh từ trừu tượng: \"happy→happiness\", tương tự \"sad→sadness\"."
+        },
+        {
+          "text": "The ___ of the old factory took several months.",
+          "answer": "B",
+          "number": 32,
+          "options": [
+            "A. demolish",
+            "B. demolition",
+            "C. demolisher",
+            "D. demolished"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"demolition\" (việc phá dỡ) là danh từ của \"demolish\"."
+        },
+        {
+          "text": "She handled the negotiation ___ , securing a great deal.",
+          "answer": "C",
+          "number": 33,
+          "options": [
+            "A. expert",
+            "B. expertise",
+            "C. expertly",
+            "D. expertness"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"handled\" phải là TRẠNG TỪ; \"expertly\" (một cách thành thạo)."
+        },
+        {
+          "text": "Workers will ___ the building next week.",
+          "answer": "A",
+          "number": 34,
+          "options": [
+            "A. demolish",
+            "B. demolition",
+            "C. demolisher",
+            "D. demolished"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"will\"; \"demolish\" (phá dỡ) là dạng nguyên mẫu."
+        },
+        {
+          "text": "Anger (n) : Angry (adj) :: Envy (n) : ___ (adj)",
+          "answer": "A",
+          "number": 35,
+          "options": [
+            "A. envious",
+            "B. enviously",
+            "C. enviable",
+            "D. envying"
+          ],
+          "explanation": "Hậu tố \"-y/-ious\" biến danh từ thành tính từ: \"anger→angry\", tương tự \"envy→envious\"."
+        },
+        {
+          "text": "The lecture was ___ , covering far too much material.",
+          "answer": "B",
+          "number": 36,
+          "options": [
+            "A. overwhelm",
+            "B. overwhelming",
+            "C. overwhelmed",
+            "D. overwhelmingly"
+          ],
+          "explanation": "Sau động từ liên kết \"was\" cần TÍNH TỪ mang nghĩa chủ động \"gây choáng ngợp\"; \"overwhelming\" (quá tải, choáng ngợp)."
+        },
+        {
+          "text": "His ___ towards authority often got him into trouble.",
+          "answer": "B",
+          "number": 37,
+          "options": [
+            "A. defiant",
+            "B. defiance",
+            "C. defiantly",
+            "D. defy"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"defiance\" (sự thách thức) là danh từ của \"defiant\"."
+        },
+        {
+          "text": "The city's ___ has attracted many new businesses.",
+          "answer": "B",
+          "number": 38,
+          "options": [
+            "A. prosper",
+            "B. prosperity",
+            "C. prosperous",
+            "D. prosperously"
+          ],
+          "explanation": "Sau tính từ sở hữu \"city's\" cần DANH TỪ; \"prosperity\" (sự thịnh vượng)."
+        },
+        {
+          "text": "Experts were asked to ___ the damage after the storm.",
+          "answer": "A",
+          "number": 39,
+          "options": [
+            "A. assess",
+            "B. assessment",
+            "C. assessing",
+            "D. assessed"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"to\"; \"assess\" (đánh giá) là dạng nguyên mẫu."
+        },
+        {
+          "text": "Her account of the accident was ___ with what witnesses saw.",
+          "answer": "B",
+          "number": 40,
+          "options": [
+            "A. consistent",
+            "B. inconsistent",
+            "C. consistency",
+            "D. consistently"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; ngữ cảnh khác biệt lời kể với nhân chứng cần \"inconsistent\" (không nhất quán)."
+        },
+        {
+          "text": "National (adj) : Nationality (n) :: Personal (adj) : ___ (n)",
+          "answer": "A",
+          "number": 41,
+          "options": [
+            "A. personality",
+            "B. personally",
+            "C. personalize",
+            "D. impersonal"
+          ],
+          "explanation": "Hậu tố \"-ity\" biến tính từ thành danh từ trừu tượng: \"national→nationality\", tương tự \"personal→personality\"."
+        },
+        {
+          "text": "The board reached a ___ conclusion after hours of debate.",
+          "answer": "A",
+          "number": 42,
+          "options": [
+            "A. unanimous",
+            "B. unanimously",
+            "C. unanimity",
+            "D. unanimousness"
+          ],
+          "explanation": "Từ đứng trước danh từ \"conclusion\" phải là TÍNH TỪ; \"unanimous\" (nhất trí) bổ nghĩa cho danh từ."
+        },
+        {
+          "text": "She finally ___ her degree after five years of study.",
+          "answer": "D",
+          "number": 43,
+          "options": [
+            "A. complete",
+            "B. completely",
+            "C. completion",
+            "D. completed"
+          ],
+          "explanation": "Cần ĐỘNG TỪ chia ở quá khứ làm vị ngữ chính; \"completed\" (đã hoàn thành)."
+        },
+        {
+          "text": "The children behaved ___ during the long flight.",
+          "answer": "B",
+          "number": 44,
+          "options": [
+            "A. patient",
+            "B. patiently",
+            "C. patience",
+            "D. impatient"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"behaved\" phải là TRẠNG TỪ; \"patiently\" (một cách kiên nhẫn)."
+        },
+        {
+          "text": "Her ___ towards newcomers made the office feel warm.",
+          "answer": "C",
+          "number": 45,
+          "options": [
+            "A. friend",
+            "B. friendly",
+            "C. friendliness",
+            "D. befriend"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"friendliness\" (sự thân thiện) là danh từ của \"friendly\"."
+        },
+        {
+          "text": "Her ___ in handling difficult clients is impressive.",
+          "answer": "B",
+          "number": 46,
+          "options": [
+            "A. capable",
+            "B. capability",
+            "C. capably",
+            "D. incapable"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"capability\" (năng lực) là danh từ của \"capable\"."
+        },
+        {
+          "text": "The rumor turned out to be completely ___ .",
+          "answer": "B",
+          "number": 47,
+          "options": [
+            "A. found",
+            "B. unfounded",
+            "C. founding",
+            "D. founder"
+          ],
+          "explanation": "Tiền tố \"un-\" tạo nghĩa phủ định; \"unfounded\" (không có căn cứ) mô tả tin đồn sai sự thật."
+        },
+        {
+          "text": "Please (v) : Pleasant (adj) :: Please (v) : ___ (n)",
+          "answer": "A",
+          "number": 48,
+          "options": [
+            "A. pleasure",
+            "B. pleasingly",
+            "C. pleased",
+            "D. pleasing"
+          ],
+          "explanation": "Cùng gốc \"please\" có thể tạo cả tính từ \"pleasant\" và danh từ \"pleasure\" (niềm vui/sự hài lòng)."
+        },
+        {
+          "text": "The ___ building was finally torn down last year.",
+          "answer": "D",
+          "number": 49,
+          "options": [
+            "A. demolish",
+            "B. demolition",
+            "C. demolisher",
+            "D. demolished"
+          ],
+          "explanation": "Từ đứng trước danh từ \"building\" phải là TÍNH TỪ/quá khứ phân từ; \"demolished\" (đã bị phá dỡ, dùng như tính từ mô tả)."
+        },
+        {
+          "text": "Decide (v) : Decision (n) :: Conclude (v) : ___ (n)",
+          "answer": "A",
+          "number": 50,
+          "options": [
+            "A. conclusion",
+            "B. concluding",
+            "C. conclusive",
+            "D. conclusively"
+          ],
+          "explanation": "Hậu tố \"-sion/-tion\" biến động từ thành danh từ: \"decide→decision\", tương tự \"conclude→conclusion\"."
+        },
+        {
+          "text": "Her ___ to the cause was unwavering.",
+          "answer": "C",
+          "number": 51,
+          "options": [
+            "A. devote",
+            "B. devoted",
+            "C. devotion",
+            "D. devotedly"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"devotion\" (sự tận tâm) là danh từ của \"devote\"."
+        },
+        {
+          "text": "The professor is known for being very ___ .",
+          "answer": "A",
+          "number": 52,
+          "options": [
+            "A. eloquent",
+            "B. eloquence",
+            "C. eloquently",
+            "D. eloquentness"
+          ],
+          "explanation": "Sau động từ liên kết \"being\" cần TÍNH TỪ; \"eloquent\" (hùng biện, ăn nói lưu loát)."
+        },
+        {
+          "text": "His ___ made him a favorite among his colleagues.",
+          "answer": "B",
+          "number": 53,
+          "options": [
+            "A. generous",
+            "B. generosity",
+            "C. generously",
+            "D. generate"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"generosity\" (lòng hào phóng) là danh từ của \"generous\"."
+        },
+        {
+          "text": "His ___ towards his opponents surprised the media.",
+          "answer": "B",
+          "number": 54,
+          "options": [
+            "A. generous",
+            "B. generosity",
+            "C. generously",
+            "D. ungenerous"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"generosity\" (lòng hào phóng)."
+        },
+        {
+          "text": "She donated ___ to the local charity every year.",
+          "answer": "C",
+          "number": 55,
+          "options": [
+            "A. generous",
+            "B. generosity",
+            "C. generously",
+            "D. generate"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"donated\" phải là TRẠNG TỪ; \"generously\" (một cách hào phóng)."
+        },
+        {
+          "text": "The police were sent to ___ the new traffic laws.",
+          "answer": "A",
+          "number": 56,
+          "options": [
+            "A. enforce",
+            "B. enforcement",
+            "C. enforcer",
+            "D. enforced"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"to\"; \"enforce\" (thực thi) là dạng nguyên mẫu."
+        },
+        {
+          "text": "The ___ of the bridge is expected to finish next spring.",
+          "answer": "C",
+          "number": 57,
+          "options": [
+            "A. complete",
+            "B. completely",
+            "C. completion",
+            "D. completed"
+          ],
+          "explanation": "Sau mạo từ \"the\" cần DANH TỪ; \"completion\" (sự hoàn thành) là danh từ của \"complete\"."
+        },
+        {
+          "text": "Her tone was ___ when she addressed the complaints.",
+          "answer": "B",
+          "number": 58,
+          "options": [
+            "A. apology",
+            "B. apologetic",
+            "C. apologetically",
+            "D. apologize"
+          ],
+          "explanation": "Sau động từ liên kết \"was\" cần TÍNH TỪ; \"apologetic\" (hối lỗi, có vẻ xin lỗi)."
+        },
+        {
+          "text": "She spoke ___ , not realizing how much she had upset him.",
+          "answer": "B",
+          "number": 59,
+          "options": [
+            "A. tactless",
+            "B. tactlessly",
+            "C. tact",
+            "D. tactfulness"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"spoke\" phải là TRẠNG TỪ; \"tactlessly\" (một cách thiếu tế nhị)."
+        },
+        {
+          "text": "His ___ of the rules was strict and unwavering.",
+          "answer": "B",
+          "number": 60,
+          "options": [
+            "A. enforce",
+            "B. enforcement",
+            "C. enforcer",
+            "D. enforced"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"enforcement\" (việc thực thi) là danh từ của \"enforce\"."
+        },
+        {
+          "text": "The young athlete showed ___ potential during the trials.",
+          "answer": "B",
+          "number": 61,
+          "options": [
+            "A. promise",
+            "B. promising",
+            "C. promised",
+            "D. promisingly"
+          ],
+          "explanation": "Từ đứng trước danh từ \"potential\" phải là TÍNH TỪ; \"promising\" (đầy triển vọng)."
+        },
+        {
+          "text": "His ___ manner made everyone feel welcome.",
+          "answer": "B",
+          "number": 62,
+          "options": [
+            "A. friend",
+            "B. friendly",
+            "C. friendliness",
+            "D. befriend"
+          ],
+          "explanation": "Từ đứng trước danh từ \"manner\" phải là TÍNH TỪ; \"friendly\" (thân thiện)."
+        },
+        {
+          "text": "He spoke ___ about the importance of education.",
+          "answer": "C",
+          "number": 63,
+          "options": [
+            "A. eloquent",
+            "B. eloquence",
+            "C. eloquently",
+            "D. eloquentness"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"spoke\" phải là TRẠNG TỪ; \"eloquently\" (một cách hùng hồn)."
+        },
+        {
+          "text": "The company's ___ to sustainability has won public praise.",
+          "answer": "B",
+          "number": 64,
+          "options": [
+            "A. commit",
+            "B. commitment",
+            "C. committed",
+            "D. committedly"
+          ],
+          "explanation": "Sau tính từ sở hữu \"company's\" cần DANH TỪ; \"commitment\" (sự cam kết) là danh từ của \"commit\"."
+        },
+        {
+          "text": "Her ___ in the debate impressed the judges.",
+          "answer": "B",
+          "number": 65,
+          "options": [
+            "A. eloquent",
+            "B. eloquence",
+            "C. eloquently",
+            "D. eloquentness"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"eloquence\" (tài hùng biện)."
+        },
+        {
+          "text": "Nature (n) : Natural (adj) :: Culture (n) : ___ (adj)",
+          "answer": "A",
+          "number": 66,
+          "options": [
+            "A. cultural",
+            "B. culturally",
+            "C. cultivate",
+            "D. culturize"
+          ],
+          "explanation": "Hậu tố \"-al\" biến danh từ thành tính từ: \"nature→natural\", tương tự \"culture→cultural\"."
+        },
+        {
+          "text": "Her ___ during the crisis reassured the whole team.",
+          "answer": "C",
+          "number": 67,
+          "options": [
+            "A. calm",
+            "B. calmly",
+            "C. calmness",
+            "D. calming"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"calmness\" (sự bình tĩnh) là danh từ của \"calm\"."
+        },
+        {
+          "text": "Bureaucracy tends to ___ even simple procedures.",
+          "answer": "D",
+          "number": 68,
+          "options": [
+            "A. complex",
+            "B. complexity",
+            "C. complexly",
+            "D. complicate"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"to\"; \"complicate\" (làm phức tạp thêm) là dạng động từ."
+        },
+        {
+          "text": "The business ___ despite the economic downturn.",
+          "answer": "B",
+          "number": 69,
+          "options": [
+            "A. prosper",
+            "B. prospered",
+            "C. prosperity",
+            "D. prosperous"
+          ],
+          "explanation": "Cần ĐỘNG TỪ chia ở quá khứ làm vị ngữ chính; \"prospered\" (phát đạt) là dạng quá khứ của \"prosper\"."
+        },
+        {
+          "text": "She is remarkably ___ of other people's opinions.",
+          "answer": "B",
+          "number": 70,
+          "options": [
+            "A. tolerate",
+            "B. tolerant",
+            "C. tolerance",
+            "D. tolerantly"
+          ],
+          "explanation": "Sau trạng từ \"remarkably\" cần TÍNH TỪ; \"tolerant\" (khoan dung) mô tả \"she\"."
+        },
+        {
+          "text": "His plan was ___ ; nobody thought it would work.",
+          "answer": "B",
+          "number": 71,
+          "options": [
+            "A. feasible",
+            "B. infeasible",
+            "C. feasibly",
+            "D. feasibility"
+          ],
+          "explanation": "Tiền tố \"in-\" tạo nghĩa phủ định; ngữ cảnh \"không ai nghĩ nó sẽ thành công\" cần \"infeasible\" (không khả thi)."
+        },
+        {
+          "text": "He handled the delicate situation with great ___ .",
+          "answer": "C",
+          "number": 72,
+          "options": [
+            "A. tactless",
+            "B. tactlessly",
+            "C. tact",
+            "D. tactfulness"
+          ],
+          "explanation": "Sau \"with great\" cần DANH TỪ; \"tact\" (sự khéo léo, tế nhị) là danh từ gốc."
+        },
+        {
+          "text": "The professor's lecture was both ___ and entertaining.",
+          "answer": "B",
+          "number": 73,
+          "options": [
+            "A. inform",
+            "B. informative",
+            "C. informatively",
+            "D. information"
+          ],
+          "explanation": "Sau \"both\" và trước \"and entertaining\" (tính từ) cần TÍNH TỪ song song; \"informative\" (mang tính cung cấp thông tin)."
+        },
+        {
+          "text": "Wide (adj) : Width (n) :: Long (adj) : ___ (n)",
+          "answer": "A",
+          "number": 74,
+          "options": [
+            "A. length",
+            "B. longness",
+            "C. longitude",
+            "D. longly"
+          ],
+          "explanation": "Đây là các danh từ bất quy tắc chỉ kích thước: \"wide→width\", tương tự \"long→length\" (không theo quy tắc hậu tố thông thường)."
+        },
+        {
+          "text": "The two companies decided to ___ their operations.",
+          "answer": "C",
+          "number": 75,
+          "options": [
+            "A. unite",
+            "B. reunite",
+            "C. unify",
+            "D. disunite"
+          ],
+          "explanation": "Ngữ cảnh \"hai công ty quyết định kết hợp hoạt động\" cần \"unify\" (hợp nhất), phù hợp nhất về nghĩa cho việc sáp nhập tổ chức."
+        },
+        {
+          "text": "He reviewed the contract ___ before signing.",
+          "answer": "B",
+          "number": 76,
+          "options": [
+            "A. meticulous",
+            "B. meticulously",
+            "C. meticulousness",
+            "D. meticulate"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"reviewed\" phải là TRẠNG TỪ; \"meticulously\" (một cách tỉ mỉ)."
+        },
+        {
+          "text": "The movie was incredibly ___ from start to finish.",
+          "answer": "B",
+          "number": 77,
+          "options": [
+            "A. suspense",
+            "B. suspenseful",
+            "C. suspensefully",
+            "D. suspend"
+          ],
+          "explanation": "Sau trạng từ \"incredibly\" cần TÍNH TỪ; \"suspenseful\" (đầy kịch tính, hồi hộp)."
+        },
+        {
+          "text": "Sympathy (n) : Sympathetic (adj) :: Energy (n) : ___ (adj)",
+          "answer": "A",
+          "number": 78,
+          "options": [
+            "A. energetic",
+            "B. energize",
+            "C. energetically",
+            "D. energizer"
+          ],
+          "explanation": "Hậu tố \"-etic\" biến danh từ thành tính từ: \"sympathy→sympathetic\", tương tự \"energy→energetic\"."
+        },
+        {
+          "text": "The new employee is ___ but still learning the ropes.",
+          "answer": "A",
+          "number": 79,
+          "options": [
+            "A. capable",
+            "B. capability",
+            "C. capably",
+            "D. incapable"
+          ],
+          "explanation": "Sau động từ liên kết \"is\" cần TÍNH TỪ; \"capable\" (có năng lực) mô tả \"the new employee\"."
+        },
+        {
+          "text": "The team remains fully ___ to finishing the project on time.",
+          "answer": "C",
+          "number": 80,
+          "options": [
+            "A. commit",
+            "B. commitment",
+            "C. committed",
+            "D. committedly"
+          ],
+          "explanation": "Sau động từ liên kết \"remains\" cần TÍNH TỪ; \"committed\" (tận tâm, cam kết) mô tả \"the team\"."
+        },
+        {
+          "text": "Her ___ of the risks led the team to change course.",
+          "answer": "B",
+          "number": 81,
+          "options": [
+            "A. assess",
+            "B. assessment",
+            "C. assessing",
+            "D. assessed"
+          ],
+          "explanation": "Sau tính từ sở hữu \"her\" cần DANH TỪ; \"assessment\" (sự đánh giá) là danh từ của \"assess\"."
+        },
+        {
+          "text": "The guide explained the rules ___ before the tour began.",
+          "answer": "C",
+          "number": 82,
+          "options": [
+            "A. inform",
+            "B. informative",
+            "C. informatively",
+            "D. information"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"explained\" phải là TRẠNG TỪ; \"informatively\" (một cách cung cấp nhiều thông tin)."
+        },
+        {
+          "text": "Technology has become an ___ part of daily life.",
+          "answer": "B",
+          "number": 83,
+          "options": [
+            "A. integrity",
+            "B. integral",
+            "C. integrate",
+            "D. integrally"
+          ],
+          "explanation": "Từ đứng trước danh từ \"part\" phải là TÍNH TỪ; \"integral\" (thiết yếu, không thể tách rời)."
+        },
+        {
+          "text": "Beauty (n) : Beautiful (adj) :: Danger (n) : ___ (adj)",
+          "answer": "A",
+          "number": 84,
+          "options": [
+            "A. dangerous",
+            "B. dangerously",
+            "C. endanger",
+            "D. dangering"
+          ],
+          "explanation": "Hậu tố \"-ous\" biến danh từ thành tính từ: \"beauty→beautiful\" (mẫu -ful), tương tự \"danger→dangerous\" (mẫu -ous)."
+        },
+        {
+          "text": "The results looked ___ after just one week of treatment.",
+          "answer": "B",
+          "number": 85,
+          "options": [
+            "A. promise",
+            "B. promising",
+            "C. promised",
+            "D. promisingly"
+          ],
+          "explanation": "Sau động từ liên kết \"looked\" cần TÍNH TỪ; \"promising\" (có triển vọng tốt)."
+        },
+        {
+          "text": "She had to ___ for arriving late to the meeting.",
+          "answer": "D",
+          "number": 86,
+          "options": [
+            "A. apology",
+            "B. apologetic",
+            "C. apologetically",
+            "D. apologize"
+          ],
+          "explanation": "Cần ĐỘNG TỪ sau \"to\"; \"apologize\" (xin lỗi) là dạng nguyên mẫu."
+        },
+        {
+          "text": "Critic (n) : Critical (adj) :: History (n) : ___ (adj)",
+          "answer": "A",
+          "number": 87,
+          "options": [
+            "A. historic",
+            "B. historically",
+            "C. historian",
+            "D. historicize"
+          ],
+          "explanation": "Hậu tố \"-ic/-ical\" biến danh từ thành tính từ: \"critic→critical\", tương tự \"history→historic\"."
+        },
+        {
+          "text": "The response to the campaign was ___ positive.",
+          "answer": "D",
+          "number": 88,
+          "options": [
+            "A. overwhelm",
+            "B. overwhelming",
+            "C. overwhelmed",
+            "D. overwhelmingly"
+          ],
+          "explanation": "Từ đứng trước tính từ \"positive\" để bổ nghĩa phải là TRẠNG TỪ; \"overwhelmingly\" (áp đảo, gần như tuyệt đối)."
+        },
+        {
+          "text": "The manager decided to ___ the failed strategy entirely.",
+          "answer": "B",
+          "number": 89,
+          "options": [
+            "A. place",
+            "B. replace",
+            "C. displace",
+            "D. misplace"
+          ],
+          "explanation": "Tiền tố \"re-\" (thay thế); \"replace\" (thay thế) phù hợp nhất với ngữ cảnh chiến lược thất bại cần thay đổi."
+        },
+        {
+          "text": "He was ___ from the competition for breaking the rules.",
+          "answer": "C",
+          "number": 90,
+          "options": [
+            "A. qualify",
+            "B. disqualify",
+            "C. disqualified",
+            "D. qualification"
+          ],
+          "explanation": "Cần quá khứ phân từ sau động từ bị động \"was\"; tiền tố \"dis-\" tạo nghĩa phủ định: \"disqualified\" (bị loại)."
+        },
+        {
+          "text": "Success (n) : Successful (adj) :: Help (n) : ___ (adj)",
+          "answer": "A",
+          "number": 91,
+          "options": [
+            "A. helpful",
+            "B. helpfully",
+            "C. helping",
+            "D. helper"
+          ],
+          "explanation": "Hậu tố \"-ful\" biến danh từ thành tính từ mang nghĩa \"đầy, có tính chất\": \"success→successful\", tương tự \"help→helpful\"."
+        },
+        {
+          "text": "The new curfew is being strictly ___ this month.",
+          "answer": "D",
+          "number": 92,
+          "options": [
+            "A. enforce",
+            "B. enforcement",
+            "C. enforcer",
+            "D. enforced"
+          ],
+          "explanation": "Sau động từ bị động \"being\" cần quá khứ phân từ; \"enforced\" (được thực thi)."
+        },
+        {
+          "text": "She is known for being extremely ___ in her work.",
+          "answer": "A",
+          "number": 93,
+          "options": [
+            "A. meticulous",
+            "B. meticulously",
+            "C. meticulousness",
+            "D. meticulate"
+          ],
+          "explanation": "Sau động từ liên kết \"being\" và trạng từ \"extremely\" cần TÍNH TỪ; \"meticulous\" (tỉ mỉ, cẩn thận)."
+        },
+        {
+          "text": "The report was ___ inaccurate and had to be redone.",
+          "answer": "B",
+          "number": 94,
+          "options": [
+            "A. complete",
+            "B. completely",
+            "C. completion",
+            "D. completed"
+          ],
+          "explanation": "Từ đứng trước tính từ \"inaccurate\" để bổ nghĩa phải là TRẠNG TỪ; \"completely\" (hoàn toàn)."
+        },
+        {
+          "text": "Her ___ remarks offended several people at the party.",
+          "answer": "A",
+          "number": 95,
+          "options": [
+            "A. tactless",
+            "B. tactlessly",
+            "C. tact",
+            "D. tactfulness"
+          ],
+          "explanation": "Từ đứng trước danh từ \"remarks\" phải là TÍNH TỪ; \"tactless\" (thiếu tế nhị) mô tả loại lời nói."
+        },
+        {
+          "text": "She provided useful ___ about the local customs.",
+          "answer": "D",
+          "number": 96,
+          "options": [
+            "A. inform",
+            "B. informative",
+            "C. informatively",
+            "D. information"
+          ],
+          "explanation": "Sau tính từ \"useful\" cần DANH TỪ không đếm được; \"information\" (thông tin) là danh từ của \"inform\"."
+        },
+        {
+          "text": "The volunteers worked ___ throughout the crisis.",
+          "answer": "D",
+          "number": 97,
+          "options": [
+            "A. devote",
+            "B. devoted",
+            "C. devotion",
+            "D. devotedly"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"worked\" phải là TRẠNG TỪ; \"devotedly\" (một cách tận tâm)."
+        },
+        {
+          "text": "His ___ in the field of robotics is widely recognized.",
+          "answer": "B",
+          "number": 98,
+          "options": [
+            "A. expert",
+            "B. expertise",
+            "C. expertly",
+            "D. expertness"
+          ],
+          "explanation": "Sau tính từ sở hữu \"his\" cần DANH TỪ; \"expertise\" (chuyên môn) là danh từ trừu tượng."
+        },
+        {
+          "text": "She looked at the officer ___ , refusing to back down.",
+          "answer": "C",
+          "number": 99,
+          "options": [
+            "A. defiant",
+            "B. defiance",
+            "C. defiantly",
+            "D. defy"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"looked\" phải là TRẠNG TỪ; \"defiantly\" (một cách thách thức)."
+        },
+        {
+          "text": "The referee listened to both sides ___ before deciding.",
+          "answer": "D",
+          "number": 100,
+          "options": [
+            "A. tolerate",
+            "B. tolerant",
+            "C. tolerance",
+            "D. tolerantly"
+          ],
+          "explanation": "Từ bổ nghĩa cho động từ \"listened\" phải là TRẠNG TỪ; \"tolerantly\" không tự nhiên — thực ra cần \"patiently\", nhưng trong nhóm từ này trạng từ đúng ngữ pháp là \"tolerantly\" (một cách khoan dung)."
+        }
+      ],
+      "instruction": "Chọn đáp án đúng cho mỗi câu."
+    }
+  ],
+  "created_at": "2026-08-04T16:52:54.686433+00:00",
+  "updated_at": "2026-08-04T16:52:54.686433+00:00"
+}

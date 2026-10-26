@@ -1,0 +1,2018 @@
+[
+  {
+    "test_id": "cam9-test-1",
+    "test_name": "Cambridge IELTS 9 – Test 1",
+    "volume": 9,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "f78e6788-64e2-40dd-9092-20f6445bba4a",
+        "lesson_id": 812,
+        "lesson_name": "Cam9 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-1-part-1-2023-07-22-18-07-21/0-ielts-cambridge-9-test-1-part-1.mp3",
+        "challenges_count": 83
+      },
+      {
+        "part": 2,
+        "id": "2d8a504e-47d8-4dfb-8fa4-9e6314313e31",
+        "lesson_id": 814,
+        "lesson_name": "Cam9 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-1-part-2-2023-07-22-18-10-23/0-ielts-cambridge-9-test-1-part-2.mp3",
+        "challenges_count": 49
+      },
+      {
+        "part": 3,
+        "id": "5f8cd44e-5abc-482b-972f-6bd39883ce81",
+        "lesson_id": 815,
+        "lesson_name": "Cam9 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-1-part-3-2023-07-22-18-12-48/0-ielts-cambridge-9-test-1-part-3.mp3",
+        "challenges_count": 89
+      },
+      {
+        "part": 4,
+        "id": "de93049b-e341-4dd9-a84a-749771839152",
+        "lesson_id": 816,
+        "lesson_name": "Cam9 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-1-part-4-2023-07-22-18-15-52/0-ielts-cambridge-9-test-1-part-4.mp3",
+        "challenges_count": 54
+      }
+    ],
+    "total_challenges": 275
+  },
+  {
+    "test_id": "cam9-test-2",
+    "test_name": "Cambridge IELTS 9 – Test 2",
+    "volume": 9,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "817bc82c-eabe-48ed-ae9f-ff50a60e958a",
+        "lesson_id": 817,
+        "lesson_name": "Cam9 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-2-part-1-2023-07-23-08-16-08/0-ielts-cambridge-9-test-2-part-1.mp3",
+        "challenges_count": 69
+      },
+      {
+        "part": 2,
+        "id": "e5f1e4de-d6e9-4c55-b539-893f8692e474",
+        "lesson_id": 818,
+        "lesson_name": "Cam9 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-2-part-2-2023-07-23-08-16-49/0-ielts-cambridge-9-test-2-part-2.mp3",
+        "challenges_count": 53
+      },
+      {
+        "part": 3,
+        "id": "0ddc6d02-3c7a-4220-b27d-bc916f10caf5",
+        "lesson_id": 819,
+        "lesson_name": "Cam9 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-2-part-3-2023-07-23-08-17-09/0-ielts-cambridge-9-test-2-part-3.mp3",
+        "challenges_count": 75
+      },
+      {
+        "part": 4,
+        "id": "e1ae0668-efd6-4603-8e8f-88ea6eb2b132",
+        "lesson_id": 820,
+        "lesson_name": "Cam9 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-2-part-4-2023-07-23-08-17-31/0-ielts-cambridge-9-test-2-part-4.mp3",
+        "challenges_count": 52
+      }
+    ],
+    "total_challenges": 249
+  },
+  {
+    "test_id": "cam9-test-3",
+    "test_name": "Cambridge IELTS 9 – Test 3",
+    "volume": 9,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "c8069f94-fcdb-4bef-8173-2dbac8325883",
+        "lesson_id": 821,
+        "lesson_name": "Cam9 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-3-part-1-2023-07-23-15-04-38/0-ielts-cambridge-9-test-3-part-1.mp3",
+        "challenges_count": 109
+      },
+      {
+        "part": 2,
+        "id": "b0cadc8d-76d2-45e7-b99b-68511b145341",
+        "lesson_id": 822,
+        "lesson_name": "Cam9 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-3-part-2-2023-07-23-16-25-11/0-ielts-cambridge-9-test-3-part-2.mp3",
+        "challenges_count": 55
+      },
+      {
+        "part": 3,
+        "id": "21fc4f55-9dd6-447b-b6a8-530f754ee770",
+        "lesson_id": 823,
+        "lesson_name": "Cam9 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-3-part-3-2023-07-23-16-25-38/0-ielts-cambridge-9-test-3-part-3.mp3",
+        "challenges_count": 72
+      },
+      {
+        "part": 4,
+        "id": "8fc1165d-a0de-417a-9af6-cda1fde2f78f",
+        "lesson_id": 824,
+        "lesson_name": "Cam9 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-3-part-4-2023-07-23-16-26-01/0-ielts-cambridge-9-test-3-part-4.mp3",
+        "challenges_count": 58
+      }
+    ],
+    "total_challenges": 294
+  },
+  {
+    "test_id": "cam9-test-4",
+    "test_name": "Cambridge IELTS 9 – Test 4",
+    "volume": 9,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "b1c42460-1e05-4e8d-9dad-a6eb60ca4ecb",
+        "lesson_id": 825,
+        "lesson_name": "Cam9 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-4-part-1-2023-07-24-14-48-55/0-ielts-cambridge-9-test-4-part-1.mp3",
+        "challenges_count": 62
+      },
+      {
+        "part": 2,
+        "id": "9a1e1255-6ab9-4df3-acf3-beabe9500156",
+        "lesson_id": 826,
+        "lesson_name": "Cam9 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-4-part-2-2023-07-24-14-49-19/0-ielts-cambridge-9-test-4-part-2.mp3",
+        "challenges_count": 83
+      },
+      {
+        "part": 3,
+        "id": "1f59266e-c98c-47a9-afc6-b4e00ce58847",
+        "lesson_id": 827,
+        "lesson_name": "Cam9 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-4-part-3-2023-07-24-14-49-42/0-ielts-cambridge-9-test-4-part-3.mp3",
+        "challenges_count": 79
+      },
+      {
+        "part": 4,
+        "id": "79fded16-91a9-442d-99c6-b08ced094c4c",
+        "lesson_id": 828,
+        "lesson_name": "Cam9 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-9-test-4-part-4-2023-07-24-14-50-05/0-ielts-cambridge-9-test-4-part-4.mp3",
+        "challenges_count": 60
+      }
+    ],
+    "total_challenges": 284
+  },
+  {
+    "test_id": "cam10-test-1",
+    "test_name": "Cambridge IELTS 10 – Test 1",
+    "volume": 10,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "1b25b12a-1cc4-4fe2-af88-58c9783ed3b5",
+        "lesson_id": 749,
+        "lesson_name": "Cam10 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-1-part-1-2023-06-09-21-53-29/0-ielts-cambridge-10-test-1-part-1.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 2,
+        "id": "038641b4-10a2-42e8-bab1-09eff0f7bda4",
+        "lesson_id": 750,
+        "lesson_name": "Cam10 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-1-part-2-2023-06-09-21-54-05/0-ielts-cambridge-10-test-1-part-2.mp3",
+        "challenges_count": 52
+      },
+      {
+        "part": 3,
+        "id": "265a964f-992c-4ef6-be22-120523b69884",
+        "lesson_id": 751,
+        "lesson_name": "Cam10 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-1-part-3-2023-06-09-21-55-33/0-ielts-cambridge-10-test-1-part-3.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 4,
+        "id": "97e7156f-9be9-4c66-af4b-87eaaa086338",
+        "lesson_id": 752,
+        "lesson_name": "Cam10 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-1-part-4-2023-06-09-21-56-43/0-ielts-cambridge-10-test-1-part-4.mp3",
+        "challenges_count": 50
+      }
+    ],
+    "total_challenges": 258
+  },
+  {
+    "test_id": "cam10-test-2",
+    "test_name": "Cambridge IELTS 10 – Test 2",
+    "volume": 10,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "fb6dd0d0-5a5e-465c-b63d-9be2721f2bb6",
+        "lesson_id": 755,
+        "lesson_name": "Cam10 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-2-part-1-2023-06-13-22-01-33/0-ielts-cambridge-10-test-2-part-1.mp3",
+        "challenges_count": 61
+      },
+      {
+        "part": 2,
+        "id": "9e8d9650-f326-4e6f-972e-5d0f726aef35",
+        "lesson_id": 756,
+        "lesson_name": "Cam10 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-2-part-2-2023-06-13-22-02-09/0-ielts-cambridge-10-test-2-part-2.mp3",
+        "challenges_count": 56
+      },
+      {
+        "part": 3,
+        "id": "c664c976-b40d-4614-b882-761d3ef0a8ca",
+        "lesson_id": 757,
+        "lesson_name": "Cam10 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-2-part-3-2023-06-13-22-03-12/0-ielts-cambridge-10-test-2-part-3.mp3",
+        "challenges_count": 77
+      },
+      {
+        "part": 4,
+        "id": "501a7b9e-6180-42ee-ac2f-fba947eed2ed",
+        "lesson_id": 758,
+        "lesson_name": "Cam10 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-2-part-4-2023-06-13-22-04-02/0-ielts-cambridge-10-test-2-part-4.mp3",
+        "challenges_count": 58
+      }
+    ],
+    "total_challenges": 252
+  },
+  {
+    "test_id": "cam10-test-3",
+    "test_name": "Cambridge IELTS 10 – Test 3",
+    "volume": 10,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "25cbd101-6d0e-492c-96f3-72563d7e466d",
+        "lesson_id": 759,
+        "lesson_name": "Cam10 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-3-part-1-2023-06-14-12-30-36/0-ielts-cambridge-10-test-3-part-1.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 2,
+        "id": "beb827bd-60c8-4cfc-acb5-15982aad33e2",
+        "lesson_id": 760,
+        "lesson_name": "Cam10 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-3-part-2-2023-06-14-12-30-57/0-ielts-cambridge-10-test-3-part-2.mp3",
+        "challenges_count": 63
+      },
+      {
+        "part": 3,
+        "id": "f38e45f7-faa4-472b-a255-a5f755b761c8",
+        "lesson_id": 761,
+        "lesson_name": "Cam10 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-3-part-3-2023-06-14-12-31-23/0-ielts-cambridge-10-test-3-part-3.mp3",
+        "challenges_count": 84
+      },
+      {
+        "part": 4,
+        "id": "c21f5fef-a57d-4521-8693-9c2fb51d2183",
+        "lesson_id": 762,
+        "lesson_name": "Cam10 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-3-part-4-2023-06-14-12-31-53/0-ielts-cambridge-10-test-3-part-4.mp3",
+        "challenges_count": 61
+      }
+    ],
+    "total_challenges": 293
+  },
+  {
+    "test_id": "cam10-test-4",
+    "test_name": "Cambridge IELTS 10 – Test 4",
+    "volume": 10,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "ea812bb7-e6be-4768-a3ab-69e6ac87c930",
+        "lesson_id": 763,
+        "lesson_name": "Cam10 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-4-part-1-2023-06-16-15-47-56/0-ielts-cambridge-10-test-4-part-1.mp3",
+        "challenges_count": 66
+      },
+      {
+        "part": 2,
+        "id": "1e591db9-4fde-4247-b0c1-cfc0fad483b3",
+        "lesson_id": 764,
+        "lesson_name": "Cam10 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-4-part-2-2023-06-16-15-48-27/0-ielts-cambridge-10-test-4-part-2.mp3",
+        "challenges_count": 52
+      },
+      {
+        "part": 3,
+        "id": "940027d2-984a-41a0-b289-fc9589b9c10f",
+        "lesson_id": 765,
+        "lesson_name": "Cam10 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-4-part-3-2023-06-16-15-49-02/0-ielts-cambridge-10-test-4-part-3.mp3",
+        "challenges_count": 88
+      },
+      {
+        "part": 4,
+        "id": "4cc3cda1-9d12-4072-812c-3e50f1fc35ca",
+        "lesson_id": 766,
+        "lesson_name": "Cam10 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-10-test-4-part-4-2023-06-16-15-49-32/0-ielts-cambridge-10-test-4-part-4.mp3",
+        "challenges_count": 58
+      }
+    ],
+    "total_challenges": 264
+  },
+  {
+    "test_id": "cam11-test-1",
+    "test_name": "Cambridge IELTS 11 – Test 1",
+    "volume": 11,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "cf9cfc16-faa2-4f7f-9923-ee9775c2e489",
+        "lesson_id": 730,
+        "lesson_name": "Cam11 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-1-part-1-2023-06-03-12-38-13/0-ielts-cambridge-11-test-1-part-1.mp3",
+        "challenges_count": 90
+      },
+      {
+        "part": 2,
+        "id": "7f402af7-7e71-4997-98c4-05fae875352e",
+        "lesson_id": 731,
+        "lesson_name": "Cam11 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-1-part-2-2023-06-03-12-38-49/0-ielts-cambridge-11-test-1-part-2.mp3",
+        "challenges_count": 55
+      },
+      {
+        "part": 3,
+        "id": "1b1e63b4-606e-4f10-89b5-998760689dfa",
+        "lesson_id": 732,
+        "lesson_name": "Cam11 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-1-part-3-2023-06-03-12-39-17/0-ielts-cambridge-11-test-1-part-3.mp3",
+        "challenges_count": 95
+      },
+      {
+        "part": 4,
+        "id": "5bf639e0-14b3-4353-b319-5796ed9d55af",
+        "lesson_id": 733,
+        "lesson_name": "Cam11 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-1-part-4-2023-06-03-12-40-43/0-ielts-cambridge-11-test-1-part-4.mp3",
+        "challenges_count": 74
+      }
+    ],
+    "total_challenges": 314
+  },
+  {
+    "test_id": "cam11-test-2",
+    "test_name": "Cambridge IELTS 11 – Test 2",
+    "volume": 11,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "0b4b8dc5-8c67-46bf-b2af-1f299f935ffc",
+        "lesson_id": 735,
+        "lesson_name": "Cam11 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-2-part-1-2023-06-04-16-51-01/0-ielts-cambridge-11-test-2-part-1.mp3",
+        "challenges_count": 92
+      },
+      {
+        "part": 2,
+        "id": "6962590d-c3b4-4c96-a21d-fc118509fe81",
+        "lesson_id": 736,
+        "lesson_name": "Cam11 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-2-part-2-2023-06-04-16-51-32/0-ielts-cambridge-11-test-2-part-2.mp3",
+        "challenges_count": 66
+      },
+      {
+        "part": 3,
+        "id": "bd43b177-360d-49c1-a4fd-7bd5eaa494f1",
+        "lesson_id": 737,
+        "lesson_name": "Cam11 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-2-part-3-2023-06-04-16-51-55/0-ielts-cambridge-11-test-2-part-3.mp3",
+        "challenges_count": 93
+      },
+      {
+        "part": 4,
+        "id": "1d32752b-0150-434e-93f2-a60a40031fe6",
+        "lesson_id": 738,
+        "lesson_name": "Cam11 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-2-part-4-2023-06-04-16-53-21/0-ielts-cambridge-11-test-2-part-4.mp3",
+        "challenges_count": 57
+      }
+    ],
+    "total_challenges": 308
+  },
+  {
+    "test_id": "cam11-test-3",
+    "test_name": "Cambridge IELTS 11 – Test 3",
+    "volume": 11,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "50425428-0b91-4cbf-bd77-bdd4207020ff",
+        "lesson_id": 739,
+        "lesson_name": "Cam11 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-3-part-1-2023-06-07-23-08-14/0-ielts-cambridge-11-test-3-part-1.mp3",
+        "challenges_count": 73
+      },
+      {
+        "part": 2,
+        "id": "12bcdece-4bb8-4ae9-bef8-e3d6b63ba017",
+        "lesson_id": 740,
+        "lesson_name": "Cam11 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-3-part-2-2023-06-07-23-08-53/0-ielts-cambridge-11-test-3-part-2.mp3",
+        "challenges_count": 65
+      },
+      {
+        "part": 3,
+        "id": "6eb86827-3e1d-4652-b634-a9fe48242e54",
+        "lesson_id": 741,
+        "lesson_name": "Cam11 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-3-part-3-2023-06-07-23-09-21/0-ielts-cambridge-11-test-3-part-3.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 4,
+        "id": "2af70002-1a92-45eb-afcf-62b6d3d77b6f",
+        "lesson_id": 742,
+        "lesson_name": "Cam11 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-3-part-4-2023-06-07-23-09-53/0-ielts-cambridge-11-test-3-part-4.mp3",
+        "challenges_count": 68
+      }
+    ],
+    "total_challenges": 284
+  },
+  {
+    "test_id": "cam11-test-4",
+    "test_name": "Cambridge IELTS 11 – Test 4",
+    "volume": 11,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "999d73ef-9ec5-41d0-ab5d-0984b30d8744",
+        "lesson_id": 743,
+        "lesson_name": "Cam11 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-4-part-1-2023-06-08-13-11-21/0-ielts-cambridge-11-test-4-part-1.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 2,
+        "id": "ff4122e4-21a7-4095-a6fd-64746e37b664",
+        "lesson_id": 744,
+        "lesson_name": "Cam11 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-4-part-2-2023-06-08-13-11-59/0-ielts-cambridge-11-test-4-part-2.mp3",
+        "challenges_count": 55
+      },
+      {
+        "part": 3,
+        "id": "1928883c-44c9-4e85-9be9-e0f7b6f3ee53",
+        "lesson_id": 745,
+        "lesson_name": "Cam11 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-4-part-3-2023-06-08-13-13-48/0-ielts-cambridge-11-test-4-part-3.mp3",
+        "challenges_count": 67
+      },
+      {
+        "part": 4,
+        "id": "98eaf1d3-bd05-47ac-9a5d-037130363d49",
+        "lesson_id": 747,
+        "lesson_name": "Cam11 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-11-test-4-part-4-2023-06-08-13-16-18/0-ielts-cambridge-11-test-4-part-4.mp3",
+        "challenges_count": 68
+      }
+    ],
+    "total_challenges": 268
+  },
+  {
+    "test_id": "cam12-test-1",
+    "test_name": "Cambridge IELTS 12 – Test 1",
+    "volume": 12,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "730c9b85-3cd0-4860-aafd-8dbdbcf3b193",
+        "lesson_id": 657,
+        "lesson_name": "Cam12 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-1-part-1-2023-04-18-00-17-11/0-ielts-cambridge-12-test-1-part-1.mp3",
+        "challenges_count": 82
+      },
+      {
+        "part": 2,
+        "id": "a2263d55-0a48-4e9e-a539-61be2e5fafbe",
+        "lesson_id": 658,
+        "lesson_name": "Cam12 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-1-part-2-2023-04-18-00-18-06/0-ielts-cambridge-12-test-1-part-2.mp3",
+        "challenges_count": 61
+      },
+      {
+        "part": 3,
+        "id": "0de5cb47-91a4-49b5-b156-485161b0f8e2",
+        "lesson_id": 659,
+        "lesson_name": "Cam12 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-1-part-3-2023-04-18-00-18-35/0-ielts-cambridge-12-test-1-part-3.mp3",
+        "challenges_count": 76
+      },
+      {
+        "part": 4,
+        "id": "2f1b790a-d90e-42fd-bdac-e0944e447bda",
+        "lesson_id": 660,
+        "lesson_name": "Cam12 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-1-part-4-2023-04-18-00-19-10/0-ielts-cambridge-12-test-1-part-4.mp3",
+        "challenges_count": 86
+      }
+    ],
+    "total_challenges": 305
+  },
+  {
+    "test_id": "cam12-test-2",
+    "test_name": "Cambridge IELTS 12 – Test 2",
+    "volume": 12,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "fc9cba19-3b91-46b9-a68e-c66eb1440830",
+        "lesson_id": 667,
+        "lesson_name": "Cam12 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-2-part-1-2023-04-28-15-34-45/0-ielts-cambridge-12-test-2-part-1.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 2,
+        "id": "57d884f3-3577-4a39-ba68-68be260fb60e",
+        "lesson_id": 668,
+        "lesson_name": "Cam12 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-2-part-2-2023-04-28-15-35-15/0-ielts-cambridge-12-test-2-part-2.mp3",
+        "challenges_count": 59
+      },
+      {
+        "part": 3,
+        "id": "46e0b8c3-5137-4bf3-ac42-13cac096a612",
+        "lesson_id": 669,
+        "lesson_name": "Cam12 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-2-part-3-2023-04-28-15-35-41/0-ielts-cambridge-12-test-2-part-3.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 4,
+        "id": "dac41035-2d88-4097-b806-559c97411efa",
+        "lesson_id": 670,
+        "lesson_name": "Cam12 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-2-part-4-2023-04-28-15-36-16/0-ielts-cambridge-12-test-2-part-4.mp3",
+        "challenges_count": 57
+      }
+    ],
+    "total_challenges": 272
+  },
+  {
+    "test_id": "cam12-test-3",
+    "test_name": "Cambridge IELTS 12 – Test 3",
+    "volume": 12,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "f50dec12-4621-4f4a-8e58-2fba0ba7992e",
+        "lesson_id": 679,
+        "lesson_name": "Cam12 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-3-part-1-2023-05-22-08-12-27/0-ielts-cambridge-12-test-3-part-1.mp3",
+        "challenges_count": 90
+      },
+      {
+        "part": 2,
+        "id": "640becb4-3e2d-4343-9878-1d1bed728e86",
+        "lesson_id": 680,
+        "lesson_name": "Cam12 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-3-part-2-2023-05-22-08-13-03/0-ielts-cambridge-12-test-3-part-2.mp3",
+        "challenges_count": 62
+      },
+      {
+        "part": 3,
+        "id": "2bf1e1a2-f910-42e1-b71f-a18c337ae33a",
+        "lesson_id": 681,
+        "lesson_name": "Cam12 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-3-part-3-2023-05-22-08-13-43/0-ielts-cambridge-12-test-3-part-3.mp3",
+        "challenges_count": 89
+      },
+      {
+        "part": 4,
+        "id": "6b745b61-d296-41ce-b0ba-9284c901d437",
+        "lesson_id": 682,
+        "lesson_name": "Cam12 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-3-part-4-2023-05-22-08-14-21/0-ielts-cambridge-12-test-3-part-4.mp3",
+        "challenges_count": 67
+      }
+    ],
+    "total_challenges": 308
+  },
+  {
+    "test_id": "cam12-test-4",
+    "test_name": "Cambridge IELTS 12 – Test 4",
+    "volume": 12,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "6a56a14f-52d4-41b0-9d27-857cbfab330c",
+        "lesson_id": 726,
+        "lesson_name": "Cam12 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-4-part-1-2023-06-02-09-38-13/0-ielts-cambridge-12-test-4-part-1.mp3",
+        "challenges_count": 80
+      },
+      {
+        "part": 2,
+        "id": "14e4a85a-f932-40c5-b4de-e201c9c47b93",
+        "lesson_id": 727,
+        "lesson_name": "Cam12 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-4-part-2-2023-06-02-09-38-55/0-ielts-cambridge-12-test-4-part-2.mp3",
+        "challenges_count": 50
+      },
+      {
+        "part": 3,
+        "id": "8ec1e3e5-128d-4856-baa9-3073ecebec18",
+        "lesson_id": 728,
+        "lesson_name": "Cam12 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-4-part-3-2023-06-02-09-41-14/0-ielts-cambridge-12-test-4-part-3.mp3",
+        "challenges_count": 81
+      },
+      {
+        "part": 4,
+        "id": "9c0fcc62-1127-4073-9968-8eb4912be106",
+        "lesson_id": 729,
+        "lesson_name": "Cam12 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-12-test-4-part-4-2023-06-02-09-41-58/0-ielts-cambridge-12-test-4-part-4.mp3",
+        "challenges_count": 71
+      }
+    ],
+    "total_challenges": 282
+  },
+  {
+    "test_id": "cam13-test-1",
+    "test_name": "Cambridge IELTS 13 – Test 1",
+    "volume": 13,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "b3310fa6-8598-4129-8bdc-2953fb623187",
+        "lesson_id": 590,
+        "lesson_name": "Cam13 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-1-part-1-2023-02-13-11-43-39/0-ielts-cambridge-13-test-1-part-1.mp3",
+        "challenges_count": 60
+      },
+      {
+        "part": 2,
+        "id": "ba738396-9506-4559-a97f-f6748d6044b2",
+        "lesson_id": 592,
+        "lesson_name": "Cam13 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-1-part-2-2023-02-13-11-55-41/0-ielts-cambridge-13-test-1-part-2.mp3",
+        "challenges_count": 57
+      },
+      {
+        "part": 3,
+        "id": "6f79f0df-9286-4d7d-bcc6-f647b5cf6509",
+        "lesson_id": 593,
+        "lesson_name": "Cam13 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-1-part-3-2023-02-13-11-56-22/0-ielts-cambridge-13-test-1-part-3.mp3",
+        "challenges_count": 75
+      },
+      {
+        "part": 4,
+        "id": "d5d9dcfc-f183-4ac3-b84b-955a1985305c",
+        "lesson_id": 594,
+        "lesson_name": "Cam13 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-1-part-4-2023-02-13-11-57-11/0-ielts-cambridge-13-test-1-part-4.mp3",
+        "challenges_count": 60
+      }
+    ],
+    "total_challenges": 252
+  },
+  {
+    "test_id": "cam13-test-2",
+    "test_name": "Cambridge IELTS 13 – Test 2",
+    "volume": 13,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "21b818e5-90a1-444e-8566-ccb6429e2131",
+        "lesson_id": 597,
+        "lesson_name": "Cam13 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-2-part-1-2023-02-26-09-47-44/0-ielts-cambridge-13-test-2-part-1.mp3",
+        "challenges_count": 83
+      },
+      {
+        "part": 2,
+        "id": "7b7c757f-57d2-47b8-bbef-1c8890c9b68b",
+        "lesson_id": 616,
+        "lesson_name": "Cam13 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-2-part-2-2023-03-11-20-35-32/0-ielts-cambridge-13-test-2-part-2.mp3",
+        "challenges_count": 63
+      },
+      {
+        "part": 3,
+        "id": "36160922-8da3-41d1-ac0c-2b7d0c1e6c88",
+        "lesson_id": 617,
+        "lesson_name": "Cam13 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-2-part-3-2023-03-11-20-36-09/0-ielts-cambridge-13-test-2-part-3.mp3",
+        "challenges_count": 84
+      },
+      {
+        "part": 4,
+        "id": "7894a4d3-0778-4a4b-939f-e3a8df245c98",
+        "lesson_id": 618,
+        "lesson_name": "Cam13 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-2-part-4-2023-03-11-20-36-48/0-ielts-cambridge-13-test-2-part-4.mp3",
+        "challenges_count": 66
+      }
+    ],
+    "total_challenges": 296
+  },
+  {
+    "test_id": "cam13-test-3",
+    "test_name": "Cambridge IELTS 13 – Test 3",
+    "volume": 13,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "468e52bf-433b-49f6-856a-532657660ebf",
+        "lesson_id": 629,
+        "lesson_name": "Cam13 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-3-part-1-2023-03-20-11-13-45/0-ielts-cambridge-13-test-3-part-1.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 2,
+        "id": "8156fad3-aad6-485d-95c9-b92115af7118",
+        "lesson_id": 630,
+        "lesson_name": "Cam13 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-3-part-2-2023-03-20-11-14-21/0-ielts-cambridge-13-test-3-part-2.mp3",
+        "challenges_count": 52
+      },
+      {
+        "part": 3,
+        "id": "0dd75ca2-eda3-4dc3-8392-3b0919299690",
+        "lesson_id": 631,
+        "lesson_name": "Cam13 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-3-part-3-2023-03-20-11-14-50/0-ielts-cambridge-13-test-3-part-3.mp3",
+        "challenges_count": 87
+      },
+      {
+        "part": 4,
+        "id": "d0f92fb5-d605-4757-9966-b99d1c2344bd",
+        "lesson_id": 632,
+        "lesson_name": "Cam13 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-3-part-4-2023-03-20-11-15-16/0-ielts-cambridge-13-test-3-part-4.mp3",
+        "challenges_count": 59
+      }
+    ],
+    "total_challenges": 276
+  },
+  {
+    "test_id": "cam13-test-4",
+    "test_name": "Cambridge IELTS 13 – Test 4",
+    "volume": 13,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "4b9423c5-70d8-4c11-8d00-b7b43e783ffc",
+        "lesson_id": 638,
+        "lesson_name": "Cam13 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-4-part-1-2023-03-25-05-28-08/0-ielts-cambridge-13-test-4-part-1.mp3",
+        "challenges_count": 75
+      },
+      {
+        "part": 2,
+        "id": "30aaa768-a690-4937-ad34-1903ad16bc57",
+        "lesson_id": 639,
+        "lesson_name": "Cam13 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-4-part-2-2023-03-25-05-28-48/0-ielts-cambridge-13-test-4-part-2.mp3",
+        "challenges_count": 63
+      },
+      {
+        "part": 3,
+        "id": "d8df263c-f448-45b6-81d2-e0b4f4c968e1",
+        "lesson_id": 640,
+        "lesson_name": "Cam13 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-4-part-3-2023-03-25-05-34-24/0-ielts-cambridge-13-test-4-part-3.mp3",
+        "challenges_count": 79
+      },
+      {
+        "part": 4,
+        "id": "ba52ff9d-faef-4719-b814-cbe1593c04c5",
+        "lesson_id": 641,
+        "lesson_name": "Cam13 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-13-test-4-part-4-2023-03-25-05-34-47/0-ielts-cambridge-13-test-4-part-4.mp3",
+        "challenges_count": 72
+      }
+    ],
+    "total_challenges": 289
+  },
+  {
+    "test_id": "cam14-test-1",
+    "test_name": "Cambridge IELTS 14 – Test 1",
+    "volume": 14,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "733f76d3-fce9-48d3-a915-5f92cb6a2a69",
+        "lesson_id": 565,
+        "lesson_name": "Cam14 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-1-section-1-2023-01-24-23-55-53/0-ielts-cambridge-14-test-1-section-1.mp3",
+        "challenges_count": 90
+      },
+      {
+        "part": 2,
+        "id": "f3482203-7846-4fdc-b636-2cc8299e8809",
+        "lesson_id": 566,
+        "lesson_name": "Cam14 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-1-section-2-2023-01-25-00-08-54/0-ielts-cambridge-14-test-1-section-2.mp3",
+        "challenges_count": 56
+      },
+      {
+        "part": 3,
+        "id": "2efd51d5-67ee-4b3a-b24e-1bc04890536b",
+        "lesson_id": 567,
+        "lesson_name": "Cam14 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-1-part-3-2023-01-26-23-55-43/0-ielts-cambridge-14-test-1-part-3.mp3",
+        "challenges_count": 86
+      },
+      {
+        "part": 4,
+        "id": "d999be2e-3589-4ad2-b810-1e0e152c32c6",
+        "lesson_id": 568,
+        "lesson_name": "Cam14 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-1-part-4-2023-01-26-23-56-17/0-ielts-cambridge-14-test-1-part-4.mp3",
+        "challenges_count": 77
+      }
+    ],
+    "total_challenges": 309
+  },
+  {
+    "test_id": "cam14-test-2",
+    "test_name": "Cambridge IELTS 14 – Test 2",
+    "volume": 14,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "885a7219-c19c-47cd-8c2d-60c1ea318f15",
+        "lesson_id": 571,
+        "lesson_name": "Cam14 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-2-part-1-2023-01-29-21-15-54/0-ielts-cambridge-14-test-2-part-1.mp3",
+        "challenges_count": 80
+      },
+      {
+        "part": 2,
+        "id": "9cffb538-76b4-43e9-8f16-16193cb9921d",
+        "lesson_id": 572,
+        "lesson_name": "Cam14 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-2-part-2-2023-01-29-21-16-22/0-ielts-cambridge-14-test-2-part-2.mp3",
+        "challenges_count": 69
+      },
+      {
+        "part": 3,
+        "id": "f3c4458c-e4d2-4132-8fc1-558f12a7b95c",
+        "lesson_id": 573,
+        "lesson_name": "Cam14 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-2-part-3-2023-01-29-21-16-46/0-ielts-cambridge-14-test-2-part-3.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 4,
+        "id": "bc36eea9-bf2f-45a5-815d-3458dffe6c12",
+        "lesson_id": 575,
+        "lesson_name": "Cam14 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-2-part-4-2023-01-29-21-17-41/0-ielts-cambridge-14-test-2-part-4.mp3",
+        "challenges_count": 70
+      }
+    ],
+    "total_challenges": 304
+  },
+  {
+    "test_id": "cam14-test-3",
+    "test_name": "Cambridge IELTS 14 – Test 3",
+    "volume": 14,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "cf302bbe-7ead-4e9a-9e99-ffdb49dea055",
+        "lesson_id": 578,
+        "lesson_name": "Cam14 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-3-part-1-2023-02-02-11-24-59/0-ielts-cambridge-14-test-3-part-1.mp3",
+        "challenges_count": 80
+      },
+      {
+        "part": 2,
+        "id": "625827d7-83f3-4fa6-870d-7d298cf5c4d4",
+        "lesson_id": 579,
+        "lesson_name": "Cam14 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-3-part-2-2023-02-02-11-25-22/0-ielts-cambridge-14-test-3-part-2.mp3",
+        "challenges_count": 61
+      },
+      {
+        "part": 3,
+        "id": "1b4c4b42-5a3b-4993-bc32-b734c90607e9",
+        "lesson_id": 580,
+        "lesson_name": "Cam14 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-3-part-3-2023-02-02-11-25-43/0-ielts-cambridge-14-test-3-part-3.mp3",
+        "challenges_count": 70
+      },
+      {
+        "part": 4,
+        "id": "c142056b-2746-44ee-be6a-5d7e15b35e0c",
+        "lesson_id": 581,
+        "lesson_name": "Cam14 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-3-part-4-2023-02-02-11-26-07/0-ielts-cambridge-14-test-3-part-4.mp3",
+        "challenges_count": 70
+      }
+    ],
+    "total_challenges": 281
+  },
+  {
+    "test_id": "cam14-test-4",
+    "test_name": "Cambridge IELTS 14 – Test 4",
+    "volume": 14,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "1e34e7b0-d017-44ce-9035-43476ea32de7",
+        "lesson_id": 584,
+        "lesson_name": "Cam14 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-4-part-1-2023-02-07-10-34-26/0-ielts-cambridge-14-test-4-part-1.mp3",
+        "challenges_count": 76
+      },
+      {
+        "part": 2,
+        "id": "daaf0879-8f11-4326-ad0b-17d01408534d",
+        "lesson_id": 585,
+        "lesson_name": "Cam14 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-4-part-2-2023-02-07-10-35-40/0-ielts-cambridge-14-test-4-part-2.mp3",
+        "challenges_count": 61
+      },
+      {
+        "part": 3,
+        "id": "8d49b780-b5df-4206-bf76-6a52804e3edc",
+        "lesson_id": 586,
+        "lesson_name": "Cam14 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-4-part-3-2023-02-07-10-36-02/0-ielts-cambridge-14-test-4-part-3.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 4,
+        "id": "0d365a81-4d19-496c-b4fd-6a2646be5e3f",
+        "lesson_id": 587,
+        "lesson_name": "Cam14 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-14-test-4-part-4-2023-02-07-10-36-27/0-ielts-cambridge-14-test-4-part-4.mp3",
+        "challenges_count": 72
+      }
+    ],
+    "total_challenges": 294
+  },
+  {
+    "test_id": "cam15-test-1",
+    "test_name": "Cambridge IELTS 15 – Test 1",
+    "volume": 15,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "ffacf5d3-543e-4d58-ae68-1b4ff39b6081",
+        "lesson_id": 533,
+        "lesson_name": "Cam15 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-1-part-1-2023-01-08-23-30-57/0-ielts-cambridge-15-test-1-part-1.mp3",
+        "challenges_count": 79
+      },
+      {
+        "part": 2,
+        "id": "4808329b-6473-4509-a466-89f98909e18b",
+        "lesson_id": 534,
+        "lesson_name": "Cam15 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-1-part-2-2023-01-08-23-31-53/0-ielts-cambridge-15-test-1-part-2.mp3",
+        "challenges_count": 72
+      },
+      {
+        "part": 3,
+        "id": "80474974-8b62-4f18-b49e-e9e9042767a0",
+        "lesson_id": 535,
+        "lesson_name": "Cam15 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-1-part-3-2023-01-11-23-48-49/0-ielts-cambridge-15-test-1-part-3.mp3",
+        "challenges_count": 76
+      },
+      {
+        "part": 4,
+        "id": "d7069626-f09f-4f56-87b3-10e951e015be",
+        "lesson_id": 536,
+        "lesson_name": "Cam15 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-1-part-4-2023-01-11-23-49-50/0-ielts-cambridge-15-test-1-part-4.mp3",
+        "challenges_count": 75
+      }
+    ],
+    "total_challenges": 302
+  },
+  {
+    "test_id": "cam15-test-2",
+    "test_name": "Cambridge IELTS 15 – Test 2",
+    "volume": 15,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "008af290-4ce7-48b2-b3b6-17a5105a6f8d",
+        "lesson_id": 541,
+        "lesson_name": "Cam15 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-2-part-1-2023-01-14-19-42-49/0-ielts-cambridge-15-test-2-part-1.mp3",
+        "challenges_count": 88
+      },
+      {
+        "part": 2,
+        "id": "43912297-a0d7-43d5-b98b-1882feb29d0b",
+        "lesson_id": 543,
+        "lesson_name": "Cam15 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-2-part-2-2023-01-14-19-46-58/0-ielts-cambridge-15-test-2-part-2.mp3",
+        "challenges_count": 68
+      },
+      {
+        "part": 3,
+        "id": "73cb4e2f-508e-4f87-8052-e2bd53470890",
+        "lesson_id": 544,
+        "lesson_name": "Cam15 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-2-part-3-2023-01-14-19-47-26/0-ielts-cambridge-15-test-2-part-3.mp3",
+        "challenges_count": 93
+      },
+      {
+        "part": 4,
+        "id": "4b087d31-bb8a-47af-ad8a-57acd805f440",
+        "lesson_id": 545,
+        "lesson_name": "Cam15 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-2-part-4-2023-01-14-19-47-59/0-ielts-cambridge-15-test-2-part-4.mp3",
+        "challenges_count": 63
+      }
+    ],
+    "total_challenges": 312
+  },
+  {
+    "test_id": "cam15-test-3",
+    "test_name": "Cambridge IELTS 15 – Test 3",
+    "volume": 15,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "2e3b3c82-3b4a-4348-96ed-683c21c02da2",
+        "lesson_id": 551,
+        "lesson_name": "Cam15 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-3-part-1-2023-01-18-10-52-01/0-ielts-cambridge-15-test-3-part-1.mp3",
+        "challenges_count": 98
+      },
+      {
+        "part": 2,
+        "id": "5abd7579-112e-4ba6-8666-a05bbbcf2c99",
+        "lesson_id": 552,
+        "lesson_name": "Cam15 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-3-part-2-2023-01-18-10-53-12/0-ielts-cambridge-15-test-3-part-2.mp3",
+        "challenges_count": 76
+      },
+      {
+        "part": 3,
+        "id": "6fb215f4-11a8-47b6-8e27-8551a7a9b325",
+        "lesson_id": 553,
+        "lesson_name": "Cam15 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-3-part-3-2023-01-18-10-53-46/0-ielts-cambridge-15-test-3-part-3.mp3",
+        "challenges_count": 77
+      },
+      {
+        "part": 4,
+        "id": "473161ef-c14f-49ef-9d07-fb2ed30634f6",
+        "lesson_id": 554,
+        "lesson_name": "Cam15 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-3-part-4-2023-01-18-10-54-17/0-ielts-cambridge-15-test-3-part-4.mp3",
+        "challenges_count": 64
+      }
+    ],
+    "total_challenges": 315
+  },
+  {
+    "test_id": "cam15-test-4",
+    "test_name": "Cambridge IELTS 15 – Test 4",
+    "volume": 15,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "b68227f8-1082-4e03-9850-60ea6379cdff",
+        "lesson_id": 559,
+        "lesson_name": "Cam15 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-4-part-1-2023-01-19-23-41-09/0-ielts-cambridge-15-test-4-part-1.mp3",
+        "challenges_count": 94
+      },
+      {
+        "part": 2,
+        "id": "09c4286c-e7b9-4b6d-91f5-1ac3b2bbe3c1",
+        "lesson_id": 560,
+        "lesson_name": "Cam15 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-4-part-2-2023-01-19-23-41-45/0-ielts-cambridge-15-test-4-part-2.mp3",
+        "challenges_count": 46
+      },
+      {
+        "part": 3,
+        "id": "8d880983-0a61-42a7-8a6f-ea8854a6ac45",
+        "lesson_id": 561,
+        "lesson_name": "Cam15 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-4-part-3-2023-01-19-23-42-10/0-ielts-cambridge-15-test-4-part-3.mp3",
+        "challenges_count": 92
+      },
+      {
+        "part": 4,
+        "id": "2c3064c5-6d2f-4bb2-81b4-241299cb5346",
+        "lesson_id": 562,
+        "lesson_name": "Cam15 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-15-test-4-part-4-2023-01-19-23-42-59/0-ielts-cambridge-15-test-4-part-4.mp3",
+        "challenges_count": 64
+      }
+    ],
+    "total_challenges": 296
+  },
+  {
+    "test_id": "cam16-test-1",
+    "test_name": "Cambridge IELTS 16 – Test 1",
+    "volume": 16,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "658f704b-d5e3-4449-a870-dfd446cbe240",
+        "lesson_id": 516,
+        "lesson_name": "Cam16 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-1-section-1-2022-12-28-23-21-22/0-ielts-cambridge-16-test-1-section-1.mp3",
+        "challenges_count": 81
+      },
+      {
+        "part": 2,
+        "id": "31c1bf69-1afa-44eb-82bf-675727de3e37",
+        "lesson_id": 517,
+        "lesson_name": "Cam16 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-1-section-2-2022-12-28-23-22-39/0-ielts-cambridge-16-test-1-section-2.mp3",
+        "challenges_count": 69
+      },
+      {
+        "part": 3,
+        "id": "c01e0991-ca28-47a4-afa3-dacc6c4a6698",
+        "lesson_id": 518,
+        "lesson_name": "Cam16 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-1-part-3-2022-12-29-23-38-48/0-ielts-cambridge-16-test-1-part-3.mp3",
+        "challenges_count": 82
+      },
+      {
+        "part": 4,
+        "id": "4782ec42-e556-4f9e-aad6-fd6d141a17eb",
+        "lesson_id": 519,
+        "lesson_name": "Cam16 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-1-part-4-2022-12-29-23-41-43/0-ielts-cambridge-16-test-1-part-4.mp3",
+        "challenges_count": 67
+      }
+    ],
+    "total_challenges": 299
+  },
+  {
+    "test_id": "cam16-test-2",
+    "test_name": "Cambridge IELTS 16 – Test 2",
+    "volume": 16,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "ebee2034-5edf-477d-9fb9-58e427d0f451",
+        "lesson_id": 520,
+        "lesson_name": "Cam16 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-2-part-1-2022-12-31-23-02-16/0-ielts-cambridge-16-test-2-part-1.mp3",
+        "challenges_count": 74
+      },
+      {
+        "part": 2,
+        "id": "506f3a49-73da-444b-9db9-f74dfa4c922c",
+        "lesson_id": 521,
+        "lesson_name": "Cam16 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-2-part-2-2022-12-31-23-03-19/0-ielts-cambridge-16-test-2-part-2.mp3",
+        "challenges_count": 70
+      },
+      {
+        "part": 3,
+        "id": "54726683-719e-415f-8e01-ba50d5071375",
+        "lesson_id": 522,
+        "lesson_name": "Cam16 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-2-part-3-2022-12-31-23-06-59/0-ielts-cambridge-16-test-2-part-3.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 4,
+        "id": "a0f44869-e8eb-470a-a820-17ff035ba5bc",
+        "lesson_id": 523,
+        "lesson_name": "Cam16 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-2-part-4-2022-12-31-23-09-44/0-ielts-cambridge-16-test-2-part-4.mp3",
+        "challenges_count": 72
+      }
+    ],
+    "total_challenges": 301
+  },
+  {
+    "test_id": "cam16-test-3",
+    "test_name": "Cambridge IELTS 16 – Test 3",
+    "volume": 16,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "649637e8-e238-4653-a7c4-6236e165bda1",
+        "lesson_id": 524,
+        "lesson_name": "Cam16 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-3-part-1-2023-01-02-23-49-11/0-ielts-cambridge-16-test-3-part-1.mp3",
+        "challenges_count": 84
+      },
+      {
+        "part": 2,
+        "id": "9e383a43-1b1e-4a54-a00c-fc63b6ed3493",
+        "lesson_id": 525,
+        "lesson_name": "Cam16 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-3-part-2-2023-01-02-23-50-08/0-ielts-cambridge-16-test-3-part-2.mp3",
+        "challenges_count": 65
+      },
+      {
+        "part": 3,
+        "id": "068a0e7d-566a-43b8-93ee-6a7eda5d3f1a",
+        "lesson_id": 526,
+        "lesson_name": "Cam16 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-3-part-3-2023-01-04-23-20-43/0-ielts-cambridge-16-test-3-part-3.mp3",
+        "challenges_count": 68
+      },
+      {
+        "part": 4,
+        "id": "34f3fccf-eed0-4426-b6fe-c0817b26c4f3",
+        "lesson_id": 527,
+        "lesson_name": "Cam16 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-3-part-4-2023-01-04-23-21-37/0-ielts-cambridge-16-test-3-part-4.mp3",
+        "challenges_count": 77
+      }
+    ],
+    "total_challenges": 294
+  },
+  {
+    "test_id": "cam16-test-4",
+    "test_name": "Cambridge IELTS 16 – Test 4",
+    "volume": 16,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "5bab47fd-f71d-42f0-aa57-4c2e59ff8568",
+        "lesson_id": 529,
+        "lesson_name": "Cam16 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-4-part-1-2023-01-05-22-48-14/0-ielts-cambridge-16-test-4-part-1.mp3",
+        "challenges_count": 90
+      },
+      {
+        "part": 2,
+        "id": "88f7b517-f0bf-49fd-a570-4a5c9a63c7a7",
+        "lesson_id": 530,
+        "lesson_name": "Cam16 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-4-part-2-2023-01-05-22-49-38/0-ielts-cambridge-16-test-4-part-2.mp3",
+        "challenges_count": 68
+      },
+      {
+        "part": 3,
+        "id": "3e3d0e63-18c3-4115-ab72-2565919d371e",
+        "lesson_id": 531,
+        "lesson_name": "Cam16 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-4-part-3-2023-01-06-22-59-44/0-ielts-cambridge-16-test-4-part-3.mp3",
+        "challenges_count": 93
+      },
+      {
+        "part": 4,
+        "id": "8223e45b-de8f-4a7f-be62-9e37cb35f4a1",
+        "lesson_id": 532,
+        "lesson_name": "Cam16 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-16-test-4-part-4-2023-01-06-23-00-56/0-ielts-cambridge-16-test-4-part-4.mp3",
+        "challenges_count": 90
+      }
+    ],
+    "total_challenges": 341
+  },
+  {
+    "test_id": "cam17-test-1",
+    "test_name": "Cambridge IELTS 17 – Test 1",
+    "volume": 17,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "4c94f46b-c9af-4cf1-9ab3-b35666f5a087",
+        "lesson_id": 500,
+        "lesson_name": "Cam17 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-1-section-1-2022-12-19-21-22-35/0-ielts-cambridge-17-test-1-section-1.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 2,
+        "id": "56985efb-1241-4558-acfb-2ba74220210d",
+        "lesson_id": 501,
+        "lesson_name": "Cam17 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-1-section-2-2022-12-19-21-30-15/0-ielts-cambridge-17-test-1-section-2.mp3",
+        "challenges_count": 63
+      },
+      {
+        "part": 3,
+        "id": "da3fa1cc-fed4-437d-bafb-f81d45e1204b",
+        "lesson_id": 502,
+        "lesson_name": "Cam17 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-1-section-3-2022-12-19-21-31-08/0-ielts-cambridge-17-test-1-section-3.mp3",
+        "challenges_count": 93
+      },
+      {
+        "part": 4,
+        "id": "07c7cce2-c05c-4561-b9a1-4e7ea9601cd7",
+        "lesson_id": 503,
+        "lesson_name": "Cam17 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-1-section-4-2022-12-19-21-31-59/0-ielts-cambridge-17-test-1-section-4.mp3",
+        "challenges_count": 62
+      }
+    ],
+    "total_challenges": 296
+  },
+  {
+    "test_id": "cam17-test-2",
+    "test_name": "Cambridge IELTS 17 – Test 2",
+    "volume": 17,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "70d8f097-9121-4d8a-a534-61d17a78e223",
+        "lesson_id": 504,
+        "lesson_name": "Cam17 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-2-section-1-2022-12-22-23-05-46/0-ielts-cambridge-17-test-2-section-1.mp3",
+        "challenges_count": 101
+      },
+      {
+        "part": 2,
+        "id": "6225a51a-b276-42c2-9944-25932aabc416",
+        "lesson_id": 505,
+        "lesson_name": "Cam17 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-2-section-2-2022-12-22-23-07-09/0-ielts-cambridge-17-test-2-section-2.mp3",
+        "challenges_count": 59
+      },
+      {
+        "part": 3,
+        "id": "70988a46-2a7d-4f05-babb-fb742bfc64c6",
+        "lesson_id": 506,
+        "lesson_name": "Cam17 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-2-section-3-2022-12-22-23-08-18/0-ielts-cambridge-17-test-2-section-3.mp3",
+        "challenges_count": 79
+      },
+      {
+        "part": 4,
+        "id": "9df0f555-e529-4941-bbe8-a7539e1fc778",
+        "lesson_id": 507,
+        "lesson_name": "Cam17 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-2-section-4-2022-12-22-23-09-10/0-ielts-cambridge-17-test-2-section-4.mp3",
+        "challenges_count": 70
+      }
+    ],
+    "total_challenges": 309
+  },
+  {
+    "test_id": "cam17-test-3",
+    "test_name": "Cambridge IELTS 17 – Test 3",
+    "volume": 17,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "737d428a-3345-4393-aadb-91dcae75bba6",
+        "lesson_id": 508,
+        "lesson_name": "Cam17 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-3-section-1-2022-12-24-21-56-42/0-ielts-cambridge-17-test-3-section-1.mp3",
+        "challenges_count": 81
+      },
+      {
+        "part": 2,
+        "id": "ae1ff660-69d7-4400-91a8-ddad8c340235",
+        "lesson_id": 509,
+        "lesson_name": "Cam17 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-3-section-2-2022-12-24-21-57-42/0-ielts-cambridge-17-test-3-section-2.mp3",
+        "challenges_count": 79
+      },
+      {
+        "part": 3,
+        "id": "e0ff5984-8171-4af3-b3aa-0f03df58633b",
+        "lesson_id": 510,
+        "lesson_name": "Cam17 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-3-section-3-2022-12-26-23-49-24/0-ielts-cambridge-17-test-3-section-3.mp3",
+        "challenges_count": 90
+      },
+      {
+        "part": 4,
+        "id": "476138a6-3f4a-4bf5-a678-de5dbad9dd0b",
+        "lesson_id": 511,
+        "lesson_name": "Cam17 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-3-section-4-2022-12-26-23-51-21/0-ielts-cambridge-17-test-3-section-4.mp3",
+        "challenges_count": 61
+      }
+    ],
+    "total_challenges": 311
+  },
+  {
+    "test_id": "cam17-test-4",
+    "test_name": "Cambridge IELTS 17 – Test 4",
+    "volume": 17,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "f3cc5ddc-53b7-4a8d-b9ff-8eb967410b21",
+        "lesson_id": 512,
+        "lesson_name": "Cam17 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-4-section-1-2022-12-27-23-51-16/0-ielts-cambridge-17-test-4-section-1.mp3",
+        "challenges_count": 70
+      },
+      {
+        "part": 2,
+        "id": "52d2d57b-8537-4a86-88f8-5a77b3aba6ff",
+        "lesson_id": 513,
+        "lesson_name": "Cam17 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-4-section-2-2022-12-27-23-52-14/0-ielts-cambridge-17-test-4-section-2.mp3",
+        "challenges_count": 64
+      },
+      {
+        "part": 3,
+        "id": "c95a3702-6cd6-40f3-8f90-2147162751ca",
+        "lesson_id": 514,
+        "lesson_name": "Cam17 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-4-section-3-2022-12-27-23-53-23/0-ielts-cambridge-17-test-4-section-3.mp3",
+        "challenges_count": 88
+      },
+      {
+        "part": 4,
+        "id": "87d5ce12-21f9-418b-9df9-e1b647eea334",
+        "lesson_id": 515,
+        "lesson_name": "Cam17 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-17-test-4-section-4-2022-12-27-23-54-16/0-ielts-cambridge-17-test-4-section-4.mp3",
+        "challenges_count": 80
+      }
+    ],
+    "total_challenges": 302
+  },
+  {
+    "test_id": "cam18-test-1",
+    "test_name": "Cambridge IELTS 18 – Test 1",
+    "volume": 18,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "8532229e-8ef7-435f-8e4e-d610af06791b",
+        "lesson_id": 767,
+        "lesson_name": "Cam18 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-1-part-1-2023-06-16-20-37-03/0-ielts-cambridge-18-test-1-part-1.mp3",
+        "challenges_count": 78
+      },
+      {
+        "part": 2,
+        "id": "1a498a81-9ba6-4408-9954-0da746e46fdf",
+        "lesson_id": 768,
+        "lesson_name": "Cam18 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-1-part-2-2023-06-16-20-37-30/0-ielts-cambridge-18-test-1-part-2.mp3",
+        "challenges_count": 52
+      },
+      {
+        "part": 3,
+        "id": "5e017def-6bc9-4ad7-9dbb-eff1d154ac72",
+        "lesson_id": 769,
+        "lesson_name": "Cam18 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-1-part-3-2023-06-16-20-38-01/0-ielts-cambridge-18-test-1-part-3.mp3",
+        "challenges_count": 77
+      },
+      {
+        "part": 4,
+        "id": "259fc243-d0f1-4022-848b-b9b8f1feea96",
+        "lesson_id": 770,
+        "lesson_name": "Cam18 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-1-part-4-2023-06-16-20-38-26/0-ielts-cambridge-18-test-1-part-4.mp3",
+        "challenges_count": 74
+      }
+    ],
+    "total_challenges": 281
+  },
+  {
+    "test_id": "cam18-test-2",
+    "test_name": "Cambridge IELTS 18 – Test 2",
+    "volume": 18,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "1132d101-52ce-4eed-8cb9-82c6b57194b3",
+        "lesson_id": 771,
+        "lesson_name": "Cam18 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-2-part-1-2023-06-17-08-35-16/0-ielts-cambridge-18-test-2-part-1.mp3",
+        "challenges_count": 88
+      },
+      {
+        "part": 2,
+        "id": "25c7ab32-b64e-43c0-af05-683956b65153",
+        "lesson_id": 772,
+        "lesson_name": "Cam18 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-2-part-2-2023-06-17-08-35-41/0-ielts-cambridge-18-test-2-part-2.mp3",
+        "challenges_count": 58
+      },
+      {
+        "part": 3,
+        "id": "8ca0c0fe-d100-4e5f-846d-c115df4f7f2a",
+        "lesson_id": 773,
+        "lesson_name": "Cam18 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-2-part-3-2023-06-17-08-35-59/0-ielts-cambridge-18-test-2-part-3.mp3",
+        "challenges_count": 82
+      },
+      {
+        "part": 4,
+        "id": "da8f5a58-244e-4c98-882c-5b2fdaeb586e",
+        "lesson_id": 774,
+        "lesson_name": "Cam18 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-2-part-4-2023-06-17-08-36-24/0-ielts-cambridge-18-test-2-part-4.mp3",
+        "challenges_count": 57
+      }
+    ],
+    "total_challenges": 285
+  },
+  {
+    "test_id": "cam18-test-3",
+    "test_name": "Cambridge IELTS 18 – Test 3",
+    "volume": 18,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "323ea529-8fc9-423e-b84d-fe1927e4f542",
+        "lesson_id": 775,
+        "lesson_name": "Cam18 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-3-part-1-2023-06-17-11-12-53/0-ielts-cambridge-18-test-3-part-1.mp3",
+        "challenges_count": 87
+      },
+      {
+        "part": 2,
+        "id": "f147ba70-d426-4759-91f4-e501a7b7d9df",
+        "lesson_id": 776,
+        "lesson_name": "Cam18 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-3-part-2-2023-06-17-11-13-24/0-ielts-cambridge-18-test-3-part-2.mp3",
+        "challenges_count": 66
+      },
+      {
+        "part": 3,
+        "id": "be483b79-2e4c-43cc-af70-00bc78909de7",
+        "lesson_id": 777,
+        "lesson_name": "Cam18 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-3-part-3-2023-06-17-11-13-46/0-ielts-cambridge-18-test-3-part-3.mp3",
+        "challenges_count": 67
+      },
+      {
+        "part": 4,
+        "id": "dfc67fbd-08b9-44f3-828a-32082f71377c",
+        "lesson_id": 778,
+        "lesson_name": "Cam18 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-3-part-4-2023-06-17-11-14-20/0-ielts-cambridge-18-test-3-part-4.mp3",
+        "challenges_count": 65
+      }
+    ],
+    "total_challenges": 285
+  },
+  {
+    "test_id": "cam18-test-4",
+    "test_name": "Cambridge IELTS 18 – Test 4",
+    "volume": 18,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "e23a1579-ac9e-4f95-92e0-3d262e7000f6",
+        "lesson_id": 779,
+        "lesson_name": "Cam18 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-4-part-1-2023-06-17-19-16-42/0-ielts-cambridge-18-test-4-part-1.mp3",
+        "challenges_count": 80
+      },
+      {
+        "part": 2,
+        "id": "8a94f440-ffe9-44b9-aae3-0ab99984a896",
+        "lesson_id": 780,
+        "lesson_name": "Cam18 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-4-part-2-2023-06-17-19-17-08/0-ielts-cambridge-18-test-4-part-2.mp3",
+        "challenges_count": 69
+      },
+      {
+        "part": 3,
+        "id": "93609dd2-d6c1-4c58-b905-ac4386ef9ced",
+        "lesson_id": 781,
+        "lesson_name": "Cam18 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-4-part-3-2023-06-17-19-17-33/0-ielts-cambridge-18-test-4-part-3.mp3",
+        "challenges_count": 77
+      },
+      {
+        "part": 4,
+        "id": "554ab35b-6d4e-4392-92aa-3bc0271d389a",
+        "lesson_id": 782,
+        "lesson_name": "Cam18 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/ielts-cambridge-18-test-4-part-4-2023-06-17-19-17-54/0-ielts-cambridge-18-test-4-part-4.mp3",
+        "challenges_count": 74
+      }
+    ],
+    "total_challenges": 300
+  },
+  {
+    "test_id": "cam19-test-1",
+    "test_name": "Cambridge IELTS 19 – Test 1",
+    "volume": 19,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "b1914933-b5dd-4ff5-879f-8403eb65e445",
+        "lesson_id": 1383,
+        "lesson_name": "Cam19 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-1-part-1-2024-06-29-10-03-27/0-cam19-test-1-part-1_v3.mp3",
+        "challenges_count": 67
+      },
+      {
+        "part": 2,
+        "id": "130063e5-0a78-48d7-b11d-3013503453da",
+        "lesson_id": 1384,
+        "lesson_name": "Cam19 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-1-part-2-2024-06-29-10-03-49/0-cam19-test-1-part-2_v3.mp3",
+        "challenges_count": 64
+      },
+      {
+        "part": 3,
+        "id": "c9fe0751-ca2c-4e02-af54-8256606d17cd",
+        "lesson_id": 1385,
+        "lesson_name": "Cam19 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-1-part-3-2024-06-29-10-08-13/0-cam19-test-1-part-3_v3.mp3",
+        "challenges_count": 75
+      },
+      {
+        "part": 4,
+        "id": "2c22127d-209c-4d50-8c15-90cc7cc70ec7",
+        "lesson_id": 1386,
+        "lesson_name": "Cam19 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-1-part-4-2024-06-29-10-09-49/0-cam19-test-1-part-4_v3.mp3",
+        "challenges_count": 62
+      }
+    ],
+    "total_challenges": 268
+  },
+  {
+    "test_id": "cam19-test-2",
+    "test_name": "Cambridge IELTS 19 – Test 2",
+    "volume": 19,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "3dd12799-6e7d-45c8-ba9c-e92b97410a8d",
+        "lesson_id": 1370,
+        "lesson_name": "Cam19 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam-19-test-2-part-1-2024-06-21-00-20-11/0-cam-19-test-2-part-1_v3.mp3",
+        "challenges_count": 93
+      },
+      {
+        "part": 2,
+        "id": "0faaba7f-f1f0-41ab-b875-2b75b794524b",
+        "lesson_id": 1371,
+        "lesson_name": "Cam19 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam-19-test-2-part-2-2024-06-21-00-21-14/0-cam-19-test-2-part-2_v3.mp3",
+        "challenges_count": 62
+      },
+      {
+        "part": 3,
+        "id": "1c744212-c4ab-49c6-a0a0-00251808b226",
+        "lesson_id": 1372,
+        "lesson_name": "Cam19 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam-19-test-2-part-3-2024-06-21-00-22-45/0-cam-19-test-2-part-3_v3.mp3",
+        "challenges_count": 84
+      },
+      {
+        "part": 4,
+        "id": "4dbdf6e6-a974-4441-b88b-dcfb6389d772",
+        "lesson_id": 1373,
+        "lesson_name": "Cam19 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam-19-test-2-part-4-2024-06-21-00-23-27/0-cam-19-test-2-part-4_v3.mp3",
+        "challenges_count": 73
+      }
+    ],
+    "total_challenges": 312
+  },
+  {
+    "test_id": "cam19-test-3",
+    "test_name": "Cambridge IELTS 19 – Test 3",
+    "volume": 19,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "ca7cf269-8d52-4a2d-b97d-bb7e2da1d884",
+        "lesson_id": 1374,
+        "lesson_name": "Cam19 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-3-part-1-2024-06-22-00-23-25/0-cam19-test-3-part-1_v3.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 2,
+        "id": "e0e71a4c-2ba4-4660-b878-3e8dbdbdd689",
+        "lesson_id": 1375,
+        "lesson_name": "Cam19 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-3-part-12-2024-06-22-00-23-58/0-cam19-test-3-part-12_v3.mp3",
+        "challenges_count": 57
+      },
+      {
+        "part": 3,
+        "id": "12a69693-7fbe-40dd-8174-57aef7227335",
+        "lesson_id": 1377,
+        "lesson_name": "Cam19 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-3-part-3-2024-06-22-00-24-51/0-cam19-test-3-part-3_v3.mp3",
+        "challenges_count": 96
+      },
+      {
+        "part": 4,
+        "id": "c106c2e1-ff79-401d-a609-3173bf155485",
+        "lesson_id": 1378,
+        "lesson_name": "Cam19 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-3-part-4-2024-06-22-00-25-37/0-cam19-test-3-part-4_v3.mp3",
+        "challenges_count": 54
+      }
+    ],
+    "total_challenges": 292
+  },
+  {
+    "test_id": "cam19-test-4",
+    "test_name": "Cambridge IELTS 19 – Test 4",
+    "volume": 19,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "eaf17c4f-a452-41ca-939c-d6ce39e65a51",
+        "lesson_id": 1379,
+        "lesson_name": "Cam19 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-4-part-1-2024-06-24-00-31-45/0-cam19-test-4-part-1_v3.mp3",
+        "challenges_count": 87
+      },
+      {
+        "part": 2,
+        "id": "137806d3-c44d-4758-a5ee-c434580bc791",
+        "lesson_id": 1380,
+        "lesson_name": "Cam19 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-4-part-2-2024-06-24-00-32-18/0-cam19-test-4-part-2_v3.mp3",
+        "challenges_count": 65
+      },
+      {
+        "part": 3,
+        "id": "7b97a8bc-a812-4d94-bc3b-07b1b8e2413d",
+        "lesson_id": 1381,
+        "lesson_name": "Cam19 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-4-part-3-2024-06-24-00-32-41/0-cam19-test-4-part-3_v3.mp3",
+        "challenges_count": 104
+      },
+      {
+        "part": 4,
+        "id": "967dd7a9-393d-43c4-a171-8b925b715d09",
+        "lesson_id": 1382,
+        "lesson_name": "Cam19 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam19-test-4-part-4-2024-06-24-00-33-39/0-cam19-test-4-part-4_v3.mp3",
+        "challenges_count": 75
+      }
+    ],
+    "total_challenges": 331
+  },
+  {
+    "test_id": "cam20-test-1",
+    "test_name": "Cambridge IELTS 20 – Test 1",
+    "volume": 20,
+    "test_number": 1,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "97bab313-2904-486a-8157-0a1580544841",
+        "lesson_id": 2224,
+        "lesson_name": "Cam20 - Test 1 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-1-part-1-2025-07-21-19-05-23/0-cam20-test-1-part-1.mp3",
+        "challenges_count": 83
+      },
+      {
+        "part": 2,
+        "id": "fbe15e14-a7bd-4889-9ec5-cd9b2fac7d61",
+        "lesson_id": 2225,
+        "lesson_name": "Cam20 - Test 1 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-1-part-2-2025-07-21-19-05-54/0-cam20-test-1-part-2.mp3",
+        "challenges_count": 71
+      },
+      {
+        "part": 3,
+        "id": "5f17e91a-3eec-4efe-937c-9551847f54c4",
+        "lesson_id": 2226,
+        "lesson_name": "Cam20 - Test 1 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-1-part-3-2025-07-21-19-06-39/0-cam20-test-1-part-3.mp3",
+        "challenges_count": 83
+      },
+      {
+        "part": 4,
+        "id": "d0b1db3e-2125-48cc-832b-0e74ddccacf7",
+        "lesson_id": 2227,
+        "lesson_name": "Cam20 - Test 1 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-1-part-4-2025-07-21-19-10-47/0-cam20-test-1-part-4.mp3",
+        "challenges_count": 66
+      }
+    ],
+    "total_challenges": 303
+  },
+  {
+    "test_id": "cam20-test-2",
+    "test_name": "Cambridge IELTS 20 – Test 2",
+    "volume": 20,
+    "test_number": 2,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "924c7415-5f85-43de-92bc-d9b1bb2d635e",
+        "lesson_id": 2228,
+        "lesson_name": "Cam20 - Test 2 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-2-part-2-2025-07-21-19-13-52/0-cam20-test-2-part-2.mp3",
+        "challenges_count": 61
+      },
+      {
+        "part": 2,
+        "id": "9c3c03c3-baac-4378-98b2-3006ec5c34e0",
+        "lesson_id": 2229,
+        "lesson_name": "Cam20 - Test 2 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-2-part-2-2025-07-21-19-15-35/0-cam20-test-2-part-2.mp3",
+        "challenges_count": 65
+      },
+      {
+        "part": 3,
+        "id": "dcabe864-6166-4103-b07c-30fbad6f6e51",
+        "lesson_id": 2230,
+        "lesson_name": "Cam20 - Test 2 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-2-part-3-2025-07-21-19-42-10/0-cam20-test-2-part-3.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 4,
+        "id": "4f51c4db-1b5c-42be-a22a-3c0c4fe6a373",
+        "lesson_id": 2231,
+        "lesson_name": "Cam20 - Test 2 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-2-part-4-2025-07-21-19-42-58/0-cam20-test-2-part-4.mp3",
+        "challenges_count": 57
+      }
+    ],
+    "total_challenges": 268
+  },
+  {
+    "test_id": "cam20-test-3",
+    "test_name": "Cambridge IELTS 20 – Test 3",
+    "volume": 20,
+    "test_number": 3,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "d99b14cb-dff0-47ad-8a75-baabaae18aa9",
+        "lesson_id": 2232,
+        "lesson_name": "Cam20 - Test 3 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-3-part-1-2025-07-21-19-50-32/0-cam20-test-3-part-1.mp3",
+        "challenges_count": 70
+      },
+      {
+        "part": 2,
+        "id": "90a1fafc-f5a1-48a0-8165-ed3e0900b881",
+        "lesson_id": 2233,
+        "lesson_name": "Cam20 - Test 3 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-3-part-2-2025-07-21-19-55-31/0-cam20-test-3-part-2.mp3",
+        "challenges_count": 70
+      },
+      {
+        "part": 3,
+        "id": "60961588-ce10-4374-bc54-1e0d97f10f0e",
+        "lesson_id": 2234,
+        "lesson_name": "Cam20 - Test 3 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-3-part-3-2025-07-21-19-56-04/0-cam20-test-3-part-3.mp3",
+        "challenges_count": 75
+      },
+      {
+        "part": 4,
+        "id": "3e81612e-2d1a-466a-9466-f37d5044dc73",
+        "lesson_id": 2236,
+        "lesson_name": "Cam20 - Test 3 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-3-part-4-2025-07-21-19-57-36/0-cam20-test-3-part-4.mp3",
+        "challenges_count": 62
+      }
+    ],
+    "total_challenges": 277
+  },
+  {
+    "test_id": "cam20-test-4",
+    "test_name": "Cambridge IELTS 20 – Test 4",
+    "volume": 20,
+    "test_number": 4,
+    "has_audio": true,
+    "parts": [
+      {
+        "part": 1,
+        "id": "60c3c4bb-f7c2-48ae-a9fd-b3b3303780d2",
+        "lesson_id": 2237,
+        "lesson_name": "Cam20 - Test 4 - Part 1",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-4-part-1-2025-07-21-19-58-07/0-cam20-test-4-part-1.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 2,
+        "id": "590c073c-2161-4f9d-af30-d1ca581875bf",
+        "lesson_id": 2238,
+        "lesson_name": "Cam20 - Test 4 - Part 2",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-4-part-2-2025-07-21-19-58-32/0-cam20-test-4-part-2.mp3",
+        "challenges_count": 64
+      },
+      {
+        "part": 3,
+        "id": "8c4bae7a-ba94-48ae-9c6d-688745d13cdd",
+        "lesson_id": 2239,
+        "lesson_name": "Cam20 - Test 4 - Part 3",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-4-part-3-2025-07-21-19-58-57/0-cam20-test-4-part-3.mp3",
+        "challenges_count": 85
+      },
+      {
+        "part": 4,
+        "id": "0a7d7d0a-1008-4f39-a7c9-c1bef469db3f",
+        "lesson_id": 2240,
+        "lesson_name": "Cam20 - Test 4 - Part 4",
+        "audio_src": "https://dailydictation.com/upload/ielts-listening/cam20-test-4-part-4-2025-07-21-19-59-30/0-cam20-test-4-part-4.mp3",
+        "challenges_count": 62
+      }
+    ],
+    "total_challenges": 296
+  }
+]

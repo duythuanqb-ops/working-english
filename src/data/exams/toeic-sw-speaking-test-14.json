@@ -1,0 +1,118 @@
+{
+  "id": "toeic-sw-speaking-test-14",
+  "testNum": 14,
+  "title": "TOEIC SW Speaking Test 14 (Bản Gốc STUDY4)",
+  "category": "toeic-speaking",
+  "durationMinutes": 20,
+  "tasks": [
+    {
+      "id": "spk-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q2)",
+      "partName": "Đọc to đoạn văn (Read a Text Aloud)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 45,
+      "prompt": "Read the text aloud. You will be evaluated on pronunciation, intonation, and rhythm.",
+      "textToRead": "Dear Magic Kingdom Theme Park Guests! Due to the freezing weather, our amusement park will temporarily close for today. Our shopping malls, cafes, and gift shops will stay open for your convenience. We are offering complimentary tickets, so all of you can come back to our park again soon. Please visit our customer service center for your free tickets.",
+      "texts": [
+        "Dear Magic Kingdom Theme Park Guests! Due to the freezing weather, our amusement park will temporarily close for today. Our shopping malls, cafes, and gift shops will stay open for your convenience. We are offering complimentary tickets, so all of you can come back to our park again soon. Please visit our customer service center for your free tickets.",
+        "In local news, the mayor, Valeria Notton, announced the new fire prevention plan. At tonight’s annual conference, she said that the plan is designed to prevent future fires and protect Chicago residents, old architecture, and local businesses. Doyle Constructions will start the project at the end of April."
+      ],
+      "scoringFocus": [
+        "Ngắt nghỉ: Nghỉ ngắn ở dấu phẩy (,) và nghỉ rõ ở cuối câu (.)",
+        "Ngữ điệu câu liệt kê và câu hỏi.",
+        "Phát âm chuẩn xác các âm đuôi (-s, -ed, -tion)."
+      ]
+    },
+    {
+      "id": "spk-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q3 - Q4)",
+      "partName": "Miêu tả bức tranh (Describe a Picture)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 30,
+      "prompt": "Describe the picture on your screen in as much detail as possible.",
+      "photos": [
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-speaking-test-14/part2/q3.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Miêu tả bức tranh chi tiết về bối cảnh, con người, hành động và các chi tiết phụ.",
+          "sampleBand8Answer": "In this photograph, we observe an active and well-illuminated setting. In the foreground, people are focused on their individual tasks while interacting productively. In the middle ground, essential tools and work materials are neatly arranged across the table. In the background, the architectural background and natural lighting establish a modern and organized atmosphere. Overall, the entire scene conveys a strong sense of teamwork and efficiency."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-speaking-test-14/part2/q4.png",
+          "fallbackUrl": "/exams/fallbacks/speaking-office.jpg",
+          "imageDescription": "Miêu tả bức tranh chi tiết về bối cảnh, con người, hành động và các chi tiết phụ.",
+          "sampleBand8Answer": "In this photograph, we observe an active and well-illuminated setting. In the foreground, people are focused on their individual tasks while interacting productively. In the middle ground, essential tools and work materials are neatly arranged across the table. In the background, the architectural background and natural lighting establish a modern and organized atmosphere. Overall, the entire scene conveys a strong sense of teamwork and efficiency."
+        }
+      ]
+    },
+    {
+      "id": "spk-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q5 - Q7)",
+      "partName": "Trả lời câu hỏi tình huống (Respond to Questions)",
+      "scenario": "Imagine that an American marketing firm is doing research in your country. You have agreed to participate in a telephone interview about news coverage.",
+      "prepTimeSec": 3,
+      "questions": [
+        {
+          "qNum": "Question 5",
+          "question": "Where do you usually get the news, and how often do you check this news source?",
+          "modelAnswer": "I get the news mainly from reputable digital news websites and mobile apps, checking headlines once every morning."
+        },
+        {
+          "qNum": "Question 6",
+          "question": "What type of news is most interesting to you and why?",
+          "modelAnswer": "International business and technology news is the most captivating to me because it directly impacts global markets and career trends."
+        },
+        {
+          "qNum": "Question 7",
+          "question": "What is the most impressive news story that you have seen or heard recently? Describe this news story.",
+          "modelAnswer": "A recent news story that impressed me was the widespread breakthrough in renewable energy storage technologies, which can significantly reduce carbon emissions worldwide."
+        }
+      ]
+    },
+    {
+      "id": "spk-4",
+      "taskNum": 4,
+      "part": "Part 4 (Q8 - Q10)",
+      "partName": "Trả lời theo thông tin cho sẵn (Respond using Information Provided)",
+      "prepTimeSec": 45,
+      "scenario": "Bạn sẽ nhận được một lịch trình/thông tin công việc và trả lời 3 câu hỏi liên quan.",
+      "scheduleText": "Respond to questions using the information provided\nQuestion 8: I heard that we should apply for sales positions after lunch. Is this correct?\nQuestion 9: I guess that since it’s a full day event, you’re going to provide lunch. Can you tell me about the menu?\nQuestion 10: There will only be one workshop after the lunch break?",
+      "scheduleHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><div><p>Respond to questions using the information provided</p><p><img alt=\"\" src=\"/exams/toeic-sw-speaking-test-14/part4/schedule.png\" style=\"width: 624.00px; height: 362.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);\" title=\"\"/></p><p><span>Question 8: I heard that we should apply for sales positions after lunch. Is this correct? </span></p><p><span>Question 9: I guess that since it’s a full day event, you’re going to provide lunch. Can you tell me about the menu? </span></p><p><span>Question 10: There will only be one workshop after the lunch break? </span></p></div></div>\n</div>\n</div>\n</div>",
+      "questions": [
+        {
+          "qNum": "Question 8 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "According to the provided schedule, the event is scheduled to start promptly at 9:00 A.M. in the main auditorium."
+        },
+        {
+          "qNum": "Question 9 (15s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 15,
+          "modelAnswer": "Actually, that information is not correct. The session has been rescheduled to the morning, and all participants are invited to attend."
+        },
+        {
+          "qNum": "Question 10 (30s)",
+          "prepTimeSec": 3,
+          "speakTimeSec": 30,
+          "modelAnswer": "Certainly. There are two sessions scheduled in the afternoon: first, a workshop from 1:30 to 2:45 P.M., followed by a closing discussion at 3:00 P.M."
+        }
+      ]
+    },
+    {
+      "id": "spk-5",
+      "taskNum": 5,
+      "part": "Part 5 (Q11)",
+      "partName": "Trình bày quan điểm (Express an Opinion)",
+      "prepTimeSec": 45,
+      "speakTimeSec": 60,
+      "prompt": "Do you agree or disagree with this statement: “A good supervisor listens to all the employees on his or her team.”? State your opinion and give specific reasons to support it.",
+      "sampleBand8Answer": "I firmly support this stance for two key reasons. First, this approach grants individuals significant flexibility and helps reduce daily cognitive fatigue. Second, having such balanced conditions promotes sustained motivation and superior long-term performance. Therefore, I believe this is unquestionably the most effective choice."
+    }
+  ]
+}

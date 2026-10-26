@@ -1,0 +1,1702 @@
+{
+  "id": "ielts-ac-c1-t8",
+  "testNum": 8,
+  "collection": "Collection 1",
+  "type": "academic",
+  "title": "IELTS Academic Collection 1 Test 8 (Bản Gốc STUDY4)",
+  "category": "ielts-ac",
+  "durationMinutes": 165,
+  "questionsCount": 80,
+  "listening": {
+    "durationMinutes": 40,
+    "audioTracks": {
+      "part1": "/exams/ielts-ac-c1-t8/audio/p1.mp3",
+      "part2": "/exams/ielts-ac-c1-t8/audio/p2.mp3",
+      "part3": "/exams/ielts-ac-c1-t8/audio/p3.mp3",
+      "part4": "/exams/ielts-ac-c1-t8/audio/p4.mp3"
+    },
+    "parts": [
+      {
+        "partNum": 1,
+        "title": "Part 1",
+        "audioTrack": "/exams/ielts-ac-c1-t8/audio/p1.mp3",
+        "transcript": "",
+        "groups": []
+      }
+    ]
+  },
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1: Fishbourne Roman Palace",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.</span></p><p><b><span>Fishbourne Roman Palace</span></b></p><p><span>Fishbourne Roman Palace is in the village of Fishbourne in West Sussex, England. The site has a long history: grain stores belonging to the Roman army had been established there after the invasion, during the reign of the Roman Emperor Claudius in 43 AD. The palace itself came later, built around thirty years afterwards in the 1st century AD, following the Roman conquest of Britain. The rectangular palace was built around formal gardens, the northern half of which has been reconstructed. There were extensive alterations in the 2nd and 3rd centuries AD, with many of the original black-and-white mosaic floors being overlaid with more sophisticated coloured ones, including a perfectly preserved mosaic of a dolphin in the north wing. More alterations were in progress when the palace burnt down in around 270 AD, after which it was abandoned.</span></p><p><span>Local people had long believed that a Roman palace once existed in the area. However, it was not until 1960 that the archaeologist Barry Cunliffe of Oxford University first systematically excavated the site, after workmen had accidentally uncovered a wall while they were laying a water main. The Roman villa excavated by Cunliffe’s team was so grand that it became known as Fishbourne Roman Palace, and a museum was erected to preserve some of the remains. This is administered by the Sussex Archaeological Society.</span></p><p><span>In its day, the completed palace would have comprised four large wings with colonnaded fronts. The north and east wings consisted of suites of private rooms built around courtyards, with a monumental entrance in the middle of the east wing. In the north-east corner there was an assembly hall. The west wing contained state rooms, a large ceremonial reception room and a gallery. The south wing contained the owner’s private apartments. The palace included as many as fifty mosaic floors, under-floor central heating and a bathhouse. In size, Fishbourne Palace would have been approximately equivalent to some of the great Roman palaces of Italy, and was by far the largest known Roman residence north of the European Alps, at about 500 feet (150 m) square. A team of volunteers and professional archaeologists is involved in an ongoing archaeological excavation on the site of nearby, possibly military, buildings.</span></p><p><span>The first buildings to be erected on the site were constructed in the early part of the conquest in 43 AD. Later, two timber buildings were constructed, one with clay-and-mortar floors and plaster walls, which appears to have been a house of some comfort. These buildings were demolished in the 60s AD and replaced by a substantial stone house, which included colonnades and a bath suite. It has been suggested that the palace itself, incorporating the previous house in its south-east corner, was constructed around 73–75 AD. However, Dr Miles Russell of Bournemouth University re-interpreted the ground plan and the collection of objects found, and has suggested that, given the extremely close parallels with the imperial palace of Domitian in Rome, its construction may more plausibly date to after 92 AD.</span></p><p><span>With regard to who lived in Fishbourne Palace, there are a number of theories. For example, one proposed by Professor Cunliffe is that, in its early phase, the palace was the residence of Tiberius Claudius Cogidubnus, a local chieftain who supported the Romans and who may have been installed as king of a number of territories following the first stage of the conquest. Cogidubnus is known from a reference to his loyalty in Agricola, a work by the Roman writer Tacitus, and from an inscription commemorating a temple dedicated to the gods Neptune and Minerva found in the nearby city of Chichester. Another theory is that it was built for Sallustius Lucullus, a Roman governor of Britain in the late 1st century, who may have been the son of the British prince Adminius. Two inscriptions recording the presence of Lucullus have been found in Chichester, and the redating by Miles Russell suggests that, if the palace was designed for Lucullus, then it may have been in use for only a few years, as the Roman historian Suetonius records that Lucullus was executed by the Emperor Domitian in or shortly after 93 AD.</span></p><p><span>Additional theories suggest that either Verica, a British king of the Roman Empire in the years preceding the Claudian invasion, was the owner of the palace, or Tiberius Claudius Catuarus, following the recent discovery of a gold ring belonging to him. The palace outlasted the original owner, whoever he was, and was extensively re-planned early in the 2nd century AD and subdivided into a series of smaller apartments. Further redevelopment was begun in the late 3rd century AD, but these alterations were incomplete when the north wing was destroyed in a fire in around 270 AD. The damage was too great to repair, and the palace was abandoned and later dismantled.</span></p><p><span>A modern museum has been built by the Sussex Archaeological Society, incorporating most of the visible remains, including one wing of the palace. The gardens have been replanted using authentic plants from the Roman period.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Do the following statements agree with the information given in Reading Passage 1? In boxes 1–6 on your answer sheet, writeTRUE if the statement agrees with the informationFALSE if the statement contradicts the informationNOT GIVEN if there is no information on this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Do the following statements agree with the information given in Reading Passage 1? In boxes 1–6 on your answer sheet, write</span></p><p><span>TRUE if the statement agrees with the information</span></p><p><span>FALSE if the statement contradicts the information</span></p><p><span>NOT GIVEN if there is no information on this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310124",
+                "qNum": 1,
+                "type": "choice",
+                "question": "Fishbourne Palace was the first structure to be built on its site.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "310125",
+                "qNum": 2,
+                "type": "choice",
+                "question": "Fishbourne Palace was renovated more than once.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "310126",
+                "qNum": 3,
+                "type": "choice",
+                "question": "Fishbourne Palace was burnt down by local people.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "310127",
+                "qNum": 4,
+                "type": "choice",
+                "question": "Fishbourne Palace was larger than many Roman palaces in Italy.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "310128",
+                "qNum": 5,
+                "type": "choice",
+                "question": "Research is continuing in the area close to Fishbourne Palace.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "310129",
+                "qNum": 6,
+                "type": "choice",
+                "question": "Researchers agree on the identity of the person for whom Fishbourne Palace was constructed.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "1",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310124",
+                "qNum": 1,
+                "type": "choice",
+                "question": "Fishbourne Palace was the first structure to be built on its site.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "2",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310125",
+                "qNum": 2,
+                "type": "choice",
+                "question": "Fishbourne Palace was renovated more than once.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "3",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310126",
+                "qNum": 3,
+                "type": "choice",
+                "question": "Fishbourne Palace was burnt down by local people.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "4",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310127",
+                "qNum": 4,
+                "type": "choice",
+                "question": "Fishbourne Palace was larger than many Roman palaces in Italy.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "5",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310128",
+                "qNum": 5,
+                "type": "choice",
+                "question": "Research is continuing in the area close to Fishbourne Palace.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "6",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310129",
+                "qNum": 6,
+                "type": "choice",
+                "question": "Researchers agree on the identity of the person for whom Fishbourne Palace was constructed.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 7–13 on your answer sheet.Fishbourne PalaceConstruction• The first buildings on the site contained food for the (7)______.• The palace building surrounded (8)______.• In the 2nd and 3rd centuries colour was added to the (9)______ of the palace.Discovery• The palace was first discovered when a (10)______ was found.Possible inhabitants• Cogidubnus - he is named in several writings.• Sallustius Lucullus - he may have lived there until approximately (11)______ AD.• Verica - a British king.• Catuarus - his (12)______ was found there.Present Day• A (13)______ has been built on the site to help protect it.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 7–13 on your answer sheet.</span></p><p><b><span>Fishbourne Palace</span></b></p><p><b><span>Construction</span></b></p><p><span>• The first buildings on the site contained food for the (7)______.</span></p><p><span>• The palace building surrounded (8)______.</span></p><p><span>• In the 2nd and 3rd centuries colour was added to the (9)______ of the palace.</span></p><p><b><span>Discovery</span></b></p><p><span>• The palace was first discovered when a (10)______ was found.</span></p><p><b><span>Possible inhabitants</span></b></p><p><span>• Cogidubnus - he is named in several writings.</span></p><p><span>• Sallustius Lucullus - he may have lived there until approximately (11)______ AD.</span></p><p><span>• Verica - a British king.</span></p><p><span>• Catuarus - his (12)______ was found there.</span></p><p><b><span>Present Day</span></b></p><p><span>• A (13)______ has been built on the site to help protect it.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310130",
+                "qNum": 7,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Roman army",
+                "explanation": "Đáp án chuẩn: Roman army"
+              },
+              {
+                "qid": "310131",
+                "qNum": 8,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(formal) gardens",
+                "explanation": "Đáp án chuẩn: (formal) gardens"
+              },
+              {
+                "qid": "310132",
+                "qNum": 9,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(mosaic) floors",
+                "explanation": "Đáp án chuẩn: (mosaic) floors"
+              },
+              {
+                "qid": "310133",
+                "qNum": 10,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Wall",
+                "explanation": "Đáp án chuẩn: Wall"
+              },
+              {
+                "qid": "310134",
+                "qNum": 11,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "93/ninety-three",
+                "explanation": "Đáp án chuẩn: 93/ninety-three"
+              },
+              {
+                "qid": "310135",
+                "qNum": 12,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(gold) ring",
+                "explanation": "Đáp án chuẩn: (gold) ring"
+              },
+              {
+                "qid": "310136",
+                "qNum": 13,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(modern) museum",
+                "explanation": "Đáp án chuẩn: (modern) museum"
+              }
+            ]
+          },
+          {
+            "directions": "7",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310130",
+                "qNum": 7,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Roman army",
+                "explanation": "Đáp án chuẩn: Roman army"
+              }
+            ]
+          },
+          {
+            "directions": "8",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310131",
+                "qNum": 8,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(formal) gardens",
+                "explanation": "Đáp án chuẩn: (formal) gardens"
+              }
+            ]
+          },
+          {
+            "directions": "9",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310132",
+                "qNum": 9,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(mosaic) floors",
+                "explanation": "Đáp án chuẩn: (mosaic) floors"
+              }
+            ]
+          },
+          {
+            "directions": "10",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310133",
+                "qNum": 10,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Wall",
+                "explanation": "Đáp án chuẩn: Wall"
+              }
+            ]
+          },
+          {
+            "directions": "11",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310134",
+                "qNum": 11,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "93/ninety-three",
+                "explanation": "Đáp án chuẩn: 93/ninety-three"
+              }
+            ]
+          },
+          {
+            "directions": "12",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310135",
+                "qNum": 12,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(gold) ring",
+                "explanation": "Đáp án chuẩn: (gold) ring"
+              }
+            ]
+          },
+          {
+            "directions": "13",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310136",
+                "qNum": 13,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(modern) museum",
+                "explanation": "Đáp án chuẩn: (modern) museum"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2: The Return of Monkey Life",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 14–26, which are based on Reading Passage 2 below.</span></p><p><b><span>The Return of Monkey Life</span></b></p><p><i><span>Rainforest trees growing anew on Central American farmland are helping scientists find ways for </span></i><i><span>monkey</span></i><i><span> and agriculture to benefit one another.</span></i></p><p><b><span>A. </span></b><span>Hacienda La Pacifica, a remote working cattle ranch in Guanacaste Province of northern Costa Rica, has for decades been home to a community of mantled howler monkeys. Other native primates—white-faced capuchin monkeys and spider monkeys—were once common in this area too, but vanished after the Pan-American Highway was built nearby in the 1950s and most of the surrounding land was cleared for cattle-raising. At Hacienda La Pacifica, however, an enlightened ranch owner chose to leave some strips of native trees growing. He used these as windbreaks to protect both cattle and their food crops from dry-season winds. In the process, the farmer unwittingly founded a unique laboratory for the study of monkeys.</span></p><p><b><span>B. </span></b><span>Ken Glander, a primatologist from Duke University in the USA, is studying La Pacifica’s monkeys in an effort to understand the relationship between howlers and regenerating forests at the edges of grazing lands. Studying such disturbed woodlands is increasingly important because throughout much of the New World Tropics, these are the only forests left. In the 18th century, tropical dry forests once covered most of Central America, but by the 1980s less than two percent remained undisturbed, and less than one percent was protected.</span></p><p><b><span>C. </span></b><span>Howlers persist at La Pacifica, Glander explains, because they are leaf-eaters. They eat fruit when it is available but, unlike capuchin and spider monkeys, do not depend on large areas of fruiting trees. Glander is particularly interested in howlers’ ability to thrive on leaves loaded with toxins—poisonous substances designed to protect the plants. For leaf-eaters, long-term exposure to a specific plant toxin can increase their ability to neutralise the poisonous substances and absorb the leaf nutrients. Watching generations of howlers at La Pacifica has shown Glander that the monkeys keep their systems primed by sampling a variety of plants and then focusing on a small number of the most nutritious food items. The leaves that grow in regenerating forests, like those at La Pacifica, are actually more howler-friendly than those produced by the centuries-old trees that survive farther south. In younger forests, trees put most of their limited energy into growing wood, leaves and fruit, so they produce much lower levels of toxin than do well-established, old-growth trees.</span></p><p><b><span>D. </span></b><span>The value of maturing forests to primates is also a subject of study at Santa Rosa National Park, about 35 miles northwest of La Pacifica. Large areas of Santa Rosa’s forests had at one time been burnt to make space for cattle ranching and coffee farming, thereby devastating local monkey habitat. But in 1971, the government protected the area by designating it a national park, and species of indigenous trees which had been absent for decades began to invade the abandoned pastures. Capuchins were the first to begin using the reborn forests, followed by howlers. Eventually, even spider monkeys, fruit-eaters that need large areas of continuous forest, returned. In the first 28 years following protection of the area, the capuchin population doubled, while the number of howlers increased sevenfold.</span></p><p><b><span>E. </span></b><span>Some of the same traits that allow howlers to survive at La Pacifica also explain their population boom in Santa Rosa. Howler reproduction is faster than that of other native monkey species. They give birth for the first time at about 3.5 years of age, compared with seven years for capuchins, and eight or more for spider monkeys. Also, while a female spider monkey will have a baby about once every four years, well-fed howlers can produce an infant every two years. Another factor is diet. Howlers are very adaptable feeders and need only a comparatively small home range. Spider monkeys, on the other hand, need to occupy a huge home range. Also crucial is the fact that the leaves howlers eat hold plenty of water, so the monkeys can survive away from open streams and water-holes. This ability gives them a real advantage over capuchin and spider monkeys, which have suffered during the long, ongoing drought in the area.</span></p><p><b><span>F.</span></b><span> Alejandro Estrada, an ecologist at Estación de Biología Los Tuxtlas in Veracruz, Mexico, has been studying the ecology of a group of howler monkeys that thrive in a habitat totally altered by humans: a cacao plantation in Tabasco State, Mexico. Cacao plants need shade to grow, so 40 years ago the owners of Cholula Cacao Farm planted figs, monkey-pod and other tall trees to form a protective canopy over their crop. The howlers moved in about 25 years ago after nearby forests were cut. This strange habitat seems to support about as many monkeys as would a same-sized patch of wild forest. The howlers eat the leaves and fruit of the shade trees, leaving the valuable cacao pods alone.</span></p><p><b><span>G. </span></b><span>Estrada believes the monkeys bring under-appreciated benefits to such plantations, dispersing the seeds of fruits such as fig and other shade trees, and fertilising the soil. Spider monkeys also forage for fruit here, though they need nearby areas of forest to survive in the long term. He hopes that farmers will begin to see the advantages of associating with wild monkeys, which could include potential ecotourism projects. ‘Conservation is usually viewed as a conflict between farming practices and the need to preserve nature,’ Estrada says. ‘We’re moving away from that vision and beginning to consider ways in which commercial activities may become a tool for the conservation of primates in human-modified landscapes.’</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Reading Passage 2 has seven paragraphs, A–G. Which paragraph contains the following information? Write the correct letter A–G in boxes 14–17 on your answer sheet. NB You may use any letter more than once.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Reading Passage 2 has seven paragraphs, A–G. Which paragraph contains the following information? Write the correct letter A–G in boxes 14–17 on your answer sheet. NB You may use any letter more than once.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310137",
+                "qNum": 14,
+                "type": "input",
+                "question": "a reason why newer forests provide howlers with better feeding opportunities than older forests",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "310138",
+                "qNum": 15,
+                "type": "input",
+                "question": "a reference to a change in farmers’ attitudes towards wildlife",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              },
+              {
+                "qid": "310139",
+                "qNum": 16,
+                "type": "input",
+                "question": "a description of the means by which howlers select the best available diet for themselves",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "310140",
+                "qNum": 17,
+                "type": "input",
+                "question": "figures relating to the reduction of natural wildlife habitat over a period of time",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "14",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310137",
+                "qNum": 14,
+                "type": "input",
+                "question": "a reason why newer forests provide howlers with better feeding opportunities than older forests",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "15",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310138",
+                "qNum": 15,
+                "type": "input",
+                "question": "a reference to a change in farmers’ attitudes towards wildlife",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              }
+            ]
+          },
+          {
+            "directions": "16",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310139",
+                "qNum": 16,
+                "type": "input",
+                "question": "a description of the means by which howlers select the best available diet for themselves",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "17",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310140",
+                "qNum": 17,
+                "type": "input",
+                "question": "figures relating to the reduction of natural wildlife habitat over a period of time",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 18–21 on your answer sheet.Why do howlers have an advantage over other Central American monkeys?Unlike capuchin and spider monkeys, howlers can survive without relying on trees that bear (18)____, which allows them to occupy a relatively small habitat area. Their diet is more flexible, and they are able to tolerate leaves containing high levels of (19)______. Another factor behind howlers’ survival advantage is their more rapid rate of (20)______ compared with other native monkey species. Because their leaf-based diet provides sufficient water intake, they are also better able to withstand periods of (21)______.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete the summary below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 18–21 on your answer sheet.</span></p><p><b><span>Why do howlers have an advantage over other Central American monkeys?</span></b></p><p><span>Unlike capuchin and spider monkeys, howlers can survive without relying on trees that bear (18)____, which allows them to occupy a relatively small habitat area. Their diet is more flexible, and they are able to tolerate leaves containing high levels of (19)______. </span></p><p><span>Another factor behind howlers’ survival advantage is their more rapid rate of (20)______ compared with other native monkey species. Because their leaf-based diet provides sufficient water intake, they are also better able to withstand periods of (21)______.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310141",
+                "qNum": 18,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "fruit",
+                "explanation": "Đáp án chuẩn: fruit"
+              },
+              {
+                "qid": "310142",
+                "qNum": 19,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "toxins",
+                "explanation": "Đáp án chuẩn: toxins"
+              },
+              {
+                "qid": "310143",
+                "qNum": 20,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "reproduction",
+                "explanation": "Đáp án chuẩn: reproduction"
+              },
+              {
+                "qid": "310144",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "drought",
+                "explanation": "Đáp án chuẩn: drought"
+              }
+            ]
+          },
+          {
+            "directions": "18",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310141",
+                "qNum": 18,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "fruit",
+                "explanation": "Đáp án chuẩn: fruit"
+              }
+            ]
+          },
+          {
+            "directions": "19",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310142",
+                "qNum": 19,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "toxins",
+                "explanation": "Đáp án chuẩn: toxins"
+              }
+            ]
+          },
+          {
+            "directions": "20",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310143",
+                "qNum": 20,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "reproduction",
+                "explanation": "Đáp án chuẩn: reproduction"
+              }
+            ]
+          },
+          {
+            "directions": "21",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310144",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "drought",
+                "explanation": "Đáp án chuẩn: drought"
+              }
+            ]
+          },
+          {
+            "directions": "Look at the following features (Questions 22–26) and the list of locations below. Match each feature with the correct location, A, B or C. Write the correct letter, A, B or C, in boxes 22–26 on your answer sheet. NB You may use any letter more than once.List of LocationsA. Hacienda La PacificaB. Santa Rosa National ParkC. Cholula Cacao Farm",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Look at the following features (Questions 22–26) and the list of locations below. Match each feature with the correct location, A, B or C. Write the correct letter, A, B or C, in boxes 22–26 on your answer sheet. NB You may use any letter more than once.</span></p><p><b><span>List of Locations</span></b></p><p data-pool-key=\"A\"><span>A. Hacienda La Pacifica</span></p><p data-pool-key=\"B\"><span>B. Santa Rosa National Park</span></p><p data-pool-key=\"C\"><span>C. Cholula Cacao Farm</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310145",
+                "qNum": 22,
+                "type": "input",
+                "question": "It has seen the return of native tree species.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "310146",
+                "qNum": 23,
+                "type": "input",
+                "question": "It supports only one species of native monkey.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310147",
+                "qNum": 24,
+                "type": "input",
+                "question": "Its monkey population helps the agriculture of the area.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "310148",
+                "qNum": 25,
+                "type": "input",
+                "question": "It is home to populations of all three local monkey species.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "310149",
+                "qNum": 26,
+                "type": "input",
+                "question": "A major road was constructed, and much of the landscape was altered.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "22",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310145",
+                "qNum": 22,
+                "type": "input",
+                "question": "It has seen the return of native tree species.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "23",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310146",
+                "qNum": 23,
+                "type": "input",
+                "question": "It supports only one species of native monkey.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "24",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310147",
+                "qNum": 24,
+                "type": "input",
+                "question": "Its monkey population helps the agriculture of the area.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "25",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310148",
+                "qNum": 25,
+                "type": "input",
+                "question": "It is home to populations of all three local monkey species.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "26",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310149",
+                "qNum": 26,
+                "type": "input",
+                "question": "A major road was constructed, and much of the landscape was altered.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3: The benefits of learning an instrument",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</span></p><p><b><span>The benefits of learning an instrument</span></b></p><p><i><span>Studies show that learning a musical instrument can bring about significant improvements in your brain.</span></i></p><p><span>Are music lessons the way to get smarter? That’s what a lot of parents and experts believe: studying an instrument gives children an advantage in the development of their intellectual, perceptual, and cognitive skills. This may, however, turn out to be wishful thinking. Two highly convincing trials carried out recently have found no evidence to support this idea; the IQs of pre-school children who attended several weeks of music classes as part of these studies did not differ significantly from the IQs of those who had not.</span></p><p><span>But that does not mean that the advantages of learning to play music are limited to expressing yourself, impressing friends, or just having fun. A growing number of studies show that learning an instrument in childhood can do something perhaps more valuable for the brain: it can provide benefits as we age, in the form of an added defence against memory loss, cognitive decline, and impaired hearing. Not only that, you may well get those benefits even if you haven’t picked up your instrument in years, or decide to take up music for the first time in mid-life or beyond. According to neuropsychologist Brenda Hanna-Pladdy of Emory University in Atlanta, the time spent learning and practising specific types of motor control and coordination—each finger on each hand doing something different, and for wind and brass instruments, also using your mouth and breathing—contributes to the brain boost that shows up later in life.</span></p><p><span>You can even map the impact of musical training on the brain itself. In one study, Harvard neurologist Gottfried Schlaug found that the brains of adult professional musicians had a larger volume of grey matter than the brains of non-musicians had. Schlaug and colleagues also found that after 15 months of musical training in early childhood, structural brain changes associated with motor and auditory improvements begin to appear. ‘What’s unique about playing an instrument is that it requires a wide array of brain regions and cognitive functions to work together simultaneously, in both the right and left hemispheres of the brain,’ says Alison Balbag of the University of Southern California. ‘Playing music may be an efficient way to stimulate the brain,’ she says, ‘cutting across a broad swath of its regions and cognitive functions, and with ripple effects through the decades.’</span></p><p><span>More research is showing this might well be the case. In her first study on the subject, Hanna-Pladdy divided 70 healthy adults between the ages of 60 and 83 into three groups: musicians who had studied an instrument for at least ten years, those who had played between one and nine years, and a control group who had never learned an instrument. The group who had studied for at least ten years scored the highest when tested in such areas as non-verbal and visuo-spatial memory, naming objects, and taking in and adapting new information. Her follow-up study a year later confirmed those findings and further suggested that starting musical training before the age of nine and keeping at it for ten years or more may yield the greatest benefits. Interestingly, it was the group who had the lowest level of general education which showed the greatest gap in scores between those who had studied an instrument in childhood and those who had not. Hanna-Pladdy suspects that musical training could have made up for the lack of cognitive stimulation these people had.</span></p><p><span>Neuroscientist Nina Kraus of Northwestern University in Chicago has found still more positive effects of early musical training. She measured the electrical activity in the auditory brainstem of adults, aged 55 to 70, as they responded to the synthesised speech syllable ‘da’. Although none of the subjects had played a musical instrument in 40 years, those who had trained the longest—between four and fourteen years—responded the fastest. ‘That’s significant,’ says Kraus, ‘because hearing tends to decline as we age, including the ability to quickly and accurately discern consonants, a skill crucial to understanding and participating in conversation. If your nervous system is not keeping up with the timing necessary for encoding consonants, you will lose out on the flow and meaning of the conversation, and that can potentially create a downward spiral leading to a sense of social isolation,’ says Kraus. In addition, the fact that musical training appears to enhance auditory working memory might help reinforce in later life the memory capacity that facilitates verbal interaction.</span></p><p><span>In another study at the University of South Florida, assistant professor of music education Jennifer Bugos studied the impact of elementary piano instruction on adults between the ages of 60 and 85. After six months, those who had received piano lessons showed more robust gains in memory, verbal fluency, the speed at which they processed information, planning ability, and other cognitive functions compared with those who had not received the lessons. Bugos believes that playing an instrument has beneficial effects, regardless of how old the person is when he or she begins. ‘Musical training contains all the components of a cognitive training programme that sometimes are overlooked,’ she says. ‘And just as we work out our bodies, we should work out our minds.’</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Do the following statements agree with the claims of the writer in Reading Passage 3? In boxes 27-30 on your answer sheet, writeYES if the statement agrees with the claims of the writerNO if the statement contradicts the claims of the writerNOT GIVEN if it is impossible to say what the writer thinks about this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Do the following statements agree with the claims of the writer in Reading Passage 3? In boxes 27-30 on your answer sheet, write</span></p><p><span>YES if the statement agrees with the claims of the writer</span></p><p><span>NO if the statement contradicts the claims of the writer</span></p><p><span>NOT GIVEN if it is impossible to say what the writer thinks about this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310150",
+                "qNum": 27,
+                "type": "choice",
+                "question": "Many parents indicate that their children struggle to learn a musical instrument.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "310151",
+                "qNum": 28,
+                "type": "choice",
+                "question": "The findings of the recent research into pre-school children’s IQs are unreliable.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "explanation": "Đáp án chuẩn: NO"
+              },
+              {
+                "qid": "310152",
+                "qNum": 29,
+                "type": "choice",
+                "question": "The main reasons people take up an instrument are that they enjoy playing music and being creative.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "310153",
+                "qNum": 30,
+                "type": "choice",
+                "question": "Evidence about the long-term advantages of learning an instrument is increasing.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "explanation": "Đáp án chuẩn: YES"
+              }
+            ]
+          },
+          {
+            "directions": "27",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310150",
+                "qNum": 27,
+                "type": "choice",
+                "question": "Many parents indicate that their children struggle to learn a musical instrument.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "28",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310151",
+                "qNum": 28,
+                "type": "choice",
+                "question": "The findings of the recent research into pre-school children’s IQs are unreliable.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "explanation": "Đáp án chuẩn: NO"
+              }
+            ]
+          },
+          {
+            "directions": "29",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310152",
+                "qNum": 29,
+                "type": "choice",
+                "question": "The main reasons people take up an instrument are that they enjoy playing music and being creative.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "30",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310153",
+                "qNum": 30,
+                "type": "choice",
+                "question": "Evidence about the long-term advantages of learning an instrument is increasing.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "explanation": "Đáp án chuẩn: YES"
+              }
+            ]
+          },
+          {
+            "directions": "Choose the correct letter, A, B, C or D. Write the correct letter in boxes 31-35 on your answer sheet.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Choose the correct letter, A, B, C or D. Write the correct letter in boxes 31-35 on your answer sheet.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310154",
+                "qNum": 31,
+                "type": "choice",
+                "question": "The studies mentioned in the first paragraph",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "confirm a link between musical training and intelligence.",
+                    "full": "(A) confirm a link between musical training and intelligence."
+                  },
+                  {
+                    "key": "B",
+                    "text": "present misleading information about the value of learning an instrument.",
+                    "full": "(B) present misleading information about the value of learning an instrument."
+                  },
+                  {
+                    "key": "C",
+                    "text": "suggest that there are undiscovered benefits to studying music.",
+                    "full": "(C) suggest that there are undiscovered benefits to studying music."
+                  },
+                  {
+                    "key": "D",
+                    "text": "cast doubt on a belief about the effects of taking music lessons.",
+                    "full": "(D) cast doubt on a belief about the effects of taking music lessons."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "310155",
+                "qNum": 32,
+                "type": "choice",
+                "question": "According to the second paragraph, there may be many benefits to studying music,",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "even for those who begin learning in adulthood.",
+                    "full": "(A) even for those who begin learning in adulthood."
+                  },
+                  {
+                    "key": "B",
+                    "text": "providing the person learns the correct techniques.",
+                    "full": "(B) providing the person learns the correct techniques."
+                  },
+                  {
+                    "key": "C",
+                    "text": "especially if the person practises on a regular basis.",
+                    "full": "(C) especially if the person practises on a regular basis."
+                  },
+                  {
+                    "key": "D",
+                    "text": "particularly if the person plays a range of different instruments.",
+                    "full": "(D) particularly if the person plays a range of different instruments."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310156",
+                "qNum": 33,
+                "type": "choice",
+                "question": "The phrase ‘this might well be the case’ in the fourth paragraph suggests that",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "music lessons and long-term physical well-being may be connected.",
+                    "full": "(A) music lessons and long-term physical well-being may be connected."
+                  },
+                  {
+                    "key": "B",
+                    "text": "the ability to learn music may depend on neurological features.",
+                    "full": "(B) the ability to learn music may depend on neurological features."
+                  },
+                  {
+                    "key": "C",
+                    "text": "learning an instrument may have a lasting impact on brain function.",
+                    "full": "(C) learning an instrument may have a lasting impact on brain function."
+                  },
+                  {
+                    "key": "D",
+                    "text": "older people’s brains may be better suited to studying music than those of children.",
+                    "full": "(D) older people’s brains may be better suited to studying music than those of children."
+                  }
+                ],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "310157",
+                "qNum": 34,
+                "type": "choice",
+                "question": "Which aspect of playing an instrument was included in Hanna-Pladdy’s follow-up study but not in her first study?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the number of years that the person had played.",
+                    "full": "(A) the number of years that the person had played."
+                  },
+                  {
+                    "key": "B",
+                    "text": "at which age the person began having lessons.",
+                    "full": "(B) at which age the person began having lessons."
+                  },
+                  {
+                    "key": "C",
+                    "text": "the length of time since the person last played.",
+                    "full": "(C) the length of time since the person last played."
+                  },
+                  {
+                    "key": "D",
+                    "text": "how the person had practised as a child.",
+                    "full": "(D) how the person had practised as a child."
+                  }
+                ],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "310158",
+                "qNum": 35,
+                "type": "choice",
+                "question": "What do Hanna-Pladdy’s studies suggest about people’s general education?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Studying music compensates for an otherwise limited level of education.",
+                    "full": "(A) Studying music compensates for an otherwise limited level of education."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Learning to play an instrument improves educational performance.",
+                    "full": "(B) Learning to play an instrument improves educational performance."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Highly educated people are more likely to benefit from music training.",
+                    "full": "(C) Highly educated people are more likely to benefit from music training."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Level of education makes no difference to a person’s musical ability.",
+                    "full": "(D) Level of education makes no difference to a person’s musical ability."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "31",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310154",
+                "qNum": 31,
+                "type": "choice",
+                "question": "The studies mentioned in the first paragraph",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "confirm a link between musical training and intelligence.",
+                    "full": "(A) confirm a link between musical training and intelligence."
+                  },
+                  {
+                    "key": "B",
+                    "text": "present misleading information about the value of learning an instrument.",
+                    "full": "(B) present misleading information about the value of learning an instrument."
+                  },
+                  {
+                    "key": "C",
+                    "text": "suggest that there are undiscovered benefits to studying music.",
+                    "full": "(C) suggest that there are undiscovered benefits to studying music."
+                  },
+                  {
+                    "key": "D",
+                    "text": "cast doubt on a belief about the effects of taking music lessons.",
+                    "full": "(D) cast doubt on a belief about the effects of taking music lessons."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "32",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310155",
+                "qNum": 32,
+                "type": "choice",
+                "question": "According to the second paragraph, there may be many benefits to studying music,",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "even for those who begin learning in adulthood.",
+                    "full": "(A) even for those who begin learning in adulthood."
+                  },
+                  {
+                    "key": "B",
+                    "text": "providing the person learns the correct techniques.",
+                    "full": "(B) providing the person learns the correct techniques."
+                  },
+                  {
+                    "key": "C",
+                    "text": "especially if the person practises on a regular basis.",
+                    "full": "(C) especially if the person practises on a regular basis."
+                  },
+                  {
+                    "key": "D",
+                    "text": "particularly if the person plays a range of different instruments.",
+                    "full": "(D) particularly if the person plays a range of different instruments."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "33",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310156",
+                "qNum": 33,
+                "type": "choice",
+                "question": "The phrase ‘this might well be the case’ in the fourth paragraph suggests that",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "music lessons and long-term physical well-being may be connected.",
+                    "full": "(A) music lessons and long-term physical well-being may be connected."
+                  },
+                  {
+                    "key": "B",
+                    "text": "the ability to learn music may depend on neurological features.",
+                    "full": "(B) the ability to learn music may depend on neurological features."
+                  },
+                  {
+                    "key": "C",
+                    "text": "learning an instrument may have a lasting impact on brain function.",
+                    "full": "(C) learning an instrument may have a lasting impact on brain function."
+                  },
+                  {
+                    "key": "D",
+                    "text": "older people’s brains may be better suited to studying music than those of children.",
+                    "full": "(D) older people’s brains may be better suited to studying music than those of children."
+                  }
+                ],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "34",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310157",
+                "qNum": 34,
+                "type": "choice",
+                "question": "Which aspect of playing an instrument was included in Hanna-Pladdy’s follow-up study but not in her first study?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "the number of years that the person had played.",
+                    "full": "(A) the number of years that the person had played."
+                  },
+                  {
+                    "key": "B",
+                    "text": "at which age the person began having lessons.",
+                    "full": "(B) at which age the person began having lessons."
+                  },
+                  {
+                    "key": "C",
+                    "text": "the length of time since the person last played.",
+                    "full": "(C) the length of time since the person last played."
+                  },
+                  {
+                    "key": "D",
+                    "text": "how the person had practised as a child.",
+                    "full": "(D) how the person had practised as a child."
+                  }
+                ],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "35",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310158",
+                "qNum": 35,
+                "type": "choice",
+                "question": "What do Hanna-Pladdy’s studies suggest about people’s general education?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Studying music compensates for an otherwise limited level of education.",
+                    "full": "(A) Studying music compensates for an otherwise limited level of education."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Learning to play an instrument improves educational performance.",
+                    "full": "(B) Learning to play an instrument improves educational performance."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Highly educated people are more likely to benefit from music training.",
+                    "full": "(C) Highly educated people are more likely to benefit from music training."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Level of education makes no difference to a person’s musical ability.",
+                    "full": "(D) Level of education makes no difference to a person’s musical ability."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, in boxes 36-40 on your answer sheet.A. comparing the brains of people who had never played an instrument with those who played for a living.B. activating many different parts of the brain at the same time.C. teaching a group of older people to play an instrument.D. engaging complex physical skills.E. discovering which group of people becomes the best musicians.F. having played an instrument for a considerable length of time.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete each sentence with the correct ending, A-F, below. Write the correct letter, A-F, in boxes 36-40 on your answer sheet.</span></p><p data-pool-key=\"A\"><span>A. comparing the brains of people who had never played an instrument with those who played for a living.</span></p><p data-pool-key=\"B\"><span>B. activating many different parts of the brain at the same time.</span></p><p data-pool-key=\"C\"><span>C. teaching a group of older people to play an instrument.</span></p><p data-pool-key=\"D\"><span>D. engaging complex physical skills.</span></p><p data-pool-key=\"E\"><span>E. discovering which group of people becomes the best musicians.</span></p><p data-pool-key=\"F\"><span>F. having played an instrument for a considerable length of time.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310159",
+                "qNum": 36,
+                "type": "input",
+                "question": "Brenda Hanna-Pladdy believes musical training strengthens the brain by",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "310160",
+                "qNum": 37,
+                "type": "input",
+                "question": "The research undertaken by Gottfried Schlaug focused on",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310161",
+                "qNum": 38,
+                "type": "input",
+                "question": "According to Alison Balbag, playing an instrument is a unique experience because it involves",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "310162",
+                "qNum": 39,
+                "type": "input",
+                "question": "Nina Kraus believes there is a link between better hearing in later life and the experience of",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              },
+              {
+                "qid": "310163",
+                "qNum": 40,
+                "type": "input",
+                "question": "Jennifer Bugos’s study involved",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "36",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310159",
+                "qNum": 36,
+                "type": "input",
+                "question": "Brenda Hanna-Pladdy believes musical training strengthens the brain by",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "37",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310160",
+                "qNum": 37,
+                "type": "input",
+                "question": "The research undertaken by Gottfried Schlaug focused on",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "38",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310161",
+                "qNum": 38,
+                "type": "input",
+                "question": "According to Alison Balbag, playing an instrument is a unique experience because it involves",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "39",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310162",
+                "qNum": 39,
+                "type": "input",
+                "question": "Nina Kraus believes there is a link between better hearing in later life and the experience of",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              }
+            ]
+          },
+          {
+            "directions": "40",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310163",
+                "qNum": 40,
+                "type": "input",
+                "question": "Jennifer Bugos’s study involved",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "durationMinutes": 60,
+    "task1": {
+      "title": "Task 1: Report / Data Description",
+      "timeMinutes": 20,
+      "minWords": 150,
+      "prompt": "The chart and table below show the proportion of energy generated from renewable and non-renewable sources in selected OECD countries between 2000 and 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "sampleBand8Answer": "The chart and accompanying table illustrate the comparative distribution of electricity production from renewable and conventional non-renewable sources across four OECD member nations—namely Germany, Sweden, Canada, and Japan—over a twenty-year timeframe from 2000 to 2020.\n\nOverall, it is immediately apparent that all surveyed nations witnessed an upward trajectory in green energy adoption, with Sweden maintaining the foremost position in clean energy reliance throughout. Conversely, Japan continued to exhibit the lowest proportion of renewables despite moderate progress in the final decade.\n\nIn detail, Sweden commenced the period with 42% of its total energy coming from renewables in 2000, which subsequently expanded sharply to surpass 68% by 2020, driven primarily by investments in hydroelectric and wind installations. Canada similarly sustained high renewable dependency, starting at 56% and peaking at 64% by the end of the survey period.\n\nIn contrast, Germany underwent the most dramatic structural shift: renewable output represented a modest 8% in 2000 before quadrupling to approximately 39% in 2020 under comprehensive decarbonization initiatives. Japan, by comparison, began at just 7% and grew modestly to 18% in 2020, still leaving fossil and nuclear fuels to comprise the vast majority (82%) of its energy grid.",
+      "keyVocab": [
+        {
+          "word": "Upward trajectory",
+          "meaningVi": "Chiều hướng gia tăng rõ rệt"
+        },
+        {
+          "word": "Comparative distribution",
+          "meaningVi": "Phân bố đối chiếu"
+        },
+        {
+          "word": "Decarbonization initiatives",
+          "meaningVi": "Các sáng kiến giảm thải carbon"
+        }
+      ]
+    },
+    "task2": {
+      "title": "Task 2: Academic Essay",
+      "timeMinutes": 40,
+      "minWords": 250,
+      "prompt": "Some people believe that artificial intelligence and automation will bring massive unemployment and economic instability. Others argue that AI will foster innovation and create higher-value jobs. Discuss both views and give your own opinion.",
+      "sampleBand8Answer": "The rapid proliferation of artificial intelligence (AI) and robotic automation has ignited rigorous debate across global economic forums. While a considerable segment of the population expresses trepidation regarding widespread redundancy and fiscal volatility, others contend that this technological paradigm will unlock unprecedented productivity and cultivate novel vocational sectors. In my view, although transient displacement is inevitable, AI will ultimately function as a net positive catalyst for societal affluence.\n\nOn the one hand, apprehensions regarding job scarcity are grounded in historical precedent and empirical reality. In routine-intensive fields such as manufacturing, logistics, and entry-level clerical administration, autonomous algorithms execute quantitative computations and physical tasks with far greater velocity and precision than human operators. Consequently, unmitigated deployment without rigorous retraining frameworks risks marginalizing millions of low-skilled workers, thereby exacerbating wealth disparity and burdening public welfare reserves.\n\nOn the other hand, proponents persuasively assert that technological upheavals historically eliminate specific tasks rather than labor as a whole. By relieving human professionals of mundane, repetitive drudgery, automation creates capacity for higher-order cognitive domains such as ethical AI governance, specialized software architecture, and creative strategic consulting. Furthermore, empirical analyses indicate that machine-augmented industries stimulate secondary employment ecosystems—from renewable infrastructure to tailored biotechnology—which generate premium remuneration.\n\nIn conclusion, while the transition phase undeniably poses formidable challenges for specific occupational demographics, artificial intelligence represents a profound evolution rather than an existential crisis for the labor market. Governments and educational institutions must proactively orchestrate lifelong upskilling programs to ensure equitable participation in this automated era.",
+      "keyVocab": [
+        {
+          "word": "Proliferation",
+          "meaningVi": "Sự phát triển bùng nổ, nhân rộng"
+        },
+        {
+          "word": "Trepidation",
+          "meaningVi": "Sự lo âu, e sợ"
+        },
+        {
+          "word": "Remuneration",
+          "meaningVi": "Mức lương thưởng, thù lao"
+        }
+      ]
+    }
+  },
+  "speaking": {
+    "durationMinutes": 14,
+    "part1": {
+      "title": "Part 1: Introduction & Familiar Topics (4-5 mins)",
+      "topic": "Work, Technology, and City Life",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "What kind of work do you do, and what do you enjoy most about it?",
+          "sampleBand8": "I currently work as a senior software consultant for an international consultancy firm. What captivates me most is the intellectual challenge of engineering scalable architectural solutions that directly streamline daily operations for thousands of corporate end-users."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you prefer working individually or collaborating in a team?",
+          "sampleBand8": "While autonomous focus is indispensable for deep coding and analytical tasks, I generally thrive on teamwork. Collaborative brainstorming sessions consistently yield multifaceted perspectives that mitigate blind spots and elevate the overall caliber of our deliverables."
+        },
+        {
+          "qNum": 3,
+          "question": "How has technological progress transformed your hometown over recent years?",
+          "sampleBand8": "Remarkably so. Cashless digital payments and app-based public transportation have become completely ubiquitous, which has expedited municipal transit and significantly modernized the pace of urban living."
+        },
+        {
+          "qNum": 4,
+          "question": "Do you think you will continue living in your current city in the future?",
+          "sampleBand8": "Most definitely for the foreseeable future. The vibrant economic ecosystem, coupled with rich cultural amenities and extensive professional networks, makes it an ideal launchpad for my ongoing career trajectory."
+        }
+      ]
+    },
+    "part2": {
+      "title": "Part 2: Individual Long Turn / Cue Card (3-4 mins)",
+      "prepTimeSec": 60,
+      "speakTimeSec": 120,
+      "cueCard": {
+        "prompt": "Describe a memorable professional or academic achievement that you are proud of.",
+        "bullets": [
+          "What the achievement was",
+          "When and where it took place",
+          "What challenges you had to overcome",
+          "And explain why you felt so proud of this accomplishment."
+        ]
+      },
+      "sampleBand8Answer": "I would like to speak about a defining professional achievement from last year, when I successfully spearheaded the migration of our company's legacy customer management infrastructure to a secure cloud platform. This undertaking occurred over a grueling six-month period at our regional corporate headquarters.\n\nThe primary obstacle we confronted was the sheer complexity of legacy data formats, compounded by an unforgiving deployment deadline. We had to ensure zero downtime for over fifty thousand active global clients while synchronizing disparate legacy databases. Furthermore, midway through the project, several senior specialists had to quarantine due to seasonal health issues, which forced me to shoulder additional architectural duties and coordinate with offshore teams across multiple time zones.\n\nUltimately, the migration went live seamlessly without a single minute of service disruption. I felt immensely proud not only because the project cut infrastructure overhead by thirty percent, but because it substantiated my leadership capabilities under immense pressure and earned our team formal recognition from executive leadership."
+    },
+    "part3": {
+      "title": "Part 3: Two-way Discussion / Abstract Topics (4-5 mins)",
+      "topic": "Ambition, Workplace Recognition, and Leadership",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "Why do some individuals value intrinsic satisfaction over material rewards in their careers?",
+          "sampleBand8": "Because professional self-actualization provides enduring fulfillment that monetary incentives simply cannot replicate. When employees perceive that their daily contributions generate tangible societal impact, their engagement remains resilient even through arduous economic cycles."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you believe personal ambition always benefits an organization?",
+          "sampleBand8": "Not necessarily. While constructive ambition drives innovation and productivity, unbridled personal ambition can foster toxic internal rivalries, undermine collective cohesion, and incentivize unethical shortcuts."
+        },
+        {
+          "qNum": 3,
+          "question": "How has the definition of effective leadership evolved in the modern era?",
+          "sampleBand8": "Leadership has fundamentally transitioned from an authoritative, hierarchical command model to an empathetic, servant-leadership philosophy that emphasizes psychological safety, emotional intelligence, and inclusive mentorship."
+        }
+      ]
+    }
+  }
+}

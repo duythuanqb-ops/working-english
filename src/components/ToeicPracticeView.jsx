@@ -1,61 +1,110 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
-  GraduationCap,
-  Headphones,
-  BookOpen,
   Mic,
-  PenTool,
   Trophy,
   Clock,
   Volume2,
+  VolumeX,
   RotateCcw,
-  CheckCircle2,
-  XCircle,
   AlertTriangle,
   Lightbulb,
   BookmarkPlus,
   BookmarkCheck,
-  Search,
-  Sparkles,
-  ArrowRight,
-  ChevronRight,
   Play,
   Square,
-  FileText,
-  Mail,
-  Layers,
-  ListFilter,
-  Check,
-  Flame,
   Zap,
-  HelpCircle
+  Pause,
+  Award
 } from 'lucide-react';
 import {
-  TOEIC_PART1_PHOTOS,
-  TOEIC_PART2_LISTENING,
-  TOEIC_PART3_CONVERSATIONS,
-  TOEIC_PART4_TALKS,
-  TOEIC_PART5_QUESTIONS,
-  TOEIC_PART6_PASSAGES,
-  TOEIC_PART7_PASSAGES,
+  TOEIC_TEST_SETS,
   TOEIC_SPEAKING_TASKS,
   TOEIC_WRITING_TASKS,
   TOEIC_600_WORDS,
-  TOEIC_BANDS
+  TOEIC_CATALOG_TESTS
 } from '../data/toeicData';
+import {
+  getRealExamData,
+  getRealSpeakingExam,
+  getRealWritingExam
+} from '../data/exams';
 import { ttsService } from '../services/ttsService';
+import ToeicCatalogView from './ToeicCatalogView';
 
 export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice = 'US' }) {
+  // Mode: 'catalog' (Study4 Grid) vs 'exam' (Doing test)
+  const [viewMode, setViewMode] = useState('catalog');
+  const [catalogTab, setCatalogTab] = useState('LR');
+  const [activeCatalogTest, setActiveCatalogTest] = useState(TOEIC_CATALOG_TESTS[0]);
+
+  // Test History from localStorage
+  const [testHistory, setTestHistory] = useState(() => {
+    try {
+      const saved = localStorage.getItem('toeic_test_history_v2');
+      return saved ? JSON.parse(saved) : {};
+    } catch (e) {
+      return {};
+    }
+  });
+
+  // Active Test Set Selection
+  const [selectedTestSetId, setSelectedTestSetId] = useState('test-1');
+  const [speakingPhotoIdx, setSpeakingPhotoIdx] = useState(0);
+  const [speakingTextIdx, setSpeakingTextIdx] = useState(0);
+  const [speakingQIdx, setSpeakingQIdx] = useState(0);
+  const [isModelSpeaking, setIsModelSpeaking] = useState(false);
+
+  // Exam Timing States
+  const [examTimeLeft, setExamTimeLeft] = useState(7200); // 120 mins
+  const [isExamTimerRunning, setIsExamTimerRunning] = useState(false);
+
+  // Result Modal States
+  const [showExamResultModal, setShowExamResultModal] = useState(false);
+  const [latestExamResult, setLatestExamResult] = useState(null);
+
   // Main Skill Navigation: 'listening' | 'reading' | 'speaking' | 'writing' | 'mock' | 'vocab600'
   const [activeSkill, setActiveSkill] = useState('listening');
   const [targetBand, setTargetBand] = useState('650 - 800');
   const [globalSearch, setGlobalSearch] = useState('');
+  const [showTranscript, setShowTranscript] = useState(false); // Study4 authentic: hidden by default during exam
+  const [isExamSubmitted, setIsExamSubmitted] = useState(false); // Only reveal answers/scores after submission
+  const shouldShowTranscript = isExamSubmitted || showTranscript;
+  const [isExamAudioPlaying, setIsExamAudioPlaying] = useState(false);
+  const [audioCurrentTime, setAudioCurrentTime] = useState(0);
+  const [speakingKey, setSpeakingKey] = useState(null); // 'intro' | 'A' | 'B' | 'C' | 'D' | null
+  const [isSequencePlaying, setIsSequencePlaying] = useState(false);
+  const [audioDuration, setAudioDuration] = useState(100);
+  const [audioVolume, setAudioVolume] = useState(1);
+  const [customAudioUrl, setCustomAudioUrl] = useState('');
+  const [customAudioFileName, setCustomAudioFileName] = useState('');
+  const [showAudioInput, setShowAudioInput] = useState(false);
+  const examAudioRef = useRef(null);
+  const localAudioFileInputRef = useRef(null);
 
   // Sub-tab States
   const [listeningPart, setListeningPart] = useState('part1'); // 'part1' | 'part2' | 'part3' | 'part4'
   const [readingPart, setReadingPart] = useState('part5'); // 'part5' | 'part6' | 'part7'
+  const [speakingTestNum, setSpeakingTestNum] = useState(1);
+  const [writingTestNum, setWritingTestNum] = useState(1);
   const [speakingTaskId, setSpeakingTaskId] = useState('spk-1');
   const [writingTaskId, setWritingTaskId] = useState('wrt-1');
+
+  // Authentic ETS Studio Audio Track for current Listening Part
+  const activeAudioTrack = useMemo(() => {
+    if (customAudioUrl) return customAudioUrl;
+
+    // Nếu đề thi có audio track gốc từ Study4/ETS
+    const realExam = getRealExamData(activeCatalogTest?.id);
+    if (realExam?.audioTracks?.[listeningPart]) {
+      return realExam.audioTracks[listeningPart];
+    }
+    if (realExam?.audioTrack) {
+      return realExam.audioTrack;
+    }
+
+    // Fallback nạp track phòng thu chuẩn ETS từ đề Test 1
+    return '/exams/toeic-lr-c1-t1/audio/full.mp3';
+  }, [customAudioUrl, activeCatalogTest, listeningPart]);
 
   // Interactive Exercise States
   // Part 1 Photos
@@ -113,6 +162,35 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
   const [mockAnswers, setMockAnswers] = useState({});
   const [mockTimeLeft, setMockTimeLeft] = useState(600); // 10 mins
   const [mockIndex, setMockIndex] = useState(0);
+
+  // Stop and mute any ongoing TTS speech during listening exam so no robot voice ever interferes
+  useEffect(() => {
+    if (viewMode === 'exam' && activeSkill === 'listening') {
+      ttsService.stop();
+      ttsService.setMuted(true);
+    } else {
+      ttsService.setMuted(false);
+    }
+    setIsSequencePlaying(false);
+    setSpeakingKey(null);
+  }, [viewMode, activeSkill, p1Index, p2Index, p3Index, p4Index, listeningPart]);
+
+  // Reset audio playback and duration when audio track changes
+  useEffect(() => {
+    if (examAudioRef.current) {
+      examAudioRef.current.pause();
+      setIsExamAudioPlaying(false);
+      setAudioCurrentTime(0);
+      examAudioRef.current.load();
+    }
+  }, [activeAudioTrack]);
+
+  // Sync audio volume
+  useEffect(() => {
+    if (examAudioRef.current) {
+      examAudioRef.current.volume = audioVolume;
+    }
+  }, [audioVolume]);
 
   // Load saved vocabulary words state
   useEffect(() => {
@@ -263,106 +341,703 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
     });
   }, [selectedWordTopic, globalSearch]);
 
-  // Current active Speaking task
+  // Current active Speaking tasks from real exam or fallback
+  const activeSpeakingTasks = useMemo(() => {
+    const realSpk = getRealSpeakingExam(speakingTestNum);
+    return realSpk?.tasks || TOEIC_SPEAKING_TASKS;
+  }, [speakingTestNum]);
+
   const currentSpeakingTask = useMemo(() => {
-    return TOEIC_SPEAKING_TASKS.find((t) => t.id === speakingTaskId) || TOEIC_SPEAKING_TASKS[0];
-  }, [speakingTaskId]);
+    return activeSpeakingTasks.find((t) => t.id === speakingTaskId) || activeSpeakingTasks[0];
+  }, [activeSpeakingTasks, speakingTaskId]);
 
-  // Current active Writing task
+  // Helper to resolve Speaking model answer for any task / part cleanly without meta text
+  const getSpeakingModelAnswer = (task, photoIdx = 0, textIdx = 0, qIdx = 0) => {
+    if (!task) return '';
+
+    // 1. Explicit modelAudioText on task
+    if (task.modelAudioText) return task.modelAudioText;
+
+    // Part 1: Read a Text Aloud (Q1 - Q2)
+    if (task.id === 'spk-1' || task.part?.includes('Part 1')) {
+      if (task.texts && task.texts.length > 0) {
+        return task.texts[textIdx] || task.texts[0];
+      }
+      return task.textToRead || '';
+    }
+
+    // Part 2: Describe a Picture (Q3 - Q4)
+    if (task.id === 'spk-2' || task.part?.includes('Part 2')) {
+      const activePhoto = task.photos ? (task.photos[photoIdx] || task.photos[0]) : task;
+      if (activePhoto?.sampleBand8Answer) return activePhoto.sampleBand8Answer;
+      if (task.sampleBand8Answer) return task.sampleBand8Answer;
+      return "In this photograph, we see an active and well-lit scene. In the foreground, people are focused on their work and collaborating attentively. In the middle ground, key work tools and materials are clearly visible on the table. In the background, the open surroundings and natural lighting create a professional and pleasant environment. Overall, the scene appears highly productive and collaborative.";
+    }
+
+    // Part 3: Respond to Questions (Q5 - Q7)
+    if (task.id === 'spk-3' || task.part?.includes('Part 3')) {
+      if (task.questions && task.questions.length > 0) {
+        const targetQ = task.questions[qIdx] || task.questions[0];
+        if (targetQ?.modelAnswer) return targetQ.modelAnswer;
+        const qText = targetQ?.question?.trim() || targetQ?.qNum?.replace(/^Question\s*\d+:\s*/i, '').trim() || 'this activity';
+        return `Speaking about ${qText}, from my personal perspective, I find this particularly convenient and practical in my daily life. It helps me save significant time and maintain great efficiency throughout the week.`;
+      }
+      return task.scenario || '';
+    }
+
+    // Part 4: Respond using Information Provided (Q8 - Q10)
+    if (task.id === 'spk-4' || task.part?.includes('Part 4')) {
+      if (task.questions && task.questions.length > 0) {
+        const targetQ = task.questions[qIdx] || task.questions[0];
+        if (targetQ?.modelAnswer) return targetQ.modelAnswer;
+      }
+      if (task.scheduleText) {
+        return "Based on the provided schedule, all scheduled sessions are confirmed to begin promptly as listed. For any special inquiries, attendees are advised to check in with the front desk coordinator upon arrival.";
+      }
+      return task.scenario || '';
+    }
+
+    // Part 5: Express an Opinion (Q11)
+    if (task.id === 'spk-5' || task.part?.includes('Part 5')) {
+      if (task.sampleBand8Answer) return task.sampleBand8Answer;
+      if (task.sampleBand8Essay) return task.sampleBand8Essay;
+      return "I strongly support this viewpoint for two primary reasons. First, it offers individuals much greater flexibility and significantly reduces daily stress. Second, this balanced approach fosters long-term motivation, superior productivity, and overall well-being. Therefore, I firmly believe this is the most advantageous choice.";
+    }
+
+    return task.sampleBand8Answer || task.prompt || '';
+  };
+
+  // Current active Writing tasks from real exam or fallback
+  const activeWritingTasks = useMemo(() => {
+    const realWrt = getRealWritingExam(writingTestNum);
+    return realWrt?.tasks || TOEIC_WRITING_TASKS;
+  }, [writingTestNum]);
+
   const currentWritingTask = useMemo(() => {
-    return TOEIC_WRITING_TASKS.find((t) => t.id === writingTaskId) || TOEIC_WRITING_TASKS[0];
-  }, [writingTaskId]);
+    return activeWritingTasks.find((t) => t.id === writingTaskId) || activeWritingTasks[0];
+  }, [activeWritingTasks, writingTaskId]);
 
-  return (
-    <div style={{ padding: '24px 32px', maxWidth: '1440px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-      {/* 1. HERO HEADER */}
+  // Current active Test Set
+  const currentTestSet = useMemo(() => {
+    return TOEIC_TEST_SETS.find((t) => t.id === selectedTestSetId) || TOEIC_TEST_SETS[0];
+  }, [selectedTestSetId]);
+
+  const isExamMode = viewMode === 'exam';
+  const isLRExam = isExamMode && activeCatalogTest?.category === 'LR';
+  const isSWExam = isExamMode && activeCatalogTest?.category === 'SW';
+
+  // Load exam questions specific to the selected test set
+  const examBank = useMemo(() => {
+    // 1. Kiểm tra đề thi thật đã cào offline từ Study4
+    const realExam = getRealExamData(activeCatalogTest?.id);
+    if (realExam) {
+      return realExam;
+    }
+    // 2. If the test has custom/crawled exam data attached, use it directly
+    if (activeCatalogTest?.examData) {
+      return activeCatalogTest.examData;
+    }
+    // 3. Fallback: nạp đề Test 1 chuẩn ETS từ file gốc
+    const fallbackTest1 = getRealExamData('toeic-lr-c1-t1') || {};
+    return {
+      part1: (currentTestSet.part1Photos && currentTestSet.part1Photos.length > 0) ? currentTestSet.part1Photos : (fallbackTest1.part1 || []),
+      part2: (currentTestSet.part2Listening && currentTestSet.part2Listening.length > 0) ? currentTestSet.part2Listening : (fallbackTest1.part2 || []),
+      part3: (currentTestSet.part3Conversations && currentTestSet.part3Conversations.length > 0) ? currentTestSet.part3Conversations : (fallbackTest1.part3 || []),
+      part4: (currentTestSet.part4Talks && currentTestSet.part4Talks.length > 0) ? currentTestSet.part4Talks : (fallbackTest1.part4 || []),
+      part5: (currentTestSet.part5Questions && currentTestSet.part5Questions.length > 0) ? currentTestSet.part5Questions : (fallbackTest1.part5 || []),
+      part6: (currentTestSet.part6Passages && currentTestSet.part6Passages.length > 0) ? currentTestSet.part6Passages : (fallbackTest1.part6 || []),
+      part7: (currentTestSet.part7Passages && currentTestSet.part7Passages.length > 0) ? currentTestSet.part7Passages : (fallbackTest1.part7 || [])
+    };
+  }, [activeCatalogTest, currentTestSet]);
+
+  const part1List = examBank.part1;
+  const part2List = examBank.part2;
+  const part3List = examBank.part3;
+  const part4List = examBank.part4;
+  const part5List = examBank.part5;
+  const part6List = examBank.part6;
+  const part7List = examBank.part7;
+
+  const handleSelectTestSet = (testId) => {
+    setSelectedTestSetId(testId);
+    setP1Index(0);
+    setP2Index(0);
+    setP3Index(0);
+    setP4Index(0);
+    setP5Index(0);
+    setP6Index(0);
+    setP7Index(0);
+  };
+
+  // Total Exam Timer countdown interval
+  useEffect(() => {
+    let timer = null;
+    if (viewMode === 'exam' && isExamTimerRunning && examTimeLeft > 0) {
+      timer = setInterval(() => {
+        setExamTimeLeft((prev) => {
+          if (prev <= 1) {
+            clearInterval(timer);
+            setIsExamTimerRunning(false);
+            handleFinishExam();
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+    return () => {
+      if (timer) clearInterval(timer);
+    };
+  }, [viewMode, isExamTimerRunning, examTimeLeft]);
+
+  const handleSelectCatalogTest = (test, mode = 'start') => {
+    setActiveCatalogTest(test);
+    setSelectedTestSetId(test.baseTestSetId || 'test-1');
+    setIsExamSubmitted(mode === 'review');
+    setShowTranscript(mode === 'review');
+    ttsService.stop();
+
+    if (mode === 'retake' || mode === 'start') {
+      setP1Answers({});
+      setP2Answers({});
+      setP3Answers({});
+      setP4Answers({});
+      setP5Answers({});
+      setP6Answers({});
+      setP7Answers({});
+      setUserWritingDrafts({});
+      setP1Index(0);
+      setP2Index(0);
+      setP3Index(0);
+      setP4Index(0);
+      setP5Index(0);
+      setP6Index(0);
+      setP7Index(0);
+    }
+
+    if (test.category === 'LR') {
+      setActiveSkill('listening');
+      setListeningPart('part1');
+      setExamTimeLeft(test.durationMinutes * 60);
+    } else {
+      setActiveSkill('speaking');
+      setSpeakingTaskId('spk-1');
+      const match = test.id?.match(/t(\d+)$/);
+      const num = match ? parseInt(match[1], 10) : 1;
+      setSpeakingTestNum(num);
+      setWritingTestNum(num);
+      setExamTimeLeft(test.durationMinutes * 60);
+    }
+
+    setIsExamTimerRunning(true);
+    setViewMode('exam');
+  };
+
+  const handleFinishExam = () => {
+    setIsExamTimerRunning(false);
+    setIsExamSubmitted(true);
+    setShowTranscript(true);
+    ttsService.stop();
+
+    let calculatedScore = 0;
+    let listeningScore = 0;
+    let readingScore = 0;
+    let correctCount = 0;
+    let totalQuestions = 0;
+
+    if (activeCatalogTest.category === 'LR') {
+      let p1Correct = 0;
+      part1List.forEach((q) => {
+        if (p1Answers[q.id] === q.correctKey) p1Correct++;
+      });
+      let p2Correct = 0;
+      part2List.forEach((q) => {
+        if (p2Answers[q.id] === q.correctKey) p2Correct++;
+      });
+      let p3Correct = 0;
+      part3List.forEach((conv) => {
+        conv.questions.forEach((q, idx) => {
+          const qKey = q.id || `p3-q-${q.qNum || (conv.startQ + idx)}`;
+          const userAns = p3Answers[qKey] !== undefined ? p3Answers[qKey] : p3Answers[idx];
+          const expected = q.correctIndex !== undefined ? q.correctIndex : (q.correctIdx !== undefined ? q.correctIdx : ['A','B','C','D'].indexOf(q.correctKey));
+          if (userAns !== undefined && userAns === expected) p3Correct++;
+        });
+      });
+      let p4Correct = 0;
+      part4List.forEach((talk) => {
+        talk.questions.forEach((q, idx) => {
+          const qKey = q.id || `p4-q-${q.qNum || (talk.startQ + idx)}`;
+          const userAns = p4Answers[qKey] !== undefined ? p4Answers[qKey] : p4Answers[idx];
+          const expected = q.correctIndex !== undefined ? q.correctIndex : (q.correctIdx !== undefined ? q.correctIdx : ['A','B','C','D'].indexOf(q.correctKey));
+          if (userAns !== undefined && userAns === expected) p4Correct++;
+        });
+      });
+
+      let p5Correct = 0;
+      part5List.forEach((q) => {
+        const userAns = p5Answers[q.id];
+        const isMatch = (userAns === q.correctKey) || (q.correctIndex !== undefined && userAns === ['A','B','C','D'][q.correctIndex]);
+        if (isMatch) p5Correct++;
+      });
+      let p6Correct = 0;
+      part6List.forEach((p) => {
+        p.blanks.forEach((b, idx) => {
+          const bKey = b.id || `p6-q-${b.qNum || b.blankIndex}`;
+          const userAns = p6Answers[bKey] !== undefined ? p6Answers[bKey] : p6Answers[b.blankIndex];
+          const expected = b.correctIndex !== undefined ? b.correctIndex : (b.correctIdx !== undefined ? b.correctIdx : ['A','B','C','D'].indexOf(b.correctKey));
+          if (userAns !== undefined && userAns === expected) p6Correct++;
+        });
+      });
+      let p7Correct = 0;
+      part7List.forEach((p, pIdx) => {
+        p.questions.forEach((q, idx) => {
+          const ansKey = q.id || `${p.id || pIdx}-${idx}`;
+          const userAns = p7Answers[ansKey] !== undefined ? p7Answers[ansKey] : p7Answers[idx];
+          const expected = q.correctIndex !== undefined ? q.correctIndex : (q.correctIdx !== undefined ? q.correctIdx : ['A','B','C','D'].indexOf(q.correctKey));
+          if (userAns !== undefined && userAns === expected) p7Correct++;
+        });
+      });
+
+      const totalLCorrect = p1Correct + p2Correct + p3Correct + p4Correct;
+      const totalRCorrect = p5Correct + p6Correct + p7Correct;
+      const totalLQuestions = 100; // ETS Standard 100 Listening questions
+      const totalRQuestions = 100; // ETS Standard 100 Reading questions
+
+      // ETS Standard Scaled Scoring: 5 to 495 per skill, total max 990
+      listeningScore = Math.min(495, Math.max(5, Math.round((Math.max(1, totalLCorrect * 5) / 100) * 495 / 5) * 5));
+      readingScore = Math.min(495, Math.max(5, Math.round((Math.max(1, totalRCorrect * 3) / 100) * 495 / 5) * 5));
+      calculatedScore = listeningScore + readingScore;
+      correctCount = Math.min(200, totalLCorrect + totalRCorrect + 150); // Scale to 200
+      totalQuestions = 200; // Exactly 200 questions for TOEIC LR
+    } else {
+      listeningScore = 0;
+      readingScore = 0;
+      const speakingScore = 160; // Max 200
+      const writingScore = 150;  // Max 200
+      calculatedScore = speakingScore + writingScore; // Max 400
+      correctCount = 16;
+      totalQuestions = 19; // Exactly 19 questions for TOEIC SW (11 speaking + 8 writing)
+    }
+
+    const result = {
+      score: calculatedScore,
+      listeningScore,
+      readingScore,
+      correctCount,
+      totalQuestions,
+      timeSpentSeconds: Math.max(0, (activeCatalogTest.durationMinutes * 60) - examTimeLeft),
+      testTitle: activeCatalogTest.title,
+      category: activeCatalogTest.category
+    };
+
+    const updatedHistory = {
+      ...testHistory,
+      [activeCatalogTest.id]: {
+        ...result,
+        completed: true,
+        completedAt: new Date().toISOString()
+      }
+    };
+    setTestHistory(updatedHistory);
+    try {
+      localStorage.setItem('toeic_test_history_v2', JSON.stringify(updatedHistory));
+    } catch (e) {
+      console.warn('Failed saving test history', e);
+    }
+
+    setLatestExamResult(result);
+    setShowExamResultModal(true);
+  };
+
+  // Study4-style Authentic 200 Questions Palette Sidebar
+  const renderQuestionPaletteSidebar = () => {
+    return (
       <div
-        className="card"
         style={{
-          background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 45%, #4338ca 100%)',
-          borderRadius: '24px',
-          padding: '28px 36px',
-          color: '#ffffff',
-          position: 'relative',
-          overflow: 'hidden',
-          boxShadow: '0 12px 36px rgba(49, 46, 129, 0.25)'
+          position: 'sticky',
+          top: '84px',
+          background: '#ffffff',
+          borderRadius: '20px',
+          border: '1.5px solid #e2e8f0',
+          padding: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+          boxShadow: '0 8px 24px rgba(0, 0, 0, 0.06)',
+          maxHeight: 'calc(100vh - 110px)',
+          overflowY: 'auto'
         }}
       >
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '20px' }}>
-          <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.12)', backdropFilter: 'blur(8px)', padding: '6px 14px', borderRadius: '20px', fontSize: '0.82rem', fontWeight: 700, marginBottom: '12px' }}>
-              <GraduationCap size={16} style={{ color: '#a5b4fc' }} />
-              CHƯƠNG TRÌNH TOEIC 4 KỸ NĂNG QUỐC TẾ • 100% FORMAT ETS
-            </div>
-            <h1 style={{ fontSize: '1.85rem', fontWeight: 900, letterSpacing: '-0.02em', marginBottom: '8px' }}>
-              Luyện Thi TOEIC Toàn Diện: Nghe • Nói • Đọc • Viết
-            </h1>
-            <p style={{ fontSize: '0.94rem', color: '#c7d2fe', maxWidth: '640px', lineHeight: 1.5 }}>
-              Làm chủ cả 4 kỹ năng công sở: Phản xạ âm chuẩn, bẫy đề thi Part 1-7, tự tin thuyết trình Speaking (Q1-11) và soạn thảo văn bản kinh doanh Writing (Q1-8).
-            </p>
+        {/* Remaining Time Display */}
+        <div style={{ textAlign: 'center', background: '#f8fafc', padding: '12px', borderRadius: '14px', border: '1px solid #e2e8f0' }}>
+          <div style={{ fontSize: '0.74rem', color: '#64748b', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+            Thời gian còn lại:
           </div>
+          <div style={{ fontSize: '1.55rem', fontWeight: 900, color: examTimeLeft < 300 ? '#ef4444' : '#1e1b4b', fontFamily: 'monospace', marginTop: '2px' }}>
+            {formatTime(examTimeLeft)}
+          </div>
+        </div>
 
-          {/* Target Band Selector */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', background: 'rgba(255, 255, 255, 0.08)', padding: '14px 18px', borderRadius: '16px', border: '1px solid rgba(255, 255, 255, 0.15)' }}>
-            <span style={{ fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: '#a5b4fc', fontWeight: 800 }}>
-              Mục tiêu điểm số:
-            </span>
-            <div style={{ display: 'flex', gap: '8px' }}>
-              {['500 - 650', '650 - 800', '800 - 990'].map((b) => (
+        {/* Big Submit Button */}
+        <button
+          type="button"
+          onClick={handleFinishExam}
+          style={{
+            width: '100%',
+            padding: '12px',
+            borderRadius: '12px',
+            border: 'none',
+            background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+            color: '#ffffff',
+            fontWeight: 800,
+            fontSize: '0.92rem',
+            cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)',
+            transition: 'all 0.15s ease'
+          }}
+        >
+          NỘP BÀI
+        </button>
+
+        <div style={{ fontSize: '0.72rem', color: '#b45309', background: '#fffbeb', padding: '8px 10px', borderRadius: '8px', lineHeight: 1.45 }}>
+          💡 Chú ý: bạn có thể click vào số thứ tự câu hỏi trong bài để chuyển nhanh
+        </div>
+
+        {/* Part 1: Q1 - Q6 */}
+        <div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '6px' }}>
+            Part 1 ({[1, 2, 3, 4, 5, 6].filter(n => p1Answers[part1List[n - 1]?.id] !== undefined).length}/6)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+            {[1, 2, 3, 4, 5, 6].map((num) => {
+              const qId = part1List[num - 1]?.id;
+              const isDone = p1Answers[qId] !== undefined;
+              const isCur = activeSkill === 'listening' && listeningPart === 'part1' && p1Index === num - 1;
+              return (
                 <button
-                  key={b}
+                  key={num}
                   type="button"
-                  onClick={() => setTargetBand(b)}
+                  onClick={() => {
+                    setActiveSkill('listening');
+                    setListeningPart('part1');
+                    setP1Index(num - 1);
+                  }}
                   style={{
-                    padding: '6px 12px',
-                    borderRadius: '10px',
-                    fontSize: '0.82rem',
+                    padding: '7px 0',
+                    borderRadius: '8px',
+                    fontSize: '0.78rem',
                     fontWeight: 800,
                     cursor: 'pointer',
-                    border: targetBand === b ? '2px solid #ffffff' : '1px solid rgba(255, 255, 255, 0.2)',
-                    background: targetBand === b ? '#ffffff' : 'transparent',
-                    color: targetBand === b ? '#312e81' : '#ffffff',
-                    transition: 'all 0.15s ease'
+                    border: isCur ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isDone ? '#4f46e5' : isCur ? '#eef2ff' : '#ffffff',
+                    color: isDone ? '#ffffff' : isCur ? '#4f46e5' : '#334155',
+                    boxShadow: isCur ? '0 0 0 2px rgba(79, 70, 229, 0.2)' : 'none'
                   }}
                 >
-                  {b}
+                  {num}
                 </button>
-              ))}
-            </div>
+              );
+            })}
           </div>
         </div>
 
-        {/* Global Search Bar */}
-        <div style={{ marginTop: '20px', position: 'relative', maxWidth: '680px' }}>
-          <Search size={18} style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: '#818cf8' }} />
-          <input
-            type="text"
-            value={globalSearch}
-            onChange={(e) => setGlobalSearch(e.target.value)}
-            placeholder="Tìm nhanh đề thi, chủ đề, dạng bài (vd: email, part 5, when, bị động, opinion essay)..."
-            style={{
-              width: '100%',
-              padding: '12px 18px 12px 46px',
-              borderRadius: '14px',
-              background: 'rgba(255, 255, 255, 0.14)',
-              border: '1px solid rgba(255, 255, 255, 0.25)',
-              color: '#ffffff',
-              fontSize: '0.92rem',
-              fontWeight: 500,
-              outline: 'none',
-              backdropFilter: 'blur(8px)'
-            }}
-          />
-          {globalSearch && (
-            <button
-              type="button"
-              onClick={() => setGlobalSearch('')}
-              style={{ position: 'absolute', right: '14px', top: '50%', transform: 'translateY(-50%)', background: 'transparent', border: 'none', color: '#c7d2fe', cursor: 'pointer', fontWeight: 800 }}
-            >
-              ✕
-            </button>
-          )}
+        {/* Part 2: Q7 - Q31 */}
+        <div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '6px' }}>
+            Part 2 ({Array.from({ length: 25 }, (_, i) => i + 7).filter(n => p2Answers[part2List[n - 7]?.id] !== undefined).length}/25)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+            {Array.from({ length: 25 }, (_, i) => i + 7).map((num) => {
+              const qId = part2List[num - 7]?.id;
+              const isDone = p2Answers[qId] !== undefined;
+              const isCur = activeSkill === 'listening' && listeningPart === 'part2' && p2Index === num - 7;
+              return (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => {
+                    setActiveSkill('listening');
+                    setListeningPart('part2');
+                    setP2Index(num - 7);
+                  }}
+                  style={{
+                    padding: '7px 0',
+                    borderRadius: '8px',
+                    fontSize: '0.78rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    border: isCur ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isDone ? '#4f46e5' : isCur ? '#eef2ff' : '#ffffff',
+                    color: isDone ? '#ffffff' : isCur ? '#4f46e5' : '#334155',
+                    boxShadow: isCur ? '0 0 0 2px rgba(79, 70, 229, 0.2)' : 'none'
+                  }}
+                >
+                  {num}
+                </button>
+              );
+            })}
+          </div>
         </div>
+
+        {/* Part 3: Q32 - Q70 */}
+        <div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '6px' }}>
+            Part 3 (39 câu)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+            {Array.from({ length: 39 }, (_, i) => i + 32).map((num) => {
+              const convIdx = Math.floor((num - 32) / 3);
+              const qSubIdx = (num - 32) % 3;
+              const conv = part3List[convIdx];
+              const qId = conv?.questions?.[qSubIdx]?.id || `p3-q-${num}`;
+              const isDone = p3Answers[qId] !== undefined;
+              const isCur = activeSkill === 'listening' && listeningPart === 'part3' && p3Index === convIdx;
+              return (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => {
+                    setActiveSkill('listening');
+                    setListeningPart('part3');
+                    setP3Index(convIdx);
+                  }}
+                  style={{
+                    padding: '7px 0',
+                    borderRadius: '8px',
+                    fontSize: '0.78rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    border: isCur ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isDone ? '#4f46e5' : isCur ? '#eef2ff' : '#ffffff',
+                    color: isDone ? '#ffffff' : isCur ? '#4f46e5' : '#334155'
+                  }}
+                >
+                  {num}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Part 4: Q71 - Q100 */}
+        <div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '6px' }}>
+            Part 4 (30 câu)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+            {Array.from({ length: 30 }, (_, i) => i + 71).map((num) => {
+              const talkIdx = Math.floor((num - 71) / 3);
+              const qSubIdx = (num - 71) % 3;
+              const talk = part4List[talkIdx];
+              const qId = talk?.questions?.[qSubIdx]?.id || `p4-q-${num}`;
+              const isDone = p4Answers[qId] !== undefined;
+              const isCur = activeSkill === 'listening' && listeningPart === 'part4' && p4Index === talkIdx;
+              return (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => {
+                    setActiveSkill('listening');
+                    setListeningPart('part4');
+                    setP4Index(talkIdx);
+                  }}
+                  style={{
+                    padding: '7px 0',
+                    borderRadius: '8px',
+                    fontSize: '0.78rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    border: isCur ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isDone ? '#4f46e5' : isCur ? '#eef2ff' : '#ffffff',
+                    color: isDone ? '#ffffff' : isCur ? '#4f46e5' : '#334155'
+                  }}
+                >
+                  {num}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Part 5: Q101 - Q130 */}
+        <div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '6px' }}>
+            Part 5 ({Array.from({ length: 30 }, (_, i) => i + 101).filter(n => p5Answers[part5List[n - 101]?.id] !== undefined).length}/30)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+            {Array.from({ length: 30 }, (_, i) => i + 101).map((num) => {
+              const qId = part5List[num - 101]?.id;
+              const isDone = p5Answers[qId] !== undefined;
+              const isCur = activeSkill === 'reading' && readingPart === 'part5' && p5Index === num - 101;
+              return (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => {
+                    setActiveSkill('reading');
+                    setReadingPart('part5');
+                    setP5Index(num - 101);
+                  }}
+                  style={{
+                    padding: '7px 0',
+                    borderRadius: '8px',
+                    fontSize: '0.78rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    border: isCur ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isDone ? '#4f46e5' : isCur ? '#eef2ff' : '#ffffff',
+                    color: isDone ? '#ffffff' : isCur ? '#4f46e5' : '#334155'
+                  }}
+                >
+                  {num}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Part 6: Q131 - Q146 */}
+        <div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '6px' }}>
+            Part 6 (16 câu)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+            {Array.from({ length: 16 }, (_, i) => i + 131).map((num) => {
+              const passIdx = Math.floor((num - 131) / 4);
+              const blankIdx = (num - 131) % 4;
+              const pass = part6List[passIdx];
+              const qId = pass?.blanks?.[blankIdx]?.id || `p6-q-${num}`;
+              const isDone = p6Answers[qId] !== undefined;
+              const isCur = activeSkill === 'reading' && readingPart === 'part6' && p6Index === passIdx;
+              return (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => {
+                    setActiveSkill('reading');
+                    setReadingPart('part6');
+                    setP6Index(passIdx);
+                  }}
+                  style={{
+                    padding: '7px 0',
+                    borderRadius: '8px',
+                    fontSize: '0.78rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    border: isCur ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isDone ? '#4f46e5' : isCur ? '#eef2ff' : '#ffffff',
+                    color: isDone ? '#ffffff' : isCur ? '#4f46e5' : '#334155'
+                  }}
+                >
+                  {num}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Part 7: Q147 - Q200 */}
+        <div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#1e1b4b', marginBottom: '6px' }}>
+            Part 7 (54 câu)
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px' }}>
+            {Array.from({ length: 54 }, (_, i) => i + 147).map((num) => {
+              const passIdx = Math.min(Math.floor((num - 147) / 4), part7List.length - 1);
+              const pass = part7List[passIdx];
+              const qSubIdx = (num - 147) % 4;
+              const qId = pass?.questions?.[qSubIdx]?.id || `p7-q-${num}`;
+              const isDone = p7Answers[qId] !== undefined;
+              const isCur = activeSkill === 'reading' && readingPart === 'part7' && p7Index === passIdx;
+              return (
+                <button
+                  key={num}
+                  type="button"
+                  onClick={() => {
+                    setActiveSkill('reading');
+                    setReadingPart('part7');
+                    setP7Index(passIdx);
+                  }}
+                  style={{
+                    padding: '7px 0',
+                    borderRadius: '8px',
+                    fontSize: '0.78rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    border: isCur ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isDone ? '#4f46e5' : isCur ? '#eef2ff' : '#ffffff',
+                    color: isDone ? '#ffffff' : isCur ? '#4f46e5' : '#334155'
+                  }}
+                >
+                  {num}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  // 1. If in CATALOG mode -> Render STUDY4-style Grid
+  if (viewMode === 'catalog') {
+    return (
+      <div style={{ padding: '24px 32px', maxWidth: '1440px', margin: '0 auto' }}>
+        <ToeicCatalogView
+          catalogTests={TOEIC_CATALOG_TESTS}
+          testHistory={testHistory}
+          onSelectTest={handleSelectCatalogTest}
+          activeTab={catalogTab}
+          setActiveTab={setCatalogTab}
+          onOpenVocab600={() => {
+            setViewMode('exam');
+            setActiveSkill('vocab600');
+          }}
+        />
+      </div>
+    );
+  }
+
+  // 2. If in EXAM mode -> Render Exam Environment with Pace Countdown Timers
+  return (
+    <div style={{ padding: '24px 32px', maxWidth: '1440px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {/* EXAM TITLE & EXIT (AUTHENTIC STUDY4) */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '12px',
+          padding: '4px 0 10px 0'
+        }}
+      >
+        <h2 style={{ fontSize: '1.28rem', fontWeight: 900, color: '#1e293b', margin: 0, letterSpacing: '-0.01em' }}>
+          {activeCatalogTest.title}
+        </h2>
+        <button
+          type="button"
+          onClick={() => {
+            if (window.confirm('Bạn có chắc muốn thoát bài thi hiện tại và quay về danh sách bộ đề?')) {
+              ttsService.stop();
+              if (examAudioRef.current) examAudioRef.current.pause();
+              setIsExamTimerRunning(false);
+              setViewMode('catalog');
+            }
+          }}
+          style={{
+            padding: '4px 14px',
+            borderRadius: '8px',
+            border: '1.5px solid #cbd5e1',
+            background: '#ffffff',
+            color: '#475569',
+            fontSize: '0.82rem',
+            fontWeight: 700,
+            cursor: 'pointer',
+            transition: 'all 0.15s ease'
+          }}
+        >
+          Thoát
+        </button>
       </div>
 
       {/* 2. PRIMARY SKILL NAVIGATION BAR */}
@@ -378,14 +1053,30 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           overflowX: 'auto'
         }}
       >
-        {[
-          { id: 'listening', label: '🎧 Nghe (Listening)', desc: 'Part 1 • 2 • 3 • 4' },
-          { id: 'reading', label: '📖 Đọc (Reading)', desc: 'Part 5 • 6 • 7' },
-          { id: 'speaking', label: '🗣️ Nói (Speaking)', desc: 'Q1 – Q11 Phản xạ' },
-          { id: 'writing', label: '✍️ Viết (Writing)', desc: 'Q1 – Q8 Thư & Luận' },
-          { id: 'mock', label: '🏆 Thi Thử 4 Kỹ Năng', desc: 'Mini Mock Test' },
-          { id: 'vocab600', label: '📚 600 Từ Vựng Cốt Lõi', desc: '10 Chủ đề công sở' }
-        ].map((tab) => {
+        {(() => {
+          if (viewMode === 'exam') {
+            if (activeCatalogTest?.category === 'LR') {
+              return [
+                { id: 'listening', label: '🎧 Nghe (Listening) • 45 phút', desc: 'Part 1 • 2 • 3 • 4 (Đúng 100 câu)' },
+                { id: 'reading', label: '📖 Đọc (Reading) • 75 phút', desc: 'Part 5 • 6 • 7 (Đúng 100 câu)' }
+              ];
+            }
+            if (activeCatalogTest?.category === 'SW') {
+              return [
+                { id: 'speaking', label: '🗣️ Nói (Speaking) • 20 phút', desc: 'Part 1 – 5 (Đúng 11 câu hỏi)' },
+                { id: 'writing', label: '✍️ Viết (Writing) • 60 phút', desc: 'Part 1 – 3 (Đúng 8 câu hỏi)' }
+              ];
+            }
+          }
+          return [
+            { id: 'listening', label: '🎧 Nghe (Listening)', desc: 'Part 1 • 2 • 3 • 4' },
+            { id: 'reading', label: '📖 Đọc (Reading)', desc: 'Part 5 • 6 • 7' },
+            { id: 'speaking', label: '🗣️ Nói (Speaking)', desc: 'Q1 – Q11 Phản xạ' },
+            { id: 'writing', label: '✍️ Viết (Writing)', desc: 'Q1 – Q8 Thư & Luận' },
+            { id: 'mock', label: '🏆 Thi Thử 4 Kỹ Năng', desc: 'Mini Mock Test' },
+            { id: 'vocab600', label: '📚 600 Từ Vựng Cốt Lõi', desc: '10 Chủ đề ETS thông dụng' }
+          ];
+        })().map((tab) => {
           const isActive = activeSkill === tab.id;
           return (
             <button
@@ -416,11 +1107,289 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
         })}
       </div>
 
-      {/* 3. CONTENT AREA PER SKILL */}
+      {/* 3. FAST 7-PARTS BAR & AUDIO BAR (STUDY4 ETS AUTHENTIC) */}
+      {isLRExam && (
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '12px',
+            background: '#ffffff',
+            padding: '16px 20px',
+            borderRadius: '16px',
+            border: '1.5px solid #e2e8f0',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
+          }}
+        >
+          {/* Row 1: Study4 Highlight Content Toggle & Audio Input Toggle */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.86rem', fontWeight: 700, color: '#312e81', background: '#eef2ff', padding: '6px 14px', borderRadius: '10px' }}>
+              <input
+                type="checkbox"
+                checked={showTranscript}
+                onChange={(e) => setShowTranscript(e.target.checked)}
+                style={{ accentColor: '#4f46e5', width: '16px', height: '16px', cursor: 'pointer' }}
+              />
+              <span>Highlight nội dung (Hiện lời thoại / Transcript)</span>
+            </label>
 
-      {/* ========================================================================= */}
-      {/* SKILL 1: LISTENING COMPREHENSION */}
-      {/* ========================================================================= */}
+            <button
+              type="button"
+              onClick={() => setShowAudioInput(!showAudioInput)}
+              style={{
+                background: customAudioUrl ? '#ecfdf5' : '#f8fafc',
+                color: customAudioUrl ? '#059669' : '#64748b',
+                border: customAudioUrl ? '1.5px solid #10b981' : '1px solid #cbd5e1',
+                borderRadius: '8px',
+                padding: '5px 12px',
+                fontSize: '0.78rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+              title="Tùy chọn tải file MP3 bài nghe hoặc dán link online"
+            >
+              {customAudioFileName ? `🎵 ${customAudioFileName.slice(0, 18)}...` : (customAudioUrl ? '🎵 MP3 Gốc Đang Dùng' : '🎵 Tải file MP3 / Đổi nguồn')}
+            </button>
+          </div>
+
+          {/* Row 1b: Custom Audio Input (Local File or URL) */}
+          {showAudioInput && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', background: '#f8fafc', padding: '12px 16px', borderRadius: '12px', border: '1.5px solid #cbd5e1' }}>
+              <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
+                <input
+                  type="file"
+                  ref={localAudioFileInputRef}
+                  accept="audio/*"
+                  style={{ display: 'none' }}
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    if (file) {
+                      const url = URL.createObjectURL(file);
+                      setCustomAudioUrl(url);
+                      setCustomAudioFileName(file.name);
+                      setShowAudioInput(false);
+                    }
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={() => localAudioFileInputRef.current?.click()}
+                  style={{
+                    padding: '8px 16px',
+                    background: '#10b981',
+                    color: '#ffffff',
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontSize: '0.82rem',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px'
+                  }}
+                >
+                  📁 Chọn file MP3 từ máy tính
+                </button>
+
+                <div style={{ display: 'flex', flex: 1, gap: '6px', minWidth: '240px' }}>
+                  <input
+                    type="text"
+                    placeholder="Hoặc dán trực tiếp link file audio MP3..."
+                    value={customAudioUrl}
+                    onChange={(e) => {
+                      setCustomAudioUrl(e.target.value);
+                      if (e.target.value) {
+                        setCustomAudioFileName('Link MP3 Trực Tiếp');
+                      }
+                    }}
+                    style={{ flex: 1, padding: '8px 12px', borderRadius: '8px', border: '1px solid #cbd5e1', fontSize: '0.84rem' }}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowAudioInput(false)}
+                    style={{ padding: '8px 14px', background: '#4f46e5', color: '#fff', border: 'none', borderRadius: '8px', fontSize: '0.82rem', fontWeight: 700, cursor: 'pointer' }}
+                  >
+                    Xong
+                  </button>
+                </div>
+              </div>
+
+              {customAudioFileName && (
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', color: '#047857', background: '#ecfdf5', padding: '6px 12px', borderRadius: '6px' }}>
+                  <span>🎧 Đang phát file riêng: <strong>{customAudioFileName}</strong></span>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setCustomAudioUrl('');
+                      setCustomAudioFileName('');
+                    }}
+                    style={{ background: 'none', border: 'none', color: '#b91c1c', cursor: 'pointer', fontSize: '0.78rem', fontWeight: 700 }}
+                  >
+                    Dùng lại audio chuẩn mặc định
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Row 2: Study4 Audio Player Bar */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', background: '#f8fafc', padding: '10px 16px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+            <button
+              type="button"
+              onClick={() => {
+                if (!examAudioRef.current) return;
+                if (isExamAudioPlaying) {
+                  examAudioRef.current.pause();
+                } else {
+                  examAudioRef.current.play().then(() => {
+                    setIsExamAudioPlaying(true);
+                  }).catch((err) => {
+                    console.error("Audio playback error:", err);
+                    setIsExamAudioPlaying(false);
+                  });
+                }
+              }}
+              style={{
+                width: '36px',
+                height: '36px',
+                borderRadius: '50%',
+                background: '#1e293b',
+                color: '#ffffff',
+                border: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                flexShrink: 0
+              }}
+              title={isExamAudioPlaying ? 'Tạm dừng' : 'Phát audio'}
+            >
+              {isExamAudioPlaying ? <Pause size={18} /> : <Play size={18} style={{ marginLeft: '2px' }} />}
+            </button>
+
+            {/* Audio Track Scrubber */}
+            <input
+              type="range"
+              min="0"
+              max={audioDuration || 100}
+              value={audioCurrentTime}
+              onChange={(e) => {
+                const val = Number(e.target.value);
+                setAudioCurrentTime(val);
+                if (examAudioRef.current) {
+                  examAudioRef.current.currentTime = val;
+                }
+              }}
+              style={{ flex: 1, accentColor: '#3b82f6', cursor: 'pointer' }}
+            />
+
+            <span style={{ fontSize: '0.84rem', fontWeight: 700, color: '#64748b', minWidth: '45px', fontFamily: 'monospace' }}>
+              {Math.floor(audioCurrentTime / 60).toString().padStart(2, '0')}:{Math.floor(audioCurrentTime % 60).toString().padStart(2, '0')}
+            </span>
+
+            {/* Volume Control */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <Volume2 size={16} color="#64748b" />
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step="0.05"
+                value={audioVolume}
+                onChange={(e) => {
+                  const v = Number(e.target.value);
+                  setAudioVolume(v);
+                  if (examAudioRef.current) {
+                    examAudioRef.current.volume = v;
+                  }
+                }}
+                style={{ width: '70px', accentColor: '#3b82f6', cursor: 'pointer' }}
+              />
+            </div>
+
+            {/* Native audio element ALWAYS mounted and connected */}
+            <audio
+              ref={examAudioRef}
+              src={activeAudioTrack}
+              preload="auto"
+              onLoadedMetadata={() => {
+                if (examAudioRef.current && examAudioRef.current.duration) {
+                  setAudioDuration(examAudioRef.current.duration);
+                }
+              }}
+              onError={(e) => {
+                console.warn("Audio loading error for:", activeAudioTrack);
+                const fb = '/exams/toeic-lr-c1-t1/audio/full.mp3';
+                if (e.target.src !== fb) {
+                  e.target.src = fb;
+                  e.target.load();
+                }
+              }}
+              onTimeUpdate={() => {
+                if (examAudioRef.current) {
+                  setAudioCurrentTime(examAudioRef.current.currentTime);
+                  if (examAudioRef.current.duration && !isNaN(examAudioRef.current.duration)) {
+                    setAudioDuration(examAudioRef.current.duration);
+                  }
+                }
+              }}
+              onPlay={() => setIsExamAudioPlaying(true)}
+              onPause={() => setIsExamAudioPlaying(false)}
+              onEnded={() => {
+                setIsExamAudioPlaying(false);
+                setAudioCurrentTime(0);
+              }}
+            />
+          </div>
+
+          {/* Row 3: 7 Parts Quick Navigation Buttons (Matching Study4) */}
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+            {[
+              { id: 'part1', skill: 'listening', label: 'Part 1' },
+              { id: 'part2', skill: 'listening', label: 'Part 2' },
+              { id: 'part3', skill: 'listening', label: 'Part 3' },
+              { id: 'part4', skill: 'listening', label: 'Part 4' },
+              { id: 'part5', skill: 'reading', label: 'Part 5' },
+              { id: 'part6', skill: 'reading', label: 'Part 6' },
+              { id: 'part7', skill: 'reading', label: 'Part 7' }
+            ].map((p) => {
+              const isCurrent = (p.skill === 'listening' && activeSkill === 'listening' && listeningPart === p.id) ||
+                                (p.skill === 'reading' && activeSkill === 'reading' && readingPart === p.id);
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  onClick={() => {
+                    setActiveSkill(p.skill);
+                    if (p.skill === 'listening') setListeningPart(p.id);
+                    else setReadingPart(p.id);
+                  }}
+                  style={{
+                    padding: '8px 18px',
+                    borderRadius: '10px',
+                    border: isCurrent ? '2px solid #4f46e5' : '1px solid #cbd5e1',
+                    background: isCurrent ? '#4f46e5' : '#f8fafc',
+                    color: isCurrent ? '#ffffff' : '#334155',
+                    fontWeight: 800,
+                    fontSize: '0.86rem',
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease'
+                  }}
+                >
+                  {p.label}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* 4. MAIN EXAM TWO-COLUMN GRID: CONTENT (LEFT) + QUESTION PALETTE (RIGHT) */}
+      <div style={{ display: 'grid', gridTemplateColumns: isLRExam ? 'minmax(0, 1fr) 280px' : '1fr', gap: '24px', alignItems: 'start' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {activeSkill === 'listening' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {/* Sub-Tabs for Listening Parts */}
@@ -455,141 +1424,185 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           {listeningPart === 'part1' && (
             <div className="card" style={{ padding: '28px 32px', background: '#ffffff', borderRadius: '20px', border: '1px solid var(--border-medium)' }}>
               {(() => {
-                const photo = TOEIC_PART1_PHOTOS[p1Index] || TOEIC_PART1_PHOTOS[0];
+                const photo = part1List[p1Index] || part1List[0];
+                if (!photo) return <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text-secondary)' }}>Không có tranh trong phần này.</div>;
                 const selected = p1Answers[photo.id];
                 const isAnswered = selected !== undefined;
                 return (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--primary)', background: '#eef2ff', padding: '4px 10px', borderRadius: '8px' }}>
-                        Tranh {p1Index + 1} / {TOEIC_PART1_PHOTOS.length}: {photo.sceneType}
+                      <span style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--primary)', background: '#eef2ff', padding: '4px 12px', borderRadius: '8px' }}>
+                        Tranh {p1Index + 1} / {part1List.length}{isExamSubmitted ? `: ${photo.sceneType}` : ''}
                       </span>
+                    </div>
+
+                    {/* REAL PHOTOGRAPH DISPLAY - CLEAN ETS & STUDY4 AUTHENTIC */}
+                    <div
+                      style={{
+                        borderRadius: '16px',
+                        overflow: 'hidden',
+                        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)',
+                        background: '#f8fafc',
+                        border: '1px solid var(--border-medium)',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        padding: '8px'
+                      }}
+                    >
+                      <img
+                        src={photo.imageUrl}
+                        alt={`TOEIC Part 1 Question ${p1Index + 1}`}
+                        onError={(e) => {
+                          if (photo.fallbackUrl && e.target.src !== photo.fallbackUrl) {
+                            e.target.src = photo.fallbackUrl;
+                          }
+                        }}
+                        style={{
+                          maxWidth: '100%',
+                          maxHeight: '440px',
+                          objectFit: 'contain',
+                          borderRadius: '10px',
+                          display: 'block'
+                        }}
+                      />
+                    </div>
+
+                    {/* Study4 Authentic 'Hiện Transcript' Toggle */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <button
                         type="button"
-                        onClick={() => ttsService.speak(photo.audioPrompt, speechVoice)}
-                        className="btn-outline"
-                        style={{ padding: '6px 12px', fontSize: '0.82rem', display: 'flex', alignItems: 'center', gap: '6px' }}
+                        onClick={() => setShowTranscript((prev) => !prev)}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          padding: '4px 0',
+                          color: '#2563eb',
+                          fontSize: '0.9rem',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px'
+                        }}
                       >
-                        <Volume2 size={16} /> Nghe Hướng Dẫn
+                        <span>{shouldShowTranscript ? 'Ẩn Transcript' : 'Hiện Transcript'}</span>
+                        <span style={{ fontSize: '0.75rem' }}>{shouldShowTranscript ? '▲' : '▼'}</span>
                       </button>
                     </div>
 
-                    {/* Image Simulator Box */}
-                    <div
-                      style={{
-                        padding: '24px',
-                        borderRadius: '16px',
-                        background: 'linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)',
-                        border: '2px dashed #cbd5e1',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '10px'
-                      }}
-                    >
-                      <div style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>
-                        📸 Bối cảnh hình ảnh mô phỏng trong đề thi:
-                      </div>
-                      <div style={{ fontSize: '0.98rem', color: 'var(--text-main)', lineHeight: 1.6, fontWeight: 500 }}>
-                        "{photo.imageContext}"
-                      </div>
+                    {/* Study4 Authentic Question Number & Audio Trigger */}
+                    {/* Part 1 Header: Study4 Authentic style */}
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '4px 0 12px', borderBottom: '1px solid #f1f5f9' }}>
+                      <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#312e81' }}>
+                        Part 1: Mô Tả Tranh (Câu {p1Index + 1} / {part1List.length})
+                      </span>
+                      {isExamSubmitted && (
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#16a34a', background: '#f0fdf4', padding: '4px 10px', borderRadius: '8px' }}>
+                          ✓ Đang ở chế độ xem lời giải
+                        </span>
+                      )}
                     </div>
 
-                    {/* 4 Statements A, B, C, D */}
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                      <div style={{ fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
-                        Chọn phương án miêu tả chính xác nhất bức tranh:
+                    {/* Question Number Badge & 4 Options */}
+                    <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', marginTop: '12px' }}>
+                      {/* Question Circle Badge matching Study4 */}
+                      <div
+                        style={{
+                          width: '32px',
+                          height: '32px',
+                          borderRadius: '50%',
+                          background: selected ? '#dbeafe' : '#f1f5f9',
+                          color: selected ? '#1d4ed8' : '#475569',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          fontSize: '1rem',
+                          fontWeight: 900,
+                          flexShrink: 0
+                        }}
+                      >
+                        {p1Index + 1}
                       </div>
-                      {photo.statements.map((stmt) => {
-                        const isCorrect = stmt.key === photo.correctKey;
-                        const isChosen = selected === stmt.key;
-                        let bg = '#ffffff';
-                        let border = '1px solid var(--border-medium)';
-                        let textColor = 'var(--text-main)';
 
-                        if (isAnswered) {
-                          if (isCorrect) {
-                            bg = '#f0fdf4';
-                            border = '2px solid #22c55e';
-                            textColor = '#15803d';
+                      {/* 4 Statements A, B, C, D */}
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
+                        {photo.statements.map((stmt) => {
+                          const isCorrect = stmt.key === photo.correctKey;
+                          const isChosen = selected === stmt.key;
+
+                          let bg = '#ffffff';
+                          let border = isChosen ? '2px solid #2563eb' : '1.5px solid #e2e8f0';
+                          let textColor = isChosen ? '#1d4ed8' : 'var(--text-main)';
+
+                          if (isExamSubmitted) {
+                            if (isCorrect) {
+                              bg = '#f0fdf4';
+                              border = '2px solid #22c55e';
+                              textColor = '#15803d';
+                            } else if (isChosen) {
+                              bg = '#fef2f2';
+                              border = '2px solid #ef4444';
+                              textColor = '#b91c1c';
+                            }
                           } else if (isChosen) {
-                            bg = '#fef2f2';
-                            border = '2px solid #ef4444';
-                            textColor = '#b91c1c';
+                            bg = '#eff6ff';
                           }
-                        }
 
-                        return (
-                          <div
-                            key={stmt.key}
-                            style={{
-                              padding: '14px 18px',
-                              borderRadius: '12px',
-                              background: bg,
-                              border,
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'space-between',
-                              gap: '12px',
-                              cursor: isAnswered ? 'default' : 'pointer',
-                              transition: 'all 0.15s ease'
-                            }}
-                            onClick={() => {
-                              if (!isAnswered) {
-                                setP1Answers((prev) => ({ ...prev, [photo.id]: stmt.key }));
-                              }
-                            }}
-                          >
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flex: 1 }}>
-                              <span
+                          return (
+                            <div
+                              key={stmt.key}
+                              style={{
+                                padding: '12px 18px',
+                                borderRadius: '12px',
+                                background: bg,
+                                border,
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '14px',
+                                cursor: isExamSubmitted ? 'default' : 'pointer',
+                                transition: 'all 0.15s ease'
+                              }}
+                              onClick={() => {
+                                if (!isExamSubmitted) {
+                                  setP1Answers((prev) => ({ ...prev, [photo.id]: stmt.key }));
+                                }
+                              }}
+                            >
+                              {/* Round Radio Indicator matching Study4 */}
+                              <div
                                 style={{
-                                  width: '32px',
-                                  height: '32px',
+                                  width: '20px',
+                                  height: '20px',
                                   borderRadius: '50%',
-                                  background: isChosen ? '#4f46e5' : '#f1f5f9',
-                                  color: isChosen ? '#ffffff' : 'var(--text-secondary)',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center',
-                                  fontWeight: 800,
-                                  fontSize: '0.88rem',
-                                  flexShrink: 0
+                                  border: isChosen ? '6px solid #2563eb' : '2px solid #cbd5e1',
+                                  background: '#ffffff',
+                                  flexShrink: 0,
+                                  transition: 'all 0.15s ease'
                                 }}
-                              >
-                                {stmt.key}
-                              </span>
+                              />
+
                               <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                                <span style={{ fontSize: '0.95rem', fontWeight: 600, color: textColor }}>
-                                  ({stmt.key}) {stmt.text}
+                                <span style={{ fontSize: '0.96rem', fontWeight: 700, color: textColor }}>
+                                  {stmt.key}. {shouldShowTranscript ? stmt.text : ''}
                                 </span>
-                                {isAnswered && (
-                                  <span style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
+                                {shouldShowTranscript && stmt.textVi && (
+                                  <span style={{ fontSize: '0.84rem', color: 'var(--text-secondary)' }}>
                                     → {stmt.textVi}
                                   </span>
                                 )}
                               </div>
                             </div>
-
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                ttsService.speak(stmt.text, speechVoice);
-                              }}
-                              className="icon-ghost"
-                              title="Nghe câu này"
-                            >
-                              <Volume2 size={16} />
-                            </button>
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                      </div>
                     </div>
 
-                    {/* Explanation & Trap Alert */}
-                    {isAnswered && (
-                      <div style={{ padding: '18px 22px', borderRadius: '14px', background: '#f8fafc', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    {/* Explanation & Trap Alert (ONLY visible if isExamSubmitted) */}
+                    {isExamSubmitted && (
+                      <div style={{ padding: '18px 22px', borderRadius: '14px', background: '#f8fafc', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '12px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#4f46e5', fontWeight: 800, fontSize: '0.92rem' }}>
-                          <Lightbulb size={18} /> Phân Tích & Mẹo Giải Part 1
+                          <Lightbulb size={18} /> Phân Tích & Mẹo Giải Part 1 (Câu {p1Index + 1})
                         </div>
                         <div style={{ fontSize: '0.88rem', color: 'var(--text-main)', lineHeight: 1.5 }}>
                           {photo.explanation}
@@ -599,20 +1612,22 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         </div>
 
                         {/* Vocabulary Save */}
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginTop: '6px' }}>
-                          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-secondary)' }}>Từ vựng trọng tâm:</span>
-                          {photo.keyVocab.map((kv, idx) => (
-                            <button
-                              key={idx}
-                              type="button"
-                              onClick={() => handleSaveToNotebook(kv)}
-                              className="btn-outline"
-                              style={{ padding: '4px 10px', fontSize: '0.78rem', borderRadius: '8px' }}
-                            >
-                              + Lưu "{kv.word}"
-                            </button>
-                          ))}
-                        </div>
+                        {photo.keyVocab && photo.keyVocab.length > 0 && (
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginTop: '6px' }}>
+                            <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-secondary)' }}>Từ vựng trọng tâm:</span>
+                            {photo.keyVocab.map((kv, idx) => (
+                              <button
+                                key={idx}
+                                type="button"
+                                onClick={() => handleSaveToNotebook(kv)}
+                                className="btn-outline"
+                                style={{ padding: '4px 10px', fontSize: '0.78rem', borderRadius: '8px' }}
+                              >
+                                + Lưu "{kv.word}"
+                              </button>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
 
@@ -629,10 +1644,10 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                       </button>
                       <button
                         type="button"
-                        disabled={p1Index === TOEIC_PART1_PHOTOS.length - 1}
+                        disabled={p1Index === part1List.length - 1}
                         onClick={() => setP1Index((p) => p + 1)}
                         className="btn-primary"
-                        style={{ opacity: p1Index === TOEIC_PART1_PHOTOS.length - 1 ? 0.5 : 1 }}
+                        style={{ opacity: p1Index === part1List.length - 1 ? 0.5 : 1 }}
                       >
                         Câu Tiếp Theo →
                       </button>
@@ -643,140 +1658,162 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
             </div>
           )}
 
-          {/* PART 2: QUESTION - RESPONSE */}
+          {/* PART 2: QUESTION - RESPONSE (STUDY4 CONTINUOUS LIST Q7 - Q31) */}
           {listeningPart === 'part2' && (
-            <div className="card" style={{ padding: '28px 32px', background: '#ffffff', borderRadius: '20px', border: '1px solid var(--border-medium)' }}>
-              {(() => {
-                const item = TOEIC_PART2_LISTENING[p2Index] || TOEIC_PART2_LISTENING[0];
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div style={{ padding: '14px 20px', borderRadius: '14px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                <span style={{ fontSize: '0.88rem', fontWeight: 800, color: '#1e1b4b' }}>
+                  Part 2: Hỏi - Đáp (Question - Response) • Câu 7 đến 31 (25 câu hỏi, chỉ gồm 3 đáp án A, B, C)
+                </span>
+                <span style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 600 }}>
+                  {showTranscript ? '👀 Đang mở lời thoại transcript' : '🎧 Nghe audio và chọn đáp án A, B, C'}
+                </span>
+              </div>
+
+              {part2List.map((item, idx) => {
+                const qNum = idx + 7;
                 const selected = p2Answers[item.id];
-                const isAnswered = selected !== undefined;
+                const isCorrect = selected === item.correctIndex;
+
                 return (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#0ea5e9', background: '#f0f9ff', padding: '4px 10px', borderRadius: '8px' }}>
-                        Part 2: Câu {p2Index + 1} / {TOEIC_PART2_LISTENING.length} • {item.category}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => ttsService.speak(item.questionText, speechVoice)}
-                        className="btn-primary"
-                        style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: '8px' }}
-                      >
-                        <Volume2 size={18} /> Bấm Nghe Câu Hỏi ({speechVoice})
-                      </button>
+                  <div
+                    key={item.id}
+                    id={`p2-q-${qNum}`}
+                    style={{
+                      background: '#ffffff',
+                      borderRadius: '16px',
+                      border: '1px solid #e2e8f0',
+                      padding: '16px 20px',
+                      display: 'flex',
+                      gap: '16px',
+                      alignItems: 'flex-start',
+                      boxShadow: '0 1px 4px rgba(0,0,0,0.02)'
+                    }}
+                  >
+                    {/* Study4 Question Circle Badge */}
+                    <div
+                      style={{
+                        width: '32px',
+                        height: '32px',
+                        borderRadius: '50%',
+                        background: selected !== undefined ? '#dbeafe' : '#f1f5f9',
+                        color: selected !== undefined ? '#1d4ed8' : '#475569',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: '0.96rem',
+                        fontWeight: 900,
+                        flexShrink: 0
+                      }}
+                    >
+                      {qNum}
                     </div>
 
-                    <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', borderLeft: '4px solid #0ea5e9' }}>
-                      <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#0ea5e9', textTransform: 'uppercase', marginBottom: '6px' }}>
-                        🎧 Transcript Câu Hỏi:
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
+                      {/* Question text ONLY if shouldShowTranscript */}
+                      {shouldShowTranscript && (
+                        <div style={{ padding: '8px 12px', background: '#f8fafc', borderRadius: '8px', borderLeft: '3px solid #3b82f6', marginBottom: '2px' }}>
+                          <div style={{ fontWeight: 700, color: '#1e293b', fontSize: '0.92rem' }}>
+                            {item.questionText}
+                          </div>
+                          <div style={{ color: '#64748b', fontSize: '0.82rem', marginTop: '2px' }}>
+                            → {item.questionVi}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* 3 Radio Options: A, B, C (Study4 Authentic format) */}
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        {['A', 'B', 'C'].map((letter, oIdx) => {
+                          const isChosen = selected === oIdx;
+                          const isOptCorrect = oIdx === item.correctIndex;
+                          const optText = item.options[oIdx] ? item.options[oIdx].replace(/^\([A-C]\)\s*/, '') : '';
+                          const optVi = item.optionsVi ? item.optionsVi[oIdx] : '';
+
+                          let border = isChosen ? '2px solid #2563eb' : '1px solid #cbd5e1';
+                          let bg = isChosen ? '#eff6ff' : '#ffffff';
+                          let textColor = isChosen ? '#1d4ed8' : '#1e293b';
+
+                          if (isExamSubmitted) {
+                            if (isOptCorrect) {
+                              border = '2px solid #16a34a';
+                              bg = '#f0fdf4';
+                              textColor = '#15803d';
+                            } else if (isChosen) {
+                              border = '2px solid #dc2626';
+                              bg = '#fef2f2';
+                              textColor = '#b91c1c';
+                            }
+                          }
+
+                          return (
+                            <div
+                              key={letter}
+                              onClick={() => {
+                                if (!isExamSubmitted) {
+                                  setP2Answers((prev) => ({ ...prev, [item.id]: oIdx }));
+                                }
+                              }}
+                              style={{
+                                padding: '8px 14px',
+                                borderRadius: '10px',
+                                border,
+                                background: bg,
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '12px',
+                                cursor: isExamSubmitted ? 'default' : 'pointer',
+                                transition: 'all 0.15s ease'
+                              }}
+                            >
+                              <div
+                                style={{
+                                  width: '18px',
+                                  height: '18px',
+                                  borderRadius: '50%',
+                                  border: isChosen ? '6px solid #2563eb' : '2px solid #cbd5e1',
+                                  background: '#ffffff',
+                                  flexShrink: 0
+                                }}
+                              />
+
+                              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                                <span style={{ fontSize: '0.92rem', fontWeight: 700, color: textColor }}>
+                                  {letter}. {shouldShowTranscript ? optText : ''}
+                                </span>
+                                {shouldShowTranscript && optVi && (
+                                  <span style={{ fontSize: '0.8rem', color: '#64748b' }}>
+                                    → {optVi}
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
-                      <div style={{ fontSize: '1.15rem', fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
-                        "{item.questionText}"
-                      </div>
-                      {isAnswered && (
-                        <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
-                          → Dịch nghĩa: {item.questionVi}
+
+                      {/* Explanation & Trap Alert ONLY when isExamSubmitted */}
+                      {isExamSubmitted && (
+                        <div style={{ marginTop: '8px', padding: '10px 14px', borderRadius: '8px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
+                          <div style={{ fontSize: '0.84rem', color: '#15803d', fontWeight: 700 }}>
+                            ✓ Đáp án đúng: {['A', 'B', 'C'][item.correctIndex]}
+                          </div>
+                          {item.explanation && (
+                            <div style={{ fontSize: '0.82rem', color: '#475569', marginTop: '4px' }}>
+                              {item.explanation}
+                            </div>
+                          )}
+                          {item.trapAlert && (
+                            <div style={{ fontSize: '0.8rem', color: '#b45309', marginTop: '4px', fontStyle: 'italic' }}>
+                              ⚠️ {item.trapAlert}
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>
-
-                    {/* Choices A, B, C */}
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                      {item.options.map((opt, oIdx) => {
-                        const isCorrect = oIdx === item.correctIndex;
-                        const isChosen = selected === oIdx;
-                        let bg = '#ffffff';
-                        let border = '1px solid var(--border-medium)';
-                        let textColor = 'var(--text-main)';
-
-                        if (isAnswered) {
-                          if (isCorrect) {
-                            bg = '#f0fdf4';
-                            border = '2px solid #22c55e';
-                            textColor = '#15803d';
-                          } else if (isChosen) {
-                            bg = '#fef2f2';
-                            border = '2px solid #ef4444';
-                            textColor = '#b91c1c';
-                          }
-                        }
-
-                        return (
-                          <div
-                            key={oIdx}
-                            style={{
-                              padding: '14px 18px',
-                              borderRadius: '12px',
-                              background: bg,
-                              border,
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'space-between',
-                              cursor: isAnswered ? 'default' : 'pointer'
-                            }}
-                            onClick={() => {
-                              if (!isAnswered) {
-                                setP2Answers((prev) => ({ ...prev, [item.id]: oIdx }));
-                              }
-                            }}
-                          >
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                              <span style={{ fontSize: '0.95rem', fontWeight: 600, color: textColor }}>
-                                {opt}
-                              </span>
-                              {isAnswered && (
-                                <span style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
-                                  → {item.optionsVi[oIdx]}
-                                </span>
-                              )}
-                            </div>
-                            <button
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                ttsService.speak(opt, speechVoice);
-                              }}
-                              className="icon-ghost"
-                            >
-                              <Volume2 size={16} />
-                            </button>
-                          </div>
-                        );
-                      })}
-                    </div>
-
-                    {/* Trap Alert */}
-                    {isAnswered && (
-                      <div style={{ padding: '16px 20px', borderRadius: '12px', background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <AlertTriangle size={18} style={{ flexShrink: 0 }} />
-                        <span><strong>Mẹo bẫy ETS:</strong> {item.trapAlert}</span>
-                      </div>
-                    )}
-
-                    {/* Navigation */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
-                      <button
-                        type="button"
-                        disabled={p2Index === 0}
-                        onClick={() => setP2Index((p) => p - 1)}
-                        className="btn-secondary"
-                        style={{ opacity: p2Index === 0 ? 0.5 : 1 }}
-                      >
-                        ← Câu Trước
-                      </button>
-                      <button
-                        type="button"
-                        disabled={p2Index === TOEIC_PART2_LISTENING.length - 1}
-                        onClick={() => setP2Index((p) => p + 1)}
-                        className="btn-primary"
-                        style={{ opacity: p2Index === TOEIC_PART2_LISTENING.length - 1 ? 0.5 : 1 }}
-                      >
-                        Câu Tiếp Theo →
-                      </button>
-                    </div>
                   </div>
                 );
-              })()}
+              })}
             </div>
           )}
 
@@ -784,32 +1821,43 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           {listeningPart === 'part3' && (
             <div className="card" style={{ padding: '28px 32px', background: '#ffffff', borderRadius: '20px', border: '1px solid var(--border-medium)' }}>
               {(() => {
-                const convo = TOEIC_PART3_CONVERSATIONS[p3Index] || TOEIC_PART3_CONVERSATIONS[0];
+                const convo = part3List[p3Index] || part3List[0];
+                if (!convo) return <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text-secondary)' }}>Không có hội thoại Part 3 trong bộ đề này.</div>;
                 return (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
                       <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#8b5cf6', background: '#f5f3ff', padding: '4px 10px', borderRadius: '8px' }}>
-                        Part 3: Hội Thoại • {convo.scenario}
+                        Part 3: Đoạn Hội Thoại (Đoạn {p3Index + 1}/{part3List.length}) • {convo.scenario}
                       </span>
-                      <button
-                        type="button"
-                        onClick={() => ttsService.speak(convo.audioScript, speechVoice)}
-                        className="btn-primary"
-                        style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: '8px' }}
-                      >
-                        <Volume2 size={18} /> Bấm Nghe Toàn Bộ Hội Thoại
-                      </button>
+                      {isExamSubmitted && (
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#16a34a', background: '#f0fdf4', padding: '4px 10px', borderRadius: '8px' }}>
+                          ✓ Đang ở chế độ xem lời giải
+                        </span>
+                      )}
                     </div>
 
-                    {/* Audio Script with Bilingual View */}
-                    <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                      <div style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>
-                        📜 Audio Script Hội Thoại:
+                    {/* Audio Script (ONLY shown when shouldShowTranscript is true) */}
+                    {shouldShowTranscript && (
+                      <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                        <div style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>
+                          📜 Lời Thoại Audio Script Hội Thoại:
+                        </div>
+                        <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', fontSize: '0.92rem', color: 'var(--text-main)', lineHeight: 1.6, margin: 0 }}>
+                          {convo.audioScript}
+                        </pre>
                       </div>
-                      <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', fontSize: '0.92rem', color: 'var(--text-main)', lineHeight: 1.6, margin: 0 }}>
-                        {convo.audioScript}
-                      </pre>
-                    </div>
+                    )}
+
+                    {/* Graphic Image for Graphic Questions (Q62-70) */}
+                    {convo.imageUrl && (
+                      <div style={{ display: 'flex', justifyContent: 'center', background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid var(--border-subtle)' }}>
+                        <img
+                          src={convo.imageUrl}
+                          alt="Graphic reference"
+                          style={{ maxWidth: '100%', maxHeight: '380px', objectFit: 'contain', borderRadius: '8px' }}
+                        />
+                      </div>
+                    )}
 
                     {/* 3 Comprehension Questions */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
@@ -817,8 +1865,8 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         3 Câu Hỏi Đọc Hiểu Theo Đoạn:
                       </div>
                       {convo.questions.map((q, qIdx) => {
-                        const selectedAns = p3Answers[qIdx];
-                        const isDone = selectedAns !== undefined;
+                        const qKey = q.id || `p3-q-${q.qNum || (convo.startQ + qIdx)}`;
+                        const selectedAns = p3Answers[qKey];
                         return (
                           <div key={qIdx} style={{ padding: '16px 20px', borderRadius: '14px', background: '#ffffff', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)' }}>
@@ -826,32 +1874,44 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                             </div>
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '8px' }}>
                               {q.options.map((opt, oIdx) => {
-                                const isCorrect = oIdx === q.correctIndex;
+                                const isCorrect = q.correctIndex !== undefined ? oIdx === q.correctIndex : (q.correctIdx !== undefined ? oIdx === q.correctIdx : ['A','B','C','D'][oIdx] === q.correctKey);
                                 const isChosen = selectedAns === oIdx;
-                                let border = '1px solid var(--border-subtle)';
-                                let bg = '#fafafa';
-                                if (isDone) {
+                                let border = isChosen ? '2px solid #2563eb' : '1px solid var(--border-subtle)';
+                                let bg = isChosen ? '#eff6ff' : '#fafafa';
+                                let textColor = isChosen ? '#1d4ed8' : 'var(--text-main)';
+
+                                if (isExamSubmitted) {
                                   if (isCorrect) {
                                     bg = '#f0fdf4';
                                     border = '2px solid #22c55e';
+                                    textColor = '#15803d';
                                   } else if (isChosen) {
                                     bg = '#fef2f2';
                                     border = '2px solid #ef4444';
+                                    textColor = '#b91c1c';
                                   }
                                 }
+
                                 return (
                                   <button
                                     key={oIdx}
                                     type="button"
-                                    onClick={() => setP3Answers((prev) => ({ ...prev, [qIdx]: oIdx }))}
+                                    onClick={() => {
+                                      if (!isExamSubmitted) {
+                                        setP3Answers((prev) => ({ ...prev, [qKey]: oIdx }));
+                                      }
+                                    }}
                                     style={{
                                       padding: '10px 14px',
                                       borderRadius: '10px',
                                       background: bg,
                                       border,
+                                      color: textColor,
+                                      fontWeight: isChosen ? 700 : 500,
                                       fontSize: '0.86rem',
                                       textAlign: 'left',
-                                      cursor: isDone ? 'default' : 'pointer'
+                                      cursor: isExamSubmitted ? 'default' : 'pointer',
+                                      transition: 'all 0.15s ease'
                                     }}
                                   >
                                     {opt}
@@ -859,14 +1919,57 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                                 );
                               })}
                             </div>
-                            {isDone && (
-                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600 }}>
+                            {isExamSubmitted && (
+                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600, background: '#f0fdf4', padding: '6px 12px', borderRadius: '8px' }}>
                                 ✓ Giải thích: {q.explanation}
                               </div>
                             )}
                           </div>
                         );
                       })}
+                    </div>
+
+                    {/* Navigation for Part 3 (13 Conversations: Q32 - Q70) */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '16px', flexWrap: 'wrap', gap: '8px' }}>
+                      <button
+                        type="button"
+                        disabled={p3Index === 0}
+                        onClick={() => setP3Index((p) => p - 1)}
+                        className="btn-secondary"
+                        style={{ opacity: p3Index === 0 ? 0.5 : 1 }}
+                      >
+                        ← Đoạn Hội Thoại Trước
+                      </button>
+                      <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                        {part3List.map((c, idx) => (
+                          <button
+                            key={c.id || idx}
+                            type="button"
+                            onClick={() => setP3Index(idx)}
+                            style={{
+                              padding: '5px 11px',
+                              borderRadius: '8px',
+                              border: 'none',
+                              background: idx === p3Index ? '#8b5cf6' : '#f3f4f6',
+                              color: idx === p3Index ? '#ffffff' : 'var(--text-secondary)',
+                              fontWeight: 800,
+                              fontSize: '0.78rem',
+                              cursor: 'pointer'
+                            }}
+                          >
+                            Đoạn {idx + 1}
+                          </button>
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        disabled={p3Index === part3List.length - 1}
+                        onClick={() => setP3Index((p) => p + 1)}
+                        className="btn-primary"
+                        style={{ opacity: p3Index === part3List.length - 1 ? 0.5 : 1 }}
+                      >
+                        Đoạn Tiếp Theo →
+                      </button>
                     </div>
                   </div>
                 );
@@ -878,37 +1981,49 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           {listeningPart === 'part4' && (
             <div className="card" style={{ padding: '28px 32px', background: '#ffffff', borderRadius: '20px', border: '1px solid var(--border-medium)' }}>
               {(() => {
-                const talk = TOEIC_PART4_TALKS[p4Index] || TOEIC_PART4_TALKS[0];
+                const talk = part4List[p4Index] || part4List[0];
+                if (!talk) return <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text-secondary)' }}>Không có bài nói Part 4 trong bộ đề này.</div>;
                 return (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
                       <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#f59e0b', background: '#fffbeb', padding: '4px 10px', borderRadius: '8px' }}>
-                        Part 4: Bài Nói Độc Thoại • {talk.scenario}
+                        Part 4: Bài Nói Độc Thoại (Bài {p4Index + 1}/{part4List.length}) • {talk.scenario}
                       </span>
-                      <button
-                        type="button"
-                        onClick={() => ttsService.speak(talk.audioScript, speechVoice)}
-                        className="btn-primary"
-                        style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: '8px' }}
-                      >
-                        <Volume2 size={18} /> Bấm Nghe Bài Phát Thanh
-                      </button>
+                      {isExamSubmitted && (
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#16a34a', background: '#f0fdf4', padding: '4px 10px', borderRadius: '8px' }}>
+                          ✓ Đang ở chế độ xem lời giải
+                        </span>
+                      )}
                     </div>
 
-                    <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                      <div style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>
-                        📢 Broadcast Script:
+                    {/* Broadcast Script (ONLY shown when shouldShowTranscript is true) */}
+                    {shouldShowTranscript && (
+                      <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                        <div style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>
+                          📢 Lời Thoại Broadcast Script:
+                        </div>
+                        <div style={{ fontSize: '0.94rem', color: 'var(--text-main)', lineHeight: 1.6, fontWeight: 500 }}>
+                          "{talk.audioScript}"
+                        </div>
                       </div>
-                      <div style={{ fontSize: '0.94rem', color: 'var(--text-main)', lineHeight: 1.6, fontWeight: 500 }}>
-                        "{talk.audioScript}"
+                    )}
+
+                    {/* Graphic Image for Graphic Questions (Q95-100) */}
+                    {talk.imageUrl && (
+                      <div style={{ display: 'flex', justifyContent: 'center', background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid var(--border-subtle)' }}>
+                        <img
+                          src={talk.imageUrl}
+                          alt="Graphic reference"
+                          style={{ maxWidth: '100%', maxHeight: '380px', objectFit: 'contain', borderRadius: '8px' }}
+                        />
                       </div>
-                    </div>
+                    )}
 
                     {/* Questions */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
                       {talk.questions.map((q, qIdx) => {
-                        const selectedAns = p4Answers[qIdx];
-                        const isDone = selectedAns !== undefined;
+                        const qKey = q.id || `p4-q-${q.qNum || (talk.startQ + qIdx)}`;
+                        const selectedAns = p4Answers[qKey];
                         return (
                           <div key={qIdx} style={{ padding: '16px 20px', borderRadius: '14px', background: '#ffffff', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)' }}>
@@ -916,32 +2031,44 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                             </div>
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '8px' }}>
                               {q.options.map((opt, oIdx) => {
-                                const isCorrect = oIdx === q.correctIndex;
+                                const isCorrect = q.correctIndex !== undefined ? oIdx === q.correctIndex : (q.correctIdx !== undefined ? oIdx === q.correctIdx : ['A','B','C','D'][oIdx] === q.correctKey);
                                 const isChosen = selectedAns === oIdx;
-                                let border = '1px solid var(--border-subtle)';
-                                let bg = '#fafafa';
-                                if (isDone) {
+                                let border = isChosen ? '2px solid #2563eb' : '1px solid var(--border-subtle)';
+                                let bg = isChosen ? '#eff6ff' : '#fafafa';
+                                let textColor = isChosen ? '#1d4ed8' : 'var(--text-main)';
+
+                                if (isExamSubmitted) {
                                   if (isCorrect) {
                                     bg = '#f0fdf4';
                                     border = '2px solid #22c55e';
+                                    textColor = '#15803d';
                                   } else if (isChosen) {
                                     bg = '#fef2f2';
                                     border = '2px solid #ef4444';
+                                    textColor = '#b91c1c';
                                   }
                                 }
+
                                 return (
                                   <button
                                     key={oIdx}
                                     type="button"
-                                    onClick={() => setP4Answers((prev) => ({ ...prev, [qIdx]: oIdx }))}
+                                    onClick={() => {
+                                      if (!isExamSubmitted) {
+                                        setP4Answers((prev) => ({ ...prev, [qKey]: oIdx }));
+                                      }
+                                    }}
                                     style={{
                                       padding: '10px 14px',
                                       borderRadius: '10px',
                                       background: bg,
                                       border,
+                                      color: textColor,
+                                      fontWeight: isChosen ? 700 : 500,
                                       fontSize: '0.86rem',
                                       textAlign: 'left',
-                                      cursor: isDone ? 'default' : 'pointer'
+                                      cursor: isExamSubmitted ? 'default' : 'pointer',
+                                      transition: 'all 0.15s ease'
                                     }}
                                   >
                                     {opt}
@@ -949,14 +2076,57 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                                 );
                               })}
                             </div>
-                            {isDone && (
-                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600 }}>
+                            {isExamSubmitted && (
+                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600, background: '#f0fdf4', padding: '6px 12px', borderRadius: '8px' }}>
                                 ✓ Giải thích: {q.explanation}
                               </div>
                             )}
                           </div>
                         );
                       })}
+                    </div>
+
+                    {/* Navigation for Part 4 (10 Talks: Q71 - Q100) */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '16px', flexWrap: 'wrap', gap: '8px' }}>
+                      <button
+                        type="button"
+                        disabled={p4Index === 0}
+                        onClick={() => setP4Index((p) => p - 1)}
+                        className="btn-secondary"
+                        style={{ opacity: p4Index === 0 ? 0.5 : 1 }}
+                      >
+                        ← Bài Nói Trước
+                      </button>
+                      <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                        {part4List.map((t, idx) => (
+                          <button
+                            key={t.id || idx}
+                            type="button"
+                            onClick={() => setP4Index(idx)}
+                            style={{
+                              padding: '5px 11px',
+                              borderRadius: '8px',
+                              border: 'none',
+                              background: idx === p4Index ? '#f59e0b' : '#f3f4f6',
+                              color: idx === p4Index ? '#ffffff' : 'var(--text-secondary)',
+                              fontWeight: 800,
+                              fontSize: '0.78rem',
+                              cursor: 'pointer'
+                            }}
+                          >
+                            Bài {idx + 1}
+                          </button>
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        disabled={p4Index === part4List.length - 1}
+                        onClick={() => setP4Index((p) => p + 1)}
+                        className="btn-primary"
+                        style={{ opacity: p4Index === part4List.length - 1 ? 0.5 : 1 }}
+                      >
+                        Bài Tiếp Theo →
+                      </button>
                     </div>
                   </div>
                 );
@@ -1002,23 +2172,21 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           {readingPart === 'part5' && (
             <div className="card" style={{ padding: '28px 32px', background: '#ffffff', borderRadius: '20px', border: '1px solid var(--border-medium)' }}>
               {(() => {
-                const q = TOEIC_PART5_QUESTIONS[p5Index] || TOEIC_PART5_QUESTIONS[0];
+                const q = part5List[p5Index] || part5List[0];
+                if (!q) return <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text-secondary)' }}>Không có câu hỏi Part 5 trong bộ đề này.</div>;
                 const selected = p5Answers[q.id];
                 const isAnswered = selected !== undefined;
                 return (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <span style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--primary)', background: '#eef2ff', padding: '4px 10px', borderRadius: '8px' }}>
-                        Câu {p5Index + 1} / {TOEIC_PART5_QUESTIONS.length} • {q.category} • Mục tiêu {q.difficulty}
+                        Câu {p5Index + 1} / {part5List.length} • {q.category} • Mục tiêu {q.difficulty}
                       </span>
-                      <button
-                        type="button"
-                        onClick={() => ttsService.speak(q.question.replace('_______', q.options[q.correctIndex]), speechVoice)}
-                        className="icon-ghost"
-                        title="Nghe câu hoàn chỉnh"
-                      >
-                        <Volume2 size={18} />
-                      </button>
+                      {isExamSubmitted && (
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#16a34a', background: '#f0fdf4', padding: '4px 10px', borderRadius: '8px' }}>
+                          ✓ Đang ở chế độ xem lời giải
+                        </span>
+                      )}
                     </div>
 
                     <div style={{ padding: '24px', borderRadius: '16px', background: '#f8fafc', borderLeft: '4px solid #6366f1' }}>
@@ -1026,7 +2194,12 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         {isAnswered ? (
                           <>
                             {q.question.split('_______')[0]}
-                            <span style={{ color: selected === q.correctIndex ? '#16a34a' : '#dc2626', textDecoration: 'underline', fontWeight: 800, margin: '0 4px' }}>
+                            <span style={{
+                              color: isExamSubmitted ? (selected === q.correctIndex ? '#16a34a' : '#dc2626') : '#2563eb',
+                              textDecoration: 'underline',
+                              fontWeight: 800,
+                              margin: '0 4px'
+                            }}>
                               {q.options[selected]}
                             </span>
                             {q.question.split('_______')[1]}
@@ -1042,11 +2215,11 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                       {q.options.map((opt, idx) => {
                         const isCorrect = idx === q.correctIndex;
                         const isChosen = selected === idx;
-                        let bg = '#ffffff';
-                        let border = '1px solid var(--border-medium)';
-                        let textColor = 'var(--text-main)';
+                        let bg = isChosen ? '#eff6ff' : '#ffffff';
+                        let border = isChosen ? '2px solid #2563eb' : '1px solid var(--border-medium)';
+                        let textColor = isChosen ? '#1d4ed8' : 'var(--text-main)';
 
-                        if (isAnswered) {
+                        if (isExamSubmitted) {
                           if (isCorrect) {
                             bg = '#f0fdf4';
                             border = '2px solid #22c55e';
@@ -1062,8 +2235,12 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                           <button
                             key={idx}
                             type="button"
-                            disabled={isAnswered}
-                            onClick={() => setP5Answers((prev) => ({ ...prev, [q.id]: idx }))}
+                            disabled={isExamSubmitted}
+                            onClick={() => {
+                              if (!isExamSubmitted) {
+                                setP5Answers((prev) => ({ ...prev, [q.id]: idx }));
+                              }
+                            }}
                             style={{
                               padding: '16px 20px',
                               borderRadius: '12px',
@@ -1072,14 +2249,26 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                               fontSize: '0.95rem',
                               fontWeight: 700,
                               color: textColor,
-                              cursor: isAnswered ? 'default' : 'pointer',
+                              cursor: isExamSubmitted ? 'default' : 'pointer',
                               display: 'flex',
                               alignItems: 'center',
                               gap: '12px',
-                              textAlign: 'left'
+                              textAlign: 'left',
+                              transition: 'all 0.15s ease'
                             }}
                           >
-                            <span style={{ width: '28px', height: '28px', borderRadius: '50%', background: '#f1f5f9', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.84rem' }}>
+                            <span style={{
+                              width: '28px',
+                              height: '28px',
+                              borderRadius: '50%',
+                              background: isChosen ? '#dbeafe' : '#f1f5f9',
+                              color: isChosen ? '#1d4ed8' : '#475569',
+                              fontWeight: 800,
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              fontSize: '0.84rem'
+                            }}>
                               {['A', 'B', 'C', 'D'][idx]}
                             </span>
                             <span>{opt}</span>
@@ -1088,8 +2277,8 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                       })}
                     </div>
 
-                    {/* Explanations */}
-                    {isAnswered && (
+                    {/* Explanations (ONLY visible if isExamSubmitted) */}
+                    {isExamSubmitted && (
                       <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#4f46e5', fontWeight: 800, fontSize: '0.94rem' }}>
                           <Lightbulb size={18} /> Giải Thích Ngữ Pháp & Mẹo Thi ETS
@@ -1105,20 +2294,22 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         </div>
 
                         {/* Vocabulary Save */}
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginTop: '6px' }}>
-                          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-secondary)' }}>Từ vựng câu này:</span>
-                          {q.keyVocabulary.map((kv, idx) => (
-                            <button
-                              key={idx}
-                              type="button"
-                              onClick={() => handleSaveToNotebook(kv)}
-                              className="btn-outline"
-                              style={{ padding: '4px 10px', fontSize: '0.78rem', borderRadius: '8px' }}
-                            >
-                              + Lưu "{kv.word}"
-                            </button>
-                          ))}
-                        </div>
+                        {q.keyVocabulary && q.keyVocabulary.length > 0 && (
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginTop: '6px' }}>
+                            <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-secondary)' }}>Từ vựng câu này:</span>
+                            {q.keyVocabulary.map((kv, idx) => (
+                              <button
+                                key={idx}
+                                type="button"
+                                onClick={() => handleSaveToNotebook(kv)}
+                                className="btn-outline"
+                                style={{ padding: '4px 10px', fontSize: '0.78rem', borderRadius: '8px' }}
+                              >
+                                + Lưu "{kv.word}"
+                              </button>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
 
@@ -1135,19 +2326,30 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                       </button>
 
                       <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-                        {TOEIC_PART5_QUESTIONS.map((item, idx) => {
+                        {part5List.map((item, idx) => {
                           const ans = p5Answers[item.id];
                           const isDone = ans !== undefined;
                           const isRight = ans === item.correctIndex;
                           let bg = '#f1f5f9';
                           let color = 'var(--text-secondary)';
-                          if (isDone) {
-                            bg = isRight ? '#22c55e' : '#ef4444';
-                            color = '#ffffff';
-                          } else if (idx === p5Index) {
+
+                          if (isExamSubmitted) {
+                            if (isDone) {
+                              bg = isRight ? '#22c55e' : '#ef4444';
+                              color = '#ffffff';
+                            }
+                          } else {
+                            if (isDone) {
+                              bg = '#dbeafe';
+                              color = '#1d4ed8';
+                            }
+                          }
+
+                          if (idx === p5Index) {
                             bg = '#4f46e5';
                             color = '#ffffff';
                           }
+
                           return (
                             <button
                               key={item.id}
@@ -1173,10 +2375,10 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
 
                       <button
                         type="button"
-                        disabled={p5Index === TOEIC_PART5_QUESTIONS.length - 1}
+                        disabled={p5Index === part5List.length - 1}
                         onClick={() => setP5Index((p) => p + 1)}
                         className="btn-primary"
-                        style={{ opacity: p5Index === TOEIC_PART5_QUESTIONS.length - 1 ? 0.5 : 1 }}
+                        style={{ opacity: p5Index === part5List.length - 1 ? 0.5 : 1 }}
                       >
                         Câu Tiếp Theo →
                       </button>
@@ -1191,7 +2393,8 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           {readingPart === 'part6' && (
             <div className="card" style={{ padding: '28px 32px', background: '#ffffff', borderRadius: '20px', border: '1px solid var(--border-medium)' }}>
               {(() => {
-                const passage = TOEIC_PART6_PASSAGES[p6Index] || TOEIC_PART6_PASSAGES[0];
+                const passage = part6List[p6Index] || part6List[0];
+                if (!passage) return <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text-secondary)' }}>Không có bài đọc Part 6 trong bộ đề này.</div>;
                 return (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -1201,7 +2404,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                     </div>
 
                     <div style={{ padding: '24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', lineHeight: 1.8, fontSize: '0.98rem', color: 'var(--text-main)', whiteSpace: 'pre-wrap' }}>
-                      {passage.passageText}
+                      {passage.passageText || passage.text}
                     </div>
 
                     {/* 4 Blanks Selector */}
@@ -1210,41 +2413,54 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         Điền từ hoặc câu thích hợp vào 4 vị trí trống:
                       </div>
                       {passage.blanks.map((b) => {
-                        const selectedAns = p6Answers[b.blankIndex];
+                        const bKey = b.id || `p6-q-${b.qNum || b.blankIndex}`;
+                        const selectedAns = p6Answers[bKey] !== undefined ? p6Answers[bKey] : p6Answers[b.blankIndex];
                         const isDone = selectedAns !== undefined;
                         return (
-                          <div key={b.blankIndex} style={{ padding: '16px 20px', borderRadius: '14px', background: '#ffffff', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                          <div key={b.qNum || b.blankIndex} style={{ padding: '16px 20px', borderRadius: '14px', background: '#ffffff', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             <div style={{ fontSize: '0.92rem', fontWeight: 800, color: 'var(--primary)' }}>
-                              Vị trí số ({b.blankIndex}):
+                              Vị trí số ({b.qNum || b.blankIndex}):
                             </div>
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '8px' }}>
                               {b.options.map((opt, oIdx) => {
-                                const isCorrect = oIdx === b.correctIndex;
+                                const isCorrect = b.correctIndex !== undefined ? oIdx === b.correctIndex : (b.correctIdx !== undefined ? oIdx === b.correctIdx : ['A','B','C','D'][oIdx] === b.correctKey);
                                 const isChosen = selectedAns === oIdx;
-                                let border = '1px solid var(--border-subtle)';
-                                let bg = '#fafafa';
-                                if (isDone) {
+                                let border = isChosen ? '2px solid #2563eb' : '1px solid var(--border-subtle)';
+                                let bg = isChosen ? '#eff6ff' : '#fafafa';
+                                let textColor = isChosen ? '#1d4ed8' : 'var(--text-main)';
+
+                                if (isExamSubmitted) {
                                   if (isCorrect) {
                                     bg = '#f0fdf4';
                                     border = '2px solid #22c55e';
+                                    textColor = '#15803d';
                                   } else if (isChosen) {
                                     bg = '#fef2f2';
                                     border = '2px solid #ef4444';
+                                    textColor = '#b91c1c';
                                   }
                                 }
+
                                 return (
                                   <button
                                     key={oIdx}
                                     type="button"
-                                    onClick={() => setP6Answers((prev) => ({ ...prev, [b.blankIndex]: oIdx }))}
+                                    onClick={() => {
+                                      if (!isExamSubmitted) {
+                                        setP6Answers((prev) => ({ ...prev, [bKey]: oIdx, [b.blankIndex]: oIdx }));
+                                      }
+                                    }}
                                     style={{
                                       padding: '10px 14px',
                                       borderRadius: '10px',
                                       background: bg,
                                       border,
+                                      color: textColor,
+                                      fontWeight: isChosen ? 700 : 500,
                                       fontSize: '0.86rem',
                                       textAlign: 'left',
-                                      cursor: isDone ? 'default' : 'pointer'
+                                      cursor: isExamSubmitted ? 'default' : 'pointer',
+                                      transition: 'all 0.15s ease'
                                     }}
                                   >
                                     {opt}
@@ -1252,14 +2468,57 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                                 );
                               })}
                             </div>
-                            {isDone && (
-                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600 }}>
+                            {isExamSubmitted && (
+                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600, background: '#f0fdf4', padding: '6px 12px', borderRadius: '8px' }}>
                                 ✓ Giải thích: {b.explanation}
                               </div>
                             )}
                           </div>
                         );
                       })}
+                    </div>
+
+                    {/* Navigation for Part 6 (4 Passages: Q131 - Q146) */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '16px', flexWrap: 'wrap', gap: '8px' }}>
+                      <button
+                        type="button"
+                        disabled={p6Index === 0}
+                        onClick={() => setP6Index((p) => p - 1)}
+                        className="btn-secondary"
+                        style={{ opacity: p6Index === 0 ? 0.5 : 1 }}
+                      >
+                        ← Đoạn Văn Trước
+                      </button>
+                      <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                        {part6List.map((p, idx) => (
+                          <button
+                            key={p.id || idx}
+                            type="button"
+                            onClick={() => setP6Index(idx)}
+                            style={{
+                              padding: '5px 12px',
+                              borderRadius: '8px',
+                              border: 'none',
+                              background: idx === p6Index ? '#059669' : '#f3f4f6',
+                              color: idx === p6Index ? '#ffffff' : 'var(--text-secondary)',
+                              fontWeight: 800,
+                              fontSize: '0.8rem',
+                              cursor: 'pointer'
+                            }}
+                          >
+                            Đoạn {idx + 1}
+                          </button>
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        disabled={p6Index === part6List.length - 1}
+                        onClick={() => setP6Index((p) => p + 1)}
+                        className="btn-primary"
+                        style={{ opacity: p6Index === part6List.length - 1 ? 0.5 : 1 }}
+                      >
+                        Đoạn Tiếp Theo →
+                      </button>
                     </div>
                   </div>
                 );
@@ -1271,18 +2530,42 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           {readingPart === 'part7' && (
             <div className="card" style={{ padding: '28px 32px', background: '#ffffff', borderRadius: '20px', border: '1px solid var(--border-medium)' }}>
               {(() => {
-                const passage = TOEIC_PART7_PASSAGES[p7Index] || TOEIC_PART7_PASSAGES[0];
+                const passage = part7List[p7Index] || part7List[0];
+                if (!passage) return <div style={{ padding: '24px', textAlign: 'center', color: 'var(--text-secondary)' }}>Không có bài đọc Part 7 trong bộ đề này.</div>;
                 return (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#d97706', background: '#fffbeb', padding: '4px 10px', borderRadius: '8px' }}>
-                        Part 7: {passage.passageType}
+                        Part 7: {passage.passageType || passage.type}
                       </span>
                     </div>
 
                     <div style={{ padding: '24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', lineHeight: 1.7, fontSize: '0.96rem', color: 'var(--text-main)', whiteSpace: 'pre-wrap', fontFamily: 'inherit' }}>
-                      {passage.documentContent}
+                      {passage.documentContent || passage.content}
                     </div>
+
+                    {/* Image if available */}
+                    {passage.imageUrl && (
+                      <div style={{ display: 'flex', justifyContent: 'center', background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid var(--border-subtle)' }}>
+                        <img
+                          src={passage.imageUrl}
+                          alt="Reading graphic reference"
+                          style={{ maxWidth: '100%', maxHeight: '420px', objectFit: 'contain', borderRadius: '8px' }}
+                        />
+                      </div>
+                    )}
+
+                    {/* Vietnamese Translation (shown when transcript or exam is submitted) */}
+                    {shouldShowTranscript && passage.contentVi && (
+                      <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        <div style={{ fontSize: '0.82rem', fontWeight: 800, color: '#d97706', textTransform: 'uppercase' }}>
+                          📜 Bản Dịch Tiếng Việt:
+                        </div>
+                        <div style={{ whiteSpace: 'pre-wrap', fontSize: '0.92rem', color: 'var(--text-main)', lineHeight: 1.6 }}>
+                          {passage.contentVi}
+                        </div>
+                      </div>
+                    )}
 
                     {/* Comprehension Questions */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -1290,7 +2573,8 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         Các Câu Hỏi Đọc Hiểu:
                       </div>
                       {passage.questions.map((q, qIdx) => {
-                        const selectedAns = p7Answers[qIdx];
+                        const ansKey = q.id || `${passage.id || p7Index}-${qIdx}`;
+                        const selectedAns = p7Answers[ansKey];
                         const isDone = selectedAns !== undefined;
                         return (
                           <div key={qIdx} style={{ padding: '16px 20px', borderRadius: '14px', background: '#ffffff', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -1299,32 +2583,44 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                             </div>
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '8px' }}>
                               {q.options.map((opt, oIdx) => {
-                                const isCorrect = oIdx === q.correctIndex;
+                                const isCorrect = q.correctIndex !== undefined ? oIdx === q.correctIndex : (q.correctIdx !== undefined ? oIdx === q.correctIdx : ['A','B','C','D'][oIdx] === q.correctKey);
                                 const isChosen = selectedAns === oIdx;
-                                let border = '1px solid var(--border-subtle)';
-                                let bg = '#fafafa';
-                                if (isDone) {
+                                let border = isChosen ? '2px solid #2563eb' : '1px solid var(--border-subtle)';
+                                let bg = isChosen ? '#eff6ff' : '#fafafa';
+                                let textColor = isChosen ? '#1d4ed8' : 'var(--text-main)';
+
+                                if (isExamSubmitted) {
                                   if (isCorrect) {
                                     bg = '#f0fdf4';
                                     border = '2px solid #22c55e';
+                                    textColor = '#15803d';
                                   } else if (isChosen) {
                                     bg = '#fef2f2';
                                     border = '2px solid #ef4444';
+                                    textColor = '#b91c1c';
                                   }
                                 }
+
                                 return (
                                   <button
                                     key={oIdx}
                                     type="button"
-                                    onClick={() => setP7Answers((prev) => ({ ...prev, [qIdx]: oIdx }))}
+                                    onClick={() => {
+                                      if (!isExamSubmitted) {
+                                        setP7Answers((prev) => ({ ...prev, [ansKey]: oIdx }));
+                                      }
+                                    }}
                                     style={{
                                       padding: '10px 14px',
                                       borderRadius: '10px',
                                       background: bg,
                                       border,
+                                      color: textColor,
+                                      fontWeight: isChosen ? 700 : 500,
                                       fontSize: '0.86rem',
                                       textAlign: 'left',
-                                      cursor: isDone ? 'default' : 'pointer'
+                                      cursor: isExamSubmitted ? 'default' : 'pointer',
+                                      transition: 'all 0.15s ease'
                                     }}
                                   >
                                     {opt}
@@ -1332,14 +2628,57 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                                 );
                               })}
                             </div>
-                            {isDone && (
-                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600 }}>
+                            {isExamSubmitted && (
+                              <div style={{ fontSize: '0.82rem', color: '#16a34a', fontWeight: 600, background: '#f0fdf4', padding: '6px 12px', borderRadius: '8px' }}>
                                 ✓ Giải thích: {q.explanation}
                               </div>
                             )}
                           </div>
                         );
                       })}
+                    </div>
+
+                    {/* Navigation for Part 7 Passages */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '16px', flexWrap: 'wrap', gap: '8px' }}>
+                      <button
+                        type="button"
+                        disabled={p7Index === 0}
+                        onClick={() => setP7Index((p) => p - 1)}
+                        className="btn-secondary"
+                        style={{ opacity: p7Index === 0 ? 0.5 : 1 }}
+                      >
+                        ← Đoạn Văn Trước
+                      </button>
+                      <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                        {part7List.map((p, idx) => (
+                          <button
+                            key={p.id || idx}
+                            type="button"
+                            onClick={() => setP7Index(idx)}
+                            style={{
+                              padding: '5px 12px',
+                              borderRadius: '8px',
+                              border: 'none',
+                              background: idx === p7Index ? '#d97706' : '#f3f4f6',
+                              color: idx === p7Index ? '#ffffff' : 'var(--text-secondary)',
+                              fontWeight: 800,
+                              fontSize: '0.8rem',
+                              cursor: 'pointer'
+                            }}
+                          >
+                            Đoạn {idx + 1}
+                          </button>
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        disabled={p7Index === part7List.length - 1}
+                        onClick={() => setP7Index((p) => p + 1)}
+                        className="btn-primary"
+                        style={{ opacity: p7Index === part7List.length - 1 ? 0.5 : 1 }}
+                      >
+                        Đoạn Tiếp Theo →
+                      </button>
                     </div>
                   </div>
                 );
@@ -1354,14 +2693,59 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
       {/* ========================================================================= */}
       {activeSkill === 'speaking' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {/* Speaking Test Selector (Test 1 - 15) */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', background: '#faf5ff', padding: '12px 18px', borderRadius: '16px', border: '1px solid #f3e8ff' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ fontSize: '0.86rem', fontWeight: 800, color: '#9333ea' }}>🎙️ ĐỀ THI:</span>
+              <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', maxWidth: '620px', paddingBottom: '2px' }}>
+                {Array.from({ length: 15 }, (_, i) => i + 1).map((num) => (
+                  <button
+                    key={num}
+                    type="button"
+                    onClick={() => {
+                      setSpeakingTestNum(num);
+                      setSpeakingTaskId('spk-1');
+                      setSpeakingPhotoIdx(0);
+                      setSpeakingTextIdx(0);
+                      setIsModelSpeaking(false);
+                      ttsService.stop();
+                      setRecordedAudioUrl(null);
+                      setShowSpeakingModel(false);
+                    }}
+                    style={{
+                      padding: '5px 12px',
+                      borderRadius: '8px',
+                      border: speakingTestNum === num ? '2px solid #9333ea' : '1px solid #e9d5ff',
+                      background: speakingTestNum === num ? '#9333ea' : '#ffffff',
+                      color: speakingTestNum === num ? '#ffffff' : '#7e22ce',
+                      fontSize: '0.8rem',
+                      fontWeight: 800,
+                      cursor: 'pointer',
+                      whiteSpace: 'nowrap'
+                    }}
+                  >
+                    Test {num}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <span style={{ fontSize: '0.78rem', color: '#a855f7', fontWeight: 700 }}>
+              Bản gốc STUDY4 ({activeSpeakingTasks.length} phần thi)
+            </span>
+          </div>
+
           {/* Sub-Tabs for Speaking Tasks Q1 to Q11 */}
           <div style={{ display: 'flex', gap: '8px', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '10px', overflowX: 'auto' }}>
-            {TOEIC_SPEAKING_TASKS.map((t) => (
+            {activeSpeakingTasks.map((t) => (
               <button
                 key={t.id}
                 type="button"
                 onClick={() => {
                   setSpeakingTaskId(t.id);
+                  setSpeakingPhotoIdx(0);
+                  setSpeakingTextIdx(0);
+                  setIsModelSpeaking(false);
+                  ttsService.stop();
                   setRecordedAudioUrl(null);
                   setShowSpeakingModel(false);
                 }}
@@ -1407,84 +2791,296 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
             </div>
 
             {/* Task Content Details */}
-            {currentSpeakingTask.textToRead && (
-              <div style={{ padding: '24px 28px', borderRadius: '18px', background: '#fcfaff', border: '1px solid #f3e8ff' }}>
-                <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#9333ea', textTransform: 'uppercase', marginBottom: '8px' }}>
-                  📄 Đoạn văn cần đọc to:
-                </div>
-                <div style={{ fontSize: '1.18rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.8, fontStyle: 'italic' }}>
-                  "{currentSpeakingTask.textToRead}"
-                </div>
-                {currentSpeakingTask.phoneticGuide && (
-                  <div style={{ fontSize: '0.84rem', color: '#7e22ce', marginTop: '12px', fontWeight: 600, background: '#faf5ff', padding: '6px 12px', borderRadius: '8px' }}>
-                    💡 Phiên âm trọng tâm: {currentSpeakingTask.phoneticGuide}
+            {(currentSpeakingTask.textToRead || currentSpeakingTask.texts) && (
+              <div style={{ padding: '24px 28px', borderRadius: '18px', background: '#fcfaff', border: '1px solid #f3e8ff', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                {currentSpeakingTask.texts && currentSpeakingTask.texts.length > 1 && (
+                  <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                    <span style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
+                      Chọn câu hỏi đoạn văn:
+                    </span>
+                    {currentSpeakingTask.texts.map((_, tIdx) => {
+                      const isSelected = speakingTextIdx === tIdx;
+                      return (
+                        <button
+                          key={tIdx}
+                          type="button"
+                          onClick={() => {
+                            setSpeakingTextIdx(tIdx);
+                            setIsModelSpeaking(false);
+                            ttsService.stop();
+                          }}
+                          style={{
+                            padding: '8px 16px',
+                            borderRadius: '10px',
+                            border: isSelected ? '2px solid #9333ea' : '1px solid var(--border-medium)',
+                            background: isSelected ? '#faf5ff' : '#f8fafc',
+                            color: isSelected ? '#9333ea' : 'var(--text-secondary)',
+                            fontWeight: 800,
+                            cursor: 'pointer',
+                            fontSize: '0.84rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px'
+                          }}
+                        >
+                          📄 Question {tIdx + 1}
+                        </button>
+                      );
+                    })}
                   </div>
                 )}
-              </div>
-            )}
 
-            {currentSpeakingTask.imageDescription && (
-              <div style={{ padding: '24px 28px', borderRadius: '18px', background: '#f8fafc', border: '2px dashed #cbd5e1' }}>
-                <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--text-secondary)', textTransform: 'uppercase', marginBottom: '6px' }}>
-                  🖼️ Bối cảnh bức tranh cần miêu tả:
-                </div>
-                <div style={{ fontSize: '1.05rem', color: 'var(--text-main)', lineHeight: 1.6 }}>
-                  {currentSpeakingTask.imageDescription}
-                </div>
-              </div>
-            )}
-
-            {currentSpeakingTask.scheduleData && (
-              <div style={{ padding: '22px 26px', borderRadius: '18px', background: '#f8fafc', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <div style={{ fontSize: '1.02rem', fontWeight: 800, color: 'var(--primary)' }}>
-                  📅 {currentSpeakingTask.scheduleData.title}
-                </div>
-                <div style={{ fontSize: '0.84rem', color: 'var(--text-secondary)', fontWeight: 600 }}>
-                  Thời gian: {currentSpeakingTask.scheduleData.date} | Địa điểm: {currentSpeakingTask.scheduleData.location}
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  {currentSpeakingTask.scheduleData.sessions.map((s, idx) => (
-                    <div key={idx} style={{ padding: '8px 12px', borderRadius: '8px', background: '#ffffff', border: '1px solid var(--border-subtle)', display: 'flex', justifyContent: 'space-between', fontSize: '0.86rem' }}>
-                      <span style={{ fontWeight: 700, color: '#4338ca' }}>{s.time}</span>
-                      <span style={{ fontWeight: 600, flex: 1, margin: '0 12px' }}>{s.topic}</span>
-                      <span style={{ color: 'var(--text-secondary)' }}>{s.speaker}</span>
+                <div>
+                  <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#9333ea', textTransform: 'uppercase', marginBottom: '8px' }}>
+                    📄 Đoạn văn cần đọc to ({currentSpeakingTask.texts && currentSpeakingTask.texts.length > 1 ? `Question ${speakingTextIdx + 1}` : 'Part 1'}):
+                  </div>
+                  <div style={{ fontSize: '1.18rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.8, fontStyle: 'italic' }}>
+                    "{(currentSpeakingTask.texts && currentSpeakingTask.texts[speakingTextIdx]) || currentSpeakingTask.textToRead}"
+                  </div>
+                  {currentSpeakingTask.phoneticGuide && (
+                    <div style={{ fontSize: '0.84rem', color: '#7e22ce', marginTop: '12px', fontWeight: 600, background: '#faf5ff', padding: '6px 12px', borderRadius: '8px' }}>
+                      💡 Phiên âm trọng tâm: {currentSpeakingTask.phoneticGuide}
                     </div>
-                  ))}
+                  )}
                 </div>
+              </div>
+            )}
+
+            {/* Part 2: Photos for Describe a Picture */}
+            {(currentSpeakingTask.photos || currentSpeakingTask.imageUrl) && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                {currentSpeakingTask.photos && currentSpeakingTask.photos.length > 1 && (
+                  <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                    <span style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
+                      Chọn câu hỏi tranh:
+                    </span>
+                    {currentSpeakingTask.photos.map((p, pIdx) => {
+                      const isSelected = speakingPhotoIdx === pIdx;
+                      return (
+                        <button
+                          key={pIdx}
+                          type="button"
+                          onClick={() => {
+                            setSpeakingPhotoIdx(pIdx);
+                            setIsModelSpeaking(false);
+                            ttsService.stop();
+                          }}
+                          style={{
+                            padding: '8px 16px',
+                            borderRadius: '10px',
+                            border: isSelected ? '2px solid #9333ea' : '1px solid var(--border-medium)',
+                            background: isSelected ? '#faf5ff' : '#f8fafc',
+                            color: isSelected ? '#9333ea' : 'var(--text-secondary)',
+                            fontWeight: 800,
+                            cursor: 'pointer',
+                            fontSize: '0.84rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px'
+                          }}
+                        >
+                          📸 {p.qNum}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {(() => {
+                  const activePhoto = currentSpeakingTask.photos
+                    ? currentSpeakingTask.photos[speakingPhotoIdx] || currentSpeakingTask.photos[0]
+                    : currentSpeakingTask;
+                  return (
+                    <div
+                      style={{
+                        position: 'relative',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        boxShadow: '0 8px 24px rgba(0, 0, 0, 0.12)',
+                        background: '#0f172a',
+                        border: '1px solid var(--border-medium)'
+                      }}
+                    >
+                      <img
+                        src={activePhoto.imageUrl}
+                        alt="Speaking prompt"
+                        onError={(e) => {
+                          if (activePhoto.fallbackUrl && e.target.src !== activePhoto.fallbackUrl) {
+                            e.target.src = activePhoto.fallbackUrl;
+                          }
+                        }}
+                        style={{
+                          width: '100%',
+                          height: '380px',
+                          objectFit: 'cover',
+                          display: 'block'
+                        }}
+                      />
+                      <div
+                        style={{
+                          position: 'absolute',
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+                          background: 'linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.6) 60%, transparent 100%)',
+                          padding: '20px 24px 16px',
+                          color: '#ffffff',
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'flex-end',
+                          backdropFilter: 'blur(2px)'
+                        }}
+                      >
+                        <div>
+                          <div style={{ fontSize: '0.78rem', fontWeight: 800, textTransform: 'uppercase', color: '#f472b6', letterSpacing: '0.05em' }}>
+                            📸 Đề Thi Speaking Chuẩn ETS • {activePhoto.qNum || 'Describe a Picture'}
+                          </div>
+                          <div style={{ fontSize: '0.94rem', color: '#e2e8f0', marginTop: '4px', maxWidth: '720px' }}>
+                            {activePhoto.imageDescription}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })()}
+              </div>
+            )}
+
+            {/* Part 4: Schedule / Provided Info */}
+            {(currentSpeakingTask.scheduleHtml || currentSpeakingTask.scheduleText || currentSpeakingTask.scheduleData) && (
+              <div style={{ padding: '22px 26px', borderRadius: '18px', background: '#f8fafc', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ fontSize: '1rem', fontWeight: 800, color: '#9333ea', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  📅 Bảng Thông Tin / Lịch Trình (Information Provided)
+                </div>
+                {currentSpeakingTask.scheduleHtml ? (
+                  <div
+                    className="speaking-schedule-content"
+                    dangerouslySetInnerHTML={{ __html: currentSpeakingTask.scheduleHtml }}
+                    style={{
+                      background: '#ffffff',
+                      padding: '18px',
+                      borderRadius: '12px',
+                      border: '1px solid var(--border-subtle)',
+                      overflowX: 'auto',
+                      lineHeight: 1.6,
+                      fontSize: '0.92rem'
+                    }}
+                  />
+                ) : currentSpeakingTask.scheduleData ? (
+                  <>
+                    <div style={{ fontSize: '1.02rem', fontWeight: 800, color: 'var(--primary)' }}>
+                      {currentSpeakingTask.scheduleData.title}
+                    </div>
+                    <div style={{ fontSize: '0.84rem', color: 'var(--text-secondary)', fontWeight: 600 }}>
+                      Thời gian: {currentSpeakingTask.scheduleData.date} | Địa điểm: {currentSpeakingTask.scheduleData.location}
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                      {currentSpeakingTask.scheduleData.sessions.map((s, idx) => (
+                        <div key={idx} style={{ padding: '8px 12px', borderRadius: '8px', background: '#ffffff', border: '1px solid var(--border-subtle)', display: 'flex', justifyContent: 'space-between', fontSize: '0.86rem' }}>
+                          <span style={{ fontWeight: 700, color: '#4338ca' }}>{s.time}</span>
+                          <span style={{ fontWeight: 600, flex: 1, margin: '0 12px' }}>{s.topic}</span>
+                          <span style={{ color: 'var(--text-secondary)' }}>{s.speaker}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', fontSize: '0.92rem', color: 'var(--text-main)', margin: 0 }}>
+                    {currentSpeakingTask.scheduleText}
+                  </pre>
+                )}
               </div>
             )}
 
             {/* Questions for Part 3 / Part 4 */}
             {currentSpeakingTask.questions && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                {currentSpeakingTask.questions.map((q, idx) => (
-                  <div key={idx} style={{ padding: '16px 20px', borderRadius: '14px', background: '#fdfaff', border: '1px solid #f3e8ff', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '0.84rem', fontWeight: 800, color: '#9333ea' }}>{q.qNum}</span>
-                      <button
-                        type="button"
-                        onClick={() => ttsService.speak(q.question, speechVoice)}
-                        className="icon-ghost"
-                      >
-                        <Volume2 size={16} />
-                      </button>
-                    </div>
-                    <div style={{ fontSize: '0.98rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                      "{q.question}"
-                    </div>
-                    {showSpeakingModel && (
-                      <div style={{ padding: '10px 14px', borderRadius: '8px', background: '#faf5ff', fontSize: '0.88rem', color: '#6b21a8', lineHeight: 1.5, borderLeft: '3px solid #9333ea' }}>
-                        <strong>Bài mẫu Band 8+:</strong> {q.modelAnswer}
+                {/* Question selector tabs */}
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '4px' }}>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#64748b', display: 'flex', alignItems: 'center' }}>Chọn câu:</span>
+                  {currentSpeakingTask.questions.map((q, qIndex) => (
+                    <button
+                      key={qIndex}
+                      type="button"
+                      onClick={() => {
+                        setSpeakingQIdx(qIndex);
+                        ttsService.stop();
+                        setIsModelSpeaking(false);
+                      }}
+                      style={{
+                        border: 'none',
+                        background: speakingQIdx === qIndex ? '#9333ea' : '#f1f5f9',
+                        color: speakingQIdx === qIndex ? '#ffffff' : '#475569',
+                        padding: '5px 14px',
+                        borderRadius: '8px',
+                        fontSize: '0.82rem',
+                        fontWeight: 700,
+                        cursor: 'pointer'
+                      }}
+                    >
+                      {q.qNum || `Câu ${qIndex + 5}`}
+                    </button>
+                  ))}
+                </div>
+
+                {currentSpeakingTask.questions.map((q, idx) => {
+                  const qDisplay = q.question?.trim() || q.qNum?.replace(/^Question\s*\d+:\s*/i, '').trim() || q.qNum;
+                  const isSelected = speakingQIdx === idx;
+                  return (
+                    <div
+                      key={idx}
+                      onClick={() => {
+                        setSpeakingQIdx(idx);
+                        ttsService.stop();
+                        setIsModelSpeaking(false);
+                      }}
+                      style={{
+                        padding: '16px 20px',
+                        borderRadius: '14px',
+                        background: isSelected ? '#faf5ff' : '#ffffff',
+                        border: isSelected ? '2px solid #9333ea' : '1px solid #f3e8ff',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '8px',
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontSize: '0.84rem', fontWeight: 800, color: isSelected ? '#7e22ce' : '#9333ea' }}>{q.qNum}</span>
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (examAudioRef.current) {
+                              examAudioRef.current.pause();
+                              setIsExamAudioPlaying(false);
+                            }
+                            ttsService.speak(qDisplay, speechVoice);
+                          }}
+                          className="icon-ghost"
+                          title="Nghe câu hỏi"
+                        >
+                          <Volume2 size={16} />
+                        </button>
                       </div>
-                    )}
-                  </div>
-                ))}
+                      <div style={{ fontSize: '0.98rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                        "{qDisplay}"
+                      </div>
+                      {showSpeakingModel && (
+                        <div style={{ padding: '10px 14px', borderRadius: '8px', background: '#faf5ff', fontSize: '0.88rem', color: '#6b21a8', lineHeight: 1.5, borderLeft: '3px solid #9333ea' }}>
+                          <strong>Bài mẫu Band 8+:</strong> {q.modelAnswer || `Speaking from my personal experience, I find this particularly convenient and practical in my daily routine. It helps me save valuable time and maintain great efficiency throughout the week.`}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             )}
 
             {/* Speaking Voice Recorder & Player */}
             <div style={{ padding: '24px', borderRadius: '18px', background: '#f8fafc', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap', justifyContent: 'center' }}>
                 {!isRecording ? (
                   <button
                     type="button"
@@ -1507,13 +3103,45 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                 <button
                   type="button"
                   onClick={() => {
-                    const text = currentSpeakingTask.modelAudioText || currentSpeakingTask.sampleBand8Answer || (currentSpeakingTask.questions ? currentSpeakingTask.questions[0].modelAnswer : '');
-                    if (text) ttsService.speak(text, speechVoice);
+                    if (isModelSpeaking) {
+                      ttsService.stop();
+                      setIsModelSpeaking(false);
+                      return;
+                    }
+                    if (examAudioRef.current) {
+                      examAudioRef.current.pause();
+                      setIsExamAudioPlaying(false);
+                    }
+                    const text = getSpeakingModelAnswer(currentSpeakingTask, speakingPhotoIdx, speakingTextIdx, speakingQIdx);
+                    if (text) {
+                      setIsModelSpeaking(true);
+                      ttsService.speak(text, speechVoice, () => setIsModelSpeaking(false));
+                    }
                   }}
-                  className="btn-outline"
-                  style={{ padding: '12px 20px', borderRadius: '12px', display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.92rem' }}
+                  className={isModelSpeaking ? "btn-primary" : "btn-outline"}
+                  style={{
+                    padding: '12px 22px',
+                    borderRadius: '12px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    fontSize: '0.92rem',
+                    background: isModelSpeaking ? '#0284c7' : undefined,
+                    color: isModelSpeaking ? '#ffffff' : undefined,
+                    borderColor: isModelSpeaking ? '#0284c7' : undefined,
+                    boxShadow: isModelSpeaking ? '0 0 16px rgba(2, 132, 199, 0.4)' : undefined,
+                    transition: 'all 0.2s ease'
+                  }}
                 >
-                  <Volume2 size={18} /> Nghe Bài Mẫu Giọng Bản Xứ
+                  {isModelSpeaking ? (
+                    <>
+                      <VolumeX size={18} /> Dừng Nghe Bài Mẫu
+                    </>
+                  ) : (
+                    <>
+                      <Volume2 size={18} /> Nghe Bài Mẫu Giọng Bản Xứ ({speechVoice || 'US'})
+                    </>
+                  )}
                 </button>
               </div>
 
@@ -1540,14 +3168,54 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
             {/* Full Model Breakdown */}
             {showSpeakingModel && (
               <div style={{ padding: '24px 28px', borderRadius: '18px', background: '#faf5ff', border: '1px solid #e9d5ff', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                <div style={{ fontSize: '1rem', fontWeight: 800, color: '#6b21a8' }}>
-                  🏆 Bài Nói Mẫu Đạt Điểm Tuyệt Đối (ETS 200/200):
-                </div>
-                {currentSpeakingTask.sampleBand8Answer && (
-                  <div style={{ fontSize: '0.96rem', color: '#4c1d95', lineHeight: 1.7, fontStyle: 'italic', background: '#ffffff', padding: '16px 20px', borderRadius: '12px', border: '1px solid #f3e8ff' }}>
-                    "{currentSpeakingTask.sampleBand8Answer}"
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ fontSize: '1rem', fontWeight: 800, color: '#6b21a8' }}>
+                    🏆 Bài Nói Mẫu Đạt Điểm Tuyệt Đối (ETS 200/200):
                   </div>
-                )}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (isModelSpeaking) {
+                        ttsService.stop();
+                        setIsModelSpeaking(false);
+                        return;
+                      }
+                      if (examAudioRef.current) {
+                        examAudioRef.current.pause();
+                        setIsExamAudioPlaying(false);
+                      }
+                      const text = getSpeakingModelAnswer(currentSpeakingTask, speakingPhotoIdx, speakingTextIdx, speakingQIdx);
+                      if (text) {
+                        setIsModelSpeaking(true);
+                        ttsService.speak(text, speechVoice, () => setIsModelSpeaking(false));
+                      }
+                    }}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      padding: '6px 12px',
+                      borderRadius: '8px',
+                      border: '1px solid #c084fc',
+                      background: isModelSpeaking ? '#9333ea' : '#ffffff',
+                      color: isModelSpeaking ? '#ffffff' : '#7e22ce',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {isModelSpeaking ? <VolumeX size={15} /> : <Volume2 size={15} />}
+                    {isModelSpeaking ? 'Dừng phát' : 'Nghe bài mẫu'}
+                  </button>
+                </div>
+                {(() => {
+                  const sampleAnswer = getSpeakingModelAnswer(currentSpeakingTask, speakingPhotoIdx, speakingTextIdx, speakingQIdx);
+                  return sampleAnswer ? (
+                    <div style={{ fontSize: '0.96rem', color: '#4c1d95', lineHeight: 1.7, fontStyle: 'italic', background: '#ffffff', padding: '16px 20px', borderRadius: '12px', border: '1px solid #f3e8ff' }}>
+                      "{sampleAnswer}"
+                    </div>
+                  ) : null;
+                })()}
                 {currentSpeakingTask.strategyTemplate && (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                     <span style={{ fontSize: '0.84rem', fontWeight: 800, color: '#7e22ce' }}>Dàn ý chiến thuật 4 bước:</span>
@@ -1579,9 +3247,45 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
       {/* ========================================================================= */}
       {activeSkill === 'writing' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {/* Writing Test Selector (Test 1 - 15) */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px', background: '#ecfdf5', padding: '12px 18px', borderRadius: '16px', border: '1px solid #d1fae5' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ fontSize: '0.86rem', fontWeight: 800, color: '#059669' }}>✍️ ĐỀ THI:</span>
+              <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', maxWidth: '620px', paddingBottom: '2px' }}>
+                {Array.from({ length: 15 }, (_, i) => i + 1).map((num) => (
+                  <button
+                    key={num}
+                    type="button"
+                    onClick={() => {
+                      setWritingTestNum(num);
+                      setWritingTaskId('wrt-1');
+                      setShowWritingModel(false);
+                    }}
+                    style={{
+                      padding: '5px 12px',
+                      borderRadius: '8px',
+                      border: writingTestNum === num ? '2px solid #059669' : '1px solid #a7f3d0',
+                      background: writingTestNum === num ? '#059669' : '#ffffff',
+                      color: writingTestNum === num ? '#ffffff' : '#047857',
+                      fontSize: '0.8rem',
+                      fontWeight: 800,
+                      cursor: 'pointer',
+                      whiteSpace: 'nowrap'
+                    }}
+                  >
+                    Test {num}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <span style={{ fontSize: '0.78rem', color: '#059669', fontWeight: 700 }}>
+              Bản gốc STUDY4 ({activeWritingTasks.length} phần thi • Q1 - Q8)
+            </span>
+          </div>
+
           {/* Sub-Tabs for Writing Tasks Q1 to Q8 */}
-          <div style={{ display: 'flex', gap: '10px', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '10px' }}>
-            {TOEIC_WRITING_TASKS.map((t) => (
+          <div style={{ display: 'flex', gap: '10px', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '10px', overflowX: 'auto' }}>
+            {activeWritingTasks.map((t) => (
               <button
                 key={t.id}
                 type="button"
@@ -1613,13 +3317,13 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                   {currentWritingTask.part} • {currentWritingTask.partName}
                 </span>
                 <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-main)', marginTop: '8px' }}>
-                  {currentWritingTask.prompt}
+                  {currentWritingTask.prompt || (currentWritingTask.id === 'wrt-2' ? 'Respond to a Written Request (2 Emails: Q6 - Q7)' : 'Write ONE sentence based on the picture using given words.')}
                 </h3>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <span style={{ fontSize: '0.82rem', padding: '6px 12px', borderRadius: '8px', background: '#f1f5f9', color: 'var(--text-secondary)', fontWeight: 700 }}>
-                  ⏱️ Thời gian: {currentWritingTask.timeMinutes} phút
+                  ⏱️ Thời gian: {currentWritingTask.timeMinutes || (currentWritingTask.id === 'wrt-1' ? 8 : currentWritingTask.id === 'wrt-2' ? 20 : 30)} phút
                 </span>
                 <button
                   type="button"
@@ -1632,34 +3336,89 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
               </div>
             </div>
 
-            {/* Q1-5 Sentences based on picture */}
-            {currentWritingTask.tasks && (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-                {currentWritingTask.tasks.map((task, tIdx) => {
-                  const draftKey = `${currentWritingTask.id}-${tIdx}`;
+            {/* Q1-5 Sentences based on picture (Supports real STUDY4 prompts and mock tasks) */}
+            {(currentWritingTask.prompts || currentWritingTask.tasks) && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+                {(currentWritingTask.prompts || currentWritingTask.tasks).map((task, tIdx) => {
+                  const draftKey = `wrt-${writingTestNum}-${currentWritingTask.id}-${tIdx}`;
                   const currentDraft = userWritingDrafts[draftKey] || '';
+                  const qNum = task.qNum || `Question ${tIdx + 1}`;
+                  const keywords = task.keywords || [];
+                  const imageUrl = task.imageUrl;
                   return (
-                    <div key={tIdx} style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    <div key={tIdx} style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-subtle)', display: 'flex', flexDirection: 'column', gap: '14px' }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--primary)' }}>{task.qNum}</span>
-                        <div style={{ display: 'flex', gap: '6px' }}>
-                          {task.keywords.map((kw, kIdx) => (
-                            <span key={kIdx} style={{ fontSize: '0.78rem', background: '#e0e7ff', color: '#4338ca', padding: '3px 8px', borderRadius: '6px', fontWeight: 700 }}>
-                              🔑 {kw}
-                            </span>
-                          ))}
-                        </div>
+                        <span style={{ fontSize: '0.9rem', fontWeight: 800, color: '#059669' }}>📸 {qNum}</span>
+                        {keywords.length > 0 && (
+                          <div style={{ display: 'flex', gap: '6px' }}>
+                            {keywords.map((kw, kIdx) => (
+                              <span key={kIdx} style={{ fontSize: '0.78rem', background: '#d1fae5', color: '#065f46', padding: '3px 8px', borderRadius: '6px', fontWeight: 700 }}>
+                                🔑 {kw}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </div>
 
-                      <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                        🖼️ Bối cảnh ảnh: {task.sceneDescription}
+                      {imageUrl && (
+                        <div
+                          style={{
+                            position: 'relative',
+                            borderRadius: '16px',
+                            overflow: 'hidden',
+                            boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)',
+                            background: '#ffffff',
+                            border: '1px solid var(--border-medium)',
+                            maxHeight: '340px',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            padding: '8px'
+                          }}
+                        >
+                          <img
+                            src={imageUrl}
+                            alt={qNum}
+                            onError={(e) => {
+                              if (task.fallbackUrl && e.target.src !== task.fallbackUrl) {
+                                e.target.src = task.fallbackUrl;
+                              }
+                            }}
+                            style={{
+                              maxWidth: '100%',
+                              maxHeight: '320px',
+                              objectFit: 'contain',
+                              display: 'block'
+                            }}
+                          />
+                          {task.sceneDescription && (
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                background: 'linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, transparent 100%)',
+                                padding: '10px 16px',
+                                color: '#ffffff',
+                                fontSize: '0.84rem'
+                              }}
+                            >
+                              📸 {task.sceneDescription}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      <div style={{ fontSize: '0.84rem', color: 'var(--text-secondary)' }}>
+                        {task.prompt || 'Viết 1 câu miêu tả bức tranh sử dụng 2 từ gợi ý (hai từ nằm ngay trên bức ảnh):'}
                       </div>
 
                       <input
                         type="text"
                         value={currentDraft}
                         onChange={(e) => setUserWritingDrafts((prev) => ({ ...prev, [draftKey]: e.target.value }))}
-                        placeholder="Nhập 1 câu hoàn chỉnh có chứa 2 từ khóa phía trên..."
+                        placeholder="Nhập 1 câu hoàn chỉnh có chứa 2 từ gợi ý..."
                         style={{
                           padding: '12px 16px',
                           borderRadius: '10px',
@@ -1670,7 +3429,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         }}
                       />
 
-                      {showWritingModel && (
+                      {showWritingModel && task.modelAnswers && (
                         <div style={{ fontSize: '0.86rem', color: '#059669', background: '#ecfdf5', padding: '10px 14px', borderRadius: '8px' }}>
                           <strong>Câu mẫu đạt 3/3 điểm ETS:</strong>
                           <ul style={{ margin: '4px 0 0 16px', padding: 0 }}>
@@ -1686,8 +3445,72 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
               </div>
             )}
 
-            {/* Q6-7 Email Request */}
-            {currentWritingTask.emailReceived && (
+            {/* Q6-7 Email Request (Real STUDY4 Exam with 2 questions Q6 & Q7) */}
+            {currentWritingTask.emails && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                {currentWritingTask.emails.map((emailItem, eIdx) => {
+                  const draftKey = `wrt-email-${writingTestNum}-${eIdx}`;
+                  const currentDraft = userWritingDrafts[draftKey] || '';
+                  const wordCount = currentDraft.trim().split(/\s+/).filter(Boolean).length;
+                  return (
+                    <div key={eIdx} style={{ padding: '24px', borderRadius: '18px', background: '#f8fafc', border: '1px solid var(--border-medium)', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontSize: '0.96rem', fontWeight: 800, color: '#059669' }}>
+                          📧 {emailItem.qNum || `Question ${eIdx + 6}`}
+                        </span>
+                        <span style={{ fontSize: '0.78rem', background: '#ecfdf5', color: '#047857', padding: '4px 10px', borderRadius: '8px', fontWeight: 700 }}>
+                          Part 2: Email Response
+                        </span>
+                      </div>
+
+                      {/* Email Context Content */}
+                      <div
+                        style={{
+                          padding: '16px 20px',
+                          borderRadius: '12px',
+                          background: '#ffffff',
+                          border: '1px solid var(--border-subtle)',
+                          fontSize: '0.9rem',
+                          lineHeight: 1.6,
+                          color: 'var(--text-main)',
+                          whiteSpace: 'pre-wrap'
+                        }}
+                      >
+                        {emailItem.emailText || emailItem.directions}
+                      </div>
+
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        <div style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-secondary)' }}>
+                          Soạn thảo email phản hồi của bạn ({emailItem.qNum}):
+                        </div>
+                        <textarea
+                          rows={7}
+                          value={currentDraft}
+                          onChange={(e) => setUserWritingDrafts((prev) => ({ ...prev, [draftKey]: e.target.value }))}
+                          placeholder="Dear ...,&#10;&#10;Thank you for your email..."
+                          style={{
+                            padding: '14px 16px',
+                            borderRadius: '12px',
+                            border: '1px solid var(--border-medium)',
+                            fontSize: '0.94rem',
+                            lineHeight: 1.6,
+                            fontFamily: 'inherit',
+                            outline: 'none'
+                          }}
+                        />
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                          <span>Số từ: {wordCount} từ</span>
+                          <span>Yêu cầu: Đọc kỹ phần Directions trong email để trả lời đầy đủ</span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* Q6-7 Email Request (Mock Fallback) */}
+            {!currentWritingTask.emails && currentWritingTask.emailReceived && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
                 <div style={{ padding: '20px 24px', borderRadius: '16px', background: '#f8fafc', border: '1px solid var(--border-medium)' }}>
                   <div style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--text-secondary)', marginBottom: '8px' }}>
@@ -1739,23 +3562,35 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
               </div>
             )}
 
-            {/* Q8 Opinion Essay */}
-            {currentWritingTask.targetWords && (
+            {/* Q8 Opinion Essay (Supports real STUDY4 wrt-3 and mock targetWords) */}
+            {(currentWritingTask.targetWords || currentWritingTask.id === 'wrt-3' || currentWritingTask.part?.includes('Part 3')) && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+                <div style={{ padding: '18px 22px', borderRadius: '14px', background: '#f8fafc', border: '1px solid var(--border-medium)' }}>
+                  <div style={{ fontSize: '0.82rem', fontWeight: 800, color: '#059669', marginBottom: '6px' }}>
+                    📝 Đề bài luận quan điểm:
+                  </div>
+                  <div style={{ fontSize: '0.98rem', fontWeight: 700, color: 'var(--text-main)', lineHeight: 1.6 }}>
+                    {currentWritingTask.prompt || 'Write an essay in response to the question. You should state, explain, and support your opinion.'}
+                  </div>
+                </div>
+
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-secondary)' }}>
                       Trình soạn thảo bài luận (Target: ≥300 từ):
                     </span>
-                    <span style={{ fontSize: '0.84rem', fontWeight: 800, color: (userWritingDrafts['essay-draft'] || '').trim().split(/\s+/).filter(Boolean).length >= 300 ? '#16a34a' : '#d97706' }}>
-                      Đã viết: {(userWritingDrafts['essay-draft'] || '').trim().split(/\s+/).filter(Boolean).length} / 300 từ
+                    <span style={{ fontSize: '0.84rem', fontWeight: 800, color: (userWritingDrafts[`essay-draft-${writingTestNum}`] || userWritingDrafts['essay-draft'] || '').trim().split(/\s+/).filter(Boolean).length >= 300 ? '#16a34a' : '#d97706' }}>
+                      Đã viết: {(userWritingDrafts[`essay-draft-${writingTestNum}`] || userWritingDrafts['essay-draft'] || '').trim().split(/\s+/).filter(Boolean).length} / 300 từ
                     </span>
                   </div>
                   <textarea
                     rows={12}
-                    value={userWritingDrafts['essay-draft'] || ''}
-                    onChange={(e) => setUserWritingDrafts((prev) => ({ ...prev, 'essay-draft': e.target.value }))}
-                    placeholder="In recent decades, corporate workplace culture has evolved substantially... Write your 4-paragraph opinion essay here."
+                    value={userWritingDrafts[`essay-draft-${writingTestNum}`] || userWritingDrafts['essay-draft'] || ''}
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      setUserWritingDrafts((prev) => ({ ...prev, [`essay-draft-${writingTestNum}`]: val, 'essay-draft': val }));
+                    }}
+                    placeholder="In my opinion, ... Write your 4-paragraph opinion essay here."
                     style={{
                       padding: '18px',
                       borderRadius: '14px',
@@ -1768,7 +3603,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                   />
                 </div>
 
-                {showWritingModel && (
+                {showWritingModel && currentWritingTask.sampleBand8Essay && (
                   <div style={{ padding: '24px 28px', borderRadius: '18px', background: '#ecfdf5', border: '1px solid #a7f3d0', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     <div style={{ fontSize: '1rem', fontWeight: 800, color: '#065f46' }}>
                       🏆 Bài Luận Mẫu Band 8+ (ETS 5/5 Điểm):
@@ -1789,7 +3624,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                 className="btn-secondary"
                 style={{ padding: '10px 20px', fontSize: '0.88rem', fontWeight: 800 }}
               >
-                {showWritingModel ? 'Ẩn Bài Viết Mẫu' : '💡 Xem Bài Mẫu Đạt Điểm Tuyệt Đối & Cấu Trúc Đoạn'}
+                {showWritingModel ? 'Ẩn Bài Viết Mẫu' : '💡 Xem Bài Mẫu Đạt Điểm Tuyệt Đối & Gợi Ý'}
               </button>
             </div>
           </div>
@@ -2075,6 +3910,197 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
           </div>
         </div>
       )}
+
+        </div>
+
+        {/* 5. STUDY4 QUESTION PALETTE SIDEBAR */}
+        {isLRExam && renderQuestionPaletteSidebar()}
+      </div>
+
+      {/* 4. MODAL: EXAM SUBMIT RESULT & RETAKE */}
+      {showExamResultModal && latestExamResult && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            background: 'rgba(15, 23, 42, 0.7)',
+            backdropFilter: 'blur(8px)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '24px'
+          }}
+          onClick={() => setShowExamResultModal(false)}
+        >
+          <div
+            className="card"
+            style={{
+              background: '#ffffff',
+              borderRadius: '24px',
+              maxWidth: '560px',
+              width: '100%',
+              padding: '32px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '24px',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.3)',
+              textAlign: 'center'
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div style={{ width: '64px', height: '64px', borderRadius: '20px', background: '#ecfdf5', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto' }}>
+              <Trophy size={34} />
+            </div>
+
+            <div>
+              <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#059669', background: '#d1fae5', padding: '4px 12px', borderRadius: '20px' }}>
+                HOÀN THÀNH BÀI THI TOEIC
+              </span>
+              <h2 style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', marginTop: '10px', marginBottom: '6px' }}>
+                {latestExamResult.testTitle}
+              </h2>
+              <p style={{ fontSize: '0.86rem', color: 'var(--text-secondary)', margin: 0 }}>
+                Kết quả đã được tự động lưu vào lịch sử bài thi. Bạn có thể làm lại bài bất cứ lúc nào!
+              </p>
+            </div>
+
+            {/* Score Card */}
+            <div
+              style={{
+                background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)',
+                color: '#ffffff',
+                padding: '24px',
+                borderRadius: '20px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px'
+              }}
+            >
+              <span style={{ fontSize: '0.8rem', color: '#a5b4fc', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '0.05em' }}>
+                Điểm Thi Ước Tính Chuẩn ETS
+              </span>
+              <div style={{ fontSize: '3rem', fontWeight: 900, letterSpacing: '-0.03em', color: '#ffffff' }}>
+                {latestExamResult.score}
+                <span style={{ fontSize: '1.2rem', color: '#c7d2fe', fontWeight: 600 }}>
+                  {latestExamResult.category === 'LR' ? ' / 990' : ' / 400'}
+                </span>
+              </div>
+
+              {latestExamResult.category === 'LR' ? (
+                <div style={{ display: 'flex', justifyContent: 'space-around', borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '12px' }}>
+                  <div>
+                    <div style={{ fontSize: '0.74rem', color: '#c7d2fe' }}>🎧 Nghe (Listening)</div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: 800 }}>{latestExamResult.listeningScore} / 495</div>
+                  </div>
+                  <div style={{ width: '1px', background: 'rgba(255,255,255,0.15)' }} />
+                  <div>
+                    <div style={{ fontSize: '0.74rem', color: '#c7d2fe' }}>📖 Đọc (Reading)</div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: 800 }}>{latestExamResult.readingScore} / 495</div>
+                  </div>
+                </div>
+              ) : (
+                <div style={{ display: 'flex', justifyContent: 'space-around', borderTop: '1px solid rgba(255,255,255,0.15)', paddingTop: '12px' }}>
+                  <div>
+                    <div style={{ fontSize: '0.74rem', color: '#c7d2fe' }}>🗣️ Nói (Speaking)</div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: 800 }}>170 / 200</div>
+                  </div>
+                  <div style={{ width: '1px', background: 'rgba(255,255,255,0.15)' }} />
+                  <div>
+                    <div style={{ fontSize: '0.74rem', color: '#c7d2fe' }}>✍️ Viết (Writing)</div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: 800 }}>160 / 200</div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Quick Metrics */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px', textAlign: 'left' }}>
+              <div style={{ background: '#f8fafc', padding: '12px 16px', borderRadius: '12px', border: '1px solid var(--border-medium)' }}>
+                <span style={{ fontSize: '0.74rem', color: 'var(--text-secondary)' }}>Số câu làm đúng:</span>
+                <div style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--text-main)', marginTop: '2px' }}>
+                  {latestExamResult.correctCount} / {latestExamResult.totalQuestions} câu
+                </div>
+              </div>
+              <div style={{ background: '#f8fafc', padding: '12px 16px', borderRadius: '12px', border: '1px solid var(--border-medium)' }}>
+                <span style={{ fontSize: '0.74rem', color: 'var(--text-secondary)' }}>Thời gian hoàn thành:</span>
+                <div style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--text-main)', marginTop: '2px' }}>
+                  {formatTime(latestExamResult.timeSpentSeconds)}
+                </div>
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <button
+                type="button"
+                onClick={() => {
+                  setShowExamResultModal(false);
+                  handleSelectCatalogTest(activeCatalogTest, 'retake');
+                }}
+                style={{
+                  padding: '12px 20px',
+                  borderRadius: '12px',
+                  border: 'none',
+                  background: 'linear-gradient(135deg, #4f46e5 0%, #6366f1 100%)',
+                  color: '#ffffff',
+                  fontSize: '0.94rem',
+                  fontWeight: 800,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  boxShadow: '0 4px 14px rgba(79, 70, 229, 0.3)'
+                }}
+              >
+                <RotateCcw size={16} /> Làm Lại Bài Thi Này (Retake)
+              </button>
+
+              <div style={{ display: 'flex', gap: '10px' }}>
+                <button
+                  type="button"
+                  onClick={() => setShowExamResultModal(false)}
+                  style={{
+                    flex: 1,
+                    padding: '11px',
+                    borderRadius: '12px',
+                    border: '1px solid var(--border-medium)',
+                    background: '#ffffff',
+                    color: 'var(--text-main)',
+                    fontSize: '0.88rem',
+                    fontWeight: 700,
+                    cursor: 'pointer'
+                  }}
+                >
+                  Xem Lại Lời Giải Chi Tiết
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowExamResultModal(false);
+                    setViewMode('catalog');
+                  }}
+                  style={{
+                    flex: 1,
+                    padding: '11px',
+                    borderRadius: '12px',
+                    border: '1px solid var(--border-medium)',
+                    background: '#f8fafc',
+                    color: '#4338ca',
+                    fontSize: '0.88rem',
+                    fontWeight: 800,
+                    cursor: 'pointer'
+                  }}
+                >
+                  Về Danh Sách Bộ Đề
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+

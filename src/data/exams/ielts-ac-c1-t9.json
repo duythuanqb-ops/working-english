@@ -1,0 +1,1702 @@
+{
+  "id": "ielts-ac-c1-t9",
+  "testNum": 9,
+  "collection": "Collection 1",
+  "type": "academic",
+  "title": "IELTS Academic Collection 1 Test 9 (Bản Gốc STUDY4)",
+  "category": "ielts-ac",
+  "durationMinutes": 165,
+  "questionsCount": 80,
+  "listening": {
+    "durationMinutes": 40,
+    "audioTracks": {
+      "part1": "/exams/ielts-ac-c1-t9/audio/p1.mp3",
+      "part2": "/exams/ielts-ac-c1-t9/audio/p2.mp3",
+      "part3": "/exams/ielts-ac-c1-t9/audio/p3.mp3",
+      "part4": "/exams/ielts-ac-c1-t9/audio/p4.mp3"
+    },
+    "parts": [
+      {
+        "partNum": 1,
+        "title": "Part 1",
+        "audioTrack": "/exams/ielts-ac-c1-t9/audio/p1.mp3",
+        "transcript": "",
+        "groups": []
+      }
+    ]
+  },
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1: Rubber",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1 below.</span></p><p><b><span>Rubber</span></b></p><p><i><span>T. and W. Musgrove discuss the origins and early uses of rubber</span></i></p><p><span>Rubber plants are spread right across the globe and grow in many different habitats. One might think, therefore, that humankind has known about rubber for thousands of years. Yet, unlike other crops of economic importance, rubber led a relatively anonymous life until the last 150 years or so. The Indians of South America appear to be the first people to have understood the properties of rubber. The Aztecs of what is now Mexico were the first to be recorded using the substance. A wall painting from the sixth century depicts a tribute offering of crude rubber. After Columbus arrived and the Spanish influx followed, more evidence of Native American use began to appear. Antonio de Herrera y Tordesillas describes a ritual game played with a rubber ball at the court of the Aztec Emperor Montezuma II. The Mayan and Toltec people are known to have taken part in similar activities.</span></p><p><span>Rubber was also used to make raincoats, shoes, jars, torches and musical instruments. All of these were made from the indigenous Castilla elastica. The Para rubber plant, now favoured for rubber cultivation, does not grow in the Mexican region. The first description of latex (liquid rubber) extraction was made by Juan de Torquemada. He noted that the Native Americans had a clever solution if no receptacle was at hand. They would place the latex on their bodies to allow it to solidify. However, no real European interest in rubber was shown for many years.</span></p><p><span>This finally changed in 1735. That year, Charles de la Condamine, a French mathematician, published an account of his journey to South America. The journey was undertaken on behalf of the Paris Academy of Sciences. Its purpose was to measure an arc of the meridian line on the equator. However, the journey home was to turn out to be more significant than the true purpose of the trip. Condamine explored Brazil and Peru along the way. He discovered how the local people used a single piece of coagulated latex to make boots. The boots were impervious to water, and when smoked they looked like real leather.</span></p><p><span>In 1747, the first description of the rubber tree and latex tapping was made. It came from François Fresneau, a military engineer and amateur botanist. Fresneau was posted to French Guiana at the time. His detailed observations gave Europeans a clearer picture of how rubber could be collected. Together, the publications of Condamine and Fresneau created considerable excitement among French scientists. They began searching for a solvent that could turn crude rubber into a substance for commercial exploitation.</span></p><p><span>In 1818, a British medical student named James Syme first used rubber to make waterproof cloth. Another early use of the substance was as an eraser of pencil marks, which is how it got the name 'rubber'. This was complemented by balloons, rubber bands, braces, boots for the army and other ideas. These met with varying degrees of success. In 1820, Thomas Hancock invented a machine he called the 'masticator'. Hancock was an English manufacturer of rubber goods such as driving belts, industrial rollers and hoses. His machine chewed up waste strips for re-use. It was discovered that the masticated rubber was more malleable, while keeping much of its elasticity. In Scotland at the same time, Charles Mackintosh had discovered a way to use rubber as a waterproofing material, and he patented this process in 1823. Hancock and Mackintosh joined forces in 1834. Three years later, Hancock invented a machine for spreading rubber onto material.</span></p><p><span>Despite their beneficial qualities, such as waterproofing, rubber goods were still not particularly popular. They had some major flaws, including the fact that they dissolved malodorously. They also became pliant when warm and rigid when cold. Then in 1839, the American Charles Goodyear discovered that it was possible to stabilise rubber. The method involved mixing it with sulphur while exposing it to heat. He called this process vulcanisation. With this discovery, the full versatility of this extraordinary substance became apparent. Rubber goods could now be manufactured with all the beneficial qualities of the material. These included durability, elasticity and variability. The goods were no longer sticky, soluble or governed by the vagaries of the weather. The economic potential of rubber was now clearly evident. It played an important role in the Industrial Revolution. It was used in the steam engines found in factories, mills, mines and railways. Rubber made a triumphant entrance as a new and innovative material at the Great Exhibition of 1851. Shoes, airbeds, furniture and clothing made from newly improved rubber were proudly displayed there.</span></p><p><span>One of the most important rubber inventions was made in 1888. An Irishman called John Boyd Dunlop produced the first pneumatic tyre. Solid rubber tyres had been used for the previous 18 years. However, Dunlop's new design, which he updated in 1890, immediately became popular. In 1895, Dunlop's tyres were first used in motor cars. With the mass production of cars just over the horizon, the rubber industry had never looked healthier. The import levels of rubber over the nineteenth century bear witness to its irrepressible rise. In 1830, Britain had imported just 211 kg of crude rubber. By 1857, this had risen to 10,000 kg. By 1874, levels were just under six times as much again.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Do the following statements agree with the information given in Reading Passage 1? In boxes 1–6 on your answer sheet, writeTRUE if the statement agrees with the informationFALSE if the statement contradicts the informationNOT GIVEN if there is no information on this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Do the following statements agree with the information given in Reading Passage 1? In boxes 1–6 on your answer sheet, write</span></p><p><span>TRUE if the statement agrees with the information</span></p><p><span>FALSE if the statement contradicts the information</span></p><p><span>NOT GIVEN if there is no information on this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310164",
+                "qNum": 1,
+                "type": "choice",
+                "question": "Rubber plants grow only in certain regions of the world.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "310165",
+                "qNum": 2,
+                "type": "choice",
+                "question": "People in the area now known as Mexico had already made practical use of rubber by the sixth century.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "310166",
+                "qNum": 3,
+                "type": "choice",
+                "question": "Rubber from the Castilla elastica plant is of poorer quality than that from the Para plant.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "310167",
+                "qNum": 4,
+                "type": "choice",
+                "question": "A French mathematician inspired real interest in rubber amongst Europeans.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "310168",
+                "qNum": 5,
+                "type": "choice",
+                "question": "The process of vulcanisation was discovered by accident.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "310169",
+                "qNum": 6,
+                "type": "choice",
+                "question": "Imports of crude rubber into Britain fell during the nineteenth century.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "1",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310164",
+                "qNum": 1,
+                "type": "choice",
+                "question": "Rubber plants grow only in certain regions of the world.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "2",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310165",
+                "qNum": 2,
+                "type": "choice",
+                "question": "People in the area now known as Mexico had already made practical use of rubber by the sixth century.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "3",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310166",
+                "qNum": 3,
+                "type": "choice",
+                "question": "Rubber from the Castilla elastica plant is of poorer quality than that from the Para plant.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "4",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310167",
+                "qNum": 4,
+                "type": "choice",
+                "question": "A French mathematician inspired real interest in rubber amongst Europeans.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "5",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310168",
+                "qNum": 5,
+                "type": "choice",
+                "question": "The process of vulcanisation was discovered by accident.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "6",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310169",
+                "qNum": 6,
+                "type": "choice",
+                "question": "Imports of crude rubber into Britain fell during the nineteenth century.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 7–13 on your answer sheet.The Commercial Development of RubberEarly European travellers gave accounts of various rubber objects in use in Central and South America, and these accounts created interest in the commercial exploitation of rubber. In 1818, (7)______ was produced using rubber, and in 1820, a machine was invented for recycling (8)______ of rubber. Over the next few years, other attempts were made to improve rubber, but some problems remained. For example, rubber products smelt bad when they were dissolved, and could turn either soft or (9)______ depending on the temperature. However, in 1839, a new process to (10)______ the substance greatly increased its potential. During the Industrial Revolution, rubber was fitted into (11)______ operating in several workplaces. Then in 1888, the (12)______ was developed, and a few years later, the (13)______ of the motor car just about to begin.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 7–13 on your answer sheet.</span></p><p><b><span>The Commercial Development of Rubber</span></b></p><p><span>Early European travellers gave accounts of various rubber objects in use in Central and South America, and these accounts created interest in the commercial exploitation of rubber. In 1818, (7)______ was produced using rubber, and in 1820, a machine was invented for recycling (8)______ of rubber. Over the next few years, other attempts were made to improve rubber, but some problems remained. For example, rubber products smelt bad when they were dissolved, and could turn either soft or (9)______ depending on the temperature. However, in 1839, a new process to (10)______ the substance greatly increased its potential. During the Industrial Revolution, rubber was fitted into (11)______ operating in several workplaces. Then in 1888, the (12)______ was developed, and a few years later, the (13)______ of the motor car just about to begin. </span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310170",
+                "qNum": 7,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "waterproof cloth",
+                "explanation": "Đáp án chuẩn: waterproof cloth"
+              },
+              {
+                "qid": "310171",
+                "qNum": 8,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "waste strips",
+                "explanation": "Đáp án chuẩn: waste strips"
+              },
+              {
+                "qid": "310172",
+                "qNum": 9,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "rigid",
+                "explanation": "Đáp án chuẩn: rigid"
+              },
+              {
+                "qid": "310173",
+                "qNum": 10,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "stabilise/stabilize",
+                "explanation": "Đáp án chuẩn: stabilise/stabilize"
+              },
+              {
+                "qid": "310174",
+                "qNum": 11,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "steam engines",
+                "explanation": "Đáp án chuẩn: steam engines"
+              },
+              {
+                "qid": "310175",
+                "qNum": 12,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pneumatic tyre",
+                "explanation": "Đáp án chuẩn: pneumatic tyre"
+              },
+              {
+                "qid": "310176",
+                "qNum": 13,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "mass production",
+                "explanation": "Đáp án chuẩn: mass production"
+              }
+            ]
+          },
+          {
+            "directions": "7",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310170",
+                "qNum": 7,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "waterproof cloth",
+                "explanation": "Đáp án chuẩn: waterproof cloth"
+              }
+            ]
+          },
+          {
+            "directions": "8",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310171",
+                "qNum": 8,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "waste strips",
+                "explanation": "Đáp án chuẩn: waste strips"
+              }
+            ]
+          },
+          {
+            "directions": "9",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310172",
+                "qNum": 9,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "rigid",
+                "explanation": "Đáp án chuẩn: rigid"
+              }
+            ]
+          },
+          {
+            "directions": "10",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310173",
+                "qNum": 10,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "stabilise/stabilize",
+                "explanation": "Đáp án chuẩn: stabilise/stabilize"
+              }
+            ]
+          },
+          {
+            "directions": "11",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310174",
+                "qNum": 11,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "steam engines",
+                "explanation": "Đáp án chuẩn: steam engines"
+              }
+            ]
+          },
+          {
+            "directions": "12",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310175",
+                "qNum": 12,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "pneumatic tyre",
+                "explanation": "Đáp án chuẩn: pneumatic tyre"
+              }
+            ]
+          },
+          {
+            "directions": "13",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310176",
+                "qNum": 13,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "mass production",
+                "explanation": "Đáp án chuẩn: mass production"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2: Learning from the Romans",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2 below.</span></p><p><b><span>Learning from the Romans </span></b></p><p><i><span>How an ancient building material is influencing modern construction</span></i></p><p><b><span>A.</span></b><span> In a quest to make concrete more durable and sustainable, an international team of geologists and engineers has found inspiration in the concrete used by the ancient Romans. The chemical secrets of Roman concrete have been uncovered in samples taken from a concrete Roman breakwater. A breakwater is a barrier that is built out into the sea to protect coasts and harbors from the force of waves. This particular breakwater has spent the last 2,000 years submerged in seawater. The international team of researchers that collected the samples was led by Paulo Monteiro, a professor of civil and environmental engineering at the University of California, Berkeley. An analysis of samples from the ancient underwater site in Pozzuoli Bay, near Naples, Italy, pinpointed why the best Roman concrete was superior to most modern concrete.</span></p><p><b><span>B. </span></b><span>Concrete was the Roman Empire’s construction material of choice. It was used in land monuments such as the Pantheon in Rome, as well as in underwater and partially underwater coastal and harbor structures. Monteiro and his team were particularly interested in how the coastal and harbor structures endured the unforgiving saltwater environment. Chemical analysis of Roman concrete showed that it differs from the modern kind in several ways. One is the content of the cement that binds the material in the concrete. The most commonly used cement in recent decades has been Portland cement. Portland cement is a compound of calcium, silicates, and hydrates (C-S-H). However, analysis of Roman concrete shows that it contains a significantly different cement. Roman cement contains aluminum, which is not found in Portland cement, and less silicon than is found in Portland cement. The resulting calcium-aluminum-silicate-hydrate (C-A-S-H) is an exceptionally stable cement.</span></p><p><b><span>C.</span></b><span> The recipe for the contents of Roman concrete was first described around 30 BC by Vitruvius, an engineer for the Roman Emperor Augustus. Volcanic ash was one of the ingredients, and it is now understood that this is crucial, as it is volcanic ash that contains the aluminum that ultimately gives Roman concrete its great durability. The Romans devised an efficient method of making concrete for coastal structures. They combined volcanic ash with lime, which added the calcium to the mix. This was then packed, together with stones and chunks of rock, into wooden molds, which were then immersed in seawater. The seawater instantly triggered a hot chemical reaction. The lime was hydrated by the seawater, which means that it incorporated water molecules into its structure, and reacted with the volcanic ash to cement the whole mixture together. This reaction formed the concrete that was used to build some of the most enduring structures in Western civilization.</span></p><p><b><span>D.</span></b><span> According to Marie Jackson, a member of the research team, Roman concrete is one of the most durable construction materials on the planet, and that was no accident. Shipping was the lifeline of political, economic, and military stability for the Roman Empire, so constructing harbors that would last was critical. ‘Over time, the Romans used less and less concrete.’ ‘As the Roman Empire declined, and shipping declined, the need for the seawater concrete declined,’ said Jackson. ‘You could also argue that the original structures were built so well that, once they were in place, they didn’t need to be replaced,’ she added.</span></p><p><b><span>E. </span></b><span>Producing Roman concrete also left a smaller carbon footprint than its modern counterpart. ‘It’s not that modern concrete isn’t good—it’s so good we use 19 billion tons of it a year,’ says Monteiro. ‘The problem is that manufacturing Portland cement accounts for seven percent of the carbon dioxide that industry puts into the air.’ Portland cement holds most modern concrete together. However, making Portland cement releases carbon dioxide into the atmosphere from burning fuel in order to heat a mix of limestone and clays to 1,450 degrees Celsius. The production of Roman concrete, however, was much cleaner, as less heat was needed. A temperature that was a third lower than that required for making Portland cement was sufficient for making Roman concrete.</span></p><p><b><span>F. </span></b><span>Some modern concrete no longer contains Portland cement; instead, fly ash is used, which causes fewer greenhouse gas emissions. Fly ash is a waste product from burning coal, and the researchers are investigating whether volcanic ash would be a good, large-volume replacement in countries that cannot access fly ash easily. ‘There is not enough fly ash in this world to replace half of the Portland cement being used,’ said Monteiro. ‘Many countries don’t have fly ash, so the idea is to find alternative local materials that will work, including the kind of volcanic ash that the Romans used. Using these alternatives could replace 40 percent of the world’s demand for Portland cement.’</span></p><p><b><span>G.</span></b><span> Cutting greenhouse gas emissions is one powerful incentive for finding a better way to provide the concrete the world needs; another is the need for stronger, longer-lasting buildings, bridges, and other structures. ‘In the middle 20th century, concrete structures were designed to last 50 years, and a lot of them are on borrowed time,’ Monteiro says. ‘Now we design buildings to last 100 to 120 years.’ Yet Roman harbor installations have survived 2,000 years of chemical attack from seawater and wave action. Stronger, longer-lasting modern concrete may be the legacy of a deeper understanding of how the Romans made their incomparable concrete.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Reading Passage 2 has seven paragraphs, A–G. Which paragraph contains the following information? Write the correct letter A–G in boxes 14–20 on your answer sheet.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Reading Passage 2 has seven paragraphs, A–G. Which paragraph contains the following information? Write the correct letter A–G in boxes 14–20 on your answer sheet.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310177",
+                "qNum": 14,
+                "type": "input",
+                "question": "an opinion on why the Romans reduced the amount of concrete they made for use in seawater",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "310178",
+                "qNum": 15,
+                "type": "input",
+                "question": "a list of the contents of both Portland and Roman cement",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "310179",
+                "qNum": 16,
+                "type": "input",
+                "question": "an argument for finding substitutes for a limited resource that is used in making concrete",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              },
+              {
+                "qid": "310180",
+                "qNum": 17,
+                "type": "input",
+                "question": "information about the structure from which the scientists took their Roman concrete samples",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310181",
+                "qNum": 18,
+                "type": "input",
+                "question": "a comparison of the environmental impacts of making modern and Roman concrete",
+                "options": [],
+                "correctAnswer": "E",
+                "explanation": "Đáp án chuẩn: E"
+              },
+              {
+                "qid": "310182",
+                "qNum": 19,
+                "type": "input",
+                "question": "a comparison of the durability of Roman concrete with concrete produced today",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              },
+              {
+                "qid": "310183",
+                "qNum": 20,
+                "type": "input",
+                "question": "details of how the Romans used seawater to make concrete",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "14",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310177",
+                "qNum": 14,
+                "type": "input",
+                "question": "an opinion on why the Romans reduced the amount of concrete they made for use in seawater",
+                "options": [],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "15",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310178",
+                "qNum": 15,
+                "type": "input",
+                "question": "a list of the contents of both Portland and Roman cement",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "16",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310179",
+                "qNum": 16,
+                "type": "input",
+                "question": "an argument for finding substitutes for a limited resource that is used in making concrete",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              }
+            ]
+          },
+          {
+            "directions": "17",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310180",
+                "qNum": 17,
+                "type": "input",
+                "question": "information about the structure from which the scientists took their Roman concrete samples",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "18",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310181",
+                "qNum": 18,
+                "type": "input",
+                "question": "a comparison of the environmental impacts of making modern and Roman concrete",
+                "options": [],
+                "correctAnswer": "E",
+                "explanation": "Đáp án chuẩn: E"
+              }
+            ]
+          },
+          {
+            "directions": "19",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310182",
+                "qNum": 19,
+                "type": "input",
+                "question": "a comparison of the durability of Roman concrete with concrete produced today",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              }
+            ]
+          },
+          {
+            "directions": "20",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310183",
+                "qNum": 20,
+                "type": "input",
+                "question": "details of how the Romans used seawater to make concrete",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "Write the correct letters in boxes 21 and 22 on your answer sheet. According to the passage, which TWO of the following statements about fly ash are true?A. Fly ash results in less damage to the environment than Portland cement.B. Fly ash was used by the Romans as an alternative to volcanic ash.C. Fly ash is already used in the production of some concrete.D. All countries have access to fly ash resources.E. Fly ash will soon replace volcanic ash.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Write the correct letters in boxes 21 and 22 on your answer sheet. According to the passage, which TWO of the following statements about fly ash are true?</span></p><p data-pool-key=\"A\"><span>A. Fly ash results in less damage to the environment than Portland cement.</span></p><p data-pool-key=\"B\"><span>B. Fly ash was used by the Romans as an alternative to volcanic ash.</span></p><p data-pool-key=\"C\"><span>C. Fly ash is already used in the production of some concrete.</span></p><p data-pool-key=\"D\"><span>D. All countries have access to fly ash resources.</span></p><p data-pool-key=\"E\"><span>E. Fly ash will soon replace volcanic ash.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310184",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A/C",
+                "explanation": "Đáp án chuẩn: A/C"
+              },
+              {
+                "qid": "310185",
+                "qNum": 22,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A/C",
+                "explanation": "Đáp án chuẩn: A/C"
+              }
+            ]
+          },
+          {
+            "directions": "21",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310184",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A/C",
+                "explanation": "Đáp án chuẩn: A/C"
+              }
+            ]
+          },
+          {
+            "directions": "22",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310185",
+                "qNum": 22,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A/C",
+                "explanation": "Đáp án chuẩn: A/C"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the summary below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 23–26 on your answer sheet.The environmental effects of concrete productionCompared to modern concrete, which is produced using Portland cement, Roman concrete is more environmentally sustainable. According to Monteiro, the manufacture of Portland cement makes up as much as seven percent of the carbon dioxide emitted by (23)______. This is because its production requires (24)______ to be burned in order to generate the necessary heat. Specifically, a temperature of 1,450 degrees Celsius is required to combine clays and (25)______. By contrast, this level of heat was reduced by a (26)______ in the creation of Roman concrete, substantially diminishing its environmental impact.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Complete the summary below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 23–26 on your answer sheet.</span></p><p><b><span>The environmental effects of concrete production</span></b></p><p><span>Compared to modern concrete, which is produced using Portland cement, Roman concrete is more environmentally sustainable. According to Monteiro, the manufacture of Portland cement makes up as much as seven percent of the carbon dioxide emitted by (23)______. This is because its production requires (24)______ to be burned in order to generate the necessary heat. Specifically, a temperature of 1,450 degrees Celsius is required to combine clays and (25)______. By contrast, this level of heat was reduced by a (26)______ in the creation of Roman concrete, substantially diminishing its environmental impact.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310186",
+                "qNum": 23,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "industry",
+                "explanation": "Đáp án chuẩn: industry"
+              },
+              {
+                "qid": "310187",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "fuel",
+                "explanation": "Đáp án chuẩn: fuel"
+              },
+              {
+                "qid": "310188",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "limestone",
+                "explanation": "Đáp án chuẩn: limestone"
+              },
+              {
+                "qid": "310189",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "third",
+                "explanation": "Đáp án chuẩn: third"
+              }
+            ]
+          },
+          {
+            "directions": "23",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310186",
+                "qNum": 23,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "industry",
+                "explanation": "Đáp án chuẩn: industry"
+              }
+            ]
+          },
+          {
+            "directions": "24",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310187",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "fuel",
+                "explanation": "Đáp án chuẩn: fuel"
+              }
+            ]
+          },
+          {
+            "directions": "25",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310188",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "limestone",
+                "explanation": "Đáp án chuẩn: limestone"
+              }
+            ]
+          },
+          {
+            "directions": "26",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310189",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "third",
+                "explanation": "Đáp án chuẩn: third"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3: Robert Louis Stevenson",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span>You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3 below.</span></p><p><b><span>Robert Louis Stevenson</span></b></p><p><i><span>The writer of some of the best-known stories in the English language, including Treasure Island and The Strange Case of Dr. Jekyll and Mr. Hyde</span></i></p><p><span>It is more than 100 years since the death of the Scottish writer Robert Louis Stevenson on the South Pacific island of Samoa. And it seems that time has not been kind to Stevenson’s memory. Immediately after his death, his family and friends set to work to fashion the legend of Robert Louis Stevenson, or R.L.S. as he became known—one of the few writers familiar from his initials alone. Subsequent works of biography then turned him into a writer of almost religious importance. One example was critic Balfour, who in 1901 portrayed Stevenson’s family as ministering angels to the dying genius during his final illness. Similarly, the biographer Crouch absurdly overstated Stevenson’s significance by placing him in the same company as those most revered names in English literature. The reaction to this nonsense was a number of highly critical assessments of Stevenson’s legacy in the 1920s.</span></p><p><span>Normally, the critical pendulum can be relied on to swing back again, but there are several aspects of Stevenson’s work that have until recently acted against a more balanced appraisal. First is the allegation that Stevenson was a mere master of linguistic fireworks who lacked moral depth. Some critics accused him of being a literary charlatan, juggling words very prettily to strike effects that overawed an ignorant public and served to distract from the inadequacy of his ideas.</span></p><p><span>Then there has been a prejudice against the adventure story as the proper medium for deep moral seriousness, a prejudice which is still extremely influential today. It seems that we can accept that an adventure film can successfully express profound moral truths, but we reject the same idea for a book. The absurdity of this becomes apparent when we think of writers like Joseph Conrad and Graham Greene, but it is no use pretending that this bias against adventure stories is not part of our high culture. A further problem is that Stevenson has often not found favour in the land of his birth because his conservatism so often collides with the strong radical tradition in Scotland. His many escapist stories and preference for living abroad have led to accusations that he camouflaged Scotland’s real problems. Lastly, the high adventure of Stevenson’s own lifestyle has sometimes obscured his output. His globe-trotting, and above all the final phase of his life in Samoa, tended to make his own life a greater story than any he could devise. This was precisely what his friends feared would happen towards the end of his short life: his art might be overwhelmed by the drama of life in Samoa.</span></p><p><span>One consequence of this has been that Stevenson’s influence on other writers has too often been neglected. The writer and poet Oscar Wilde was deeply influenced by Stevenson, even though he declared that Stevenson would have produced better work if he had lived in London rather than Samoa. Stevenson tends to stick in the throat even of those writers who would like to spit him out, such as Shaw, who claimed to have learned from him that the romantic hero is always mocked by reality. Likewise, the writer Galsworthy, who was a determined critic, later changed his mind and said that the superiority of Stevenson over the novelist Hardy was that Stevenson was all life and Hardy, all death. The influence on the novelist Chesterton would also repay detailed study, for it was through him that Stevenson has managed to cross the ages, emerging as an influence on the modernist movement and our own contemporary Latin American school of magical realism.</span></p><p><span>When making an assessment of his life and work, one question must inevitably be asked: was Robert Louis Stevenson Scotland’s greatest writer of English prose? For most commentators this honour falls to Sir Walter Scott, author of Ivanhoe among many other classic novels, and it is true that in terms of craftsmanship, precision and the ability to minutely regulate language to create the desired effect, Scott takes the prize. However, this is not the same thing at all as inherent talent: by way of comparison one may take the example of the two great Russian composers Shostakovich and Prokofiev, of whom the former had learned more precise skills of execution but the latter’s intrinsic genius was greater, and so it seems to be with Scott and Stevenson. Admittedly, Scott’s detailed style does permit his stories to explore levels of tragedy that are beyond Stevenson’s reach, but in this regard they have the musty smell of the museum, somehow artificial and removed from modern-day reality. On the other hand, Stevenson’s skill with plotting and narrative give his books a timeless quality, so that they still live today. And Stevenson was also the shrewder judge of behaviour and psychology. For example, his compelling description of a man with a split personality in The Strange Case of Dr. Jekyll and Mr. Hyde has proved so accessible and accurate that the expression “Jekyll and Hyde” has entered common English usage. Even if we do not see a revival of critical interest in this great Scottish writer, it is to be hoped that readers go back to Robert Louis Stevenson’s magnificent stories and reassess this neglected genius.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 27–31 on your answer sheet.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 27–31 on your answer sheet.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310190",
+                "qNum": 27,
+                "type": "choice",
+                "question": "In the opinion of the writer, the biographers Balfour and Crouch",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "misunderstood Stevenson’s religious beliefs.",
+                    "full": "(A) misunderstood Stevenson’s religious beliefs."
+                  },
+                  {
+                    "key": "B",
+                    "text": "overestimated other writers’ influence on Stevenson.",
+                    "full": "(B) overestimated other writers’ influence on Stevenson."
+                  },
+                  {
+                    "key": "C",
+                    "text": "elevated Stevenson above his true status as a writer.",
+                    "full": "(C) elevated Stevenson above his true status as a writer."
+                  },
+                  {
+                    "key": "D",
+                    "text": "understated the role played by Stevenson’s family.",
+                    "full": "(D) understated the role played by Stevenson’s family."
+                  }
+                ],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "310191",
+                "qNum": 28,
+                "type": "choice",
+                "question": "What is the writer’s main point about Stevenson in the second paragraph?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "The ethical nature of his stories was often criticised.",
+                    "full": "(A) The ethical nature of his stories was often criticised."
+                  },
+                  {
+                    "key": "B",
+                    "text": "The public judges him more fairly than the critics.",
+                    "full": "(B) The public judges him more fairly than the critics."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Recent criticism of him has been justified.",
+                    "full": "(C) Recent criticism of him has been justified."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Critics argued that his style covered up his faults.",
+                    "full": "(D) Critics argued that his style covered up his faults."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              },
+              {
+                "qid": "310192",
+                "qNum": 29,
+                "type": "choice",
+                "question": "According to the writer, the adventure story",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "can be used by writers to tell moral stories.",
+                    "full": "(A) can be used by writers to tell moral stories."
+                  },
+                  {
+                    "key": "B",
+                    "text": "is more fashionable today than in the past.",
+                    "full": "(B) is more fashionable today than in the past."
+                  },
+                  {
+                    "key": "C",
+                    "text": "has been used by other writers but not by Stevenson.",
+                    "full": "(C) has been used by other writers but not by Stevenson."
+                  },
+                  {
+                    "key": "D",
+                    "text": "is more appropriate for books than for films.",
+                    "full": "(D) is more appropriate for books than for films."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310193",
+                "qNum": 30,
+                "type": "choice",
+                "question": "What point does the writer make about Stevenson and Scotland?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "His unflattering stories about Scotland angered many Scots.",
+                    "full": "(A) His unflattering stories about Scotland angered many Scots."
+                  },
+                  {
+                    "key": "B",
+                    "text": "His ideas contrasted with those of many Scots.",
+                    "full": "(B) His ideas contrasted with those of many Scots."
+                  },
+                  {
+                    "key": "C",
+                    "text": "He demonstrated great sympathy for Scotland’s problems.",
+                    "full": "(C) He demonstrated great sympathy for Scotland’s problems."
+                  },
+                  {
+                    "key": "D",
+                    "text": "He was not considered a true Scot as he was not born there.",
+                    "full": "(D) He was not considered a true Scot as he was not born there."
+                  }
+                ],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "310194",
+                "qNum": 31,
+                "type": "choice",
+                "question": "According to the writer, Stevenson’s own lifestyle",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "attracted more attention than his books.",
+                    "full": "(A) attracted more attention than his books."
+                  },
+                  {
+                    "key": "B",
+                    "text": "did not prepare him for living in Samoa.",
+                    "full": "(B) did not prepare him for living in Samoa."
+                  },
+                  {
+                    "key": "C",
+                    "text": "was envied by his friends.",
+                    "full": "(C) was envied by his friends."
+                  },
+                  {
+                    "key": "D",
+                    "text": "was responsible for his early death.",
+                    "full": "(D) was responsible for his early death."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "27",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310190",
+                "qNum": 27,
+                "type": "choice",
+                "question": "In the opinion of the writer, the biographers Balfour and Crouch",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "misunderstood Stevenson’s religious beliefs.",
+                    "full": "(A) misunderstood Stevenson’s religious beliefs."
+                  },
+                  {
+                    "key": "B",
+                    "text": "overestimated other writers’ influence on Stevenson.",
+                    "full": "(B) overestimated other writers’ influence on Stevenson."
+                  },
+                  {
+                    "key": "C",
+                    "text": "elevated Stevenson above his true status as a writer.",
+                    "full": "(C) elevated Stevenson above his true status as a writer."
+                  },
+                  {
+                    "key": "D",
+                    "text": "understated the role played by Stevenson’s family.",
+                    "full": "(D) understated the role played by Stevenson’s family."
+                  }
+                ],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "28",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310191",
+                "qNum": 28,
+                "type": "choice",
+                "question": "What is the writer’s main point about Stevenson in the second paragraph?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "The ethical nature of his stories was often criticised.",
+                    "full": "(A) The ethical nature of his stories was often criticised."
+                  },
+                  {
+                    "key": "B",
+                    "text": "The public judges him more fairly than the critics.",
+                    "full": "(B) The public judges him more fairly than the critics."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Recent criticism of him has been justified.",
+                    "full": "(C) Recent criticism of him has been justified."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Critics argued that his style covered up his faults.",
+                    "full": "(D) Critics argued that his style covered up his faults."
+                  }
+                ],
+                "correctAnswer": "D",
+                "explanation": "Đáp án chuẩn: D"
+              }
+            ]
+          },
+          {
+            "directions": "29",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310192",
+                "qNum": 29,
+                "type": "choice",
+                "question": "According to the writer, the adventure story",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "can be used by writers to tell moral stories.",
+                    "full": "(A) can be used by writers to tell moral stories."
+                  },
+                  {
+                    "key": "B",
+                    "text": "is more fashionable today than in the past.",
+                    "full": "(B) is more fashionable today than in the past."
+                  },
+                  {
+                    "key": "C",
+                    "text": "has been used by other writers but not by Stevenson.",
+                    "full": "(C) has been used by other writers but not by Stevenson."
+                  },
+                  {
+                    "key": "D",
+                    "text": "is more appropriate for books than for films.",
+                    "full": "(D) is more appropriate for books than for films."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "30",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310193",
+                "qNum": 30,
+                "type": "choice",
+                "question": "What point does the writer make about Stevenson and Scotland?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "His unflattering stories about Scotland angered many Scots.",
+                    "full": "(A) His unflattering stories about Scotland angered many Scots."
+                  },
+                  {
+                    "key": "B",
+                    "text": "His ideas contrasted with those of many Scots.",
+                    "full": "(B) His ideas contrasted with those of many Scots."
+                  },
+                  {
+                    "key": "C",
+                    "text": "He demonstrated great sympathy for Scotland’s problems.",
+                    "full": "(C) He demonstrated great sympathy for Scotland’s problems."
+                  },
+                  {
+                    "key": "D",
+                    "text": "He was not considered a true Scot as he was not born there.",
+                    "full": "(D) He was not considered a true Scot as he was not born there."
+                  }
+                ],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "31",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310194",
+                "qNum": 31,
+                "type": "choice",
+                "question": "According to the writer, Stevenson’s own lifestyle",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "attracted more attention than his books.",
+                    "full": "(A) attracted more attention than his books."
+                  },
+                  {
+                    "key": "B",
+                    "text": "did not prepare him for living in Samoa.",
+                    "full": "(B) did not prepare him for living in Samoa."
+                  },
+                  {
+                    "key": "C",
+                    "text": "was envied by his friends.",
+                    "full": "(C) was envied by his friends."
+                  },
+                  {
+                    "key": "D",
+                    "text": "was responsible for his early death.",
+                    "full": "(D) was responsible for his early death."
+                  }
+                ],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "Do the following statements agree with the claims of the writer in Reading Passage 3? In boxes 27–31 on your answer sheet, writeYES if the statement agrees with the claims of the writerNO if the statement contradicts the claims of the writerNOT GIVEN if it is impossible to say what the writer thinks about this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span> </span></p><p><span>Do the following statements agree with the claims of the writer in Reading Passage 3? In boxes 27–31 on your answer sheet, write</span></p><p><span>YES if the statement agrees with the claims of the writer</span></p><p><span>NO if the statement contradicts the claims of the writer</span></p><p><span>NOT GIVEN if it is impossible to say what the writer thinks about this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310195",
+                "qNum": 32,
+                "type": "choice",
+                "question": "Although Oscar Wilde admired Robert Louis Stevenson very much, he believed Stevenson could have written greater works.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "explanation": "Đáp án chuẩn: YES"
+              },
+              {
+                "qid": "310196",
+                "qNum": 33,
+                "type": "choice",
+                "question": "Robert Louis Stevenson encouraged Oscar Wilde to start writing in the first place.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "310197",
+                "qNum": 34,
+                "type": "choice",
+                "question": "Galsworthy respected Hardy’s works more than Stevenson’s.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "explanation": "Đáp án chuẩn: NO"
+              },
+              {
+                "qid": "310198",
+                "qNum": 35,
+                "type": "choice",
+                "question": "There is a need to study in detail Stevenson’s influence on Chesterton.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "explanation": "Đáp án chuẩn: YES"
+              }
+            ]
+          },
+          {
+            "directions": "32",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310195",
+                "qNum": 32,
+                "type": "choice",
+                "question": "Although Oscar Wilde admired Robert Louis Stevenson very much, he believed Stevenson could have written greater works.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "explanation": "Đáp án chuẩn: YES"
+              }
+            ]
+          },
+          {
+            "directions": "33",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310196",
+                "qNum": 33,
+                "type": "choice",
+                "question": "Robert Louis Stevenson encouraged Oscar Wilde to start writing in the first place.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "34",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310197",
+                "qNum": 34,
+                "type": "choice",
+                "question": "Galsworthy respected Hardy’s works more than Stevenson’s.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "explanation": "Đáp án chuẩn: NO"
+              }
+            ]
+          },
+          {
+            "directions": "35",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310198",
+                "qNum": 35,
+                "type": "choice",
+                "question": "There is a need to study in detail Stevenson’s influence on Chesterton.",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES",
+                    "full": "(YES) YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO",
+                    "full": "(NO) NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "explanation": "Đáp án chuẩn: YES"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the summary using the list of words, A–I, below. Write the correct letter, A–I, in boxes 36–40 on your answer sheet.\nA. natural ability\nB. romance\nC. colorful language\nD. critical acclaim\nE. humor\nF. technical control\nG. storytelling\nH. depth\nI. human nature\nSir Walter Scott and Robert Louis Stevenson\nA lot of people believe that Sir Walter Scott and Robert Louis Stevenson are the most influential writers in the history of Scotland, but Sir Walter Scott is more proficient in (36)______, while Stevenson has better (37)______.\nScott’s books illustrate (38)______, especially in terms of tragedy, but many readers prefer Stevenson’s (39)______. What’s more, Stevenson’s understanding of (40)______ gave his works a lasting appeal.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p> </p>\n<p>Complete the summary using the list of words, A–I, below. Write the correct letter, A–I, in boxes 36–40 on your answer sheet.</p>\n<p>A. natural ability</p>\n<p>B. romance</p>\n<p>C. colorful language</p>\n<p>D. critical acclaim</p>\n<p>E. humor</p>\n<p>F. technical control</p>\n<p>G. storytelling</p>\n<p>H. depth</p>\n<p>I. human nature</p>\n<p><strong>Sir Walter Scott and Robert Louis Stevenson</strong></p>\n<p>A lot of people believe that Sir Walter Scott and Robert Louis Stevenson are the most influential writers in the history of Scotland, but Sir Walter Scott is more proficient in (36)______, while Stevenson has better (37)______.</p>\n<p>Scott’s books illustrate (38)______, especially in terms of tragedy, but many readers prefer Stevenson’s (39)______. What’s more, Stevenson’s understanding of (40)______ gave his works a lasting appeal.</p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "310199",
+                "qNum": 36,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              },
+              {
+                "qid": "310200",
+                "qNum": 37,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "310201",
+                "qNum": 38,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "explanation": "Đáp án chuẩn: H"
+              },
+              {
+                "qid": "310202",
+                "qNum": 39,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              },
+              {
+                "qid": "310203",
+                "qNum": 40,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "I",
+                "explanation": "Đáp án chuẩn: I"
+              }
+            ]
+          },
+          {
+            "directions": "36",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310199",
+                "qNum": 36,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              }
+            ]
+          },
+          {
+            "directions": "37",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310200",
+                "qNum": 37,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "38",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310201",
+                "qNum": 38,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "H",
+                "explanation": "Đáp án chuẩn: H"
+              }
+            ]
+          },
+          {
+            "directions": "39",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310202",
+                "qNum": 39,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              }
+            ]
+          },
+          {
+            "directions": "40",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "310203",
+                "qNum": 40,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "I",
+                "explanation": "Đáp án chuẩn: I"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "durationMinutes": 60,
+    "task1": {
+      "title": "Task 1: Report / Data Description",
+      "timeMinutes": 20,
+      "minWords": 150,
+      "prompt": "The chart and table below show the proportion of energy generated from renewable and non-renewable sources in selected OECD countries between 2000 and 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "sampleBand8Answer": "The chart and accompanying table illustrate the comparative distribution of electricity production from renewable and conventional non-renewable sources across four OECD member nations—namely Germany, Sweden, Canada, and Japan—over a twenty-year timeframe from 2000 to 2020.\n\nOverall, it is immediately apparent that all surveyed nations witnessed an upward trajectory in green energy adoption, with Sweden maintaining the foremost position in clean energy reliance throughout. Conversely, Japan continued to exhibit the lowest proportion of renewables despite moderate progress in the final decade.\n\nIn detail, Sweden commenced the period with 42% of its total energy coming from renewables in 2000, which subsequently expanded sharply to surpass 68% by 2020, driven primarily by investments in hydroelectric and wind installations. Canada similarly sustained high renewable dependency, starting at 56% and peaking at 64% by the end of the survey period.\n\nIn contrast, Germany underwent the most dramatic structural shift: renewable output represented a modest 8% in 2000 before quadrupling to approximately 39% in 2020 under comprehensive decarbonization initiatives. Japan, by comparison, began at just 7% and grew modestly to 18% in 2020, still leaving fossil and nuclear fuels to comprise the vast majority (82%) of its energy grid.",
+      "keyVocab": [
+        {
+          "word": "Upward trajectory",
+          "meaningVi": "Chiều hướng gia tăng rõ rệt"
+        },
+        {
+          "word": "Comparative distribution",
+          "meaningVi": "Phân bố đối chiếu"
+        },
+        {
+          "word": "Decarbonization initiatives",
+          "meaningVi": "Các sáng kiến giảm thải carbon"
+        }
+      ]
+    },
+    "task2": {
+      "title": "Task 2: Academic Essay",
+      "timeMinutes": 40,
+      "minWords": 250,
+      "prompt": "Some people believe that artificial intelligence and automation will bring massive unemployment and economic instability. Others argue that AI will foster innovation and create higher-value jobs. Discuss both views and give your own opinion.",
+      "sampleBand8Answer": "The rapid proliferation of artificial intelligence (AI) and robotic automation has ignited rigorous debate across global economic forums. While a considerable segment of the population expresses trepidation regarding widespread redundancy and fiscal volatility, others contend that this technological paradigm will unlock unprecedented productivity and cultivate novel vocational sectors. In my view, although transient displacement is inevitable, AI will ultimately function as a net positive catalyst for societal affluence.\n\nOn the one hand, apprehensions regarding job scarcity are grounded in historical precedent and empirical reality. In routine-intensive fields such as manufacturing, logistics, and entry-level clerical administration, autonomous algorithms execute quantitative computations and physical tasks with far greater velocity and precision than human operators. Consequently, unmitigated deployment without rigorous retraining frameworks risks marginalizing millions of low-skilled workers, thereby exacerbating wealth disparity and burdening public welfare reserves.\n\nOn the other hand, proponents persuasively assert that technological upheavals historically eliminate specific tasks rather than labor as a whole. By relieving human professionals of mundane, repetitive drudgery, automation creates capacity for higher-order cognitive domains such as ethical AI governance, specialized software architecture, and creative strategic consulting. Furthermore, empirical analyses indicate that machine-augmented industries stimulate secondary employment ecosystems—from renewable infrastructure to tailored biotechnology—which generate premium remuneration.\n\nIn conclusion, while the transition phase undeniably poses formidable challenges for specific occupational demographics, artificial intelligence represents a profound evolution rather than an existential crisis for the labor market. Governments and educational institutions must proactively orchestrate lifelong upskilling programs to ensure equitable participation in this automated era.",
+      "keyVocab": [
+        {
+          "word": "Proliferation",
+          "meaningVi": "Sự phát triển bùng nổ, nhân rộng"
+        },
+        {
+          "word": "Trepidation",
+          "meaningVi": "Sự lo âu, e sợ"
+        },
+        {
+          "word": "Remuneration",
+          "meaningVi": "Mức lương thưởng, thù lao"
+        }
+      ]
+    }
+  },
+  "speaking": {
+    "durationMinutes": 14,
+    "part1": {
+      "title": "Part 1: Introduction & Familiar Topics (4-5 mins)",
+      "topic": "Work, Technology, and City Life",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "What kind of work do you do, and what do you enjoy most about it?",
+          "sampleBand8": "I currently work as a senior software consultant for an international consultancy firm. What captivates me most is the intellectual challenge of engineering scalable architectural solutions that directly streamline daily operations for thousands of corporate end-users."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you prefer working individually or collaborating in a team?",
+          "sampleBand8": "While autonomous focus is indispensable for deep coding and analytical tasks, I generally thrive on teamwork. Collaborative brainstorming sessions consistently yield multifaceted perspectives that mitigate blind spots and elevate the overall caliber of our deliverables."
+        },
+        {
+          "qNum": 3,
+          "question": "How has technological progress transformed your hometown over recent years?",
+          "sampleBand8": "Remarkably so. Cashless digital payments and app-based public transportation have become completely ubiquitous, which has expedited municipal transit and significantly modernized the pace of urban living."
+        },
+        {
+          "qNum": 4,
+          "question": "Do you think you will continue living in your current city in the future?",
+          "sampleBand8": "Most definitely for the foreseeable future. The vibrant economic ecosystem, coupled with rich cultural amenities and extensive professional networks, makes it an ideal launchpad for my ongoing career trajectory."
+        }
+      ]
+    },
+    "part2": {
+      "title": "Part 2: Individual Long Turn / Cue Card (3-4 mins)",
+      "prepTimeSec": 60,
+      "speakTimeSec": 120,
+      "cueCard": {
+        "prompt": "Describe a memorable professional or academic achievement that you are proud of.",
+        "bullets": [
+          "What the achievement was",
+          "When and where it took place",
+          "What challenges you had to overcome",
+          "And explain why you felt so proud of this accomplishment."
+        ]
+      },
+      "sampleBand8Answer": "I would like to speak about a defining professional achievement from last year, when I successfully spearheaded the migration of our company's legacy customer management infrastructure to a secure cloud platform. This undertaking occurred over a grueling six-month period at our regional corporate headquarters.\n\nThe primary obstacle we confronted was the sheer complexity of legacy data formats, compounded by an unforgiving deployment deadline. We had to ensure zero downtime for over fifty thousand active global clients while synchronizing disparate legacy databases. Furthermore, midway through the project, several senior specialists had to quarantine due to seasonal health issues, which forced me to shoulder additional architectural duties and coordinate with offshore teams across multiple time zones.\n\nUltimately, the migration went live seamlessly without a single minute of service disruption. I felt immensely proud not only because the project cut infrastructure overhead by thirty percent, but because it substantiated my leadership capabilities under immense pressure and earned our team formal recognition from executive leadership."
+    },
+    "part3": {
+      "title": "Part 3: Two-way Discussion / Abstract Topics (4-5 mins)",
+      "topic": "Ambition, Workplace Recognition, and Leadership",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "Why do some individuals value intrinsic satisfaction over material rewards in their careers?",
+          "sampleBand8": "Because professional self-actualization provides enduring fulfillment that monetary incentives simply cannot replicate. When employees perceive that their daily contributions generate tangible societal impact, their engagement remains resilient even through arduous economic cycles."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you believe personal ambition always benefits an organization?",
+          "sampleBand8": "Not necessarily. While constructive ambition drives innovation and productivity, unbridled personal ambition can foster toxic internal rivalries, undermine collective cohesion, and incentivize unethical shortcuts."
+        },
+        {
+          "qNum": 3,
+          "question": "How has the definition of effective leadership evolved in the modern era?",
+          "sampleBand8": "Leadership has fundamentally transitioned from an authoritative, hierarchical command model to an empathetic, servant-leadership philosophy that emphasizes psychological safety, emotional intelligence, and inclusive mentorship."
+        }
+      ]
+    }
+  }
+}

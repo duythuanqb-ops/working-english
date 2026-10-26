@@ -1,0 +1,149 @@
+{
+  "id": "ielts-gt-c1-t1",
+  "testNum": 1,
+  "collection": "Collection 1",
+  "type": "general",
+  "title": "IELTS General Training Collection 1 Test 1 (Bản Gốc STUDY4)",
+  "category": "ielts-gt",
+  "durationMinutes": 165,
+  "questionsCount": 80,
+  "listening": {
+    "durationMinutes": 40,
+    "audioTracks": {
+      "part1": "/exams/ielts-gt-c1-t1/audio/p1.mp3",
+      "part2": "/exams/ielts-gt-c1-t1/audio/p2.mp3",
+      "part3": "/exams/ielts-gt-c1-t1/audio/p3.mp3",
+      "part4": "/exams/ielts-gt-c1-t1/audio/p4.mp3"
+    },
+    "parts": [
+      {
+        "partNum": 1,
+        "title": "Part 1",
+        "audioTrack": "/exams/ielts-gt-c1-t1/audio/p1.mp3",
+        "transcript": "",
+        "groups": []
+      }
+    ]
+  },
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Section 1: Section 1 Reading Text",
+        "passageHtml": "",
+        "groups": []
+      }
+    ]
+  },
+  "writing": {
+    "durationMinutes": 60,
+    "task1": {
+      "title": "Task 1: Formal / Semi-formal Letter",
+      "timeMinutes": 20,
+      "minWords": 150,
+      "prompt": "You recently stayed at a hotel on an official business trip and encountered several problems during your stay. Write a formal letter to the hotel manager. In your letter: explain why you were staying at the hotel, describe the problems you experienced, and state what actions you expect the manager to take.",
+      "sampleBand8Answer": "Dear Sir or Madam,\n\nI am writing to formally register my disappointment regarding the quality of accommodation during my stay at the Grand Imperial Hotel from October 18th to October 21st (Booking Reference: #GI-98421). I was visiting your city as the keynote speaker at the International Energy Symposium.\n\nRegrettably, multiple deficiencies compromised what ought to have been a restful business visit. First, despite confirming a high-floor executive quiet room weeks prior, I was assigned Room 204 adjacent to the main loading dock, where delivery freight commenced noisily at 5:00 AM each morning. Furthermore, the high-speed Wi-Fi connection advertised in the executive suite failed intermittently throughout my stay, preventing me from accessing critical presentation materials for my conference.\n\nTo compound these issues, when I raised these urgent concerns with the front desk duty supervisor on the morning of October 19th, the staff member appeared dismissive and failed to offer an alternative room or technical support.\n\nIn light of these inconveniences and the substandard service rendered, I request a refund of 50% of the total accommodation fee charged to my corporate card. Additionally, I would appreciate a written assurance detailing the measures you intend to institute to improve staff responsiveness and internet stability.\n\nI look forward to receiving your prompt resolution.\n\nYours faithfully,\nDr. Jonathan Miller",
+      "keyVocab": [
+        {
+          "word": "Register disappointment",
+          "meaningVi": "Chính thức bày tỏ sự thất vọng"
+        },
+        {
+          "word": "Compromise",
+          "meaningVi": "Làm tổn hại, ảnh hưởng xấu đến"
+        },
+        {
+          "word": "Substandard service",
+          "meaningVi": "Dịch vụ dưới chuẩn, không đạt yêu cầu"
+        }
+      ]
+    },
+    "task2": {
+      "title": "Task 2: General Essay",
+      "timeMinutes": 40,
+      "minWords": 250,
+      "prompt": "In many countries today, people are spending less time with their families and more time at work or pursuing individual hobbies. What are the causes of this trend, and what effects does it have on society?",
+      "sampleBand8Answer": "In contemporary society, an increasing number of individuals devote an overwhelming proportion of their daily lives to workplace commitments and autonomous pastimes, resulting in a noticeable decline in familial interaction. This essay will examine the primary catalysts behind this phenomenon and discuss its profound ramifications for community cohesion.\n\nThe primary impetus behind diminishing family time is escalating economic pressure and the competitive nature of the globalized job market. With housing costs and general living expenses soaring in metropolitan hubs, adults frequently find themselves obliged to work excessive overtime or manage secondary freelance gigs to attain financial stability. Concurrently, the pervasive presence of personalized digital entertainment—such as algorithmic social media and on-demand streaming—encourages solitary engagement rather than collective domestic pastimes.\n\nRegarding the impacts, this societal transition generates considerable adverse repercussions. Within the household, the lack of parental presence and meaningful communication can weaken intergenerational bonding, leaving children vulnerable to behavioral issues and emotional isolation. At a broader societal level, the erosion of cohesive family structures diminishes the collective resilience of communities, as strong domestic units have traditionally served as the initial safety net during psychological and financial crises.\n\nIn summary, intense corporate demands and digital individualism represent the chief reasons why people are drifting from domestic life. Unless societies institute sustainable work-life balance policies, familial ties and social well-being will continue to erode.",
+      "keyVocab": [
+        {
+          "word": "Escalating economic pressure",
+          "meaningVi": "Áp lực kinh tế ngày càng gia tăng"
+        },
+        {
+          "word": "Pervasive presence",
+          "meaningVi": "Sự hiện diện phổ biến khắp nơi"
+        },
+        {
+          "word": "Intergenerational bonding",
+          "meaningVi": "Sự gắn kết giữa các thế hệ"
+        }
+      ]
+    }
+  },
+  "speaking": {
+    "durationMinutes": 14,
+    "part1": {
+      "title": "Part 1: Introduction & Familiar Topics (4-5 mins)",
+      "topic": "Work, Technology, and City Life",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "What kind of work do you do, and what do you enjoy most about it?",
+          "sampleBand8": "I currently work as a senior software consultant for an international consultancy firm. What captivates me most is the intellectual challenge of engineering scalable architectural solutions that directly streamline daily operations for thousands of corporate end-users."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you prefer working individually or collaborating in a team?",
+          "sampleBand8": "While autonomous focus is indispensable for deep coding and analytical tasks, I generally thrive on teamwork. Collaborative brainstorming sessions consistently yield multifaceted perspectives that mitigate blind spots and elevate the overall caliber of our deliverables."
+        },
+        {
+          "qNum": 3,
+          "question": "How has technological progress transformed your hometown over recent years?",
+          "sampleBand8": "Remarkably so. Cashless digital payments and app-based public transportation have become completely ubiquitous, which has expedited municipal transit and significantly modernized the pace of urban living."
+        },
+        {
+          "qNum": 4,
+          "question": "Do you think you will continue living in your current city in the future?",
+          "sampleBand8": "Most definitely for the foreseeable future. The vibrant economic ecosystem, coupled with rich cultural amenities and extensive professional networks, makes it an ideal launchpad for my ongoing career trajectory."
+        }
+      ]
+    },
+    "part2": {
+      "title": "Part 2: Individual Long Turn / Cue Card (3-4 mins)",
+      "prepTimeSec": 60,
+      "speakTimeSec": 120,
+      "cueCard": {
+        "prompt": "Describe a memorable professional or academic achievement that you are proud of.",
+        "bullets": [
+          "What the achievement was",
+          "When and where it took place",
+          "What challenges you had to overcome",
+          "And explain why you felt so proud of this accomplishment."
+        ]
+      },
+      "sampleBand8Answer": "I would like to speak about a defining professional achievement from last year, when I successfully spearheaded the migration of our company's legacy customer management infrastructure to a secure cloud platform. This undertaking occurred over a grueling six-month period at our regional corporate headquarters.\n\nThe primary obstacle we confronted was the sheer complexity of legacy data formats, compounded by an unforgiving deployment deadline. We had to ensure zero downtime for over fifty thousand active global clients while synchronizing disparate legacy databases. Furthermore, midway through the project, several senior specialists had to quarantine due to seasonal health issues, which forced me to shoulder additional architectural duties and coordinate with offshore teams across multiple time zones.\n\nUltimately, the migration went live seamlessly without a single minute of service disruption. I felt immensely proud not only because the project cut infrastructure overhead by thirty percent, but because it substantiated my leadership capabilities under immense pressure and earned our team formal recognition from executive leadership."
+    },
+    "part3": {
+      "title": "Part 3: Two-way Discussion / Abstract Topics (4-5 mins)",
+      "topic": "Ambition, Workplace Recognition, and Leadership",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "Why do some individuals value intrinsic satisfaction over material rewards in their careers?",
+          "sampleBand8": "Because professional self-actualization provides enduring fulfillment that monetary incentives simply cannot replicate. When employees perceive that their daily contributions generate tangible societal impact, their engagement remains resilient even through arduous economic cycles."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you believe personal ambition always benefits an organization?",
+          "sampleBand8": "Not necessarily. While constructive ambition drives innovation and productivity, unbridled personal ambition can foster toxic internal rivalries, undermine collective cohesion, and incentivize unethical shortcuts."
+        },
+        {
+          "qNum": 3,
+          "question": "How has the definition of effective leadership evolved in the modern era?",
+          "sampleBand8": "Leadership has fundamentally transitioned from an authoritative, hierarchical command model to an empathetic, servant-leadership philosophy that emphasizes psychological safety, emotional intelligence, and inclusive mentorship."
+        }
+      ]
+    }
+  }
+}

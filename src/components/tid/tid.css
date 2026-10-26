@@ -1,0 +1,48 @@
+/* The IELTS Dictionary module — Tailwind v4 scoped to src/components/tid only.
+   Utilities are emitted unlayered so they beat the app's global `* { margin:0; padding:0 }` reset. */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400..700&family=Inter:wght@400..900&family=Bungee&family=Baloo+2:wght@400..800&family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@400..800&family=Nunito:wght@400..900&family=Newsreader:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..800&family=Plus+Jakarta+Sans:wght@400..800&display=swap');
+@import "tailwindcss/theme.css" layer(theme);
+@tailwind utilities source(none);
+@source "./";
+
+@theme {
+  --color-gleam: #ffe787;
+  --color-herb: #6a8042;
+  --color-moss: #1e3006;
+  --color-pearl: #fffadd;
+  --color-radiate: #ed7a13;
+  --color-herb-50: color-mix(in srgb, var(--color-pearl) 90%, var(--color-herb));
+  --color-herb-100: color-mix(in srgb, var(--color-pearl) 75%, var(--color-herb));
+  --color-herb-200: color-mix(in srgb, var(--color-pearl) 50%, var(--color-herb));
+  --color-herb-300: color-mix(in srgb, var(--color-gleam) 25%, var(--color-herb));
+  --color-herb-400: color-mix(in srgb, white 20%, var(--color-herb));
+  --color-herb-500: var(--color-herb);
+  --color-herb-600: color-mix(in srgb, black 15%, var(--color-herb));
+  --color-herb-700: color-mix(in srgb, black 30%, var(--color-herb));
+  --color-herb-800: color-mix(in srgb, black 45%, var(--color-herb));
+  --color-herb-900: color-mix(in srgb, black 60%, var(--color-herb));
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-sans: "Quicksand", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-baloo: "Baloo 2", "Quicksand", sans-serif;
+  --font-be-vietnam: "Be Vietnam Pro", sans-serif;
+  --font-bungee: "Bungee", sans-serif;
+  --font-instrument: "Instrument Serif", serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-jetbrains: "JetBrains Mono", ui-monospace, monospace;
+  --font-manrope: "Manrope", sans-serif;
+  --font-newsreader: "Newsreader", serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-space-mono: "Space Mono", monospace;
+}
+
+/* Scoped preflight — :where() keeps specificity at 0 so utilities always win */
+:where(.tid-root), :where(.tid-root) *, :where(.tid-root) ::before, :where(.tid-root) ::after { box-sizing: border-box; border: 0 solid; }
+:where(.tid-root) { font-family: var(--font-sans); color: #0f172a; line-height: 1.5; user-select: text; }
+:where(.tid-root) :is(h1, h2, h3, h4, h5, h6) { font: inherit; color: inherit; letter-spacing: inherit; }
+:where(.tid-root) :is(button, input, select, textarea) { font: inherit; color: inherit; background: transparent; }
+:where(.tid-root) button { cursor: pointer; }
+:where(.tid-root) :is(img, svg, video, audio) { display: block; max-width: 100%; }
+:where(.tid-root) :is(ul, ol) { list-style: none; }
+:where(.tid-root) a { color: inherit; text-decoration: inherit; }

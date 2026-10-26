@@ -1,0 +1,1544 @@
+{
+  "id": "ielts-gt-c1-t4",
+  "testNum": 4,
+  "collection": "Collection 1",
+  "type": "general",
+  "title": "IELTS General Training Collection 1 Test 4 (Bản Gốc STUDY4)",
+  "category": "ielts-gt",
+  "durationMinutes": 165,
+  "questionsCount": 80,
+  "listening": {
+    "durationMinutes": 40,
+    "audioTracks": {
+      "part1": "/exams/ielts-gt-c1-t4/audio/p1.mp3",
+      "part2": "/exams/ielts-gt-c1-t4/audio/p2.mp3",
+      "part3": "/exams/ielts-gt-c1-t4/audio/p3.mp3",
+      "part4": "/exams/ielts-gt-c1-t4/audio/p4.mp3"
+    },
+    "parts": [
+      {
+        "partNum": 1,
+        "title": "Part 1",
+        "audioTrack": "/exams/ielts-gt-c1-t4/audio/p1.mp3",
+        "transcript": "",
+        "groups": []
+      }
+    ]
+  },
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Section 1: Top-Tier Travel Wallets for the Modern Explorer",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><b><span>Top-Tier Travel Wallets for the Modern Explorer</span></b></p><p><span>Keep your passport, cards, travel documents, and cash organized with these thoughtfully designed travel wallets, selected by travel experts for their practicality, durability, and style.</span></p><p><b><span>A. Fjällräven Kånken Travel Wallet</span></b></p><p><span>Affordable, practical, and easy to spot in a crowded bag, this lightweight wallet is available in a range of bright colors and features the brand's signature graphic on the front. Five well-designed compartments provide space for a passport, cards, tickets, and other travel essentials.</span></p><p><b><span>B. Alpaka Elements Travel Folio</span></b></p><p><span>Slim and discreet, this folio resembles a compact notebook rather than a travel wallet. Inside, clearly labeled compartments have gold lettering on them, keeping documents neatly organized, while the specially coated exterior resists dirt and sand—an ideal feature for outdoor adventures and beach destinations.</span></p><p><b><span>C. Bellroy Travel Wallet</span></b></p><p><span>Crafted from premium black leather, this elegant wallet remains compact enough to fit a passport while providing room for boarding passes, insurance documents, and other travel essentials. It also includes a custom-designed mini pen stored neatly inside.</span></p><p><b><span>D. Herschel Supply Co. Travel Organizer</span></b></p><p><span>Made from durable nylon, this zip-around organizer combines security with everyday convenience. Available in five different prints, it features dedicated card slots, a clear ID window, a zippered coin pocket, and an elastic loop to keep a pen close at hand.</span></p><p><b><span>E. Pacsafe RFIDsafe Travel Organizer</span></b></p><p><span>Perfect for families or group travelers, this spacious organizer can hold four or more passports with ease. Inside, you'll find seven card slots, two zippered pockets, and multiple slip compartments designed to keep everything secure and easy to access throughout your journey.</span></p><p><b><span>F. Harber London Leather Passport Holder</span></b></p><p><span>The minimalist exterior conceals a surprisingly functional interior. Colorful pockets labeled for passports, tickets, and cards make organization effortless, while additional compartments provide space for other travel necessities. Each wallet comes packaged in a reusable drawstring bag.</span></p><p><b><span>G. Nomatic Travel Wallet</span></b></p><p><span>Built for travelers who prioritize security, this waterproof wallet includes RFID-blocking technology to help protect sensitive financial information. The sleek black design is accented with subtle sky-blue details and offers space for two passports, a quick-access exterior pocket, a smartphone compartment, and an additional interior pocket for smaller essentials.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Look at the seven reviews of travel wallets, A-G. For which travel wallet are the following statements true? Write the correct letter, A-G, in boxes 1-8 on your answer sheet. NB You may use any letter more than once.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Look at the seven reviews of travel wallets, A-G. For which travel wallet are the following statements true? Write the correct letter, A-G, in boxes 1-8 on your answer sheet. NB You may use any letter more than once.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319055",
+                "qNum": 1,
+                "type": "input",
+                "question": "This wallet is ideal for those who prefer products made from natural materials.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "319056",
+                "qNum": 2,
+                "type": "input",
+                "question": "Users can confidently carry this wallet in wet weather without worrying about damage.",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              },
+              {
+                "qid": "319057",
+                "qNum": 3,
+                "type": "input",
+                "question": "Some interior compartments have category names printed in a single color.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              },
+              {
+                "qid": "319058",
+                "qNum": 4,
+                "type": "input",
+                "question": "This wallet is well-suited to travelers who need to carry multiple passports.",
+                "options": [],
+                "correctAnswer": "E",
+                "explanation": "Đáp án chuẩn: E"
+              },
+              {
+                "qid": "319059",
+                "qNum": 5,
+                "type": "input",
+                "question": "Something is provided for writing.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              },
+              {
+                "qid": "319060",
+                "qNum": 6,
+                "type": "input",
+                "question": "This will suit people who want to be able to find their document wallet easily in their luggage.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              },
+              {
+                "qid": "319061",
+                "qNum": 7,
+                "type": "input",
+                "question": "Something to keep this wallet in is provided.",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              },
+              {
+                "qid": "319062",
+                "qNum": 8,
+                "type": "input",
+                "question": "This wallet has been made to prevent unauthorized scanning of bank cards.",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              }
+            ]
+          },
+          {
+            "directions": "1",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319055",
+                "qNum": 1,
+                "type": "input",
+                "question": "This wallet is ideal for those who prefer products made from natural materials.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "2",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319056",
+                "qNum": 2,
+                "type": "input",
+                "question": "Users can confidently carry this wallet in wet weather without worrying about damage.",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              }
+            ]
+          },
+          {
+            "directions": "3",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319057",
+                "qNum": 3,
+                "type": "input",
+                "question": "Some interior compartments have category names printed in a single color.",
+                "options": [],
+                "correctAnswer": "B",
+                "explanation": "Đáp án chuẩn: B"
+              }
+            ]
+          },
+          {
+            "directions": "4",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319058",
+                "qNum": 4,
+                "type": "input",
+                "question": "This wallet is well-suited to travelers who need to carry multiple passports.",
+                "options": [],
+                "correctAnswer": "E",
+                "explanation": "Đáp án chuẩn: E"
+              }
+            ]
+          },
+          {
+            "directions": "5",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319059",
+                "qNum": 5,
+                "type": "input",
+                "question": "Something is provided for writing.",
+                "options": [],
+                "correctAnswer": "C",
+                "explanation": "Đáp án chuẩn: C"
+              }
+            ]
+          },
+          {
+            "directions": "6",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319060",
+                "qNum": 6,
+                "type": "input",
+                "question": "This will suit people who want to be able to find their document wallet easily in their luggage.",
+                "options": [],
+                "correctAnswer": "A",
+                "explanation": "Đáp án chuẩn: A"
+              }
+            ]
+          },
+          {
+            "directions": "7",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319061",
+                "qNum": 7,
+                "type": "input",
+                "question": "Something to keep this wallet in is provided.",
+                "options": [],
+                "correctAnswer": "F",
+                "explanation": "Đáp án chuẩn: F"
+              }
+            ]
+          },
+          {
+            "directions": "8",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319062",
+                "qNum": 8,
+                "type": "input",
+                "question": "This wallet has been made to prevent unauthorized scanning of bank cards.",
+                "options": [],
+                "correctAnswer": "G",
+                "explanation": "Đáp án chuẩn: G"
+              }
+            ]
+          },
+          {
+            "directions": "Do the following statements agree with the information given in the text? In boxes 9–14 on your answer sheet, write:TRUE if the statement agrees with the informationFALSE if the statement contradicts the informationNOT GIVEN if there is no information on this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Do the following statements agree with the information given in the text? In boxes 9–14 on your answer sheet, write:</span></p><p><span>TRUE if the statement agrees with the information</span></p><p><span>FALSE if the statement contradicts the information</span></p><p><span>NOT GIVEN if there is no information on this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319063",
+                "qNum": 9,
+                "type": "choice",
+                "question": "The options open to a buyer claiming for damaged electronics may change according to where they got the item from.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "319064",
+                "qNum": 10,
+                "type": "choice",
+                "question": "Under UK consumer law, retailers offer remedies only if they caused the damage.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "319065",
+                "qNum": 11,
+                "type": "choice",
+                "question": "After 30 days, buyers can usually get a full refund immediately.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "319066",
+                "qNum": 12,
+                "type": "choice",
+                "question": "An increasing number of retailers are willing to offer a remedy for problems that appear after the first six months.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "319067",
+                "qNum": 13,
+                "type": "choice",
+                "question": "It is doubtful whether the seller will offer a refund if the buyer’s own attempt to fix the product creates extra harm.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "319068",
+                "qNum": 14,
+                "type": "choice",
+                "question": "Consumers may choose vouchers instead of a cash or card refund.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "9",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319063",
+                "qNum": 9,
+                "type": "choice",
+                "question": "The options open to a buyer claiming for damaged electronics may change according to where they got the item from.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "10",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319064",
+                "qNum": 10,
+                "type": "choice",
+                "question": "Under UK consumer law, retailers offer remedies only if they caused the damage.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "11",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319065",
+                "qNum": 11,
+                "type": "choice",
+                "question": "After 30 days, buyers can usually get a full refund immediately.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "12",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319066",
+                "qNum": 12,
+                "type": "choice",
+                "question": "An increasing number of retailers are willing to offer a remedy for problems that appear after the first six months.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "13",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319067",
+                "qNum": 13,
+                "type": "choice",
+                "question": "It is doubtful whether the seller will offer a refund if the buyer’s own attempt to fix the product creates extra harm.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "14",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319068",
+                "qNum": 14,
+                "type": "choice",
+                "question": "Consumers may choose vouchers instead of a cash or card refund.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Section 2: Negotiating a Better Benefit Package for Your New Job",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><b><span>Negotiating a Better Benefit Package for Your New Job</span></b></p><p><span>If you make it through the recruitment interview, a job offer may be just around the corner and you face having to talk about the nitty-gritty: the overall value of your rewards package.</span></p><p><span>Although many graduate training schemes have set standard benefits, there are loads of other jobs where you’ll need to exercise your negotiating skills. If you’re offered a job, it’s because the organisation sees you as a valuable asset, so it is reasonable to discuss whether the benefits package reflects your value.</span></p><p><span>There are no general rules about how and when to conduct your negotiation but being sensitive to the culture of the organisation is essential. There are also some practical steps you can take to position yourself sensibly. Familiarise yourself with the company itself, as well as the range of benefits on offer. Doing careful research in this way prior to starting negotiations is very valuable. You can look at the range of perks offered for comparable jobs in adverts on the internet, or ask for advice from people you know professionally or personally. You could also approach a local industry trade association. Finally, if you’re a member of a union, they will have information on acceptable benefit ranges for your profession.</span></p><p><span>If the benefits offered are less than you’d hoped for, you could negotiate an early benefits review instead, say after the first six months. Ensure that the criteria are clearly set out though, and that they’re included in your contract.</span></p><p><span>Make sure you check out the overall compensation package, not just the number of vacation days on your offer letter. You may find that the total package of pay and benefits raises the worth of the perks to an acceptable level. For instance, you may be offered a higher base salary, a sign-on bonus, an expense account to use for work purposes and/or significant profit-sharing. When profit-sharing is mentioned, you may want to discuss the basis on which it is paid, so that you’re absolutely clear about the terms and conditions attached. When negotiating, be persuasive and consistent in your arguments but be prepared to agree to a compromise if you really want the job.</span></p><p><span>If your negotiations are successful, ask for the agreed terms and conditions to be confirmed in writing ASAP.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Complete the sentences below. Choose ONE WORD ONLY from the text for each answer. Write your answers in boxes 15-20 on your answer sheet.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Complete the sentences below. Choose ONE WORD ONLY from the text for each answer. Write your answers in boxes 15-20 on your answer sheet.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319069",
+                "qNum": 15,
+                "type": "input",
+                "question": "When negotiating a benefit package, potential employees should take advantage of the company’s view of them as a useful (15)_______.",
+                "options": [],
+                "correctAnswer": "asset",
+                "explanation": "Đáp án chuẩn: asset"
+              },
+              {
+                "qid": "319070",
+                "qNum": 16,
+                "type": "input",
+                "question": "When negotiating a benefit package, it is important to be aware of the company’s particular (16)_______.",
+                "options": [],
+                "correctAnswer": "culture",
+                "explanation": "Đáp án chuẩn: culture"
+              },
+              {
+                "qid": "319071",
+                "qNum": 17,
+                "type": "input",
+                "question": "Some people use the (17)_______ to monitor packages offered for similar positions.",
+                "options": [],
+                "correctAnswer": "internet",
+                "explanation": "Đáp án chuẩn: internet"
+              },
+              {
+                "qid": "319072",
+                "qNum": 18,
+                "type": "input",
+                "question": "People who belong to a (18)_______ can ask for recommendations on what is the norm for employee benefits in their field.",
+                "options": [],
+                "correctAnswer": "union",
+                "explanation": "Đáp án chuẩn: union"
+              },
+              {
+                "qid": "319073",
+                "qNum": 19,
+                "type": "input",
+                "question": "Some people try to arrange for a (19)_______ of their perks to be carried out after an initial period.",
+                "options": [],
+                "correctAnswer": "review",
+                "explanation": "Đáp án chuẩn: review"
+              },
+              {
+                "qid": "319074",
+                "qNum": 20,
+                "type": "input",
+                "question": "It is important to be willing to accept a (20)_______ if the negotiations are getting nowhere.",
+                "options": [],
+                "correctAnswer": "compromise",
+                "explanation": "Đáp án chuẩn: compromise"
+              }
+            ]
+          },
+          {
+            "directions": "15",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319069",
+                "qNum": 15,
+                "type": "input",
+                "question": "When negotiating a benefit package, potential employees should take advantage of the company’s view of them as a useful (15)_______.",
+                "options": [],
+                "correctAnswer": "asset",
+                "explanation": "Đáp án chuẩn: asset"
+              }
+            ]
+          },
+          {
+            "directions": "16",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319070",
+                "qNum": 16,
+                "type": "input",
+                "question": "When negotiating a benefit package, it is important to be aware of the company’s particular (16)_______.",
+                "options": [],
+                "correctAnswer": "culture",
+                "explanation": "Đáp án chuẩn: culture"
+              }
+            ]
+          },
+          {
+            "directions": "17",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319071",
+                "qNum": 17,
+                "type": "input",
+                "question": "Some people use the (17)_______ to monitor packages offered for similar positions.",
+                "options": [],
+                "correctAnswer": "internet",
+                "explanation": "Đáp án chuẩn: internet"
+              }
+            ]
+          },
+          {
+            "directions": "18",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319072",
+                "qNum": 18,
+                "type": "input",
+                "question": "People who belong to a (18)_______ can ask for recommendations on what is the norm for employee benefits in their field.",
+                "options": [],
+                "correctAnswer": "union",
+                "explanation": "Đáp án chuẩn: union"
+              }
+            ]
+          },
+          {
+            "directions": "19",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319073",
+                "qNum": 19,
+                "type": "input",
+                "question": "Some people try to arrange for a (19)_______ of their perks to be carried out after an initial period.",
+                "options": [],
+                "correctAnswer": "review",
+                "explanation": "Đáp án chuẩn: review"
+              }
+            ]
+          },
+          {
+            "directions": "20",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319074",
+                "qNum": 20,
+                "type": "input",
+                "question": "It is important to be willing to accept a (20)_______ if the negotiations are getting nowhere.",
+                "options": [],
+                "correctAnswer": "compromise",
+                "explanation": "Đáp án chuẩn: compromise"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the flow-chart below. Choose NO MORE THAN TWO WORDS from the text for each answer. Write your answers in boxes 21-27 on your answer sheet.HOW TO LAUNCH A SUCCESSFUL MARKETING CAMPAIGNBear in mind that your aim should be to keep to both the agreed deadline and the (21)________ for the campaign.⬇Fix the details at the start to prevent what is called (22)________ - stakeholders asking to add more and more.⬇Choose the human resources wisely so that their (23)________ match the designated roles you want them to take on.⬇Promote good (24)_________ at all times so everyone knows what you expect from them.⬇Make sure short-term progress (25)________ are set so you can check whether the campaign is performing well.⬇Prepare guidelines for (26)_______ which can be activated if things go wrong.⬇Once the campaign is over, produce a (27)________ outlining its strengths and weaknesses for future reference.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Complete the flow-chart below. Choose NO MORE THAN TWO WORDS from the text for each answer. Write your answers in boxes 21-27 on your answer sheet.</span></p><p style=\"text-align: center;\"><b><span>HOW TO LAUNCH A SUCCESSFUL MARKETING CAMPAIGN</span></b></p><p style=\"text-align: center;\"><span>Bear in mind that your aim should be to keep to both the agreed deadline and the (21)________ for the campaign.</span></p><p style=\"text-align: center;\"><span>⬇</span></p><p style=\"text-align: center;\"><span>Fix the details at the start to prevent what is called (22)________ - stakeholders asking to add more and more.</span></p><p style=\"text-align: center;\"><span>⬇</span></p><p style=\"text-align: center;\"><span>Choose the human resources wisely so that their (23)________ match the designated roles you want them to take on.</span></p><p style=\"text-align: center;\"><span>⬇</span></p><p style=\"text-align: center;\"><span>Promote good (24)_________ at all times so everyone knows what you expect from them.</span></p><p style=\"text-align: center;\"><span>⬇</span></p><p style=\"text-align: center;\"><span>Make sure short-term progress (25)________ are set so you can check whether the campaign is performing well.</span></p><p style=\"text-align: center;\"><span>⬇</span></p><p style=\"text-align: center;\"><span>Prepare guidelines for (26)_______ which can be activated if things go wrong.</span></p><p style=\"text-align: center;\"><span>⬇</span></p><p style=\"text-align: center;\"><span>Once the campaign is over, produce a (27)________ outlining its strengths and weaknesses for future reference.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319075",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "budget",
+                "explanation": "Đáp án chuẩn: budget"
+              },
+              {
+                "qid": "319076",
+                "qNum": 22,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "message dilution",
+                "explanation": "Đáp án chuẩn: message dilution"
+              },
+              {
+                "qid": "319077",
+                "qNum": 23,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "skills",
+                "explanation": "Đáp án chuẩn: skills"
+              },
+              {
+                "qid": "319078",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "communication",
+                "explanation": "Đáp án chuẩn: communication"
+              },
+              {
+                "qid": "319079",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "indicators",
+                "explanation": "Đáp án chuẩn: indicators"
+              },
+              {
+                "qid": "319080",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "crisis management",
+                "explanation": "Đáp án chuẩn: crisis management"
+              },
+              {
+                "qid": "319081",
+                "qNum": 27,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "report",
+                "explanation": "Đáp án chuẩn: report"
+              }
+            ]
+          },
+          {
+            "directions": "21",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319075",
+                "qNum": 21,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "budget",
+                "explanation": "Đáp án chuẩn: budget"
+              }
+            ]
+          },
+          {
+            "directions": "22",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319076",
+                "qNum": 22,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "message dilution",
+                "explanation": "Đáp án chuẩn: message dilution"
+              }
+            ]
+          },
+          {
+            "directions": "23",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319077",
+                "qNum": 23,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "skills",
+                "explanation": "Đáp án chuẩn: skills"
+              }
+            ]
+          },
+          {
+            "directions": "24",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319078",
+                "qNum": 24,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "communication",
+                "explanation": "Đáp án chuẩn: communication"
+              }
+            ]
+          },
+          {
+            "directions": "25",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319079",
+                "qNum": 25,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "indicators",
+                "explanation": "Đáp án chuẩn: indicators"
+              }
+            ]
+          },
+          {
+            "directions": "26",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319080",
+                "qNum": 26,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "crisis management",
+                "explanation": "Đáp án chuẩn: crisis management"
+              }
+            ]
+          },
+          {
+            "directions": "27",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319081",
+                "qNum": 27,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "report",
+                "explanation": "Đáp án chuẩn: report"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Section 3: Fishbourne Roman Palace",
+        "passageHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><b><span>Fishbourne Roman Palace</span></b></p><p><span>Fishbourne Roman Palace is in the village of Fishbourne in West Sussex, England. The site has a long history: grain stores belonging to the Roman army had been established there after the invasion, during the reign of the Roman Emperor Claudius in 43 AD. The palace itself came later, built around thirty years afterwards in the 1st century AD, following the Roman conquest of Britain. The rectangular palace was built around formal gardens, the northern half of which has been reconstructed. There were extensive alterations in the 2nd and 3rd centuries AD, with many of the original black-and-white mosaic floors being overlaid with more sophisticated coloured ones, including a perfectly preserved mosaic of a dolphin in the north wing. More alterations were in progress when the palace burnt down in around 270 AD, after which it was abandoned.</span></p><p><span>Local people had long believed that a Roman palace once existed in the area. However, it was not until 1960 that the archaeologist Barry Cunliffe of Oxford University first systematically excavated the site, after workmen had accidentally uncovered a wall while they were laying a water main. The Roman villa excavated by Cunliffe’s team was so grand that it became known as Fishbourne Roman Palace, and a museum was erected to preserve some of the remains. This is administered by the Sussex Archaeological Society.</span></p><p><span>In its day, the completed palace would have comprised four large wings with colonnaded fronts. The north and east wings consisted of suites of private rooms built around courtyards, with a monumental entrance in the middle of the east wing. In the north-east corner there was an assembly hall. The west wing contained state rooms, a large ceremonial reception room and a gallery. The south wing contained the owner’s private apartments. The palace included as many as fifty mosaic floors, under-floor central heating and a bathhouse. In size, Fishbourne Palace would have been approximately equivalent to some of the great Roman palaces of Italy, and was by far the largest known Roman residence north of the European Alps, at about 500 feet (150 m) square. A team of volunteers and professional archaeologists is involved in an ongoing archaeological excavation on the site of nearby, possibly military, buildings.</span></p><p><span>The first buildings to be erected on the site were constructed in the early part of the conquest in 43 AD. Later, two timber buildings were constructed, one with clay-and-mortar floors and plaster walls, which appears to have been a house of some comfort. These buildings were demolished in the 60s AD and replaced by a substantial stone house, which included colonnades and a bath suite. It has been suggested that the palace itself, incorporating the previous house in its south-east corner, was constructed around 73–75 AD. However, Dr Miles Russell of Bournemouth University re-interpreted the ground plan and the collection of objects found, and has suggested that, given the extremely close parallels with the imperial palace of Domitian in Rome, its construction may more plausibly date to after 92 AD.</span></p><p><span>With regard to who lived in Fishbourne Palace, there are a number of theories. For example, one proposed by Professor Cunliffe is that, in its early phase, the palace was the residence of Tiberius Claudius Cogidubnus, a local chieftain who supported the Romans and who may have been installed as king of a number of territories following the first stage of the conquest. Cogidubnus is known from a reference to his loyalty in Agricola, a work by the Roman writer Tacitus, and from an inscription commemorating a temple dedicated to the gods Neptune and Minerva found in the nearby city of Chichester. Another theory is that it was built for Sallustius Lucullus, a Roman governor of Britain in the late 1st century, who may have been the son of the British prince Adminius. Two inscriptions recording the presence of Lucullus have been found in Chichester, and the redating by Miles Russell suggests that, if the palace was designed for Lucullus, then it may have been in use for only a few years, as the Roman historian Suetonius records that Lucullus was executed by the Emperor Domitian in or shortly after 93 AD.</span></p><p><span>Additional theories suggest that either Verica, a British king of the Roman Empire in the years preceding the Claudian invasion, was the owner of the palace, or Tiberius Claudius Catuarus, following the recent discovery of a gold ring belonging to him. The palace outlasted the original owner, whoever he was, and was extensively re-planned early in the 2nd century AD and subdivided into a series of smaller apartments. Further redevelopment was begun in the late 3rd century AD, but these alterations were incomplete when the north wing was destroyed in a fire in around 270 AD. The damage was too great to repair, and the palace was abandoned and later dismantled.</span></p><p><span>A modern museum has been built by the Sussex Archaeological Society, incorporating most of the visible remains, including one wing of the palace. The gardens have been replanted using authentic plants from the Roman period.</span></p></div>\n</div>\n</div>\n</div>",
+        "groups": [
+          {
+            "directions": "Do the following statements agree with the information given in the reading passage? In boxes 28–33 on your answer sheet, writeTRUE if the statement agrees with the informationFALSE if the statement contradicts the informationNOT GIVEN if there is no information on this",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Do the following statements agree with the information given in the reading passage? In boxes 28–33 on your answer sheet, write</span></p><p><span>TRUE if the statement agrees with the information</span></p><p><span>FALSE if the statement contradicts the information</span></p><p><span>NOT GIVEN if there is no information on this</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319082",
+                "qNum": 28,
+                "type": "choice",
+                "question": "Fishbourne Palace was the first structure to be built on its site.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "319083",
+                "qNum": 29,
+                "type": "choice",
+                "question": "Fishbourne Palace was renovated more than once.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "319084",
+                "qNum": 30,
+                "type": "choice",
+                "question": "Fishbourne Palace was burnt down by local people.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              },
+              {
+                "qid": "319085",
+                "qNum": 31,
+                "type": "choice",
+                "question": "Fishbourne Palace was larger than many Roman palaces in Italy.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              },
+              {
+                "qid": "319086",
+                "qNum": 32,
+                "type": "choice",
+                "question": "Research is continuing in the area close to Fishbourne Palace.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              },
+              {
+                "qid": "319087",
+                "qNum": 33,
+                "type": "choice",
+                "question": "Researchers agree on the identity of the person for whom Fishbourne Palace was constructed.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "28",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319082",
+                "qNum": 28,
+                "type": "choice",
+                "question": "Fishbourne Palace was the first structure to be built on its site.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "29",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319083",
+                "qNum": 29,
+                "type": "choice",
+                "question": "Fishbourne Palace was renovated more than once.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "30",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319084",
+                "qNum": 30,
+                "type": "choice",
+                "question": "Fishbourne Palace was burnt down by local people.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "explanation": "Đáp án chuẩn: NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "directions": "31",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319085",
+                "qNum": 31,
+                "type": "choice",
+                "question": "Fishbourne Palace was larger than many Roman palaces in Italy.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "32",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319086",
+                "qNum": 32,
+                "type": "choice",
+                "question": "Research is continuing in the area close to Fishbourne Palace.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "explanation": "Đáp án chuẩn: TRUE"
+              }
+            ]
+          },
+          {
+            "directions": "33",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319087",
+                "qNum": 33,
+                "type": "choice",
+                "question": "Researchers agree on the identity of the person for whom Fishbourne Palace was constructed.",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE",
+                    "full": "(TRUE) TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE",
+                    "full": "(FALSE) FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN",
+                    "full": "(NOT GIVEN) NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "explanation": "Đáp án chuẩn: FALSE"
+              }
+            ]
+          },
+          {
+            "directions": "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 34–40 on your answer sheet.Fishbourne PalaceConstruction• The first buildings on the site contained food for the (34)______.• The palace building surrounded (35)______.• In the 2nd and 3rd centuries colour was added to the (36)______ of the palace.Discovery• The palace was first discovered when a (37)______ was found.Possible inhabitants• Cogidubnus - he is named in several writings.• Sallustius Lucullus - he may have lived there until approximately (38)______ AD.• Verica - a British king.• Catuarus - his (39)______ was found there.Present Day• A (40)______ has been built on the site to help protect it.",
+            "contextHtml": "<div class=\"context-wrapper\">\n<div class=\"context-content text-highlightable\">\n<div><p><span></span></p><p><span>Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 34–40 on your answer sheet.</span></p><p><span>Fishbourne Palace</span></p><p><span>Construction</span></p><p><span>• The first buildings on the site contained food for the (34)______.</span></p><p><span>• The palace building surrounded (35)______.</span></p><p><span>• In the 2nd and 3rd centuries colour was added to the (36)______ of the palace.</span></p><p><span>Discovery</span></p><p><span>• The palace was first discovered when a (37)______ was found.</span></p><p><span>Possible inhabitants</span></p><p><span>• Cogidubnus - he is named in several writings.</span></p><p><span>• Sallustius Lucullus - he may have lived there until approximately (38)______ AD.</span></p><p><span>• Verica - a British king.</span></p><p><span>• Catuarus - his (39)______ was found there.</span></p><p><span>Present Day</span></p><p><span>• A (40)______ has been built on the site to help protect it.</span></p></div>\n</div>\n</div>",
+            "questions": [
+              {
+                "qid": "319088",
+                "qNum": 34,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Roman army",
+                "explanation": "Đáp án chuẩn: Roman army"
+              },
+              {
+                "qid": "319089",
+                "qNum": 35,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(formal) gardens",
+                "explanation": "Đáp án chuẩn: (formal) gardens"
+              },
+              {
+                "qid": "319090",
+                "qNum": 36,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(mosaic) floors",
+                "explanation": "Đáp án chuẩn: (mosaic) floors"
+              },
+              {
+                "qid": "319091",
+                "qNum": 37,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Wall",
+                "explanation": "Đáp án chuẩn: Wall"
+              },
+              {
+                "qid": "319092",
+                "qNum": 38,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "93/ninety-three",
+                "explanation": "Đáp án chuẩn: 93/ninety-three"
+              },
+              {
+                "qid": "319093",
+                "qNum": 39,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(gold) ring",
+                "explanation": "Đáp án chuẩn: (gold) ring"
+              },
+              {
+                "qid": "319094",
+                "qNum": 40,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(modern) museum",
+                "explanation": "Đáp án chuẩn: (modern) museum"
+              }
+            ]
+          },
+          {
+            "directions": "34",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319088",
+                "qNum": 34,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Roman army",
+                "explanation": "Đáp án chuẩn: Roman army"
+              }
+            ]
+          },
+          {
+            "directions": "35",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319089",
+                "qNum": 35,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(formal) gardens",
+                "explanation": "Đáp án chuẩn: (formal) gardens"
+              }
+            ]
+          },
+          {
+            "directions": "36",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319090",
+                "qNum": 36,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(mosaic) floors",
+                "explanation": "Đáp án chuẩn: (mosaic) floors"
+              }
+            ]
+          },
+          {
+            "directions": "37",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319091",
+                "qNum": 37,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Wall",
+                "explanation": "Đáp án chuẩn: Wall"
+              }
+            ]
+          },
+          {
+            "directions": "38",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319092",
+                "qNum": 38,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "93/ninety-three",
+                "explanation": "Đáp án chuẩn: 93/ninety-three"
+              }
+            ]
+          },
+          {
+            "directions": "39",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319093",
+                "qNum": 39,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(gold) ring",
+                "explanation": "Đáp án chuẩn: (gold) ring"
+              }
+            ]
+          },
+          {
+            "directions": "40",
+            "contextHtml": "<div class=\"context-wrapper\">\n</div>",
+            "questions": [
+              {
+                "qid": "319094",
+                "qNum": 40,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "(modern) museum",
+                "explanation": "Đáp án chuẩn: (modern) museum"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "writing": {
+    "durationMinutes": 60,
+    "task1": {
+      "title": "Task 1: Formal / Semi-formal Letter",
+      "timeMinutes": 20,
+      "minWords": 150,
+      "prompt": "You recently stayed at a hotel on an official business trip and encountered several problems during your stay. Write a formal letter to the hotel manager. In your letter: explain why you were staying at the hotel, describe the problems you experienced, and state what actions you expect the manager to take.",
+      "sampleBand8Answer": "Dear Sir or Madam,\n\nI am writing to formally register my disappointment regarding the quality of accommodation during my stay at the Grand Imperial Hotel from October 18th to October 21st (Booking Reference: #GI-98421). I was visiting your city as the keynote speaker at the International Energy Symposium.\n\nRegrettably, multiple deficiencies compromised what ought to have been a restful business visit. First, despite confirming a high-floor executive quiet room weeks prior, I was assigned Room 204 adjacent to the main loading dock, where delivery freight commenced noisily at 5:00 AM each morning. Furthermore, the high-speed Wi-Fi connection advertised in the executive suite failed intermittently throughout my stay, preventing me from accessing critical presentation materials for my conference.\n\nTo compound these issues, when I raised these urgent concerns with the front desk duty supervisor on the morning of October 19th, the staff member appeared dismissive and failed to offer an alternative room or technical support.\n\nIn light of these inconveniences and the substandard service rendered, I request a refund of 50% of the total accommodation fee charged to my corporate card. Additionally, I would appreciate a written assurance detailing the measures you intend to institute to improve staff responsiveness and internet stability.\n\nI look forward to receiving your prompt resolution.\n\nYours faithfully,\nDr. Jonathan Miller",
+      "keyVocab": [
+        {
+          "word": "Register disappointment",
+          "meaningVi": "Chính thức bày tỏ sự thất vọng"
+        },
+        {
+          "word": "Compromise",
+          "meaningVi": "Làm tổn hại, ảnh hưởng xấu đến"
+        },
+        {
+          "word": "Substandard service",
+          "meaningVi": "Dịch vụ dưới chuẩn, không đạt yêu cầu"
+        }
+      ]
+    },
+    "task2": {
+      "title": "Task 2: General Essay",
+      "timeMinutes": 40,
+      "minWords": 250,
+      "prompt": "In many countries today, people are spending less time with their families and more time at work or pursuing individual hobbies. What are the causes of this trend, and what effects does it have on society?",
+      "sampleBand8Answer": "In contemporary society, an increasing number of individuals devote an overwhelming proportion of their daily lives to workplace commitments and autonomous pastimes, resulting in a noticeable decline in familial interaction. This essay will examine the primary catalysts behind this phenomenon and discuss its profound ramifications for community cohesion.\n\nThe primary impetus behind diminishing family time is escalating economic pressure and the competitive nature of the globalized job market. With housing costs and general living expenses soaring in metropolitan hubs, adults frequently find themselves obliged to work excessive overtime or manage secondary freelance gigs to attain financial stability. Concurrently, the pervasive presence of personalized digital entertainment—such as algorithmic social media and on-demand streaming—encourages solitary engagement rather than collective domestic pastimes.\n\nRegarding the impacts, this societal transition generates considerable adverse repercussions. Within the household, the lack of parental presence and meaningful communication can weaken intergenerational bonding, leaving children vulnerable to behavioral issues and emotional isolation. At a broader societal level, the erosion of cohesive family structures diminishes the collective resilience of communities, as strong domestic units have traditionally served as the initial safety net during psychological and financial crises.\n\nIn summary, intense corporate demands and digital individualism represent the chief reasons why people are drifting from domestic life. Unless societies institute sustainable work-life balance policies, familial ties and social well-being will continue to erode.",
+      "keyVocab": [
+        {
+          "word": "Escalating economic pressure",
+          "meaningVi": "Áp lực kinh tế ngày càng gia tăng"
+        },
+        {
+          "word": "Pervasive presence",
+          "meaningVi": "Sự hiện diện phổ biến khắp nơi"
+        },
+        {
+          "word": "Intergenerational bonding",
+          "meaningVi": "Sự gắn kết giữa các thế hệ"
+        }
+      ]
+    }
+  },
+  "speaking": {
+    "durationMinutes": 14,
+    "part1": {
+      "title": "Part 1: Introduction & Familiar Topics (4-5 mins)",
+      "topic": "Work, Technology, and City Life",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "What kind of work do you do, and what do you enjoy most about it?",
+          "sampleBand8": "I currently work as a senior software consultant for an international consultancy firm. What captivates me most is the intellectual challenge of engineering scalable architectural solutions that directly streamline daily operations for thousands of corporate end-users."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you prefer working individually or collaborating in a team?",
+          "sampleBand8": "While autonomous focus is indispensable for deep coding and analytical tasks, I generally thrive on teamwork. Collaborative brainstorming sessions consistently yield multifaceted perspectives that mitigate blind spots and elevate the overall caliber of our deliverables."
+        },
+        {
+          "qNum": 3,
+          "question": "How has technological progress transformed your hometown over recent years?",
+          "sampleBand8": "Remarkably so. Cashless digital payments and app-based public transportation have become completely ubiquitous, which has expedited municipal transit and significantly modernized the pace of urban living."
+        },
+        {
+          "qNum": 4,
+          "question": "Do you think you will continue living in your current city in the future?",
+          "sampleBand8": "Most definitely for the foreseeable future. The vibrant economic ecosystem, coupled with rich cultural amenities and extensive professional networks, makes it an ideal launchpad for my ongoing career trajectory."
+        }
+      ]
+    },
+    "part2": {
+      "title": "Part 2: Individual Long Turn / Cue Card (3-4 mins)",
+      "prepTimeSec": 60,
+      "speakTimeSec": 120,
+      "cueCard": {
+        "prompt": "Describe a memorable professional or academic achievement that you are proud of.",
+        "bullets": [
+          "What the achievement was",
+          "When and where it took place",
+          "What challenges you had to overcome",
+          "And explain why you felt so proud of this accomplishment."
+        ]
+      },
+      "sampleBand8Answer": "I would like to speak about a defining professional achievement from last year, when I successfully spearheaded the migration of our company's legacy customer management infrastructure to a secure cloud platform. This undertaking occurred over a grueling six-month period at our regional corporate headquarters.\n\nThe primary obstacle we confronted was the sheer complexity of legacy data formats, compounded by an unforgiving deployment deadline. We had to ensure zero downtime for over fifty thousand active global clients while synchronizing disparate legacy databases. Furthermore, midway through the project, several senior specialists had to quarantine due to seasonal health issues, which forced me to shoulder additional architectural duties and coordinate with offshore teams across multiple time zones.\n\nUltimately, the migration went live seamlessly without a single minute of service disruption. I felt immensely proud not only because the project cut infrastructure overhead by thirty percent, but because it substantiated my leadership capabilities under immense pressure and earned our team formal recognition from executive leadership."
+    },
+    "part3": {
+      "title": "Part 3: Two-way Discussion / Abstract Topics (4-5 mins)",
+      "topic": "Ambition, Workplace Recognition, and Leadership",
+      "questions": [
+        {
+          "qNum": 1,
+          "question": "Why do some individuals value intrinsic satisfaction over material rewards in their careers?",
+          "sampleBand8": "Because professional self-actualization provides enduring fulfillment that monetary incentives simply cannot replicate. When employees perceive that their daily contributions generate tangible societal impact, their engagement remains resilient even through arduous economic cycles."
+        },
+        {
+          "qNum": 2,
+          "question": "Do you believe personal ambition always benefits an organization?",
+          "sampleBand8": "Not necessarily. While constructive ambition drives innovation and productivity, unbridled personal ambition can foster toxic internal rivalries, undermine collective cohesion, and incentivize unethical shortcuts."
+        },
+        {
+          "qNum": 3,
+          "question": "How has the definition of effective leadership evolved in the modern era?",
+          "sampleBand8": "Leadership has fundamentally transitioned from an authoritative, hierarchical command model to an empathetic, servant-leadership philosophy that emphasizes psychological safety, emotional intelligence, and inclusive mentorship."
+        }
+      ]
+    }
+  }
+}

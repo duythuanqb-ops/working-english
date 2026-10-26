@@ -1,0 +1,73 @@
+{
+  "id": "toeic-sw-writing-test-13",
+  "testNum": 13,
+  "title": "TOEIC SW Writing Test 13 (Bản Gốc STUDY4)",
+  "category": "toeic-writing",
+  "durationMinutes": 60,
+  "tasks": [
+    {
+      "id": "wrt-1",
+      "taskNum": 1,
+      "part": "Part 1 (Q1 - Q5)",
+      "partName": "Viết câu theo tranh (Write a Sentence Based on a Picture)",
+      "timeMinutes": 8,
+      "prompt": "Write ONE sentence based on the picture using the two words or phrases provided.",
+      "prompts": [
+        {
+          "qNum": "Question 1",
+          "imageUrl": "/exams/toeic-sw-writing-test-13/part1/q1.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 2",
+          "imageUrl": "/exams/toeic-sw-writing-test-13/part1/q2.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 3",
+          "imageUrl": "/exams/toeic-sw-writing-test-13/part1/q3.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 4",
+          "imageUrl": "/exams/toeic-sw-writing-test-13/part1/q4.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        },
+        {
+          "qNum": "Question 5",
+          "imageUrl": "/exams/toeic-sw-writing-test-13/part1/q5.png",
+          "prompt": "Write ONE sentence based on the picture using the TWO given words in the image."
+        }
+      ]
+    },
+    {
+      "id": "wrt-2",
+      "taskNum": 2,
+      "part": "Part 2 (Q6 - Q7)",
+      "partName": "Phản hồi email/yêu cầu (Respond to a Written Request)",
+      "timeMinutes": 20,
+      "emails": [
+        {
+          "qNum": "Question 6",
+          "emailText": "Respond to an email\nFrom: Oscar Wolfe\nTo: Jack’s Online Hardware\nSubject: Malfunctioning drill\nSent: June 12, 10:14 A.M.\nThe power drill I bought from you on the Internet last month is not working well anymore. It turns on, but it doesn’t drill as efficiently as it used to. I have to push very hard to make it cut into the wood. It’s just not functioning like it should. Help me please!\nOscar Wolfe\nDirections: Respond to the\ne-mail\nas if you are a customer service worker at Jack's Online Hardware. In your\ne-mail\n, give TWO instructions to handle the problem and make ONE suggestion about maintaining this tool.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: Oscar Wolfe</span></p><p><span>To: Jack’s Online Hardware</span></p><p><span>Subject: Malfunctioning drill</span></p><p><span>Sent: June 12, 10:14 A.M.</span></p><p><span>The power drill I bought from you on the Internet last month is not working well anymore. It turns on, but it doesn’t drill as efficiently as it used to. I have to push very hard to make it cut into the wood. It’s just not functioning like it should. Help me please!</span></p><p><span>Oscar Wolfe</span></p><p><span>Directions: Respond to the </span><span>e-mail</span><span> as if you are a customer service worker at Jack's Online Hardware. In your </span><span>e-mail</span><span>, give TWO instructions to handle the problem and make ONE suggestion about maintaining this tool.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        },
+        {
+          "qNum": "Question 7",
+          "emailText": "Respond to an email\nFrom: James Parker, Office Manager\nTo: All employees\nSubject: Moving offices\nSent: August 16, 2:35 P.M.\nWe are going to be moving our current office to another section of this building from Monday to Wednesday next week. I would like all staff members to be involved in this process. Please tell me on which of these days you can participate.\nThank you,\nJames\nDirections: Respond to the email as if you are an employee of James Parker. In your email, suggest ONE time that you would like to participate and ask TWO questions about the move.",
+          "emailHtml": "<div class=\"question-twocols-left\">\n<div class=\"context-wrapper\">\n<div class=\"context-content\">\n<div><p>Respond to an email</p><p><span>From: James Parker, Office Manager</span></p><p><span>To: All employees</span></p><p><span>Subject: Moving offices</span></p><p><span>Sent: August 16, 2:35 P.M.</span></p><p><span>We are going to be moving our current office to another section of this building from Monday to Wednesday next week. I would like all staff members to be involved in this process. Please tell me on which of these days you can participate.</span></p><p><span>Thank you,</span></p><p><span>James</span></p><p><span>Directions: Respond to the email as if you are an employee of James Parker. In your email, suggest ONE time that you would like to participate and ask TWO questions about the move.</span></p></div>\n</div>\n</div>\n</div>",
+          "directions": "Respond to the email as if you are the recipient. Address the issues and questions asked."
+        }
+      ]
+    },
+    {
+      "id": "wrt-3",
+      "taskNum": 3,
+      "part": "Part 3 (Q8)",
+      "partName": "Viết bài luận quan điểm (Write an Opinion Essay)",
+      "timeMinutes": 30,
+      "prompt": "Writing essays These days, people think companies ought to do something extra for their employees. What should a company do to ensure the loyalty of its employees? Give reasons and examples to support your opinion."
+    }
+  ]
+}

@@ -4,3 +4,10 @@ release
 build/icons.iconset
 .DS_Store
 *.log
+# scraping credentials
+scripts/auth_tokens.json
+scripts/cookie_header.txt
+html/
+media/
+release-media/
+*.zip

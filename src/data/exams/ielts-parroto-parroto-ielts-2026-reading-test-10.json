@@ -1,0 +1,1625 @@
+{
+  "id": "ielts-parroto-parroto-ielts-2026-reading-test-10",
+  "testNum": 19,
+  "collection": "Bộ đề Parroto IELTS 2026",
+  "type": "academic",
+  "skill": "reading",
+  "title": "Parroto IELTS 2026 - Reading Test 10",
+  "category": "ielts-ac",
+  "durationMinutes": 60,
+  "questionsCount": 40,
+  "audioTracks": {},
+  "parts": [
+    {
+      "partNum": 1,
+      "title": "Part 1",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 2,
+      "title": "Part 2",
+      "audioTrack": "",
+      "transcript": ""
+    },
+    {
+      "partNum": 3,
+      "title": "Part 3",
+      "audioTrack": "",
+      "transcript": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": "6ab68bfa357ad9b9a08326c4",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 1-8</strong></p><p>Complete the notes below.</p><p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">The moai of Rapa Nui</h3><h4>Carving</h4><ul><li>statues were carved using tools made of [1]</li><li>many [2] statues can still be seen at the quarry</li></ul><h4>Transport</h4><ul><li>theory 1: statues were pulled on sledges over [3]</li><li>theory 2: statues were made to 'walk' by teams using [4]</li></ul><h4>Features</h4><ul><li>some statues had hats made of red [5]</li><li>eyes were made from [6] and dark stone</li></ul><h4>Purpose and decline</h4><ul><li>experts agree the statues represented [7]</li><li>palm trees may have failed to regrow because [8] ate their seeds</li></ul>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab68bfa357ad9b9a08326c5",
+      "partNum": 1,
+      "instruction": "<p><strong>Questions 9-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>9-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab68bfa357ad9b9a08326c9",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 14-19</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab68bfa357ad9b9a08326ca",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 20-23</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 2?</p><p>In boxes <strong>20-23</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab68bfa357ad9b9a08326cb",
+      "partNum": 2,
+      "instruction": "<p><strong>Questions 24-26</strong></p><p>Complete the summary using the list of phrases, <strong>A-F</strong>, below.</p><p>Write the correct letter, <strong>A-F</strong>, in boxes 24-26 on your answer sheet.</p><p>A &nbsp; local residents<br>B &nbsp; specialised laboratories<br>C &nbsp; disease-carrying insects<br>D &nbsp; reduced rainfall<br>E &nbsp; decision-making power<br>F &nbsp; government scientists</p>",
+      "content": "<h3 style=\"text-align:center\">Genetically modified mosquitoes in Florida</h3><p>A trial in Florida used genetically modified mosquitoes in an attempt to reduce the number of [24]. The advantage of extending such programmes is that they might be more efficient than spraying chemicals and would benefit the public. However, some [25] felt that they had lost some of their [26]. It is therefore important that the aims of such programmes are clear and fairly agreed.</p>",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab68bfa357ad9b9a08326cf",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 27-33</strong></p><p>Do the following statements agree with the information given in Reading Passage 3?</p><p>In boxes <strong>27-33</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+      "content": "",
+      "context": {
+        "passages": []
+      }
+    },
+    {
+      "id": "6ab68bfa357ad9b9a08326d0",
+      "partNum": 3,
+      "instruction": "<p><strong>Questions 34-40</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+      "content": "<h3 style=\"text-align:center\">Howard's garden city</h3><p>Howard's garden city would be circular in shape, with a garden in the centre and a glass [34] for shopping. The city would be surrounded by an [35] belt that would provide food and stop the city from growing larger. New garden cities would be connected to each other by [36]. The land would be held in trust, and the increasing [37] of the land would pay for local services.</p><p>Howard's ideas influenced the more than twenty [38] towns built in Britain after the Second World War. Today, Letchworth's foundation uses income from [39] to fund community projects, and many planners believe that new settlements are better than allowing existing cities to [40].</p>",
+      "context": {
+        "passages": []
+      }
+    }
+  ],
+  "questions": [
+    {
+      "qid": "6ab68bfa357ad9b9a08326d2",
+      "qNum": 1,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "basalt",
+      "acceptedAnswers": [
+        "basalt"
+      ],
+      "explanation": "Answer: basalt Paragraph 3: &#39;The carvers used hand tools made of basalt , a much harder stone&#39;. Tuff is what the statues were carved from, not the tools."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326d3",
+      "qNum": 2,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "unfinished",
+      "acceptedAnswers": [
+        "unfinished"
+      ],
+      "explanation": "Answer: unfinished Paragraph 3: &#39;Hundreds of unfinished statues remain in the quarry today&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326d4",
+      "qNum": 3,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "logs",
+      "acceptedAnswers": [
+        "logs"
+      ],
+      "explanation": "Answer: logs Paragraph 5: statues &#39;were laid on wooden sledges and dragged over logs &#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326d5",
+      "qNum": 4,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "ropes",
+      "acceptedAnswers": [
+        "ropes"
+      ],
+      "explanation": "Answer: ropes Paragraph 6: &#39;Attaching ropes to its head, eighteen people... rocked the upright figure from side to side&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326d6",
+      "qNum": 5,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "scoria",
+      "acceptedAnswers": [
+        "scoria"
+      ],
+      "explanation": "Answer: scoria Paragraph 7: hats were &#39;carved from red scoria , a light volcanic stone&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326d7",
+      "qNum": 6,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "white coral / coral",
+      "acceptedAnswers": [
+        "white coral",
+        "coral"
+      ],
+      "explanation": "Answer: white coral Paragraph 8: the eye sockets &#39;had once held eyes made of white coral , with pupils of dark stone&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326d8",
+      "qNum": 7,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "important ancestors / ancestors",
+      "acceptedAnswers": [
+        "important ancestors",
+        "ancestors"
+      ],
+      "explanation": "Answer: (important) ancestors Paragraph 10: &#39;Most experts believe that they represented important ancestors &#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326d9",
+      "qNum": 8,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c4",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "Polynesian rats / rats",
+      "acceptedAnswers": [
+        "Polynesian rats",
+        "rats"
+      ],
+      "explanation": "Answer: (Polynesian) rats Paragraph 11: &#39; Polynesian rats ... may have eaten the seeds of the island&#39;s palm trees, preventing new trees from growing&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326da",
+      "qNum": 9,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c5",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 2: &#39; Researchers once believed that they arrived as early as 800 CE, but more recent radiocarbon dating suggests ... around 1200 CE&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326db",
+      "qNum": 10,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c5",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 4: the largest figure, about 21 metres, &#39; lies unfinished in the quarry &#39; and probably could never have been moved."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326dc",
+      "qNum": 11,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c5",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 8: &#39; nearly all of them were positioned facing inland , towards the villages, with their backs to the sea&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326dd",
+      "qNum": 12,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c5",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 9: &#39;His theory attracted a great deal of public attention, but most researchers now reject it .&#39;"
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326de",
+      "qNum": 13,
+      "partNum": 1,
+      "groupId": "6ab68bfa357ad9b9a08326c5",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 11 says the rats &#39;arrived with the first settlers&#39;, but it does not say whether they were brought on purpose or why."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326df",
+      "qNum": 14,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326c9",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It is difficult to predict how quickly the technology will develop."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Its most important uses have been in the treatment of human illness."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It is likely to be applied far more widely in the future."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Experts disagree about whether it should be used on farms."
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C Most work has been in labs and on farms, &#39;But many biologists believe that this will not last, and that within a few decades, gene editing will be used routinely &#39; in the wild."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e0",
+      "qNum": 15,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326c9",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "explaining why natural processes may be too slow to protect some species"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "describing the features that endangered species have in common"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "giving a history of the development of genetic engineering"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "arguing that coral reefs are the most urgent conservation priority"
+          }
+        }
+      ],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A Natural selection &#39;usually takes many generations&#39;, but threats are spreading &#39; far faster than most species can adapt &#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e1",
+      "qNum": 16,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326c9",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "to compare different methods of controlling pests"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "to show that well-meant actions can have harmful results"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "to emphasise the importance of protecting farmers"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "to point out the economic cost of environmental damage"
+          }
+        }
+      ],
+      "correctAnswer": "B",
+      "acceptedAnswers": [],
+      "explanation": "Answer: B The toads poisoned native animals, and &#39; The people who released them had good intentions; they simply failed to foresee the consequences. &#39;"
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e2",
+      "qNum": 17,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326c9",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "persuading people to take greater care of the environment"
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "deciding which species are the most valuable"
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "creating new habitats for endangered animals"
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "ensuring genetic changes are managed better than past human impacts on nature"
+          }
+        }
+      ],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D Our record is poor, and &#39; If those who design genetic changes do not do considerably better than we have done in the past, we could make matters much worse. &#39;"
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e3",
+      "qNum": 18,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326c9",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "It will soon be ready for widespread use."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "It is too expensive to be tested properly."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "It may include ways of limiting its own risks."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "It is likely to be opposed by many scientists."
+          }
+        }
+      ],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C &#39; Fortunately, the technology itself may offer some protection. &#39; Self-limiting modifications would fade away if they proved harmful."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e4",
+      "qNum": 19,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326c9",
+      "type": "SINGLE_CHOICE",
+      "answerFormat": "single",
+      "choices": [
+        {
+          "label": "A",
+          "text": {
+            "en": "Scientists should make decisions about nature without political interference."
+          }
+        },
+        {
+          "label": "B",
+          "text": {
+            "en": "Most species do not need genetic help to survive."
+          }
+        },
+        {
+          "label": "C",
+          "text": {
+            "en": "Only a few experts understand the technology well enough to use it."
+          }
+        },
+        {
+          "label": "D",
+          "text": {
+            "en": "Human disagreements will make it hard to decide how the technology should be used."
+          }
+        }
+      ],
+      "correctAnswer": "D",
+      "acceptedAnswers": [],
+      "explanation": "Answer: D &#39; People disagree deeply about the value of nature &#39;, priorities differ, &#39;How, then, can we agree on which species to change&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e5",
+      "qNum": 20,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326ca",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES Paragraph 7: &#39; a gene drive released in one country could quickly spread to its neighbours &#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e6",
+      "qNum": 21,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326ca",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The writer explains that gene drives spread through a whole population, but says nothing about how many release sites would be needed."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e7",
+      "qNum": 22,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326ca",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NO",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NO Paragraph 8: &#39; It seems unlikely that most people would welcome such a future , however good the intentions behind it.&#39;"
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e8",
+      "qNum": 23,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326ca",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "YES",
+      "acceptedAnswers": [],
+      "explanation": "Answer: YES Paragraph 10: &#39; it will require countries to work together and to put their own short-term interests aside&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326e9",
+      "qNum": 24,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326cb",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "C",
+      "acceptedAnswers": [],
+      "explanation": "Answer: C (disease-carrying insects) The trial aimed at &#39; reducing the number of the insects that spread diseases such as dengue fever&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326ea",
+      "qNum": 25,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326cb",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "A",
+      "acceptedAnswers": [],
+      "explanation": "Answer: A (local residents) &#39; some local people complained that they had not been properly consulted&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326eb",
+      "qNum": 26,
+      "partNum": 2,
+      "groupId": "6ab68bfa357ad9b9a08326cb",
+      "type": "NOTE_COMPLETION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "E",
+      "acceptedAnswers": [],
+      "explanation": "Answer: E (decision-making power) They &#39; felt that decisions about their own environment had been taken out of their hands &#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326ec",
+      "qNum": 27,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326cf",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN The passage describes Howard&#39;s influence and his job as a shorthand writer, but says nothing about him studying cities abroad."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326ed",
+      "qNum": 28,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326cf",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 2: as cities grow and struggle to provide affordable housing, &#39; the problems Howard set out to solve seem surprisingly familiar &#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326ee",
+      "qNum": 29,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326cf",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 3 says the book was reissued under a &#39;better-known title&#39;, but gives no sales figures for either edition."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326ef",
+      "qNum": 30,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326cf",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 5: the land would be &#39; held in common by a trust on behalf of the whole community, rather than being owned by individual residents &#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f0",
+      "qNum": 31,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326cf",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "FALSE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: FALSE Paragraph 6: &#39; Neither followed Howard&#39;s circular diagram , which he himself had described as only a rough guide.&#39;"
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f1",
+      "qNum": 32,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326cf",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "TRUE",
+      "acceptedAnswers": [],
+      "explanation": "Answer: TRUE Paragraph 8: critics argue that low density &#39; made them dependent on cars and encouraged the spread of suburbs&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f2",
+      "qNum": 33,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326cf",
+      "type": "SINGLE_SELECTION",
+      "answerFormat": "single",
+      "choices": [],
+      "correctAnswer": "NOT GIVEN",
+      "acceptedAnswers": [],
+      "explanation": "Answer: NOT GIVEN Paragraph 9 says Letchworth is managed by a charitable foundation, but nothing is said about whether other new towns copied this model."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f3",
+      "qNum": 34,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326d0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "arcade",
+      "acceptedAnswers": [
+        "arcade"
+      ],
+      "explanation": "Answer: arcade Paragraph 4: &#39;a glass arcade , where people could shop whatever the weather&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f4",
+      "qNum": 35,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326d0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "agricultural",
+      "acceptedAnswers": [
+        "agricultural"
+      ],
+      "explanation": "Answer: agricultural Paragraph 4: &#39;surrounded by a permanent agricultural belt, which would supply it with food and prevent it from spreading outwards&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f5",
+      "qNum": 36,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326d0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "railway / rail",
+      "acceptedAnswers": [
+        "railway",
+        "rail"
+      ],
+      "explanation": "Answer: railway Paragraph 4: &#39;the cities would be linked by railway to form a network&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f6",
+      "qNum": 37,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326d0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "value / values",
+      "acceptedAnswers": [
+        "value",
+        "values"
+      ],
+      "explanation": "Answer: value Paragraph 5: &#39;As the town grew, the value of the land would rise, and the income from rising land values would be used to pay for local services&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f7",
+      "qNum": 38,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326d0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "new",
+      "acceptedAnswers": [
+        "new"
+      ],
+      "explanation": "Answer: new Paragraph 7: &#39;the British government built more than twenty &#39; new towns&#39;&#39;, strongly influenced by Howard."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f8",
+      "qNum": 39,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326d0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "rents",
+      "acceptedAnswers": [
+        "rents"
+      ],
+      "explanation": "Answer: rents Paragraph 9: the foundation &#39;uses the income from rents on its land and buildings to fund community projects&#39;."
+    },
+    {
+      "qid": "6ab68bfa357ad9b9a08326f9",
+      "qNum": 40,
+      "partNum": 3,
+      "groupId": "6ab68bfa357ad9b9a08326d0",
+      "type": "GAP_FILLING",
+      "answerFormat": "text",
+      "choices": [],
+      "correctAnswer": "sprawl",
+      "acceptedAnswers": [
+        "sprawl"
+      ],
+      "explanation": "Answer: sprawl Paragraph 10: build new settlements &#39;rather than letting existing cities sprawl into the surrounding countryside&#39;."
+    }
+  ],
+  "listening": null,
+  "reading": {
+    "durationMinutes": 60,
+    "passages": [
+      {
+        "passageNum": 1,
+        "title": "Passage 1",
+        "passageHtml": "<h3 style=\"text-align:center\">The moai of Rapa Nui</h3><h4>Carving</h4><ul><li>statues were carved using tools made of [1]</li><li>many [2] statues can still be seen at the quarry</li></ul><h4>Transport</h4><ul><li>theory 1: statues were pulled on sledges over [3]</li><li>theory 2: statues were made to 'walk' by teams using [4]</li></ul><h4>Features</h4><ul><li>some statues had hats made of red [5]</li><li>eyes were made from [6] and dark stone</li></ul><h4>Purpose and decline</h4><ul><li>experts agree the statues represented [7]</li><li>palm trees may have failed to regrow because [8] ate their seeds</li></ul>",
+        "groups": [
+          {
+            "id": "6ab68bfa357ad9b9a08326c4",
+            "directions": "<p><strong>Questions 1-8</strong></p><p>Complete the notes below.</p><p>Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">The moai of Rapa Nui</h3><h4>Carving</h4><ul><li>statues were carved using tools made of [1]</li><li>many [2] statues can still be seen at the quarry</li></ul><h4>Transport</h4><ul><li>theory 1: statues were pulled on sledges over [3]</li><li>theory 2: statues were made to 'walk' by teams using [4]</li></ul><h4>Features</h4><ul><li>some statues had hats made of red [5]</li><li>eyes were made from [6] and dark stone</li></ul><h4>Purpose and decline</h4><ul><li>experts agree the statues represented [7]</li><li>palm trees may have failed to regrow because [8] ate their seeds</li></ul>",
+            "questions": [
+              {
+                "qid": "6ab68bfa357ad9b9a08326d2",
+                "qNum": 1,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "basalt",
+                "acceptedAnswers": [
+                  "basalt"
+                ],
+                "explanation": "Answer: basalt Paragraph 3: &#39;The carvers used hand tools made of basalt , a much harder stone&#39;. Tuff is what the statues were carved from, not the tools."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326d3",
+                "qNum": 2,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "unfinished",
+                "acceptedAnswers": [
+                  "unfinished"
+                ],
+                "explanation": "Answer: unfinished Paragraph 3: &#39;Hundreds of unfinished statues remain in the quarry today&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326d4",
+                "qNum": 3,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "logs",
+                "acceptedAnswers": [
+                  "logs"
+                ],
+                "explanation": "Answer: logs Paragraph 5: statues &#39;were laid on wooden sledges and dragged over logs &#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326d5",
+                "qNum": 4,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "ropes",
+                "acceptedAnswers": [
+                  "ropes"
+                ],
+                "explanation": "Answer: ropes Paragraph 6: &#39;Attaching ropes to its head, eighteen people... rocked the upright figure from side to side&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326d6",
+                "qNum": 5,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "scoria",
+                "acceptedAnswers": [
+                  "scoria"
+                ],
+                "explanation": "Answer: scoria Paragraph 7: hats were &#39;carved from red scoria , a light volcanic stone&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326d7",
+                "qNum": 6,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "white coral / coral",
+                "acceptedAnswers": [
+                  "white coral",
+                  "coral"
+                ],
+                "explanation": "Answer: white coral Paragraph 8: the eye sockets &#39;had once held eyes made of white coral , with pupils of dark stone&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326d8",
+                "qNum": 7,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "important ancestors / ancestors",
+                "acceptedAnswers": [
+                  "important ancestors",
+                  "ancestors"
+                ],
+                "explanation": "Answer: (important) ancestors Paragraph 10: &#39;Most experts believe that they represented important ancestors &#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326d9",
+                "qNum": 8,
+                "partNum": 1,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "Polynesian rats / rats",
+                "acceptedAnswers": [
+                  "Polynesian rats",
+                  "rats"
+                ],
+                "explanation": "Answer: (Polynesian) rats Paragraph 11: &#39; Polynesian rats ... may have eaten the seeds of the island&#39;s palm trees, preventing new trees from growing&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab68bfa357ad9b9a08326c5",
+            "directions": "<p><strong>Questions 9-13</strong></p><p>Do the following statements agree with the information given in Reading Passage 1?</p><p>In boxes <strong>9-13</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab68bfa357ad9b9a08326da",
+                "qNum": 9,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 2: &#39; Researchers once believed that they arrived as early as 800 CE, but more recent radiocarbon dating suggests ... around 1200 CE&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326db",
+                "qNum": 10,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 4: the largest figure, about 21 metres, &#39; lies unfinished in the quarry &#39; and probably could never have been moved."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326dc",
+                "qNum": 11,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 8: &#39; nearly all of them were positioned facing inland , towards the villages, with their backs to the sea&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326dd",
+                "qNum": 12,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 9: &#39;His theory attracted a great deal of public attention, but most researchers now reject it .&#39;"
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326de",
+                "qNum": 13,
+                "partNum": 1,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 11 says the rats &#39;arrived with the first settlers&#39;, but it does not say whether they were brought on purpose or why."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 2,
+        "title": "Passage 2",
+        "passageHtml": "<h3 style=\"text-align:center\">Genetically modified mosquitoes in Florida</h3><p>A trial in Florida used genetically modified mosquitoes in an attempt to reduce the number of [24]. The advantage of extending such programmes is that they might be more efficient than spraying chemicals and would benefit the public. However, some [25] felt that they had lost some of their [26]. It is therefore important that the aims of such programmes are clear and fairly agreed.</p>",
+        "groups": [
+          {
+            "id": "6ab68bfa357ad9b9a08326c9",
+            "directions": "<p><strong>Questions 14-19</strong></p><p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab68bfa357ad9b9a08326df",
+                "qNum": 14,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It is difficult to predict how quickly the technology will develop."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Its most important uses have been in the treatment of human illness."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It is likely to be applied far more widely in the future."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Experts disagree about whether it should be used on farms."
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C Most work has been in labs and on farms, &#39;But many biologists believe that this will not last, and that within a few decades, gene editing will be used routinely &#39; in the wild."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e0",
+                "qNum": 15,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "explaining why natural processes may be too slow to protect some species"
+                  },
+                  {
+                    "key": "B",
+                    "text": "describing the features that endangered species have in common"
+                  },
+                  {
+                    "key": "C",
+                    "text": "giving a history of the development of genetic engineering"
+                  },
+                  {
+                    "key": "D",
+                    "text": "arguing that coral reefs are the most urgent conservation priority"
+                  }
+                ],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A Natural selection &#39;usually takes many generations&#39;, but threats are spreading &#39; far faster than most species can adapt &#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e1",
+                "qNum": 16,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "to compare different methods of controlling pests"
+                  },
+                  {
+                    "key": "B",
+                    "text": "to show that well-meant actions can have harmful results"
+                  },
+                  {
+                    "key": "C",
+                    "text": "to emphasise the importance of protecting farmers"
+                  },
+                  {
+                    "key": "D",
+                    "text": "to point out the economic cost of environmental damage"
+                  }
+                ],
+                "correctAnswer": "B",
+                "acceptedAnswers": [],
+                "explanation": "Answer: B The toads poisoned native animals, and &#39; The people who released them had good intentions; they simply failed to foresee the consequences. &#39;"
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e2",
+                "qNum": 17,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "persuading people to take greater care of the environment"
+                  },
+                  {
+                    "key": "B",
+                    "text": "deciding which species are the most valuable"
+                  },
+                  {
+                    "key": "C",
+                    "text": "creating new habitats for endangered animals"
+                  },
+                  {
+                    "key": "D",
+                    "text": "ensuring genetic changes are managed better than past human impacts on nature"
+                  }
+                ],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D Our record is poor, and &#39; If those who design genetic changes do not do considerably better than we have done in the past, we could make matters much worse. &#39;"
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e3",
+                "qNum": 18,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "It will soon be ready for widespread use."
+                  },
+                  {
+                    "key": "B",
+                    "text": "It is too expensive to be tested properly."
+                  },
+                  {
+                    "key": "C",
+                    "text": "It may include ways of limiting its own risks."
+                  },
+                  {
+                    "key": "D",
+                    "text": "It is likely to be opposed by many scientists."
+                  }
+                ],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C &#39; Fortunately, the technology itself may offer some protection. &#39; Self-limiting modifications would fade away if they proved harmful."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e4",
+                "qNum": 19,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Scientists should make decisions about nature without political interference."
+                  },
+                  {
+                    "key": "B",
+                    "text": "Most species do not need genetic help to survive."
+                  },
+                  {
+                    "key": "C",
+                    "text": "Only a few experts understand the technology well enough to use it."
+                  },
+                  {
+                    "key": "D",
+                    "text": "Human disagreements will make it hard to decide how the technology should be used."
+                  }
+                ],
+                "correctAnswer": "D",
+                "acceptedAnswers": [],
+                "explanation": "Answer: D &#39; People disagree deeply about the value of nature &#39;, priorities differ, &#39;How, then, can we agree on which species to change&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab68bfa357ad9b9a08326ca",
+            "directions": "<p><strong>Questions 20-23</strong></p><p>Do the following statements agree with the claims of the writer in Reading Passage 2?</p><p>In boxes <strong>20-23</strong> on your answer sheet, write</p><p><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab68bfa357ad9b9a08326e5",
+                "qNum": 20,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES Paragraph 7: &#39; a gene drive released in one country could quickly spread to its neighbours &#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e6",
+                "qNum": 21,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The writer explains that gene drives spread through a whole population, but says nothing about how many release sites would be needed."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e7",
+                "qNum": 22,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NO",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NO Paragraph 8: &#39; It seems unlikely that most people would welcome such a future , however good the intentions behind it.&#39;"
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326e8",
+                "qNum": 23,
+                "partNum": 2,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "key": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "YES",
+                "acceptedAnswers": [],
+                "explanation": "Answer: YES Paragraph 10: &#39; it will require countries to work together and to put their own short-term interests aside&#39;."
+              }
+            ]
+          },
+          {
+            "id": "6ab68bfa357ad9b9a08326cb",
+            "directions": "<p><strong>Questions 24-26</strong></p><p>Complete the summary using the list of phrases, <strong>A-F</strong>, below.</p><p>Write the correct letter, <strong>A-F</strong>, in boxes 24-26 on your answer sheet.</p><p>A &nbsp; local residents<br>B &nbsp; specialised laboratories<br>C &nbsp; disease-carrying insects<br>D &nbsp; reduced rainfall<br>E &nbsp; decision-making power<br>F &nbsp; government scientists</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Genetically modified mosquitoes in Florida</h3><p>A trial in Florida used genetically modified mosquitoes in an attempt to reduce the number of [24]. The advantage of extending such programmes is that they might be more efficient than spraying chemicals and would benefit the public. However, some [25] felt that they had lost some of their [26]. It is therefore important that the aims of such programmes are clear and fairly agreed.</p>",
+            "questions": [
+              {
+                "qid": "6ab68bfa357ad9b9a08326e9",
+                "qNum": 24,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "C",
+                "acceptedAnswers": [],
+                "explanation": "Answer: C (disease-carrying insects) The trial aimed at &#39; reducing the number of the insects that spread diseases such as dengue fever&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326ea",
+                "qNum": 25,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "A",
+                "acceptedAnswers": [],
+                "explanation": "Answer: A (local residents) &#39; some local people complained that they had not been properly consulted&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326eb",
+                "qNum": 26,
+                "partNum": 2,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "E",
+                "acceptedAnswers": [],
+                "explanation": "Answer: E (decision-making power) They &#39; felt that decisions about their own environment had been taken out of their hands &#39;."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "passageNum": 3,
+        "title": "Passage 3",
+        "passageHtml": "<h3 style=\"text-align:center\">Howard's garden city</h3><p>Howard's garden city would be circular in shape, with a garden in the centre and a glass [34] for shopping. The city would be surrounded by an [35] belt that would provide food and stop the city from growing larger. New garden cities would be connected to each other by [36]. The land would be held in trust, and the increasing [37] of the land would pay for local services.</p><p>Howard's ideas influenced the more than twenty [38] towns built in Britain after the Second World War. Today, Letchworth's foundation uses income from [39] to fund community projects, and many planners believe that new settlements are better than allowing existing cities to [40].</p>",
+        "groups": [
+          {
+            "id": "6ab68bfa357ad9b9a08326cf",
+            "directions": "<p><strong>Questions 27-33</strong></p><p>Do the following statements agree with the information given in Reading Passage 3?</p><p>In boxes <strong>27-33</strong> on your answer sheet, write</p><p><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>",
+            "contextHtml": "",
+            "questions": [
+              {
+                "qid": "6ab68bfa357ad9b9a08326ec",
+                "qNum": 27,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN The passage describes Howard&#39;s influence and his job as a shorthand writer, but says nothing about him studying cities abroad."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326ed",
+                "qNum": 28,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 2: as cities grow and struggle to provide affordable housing, &#39; the problems Howard set out to solve seem surprisingly familiar &#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326ee",
+                "qNum": 29,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 3 says the book was reissued under a &#39;better-known title&#39;, but gives no sales figures for either edition."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326ef",
+                "qNum": 30,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 5: the land would be &#39; held in common by a trust on behalf of the whole community, rather than being owned by individual residents &#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f0",
+                "qNum": 31,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "FALSE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: FALSE Paragraph 6: &#39; Neither followed Howard&#39;s circular diagram , which he himself had described as only a rough guide.&#39;"
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f1",
+                "qNum": 32,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "TRUE",
+                "acceptedAnswers": [],
+                "explanation": "Answer: TRUE Paragraph 8: critics argue that low density &#39; made them dependent on cars and encouraged the spread of suburbs&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f2",
+                "qNum": 33,
+                "partNum": 3,
+                "type": "choice",
+                "question": "",
+                "options": [
+                  {
+                    "key": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "key": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "key": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ],
+                "correctAnswer": "NOT GIVEN",
+                "acceptedAnswers": [],
+                "explanation": "Answer: NOT GIVEN Paragraph 9 says Letchworth is managed by a charitable foundation, but nothing is said about whether other new towns copied this model."
+              }
+            ]
+          },
+          {
+            "id": "6ab68bfa357ad9b9a08326d0",
+            "directions": "<p><strong>Questions 34-40</strong></p><p>Complete the summary below.</p><p>Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>",
+            "contextHtml": "<h3 style=\"text-align:center\">Howard's garden city</h3><p>Howard's garden city would be circular in shape, with a garden in the centre and a glass [34] for shopping. The city would be surrounded by an [35] belt that would provide food and stop the city from growing larger. New garden cities would be connected to each other by [36]. The land would be held in trust, and the increasing [37] of the land would pay for local services.</p><p>Howard's ideas influenced the more than twenty [38] towns built in Britain after the Second World War. Today, Letchworth's foundation uses income from [39] to fund community projects, and many planners believe that new settlements are better than allowing existing cities to [40].</p>",
+            "questions": [
+              {
+                "qid": "6ab68bfa357ad9b9a08326f3",
+                "qNum": 34,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "arcade",
+                "acceptedAnswers": [
+                  "arcade"
+                ],
+                "explanation": "Answer: arcade Paragraph 4: &#39;a glass arcade , where people could shop whatever the weather&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f4",
+                "qNum": 35,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "agricultural",
+                "acceptedAnswers": [
+                  "agricultural"
+                ],
+                "explanation": "Answer: agricultural Paragraph 4: &#39;surrounded by a permanent agricultural belt, which would supply it with food and prevent it from spreading outwards&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f5",
+                "qNum": 36,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "railway / rail",
+                "acceptedAnswers": [
+                  "railway",
+                  "rail"
+                ],
+                "explanation": "Answer: railway Paragraph 4: &#39;the cities would be linked by railway to form a network&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f6",
+                "qNum": 37,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "value / values",
+                "acceptedAnswers": [
+                  "value",
+                  "values"
+                ],
+                "explanation": "Answer: value Paragraph 5: &#39;As the town grew, the value of the land would rise, and the income from rising land values would be used to pay for local services&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f7",
+                "qNum": 38,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "new",
+                "acceptedAnswers": [
+                  "new"
+                ],
+                "explanation": "Answer: new Paragraph 7: &#39;the British government built more than twenty &#39; new towns&#39;&#39;, strongly influenced by Howard."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f8",
+                "qNum": 39,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "rents",
+                "acceptedAnswers": [
+                  "rents"
+                ],
+                "explanation": "Answer: rents Paragraph 9: the foundation &#39;uses the income from rents on its land and buildings to fund community projects&#39;."
+              },
+              {
+                "qid": "6ab68bfa357ad9b9a08326f9",
+                "qNum": 40,
+                "partNum": 3,
+                "type": "input",
+                "question": "",
+                "options": [],
+                "correctAnswer": "sprawl",
+                "acceptedAnswers": [
+                  "sprawl"
+                ],
+                "explanation": "Answer: sprawl Paragraph 10: build new settlements &#39;rather than letting existing cities sprawl into the surrounding countryside&#39;."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

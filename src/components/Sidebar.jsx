@@ -34,6 +34,18 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
       badge: 'PRO'
     },
     {
+      id: 'ielts',
+      label: 'Luyện thi IELTS',
+      icon: Award,
+      badge: 'PRO'
+    },
+    {
+      id: 'ielts-dictionary',
+      label: 'IELTS 4 Kỹ Năng',
+      icon: Sparkles,
+      badge: '100+'
+    },
+    {
       id: 'review',
       label: 'Ôn tập & Quiz',
       icon: CalendarCheck,
