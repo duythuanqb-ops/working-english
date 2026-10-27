@@ -2,7 +2,38 @@ const path = require('path');
 const fs = require('fs');
 const https = require('https');
 const { app } = require('electron');
-const extract = require('extract-zip');
+const { exec } = require('child_process');
+const util = require('util');
+const execPromise = util.promisify(exec);
+
+async function extractZipFile(zipPath, targetDir) {
+  // 1. Try native platform unzipping first (handles macOS/Linux without npm dependencies)
+  if (process.platform === 'darwin') {
+    try {
+      await execPromise(`ditto -x -k "${zipPath}" "${targetDir}"`);
+      return;
+    } catch (e) {
+      console.warn('ditto extraction fallback:', e);
+    }
+  } else if (process.platform === 'win32') {
+    try {
+      await execPromise(`powershell -command "Expand-Archive -LiteralPath '${zipPath}' -DestinationPath '${targetDir}' -Force"`);
+      return;
+    } catch (e) {
+      console.warn('powershell extraction fallback:', e);
+    }
+  }
+
+  // 2. Try extract-zip dynamic import if available
+  try {
+    const extract = require('extract-zip');
+    await extract(zipPath, { dir: targetDir });
+    return;
+  } catch (err) {
+    console.error('All unzip methods failed:', err);
+    throw err;
+  }
+}
 
 const GITHUB_REPO = 'duythuanqb-ops/working-english';
 const RELEASE_TAG = 'v1.0.0';
@@ -109,7 +140,7 @@ async function downloadAndExtractMedia(type, onProgress) {
 
   // 2. Extract
   if (onProgress) onProgress({ type, stage: 'extracting', percent: 100 });
-  await extract(tempZip, { dir: targetDir });
+  await extractZipFile(tempZip, targetDir);
 
   // 3. Clean up temp zip
   try {
