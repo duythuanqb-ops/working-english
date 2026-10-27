@@ -35,11 +35,13 @@ app.userAgentFallback = app.userAgentFallback
   .replace(new RegExp(`\\s+(?:${app.getName()}|working-english|WorkingEnglish)\\/\\S+`, 'gi'), '');
 
 function createMainWindow() {
+  const iconPath = path.join(__dirname, '../build/icon.png');
   mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
     minWidth: 960,
     minHeight: 650,
+    icon: fs.existsSync(iconPath) ? iconPath : undefined,
     titleBarStyle: process.platform === 'darwin' ? 'hiddenInset' : 'default',
     ...(process.platform === 'darwin' ? { trafficLightPosition: { x: 18, y: 18 } } : {}),
     backgroundColor: '#0f172a',
@@ -287,6 +289,15 @@ app.whenReady().then(() => {
     }
     callback(false);
   });
+
+  if (process.platform === 'darwin' && app.dock) {
+    const dockIconPath = path.join(__dirname, '../build/icon.png');
+    if (fs.existsSync(dockIconPath)) {
+      try {
+        app.dock.setIcon(dockIconPath);
+      } catch (_) {}
+    }
+  }
 
   createMainWindow();
 
