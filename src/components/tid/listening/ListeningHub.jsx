@@ -1,11 +1,10 @@
-// IELTS Listening area — mirrors theieltsdictionary.com/practice/listening and its sub-pages.
-// Sub-pages are local state routes (the app has no router).
+// IELTS Listening area (WorkingEnglish skin). Sub-pages are local state routes (the app has no router).
 import React, { Suspense, lazy, useEffect, useMemo, useState } from 'react';
-import { FileText, Play } from 'lucide-react';
+import { FileText, Headphones, Mic2, MonitorPlay, Play, Search } from 'lucide-react';
 import './listening.css';
 import { LISTENING_INDEX } from './data';
-import { HERO_ART_HTML } from './heroArt';
-import { CamOrange, GRASS_BG, PX_HERO_ART, PX_ROOT, PixelArt, PxBackLink, PxImg, pxProgress, useProgressMap, withCamOrange } from './px';
+import { CamOrange, PAGE_BG, PX_ROOT, pxProgress, useProgressMap } from './px';
+import { SectionHeading, SkillHero, SoundBars } from '../weKit';
 
 const DictationPlayer = lazy(() => import('./DictationPlayer'));
 const CamTestPage = lazy(() => import('./CamTestPage'));
@@ -13,18 +12,12 @@ const PronunciationHub = lazy(() => import('./PronunciationHub'));
 const PronunciationSet = lazy(() => import('./PronunciationSet'));
 const YoutubeDictation = lazy(() => import('./YoutubeDictation'));
 
-const BOOK_COLORS = {
-  cam20: '#C8641E', cam19: '#2F3A50', cam18: '#1F2A3A', cam17: '#5A3AA8', cam16: '#2E7D3A', cam15: '#B83A44', cam14: '#8A3A6A',
-  cam13: '#4C2E8A', cam12: '#1E6A5A', cam11: '#2F3A7A', cam10: '#8A4A1E', cam9: '#5A6450', spelling: '#E8505B', numbers: '#3E9B5A',
-  ipa: '#7E4AC8', conversations: '#2F7AB0',
+const PALETTE = ['#4F46E5', '#F2683A', '#3ECF8E', '#F8BE33', '#E06A96', '#7CC4F2'];
+const bookColor = id => {
+  const n = parseInt(id.replace(/\D/g, ''), 10);
+  return PALETTE[(Number.isNaN(n) ? id.length : n) % PALETTE.length];
 };
-
-const CARD_STYLES = [
-  { bg: '#8A68C8', fg: '#FFFFFF', chip: 'rgba(31,42,26,.42)', pattern: 'radial-gradient(circle at 85% 20%,rgba(255,255,255,.18) 0 70px,transparent 71px),radial-gradient(circle at 10% 90%,rgba(255,255,255,.14) 0 110px,transparent 111px)', rot: '-3deg', dy: '14px' },
-  { bg: '#F2683A', fg: '#FFFFFF', chip: 'rgba(31,42,26,.42)', pattern: 'radial-gradient(ellipse at 20% 10%,rgba(255,190,120,.45) 0 90px,transparent 91px),radial-gradient(circle at 90% 80%,rgba(255,255,255,.14) 0 90px,transparent 91px)', rot: '2deg', dy: '-6px' },
-  { bg: '#E06A96', fg: '#FFFFFF', chip: 'rgba(31,42,26,.42)', pattern: 'radial-gradient(circle at 80% 30%,rgba(255,255,255,.2) 0 80px,transparent 81px),radial-gradient(ellipse at 0 70%,rgba(255,255,255,.16) 0 100px,transparent 101px)', rot: '-2deg', dy: '10px' },
-  { bg: '#F8D24A', fg: '#1F2A1A', chip: 'rgba(31,42,26,.18)', pattern: 'radial-gradient(circle at 70% 60%,rgba(255,255,255,.3) 0 100px,transparent 101px),radial-gradient(circle at 10% 10%,rgba(255,170,40,.25) 0 70px,transparent 71px)', rot: '3deg', dy: '0px' },
-];
+const LIGHT_BG = new Set(['#3ECF8E', '#F8BE33', '#7CC4F2']);
 
 const FILTERS = [
   { id: 'all', name: 'Tất cả' }, { id: 'cambridge', name: 'Cambridge' }, { id: 'gap', name: 'Gap Filling' }, { id: 'spelling', name: 'Spelling' },
@@ -51,8 +44,7 @@ function buildVolumes(library) {
   return vols;
 }
 
-const pill = 'rounded-full border-2 border-[#1F2A1A] px-2.5 py-[3px]';
-const filterCls = active => `rounded-full border-[3px] border-[#1F2A1A] px-4 py-2.5 text-[13px] font-extrabold uppercase leading-none tracking-[.06em] text-[#1F2A1A] transition-transform ${active ? '-translate-y-0.5 bg-[#F8BE33] shadow-[0_4px_0_#1F2A1A]' : 'bg-white hover:bg-[#FFF3CF]'}`;
+const pill = 'rounded-full border-2 border-[#1E1B4B] px-2.5 py-[3px]';
 
 function VolumeList({ volumes, progress, onOpenLesson }) {
   const [open, setOpen] = useState(null);
@@ -66,42 +58,42 @@ function VolumeList({ volumes, progress, onOpenLesson }) {
         let done = 0, started = 0;
         all.forEach(l => { const p = progress[l.id]; if (p) { if (p.completed) done++; else if (p.done > 0) started++; } });
         return (
-          <div key={v.id} className={`overflow-hidden rounded-[20px] border-[3px] border-[#1F2A1A] bg-white transition-shadow ${expanded ? 'shadow-[0_6px_0_#1F2A1A]' : ''}`}>
-            <button type="button" aria-expanded={expanded} onClick={() => setOpen(expanded ? null : v.id)} className="flex w-full items-center gap-[18px] px-[18px] py-3.5 text-left transition-colors hover:bg-[#FFF3CF]">
-              <span className="flex h-[82px] w-16 flex-none flex-col items-center justify-center gap-0.5 rounded-[10px] border-[3px] border-[#1F2A1A] text-[#FDF5E0] shadow-[inset_6px_0_0_rgba(0,0,0,.25),0_4px_0_#1F2A1A]" style={{ background: BOOK_COLORS[v.id] ?? '#475569' }}>
-                {isCam ? <CamOrange className="h-[18px] w-[18px]" /> : <span className="text-[9px] font-extrabold tracking-widest opacity-70">SKILL</span>}
+          <div key={v.id} className={`overflow-hidden rounded-[20px] border-[3px] border-[#1E1B4B] bg-white transition-shadow ${expanded ? 'shadow-[0_6px_0_#1E1B4B]' : ''}`}>
+            <button type="button" aria-expanded={expanded} onClick={() => setOpen(expanded ? null : v.id)} className="flex w-full items-center gap-[18px] px-[18px] py-3.5 text-left transition-colors hover:bg-[#FFF0C2]">
+              <span className="flex h-[82px] w-16 flex-none flex-col items-center justify-center gap-0.5 rounded-[10px] border-[3px] border-[#1E1B4B] shadow-[inset_6px_0_0_rgba(0,0,0,.18),0_4px_0_#1E1B4B]" style={{ background: bookColor(v.id), color: LIGHT_BG.has(bookColor(v.id)) ? '#1E1B4B' : '#FFF8E7' }}>
+                <span className="text-[9px] font-extrabold tracking-widest opacity-80">{isCam ? 'CAM' : 'SKILL'}</span>
                 <span className="px-display text-2xl leading-none">{book ?? v.id.charAt(0).toUpperCase()}</span>
               </span>
               <span className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <span className="px-display flex items-center gap-2 text-xl uppercase leading-[1.1]">
-                  {isCam ? <><CamOrange className="h-[22px] w-[22px]" />{book}</> : v.title}
+                  {isCam ? `Cambridge IELTS ${book}` : v.title}
                 </span>
                 <span className="flex flex-wrap items-center gap-2 text-[13px] font-bold">
-                  <span className={`${pill} bg-[#FDF5E0]`}>{Object.keys(v.tests).length} Tests</span>
-                  <span className={`${pill} bg-[#FDF5E0]`}>Listening</span>
-                  {(done > 0 || started > 0) && <span className={`${pill} bg-[#CDEBA8]`}>{done}/{all.length} bài đã xong</span>}
-                  {started > 0 && <span className={`${pill} bg-[#FFE08A]`}>{started} đang dở</span>}
+                  <span className={`${pill} bg-[#FFF8E7]`}>{Object.keys(v.tests).length} Tests</span>
+                  <span className={`${pill} bg-[#FFF8E7]`}>Listening</span>
+                  {(done > 0 || started > 0) && <span className={`${pill} bg-[#D4F5E4]`}>{done}/{all.length} bài đã xong</span>}
+                  {started > 0 && <span className={`${pill} bg-[#FFF0C2]`}>{started} đang dở</span>}
                 </span>
               </span>
-              <span aria-hidden="true" className={`px-display grid h-[42px] w-[42px] flex-none place-items-center rounded-xl border-[3px] border-[#1F2A1A] bg-[#F8BE33] text-base transition-transform duration-300 ${expanded ? 'rotate-90' : ''}`}>→</span>
+              <span aria-hidden="true" className={`px-display grid h-[42px] w-[42px] flex-none place-items-center rounded-xl border-[3px] border-[#1E1B4B] bg-[#F8BE33] text-base transition-transform duration-300 ${expanded ? 'rotate-90' : ''}`}>→</span>
             </button>
             {expanded && (
-              <div className="space-y-7 border-t-[3px] border-[#1F2A1A] bg-[#FDF5E0] p-4 [animation:pxFadeUp_.32s_ease-out_both] md:p-6">
+              <div className="space-y-7 border-t-[3px] border-[#1E1B4B] bg-[#FFF8E7] p-4 [animation:pxFadeUp_.32s_ease-out_both] md:p-6">
                 {Object.entries(v.tests).sort((a, b) => a[0].localeCompare(b[0], undefined, { numeric: true })).map(([group, lessons]) => (
                   <div key={group}>
                     <div className="mb-3 flex items-center gap-4">
                       <h4 className="px-display text-sm uppercase">{group}</h4>
-                      <div className="h-[3px] flex-1 rounded bg-[#1F2A1A]/15" />
+                      <div className="h-[3px] flex-1 rounded bg-[#1E1B4B]/15" />
                     </div>
                     <div className="flex flex-col gap-2">
                       {lessons.map(l => {
                         const p = pxProgress(progress[l.id]);
                         return (
-                          <button key={l.id} type="button" onClick={() => onOpenLesson(l.id)} className="flex items-center gap-3 rounded-2xl border-2 border-[#1F2A1A] bg-white px-3.5 py-3 text-left text-[#1F2A1A] shadow-[0_3px_0_#1F2A1A] transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_5px_0_#1F2A1A]">
-                            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border-2 border-[#1F2A1A] bg-[#BFE0F7]"><FileText className="h-4 w-4" /></span>
+                          <button key={l.id} type="button" onClick={() => onOpenLesson(l.id)} className="flex items-center gap-3 rounded-2xl border-2 border-[#1E1B4B] bg-white px-3.5 py-3 text-left text-[#1E1B4B] shadow-[0_3px_0_#1E1B4B] transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_5px_0_#1E1B4B]">
+                            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border-2 border-[#1E1B4B] bg-[#DCF0FD]"><FileText className="h-4 w-4" /></span>
                             <span className="min-w-0 flex-1 truncate font-extrabold">{l.title.split('-').pop()?.trim() || l.title}</span>
-                            <span className={`hidden whitespace-nowrap rounded-full border-2 border-[#1F2A1A] px-2.5 py-0.5 text-[11px] font-extrabold sm:inline ${p ? (p.done ? 'bg-[#BFE0F7]' : 'bg-[#FFE08A]') : 'bg-white'}`}>{p ? `${p.done ? '✓ ' : ''}${p.text}` : 'Dictation'}</span>
-                            <span className="flex shrink-0 items-center gap-1.5 rounded-xl border-2 border-[#1F2A1A] bg-[#F8BE33] px-3 py-1.5 text-[11px] font-extrabold uppercase"><Play className="h-3 w-3 fill-current" />Start</span>
+                            <span className={`hidden whitespace-nowrap rounded-full border-2 border-[#1E1B4B] px-2.5 py-0.5 text-[11px] font-extrabold sm:inline ${p ? (p.done ? 'bg-[#DCF0FD]' : 'bg-[#FFF0C2]') : 'bg-white'}`}>{p ? `${p.done ? '✓ ' : ''}${p.text}` : 'Dictation'}</span>
+                            <span className="flex shrink-0 items-center gap-1.5 rounded-xl border-2 border-[#1E1B4B] bg-[#F8BE33] px-3 py-1.5 text-[11px] font-extrabold uppercase"><Play className="h-3 w-3 fill-current" />Start</span>
                           </button>
                         );
                       })}
@@ -149,89 +141,93 @@ function ListeningHome({ ui, setUi, go, onBack }) {
   const gapItems = LISTENING_INDEX.gap.filter(g => !gq || `${g.title} ${g.series} cam ${g.book} test ${g.testNumber} part ${g.part}`.toLowerCase().includes(gq));
   const gapSeries = [...new Set(gapItems.map(g => g.series))];
 
+  const totalLessons = LISTENING_INDEX.library.length;
+  const doneCount = Object.values(progress).filter(p => p.completed).length;
   const ctas = [
-    { key: 'yt', label: 'Luyện dictation video youtube ở đây', icon: '▶', iconBg: '#E8505B', dark: true, onClick: () => go({ name: 'yt' }) },
-    { key: 'cam', label: 'Luyện dictation Cambridge ở đây', icon: '♪', iconBg: '#F8BE33', onClick: () => { set({ filter: 'cambridge' }); document.getElementById('library-archives')?.scrollIntoView({ behavior: 'smooth' }); } },
-    { key: 'ipa', label: 'Luyện phát âm IPA ở đây', icon: 'Ə', iconBg: '#BFE0F7', onClick: () => go({ name: 'pron' }) },
+    { key: 'yt', title: 'Dictation YouTube', desc: 'Dán link video bất kỳ, nghe và chép lại từng câu.', icon: MonitorPlay, bg: '#F2683A', fg: '#fff', onClick: () => go({ name: 'yt' }) },
+    { key: 'cam', title: 'Dictation Cambridge', desc: 'Chép chính tả theo từng part của đề Cambridge.', icon: Headphones, bg: '#F8BE33', fg: '#1E1B4B', onClick: () => { set({ filter: 'cambridge' }); document.getElementById('library-archives')?.scrollIntoView({ behavior: 'smooth' }); } },
+    { key: 'ipa', title: 'Phát âm IPA', desc: 'Luyện tai phân biệt từng âm và cặp âm dễ nhầm.', icon: Mic2, bg: '#7CC4F2', fg: '#1E1B4B', onClick: () => go({ name: 'pron' }) },
   ];
 
   return (
-    <div className={`${PX_ROOT} relative min-h-screen w-full overflow-x-clip bg-[#43A05A]`} style={GRASS_BG}>
-      <header className="relative overflow-hidden bg-[#353D5C] pb-[390px] sm:pb-[540px]">
-        <PixelArt html={HERO_ART_HTML} className={PX_HERO_ART} />
-        <div className="relative z-[3] mx-auto flex max-w-[1440px] flex-col items-center gap-[18px] px-[clamp(20px,4vw,40px)] pt-[32px] text-center">
-          <PxBackLink onClick={onBack} label="Quay lại chọn kỹ năng" />
-          <span className="mt-2.5 inline-flex -rotate-2 items-center gap-2 rounded-full border-[3px] border-[#1F2A1A] bg-[#D6363F] px-4 py-[7px] text-sm font-extrabold tracking-[.08em] text-white">LISTENING PRACTICE HUB</span>
-          <h1 className="px-display px-outline m-0 text-[clamp(44px,8.4vw,112px)] leading-[1.15] [--px-drop:8px] [--px-stroke:clamp(6px,.9vw,10px)]">IELTS LISTENING</h1>
-          <p className="m-0 max-w-[780px] text-[clamp(18px,2vw,24px)] font-bold leading-[1.55] text-[#FDF5E0] [text-shadow:0_3px_0_#1F2A1A,2px_0_0_#1F2A1A,-2px_0_0_#1F2A1A,0_-2px_0_#1F2A1A] [text-wrap:pretty]">
-            {withCamOrange('Luyện nghe chép chính tả IELTS Listening với dữ liệu đề thi Cambridge mới nhất. Rèn luyện kỹ năng bắt âm và tránh sai sót.', 'h-[1.1em] w-[1.1em] align-[-0.18em]')}
-          </p>
-        </div>
-      </header>
+    <div className={`${PX_ROOT} relative min-h-screen w-full overflow-x-clip`} style={PAGE_BG}>
+      <SkillHero
+        variant="listening"
+        onBack={onBack}
+        eyebrow="WorkingEnglish · Listening Lab"
+        title="Nghe"
+        accent="Bắt trọn từng âm"
+        subtitle="Nghe chép chính tả theo đề Cambridge, video YouTube và bài phát âm IPA. Mỗi câu sai là một âm bạn sẽ không bỏ lỡ lần sau."
+        stats={[
+          { value: books.length, label: 'bộ Cambridge' },
+          { value: totalLessons, label: 'bài dictation' },
+          { value: doneCount, label: 'bài đã xong' },
+        ]}
+      />
 
-      <main className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col gap-14 px-[clamp(20px,4vw,40px)] pb-[120px] pt-14">
-        <section className="grid grid-cols-1 gap-[18px] lg:grid-cols-3">
-          {ctas.map(c => (
-            <button key={c.key} type="button" onClick={c.onClick} className={`flex items-center gap-3.5 rounded-[20px] border-4 border-[#1F2A1A] px-5 py-[18px] text-left shadow-[0_7px_0_#1F2A1A] transition-[transform,box-shadow] hover:-translate-y-[3px] hover:shadow-[0_10px_0_#1F2A1A] ${c.dark ? 'bg-[#2F3A7A] text-white' : 'bg-[#FDF5E0] text-[#1F2A1A]'}`}>
-              <span aria-hidden="true" className="px-display grid h-[46px] w-[46px] flex-none place-items-center rounded-xl border-[3px] border-[#1F2A1A] text-lg text-[#1F2A1A]" style={{ background: c.iconBg }}>{c.icon}</span>
-              <span className="px-display flex flex-1 flex-wrap items-center gap-1.5 text-[15px] uppercase leading-[1.3]">{withCamOrange(c.label, 'h-[22px] w-[22px]')}</span>
-              <span aria-hidden="true" className="px-display flex-none text-lg">→</span>
-            </button>
-          ))}
+      <main className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col gap-14 px-[clamp(20px,4vw,48px)] pb-[120px] pt-10">
+        <section className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          {ctas.map((c, i) => {
+            const Icon = c.icon;
+            return (
+              <button key={c.key} type="button" onClick={c.onClick} className="we-card we-card-hover we-pop-in group flex items-start gap-4 p-5 text-left" style={{ '--we-rot': `${(i - 1) * 0.8}deg`, animationDelay: `${i * 70}ms` }}>
+                <span className="we-icon-tile h-14 w-14 rounded-2xl transition-transform group-hover:-rotate-6" style={{ background: c.bg, color: c.fg }}><Icon className="h-6 w-6" strokeWidth={2.5} /></span>
+                <span className="flex min-w-0 flex-1 flex-col gap-1">
+                  <span className="we-display text-xl">{c.title}</span>
+                  <span className="text-sm font-semibold leading-snug text-[var(--text-muted)]">{c.desc}</span>
+                </span>
+                <span aria-hidden="true" className="we-display mt-1 text-xl transition-transform group-hover:translate-x-1">→</span>
+              </button>
+            );
+          })}
         </section>
 
         {bookTests.length > 0 && (
-          <section className="flex flex-col gap-[22px]">
-            <div className="flex flex-col gap-4 rounded-[28px] border-4 border-[#1F2A1A] bg-[#FDF5E0] p-[clamp(22px,3.4vw,36px)] shadow-[0_10px_0_#1F2A1A]">
-              <div className="flex flex-wrap items-center gap-3.5">
-                <CamOrange className="h-10 w-10" />
-                <h2 className="px-display m-0 text-[clamp(26px,3.4vw,40px)] leading-[1.1]">FULL TESTS</h2>
-                <span className="-rotate-3 rounded-full border-[3px] border-[#1F2A1A] bg-[#D6363F] px-3.5 py-[5px] text-[13px] font-extrabold uppercase tracking-[.08em] text-white">Thi thật</span>
-              </div>
-              <div className="flex flex-wrap items-center gap-2.5">
-                <span className="px-display text-[13px] uppercase">Bộ đề</span>
-                <div className="flex flex-wrap gap-1.5">
-                  {books.map(b => (
-                    <button key={b} type="button" aria-pressed={b === activeBook} onClick={() => set({ book: b })} className={`px-display min-h-[38px] min-w-[52px] rounded-xl border-[3px] border-[#1F2A1A] px-2 text-[13px] leading-none text-[#1F2A1A] transition-colors hover:bg-[#FFE08A] sm:min-w-[58px] ${b === activeBook ? '-translate-y-0.5 bg-[#F8BE33] shadow-[0_4px_0_#1F2A1A]' : 'bg-white'}`}>{b}</button>
-                  ))}
-                </div>
-                <span aria-hidden="true" className="hidden text-lg font-extrabold opacity-50 xl:inline">|</span>
-                <button type="button" onClick={() => setShowStats(true)} className="inline-flex min-h-9 items-center text-[13px] font-extrabold text-[#1F2A1A] underline underline-offset-[3px] transition-colors hover:text-[#C2410C]">Tỉ lệ đúng theo dạng câu hỏi của bạn →</button>
-              </div>
+          <section className="flex flex-col gap-6">
+            <SectionHeading
+              title="Đề thi đầy đủ"
+              tag="Thi thật"
+              right={<button type="button" onClick={() => setShowStats(true)} className="we-btn we-btn-sm we-btn-white">Lịch sử làm bài →</button>}
+            />
+            <div className="flex flex-wrap items-center gap-2 rounded-[22px] border-[2.5px] border-[#1E1B4B] bg-white p-2.5 shadow-[var(--we-pop-sm)]">
+              <span className="we-display px-2 text-sm uppercase">Cambridge</span>
+              {books.map(b => (
+                <button key={b} type="button" aria-pressed={b === activeBook} onClick={() => set({ book: b })} className="we-toggle min-w-[48px]">{b}</button>
+              ))}
             </div>
-            <div className="flex flex-wrap items-center gap-3.5">
-              <h3 className="px-display px-outline m-0 flex items-center gap-3 text-[clamp(28px,4vw,46px)] leading-[1.1] [--px-drop:5px] [--px-stroke:7px]">
-                <CamOrange className="h-[1em] w-[1em]" /><span>IELTS {activeBook}</span>
-              </h3>
-              <span className="rounded-full border-[3px] border-[#1F2A1A] bg-[#BFE0F7] px-3 py-[5px] text-xs font-extrabold uppercase tracking-[.06em]">Giao diện giống thi thật 100%</span>
-            </div>
-            <div key={activeBook} className="grid grid-cols-2 gap-3 pb-2.5 pt-2 [animation:pxFadeUp_.32s_ease-out_both] sm:gap-5 lg:grid-cols-4 lg:gap-4 xl:flex xl:justify-center xl:gap-x-6 xl:pt-[18px]">
+
+            <div key={activeBook} className="grid grid-cols-1 gap-5 [animation:pxFadeUp_.32s_ease-out_both] sm:grid-cols-2 xl:grid-cols-4">
               {bookTests.map((t, i) => {
-                const st = CARD_STYLES[(t.testNumber - 1) % CARD_STYLES.length];
+                const color = PALETTE[i % PALETTE.length];
+                const dark = !LIGHT_BG.has(color);
                 const p = pxProgress(progress[`cam:${t.testId}`]);
-                const plays = 35000 + 1000 * t.volume + 123 * t.testNumber;
                 return (
-                  <article key={t.testId} className="relative flex min-h-[300px] min-w-0 flex-col gap-2.5 overflow-hidden rounded-[22px] p-3.5 shadow-[0_10px_22px_rgba(31,42,26,.28)] transition-[transform,translate] duration-200 [z-index:var(--z)] focus-within:z-[9] hover:z-[9] max-xl:hover:-translate-y-1 sm:min-h-[340px] sm:gap-3.5 sm:rounded-[28px] sm:p-[22px] sm:shadow-[0_14px_28px_rgba(31,42,26,.28)] xl:min-h-[360px] xl:max-w-[290px] xl:flex-[1_1_0] xl:[transform:rotate(var(--rot))_translateY(var(--dy))] xl:hover:[transform:rotate(0deg)_translateY(-14px)_scale(1.03)]"
-                    style={{ backgroundColor: st.bg, backgroundImage: st.pattern, color: st.fg, '--rot': st.rot, '--dy': st.dy, '--z': i + 1 }}>
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="rounded-full bg-white px-[11px] py-1.5 text-[13px] font-extrabold leading-none text-[#1F2A1A]">{String(t.testNumber).padStart(2, '0')}</span>
-                      <span className="flex items-center gap-1.5 rounded-full bg-white/85 py-[5px] pl-1.5 pr-2.5 text-xs font-extrabold leading-none text-[#1F2A1A]"><CamOrange className="h-4 w-4" />{t.volume}</span>
-                    </div>
-                    <div className="px-display text-[34px] leading-[.95] tracking-[-.01em] sm:text-[clamp(40px,4.4vw,56px)]">TEST<br />{t.testNumber}</div>
-                    {p && <span className={`self-start rounded-full bg-white px-[11px] py-[5px] text-xs font-extrabold ${p.done ? 'text-[#2E7D3A]' : 'text-[#B45309]'}`}>{p.done ? '✓ ' : ''}{p.text}</span>}
-                    {!t.hasAudio && <span className="self-start rounded-full bg-black/25 px-2.5 py-1 text-[10px] font-extrabold uppercase">No audio</span>}
-                    <PxImg src="headphones.svg" className="pointer-events-none absolute -right-3.5 top-[24%] w-16 rotate-[14deg] opacity-[.28] sm:w-24" />
-                    <div className="relative mt-auto flex flex-col gap-3">
-                      <div className="flex flex-wrap gap-1.5 text-[11px] font-extrabold sm:text-xs">
-                        <span className="whitespace-nowrap rounded-full px-2.5 py-1" style={{ background: st.chip }}>
-                          <span className="sm:hidden">★ {plays.toLocaleString('en-US')}</span>
-                          <span className="hidden sm:inline">★ {plays.toLocaleString('en-US')} lượt nghe</span>
-                        </span>
-                        <span className="whitespace-nowrap rounded-full px-2.5 py-1" style={{ background: st.chip }}>✓ 80%</span>
+                  <article key={t.testId} className="we-card we-card-hover flex flex-col overflow-hidden">
+                    {/* cassette label */}
+                    <div className="relative flex flex-col gap-3 border-b-[2.5px] border-[#1E1B4B] p-4" style={{ background: color, color: dark ? '#FFF8E7' : '#1E1B4B' }}>
+                      <div className="flex items-center justify-between">
+                        <span className="we-chip !py-0.5"><CamOrange className="text-[10px]" /> {t.volume}</span>
+                        {!t.hasAudio && <span className="we-chip !bg-[#1E1B4B] !py-0.5 !text-white">No audio</span>}
                       </div>
-                      <div className="flex flex-wrap gap-2">
-                        <button type="button" onClick={() => go({ name: 'camtest', testId: t.testId, mode: 'practice' })} className="flex min-h-10 flex-[1_1_90px] items-center justify-center whitespace-nowrap rounded-full bg-white px-2 text-sm font-extrabold leading-none text-[#1F2A1A] transition-colors hover:bg-[#FDF5E0]">Luyện tập</button>
-                        <button type="button" onClick={() => go({ name: 'camtest', testId: t.testId, mode: 'real_test' })} className="flex min-h-10 flex-[1_1_90px] items-center justify-center whitespace-nowrap rounded-full bg-[#1F2A1A] px-2 text-sm font-extrabold leading-none text-white transition-colors hover:bg-[#2F3A7A]">Thi thật ▶</button>
+                      <div className="flex items-end justify-between gap-2">
+                        <span className="we-display text-[44px] leading-[.9]">Test {t.testNumber}</span>
+                        <span className="flex items-center gap-2 rounded-full border-[2.5px] border-[#1E1B4B] bg-[#FFF8E7] px-2 py-1.5" aria-hidden="true">
+                          <span className="h-4 w-4 rounded-full border-[2.5px] border-[#1E1B4B] bg-white" />
+                          <SoundBars count={5} className="!h-4 !gap-[2px] [&>i]:!w-[3px]" color="#1E1B4B" />
+                          <span className="h-4 w-4 rounded-full border-[2.5px] border-[#1E1B4B] bg-white" />
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex flex-1 flex-col gap-3 p-4">
+                      <p className="text-sm font-semibold text-[var(--text-muted)]">4 part · 40 câu · 30 phút</p>
+                      {p ? (
+                        <span className={`we-chip self-start ${p.done ? '!bg-[#D4F5E4]' : '!bg-[#FFF0C2]'}`}>{p.done ? '✓ ' : ''}{p.text}</span>
+                      ) : (
+                        <span className="we-chip self-start !border-dashed !text-[var(--text-muted)]">Chưa làm</span>
+                      )}
+                      <div className="mt-auto grid grid-cols-2 gap-2 pt-1">
+                        <button type="button" onClick={() => go({ name: 'camtest', testId: t.testId, mode: 'practice' })} className="we-btn we-btn-sm we-btn-white">Luyện tập</button>
+                        <button type="button" onClick={() => go({ name: 'camtest', testId: t.testId, mode: 'real_test' })} className="we-btn we-btn-sm we-btn-indigo"><Play className="h-3 w-3 fill-current" />Thi thật</button>
                       </div>
                     </div>
                   </article>
@@ -241,44 +237,44 @@ function ListeningHome({ ui, setUi, go, onBack }) {
           </section>
         )}
 
-        <section id="library-archives" className="flex scroll-mt-24 flex-col gap-5 rounded-[28px] border-4 border-[#1F2A1A] bg-[#FDF5E0] p-[clamp(22px,3.4vw,36px)] shadow-[0_10px_0_#1F2A1A]">
+        <section id="library-archives" className="we-card flex scroll-mt-24 flex-col gap-5 p-[clamp(20px,3vw,32px)]">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <h2 className="px-display m-0 text-[clamp(24px,3vw,34px)] leading-[1.1]">LIBRARY ARCHIVES</h2>
-            <label className="flex min-h-[50px] w-full items-center gap-2.5 rounded-2xl border-[3px] border-[#1F2A1A] bg-white px-4 sm:w-auto sm:flex-[0_1_340px]">
-              <span aria-hidden="true" className="px-display text-base leading-none">⌕</span>
-              <input type="text" className="min-w-0 flex-1 border-none bg-transparent py-3 text-[15px] font-semibold text-[#1F2A1A] outline-none placeholder:text-[#1F2A1A]/55" placeholder="Tìm bài nghe (VD: Cam 20)..." value={query} onChange={e => set({ query: e.target.value })} />
+            <SectionHeading title="Kho bài nghe" />
+            <label className="flex min-h-[48px] w-full items-center gap-2.5 rounded-2xl border-[2.5px] border-[#1E1B4B] bg-[#FFF8E7] px-4 focus-within:shadow-[var(--we-pop-sm)] sm:w-auto sm:flex-[0_1_340px]">
+              <Search className="h-4 w-4 shrink-0" strokeWidth={2.75} />
+              <input type="text" className="min-w-0 flex-1 border-none bg-transparent py-3 text-[15px] font-semibold text-[#1E1B4B] outline-none placeholder:text-[#1E1B4B]/50" placeholder="Tìm bài nghe (VD: Cam 20)..." value={query} onChange={e => set({ query: e.target.value })} />
             </label>
           </div>
           <div className="flex flex-wrap gap-2">
             {FILTERS.map(f => (f.id === 'ipa'
-              ? <button key={f.id} type="button" onClick={() => go({ name: 'pron' })} className={filterCls(false)}>{f.name}</button>
-              : <button key={f.id} type="button" aria-pressed={filter === f.id} onClick={() => set({ filter: f.id })} className={filterCls(filter === f.id)}>{f.name}</button>))}
+              ? <button key={f.id} type="button" onClick={() => go({ name: 'pron' })} className="we-toggle">{f.name}</button>
+              : <button key={f.id} type="button" aria-pressed={filter === f.id} onClick={() => set({ filter: f.id })} className="we-toggle">{f.name}</button>))}
           </div>
 
           {filter === 'gap' ? (
             <div className="flex flex-col gap-7">
-              <div className="rounded-2xl border-[3px] border-[#1F2A1A] bg-white px-5 py-4 text-[14px] font-semibold leading-snug text-[#1F2A3A]">
-                <span className="font-extrabold text-[#1F2A1A]">Gap Filling: </span>
+              <div className="rounded-2xl border-[2.5px] border-dashed border-[#1E1B4B] bg-[#FFF0C2] px-5 py-4 text-[14px] font-semibold leading-snug">
+                <span className="font-extrabold">Gap Filling: </span>
                 mở part là chỉ còn câu điền từ (form, note, table, flow-chart…), chấm ngay tại chỗ, bấm từng câu để nghe lại đúng đoạn chứa đáp án kèm script.
-                <span className="font-extrabold text-[#1F2A1A]"> {LISTENING_INDEX.gap.length} part · {LISTENING_INDEX.gap.reduce((s, g) => s + g.total, 0)} câu.</span>
+                <span className="font-extrabold"> {LISTENING_INDEX.gap.length} part · {LISTENING_INDEX.gap.reduce((s, g) => s + g.total, 0)} câu.</span>
               </div>
               {gapItems.length === 0 ? (
-                <p className="py-10 text-center text-sm font-bold text-[#1F2A1A]/50">Không có part nào khớp tìm kiếm.</p>
+                <p className="py-10 text-center text-sm font-bold text-[#1E1B4B]/50">Không có part nào khớp tìm kiếm.</p>
               ) : gapSeries.map(series => (
                 <div key={series}>
-                  <h3 className="px-display mb-3 text-lg uppercase">{series.replace('Cambridge', 'Cambridge IELTS')}</h3>
+                  <h3 className="we-display mb-3 text-lg uppercase">{series.replace('Cambridge', 'Cambridge IELTS')}</h3>
                   <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                     {gapItems.filter(g => g.series === series).map(g => {
                       const p = pxProgress(progress[`gap:${g.id}`]);
                       return (
-                        <button key={g.id} type="button" onClick={() => go({ name: 'camtest', testId: g.testId, mode: 'practice', part: g.part, focus: 'gap' })} className="group flex flex-col gap-2 rounded-2xl border-[3px] border-[#1F2A1A] bg-white p-4 text-left text-[#1F2A1A] shadow-[0_4px_0_#1F2A1A] transition-transform hover:-translate-y-0.5">
+                        <button key={g.id} type="button" onClick={() => go({ name: 'camtest', testId: g.testId, mode: 'practice', part: g.part, focus: 'gap' })} className="we-card we-card-hover group flex flex-col gap-2 !rounded-2xl p-4 text-left">
                           <div className="flex w-full items-center justify-between gap-2">
-                            <span className="px-display text-[11px] uppercase">Test {g.testNumber} · Part {g.part}</span>
-                            {p && <span className={`whitespace-nowrap rounded-full border-2 border-[#1F2A1A] px-2 py-0.5 text-[10px] font-extrabold ${p.done ? 'bg-[#BFE0F7]' : 'bg-[#FFE08A]'}`}>{p.done ? '✓ ' : ''}{p.text}</span>}
+                            <span className="we-display text-[13px] uppercase">Test {g.testNumber} · Part {g.part}</span>
+                            {p && <span className={`we-chip !text-[10px] ${p.done ? '!bg-[#D4F5E4]' : '!bg-[#FFF0C2]'}`}>{p.done ? '✓ ' : ''}{p.text}</span>}
                           </div>
                           <span className="line-clamp-2 text-[15px] font-extrabold leading-snug">{g.title}</span>
                           <GapTags groups={g.groups} />
-                          <span className="mt-1 inline-flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-widest text-[#2F3A7A]">
+                          <span className="mt-1 inline-flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-widest text-[#4F46E5]">
                             {g.total} câu · Luyện ngay <span className="transition-transform group-hover:translate-x-0.5">→</span>
                           </span>
                         </button>
@@ -291,17 +287,17 @@ function ListeningHome({ ui, setUi, go, onBack }) {
           ) : (
             <div className="flex flex-col gap-8">
               {shown.length === 0 ? (
-                <div className="flex flex-col items-center gap-3 rounded-2xl border-[3px] border-dashed border-[#1F2A1A] bg-white px-6 py-10 text-center">
+                <div className="flex flex-col items-center gap-3 rounded-2xl border-[2.5px] border-dashed border-[#1E1B4B] bg-[#FFF8E7] px-6 py-10 text-center">
                   <p className="font-extrabold">Không có bài nghe nào khớp “{query || FILTERS.find(f => f.id === filter)?.name}”.</p>
-                  <button type="button" onClick={() => set({ query: '', filter: 'all' })} className={filterCls(false)}>Xem tất cả bài nghe</button>
+                  <button type="button" onClick={() => set({ query: '', filter: 'all' })} className="we-btn we-btn-sm">Xem tất cả bài nghe</button>
                 </div>
               ) : (
                 <VolumeList volumes={shown} progress={progress} onOpenLesson={id => go({ name: 'lesson', id })} />
               )}
               {!showAll && !query && filtered.length > 11 && (
-                <div className="flex flex-col items-center gap-4 border-t-2 border-dashed border-[#1F2A1A]/25 pt-6">
-                  <p className="text-sm font-semibold text-[#1F2A1A]/60">Khám phá thêm các bài nghe khác trong kho lưu trữ...</p>
-                  <button type="button" onClick={() => set({ showAll: true })} className="px-display rounded-2xl border-4 border-[#1F2A1A] bg-[#F8BE33] px-8 py-4 text-sm uppercase shadow-[0_5px_0_#1F2A1A] transition-transform hover:-translate-y-0.5">Xem thêm tài liệu Cambridge ↓</button>
+                <div className="flex flex-col items-center gap-4 border-t-2 border-dashed border-[#1E1B4B]/25 pt-6">
+                  <p className="text-sm font-semibold text-[#1E1B4B]/60">Còn nhiều bài nghe khác trong kho...</p>
+                  <button type="button" onClick={() => set({ showAll: true })} className="we-btn">Xem toàn bộ kho ↓</button>
                 </div>
               )}
             </div>
@@ -313,7 +309,7 @@ function ListeningHome({ ui, setUi, go, onBack }) {
   );
 }
 
-// Offline stand-in for the site's dashboard?tab=history&skill=listening: progress saved on this device.
+// Listening history: progress saved on this device.
 function StatsModal({ progress, onClose }) {
   const tests = LISTENING_INDEX.camTests;
   const rows = Object.entries(progress)
@@ -324,25 +320,25 @@ function StatsModal({ progress, onClose }) {
       return { id, label: `${t?.testName ?? testId}${part ? ` · ${part.replace('p', 'Part ')}` : ''}`, kind: kind === 'gap' ? 'Gap Filling' : 'Full test', p };
     });
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 p-4" onClick={onClose}>
-      <div className="w-full max-w-lg rounded-[24px] border-4 border-[#1F2A1A] bg-[#FDF5E0] p-6 shadow-[0_8px_0_#1F2A1A]" onClick={e => e.stopPropagation()}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(30,27,75,.55)] p-4" onClick={onClose}>
+      <div className="w-full max-w-lg we-card !rounded-[26px] bg-[#FFF8E7] p-6" onClick={e => e.stopPropagation()}>
         <div className="mb-4 flex items-center justify-between gap-3">
-          <h3 className="px-display m-0 text-xl">LỊCH SỬ LISTENING</h3>
-          <button type="button" onClick={onClose} className="px-display grid h-9 w-9 place-items-center rounded-xl border-[3px] border-[#1F2A1A] bg-white">×</button>
+          <h3 className="we-display m-0 text-2xl">Lịch sử Listening</h3>
+          <button type="button" onClick={onClose} className="px-display grid h-9 w-9 place-items-center rounded-xl border-[3px] border-[#1E1B4B] bg-white">×</button>
         </div>
         {rows.length === 0 ? (
-          <p className="text-[14px] font-semibold text-[#1F2A1A]/70">Chưa có bài nào được nộp trên máy này. Làm một đề Full Test hoặc Gap Filling rồi quay lại đây.</p>
+          <p className="text-[14px] font-semibold text-[#1E1B4B]/70">Chưa có bài nào được nộp trên máy này. Làm một đề Full Test hoặc Gap Filling rồi quay lại đây.</p>
         ) : (
           <ul className="flex max-h-[50vh] flex-col gap-2 overflow-y-auto">
             {rows.map(r => (
-              <li key={r.id} className="flex items-center gap-3 rounded-2xl border-[3px] border-[#1F2A1A] bg-white px-4 py-2.5">
-                <span className="min-w-0 flex-1"><span className="block truncate text-[14px] font-extrabold">{r.label}</span><span className="text-[11px] font-bold uppercase tracking-wider text-[#1F2A1A]/50">{r.kind}</span></span>
-                <span className="whitespace-nowrap rounded-full border-2 border-[#1F2A1A] bg-[#BFE0F7] px-2.5 py-0.5 text-[12px] font-extrabold">{r.p.done}/{r.p.total} câu</span>
+              <li key={r.id} className="flex items-center gap-3 rounded-2xl border-[3px] border-[#1E1B4B] bg-white px-4 py-2.5">
+                <span className="min-w-0 flex-1"><span className="block truncate text-[14px] font-extrabold">{r.label}</span><span className="text-[11px] font-bold uppercase tracking-wider text-[#1E1B4B]/50">{r.kind}</span></span>
+                <span className="whitespace-nowrap rounded-full border-2 border-[#1E1B4B] bg-[#DCF0FD] px-2.5 py-0.5 text-[12px] font-extrabold">{r.p.done}/{r.p.total} câu</span>
               </li>
             ))}
           </ul>
         )}
-        <p className="mt-4 text-[12px] font-semibold text-[#1F2A1A]/55">Tỉ lệ đúng theo dạng câu hỏi cần đáp án chính thức do máy chủ chấm — bản offline chỉ lưu số câu bạn đã làm.</p>
+        <p className="mt-4 text-[12px] font-semibold text-[#1E1B4B]/55">Bản offline chỉ lưu số câu bạn đã làm trên máy này.</p>
       </div>
     </div>
   );
@@ -351,7 +347,7 @@ function StatsModal({ progress, onClose }) {
 function Loading() {
   return (
     <div className="flex min-h-[60vh] items-center justify-center">
-      <div className="h-11 w-11 animate-spin rounded-full border-4 border-[#1F2A1A] border-t-transparent" />
+      <div className="h-11 w-11 animate-spin rounded-full border-[3px] border-[#1E1B4B] border-t-transparent" />
     </div>
   );
 }

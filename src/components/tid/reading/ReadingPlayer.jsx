@@ -405,13 +405,13 @@ export default function ReadingPlayer({ testId, mode = 'practice', passage, gap 
   if (!parts.length) {
     return (
       <div className="px-root fixed inset-0 z-[60] grid place-items-center p-6" style={KK_DESK}>
-        <div className="max-w-md rounded-[28px] border-4 border-[#1F2A1A] bg-[#FDF5E0] p-8 text-center shadow-[0_10px_0_#1F2A1A]">
+        <div className="max-w-md rounded-[26px] border-[3px] border-[#1E1B4B] bg-[#FFF8E7] p-8 text-center shadow-[0_6px_0_#1E1B4B]">
           <h2 className="px-display mb-3 text-2xl uppercase">Chưa có nội dung</h2>
-          <p className="mb-6 text-sm font-semibold text-[#5A6450]">
+          <p className="mb-6 text-sm font-semibold text-[#6B6790]">
             {INDEX_BY_ID.get(missing[0])?.title ? `“${INDEX_BY_ID.get(missing[0]).title}” ` : 'Bài này '}
             chưa được tải về máy nên chưa thể luyện offline. Hãy chọn passage khác nhé.
           </p>
-          <button type="button" onClick={onBack} className="px-display rounded-2xl border-4 border-[#1F2A1A] bg-[#F8BE33] px-6 py-3 uppercase shadow-[0_5px_0_#1F2A1A]">← Quay lại</button>
+          <button type="button" onClick={onBack} className="px-display rounded-2xl border-[3px] border-[#1E1B4B] bg-[#F8BE33] px-6 py-3 uppercase shadow-[0_5px_0_#1E1B4B]">← Quay lại</button>
         </div>
       </div>
     );
@@ -666,7 +666,7 @@ export default function ReadingPlayer({ testId, mode = 'practice', passage, gap 
 
         {/* result modal */}
         {result && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 p-4 backdrop-blur-md" onClick={() => setResult(null)}>
+          <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 p-4" onClick={() => setResult(null)}>
             <div className="flex max-h-[90vh] w-full max-w-2xl flex-col overflow-hidden rounded-[32px] bg-white shadow-2xl" onClick={e => e.stopPropagation()} style={{ fontFamily: KK.ui }}>
               <div className="relative bg-[#1a2a3a] p-10 text-white">
                 <button type="button" onClick={() => setResult(null)} className="absolute right-6 top-6 flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition-all hover:bg-white/20"><X size={18} /></button>

@@ -1,11 +1,9 @@
-// "Tidians" (Luyện Đặt Câu / Luyện Nói) — write or say a sentence using the word.
-// The site grades with AI (premium); offline we self-check: the sentence must use the word and be a real sentence,
-// then the sample sentence is shown for comparison. Speech input uses the Web Speech API when available.
 import React, { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Mic, Square, Volume2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Mic, Square, Volume2, Sparkles, Loader2, Lightbulb, CheckCircle2 } from 'lucide-react';
 import { blankSentence, gloss } from './decks';
 import { logActivity, rateWord } from './store';
 import { ACCENT, CHIP, Feedback, MUTE, PrimaryBtn, WatchingSun } from './fcParts';
+import { aiService } from '../../../services/aiService';
 
 const SR = typeof window !== 'undefined' ? window.SpeechRecognition || window.webkitSpeechRecognition : null;
 
@@ -13,6 +11,8 @@ export default function Tidians({ words, order, deckLabel, speak, onBack }) {
   const [pos, setPos] = useState(0);
   const [text, setText] = useState('');
   const [result, setResult] = useState(null);
+  const [aiAnalysis, setAiAnalysis] = useState(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showSample, setShowSample] = useState(false);
   const [listening, setListening] = useState(false);
   const [count, setCount] = useState({ done: 0, good: 0 });
@@ -20,10 +20,16 @@ export default function Tidians({ words, order, deckLabel, speak, onBack }) {
   const w = words[order[pos]] || words[0];
   const finished = pos >= order.length;
 
-  useEffect(() => { setText(''); setResult(null); setShowSample(false); }, [pos]);
+  useEffect(() => {
+    setText('');
+    setResult(null);
+    setAiAnalysis(null);
+    setIsAnalyzing(false);
+    setShowSample(false);
+  }, [pos]);
   useEffect(() => () => recRef.current?.abort?.(), []);
 
-  const submit = () => {
+  const submit = async () => {
     const s = text.trim();
     if (!s) return;
     const used = !!blankSentence(s, w.w) || s.toLowerCase().includes(w.w.toLowerCase());
@@ -33,6 +39,17 @@ export default function Tidians({ words, order, deckLabel, speak, onBack }) {
     setCount(c => ({ done: c.done + 1, good: c.good + (ok ? 1 : 0) }));
     rateWord(w.w, ok ? 'good' : 'hard', w.deckId);
     logActivity();
+
+    // Trigger AI evaluation in background
+    setIsAnalyzing(true);
+    try {
+      const analysis = await aiService.evaluateSentence(w.w, s);
+      setAiAnalysis(analysis);
+    } catch (err) {
+      console.warn('AI sentence analysis failed:', err);
+    } finally {
+      setIsAnalyzing(false);
+    }
   };
   const mic = () => {
     if (!SR) return;
@@ -60,7 +77,7 @@ export default function Tidians({ words, order, deckLabel, speak, onBack }) {
           <p className="m-0 text-[15px] font-semibold opacity-85">Bạn đã hoàn thành phiên luyện đặt câu.</p>
           <div className="mt-2 flex gap-3">
             {[['Số câu đã đặt', count.done], ['Câu đúng', count.good]].map(([l, v]) => (
-              <div key={l} className="rounded-[18px] bg-white px-5 py-3 text-[#1b1d22]"><div className="text-[28px] font-bold leading-none">{v}</div><div className="mt-1 text-[12px] font-bold text-[#6b7080]">{l}</div></div>
+              <div key={l} className="rounded-[18px] bg-white px-5 py-3 text-[#1E1B4B]"><div className="text-[28px] font-bold leading-none">{v}</div><div className="mt-1 text-[12px] font-bold text-[#6B6790]">{l}</div></div>
             ))}
           </div>
           <p className="m-0 text-[14px] font-semibold opacity-80">Làm lại bộ này để luyện thêm, hoặc quay về lật thẻ và chọn chế độ khác.</p>
@@ -68,7 +85,7 @@ export default function Tidians({ words, order, deckLabel, speak, onBack }) {
         </div>
       ) : (
         <div className="relative grid flex-1 grid-cols-1 gap-5 p-6 pt-4 @min-[760px]:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-          <div className="flex flex-col justify-center gap-3 rounded-[0_28px_28px_0] bg-white p-7 pl-9 text-[#1b1d22] shadow-[0_26px_40px_-22px_rgba(27,29,34,.45)]">
+          <div className="flex flex-col justify-center gap-3 rounded-[0_28px_28px_0] border-[3px] border-l-0 border-[#1E1B4B] bg-white p-7 pl-9 text-[#1E1B4B] shadow-[0_26px_40px_-22px_rgba(30,27,75,.45)]">
             <span className="text-[14.5px] font-extrabold tracking-[.14em]" style={{ color: MUTE }}>LUYỆN ĐẶT CÂU</span>
             <div className="flex items-center gap-3">
               <span className="break-words text-[44px] font-bold leading-[1.1] tracking-[-0.02em]">{w.w}</span>
@@ -89,20 +106,74 @@ export default function Tidians({ words, order, deckLabel, speak, onBack }) {
             )}
           </div>
           <div className="flex flex-col justify-center gap-3">
-            <h2 className="m-0 text-[40px] font-bold leading-[.98] tracking-[-0.035em]">Tidians.</h2>
+            <h2 className="m-0 text-[40px] font-bold leading-[.98] tracking-[-0.035em]">Đặt câu &amp; Nói.</h2>
             <p className="m-0 max-w-[360px] text-[14.5px] font-semibold leading-[1.45] opacity-85">Đặt một câu có dùng từ này, gõ hoặc bấm mic để nói.</p>
             <label className="text-[12px] font-extrabold tracking-[.1em] opacity-75">CÂU CỦA BẠN</label>
             <textarea value={text} onChange={e => setText(e.target.value)} rows={4} placeholder={`Viết một câu tiếng Anh có dùng “${w.w}”…`}
               onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit(); } }}
-              className="w-full resize-none rounded-[18px] bg-white px-4 py-3 text-[16px] font-semibold text-[#1b1d22] outline-none placeholder:text-[#8b909b]" />
+              className="w-full resize-none rounded-[18px] border-[2.5px] border-[#1E1B4B] bg-white px-4 py-3 text-[16px] font-semibold text-[#1E1B4B] outline-none placeholder:text-[#6B6790]" />
             <div className="flex flex-wrap items-center gap-2">
               <PrimaryBtn onClick={submit} disabled={!text.trim()}>Nộp bài (Enter)</PrimaryBtn>
               {SR && <button type="button" onClick={mic} className="inline-flex h-[52px] items-center gap-1.5 rounded-[16px] bg-white/25 px-4 text-[14px] font-extrabold hover:bg-white/40">{listening ? <><Square size={15} /> Dừng thu âm</> : <><Mic size={16} /> Bắt đầu nói</>}</button>}
             </div>
             {result && (
-              <Feedback ok={result.ok}>
-                {result.ok ? 'Rất tốt! Câu của bạn đã dùng đúng từ này.' : !result.used ? `Cần cải thiện một chút — câu chưa có từ “${w.w}”.` : 'Cần cải thiện một chút — viết thành một câu đầy đủ hơn nhé.'}
-              </Feedback>
+              <div className="flex flex-col gap-2">
+                <Feedback ok={result.ok}>
+                  {result.ok ? 'Rất tốt! Câu của bạn đã dùng đúng từ này.' : !result.used ? `Cần cải thiện một chút — câu chưa có từ “${w.w}”.` : 'Cần cải thiện một chút — viết thành một câu đầy đủ hơn nhé.'}
+                </Feedback>
+
+                {isAnalyzing && (
+                  <div className="flex items-center gap-2 rounded-xl bg-white/30 px-3 py-2 text-[12.5px] font-bold text-[#1E1B4B]">
+                    <Loader2 size={15} className="animate-spin text-[#4F46E5]" />
+                    <span>AI đang phân tích ngữ pháp & độ tự nhiên...</span>
+                  </div>
+                )}
+
+                {aiAnalysis && (
+                  <div className="flex flex-col gap-2 rounded-[18px] border-2 border-[#1E1B4B] bg-white p-3.5 text-[#1E1B4B] shadow-[0_4px_0_#1E1B4B]">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-1.5 font-extrabold text-[13px] text-[#4F46E5]">
+                        <Sparkles size={15} />
+                        <span>AI Nhận Xét & Chấm Điểm</span>
+                      </div>
+                      <span className="rounded-md bg-[#FFF0C2] px-2 py-0.5 text-[12px] font-black">
+                        {aiAnalysis.score}/10
+                      </span>
+                    </div>
+
+                    <p className="m-0 text-[13px] font-medium leading-relaxed text-[#334155]">
+                      {aiAnalysis.feedbackVi}
+                    </p>
+
+                    {aiAnalysis.betterVersion && aiAnalysis.betterVersion !== text.trim() && (
+                      <div className="rounded-lg bg-slate-50 p-2 text-[12.5px]">
+                        <span className="font-bold text-[#0F172A]">Câu sửa chuẩn: </span>
+                        <span className="font-medium text-[#475569]">{aiAnalysis.betterVersion}</span>
+                      </div>
+                    )}
+
+                    {aiAnalysis.proVersion && (
+                      <div className="flex items-start justify-between gap-2 rounded-lg bg-[#EEF2FF] p-2 text-[12.5px]">
+                        <div>
+                          <div className="font-extrabold text-[#4F46E5]">Phiên bản Nâng Band 8.0+:</div>
+                          <div className="font-medium text-[#1E1B4B]">"{aiAnalysis.proVersion}"</div>
+                          {aiAnalysis.proExplanationVi && (
+                            <div className="mt-0.5 text-[11px] text-[#6366F1]">{aiAnalysis.proExplanationVi}</div>
+                          )}
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => speak(aiAnalysis.proVersion)}
+                          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white border border-[#C7D2FE] text-[#4F46E5] hover:bg-[#E0E7FF]"
+                          title="Nghe phát âm phiên bản nâng cao"
+                        >
+                          <Volume2 size={14} />
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
             )}
             <div className="mt-1 flex items-center gap-2">
               <button type="button" onClick={() => setPos(p => Math.max(0, p - 1))} aria-label="Từ trước" className="flex h-[42px] w-[42px] items-center justify-center rounded-[14px] bg-white/25 hover:bg-white/40"><ChevronLeft size={20} /></button>

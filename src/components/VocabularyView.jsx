@@ -21,11 +21,25 @@ import {
   ChevronRight,
   CheckCircle2,
   Check,
-  Tag
+  Tag,
+  Stethoscope,
+  Repeat,
+  GraduationCap,
+  FolderPlus,
+  Plus,
+  Folder,
+  ArrowLeft,
+  Edit2,
+  Layers,
+  CheckSquare,
+  Square,
+  MoreVertical
 } from 'lucide-react';
 import { ttsService } from '../services/ttsService';
+import { storageService } from '../services/storageService';
 import WordDetailFlashcardModal from './WordDetailFlashcardModal';
 import CustomSelect from './CustomSelect';
+import DeckModal from './DeckModal';
 
 // Single source of truth for Leitner box meta
 const BOXES = [
@@ -59,17 +73,94 @@ const getPosClass = (pos) => {
 export default function VocabularyView({
   words,
   onDeleteWord,
+  onDeleteWords,
+  onClearAllWords,
+  onRestoreStarterWords,
   onOpenAddModal,
   onRecordReview,
   speechVoice = 'US',
-  onStartReview
+  onStartReview,
+  onLookupDictionary,
+  onTryInDoctor,
+  onViewSynonyms,
+  onOpenIn4Skills
 }) {
+  // 2 Parts: 'decks' (Phần 1: Bộ từ vựng) vs 'words' (Phần 2: Tất cả từ vựng đã thêm)
+  const [activeTab, setActiveTab] = useState('decks');
+  const [selectedDeck, setSelectedDeck] = useState(null);
+  const [customDecks, setCustomDecks] = useState(() => storageService.getCustomDecks());
+  const [isDeckModalOpen, setIsDeckModalOpen] = useState(false);
+  const [editingDeck, setEditingDeck] = useState(null);
+
+  // Sync customDecks on deck or word changes
+  useEffect(() => {
+    const handleSync = () => {
+      setCustomDecks(storageService.getCustomDecks());
+    };
+    window.addEventListener('we-decks-updated', handleSync);
+    window.addEventListener('we-words-updated', handleSync);
+    return () => {
+      window.removeEventListener('we-decks-updated', handleSync);
+      window.removeEventListener('we-words-updated', handleSync);
+    };
+  }, []);
+
+  const handleCreateDeck = () => {
+    setEditingDeck(null);
+    setIsDeckModalOpen(true);
+  };
+
+  const handleEditDeck = (deck, e) => {
+    if (e) e.stopPropagation();
+    setEditingDeck(deck);
+    setIsDeckModalOpen(true);
+  };
+
+  const handleDeleteDeck = (deck, e) => {
+    if (e) e.stopPropagation();
+    const dWords = words.filter(
+      (w) => (w.deck || (w.tags && w.tags[0]) || '').toLowerCase() === deck.name.toLowerCase()
+    );
+    const confirmMsg = dWords.length > 0
+      ? `Bộ từ "${deck.name}" đang có ${dWords.length} từ vựng. Bạn có chắc muốn xóa bộ từ này? (Các từ vựng vẫn được lưu trong kho từ chung).`
+      : `Bạn có chắc muốn xóa bộ từ "${deck.name}"?`;
+    if (confirm(confirmMsg)) {
+      storageService.deleteCustomDeck(deck.id);
+      setCustomDecks(storageService.getCustomDecks());
+      if (selectedDeck && selectedDeck.id === deck.id) {
+        setSelectedDeck(null);
+      }
+    }
+  };
+
+  const handleSaveDeck = (deckData) => {
+    if (editingDeck) {
+      const updated = storageService.updateCustomDeck(editingDeck.id, deckData);
+      setCustomDecks(storageService.getCustomDecks());
+      if (selectedDeck && selectedDeck.id === editingDeck.id) {
+        setSelectedDeck((prev) => ({ ...prev, ...updated }));
+      }
+    } else {
+      const created = storageService.addCustomDeck(deckData);
+      setCustomDecks(storageService.getCustomDecks());
+      if (created) {
+        setSelectedDeck(created);
+      }
+    }
+    setEditingDeck(null);
+    setIsDeckModalOpen(false);
+  };
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBox, setSelectedBox] = useState('all');
   const [selectedTag, setSelectedTag] = useState('all');
   const [sortBy, setSortBy] = useState('newest');
   const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'kanban' | 'list'
   
+  // Multi-select batch deletion state
+  const [isSelecting, setIsSelecting] = useState(false);
+  const [selectedIds, setSelectedIds] = useState(new Set());
+
   // Learning Optimization Modes:
   // 'none' (normal) | 'hide-meaning' (active recall) | 'hide-word' (reverse recall)
   const [recallMode, setRecallMode] = useState('none');
@@ -78,6 +169,16 @@ export default function VocabularyView({
   
   const [flashcardWordId, setFlashcardWordId] = useState(null);
   const searchInputRef = useRef(null);
+
+  const toggleSelect = (id, e) => {
+    if (e) e.stopPropagation();
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
 
   // Keyboard shortcut '/' focuses search
   useEffect(() => {
@@ -105,15 +206,19 @@ export default function VocabularyView({
     return { counts: c, dueCount, learningCount, masteredCount, total, masteryPct };
   }, [words]);
 
-  // Topic filter options
+  // Topic & Deck filter options
   const tagOptions = useMemo(() => {
     const set = new Set();
-    words.forEach((w) => (w.tags || []).forEach((t) => set.add(t)));
+    customDecks.forEach((d) => d.name && set.add(d.name));
+    words.forEach((w) => {
+      if (w.deck) set.add(w.deck);
+      (w.tags || []).forEach((t) => set.add(t));
+    });
     return [
-      { value: 'all', label: 'Mọi chủ đề' },
-      ...Array.from(set).sort().map((t) => ({ value: t, label: t }))
+      { value: 'all', label: 'Mọi bộ từ & chủ đề' },
+      ...Array.from(set).sort().map((t) => ({ value: t, label: `Bộ: ${t}` }))
     ];
-  }, [words]);
+  }, [words, customDecks]);
 
   // Filtered & sorted words (NO PAGINATION - Instant full catalog access)
   const visibleWords = useMemo(() => {
@@ -131,7 +236,10 @@ export default function VocabularyView({
             (ex.vi && ex.vi.toLowerCase().includes(q))
         );
       const matchBox = selectedBox === 'all' || (w.box || 1) === Number(selectedBox);
-      const matchTag = selectedTag === 'all' || (w.tags || []).includes(selectedTag);
+      const matchTag =
+        selectedTag === 'all' ||
+        (w.deck && w.deck.toLowerCase() === selectedTag.toLowerCase()) ||
+        (w.tags || []).some((t) => t.toLowerCase() === selectedTag.toLowerCase());
       return matchSearch && matchBox && matchTag;
     });
 
@@ -226,11 +334,793 @@ export default function VocabularyView({
     </div>
   );
 
+  const selectedDeckWords = useMemo(() => {
+    if (!selectedDeck) return [];
+    return words.filter(
+      (w) => (w.deck || (w.tags && w.tags[0]) || '').toLowerCase() === selectedDeck.name.toLowerCase()
+    );
+  }, [words, selectedDeck]);
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
       
-      {/* 1. Motivational Learning Hero Dashboard */}
-      <div className="vocab-hero-banner">
+      {/* MASTER TOP SWITCHER: Phần 1: Bộ từ vựng VS Phần 2: Tất cả từ vựng đã thêm */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '14px',
+          paddingBottom: '2px'
+        }}
+      >
+        <div
+          style={{
+            display: 'inline-flex',
+            padding: '4px',
+            background: 'var(--we-surf-muted, #f1f5f9)',
+            borderRadius: '16px',
+            border: '2px solid var(--border-subtle, #e2e8f0)',
+            gap: '4px'
+          }}
+        >
+          <button
+            type="button"
+            onClick={() => {
+              setActiveTab('decks');
+              setSelectedDeck(null);
+            }}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '10px 20px',
+              borderRadius: '12px',
+              fontWeight: 800,
+              fontSize: '0.92rem',
+              border: 'none',
+              cursor: 'pointer',
+              background: activeTab === 'decks' ? '#ffffff' : 'transparent',
+              color: activeTab === 'decks' ? 'var(--we-indigo, #4F46E5)' : 'var(--text-muted, #64748b)',
+              boxShadow: activeTab === 'decks' ? '0 3px 10px rgba(0,0,0,0.08)' : 'none',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            <FolderPlus size={18} />
+            <span>Phần 1: Bộ từ vựng</span>
+            <span
+              style={{
+                fontSize: '0.75rem',
+                padding: '2px 8px',
+                borderRadius: '10px',
+                background: activeTab === 'decks' ? '#eef2ff' : '#e2e8f0',
+                color: activeTab === 'decks' ? '#4f46e5' : '#64748b',
+                fontWeight: 800
+              }}
+            >
+              {customDecks.length}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setActiveTab('words')}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '10px 20px',
+              borderRadius: '12px',
+              fontWeight: 800,
+              fontSize: '0.92rem',
+              border: 'none',
+              cursor: 'pointer',
+              background: activeTab === 'words' ? '#ffffff' : 'transparent',
+              color: activeTab === 'words' ? 'var(--we-indigo, #4F46E5)' : 'var(--text-muted, #64748b)',
+              boxShadow: activeTab === 'words' ? '0 3px 10px rgba(0,0,0,0.08)' : 'none',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            <BookOpen size={18} />
+            <span>Phần 2: Tất cả từ vựng đã thêm</span>
+            <span
+              style={{
+                fontSize: '0.75rem',
+                padding: '2px 8px',
+                borderRadius: '10px',
+                background: activeTab === 'words' ? '#eef2ff' : '#e2e8f0',
+                color: activeTab === 'words' ? '#4f46e5' : '#64748b',
+                fontWeight: 800
+              }}
+            >
+              {words.length}
+            </span>
+          </button>
+        </div>
+
+        {/* Quick Action Buttons: + Tạo Bộ Từ Mới & + Thêm Từ Vựng */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <button
+            type="button"
+            className="btn btn-secondary"
+            onClick={handleCreateDeck}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '9px 16px',
+              borderRadius: '12px',
+              fontWeight: 700,
+              border: '2px solid #cbd5e1'
+            }}
+            title="Tạo bộ từ vựng mới theo chủ đề"
+          >
+            <FolderPlus size={16} />
+            <span>+ Tạo Bộ Từ Mới</span>
+          </button>
+
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => onOpenAddModal && onOpenAddModal(selectedDeck?.name || '')}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '9px 18px',
+              borderRadius: '12px',
+              fontWeight: 700,
+              boxShadow: '0 4px 12px rgba(79, 70, 229, 0.25)'
+            }}
+            title="Thêm từ vựng mới vào sổ tay"
+          >
+            <Plus size={16} />
+            <span>+ Thêm Từ Vựng</span>
+          </button>
+        </div>
+      </div>
+
+      {activeTab === 'decks' ? (
+        /* PHẦN 1: BỘ TỪ VỰNG */
+        selectedDeck ? (
+          /* DRILLDOWN: Xem chi tiết các từ trong 1 bộ từ cụ thể */
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {/* Top Back Row */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+              <button
+                type="button"
+                onClick={() => setSelectedDeck(null)}
+                className="btn btn-secondary"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '8px 16px',
+                  borderRadius: '12px',
+                  fontWeight: 700
+                }}
+              >
+                <ArrowLeft size={16} />
+                <span>Quay lại tất cả bộ từ</span>
+              </button>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={(e) => handleEditDeck(selectedDeck, e)}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', fontWeight: 600 }}
+                  title="Chỉnh sửa tên hoặc mô tả của bộ từ"
+                >
+                  <Edit2 size={15} />
+                  <span>Sửa bộ từ</span>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={(e) => handleDeleteDeck(selectedDeck, e)}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', fontWeight: 600, color: '#ef4444', borderColor: 'rgba(239,68,68,0.3)' }}
+                  title="Xóa bộ từ này"
+                >
+                  <Trash2 size={15} />
+                  <span>Xóa bộ</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Deck Detail Banner */}
+            <div
+              style={{
+                background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+                border: '2.5px solid var(--we-ink, #1E1B4B)',
+                borderRadius: '20px',
+                boxShadow: '0 4px 0 var(--we-ink, #1E1B4B)',
+                padding: '22px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                gap: '16px'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', minWidth: '280px' }}>
+                <div
+                  style={{
+                    width: '54px',
+                    height: '54px',
+                    borderRadius: '16px',
+                    background: selectedDeck.color || '#4F46E5',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '2px solid #1E1B4B',
+                    boxShadow: '0 3px 0 #1E1B4B',
+                    flexShrink: 0
+                  }}
+                >
+                  <Folder size={26} />
+                </div>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                    <h2 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: 'var(--text-main)' }}>
+                      {selectedDeck.name}
+                    </h2>
+                    <span
+                      style={{
+                        padding: '3px 10px',
+                        borderRadius: '12px',
+                        background: '#eef2ff',
+                        color: '#4f46e5',
+                        fontSize: '0.78rem',
+                        fontWeight: 800,
+                        border: '1px solid #c7d2fe'
+                      }}
+                    >
+                      {selectedDeckWords.length} từ vựng
+                    </span>
+                  </div>
+                  <p style={{ margin: '4px 0 0', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+                    {selectedDeck.desc || `Bộ từ vựng gom theo chủ đề ${selectedDeck.name}`}
+                  </p>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                {onOpenIn4Skills && (
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => {
+                      if (selectedDeckWords.length === 0) {
+                        if (onOpenAddModal) onOpenAddModal(selectedDeck.name);
+                        return;
+                      }
+                      onOpenIn4Skills({
+                        area: 'vocabulary',
+                        view: 'dash',
+                        page: 'flashcard',
+                        sessionSel: { cards: [`custom:${selectedDeck.name}`] }
+                      });
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      padding: '10px 20px',
+                      borderRadius: '14px',
+                      fontWeight: 800,
+                      background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
+                      color: '#ffffff',
+                      border: '2px solid #1E1B4B',
+                      boxShadow: '0 4px 0 #1E1B4B',
+                      cursor: 'pointer'
+                    }}
+                    title="Luyện bộ từ này với 8 chế độ đỉnh cao: Lật thẻ, Quiz, Listening, Điền từ, Đặt câu, Card Blast, Gõ từ, Tổng hợp"
+                  >
+                    <Sparkles size={16} fill="#F8BE33" color="#1E1B4B" />
+                    <span>Học Bộ Này (8 Chế Độ)</span>
+                  </button>
+                )}
+
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={() => onOpenAddModal && onOpenAddModal(selectedDeck.name)}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    padding: '10px 18px',
+                    borderRadius: '14px',
+                    fontWeight: 700
+                  }}
+                >
+                  <Plus size={16} />
+                  <span>+ Thêm Từ Vào Bộ</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Word Grid in this deck */}
+            {selectedDeckWords.length === 0 ? (
+              <div
+                style={{
+                  padding: '48px 24px',
+                  textAlign: 'center',
+                  background: '#ffffff',
+                  border: '2px dashed #cbd5e1',
+                  borderRadius: '20px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '12px'
+                }}
+              >
+                <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: '#eef2ff', color: '#4f46e5', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <BookOpen size={28} />
+                </div>
+                <h3 style={{ margin: 0, fontSize: '1.15rem', fontWeight: 800, color: 'var(--text-main)' }}>
+                  Bộ từ "{selectedDeck.name}" chưa có từ vựng nào
+                </h3>
+                <p style={{ margin: 0, fontSize: '0.88rem', color: 'var(--text-muted)', maxWidth: '420px' }}>
+                  Bạn có thể nhấn nút bên dưới để thêm các từ mới vào bộ từ này.
+                </p>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={() => onOpenAddModal && onOpenAddModal(selectedDeck.name)}
+                  style={{ marginTop: '8px', display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '10px 22px', borderRadius: '12px', fontWeight: 700 }}
+                >
+                  <Plus size={16} />
+                  <span>+ Thêm Từ Vựng Đầu Tiên Vào Bộ Này</span>
+                </button>
+              </div>
+            ) : (
+              <div className="word-grid">
+                {selectedDeckWords.map((w, i) => {
+                  const box = w.box || 1;
+                  const isRevealed = revealedIds.has(w.id);
+                  const isMeaningHidden = recallMode === 'hide-meaning' && !isRevealed;
+                  const isWordHidden = recallMode === 'hide-word' && !isRevealed;
+                  const primaryExample = (w.examples && w.examples[0]) || null;
+
+                  return (
+                    <div
+                      key={w.id}
+                      role="button"
+                      tabIndex={0}
+                      className="word-card"
+                      style={{
+                        '--accent': boxMeta(box).color,
+                        animationDelay: `${Math.min(i * 15, 300)}ms`,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '12px'
+                      }}
+                      onClick={() => setFlashcardWordId(w.id)}
+                    >
+                      <div className="word-card-top">
+                        <div style={{ minWidth: 0, flex: 1 }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                            <span className={`pos-badge ${getPosClass(w.partOfSpeech)}`}>
+                              {w.partOfSpeech || 'term'}
+                            </span>
+                          </div>
+                          <div
+                            className={`word-card-word ${isWordHidden ? 'smart-recall-blur' : ''}`}
+                            style={{ marginTop: '6px' }}
+                            onClick={(e) => isWordHidden && toggleReveal(w.id, e)}
+                          >
+                            {w.word}
+                          </div>
+                          {w.ipa && <div className="word-card-ipa">{w.ipa}</div>}
+                        </div>
+
+                        <div className="word-card-actions" onClick={(e) => e.stopPropagation()}>
+                          {onLookupDictionary && (
+                            <button
+                              type="button"
+                              className="icon-ghost"
+                              onClick={() => onLookupDictionary(w.word)}
+                              title="Tra từ điển chi tiết"
+                              style={{ color: '#2563eb' }}
+                            >
+                              <Search size={15} />
+                            </button>
+                          )}
+                          {onTryInDoctor && (
+                            <button
+                              type="button"
+                              className="icon-ghost"
+                              onClick={() => onTryInDoctor(w.examples?.[0]?.en || w.word)}
+                              title="Gửi câu vào Bác sĩ ngữ pháp"
+                              style={{ color: '#059669' }}
+                            >
+                              <Stethoscope size={15} />
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            className="icon-ghost danger"
+                            onClick={(e) => remove(e, w.id)}
+                            title="Xóa từ khỏi sổ tay"
+                          >
+                            <Trash2 size={15} />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        className={`word-card-meaning ${isMeaningHidden ? 'smart-recall-blur' : ''}`}
+                        onClick={(e) => isMeaningHidden && toggleReveal(w.id, e)}
+                      >
+                        {w.meaningVi}
+                      </div>
+
+                      {primaryExample && primaryExample.en && (
+                        <div className="word-card-example" style={{ marginTop: 'auto' }}>
+                          <div className="word-card-example-en">"{primaryExample.en}"</div>
+                          {primaryExample.vi && <div className="word-card-example-vi">{primaryExample.vi}</div>}
+                        </div>
+                      )}
+
+                      <div className="word-card-footer" onClick={(e) => e.stopPropagation()}>
+                        <MasteryBar box={box} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                          <button
+                            type="button"
+                            className="icon-ghost"
+                            onClick={(e) => speak(e, w.word)}
+                            title="Nghe phát âm"
+                          >
+                            <Volume2 size={16} />
+                          </button>
+                          <div className="leitner-bump-group">
+                            {box < 5 && (
+                              <button
+                                type="button"
+                                className="quick-leitner-btn success"
+                                onClick={(e) => quickBump(e, w.id, true)}
+                                title="Nhớ tốt (+1 Hộp)"
+                              >
+                                +1 Hộp
+                              </button>
+                            )}
+                            {box > 1 && (
+                              <button
+                                type="button"
+                                className="quick-leitner-btn"
+                                onClick={(e) => quickBump(e, w.id, false)}
+                                title="Quên (Về Hộp 1)"
+                              >
+                                ↺
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        ) : (
+          /* OVERVIEW: Danh sách tất cả các bộ từ */
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+            {/* Banner giới thiệu Phần 1 */}
+            <div
+              style={{
+                background: 'linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%)',
+                border: '2px solid #c7d2fe',
+                borderRadius: '20px',
+                padding: '20px 24px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                gap: '16px'
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <FolderPlus size={22} color="#4F46E5" />
+                  <h2 style={{ margin: 0, fontSize: '1.35rem', fontWeight: 900, color: '#1E1B4B' }}>
+                    Bộ Từ Vựng Của Bạn
+                  </h2>
+                </div>
+                <p style={{ margin: '6px 0 0', fontSize: '0.9rem', color: '#475569', maxWidth: '640px', lineHeight: 1.5 }}>
+                  Tạo và quản lý các bộ từ vựng theo mục tiêu, dự án hoặc phòng ban. Nhấn <strong>"Học 8 Chế Độ"</strong> trên bất kỳ bộ từ nào để bước vào phòng luyện tập 4 kỹ năng chuyên sâu (Lật thẻ, Quiz, Listening, Điền từ, Đặt câu, Card Blast...).
+                </p>
+              </div>
+
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={handleCreateDeck}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  padding: '11px 20px',
+                  borderRadius: '14px',
+                  fontWeight: 800,
+                  boxShadow: '0 4px 14px rgba(79, 70, 229, 0.3)'
+                }}
+              >
+                <FolderPlus size={17} />
+                <span>+ Tạo Bộ Từ Mới</span>
+              </button>
+            </div>
+
+            {/* Grid of Decks */}
+            {customDecks.length === 0 ? (
+              <div
+                style={{
+                  textAlign: 'center',
+                  padding: '48px 20px',
+                  background: '#ffffff',
+                  borderRadius: '20px',
+                  border: '2.5px dashed var(--we-ink, #1E1B4B)',
+                  boxShadow: '0 4px 0 var(--we-ink, #1E1B4B)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '12px'
+                }}
+              >
+                <div
+                  style={{
+                    width: '54px',
+                    height: '54px',
+                    borderRadius: '16px',
+                    background: '#EEF2FF',
+                    color: '#4F46E5',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '2px solid #1E1B4B',
+                    boxShadow: '0 3px 0 #1E1B4B'
+                  }}
+                >
+                  <FolderPlus size={26} />
+                </div>
+                <div style={{ fontSize: '1.1rem', fontWeight: 900, color: 'var(--text-main)' }}>
+                  Bạn chưa có bộ từ vựng nào
+                </div>
+                <div style={{ fontSize: '0.86rem', color: 'var(--text-muted)', maxWidth: '420px', lineHeight: 1.5 }}>
+                  Hãy tạo bộ từ theo chủ đề công việc, chuyên ngành hoặc kỳ thi để gom nhóm và luyện tập 8 chế độ hiệu quả!
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={handleCreateDeck}
+                  style={{
+                    marginTop: '6px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    padding: '10px 18px',
+                    borderRadius: '14px',
+                    fontWeight: 800,
+                    fontSize: '0.9rem'
+                  }}
+                >
+                  <FolderPlus size={16} />
+                  <span>+ Tạo Bộ Từ Đầu Tiên</span>
+                </button>
+              </div>
+            ) : (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '16px' }}>
+                {/* Custom Decks */}
+                {customDecks.map((d) => {
+                const dWords = words.filter(
+                  (w) => (w.deck || (w.tags && w.tags[0]) || '').toLowerCase() === d.name.toLowerCase()
+                );
+                const dDue = dWords.filter((w) => (w.box || 1) <= 2).length;
+                const dMastered = dWords.filter((w) => (w.box || 1) === 5).length;
+                const previewWords = dWords.slice(0, 4);
+
+                return (
+                  <div
+                    key={d.id || d.name}
+                    className="card-hover-scale"
+                    style={{
+                      background: '#ffffff',
+                      border: '2.5px solid var(--we-ink, #1E1B4B)',
+                      borderRadius: '20px',
+                      boxShadow: '0 4px 0 var(--we-ink, #1E1B4B)',
+                      padding: '20px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '14px',
+                      position: 'relative'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '12px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                        <div
+                          style={{
+                            width: '44px',
+                            height: '44px',
+                            borderRadius: '14px',
+                            background: d.color || '#4F46E5',
+                            color: '#ffffff',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            border: '2px solid #1E1B4B',
+                            boxShadow: '0 3px 0 #1E1B4B',
+                            flexShrink: 0
+                          }}
+                        >
+                          <Folder size={22} />
+                        </div>
+                        <div>
+                          <div style={{ fontSize: '1.12rem', fontWeight: 900, color: 'var(--text-main)' }}>
+                            {d.name}
+                          </div>
+                          <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                            {dWords.length} từ vựng đã lưu
+                          </div>
+                        </div>
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                        <button
+                          type="button"
+                          className="icon-ghost"
+                          onClick={(e) => handleEditDeck(d, e)}
+                          title="Sửa tên / mô tả bộ từ"
+                          style={{ width: '28px', height: '28px' }}
+                        >
+                          <Edit2 size={14} />
+                        </button>
+                        <button
+                          type="button"
+                          className="icon-ghost danger"
+                          onClick={(e) => handleDeleteDeck(d, e)}
+                          title="Xóa bộ từ này"
+                          style={{ width: '28px', height: '28px' }}
+                        >
+                          <Trash2 size={14} />
+                        </button>
+                      </div>
+                    </div>
+
+                    <p style={{ margin: 0, fontSize: '0.84rem', color: 'var(--text-muted)', lineHeight: 1.45, minHeight: '38px' }}>
+                      {d.desc || `Bộ từ vựng thuộc chủ đề ${d.name}`}
+                    </p>
+
+                    {/* Word preview chips */}
+                    {previewWords.length > 0 ? (
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                        {previewWords.map((pw) => (
+                          <span
+                            key={pw.id}
+                            style={{
+                              fontSize: '0.72rem',
+                              padding: '2px 8px',
+                              borderRadius: '8px',
+                              background: '#f8fafc',
+                              border: '1px solid #e2e8f0',
+                              color: '#334155',
+                              fontWeight: 600
+                            }}
+                          >
+                            {pw.word}
+                          </span>
+                        ))}
+                        {dWords.length > 4 && (
+                          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                            +{dWords.length - 4} từ nữa
+                          </span>
+                        )}
+                      </div>
+                    ) : (
+                      <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                        Chưa có từ nào trong bộ này
+                      </div>
+                    )}
+
+                    {/* Stats pill */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', fontSize: '0.78rem', fontWeight: 700 }}>
+                      <span style={{ padding: '3px 8px', borderRadius: '8px', background: '#eef2ff', color: '#4f46e5' }}>
+                        {dWords.length} từ
+                      </span>
+                      <span style={{ padding: '3px 8px', borderRadius: '8px', background: '#fef2f2', color: '#dc2626' }}>
+                        {dDue} cần ôn
+                      </span>
+                      <span style={{ padding: '3px 8px', borderRadius: '8px', background: '#ecfdf5', color: '#059669' }}>
+                        {dMastered} đã thuộc
+                      </span>
+                    </div>
+
+                    {/* Card Action Footer */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: 'auto', paddingTop: '10px', borderTop: '1px solid #f1f5f9' }}>
+                      {onOpenIn4Skills && (
+                        <button
+                          type="button"
+                          className="btn"
+                          onClick={() => {
+                            if (dWords.length === 0) {
+                              if (onOpenAddModal) onOpenAddModal(d.name);
+                              return;
+                            }
+                            onOpenIn4Skills({
+                              area: 'vocabulary',
+                              view: 'dash',
+                              page: 'flashcard',
+                              sessionSel: { cards: [`custom:${d.name}`] }
+                            });
+                          }}
+                          style={{
+                            flex: 1,
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '6px',
+                            padding: '9px 10px',
+                            borderRadius: '12px',
+                            fontWeight: 800,
+                            fontSize: '0.84rem',
+                            background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
+                            color: '#ffffff',
+                            border: '2px solid #1E1B4B',
+                            boxShadow: '0 3px 0 #1E1B4B',
+                            cursor: 'pointer'
+                          }}
+                          title="Luyện bộ từ này với 8 chế độ học"
+                        >
+                          <Sparkles size={14} fill="#F8BE33" color="#1E1B4B" />
+                          <span>Học 8 Chế Độ</span>
+                        </button>
+                      )}
+
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={() => onOpenAddModal && onOpenAddModal(d.name)}
+                        style={{
+                          padding: '9px 12px',
+                          borderRadius: '12px',
+                          fontWeight: 700,
+                          fontSize: '0.82rem'
+                        }}
+                        title="Thêm từ mới vào bộ này"
+                      >
+                        + Thêm Từ
+                      </button>
+
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={() => setSelectedDeck(d)}
+                        style={{
+                          padding: '9px 12px',
+                          borderRadius: '12px',
+                          fontWeight: 700,
+                          fontSize: '0.82rem'
+                        }}
+                        title="Xem danh sách từ trong bộ này"
+                      >
+                        Xem ({dWords.length})
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+        )
+      ) : (
+        /* PHẦN 2: TẤT CẢ TỪ VỰNG ĐÃ THÊM */
+        <React.Fragment>
+          {/* 1. Motivational Learning Hero Dashboard */}
+          <div className="vocab-hero-banner">
         <div className="vocab-hero-stats">
           <div className="vocab-stat-pill">
             <div className="vocab-stat-icon" style={{ background: '#eef2ff', color: '#4f46e5' }}>
@@ -267,8 +1157,62 @@ export default function VocabularyView({
           </div>
         </div>
 
-        {/* Action Button: Quick Review session */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        {/* Action Buttons: 8 Modes Study + Quick Review + Add Word */}
+        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+          {onOpenIn4Skills && (
+            <button
+              className="btn"
+              onClick={() => {
+                if (words.length === 0) {
+                  if (onOpenAddModal) onOpenAddModal();
+                  return;
+                }
+                const sessionSel = selectedTag !== 'all' ? { cards: [`custom:${selectedTag}`] } : { cards: ['custom'] };
+                onOpenIn4Skills({
+                  area: 'vocabulary',
+                  view: 'dash',
+                  page: 'flashcard',
+                  sessionSel
+                });
+              }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '9px 18px',
+                borderRadius: '12px',
+                fontWeight: 700,
+                background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
+                color: '#ffffff',
+                border: '2px solid #1E1B4B',
+                boxShadow: '0 4px 0 #1E1B4B',
+                cursor: 'pointer'
+              }}
+              title="Luyện bộ từ này với 8 chế độ đỉnh cao: Lật thẻ, Quiz, Listening, Điền từ, Đặt câu, Card Blast, Gõ từ, Tổng hợp"
+            >
+              <Sparkles size={16} fill="#F8BE33" color="#1E1B4B" />
+              <span>{selectedTag !== 'all' ? `Học Bộ "${selectedTag}" (8 Chế Độ)` : `Học 8 Chế Độ (4 Kỹ Năng)`}</span>
+            </button>
+          )}
+
+          <button
+            type="button"
+            className="btn btn-secondary"
+            onClick={() => setActiveTab('decks')}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '9px 14px',
+              borderRadius: '12px',
+              fontWeight: 600
+            }}
+            title="Quay lại Phần 1: Các bộ từ vựng"
+          >
+            <FolderPlus size={16} />
+            <span>Phần 1: Bộ Từ Vựng</span>
+          </button>
+
           {onStartReview && (
             <button
               className="btn btn-primary"
@@ -284,7 +1228,50 @@ export default function VocabularyView({
               }}
             >
               <Zap size={16} fill="currentColor" />
-              Ôn Tập Ngay ({stats.dueCount})
+              Ôn Tập Leitner ({stats.dueCount})
+            </button>
+          )}
+
+          {words.length > 0 && (
+            <button
+              className={`btn ${isSelecting ? 'btn-primary' : 'btn-secondary'}`}
+              onClick={() => {
+                setIsSelecting(!isSelecting);
+                setSelectedIds(new Set());
+              }}
+              style={{
+                padding: '9px 14px',
+                borderRadius: '12px',
+                fontWeight: 600,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+              title="Chọn nhiều từ để xóa hàng loạt"
+            >
+              <CheckCircle2 size={16} />
+              <span>{isSelecting ? 'Hủy Chọn' : 'Chọn Nhiều'}</span>
+            </button>
+          )}
+
+          {onClearAllWords && words.length > 0 && (
+            <button
+              className="btn btn-secondary"
+              onClick={onClearAllWords}
+              style={{
+                padding: '9px 14px',
+                borderRadius: '12px',
+                fontWeight: 600,
+                color: '#ef4444',
+                borderColor: 'rgba(239, 68, 68, 0.3)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+              title="Xóa toàn bộ từ vựng trong sổ tay"
+            >
+              <Trash2 size={16} />
+              <span>Xóa Hết ({words.length})</span>
             </button>
           )}
 
@@ -301,6 +1288,77 @@ export default function VocabularyView({
           </button>
         </div>
       </div>
+
+      {/* Floating/Inline Selection Toolbar when Selecting */}
+      {isSelecting && (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '10px',
+            padding: '12px 20px',
+            background: 'var(--we-indigo-soft, #EEF2FF)',
+            border: '2.5px solid var(--we-ink, #1E1B4B)',
+            borderRadius: '16px',
+            boxShadow: '0 4px 0 var(--we-ink, #1E1B4B)'
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ fontWeight: 800, fontSize: '0.92rem', color: '#1E1B4B' }}>
+              Đã chọn {selectedIds.size} / {visibleWords.length} từ
+            </span>
+            <button
+              className="btn btn-secondary"
+              style={{ padding: '5px 12px', fontSize: '0.8rem', background: '#fff' }}
+              onClick={() => {
+                if (selectedIds.size === visibleWords.length) {
+                  setSelectedIds(new Set());
+                } else {
+                  setSelectedIds(new Set(visibleWords.map((w) => w.id)));
+                }
+              }}
+            >
+              {selectedIds.size === visibleWords.length ? 'Bỏ chọn tất cả' : 'Chọn tất cả'}
+            </button>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            {selectedIds.size > 0 && onDeleteWords && (
+              <button
+                className="btn btn-primary"
+                style={{
+                  background: '#ef4444',
+                  borderColor: '#b91c1c',
+                  color: '#fff',
+                  fontWeight: 700,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px'
+                }}
+                onClick={() => {
+                  onDeleteWords(Array.from(selectedIds));
+                  setSelectedIds(new Set());
+                  setIsSelecting(false);
+                }}
+              >
+                <Trash2 size={15} /> Xóa {selectedIds.size} từ đã chọn
+              </button>
+            )}
+            <button
+              className="btn btn-secondary"
+              style={{ padding: '6px 14px', fontSize: '0.82rem', background: '#fff' }}
+              onClick={() => {
+                setIsSelecting(false);
+                setSelectedIds(new Set());
+              }}
+            >
+              Đóng chế độ chọn
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* 2. Control Toolbar: Search + Self-Test Active Recall Mode + View Switcher */}
       <div className="lib-toolbar" style={{ flexWrap: 'wrap', gap: '12px' }}>
@@ -329,10 +1387,11 @@ export default function VocabularyView({
             display: 'flex',
             alignItems: 'center',
             background: '#ffffff',
-            border: '1px solid var(--border-subtle)',
-            borderRadius: '12px',
+            border: '2px solid var(--we-ink)',
+            borderRadius: '14px',
             padding: '3px',
-            gap: '2px'
+            gap: '3px',
+            boxShadow: 'var(--we-pop-sm)'
           }}
           title="Chế độ Tự Kiểm Tra (Active Recall) giúp giảm tải chữ và tăng hiệu quả ghi nhớ não bộ"
         >
@@ -343,13 +1402,13 @@ export default function VocabularyView({
               alignItems: 'center',
               gap: '6px',
               padding: '6px 12px',
-              borderRadius: '8px',
+              borderRadius: '10px',
               fontSize: '0.82rem',
-              fontWeight: recallMode === 'none' ? 700 : 500,
-              border: 'none',
+              fontWeight: 800,
+              border: recallMode === 'none' ? '2px solid var(--we-ink)' : '2px solid transparent',
               cursor: 'pointer',
-              background: recallMode === 'none' ? '#f1f5f9' : 'transparent',
-              color: recallMode === 'none' ? 'var(--text-main)' : 'var(--text-muted)',
+              background: recallMode === 'none' ? 'var(--we-sun)' : 'transparent',
+              color: 'var(--we-ink)',
               transition: 'all 0.15s ease'
             }}
           >
@@ -363,13 +1422,13 @@ export default function VocabularyView({
               alignItems: 'center',
               gap: '6px',
               padding: '6px 12px',
-              borderRadius: '8px',
+              borderRadius: '10px',
               fontSize: '0.82rem',
-              fontWeight: recallMode === 'hide-meaning' ? 700 : 500,
-              border: 'none',
+              fontWeight: 800,
+              border: recallMode === 'hide-meaning' ? '2px solid var(--we-ink)' : '2px solid transparent',
               cursor: 'pointer',
-              background: recallMode === 'hide-meaning' ? '#eef2ff' : 'transparent',
-              color: recallMode === 'hide-meaning' ? 'var(--primary)' : 'var(--text-muted)',
+              background: recallMode === 'hide-meaning' ? 'var(--we-indigo-soft)' : 'transparent',
+              color: 'var(--we-ink)',
               transition: 'all 0.15s ease'
             }}
           >
@@ -384,13 +1443,13 @@ export default function VocabularyView({
               alignItems: 'center',
               gap: '6px',
               padding: '6px 12px',
-              borderRadius: '8px',
+              borderRadius: '10px',
               fontSize: '0.82rem',
-              fontWeight: recallMode === 'hide-word' ? 700 : 500,
-              border: 'none',
+              fontWeight: 800,
+              border: recallMode === 'hide-word' ? '2px solid var(--we-ink)' : '2px solid transparent',
               cursor: 'pointer',
-              background: recallMode === 'hide-word' ? '#fef3c7' : 'transparent',
-              color: recallMode === 'hide-word' ? '#b45309' : 'var(--text-muted)',
+              background: recallMode === 'hide-word' ? 'var(--we-coral-soft)' : 'transparent',
+              color: 'var(--we-ink)',
               transition: 'all 0.15s ease'
             }}
           >
@@ -578,9 +1637,16 @@ export default function VocabularyView({
               : 'Thử tìm với từ khóa khác, hoặc bấm "Xóa bộ lọc" để xem toàn bộ danh mục từ vựng.'}
           </p>
           {words.length === 0 ? (
-            <button className="btn btn-primary" onClick={onOpenAddModal}>
-              + Thêm từ vựng đầu tiên
-            </button>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <button className="btn btn-primary" onClick={onOpenAddModal}>
+                + Thêm từ vựng đầu tiên
+              </button>
+              {onRestoreStarterWords && (
+                <button className="btn btn-secondary" onClick={onRestoreStarterWords}>
+                  <RotateCcw size={14} /> Khôi phục từ công sở mẫu
+                </button>
+              )}
+            </div>
           ) : (
             <button className="btn btn-secondary" onClick={clearFilters}>
               <RotateCcw size={14} /> Xóa bộ lọc
@@ -598,7 +1664,7 @@ export default function VocabularyView({
             const isMeaningHidden = recallMode === 'hide-meaning' && !isRevealed;
             const isWordHidden = recallMode === 'hide-word' && !isRevealed;
             const primaryExample = (w.examples && w.examples[0]) || null;
-            const primaryTag = (w.tags && w.tags[0]) || null;
+            const primaryTag = w.deck || (w.tags && w.tags[0]) || null;
 
             return (
               <div
@@ -611,13 +1677,35 @@ export default function VocabularyView({
                   animationDelay: `${Math.min(i * 15, 300)}ms`,
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '12px'
+                  gap: '12px',
+                  outline: isSelecting && selectedIds.has(w.id) ? '3px solid #4F46E5' : 'none'
                 }}
-                onClick={() => setFlashcardWordId(w.id)}
-                onKeyDown={(e) => e.key === 'Enter' && setFlashcardWordId(w.id)}
+                onClick={(e) => (isSelecting ? toggleSelect(w.id, e) : setFlashcardWordId(w.id))}
+                onKeyDown={(e) => e.key === 'Enter' && (isSelecting ? toggleSelect(w.id) : setFlashcardWordId(w.id))}
               >
                 {/* Card Top: Word, IPA, POS badge, Tag & Actions */}
                 <div className="word-card-top">
+                  {isSelecting && (
+                    <span
+                      onClick={(e) => toggleSelect(w.id, e)}
+                      style={{
+                        width: '22px',
+                        height: '22px',
+                        borderRadius: '6px',
+                        border: '2px solid #1E1B4B',
+                        background: selectedIds.has(w.id) ? '#4F46E5' : '#fff',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: '#fff',
+                        flexShrink: 0,
+                        marginRight: '6px',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      {selectedIds.has(w.id) && <Check size={14} strokeWidth={3} />}
+                    </span>
+                  )}
                   <div style={{ minWidth: 0, flex: 1 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                       <span className={`pos-badge ${getPosClass(w.partOfSpeech)}`}>
@@ -653,8 +1741,48 @@ export default function VocabularyView({
                     {w.ipa && <div className="word-card-ipa">{w.ipa}</div>}
                   </div>
 
-                  {/* Actions: Speak & Delete */}
-                  <div className="word-card-actions">
+                  {/* Actions: Speak, Cross-screen links & Delete */}
+                  <div className="word-card-actions" onClick={(e) => e.stopPropagation()}>
+                    {onLookupDictionary && (
+                      <button
+                        className="icon-ghost"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onLookupDictionary(w.word);
+                        }}
+                        title="Tra từ điển chi tiết"
+                        style={{ color: '#2563eb' }}
+                      >
+                        <Search size={15} />
+                      </button>
+                    )}
+                    {onTryInDoctor && (
+                      <button
+                        className="icon-ghost"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          const sentence = w.examples?.[0]?.en || `We need to implement ${w.word} in our workflow.`;
+                          onTryInDoctor(sentence);
+                        }}
+                        title="Gửi câu vào Bác sĩ ngữ pháp"
+                        style={{ color: '#059669' }}
+                      >
+                        <Stethoscope size={15} />
+                      </button>
+                    )}
+                    {onViewSynonyms && (
+                      <button
+                        className="icon-ghost"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onViewSynonyms(w.word);
+                        }}
+                        title="Xem từ đồng nghĩa"
+                        style={{ color: '#7e22ce' }}
+                      >
+                        <Repeat size={15} />
+                      </button>
+                    )}
                     <button
                       className="icon-ghost"
                       onClick={(e) => speak(e, w.word)}
@@ -922,6 +2050,7 @@ export default function VocabularyView({
               const box = w.box || 1;
               const isRevealed = revealedIds.has(w.id);
               const isMeaningHidden = recallMode === 'hide-meaning' && !isRevealed;
+              const isSelected = selectedIds.has(w.id);
 
               return (
                 <div
@@ -929,17 +2058,46 @@ export default function VocabularyView({
                   className="word-row"
                   style={{
                     '--accent': boxMeta(box).color,
-                    animationDelay: `${Math.min(i * 12, 250)}ms`
+                    animationDelay: `${Math.min(i * 12, 250)}ms`,
+                    ...(isSelecting && isSelected ? { background: '#f5f3ff', outline: '2px solid #6366f1' } : {})
                   }}
-                  onClick={() => setFlashcardWordId(w.id)}
+                  onClick={(e) => {
+                    if (isSelecting) {
+                      toggleSelect(w.id, e);
+                    } else {
+                      setFlashcardWordId(w.id);
+                    }
+                  }}
                 >
-                  <button
-                    className="icon-ghost"
-                    onClick={(e) => speak(e, w.word)}
-                    title="Nghe phát âm"
-                  >
-                    <Volume2 size={16} />
-                  </button>
+                  {isSelecting ? (
+                    <div
+                      onClick={(e) => toggleSelect(w.id, e)}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        width: '26px',
+                        height: '26px',
+                        borderRadius: '6px',
+                        border: isSelected ? '2px solid #4f46e5' : '2px solid #cbd5e1',
+                        background: isSelected ? '#4f46e5' : '#ffffff',
+                        color: '#ffffff',
+                        cursor: 'pointer',
+                        flexShrink: 0
+                      }}
+                      title={isSelected ? 'Bỏ chọn' : 'Chọn từ này'}
+                    >
+                      {isSelected ? <CheckSquare size={16} /> : <Square size={16} color="#94a3b8" />}
+                    </div>
+                  ) : (
+                    <button
+                      className="icon-ghost"
+                      onClick={(e) => speak(e, w.word)}
+                      title="Nghe phát âm"
+                    >
+                      <Volume2 size={16} />
+                    </button>
+                  )}
 
                   <div style={{ minWidth: 0 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -974,7 +2132,7 @@ export default function VocabularyView({
                     <button
                       className="icon-ghost danger"
                       onClick={(e) => remove(e, w.id)}
-                      title="Xóa"
+                      title="Xóa từ này"
                     >
                       <Trash2 size={15} />
                     </button>
@@ -1004,8 +2162,21 @@ export default function VocabularyView({
           )}
         </div>
       )}
+        </React.Fragment>
+      )}
 
-      {/* 6. Detail Flashcard Modal */}
+      {/* 6. Deck Modal for creating or editing decks */}
+      <DeckModal
+        isOpen={isDeckModalOpen}
+        onClose={() => {
+          setIsDeckModalOpen(false);
+          setEditingDeck(null);
+        }}
+        initialData={editingDeck}
+        onSave={handleSaveDeck}
+      />
+
+      {/* 7. Detail Flashcard Modal */}
       <WordDetailFlashcardModal
         isOpen={!!flashcardWordId}
         onClose={() => setFlashcardWordId(null)}
@@ -1013,6 +2184,10 @@ export default function VocabularyView({
         words={visibleWords}
         onRecordReview={onRecordReview}
         speechVoice={speechVoice}
+        onLookupDictionary={onLookupDictionary}
+        onTryInDoctor={onTryInDoctor}
+        onViewSynonyms={onViewSynonyms}
+        onOpenIn4Skills={onOpenIn4Skills}
       />
     </div>
   );

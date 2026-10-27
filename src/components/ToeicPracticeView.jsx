@@ -24,9 +24,11 @@ import {
   TOEIC_CATALOG_TESTS
 } from '../data/toeicData';
 import {
-  getRealExamData,
-  getRealSpeakingExam,
-  getRealWritingExam
+  useExam,
+  loadExam,
+  resolveRealExamId,
+  resolveSpeakingExamId,
+  resolveWritingExamId
 } from '../data/exams';
 import { ttsService } from '../services/ttsService';
 import ToeicCatalogView from './ToeicCatalogView';
@@ -89,12 +91,18 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
   const [speakingTaskId, setSpeakingTaskId] = useState('spk-1');
   const [writingTaskId, setWritingTaskId] = useState('wrt-1');
 
+  // Real exam content is code-split per test and loaded on demand
+  const activeRealExamId = resolveRealExamId(activeCatalogTest?.id);
+  const realExam = useExam(activeRealExamId);
+  const fallbackTest1Exam = useExam(activeRealExamId ? null : 'toeic-lr-c1-t1');
+  const realSpeakingExam = useExam(resolveSpeakingExamId(speakingTestNum));
+  const realWritingExam = useExam(resolveWritingExamId(writingTestNum));
+
   // Authentic ETS Studio Audio Track for current Listening Part
   const activeAudioTrack = useMemo(() => {
     if (customAudioUrl) return customAudioUrl;
 
     // Nếu đề thi có audio track gốc từ Study4/ETS
-    const realExam = getRealExamData(activeCatalogTest?.id);
     if (realExam?.audioTracks?.[listeningPart]) {
       return realExam.audioTracks[listeningPart];
     }
@@ -104,7 +112,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
 
     // Fallback nạp track phòng thu chuẩn ETS từ đề Test 1
     return '/exams/toeic-lr-c1-t1/audio/full.mp3';
-  }, [customAudioUrl, activeCatalogTest, listeningPart]);
+  }, [customAudioUrl, realExam, listeningPart]);
 
   // Interactive Exercise States
   // Part 1 Photos
@@ -343,9 +351,8 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
 
   // Current active Speaking tasks from real exam or fallback
   const activeSpeakingTasks = useMemo(() => {
-    const realSpk = getRealSpeakingExam(speakingTestNum);
-    return realSpk?.tasks || TOEIC_SPEAKING_TASKS;
-  }, [speakingTestNum]);
+    return realSpeakingExam?.tasks || TOEIC_SPEAKING_TASKS;
+  }, [realSpeakingExam]);
 
   const currentSpeakingTask = useMemo(() => {
     return activeSpeakingTasks.find((t) => t.id === speakingTaskId) || activeSpeakingTasks[0];
@@ -409,9 +416,8 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
 
   // Current active Writing tasks from real exam or fallback
   const activeWritingTasks = useMemo(() => {
-    const realWrt = getRealWritingExam(writingTestNum);
-    return realWrt?.tasks || TOEIC_WRITING_TASKS;
-  }, [writingTestNum]);
+    return realWritingExam?.tasks || TOEIC_WRITING_TASKS;
+  }, [realWritingExam]);
 
   const currentWritingTask = useMemo(() => {
     return activeWritingTasks.find((t) => t.id === writingTaskId) || activeWritingTasks[0];
@@ -429,7 +435,6 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
   // Load exam questions specific to the selected test set
   const examBank = useMemo(() => {
     // 1. Kiểm tra đề thi thật đã cào offline từ Study4
-    const realExam = getRealExamData(activeCatalogTest?.id);
     if (realExam) {
       return realExam;
     }
@@ -438,7 +443,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
       return activeCatalogTest.examData;
     }
     // 3. Fallback: nạp đề Test 1 chuẩn ETS từ file gốc
-    const fallbackTest1 = getRealExamData('toeic-lr-c1-t1') || {};
+    const fallbackTest1 = fallbackTest1Exam || {};
     return {
       part1: (currentTestSet.part1Photos && currentTestSet.part1Photos.length > 0) ? currentTestSet.part1Photos : (fallbackTest1.part1 || []),
       part2: (currentTestSet.part2Listening && currentTestSet.part2Listening.length > 0) ? currentTestSet.part2Listening : (fallbackTest1.part2 || []),
@@ -448,7 +453,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
       part6: (currentTestSet.part6Passages && currentTestSet.part6Passages.length > 0) ? currentTestSet.part6Passages : (fallbackTest1.part6 || []),
       part7: (currentTestSet.part7Passages && currentTestSet.part7Passages.length > 0) ? currentTestSet.part7Passages : (fallbackTest1.part7 || [])
     };
-  }, [activeCatalogTest, currentTestSet]);
+  }, [realExam, fallbackTest1Exam, activeCatalogTest, currentTestSet]);
 
   const part1List = examBank.part1;
   const part2List = examBank.part2;
@@ -490,7 +495,15 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
     };
   }, [viewMode, isExamTimerRunning, examTimeLeft]);
 
-  const handleSelectCatalogTest = (test, mode = 'start') => {
+  const handleSelectCatalogTest = async (test, mode = 'start') => {
+    // Load the exam content before switching views so the test never renders half-empty
+    const swMatch = test.id?.match(/t(\d+)$/);
+    const swNum = swMatch ? parseInt(swMatch[1], 10) : 1;
+    const realId = resolveRealExamId(test.id);
+    await Promise.all(test.category === 'LR'
+      ? [loadExam(realId || (test.examData ? null : 'toeic-lr-c1-t1'))]
+      : [loadExam(resolveSpeakingExamId(swNum)), loadExam(resolveWritingExamId(swNum))]);
+
     setActiveCatalogTest(test);
     setSelectedTestSetId(test.baseTestSetId || 'test-1');
     setIsExamSubmitted(mode === 'review');
@@ -522,10 +535,8 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
     } else {
       setActiveSkill('speaking');
       setSpeakingTaskId('spk-1');
-      const match = test.id?.match(/t(\d+)$/);
-      const num = match ? parseInt(match[1], 10) : 1;
-      setSpeakingTestNum(num);
-      setWritingTestNum(num);
+      setSpeakingTestNum(swNum);
+      setWritingTestNum(swNum);
       setExamTimeLeft(test.durationMinutes * 60);
     }
 
@@ -1450,7 +1461,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         padding: '8px'
                       }}
                     >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={photo.imageUrl}
                         alt={`TOEIC Part 1 Question ${p1Index + 1}`}
                         onError={(e) => {
@@ -1851,7 +1862,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                     {/* Graphic Image for Graphic Questions (Q62-70) */}
                     {convo.imageUrl && (
                       <div style={{ display: 'flex', justifyContent: 'center', background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid var(--border-subtle)' }}>
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={convo.imageUrl}
                           alt="Graphic reference"
                           style={{ maxWidth: '100%', maxHeight: '380px', objectFit: 'contain', borderRadius: '8px' }}
@@ -2011,7 +2022,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                     {/* Graphic Image for Graphic Questions (Q95-100) */}
                     {talk.imageUrl && (
                       <div style={{ display: 'flex', justifyContent: 'center', background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid var(--border-subtle)' }}>
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={talk.imageUrl}
                           alt="Graphic reference"
                           style={{ maxWidth: '100%', maxHeight: '380px', objectFit: 'contain', borderRadius: '8px' }}
@@ -2547,7 +2558,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                     {/* Image if available */}
                     {passage.imageUrl && (
                       <div style={{ display: 'flex', justifyContent: 'center', background: '#f8fafc', padding: '16px', borderRadius: '16px', border: '1px solid var(--border-subtle)' }}>
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={passage.imageUrl}
                           alt="Reading graphic reference"
                           style={{ maxWidth: '100%', maxHeight: '420px', objectFit: 'contain', borderRadius: '8px' }}
@@ -2901,7 +2912,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                         border: '1px solid var(--border-medium)'
                       }}
                     >
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={activePhoto.imageUrl}
                         alt="Speaking prompt"
                         onError={(e) => {
@@ -3376,7 +3387,7 @@ export default function ToeicPracticeView({ words = [], onSaveWord, speechVoice 
                             padding: '8px'
                           }}
                         >
-                          <img
+                          <img loading="lazy" decoding="async"
                             src={imageUrl}
                             alt={qNum}
                             onError={(e) => {

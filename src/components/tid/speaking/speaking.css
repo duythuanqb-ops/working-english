@@ -1,7 +1,7 @@
 /* Speaking area — pixel-hub keyframes + helpers copied from theieltsdictionary.com CSS bundle. */
-.px-display { font-family: var(--font-bungee), "Bungee", sans-serif; font-weight: 400; }
-.px-outline { color: #fdf5e0; -webkit-text-stroke: var(--px-stroke, 8px) #1f2a1a; paint-order: stroke fill; text-shadow: 0 var(--px-drop, 6px) 0 #1f2a1a; }
-.px-root { font-family: "Be Vietnam Pro", system-ui, sans-serif; color: #1f2a1a; }
+.px-display { font-family: "Baloo 2", "Be Vietnam Pro", sans-serif; font-weight: 800; letter-spacing: -0.01em; }
+.px-outline { color: #fff8e7; -webkit-text-stroke: var(--px-stroke, 8px) #1e1b4b; paint-order: stroke fill; text-shadow: 0 var(--px-drop, 6px) 0 #1e1b4b; }
+.px-root { font-family: "Be Vietnam Pro", system-ui, sans-serif; color: #1e1b4b; }
 .px-root img { image-rendering: pixelated; }
 .px-cab { animation-name: pxsCabSoft; }
 @media (hover: none) { .px-cab { animation-name: pxsCabSoft; } }

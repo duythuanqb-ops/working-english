@@ -30,7 +30,7 @@ export default function ReadingHub({ onBack, onSaveWord, speechVoice }) {
   }, [route.name]);
 
   return (
-    <div ref={rootRef} className="min-h-full">
+    <div ref={rootRef} className="tid-reading min-h-full">
       {route.name === 'press' ? (
         <Suspense fallback={<Fallback />}>
           <PressPortal onBack={() => go({ name: 'home' })} onSaveWord={onSaveWord} />

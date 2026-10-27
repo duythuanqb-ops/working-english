@@ -37,26 +37,28 @@ function useLoaded(loader, id) {
   return state.id === id ? state.data : undefined;
 }
 
-function DichCauRoute({ id, onBack, onNext, onSaveWord, speechVoice }) {
+function DichCauRoute({ id, onBack, onNext, onSaveWord, speechVoice, onLookupDictionary, onTryInDoctor }) {
   const data = useLoaded(loadDichCau, id);
   if (data === undefined) return <Loading />;
   if (!data) return <div className="p-20 text-center font-bold text-slate-500">Bài này chưa có trong dữ liệu offline.</div>;
   const list = DICHCAU.filter(e => e.band === data.band && !e.locked).sort((a, b) => a.order - b.order);
   const next = list[list.findIndex(e => e.id === id) + 1];
   return <DichCauPlayer key={id} exercise={data} onBack={onBack} onSaveWord={onSaveWord} speechVoice={speechVoice}
+    onLookupDictionary={onLookupDictionary} onTryInDoctor={onTryInDoctor}
     onNext={next ? () => onNext(next.id) : null} nextLabel={next ? `Bài tiếp: ${next.title}` : undefined} />;
 }
 
-function EssayTranslateRoute({ sample, onBack, onNext, onSaveWord, speechVoice }) {
+function EssayTranslateRoute({ sample, onBack, onNext, onSaveWord, speechVoice, onLookupDictionary, onTryInDoctor }) {
   const essay = useLoaded(loadSample, sample.id);
   if (essay === undefined) return <Loading />;
   if (!essay) return <div className="p-20 text-center font-bold text-slate-500">Bài mẫu này chưa có trong dữ liệu offline.</div>;
   const next = SAMPLES.slice(SAMPLES.findIndex(s => s.id === sample.id) + 1).find(s => s.hasBody);
   return <DichCauPlayer key={sample.id} exercise={essayExercise(sample, essay)} onBack={onBack} onSaveWord={onSaveWord} speechVoice={speechVoice}
+    onLookupDictionary={onLookupDictionary} onTryInDoctor={onTryInDoctor}
     onNext={next ? () => onNext(next) : null} nextLabel={next ? `Bài tiếp: ${next.topicEn} · Bài ${next.num}` : undefined} />;
 }
 
-export default function WritingHub({ onBack, onSaveWord, speechVoice }) {
+export default function WritingHub({ onBack, onSaveWord, speechVoice, onLookupDictionary, onTryInDoctor }) {
   const [stack, setStack] = useState([{ name: 'home' }]);
   const page = stack[stack.length - 1];
   const push = useCallback(p => setStack(s => [...s, p]), []);
@@ -74,7 +76,7 @@ export default function WritingHub({ onBack, onSaveWord, speechVoice }) {
     document.querySelector('.tid-root')?.scrollTo?.({ top: 0 });
   }, [page]);
 
-  const common = { onSaveWord, speechVoice };
+  const common = { onSaveWord, speechVoice, onLookupDictionary, onTryInDoctor };
   switch (page.name) {
     case 'tests':
       return <WritingLibrary go={go} onOpenTest={t => push({ name: 'editor', test: t })} />;

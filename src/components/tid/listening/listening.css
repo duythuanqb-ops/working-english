@@ -1,14 +1,14 @@
 /* Listening area styles — copied from theieltsdictionary.com pixel theme (px-*) and dictation theme (dct-*). */
-.px-root { font-family: "Be Vietnam Pro", system-ui, sans-serif; color: #1f2a1a; }
+.px-root { font-family: "Be Vietnam Pro", system-ui, sans-serif; color: #1e1b4b; }
 .px-root img { image-rendering: pixelated; }
-.px-display { font-family: "Bungee", sans-serif; font-weight: 400; }
+.tid-listening .px-display { font-family: "Baloo 2", "Be Vietnam Pro", sans-serif; font-weight: 800; letter-spacing: -0.01em; }
 .px-outline {
-  color: #fdf5e0;
-  -webkit-text-stroke: var(--px-stroke, 8px) #1f2a1a;
+  color: #fff8e7;
+  -webkit-text-stroke: var(--px-stroke, 8px) #1e1b4b;
   paint-order: stroke fill;
-  text-shadow: 0 var(--px-drop, 6px) 0 #1f2a1a;
+  text-shadow: 0 var(--px-drop, 6px) 0 #1e1b4b;
 }
-.px-root :focus-visible { outline-offset: 3px; outline: 3px solid #2f3a7a; }
+.px-root :focus-visible { outline-offset: 3px; outline: 3px solid #4f46e5; }
 .px-art:not([data-px-live]) * { animation-play-state: paused !important; }
 .px-art img { display: inline; max-width: none; }
 @media (prefers-reduced-motion: reduce) {

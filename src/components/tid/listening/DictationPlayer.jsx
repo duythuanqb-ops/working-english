@@ -110,7 +110,7 @@ export default function DictationPlayer({ lessonId, onBack, onSaveWord, speechVo
     return () => { off = true; };
   }, [lessonId]);
   if (lesson === undefined) {
-    return <div className="flex min-h-[60vh] items-center justify-center"><div className="h-11 w-11 animate-spin rounded-full border-4 border-[#1F2A1A] border-t-transparent" /></div>;
+    return <div className="flex min-h-[60vh] items-center justify-center"><div className="h-11 w-11 animate-spin rounded-full border-4 border-[#1E1B4B] border-t-transparent" /></div>;
   }
   if (!lesson) {
     return (

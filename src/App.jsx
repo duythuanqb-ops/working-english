@@ -1,33 +1,56 @@
-import React, { useState, useEffect, Suspense, lazy } from 'react';
+import React, { useState, useEffect, useCallback, useTransition, Suspense, lazy } from 'react';
 import Sidebar from './components/Sidebar';
 import TopBar from './components/TopBar';
 import AddWordModal from './components/AddWordModal';
 import MiniCaptureView from './components/MiniCaptureView';
+import DailyReviewNudge from './components/DailyReviewNudge';
 import './components/tid/vocabulary/vocab.css';
 import { storageService } from './services/storageService';
+import { notificationService } from './services/notificationService';
 
 // Lazy-loaded Views for maximum performance and fast screen switches
-const VocabularyView = lazy(() => import('./components/VocabularyView'));
-const DailyReviewView = lazy(() => import('./components/DailyReviewView'));
-const SynonymsView = lazy(() => import('./components/SynonymsView'));
-const GrammarView = lazy(() => import('./components/GrammarView'));
-const GrammarDoctorView = lazy(() => import('./components/GrammarDoctorView'));
-const SettingsView = lazy(() => import('./components/SettingsView'));
-const DictionaryView = lazy(() => import('./components/DictionaryView'));
-const ToeicPracticeView = lazy(() => import('./components/ToeicPracticeView'));
-const IeltsPracticeView = lazy(() => import('./components/IeltsPracticeView'));
-const TidModule = lazy(() => import('./components/tid/TidModule'));
+const viewLoaders = {
+  vocab: () => import('./components/VocabularyView'),
+  notes: () => import('./components/NotesView'),
+  tid: () => import('./components/tid/TidModule'),
+  review: () => import('./components/DailyReviewView'),
+  overview: () => import('./components/tid/vocabulary/Overview'),
+  dictionary: () => import('./components/DictionaryView'),
+  toeic: () => import('./components/ToeicPracticeView'),
+  ielts: () => import('./components/IeltsPracticeView'),
+  synonyms: () => import('./components/SynonymsView'),
+  grammar: () => import('./components/GrammarView'),
+  doctor: () => import('./components/GrammarDoctorView'),
+  settings: () => import('./components/SettingsView')
+};
+
+const VocabularyView = lazy(viewLoaders.vocab);
+const NotesView = lazy(viewLoaders.notes);
+const DailyReviewView = lazy(viewLoaders.review);
+const SynonymsView = lazy(viewLoaders.synonyms);
+const GrammarView = lazy(viewLoaders.grammar);
+const GrammarDoctorView = lazy(viewLoaders.doctor);
+const SettingsView = lazy(viewLoaders.settings);
+const DictionaryView = lazy(viewLoaders.dictionary);
+const ToeicPracticeView = lazy(viewLoaders.toeic);
+const IeltsPracticeView = lazy(viewLoaders.ielts);
+const TidModule = lazy(viewLoaders.tid);
 
 // Overview module parts
-const OverviewComponent = lazy(() =>
-  import('./components/tid/vocabulary/Overview').then((mod) => ({ default: mod.Overview }))
-);
-const StatsComponent = lazy(() =>
-  import('./components/tid/vocabulary/Overview').then((mod) => ({ default: mod.Stats }))
-);
-const HistoryComponent = lazy(() =>
-  import('./components/tid/vocabulary/Overview').then((mod) => ({ default: mod.History }))
-);
+const OverviewComponent = lazy(() => viewLoaders.overview().then((mod) => ({ default: mod.Overview })));
+const StatsComponent = lazy(() => viewLoaders.overview().then((mod) => ({ default: mod.Stats })));
+const HistoryComponent = lazy(() => viewLoaders.overview().then((mod) => ({ default: mod.History })));
+
+// Warm view chunks one at a time while the app is idle so later screen switches are instant
+function prefetchViews() {
+  const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));
+  const queue = Object.values(viewLoaders);
+  const next = () => {
+    const load = queue.shift();
+    if (load) load().catch(() => {}).finally(() => idle(next, { timeout: 2000 }));
+  };
+  setTimeout(() => idle(next, { timeout: 2000 }), 1500);
+}
 
 function ViewLoading() {
   return (
@@ -58,9 +81,92 @@ export default function App() {
   const [settings, setSettings] = useState(storageService.getSettings());
   const [synonymGroups, setSynonymGroups] = useState([]);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [addWordInitialDeck, setAddWordInitialDeck] = useState('');
   const [doctorInitialSentence, setDoctorInitialSentence] = useState('');
+  const [dictInitialWord, setDictInitialWord] = useState('');
+  const [synonymsInitialWord, setSynonymsInitialWord] = useState('');
+  const [streak, setStreak] = useState(() => storageService.getStreak());
+  const [todayCount, setTodayCount] = useState(() => storageService.getTodayActivityCount());
+  const [isCheckedIn, setIsCheckedIn] = useState(() => storageService.isTodayCheckedIn());
+  const [noteCount, setNoteCount] = useState(() => storageService.getNotes().length);
+  const [, startViewTransition] = useTransition();
 
-  // Initial load
+  // Switch screens in a transition: the current screen stays interactive while the next one renders
+  const navigate = useCallback((view) => startViewTransition(() => setCurrentView(view)), []);
+
+  // Unified Cross-Screen Interconnection Handlers
+  const handleLookupDictionary = useCallback((word) => {
+    if (!word) return;
+    setDictInitialWord(String(word).trim());
+    navigate('dictionary');
+  }, [navigate]);
+
+  const handleTryInDoctor = useCallback((sentenceOrWord) => {
+    if (!sentenceOrWord) return;
+    setDoctorInitialSentence(String(sentenceOrWord).trim());
+    navigate('doctor');
+  }, [navigate]);
+
+  const handleViewSynonyms = useCallback((word) => {
+    if (!word) return;
+    setSynonymsInitialWord(String(word).trim());
+    navigate('synonyms');
+  }, [navigate]);
+
+  const handleOpenIn4Skills = useCallback((options = {}) => {
+    if (typeof options === 'string') {
+      setTidRoute({
+        area: 'vocabulary',
+        view: 'dash',
+        page: 'flashcard',
+        sessionSel: { cards: [`custom:${options}`] }
+      });
+    } else if (options && (options.area || options.view || options.page || options.sessionSel || options.tab)) {
+      setTidRoute(options);
+    } else {
+      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets', tab: 'topics' });
+    }
+    navigate('ielts-dictionary');
+  }, [navigate]);
+
+  const handleStartReview = useCallback((_opts) => {
+    navigate('review');
+  }, [navigate]);
+
+  const handleOpenVocab = useCallback(() => {
+    navigate('vocab');
+  }, [navigate]);
+
+  const handleOpenGrammar = useCallback(() => {
+    navigate('grammar');
+  }, [navigate]);
+
+  useEffect(prefetchViews, []);
+
+  // Update streak whenever learning activity occurs
+  useEffect(() => {
+    const handleActivity = () => {
+      setStreak(storageService.getStreak());
+      setTodayCount(storageService.getTodayActivityCount());
+      setIsCheckedIn(storageService.isTodayCheckedIn());
+    };
+    const handleWordsUpdated = () => {
+      setWords(storageService.getWords());
+    };
+    const handleNotesUpdated = () => {
+      setNoteCount(storageService.getNotes().length);
+    };
+    window.addEventListener('we-activity-updated', handleActivity);
+    window.addEventListener('we-words-updated', handleWordsUpdated);
+    window.addEventListener('we-notes-updated', handleNotesUpdated);
+    return () => {
+      window.removeEventListener('we-activity-updated', handleActivity);
+      window.removeEventListener('we-words-updated', handleWordsUpdated);
+      window.removeEventListener('we-notes-updated', handleNotesUpdated);
+    };
+  }, []);
+
+  // Initial load & persistent disk hydration
   useEffect(() => {
     const loadedWords = storageService.getWords();
     setWords(loadedWords);
@@ -68,6 +174,13 @@ export default function App() {
     setSettings(loadedSettings);
     const loadedSynonyms = storageService.getSynonymGroups();
     setSynonymGroups(loadedSynonyms);
+
+    // Hydrate from persistent disk file if localStorage was blank
+    storageService.initPersistentSync((restored) => {
+      if (Array.isArray(restored) && restored.length > 0) {
+        setWords(restored);
+      }
+    });
 
     // Listen for quick words added via Electron mini window
     if (window.electronAPI && window.electronAPI.onQuickWordAdded) {
@@ -78,15 +191,69 @@ export default function App() {
     }
   }, []);
 
+  // Scheduled background daily study reminder check
+  useEffect(() => {
+    const initialTimer = setTimeout(() => {
+      notificationService.checkDailyReminder(words, streak);
+    }, 3000);
+
+    const interval = setInterval(() => {
+      notificationService.checkDailyReminder(words, streak);
+    }, 60000);
+
+    return () => {
+      clearTimeout(initialTimer);
+      clearInterval(interval);
+    };
+  }, [words, streak]);
+
+  const handleCheckIn = useCallback(() => {
+    const res = storageService.checkInToday();
+    setStreak(res.streak);
+    setTodayCount(res.count);
+    setIsCheckedIn(true);
+    return res;
+  }, []);
+
   // Handlers
   const handleSaveNewWord = (wordData) => {
     const saved = storageService.addWord(wordData);
     setWords((prev) => [saved, ...prev]);
   };
 
+  const handleRemoveWord = (wordTextOrId) => {
+    const norm = String(wordTextOrId || '').trim().toLowerCase();
+    const updated = storageService.getWords().filter(
+      (w) => w.id !== wordTextOrId && String(w.word || '').trim().toLowerCase() !== norm
+    );
+    storageService.saveWords(updated);
+    setWords(updated);
+  };
+
   const handleDeleteWord = (id) => {
     if (confirm('Bạn có chắc chắn muốn xóa từ vựng này khỏi sổ tay?')) {
       const updated = storageService.deleteWord(id);
+      setWords(updated);
+    }
+  };
+
+  const handleDeleteWords = (ids) => {
+    if (confirm(`Bạn có chắc chắn muốn xóa ${ids.length} từ vựng đã chọn khỏi sổ tay?`)) {
+      const updated = storageService.deleteWords(ids);
+      setWords(updated);
+    }
+  };
+
+  const handleClearAllWords = () => {
+    if (confirm('Bạn có chắc chắn muốn xóa TOÀN BỘ từ vựng trong sổ tay để bắt đầu danh sách mới?')) {
+      const updated = storageService.clearAllWords();
+      setWords(updated);
+    }
+  };
+
+  const handleRestoreStarterWords = () => {
+    if (confirm('Khôi phục danh sách từ vựng công sở mẫu ban đầu?')) {
+      const updated = storageService.restoreStarterWords();
       setWords(updated);
     }
   };
@@ -111,11 +278,6 @@ export default function App() {
     setWords(restoredWords);
   };
 
-  const handleTryInDoctor = (exampleSentence) => {
-    setDoctorInitialSentence(exampleSentence);
-    setCurrentView('doctor');
-  };
-
   // Header Titles
   const getHeaderInfo = () => {
     switch (currentView) {
@@ -125,6 +287,8 @@ export default function App() {
         return { title: 'Thống Kê Tiến Độ Bộ Từ', subtitle: 'Tỉ lệ ghi nhớ từng chủ đề & lịch sử luyện tập' };
       case 'vocab':
         return { title: 'Sổ Tay Từ Vựng Tiếng Anh', subtitle: 'Kho từ vựng công sở cá nhân' };
+      case 'notes':
+        return { title: 'Sổ Ghi Chú Học Tập', subtitle: 'Lưu trữ mẫu câu công sở, collocations, cấu trúc IELTS/TOEIC & mẹo học' };
       case 'dictionary':
         return { title: 'Từ Điển Công Sở & Quốc Tế', subtitle: 'Tra cứu chuyên sâu nghĩa công sở, phát âm IPA & định nghĩa Oxford' };
       case 'toeic':
@@ -156,9 +320,10 @@ export default function App() {
       {/* macOS Sidebar */}
       <Sidebar
         currentView={currentView}
-        setCurrentView={setCurrentView}
+        setCurrentView={navigate}
         wordCount={words.length}
         dueCount={dueCount}
+        noteCount={noteCount}
       />
 
       {/* Main App Workspace */}
@@ -169,46 +334,55 @@ export default function App() {
           onOpenAddModal={() => setIsAddModalOpen(true)}
           speechVoice={settings.speechVoice || 'US'}
           onChangeSpeechVoice={(voice) => handleSaveSettings({ ...settings, speechVoice: voice })}
+          streak={streak}
+          todayCount={todayCount}
+          isCheckedIn={isCheckedIn}
+          onCheckIn={handleCheckIn}
         />
 
-        <main className="content-body">
+        {/* Smart In-App Nudge Banner for Leitner Spaced Repetition */}
+        <DailyReviewNudge
+          dueCount={dueCount}
+          streak={streak}
+          isCheckedIn={isCheckedIn}
+          currentView={currentView}
+          onStartReview={() => navigate('review')}
+        />
+
+        <main className={`content-body ${currentView === 'ielts-dictionary' ? '!p-0' : ''}`}>
           <Suspense fallback={<ViewLoading />}>
             {currentView === 'overview' && (
-              <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
-                <div className="mx-auto max-w-6xl">
-                  <OverviewComponent
-                    onPick={() => {
+              <div className="mx-auto max-w-6xl w-full">
+                <OverviewComponent
+                  onPick={() => {
+                    setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
+                    setCurrentView('ielts-dictionary');
+                  }}
+                  onReview={(r) => {
+                    if (r?.sel) {
+                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
+                    } else {
                       setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
-                      setCurrentView('ielts-dictionary');
-                    }}
-                    onReview={(r) => {
-                      if (r?.sel) {
-                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
-                      } else {
-                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
-                      }
-                      setCurrentView('ielts-dictionary');
-                    }}
-                  />
-                </div>
+                    }
+                    setCurrentView('ielts-dictionary');
+                  }}
+                />
               </div>
             )}
 
             {currentView === 'stats' && (
-              <div className="vc-dash h-full overflow-y-auto bg-[var(--d-bg)] p-4 md:p-6 transition-colors duration-500">
-                <div className="mx-auto max-w-6xl flex flex-col gap-6">
-                  <StatsComponent />
-                  <HistoryComponent
-                    onReview={(r) => {
-                      if (r?.sel) {
-                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
-                      } else {
-                        setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
-                      }
-                      setCurrentView('ielts-dictionary');
-                    }}
-                  />
-                </div>
+              <div className="mx-auto max-w-6xl w-full flex flex-col gap-6">
+                <StatsComponent />
+                <HistoryComponent
+                  onReview={(r) => {
+                    if (r?.sel) {
+                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: r.sel });
+                    } else {
+                      setTidRoute({ area: 'vocabulary', view: 'dash', page: 'sets' });
+                    }
+                    setCurrentView('ielts-dictionary');
+                  }}
+                />
               </div>
             )}
 
@@ -216,10 +390,27 @@ export default function App() {
               <VocabularyView
                 words={words}
                 onDeleteWord={handleDeleteWord}
-                onOpenAddModal={() => setIsAddModalOpen(true)}
+                onDeleteWords={handleDeleteWords}
+                onClearAllWords={handleClearAllWords}
+                onRestoreStarterWords={handleRestoreStarterWords}
+                onOpenAddModal={(deck) => {
+                  setAddWordInitialDeck(typeof deck === 'string' ? deck : '');
+                  setIsAddModalOpen(true);
+                }}
                 onRecordReview={handleRecordReview}
                 speechVoice={settings.speechVoice || 'US'}
-                onStartReview={() => setCurrentView('review')}
+                onStartReview={handleStartReview}
+                onLookupDictionary={handleLookupDictionary}
+                onTryInDoctor={handleTryInDoctor}
+                onViewSynonyms={handleViewSynonyms}
+                onOpenIn4Skills={handleOpenIn4Skills}
+              />
+            )}
+
+            {currentView === 'notes' && (
+              <NotesView
+                onLookupDictionary={handleLookupDictionary}
+                onTryInDoctor={handleTryInDoctor}
               />
             )}
 
@@ -228,6 +419,12 @@ export default function App() {
                 words={words}
                 onSaveWord={handleSaveNewWord}
                 speechVoice={settings.speechVoice || 'US'}
+                initialWord={dictInitialWord}
+                onTryInDoctor={handleTryInDoctor}
+                onViewSynonyms={handleViewSynonyms}
+                onOpenIn4Skills={handleOpenIn4Skills}
+                onStartReview={handleStartReview}
+                onOpenVocab={handleOpenVocab}
               />
             )}
 
@@ -236,6 +433,8 @@ export default function App() {
                 words={words}
                 onSaveWord={handleSaveNewWord}
                 speechVoice={settings.speechVoice || 'US'}
+                onLookupDictionary={handleLookupDictionary}
+                onTryInDoctor={handleTryInDoctor}
               />
             )}
 
@@ -244,6 +443,8 @@ export default function App() {
                 words={words}
                 onSaveWord={handleSaveNewWord}
                 speechVoice={settings.speechVoice || 'US'}
+                onLookupDictionary={handleLookupDictionary}
+                onTryInDoctor={handleTryInDoctor}
               />
             )}
 
@@ -251,8 +452,13 @@ export default function App() {
               <TidModule
                 speechVoice={settings.speechVoice || 'US'}
                 onSaveWord={handleSaveNewWord}
+                onRemoveWord={handleRemoveWord}
                 tidRoute={tidRoute}
                 onClearTidRoute={() => setTidRoute(null)}
+                initialTopicId={customTopicId}
+                onLookupDictionary={handleLookupDictionary}
+                onTryInDoctor={handleTryInDoctor}
+                onStartReview={handleStartReview}
               />
             )}
 
@@ -261,6 +467,11 @@ export default function App() {
                 words={words}
                 onRecordReview={handleRecordReview}
                 speechVoice={settings.speechVoice || 'US'}
+                onLookupDictionary={handleLookupDictionary}
+                onTryInDoctor={handleTryInDoctor}
+                onViewSynonyms={handleViewSynonyms}
+                onOpenIn4Skills={handleOpenIn4Skills}
+                onOpenVocab={handleOpenVocab}
               />
             )}
 
@@ -270,6 +481,12 @@ export default function App() {
                 synonymGroups={synonymGroups}
                 onSaveSynonymGroups={handleSaveSynonymGroups}
                 speechVoice={settings.speechVoice || 'US'}
+                initialWord={synonymsInitialWord}
+                onLookupDictionary={handleLookupDictionary}
+                onTryInDoctor={handleTryInDoctor}
+                onSaveWord={handleSaveNewWord}
+                onStartReview={handleStartReview}
+                onOpenIn4Skills={handleOpenIn4Skills}
               />
             )}
 
@@ -277,6 +494,8 @@ export default function App() {
               <GrammarView
                 onTryInDoctor={handleTryInDoctor}
                 speechVoice={settings.speechVoice || 'US'}
+                onLookupDictionary={handleLookupDictionary}
+                onSaveWord={handleSaveNewWord}
               />
             )}
 
@@ -284,6 +503,9 @@ export default function App() {
               <GrammarDoctorView
                 initialSentence={doctorInitialSentence}
                 speechVoice={settings.speechVoice || 'US'}
+                onLookupDictionary={handleLookupDictionary}
+                onSaveWord={handleSaveNewWord}
+                onOpenGrammarHandbook={handleOpenGrammar}
               />
             )}
 
@@ -305,6 +527,7 @@ export default function App() {
         onClose={() => setIsAddModalOpen(false)}
         onSave={handleSaveNewWord}
         speechVoice={settings.speechVoice || 'US'}
+        initialDeck={addWordInitialDeck}
       />
     </div>
   );

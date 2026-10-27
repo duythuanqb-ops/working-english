@@ -62,7 +62,7 @@ export function FilterChip({ pressed, onClick, color, icon, label, count }) {
 export function PxBackButton({ onClick, label, className = '' }) {
   return (
     <button type="button" onClick={onClick}
-      className={`inline-flex min-h-11 items-center gap-2 self-start rounded-full border-[3px] border-[#1F2A1A] bg-[#FDF5E0] px-4 text-[15px] font-bold text-[#1F2A1A] shadow-[0_4px_0_#1F2A1A] transition-[transform,box-shadow,background-color] hover:bg-[#F8BE33] active:translate-y-0.5 active:shadow-[0_2px_0_#1F2A1A] ${className}`}>
+      className={`inline-flex min-h-11 items-center gap-2 self-start rounded-full border-[3px] border-[#1E1B4B] bg-[#FFF8E7] px-4 text-[15px] font-bold text-[#1E1B4B] shadow-[0_4px_0_#1E1B4B] transition-[transform,box-shadow,background-color] hover:bg-[#F8BE33] active:translate-y-0.5 active:shadow-[0_2px_0_#1E1B4B] ${className}`}>
       <span aria-hidden="true">←</span>{label}
     </button>
   );
@@ -76,7 +76,7 @@ export function Modal({ onClose, children, className = 'max-w-md' }) {
     return () => window.removeEventListener('keydown', k);
   }, [onClose]);
   return (
-    <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm" onClick={onClose}>
+    <div className="fixed inset-0 z-[80] flex items-center justify-center bg-black/60 p-4" onClick={onClose}>
       <div onClick={e => e.stopPropagation()} className={`wr-pop relative w-full overflow-hidden rounded-3xl bg-white p-8 text-center shadow-2xl ${className}`}>
         {children}
       </div>

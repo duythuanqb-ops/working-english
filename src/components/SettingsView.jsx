@@ -12,10 +12,15 @@ import {
   Sparkles,
   RefreshCw,
   Eye,
-  EyeOff
+  EyeOff,
+  Bell,
+  Clock,
+  Flame
 } from 'lucide-react';
 import { ttsService } from '../services/ttsService';
 import { aiService } from '../services/aiService';
+import { storageService } from '../services/storageService';
+import { notificationService } from '../services/notificationService';
 import CustomSelect from './CustomSelect';
 
 export default function SettingsView({
@@ -32,11 +37,15 @@ export default function SettingsView({
   const [speechVoice, setSpeechVoice] = useState(settings.speechVoice || 'US');
   const [speechRate, setSpeechRate] = useState(settings.speechRate || 1.0);
   const [dailyReviewTarget, setDailyReviewTarget] = useState(settings.dailyReviewTarget || 10);
+  const [reminderEnabled, setReminderEnabled] = useState(settings.reminderEnabled ?? true);
+  const [reminderTime, setReminderTime] = useState(settings.reminderTime || '20:00');
 
   const [showGeminiKey, setShowGeminiKey] = useState(false);
   const [showOpenaiKey, setShowOpenaiKey] = useState(false);
   const [testStatus, setTestStatus] = useState(null); // { type: 'success'|'error', msg: '' }
   const [isTesting, setIsTesting] = useState(false);
+  const [testNotifStatus, setTestNotifStatus] = useState(null);
+  const [isTestingNotif, setIsTestingNotif] = useState(false);
   const [savedSuccess, setSavedSuccess] = useState(false);
 
   const handleSave = (e) => {
@@ -50,11 +59,41 @@ export default function SettingsView({
       openaiModel,
       speechVoice,
       speechRate,
-      dailyReviewTarget
+      dailyReviewTarget: parseInt(dailyReviewTarget, 10) || 10,
+      reminderEnabled,
+      reminderTime
     };
     onSaveSettings(updated);
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2500);
+  };
+
+  const handleTestNotification = async () => {
+    setIsTestingNotif(true);
+    setTestNotifStatus(null);
+    try {
+      await notificationService.requestPermission();
+      const sent = await notificationService.sendTestNotification();
+      if (sent) {
+        setTestNotifStatus({
+          type: 'success',
+          msg: 'Đã gửi thông báo thử nghiệm thành công! Hãy kiểm tra màn hình máy tính của bạn.'
+        });
+      } else {
+        setTestNotifStatus({
+          type: 'error',
+          msg: 'Không thể gửi thông báo. Vui lòng kiểm tra quyền thông báo trên máy tính.'
+        });
+      }
+    } catch (err) {
+      setTestNotifStatus({
+        type: 'error',
+        msg: `Lỗi thông báo: ${err.message || 'Không xác định'}`
+      });
+    } finally {
+      setIsTestingNotif(false);
+      setTimeout(() => setTestNotifStatus(null), 6000);
+    }
   };
 
   const handleTestAi = async () => {
@@ -82,15 +121,27 @@ export default function SettingsView({
     }
   };
 
+  const [backupNotice, setBackupNotice] = useState(null);
+
   const handleExportData = () => {
-    const dataStr = JSON.stringify(words, null, 2);
-    const blob = new Blob([dataStr], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `WorkingEnglish_Backup_${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    try {
+      const snapshot = storageService.exportFullSnapshot();
+      const dataStr = JSON.stringify(snapshot, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `WorkingEnglish_FullBackup_${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      setBackupNotice({
+        type: 'success',
+        msg: `Đã xuất gói sao lưu toàn diện (${snapshot.summary.wordsCount} từ vựng, Streak ${snapshot.summary.streak} ngày, toàn bộ tiến trình học).`
+      });
+      setTimeout(() => setBackupNotice(null), 4000);
+    } catch (err) {
+      alert('Lỗi xuất sao lưu: ' + err.message);
+    }
   };
 
   const handleImportData = (e) => {
@@ -101,17 +152,24 @@ export default function SettingsView({
     reader.onload = (event) => {
       try {
         const parsed = JSON.parse(event.target?.result);
-        if (Array.isArray(parsed)) {
-          onRestoreWords(parsed);
-          alert(`Đã khôi phục thành công ${parsed.length} từ vựng!`);
-        } else {
-          alert('Tệp sao lưu không đúng định dạng JSON.');
-        }
+        const res = storageService.importFullSnapshot(parsed);
+        const restoredWords = storageService.getWords();
+        onRestoreWords(restoredWords);
+        setBackupNotice({
+          type: 'success',
+          msg: res.message || 'Khôi phục dữ liệu thành công!'
+        });
+        setTimeout(() => setBackupNotice(null), 5000);
       } catch (err) {
-        alert('Lỗi đọc tệp sao lưu: ' + err.message);
+        setBackupNotice({
+          type: 'error',
+          msg: 'Lỗi khôi phục tệp: ' + err.message
+        });
       }
     };
     reader.readAsText(file);
+    // Reset file input value
+    e.target.value = '';
   };
 
   return (
@@ -397,23 +455,166 @@ export default function SettingsView({
         </div>
       </div>
 
+      {/* Study Reminder & Daily Targets */}
+      <div className="card" style={{ padding: '24px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+          <Bell size={20} color="var(--primary)" />
+          <h3 style={{ fontSize: '1.15rem', fontWeight: 700 }}>Nhắc Nhở Học Tập & Ôn Từ Hàng Ngày</h3>
+        </div>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '18px', lineHeight: 1.5 }}>
+          Hệ thống tự động gửi thông báo Desktop nhắc nhở bạn vào đúng khung giờ mong muốn, giúp ôn tập các từ vựng đến hạn (Hộp 1 & 2 theo Leitner Spaced Repetition) và bảo vệ chuỗi ngày học Streak.
+        </p>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          {/* Toggle Switch */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              padding: '14px 18px',
+              background: 'rgba(255, 255, 255, 0.03)',
+              border: '1px solid var(--border-subtle)',
+              borderRadius: 'var(--radius-md)'
+            }}
+          >
+            <div>
+              <div style={{ fontWeight: 700, fontSize: '0.92rem', color: 'var(--text-main)', marginBottom: '3px' }}>
+                Bật thông báo nhắc học trên máy tính
+              </div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
+                Gửi thông báo Native Desktop nhắc nhở ôn từ vựng & điểm danh hàng ngày
+              </div>
+            </div>
+            <label className="relative inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                checked={reminderEnabled}
+                onChange={(e) => setReminderEnabled(e.target.checked)}
+                className="sr-only peer"
+              />
+              <div className="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+            </label>
+          </div>
+
+          {/* Time & Target settings */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: '16px',
+              opacity: reminderEnabled ? 1 : 0.5,
+              pointerEvents: reminderEnabled ? 'auto' : 'none'
+            }}
+          >
+            <div>
+              <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
+                Khung giờ nhắc nhở hàng ngày
+              </label>
+              <CustomSelect
+                value={reminderTime}
+                onChange={(val) => setReminderTime(val)}
+                options={[
+                  { value: '07:30', label: '07:30 - Đầu buổi sáng' },
+                  { value: '08:30', label: '08:30 - Bắt đầu làm việc' },
+                  { value: '11:45', label: '11:45 - Nghỉ trưa' },
+                  { value: '17:45', label: '17:45 - Tan làm' },
+                  { value: '19:30', label: '19:30 - Đầu buổi tối' },
+                  { value: '20:00', label: '20:00 - Sau bữa tối (Khuyên dùng)' },
+                  { value: '21:00', label: '21:00 - Giờ học tập tối' },
+                  { value: '22:00', label: '22:00 - Trước khi ngủ' }
+                ]}
+                style={{ width: '100%' }}
+              />
+            </div>
+
+            <div>
+              <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
+                Mục tiêu ôn tập hàng ngày
+              </label>
+              <CustomSelect
+                value={dailyReviewTarget}
+                onChange={(val) => setDailyReviewTarget(parseInt(val, 10))}
+                options={[
+                  { value: 5, label: '5 từ / ngày (Nhẹ nhàng, thư thả)' },
+                  { value: 10, label: '10 từ / ngày (Tiêu chuẩn khuyên dùng)' },
+                  { value: 15, label: '15 từ / ngày (Tăng tốc ghi nhớ)' },
+                  { value: 20, label: '20 từ / ngày (Chinh phục thần tốc)' }
+                ]}
+                style={{ width: '100%' }}
+              />
+            </div>
+          </div>
+
+          {/* Test Notification Action */}
+          <div style={{ marginTop: '6px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={handleTestNotification}
+              disabled={isTestingNotif || !reminderEnabled}
+            >
+              <Bell size={14} className={isTestingNotif ? 'animate-bounce' : ''} />
+              <span>{isTestingNotif ? 'Đang gửi...' : 'Gửi Thử Thông Báo Desktop'}</span>
+            </button>
+
+            {testNotifStatus && (
+              <div
+                style={{
+                  fontSize: '0.82rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  color: testNotifStatus.type === 'success' ? '#16A34A' : '#DC2626',
+                  fontWeight: 600
+                }}
+              >
+                {testNotifStatus.type === 'success' ? <CheckCircle2 size={16} /> : <AlertCircle size={16} />}
+                <span>{testNotifStatus.msg}</span>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
       {/* Backup & Data Management */}
       <div className="card" style={{ padding: '24px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
           <Database size={20} color="var(--primary)" />
-          <h3 style={{ fontSize: '1.15rem', fontWeight: 700 }}>Sao Lưu & Phục Hồi Dữ Liệu</h3>
+          <h3 style={{ fontSize: '1.15rem', fontWeight: 700 }}>Sao Lưu & Phục Hồi Dữ Liệu Toàn Diện</h3>
         </div>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '18px' }}>
-          Dữ liệu của bạn được lưu an toàn 100% trên máy tính. Bạn có thể xuất file sao lưu JSON bất cứ lúc nào.
+        <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginBottom: '18px', lineHeight: 1.5 }}>
+          Gói sao lưu toàn diện (Full App Snapshot) bao gồm: Sổ từ vựng, quy tắc ngữ pháp tự tạo, chuỗi ngày học Streak, cài đặt giọng đọc, ghi chú và toàn bộ tiến trình 4 kỹ năng của bạn.
         </p>
+
+        {backupNotice && (
+          <div
+            style={{
+              padding: '12px 16px',
+              borderRadius: '12px',
+              marginBottom: '16px',
+              background: backupNotice.type === 'success' ? '#DCFCE7' : '#FEE2E2',
+              border: backupNotice.type === 'success' ? '1.5px solid #16A34A' : '1.5px solid #DC2626',
+              color: backupNotice.type === 'success' ? '#15803D' : '#991B1B',
+              fontSize: '0.88rem',
+              fontWeight: 600,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}
+          >
+            {backupNotice.type === 'success' ? <CheckCircle2 size={18} /> : <AlertCircle size={18} />}
+            <span>{backupNotice.msg}</span>
+          </div>
+        )}
 
         <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
           <button type="button" className="btn btn-secondary" onClick={handleExportData}>
-            <Download size={15} /> Xuất Dữ Liệu Ra File JSON
+            <Download size={15} /> Xuất Gói Sao Lưu Toàn Diện (.JSON)
           </button>
 
           <label className="btn btn-secondary" style={{ cursor: 'pointer' }}>
-            <Upload size={15} /> Nhập Dữ Liệu Từ File JSON
+            <Upload size={15} /> Khôi Phục Dữ Liệu Từ File JSON
             <input
               type="file"
               accept=".json"

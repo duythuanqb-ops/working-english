@@ -46,7 +46,11 @@ function downloadFile(url, destPath, onProgress) {
       if (redirectCount > 5) {
         return reject(new Error('Too many redirects'));
       }
-      const req = https.get(currentUrl, (res) => {
+      const req = https.get(currentUrl, {
+        headers: {
+          'User-Agent': 'WorkingEnglish-Desktop/1.0.0 (https://workingenglish.app)'
+        }
+      }, (res) => {
         if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
           return requestWithRedirect(res.headers.location, redirectCount + 1);
         }

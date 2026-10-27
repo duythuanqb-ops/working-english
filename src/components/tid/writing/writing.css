@@ -1,12 +1,12 @@
 /* Writing area — pixel-art helpers + keyframes copied from theieltsdictionary.com (px-* / pxw* rules). */
-.wr-px-root { font-family: var(--font-be-vietnam), system-ui, sans-serif; color: #1f2a1a; }
+.wr-px-root { font-family: var(--font-be-vietnam), system-ui, sans-serif; color: #1e1b4b; }
 .wr-px-root img { image-rendering: pixelated; }
-.wr-px-display { font-family: var(--font-bungee), sans-serif; font-weight: 400; }
+.wr-px-display { font-family: "Baloo 2", "Be Vietnam Pro", sans-serif; font-weight: 800; letter-spacing: -0.01em; }
 .wr-px-outline {
-  color: #fdf5e0;
-  -webkit-text-stroke: var(--px-stroke, 8px) #1f2a1a;
+  color: #fff8e7;
+  -webkit-text-stroke: var(--px-stroke, 8px) #1e1b4b;
   paint-order: stroke fill;
-  text-shadow: 0 var(--px-drop, 6px) 0 #1f2a1a;
+  text-shadow: 0 var(--px-drop, 6px) 0 #1e1b4b;
 }
 .wr-px-art [style*=pxwWalk] { will-change: transform; }
 

@@ -15,15 +15,72 @@ import {
   ChevronLeft,
   ChevronRight,
   TrendingUp,
-  HelpCircle
+  HelpCircle,
+  Search,
+  Stethoscope,
+  Repeat,
+  GraduationCap,
+  BookOpen
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { ttsService } from '../services/ttsService';
 
+export const RATINGS = [
+  {
+    rating: 'forgot',
+    label: 'Quên',
+    kb: '1',
+    color: '#F2683A',
+    bg: '#FFF2EC',
+    when: 'Nhìn mà không ra nghĩa',
+    then: 'Mai gặp lại từ này ngay (Hộp 1)',
+    intervalHint: 'Mai gặp lại',
+    Icon: HelpCircle
+  },
+  {
+    rating: 'hard',
+    label: 'Mơ hồ',
+    kb: '2',
+    color: '#D98A1B',
+    bg: '#FEF9EC',
+    when: 'Nhớ được nhưng phải nghĩ lâu',
+    then: 'Sau 2 ngày gặp lại (Hộp 2)',
+    intervalHint: 'Sau 2 ngày',
+    Icon: Brain
+  },
+  {
+    rating: 'good',
+    label: 'Nhớ',
+    kb: '3',
+    color: '#1F9D63',
+    bg: '#EDFAF3',
+    when: 'Ra nghĩa trong vài giây',
+    then: 'Tăng 1 Hộp (Sau 5 ngày)',
+    intervalHint: 'Sau 5 ngày',
+    Icon: CheckCircle2
+  },
+  {
+    rating: 'easy',
+    label: 'Nhớ rồi',
+    kb: '4',
+    color: '#4F46E5',
+    bg: '#EEF2FF',
+    when: 'Bật ra ngay, không phải nghĩ',
+    then: 'Thuộc lòng (Sau 14 ngày)',
+    intervalHint: 'Thuộc lòng',
+    Icon: Sparkles
+  }
+];
+
 export default function DailyReviewView({
   words,
   onRecordReview,
-  speechVoice
+  speechVoice,
+  onLookupDictionary,
+  onTryInDoctor,
+  onViewSynonyms,
+  onOpenIn4Skills,
+  onOpenVocab
 }) {
   const [activeMode, setActiveMode] = useState('flashcards'); // 'flashcards' | 'quiz'
 
@@ -58,7 +115,7 @@ export default function DailyReviewView({
 
   const currentFcWord = reviewDeck[fcIndex] || null;
 
-  // Keyboard navigation for Flashcard mode
+  // Keyboard navigation for Flashcard mode (1: Quên, 2: Mơ hồ, 3: Nhớ, 4: Nhớ rồi, Space: Lật)
   useEffect(() => {
     if (activeMode !== 'flashcards' || !currentFcWord) return;
 
@@ -70,10 +127,16 @@ export default function DailyReviewView({
         setIsFlipped((prev) => !prev);
       } else if (e.key === '1') {
         e.preventDefault();
-        handleFlashcardResult(false);
+        handleFlashcardResult('forgot');
       } else if (e.key === '2') {
         e.preventDefault();
-        handleFlashcardResult(true);
+        handleFlashcardResult('hard');
+      } else if (e.key === '3') {
+        e.preventDefault();
+        handleFlashcardResult('good');
+      } else if (e.key === '4') {
+        e.preventDefault();
+        handleFlashcardResult('easy');
       } else if (e.key === 'ArrowRight') {
         e.preventDefault();
         handleNextFc();
@@ -87,9 +150,9 @@ export default function DailyReviewView({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [activeMode, currentFcWord, fcIndex, isFlipped]);
 
-  const handleFlashcardResult = (isCorrect) => {
+  const handleFlashcardResult = (rating) => {
     if (!currentFcWord) return;
-    onRecordReview(currentFcWord.id, isCorrect);
+    onRecordReview(currentFcWord.id, rating);
     handleNextFc();
   };
 
@@ -402,23 +465,59 @@ export default function DailyReviewView({
                   padding: '0 8px'
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                   <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
                     Thẻ {fcIndex + 1} / {reviewDeck.length}
                   </span>
                   <span
                     style={{
                       fontSize: '0.72rem',
-                      fontWeight: 700,
+                      fontWeight: 800,
                       background: '#eef2ff',
                       color: 'var(--primary)',
                       padding: '2px 8px',
                       borderRadius: 'var(--radius-pill)',
-                      border: '1px solid #c7d2fe'
+                      border: '1.5px solid #1E1B4B'
                     }}
                   >
                     Hộp {currentFcWord.box || 1}
                   </span>
+                  {currentFcWord.lastRating && (
+                    <span
+                      style={{
+                        fontSize: '0.7rem',
+                        fontWeight: 800,
+                        padding: '2px 8px',
+                        borderRadius: 'var(--radius-pill)',
+                        border: '1.5px solid #1E1B4B',
+                        background:
+                          currentFcWord.lastRating === 'forgot'
+                            ? '#FFF2EC'
+                            : currentFcWord.lastRating === 'hard'
+                            ? '#FEF9EC'
+                            : currentFcWord.lastRating === 'good'
+                            ? '#EDFAF3'
+                            : '#EEF2FF',
+                        color:
+                          currentFcWord.lastRating === 'forgot'
+                            ? '#F2683A'
+                            : currentFcWord.lastRating === 'hard'
+                            ? '#D98A1B'
+                            : currentFcWord.lastRating === 'good'
+                            ? '#1F9D63'
+                            : '#4F46E5'
+                      }}
+                    >
+                      Lần trước:{' '}
+                      {currentFcWord.lastRating === 'forgot'
+                        ? 'Quên'
+                        : currentFcWord.lastRating === 'hard'
+                        ? 'Mơ hồ'
+                        : currentFcWord.lastRating === 'good'
+                        ? 'Nhớ'
+                        : 'Nhớ rồi'}
+                    </span>
+                  )}
                 </div>
 
                 <div style={{ display: 'flex', gap: '6px' }}>
@@ -578,39 +677,307 @@ export default function DailyReviewView({
                 </div>
               </div>
 
-              {/* Bottom Action Controls */}
-              <div className="review-actions">
-                <button
-                  className="btn"
-                  onClick={() => handleFlashcardResult(false)}
-                  style={{ background: '#fef2f2', border: '1px solid #fecaca', color: '#dc2626' }}
-                  title="Chưa nhớ - Giảm về Hộp 1"
+              {/* Bottom Action Controls: 4-tier SRS Assessment + Flip */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '20px' }}>
+                {/* 4 SRS Rating Buttons */}
+                <div
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(4, 1fr)',
+                    gap: '10px'
+                  }}
                 >
-                  <XCircle size={16} />
-                  <span>Chưa nhớ</span>
-                  <kbd>1</kbd>
-                </button>
+                  {RATINGS.map((r) => {
+                    const IconComp = r.Icon;
+                    return (
+                      <button
+                        key={r.rating}
+                        type="button"
+                        onClick={() => handleFlashcardResult(r.rating)}
+                        title={`${r.label}: ${r.when} • ${r.then} (Phím ${r.kb})`}
+                        style={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '6px',
+                          padding: '12px 6px',
+                          background: r.bg,
+                          border: '2px solid #1E1B4B',
+                          borderRadius: '16px',
+                          boxShadow: '0 3px 0 #1E1B4B',
+                          cursor: 'pointer',
+                          transition: 'transform 0.12s ease, box-shadow 0.12s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.transform = 'translateY(-2px)';
+                          e.currentTarget.style.boxShadow = '0 5px 0 #1E1B4B';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.transform = 'translateY(0)';
+                          e.currentTarget.style.boxShadow = '0 3px 0 #1E1B4B';
+                        }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <span
+                            style={{
+                              width: '22px',
+                              height: '22px',
+                              borderRadius: '50%',
+                              background: r.color,
+                              color: '#fff',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              border: '1.5px solid #1E1B4B',
+                              flexShrink: 0
+                            }}
+                          >
+                            <IconComp size={12} strokeWidth={2.5} />
+                          </span>
+                          <span
+                            style={{
+                              fontSize: '0.92rem',
+                              fontWeight: 800,
+                              color: '#1E1B4B',
+                              fontFamily: 'var(--font-heading)'
+                            }}
+                          >
+                            {r.label}
+                          </span>
+                          <kbd
+                            style={{
+                              fontSize: '0.65rem',
+                              fontWeight: 800,
+                              fontFamily: 'monospace',
+                              padding: '1px 5px',
+                              borderRadius: '4px',
+                              background: '#ffffff',
+                              border: '1.5px solid #1E1B4B',
+                              color: '#1E1B4B'
+                            }}
+                          >
+                            {r.kb}
+                          </kbd>
+                        </div>
 
+                        <span
+                          style={{
+                            fontSize: '0.72rem',
+                            fontWeight: 700,
+                            color: r.color,
+                            letterSpacing: '-0.01em'
+                          }}
+                        >
+                          {r.intervalHint}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Flip Card Bar */}
                 <button
-                  className="btn btn-secondary"
+                  type="button"
                   onClick={() => setIsFlipped(!isFlipped)}
-                  title="Lật thẻ"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px',
+                    padding: '10px 18px',
+                    background: '#ffffff',
+                    border: '2px solid #1E1B4B',
+                    borderRadius: '14px',
+                    boxShadow: '0 2px 0 #1E1B4B',
+                    fontSize: '0.88rem',
+                    fontWeight: 700,
+                    color: '#1E1B4B',
+                    cursor: 'pointer',
+                    transition: 'all 0.12s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#F8FAFC';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#ffffff';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
                 >
-                  <RotateCcw size={15} />
-                  <span>Lật</span>
-                  <kbd>Space</kbd>
+                  <RotateCcw size={16} />
+                  <span>{isFlipped ? 'Lật lại mặt trước' : 'Lật xem nghĩa & câu ví dụ'}</span>
+                  <kbd
+                    style={{
+                      fontSize: '0.7rem',
+                      fontWeight: 800,
+                      fontFamily: 'monospace',
+                      padding: '2px 8px',
+                      borderRadius: '6px',
+                      background: '#F1F5F9',
+                      border: '1.5px solid #1E1B4B',
+                      marginLeft: '4px'
+                    }}
+                  >
+                    Space
+                  </kbd>
                 </button>
 
-                <button
-                  className="btn"
-                  onClick={() => handleFlashcardResult(true)}
-                  style={{ background: '#ecfdf5', border: '1px solid #a7f3d0', color: '#059669' }}
-                  title="Đã nhớ tốt - Tăng lên Hộp tiếp theo"
-                >
-                  <CheckCircle2 size={16} />
-                  <span>Đã nhớ</span>
-                  <kbd>2</kbd>
-                </button>
+                {/* Cross-Screen Hub: Liên kết tức thì sang Từ điển, Bác sĩ ngữ pháp, Từ đồng nghĩa, 4 Kỹ Năng, Sổ từ */}
+                {currentFcWord && (
+                  <div
+                    style={{
+                      marginTop: '6px',
+                      padding: '12px 16px',
+                      borderRadius: '14px',
+                      background: '#FAF5FF',
+                      border: '2px solid #1E1B4B',
+                      boxShadow: '0 3px 0 #1E1B4B',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      flexWrap: 'wrap',
+                      gap: '8px'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <Sparkles size={15} color="#7E22CE" />
+                      <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#1E1B4B' }}>
+                        Khám phá sâu từ "{currentFcWord.word}":
+                      </span>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                      {onLookupDictionary && (
+                        <button
+                          type="button"
+                          onClick={() => onLookupDictionary(currentFcWord.word)}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            padding: '5px 10px',
+                            borderRadius: '8px',
+                            background: '#ffffff',
+                            border: '1.5px solid #1E1B4B',
+                            color: '#1E1B4B',
+                            fontSize: '0.78rem',
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                            boxShadow: '0 2px 0 #1E1B4B'
+                          }}
+                          title="Tra cứu từ điển Anh-Việt đầy đủ với IPA & collocations"
+                        >
+                          <Search size={13} color="#2563EB" />
+                          <span>📖 Tra từ điển</span>
+                        </button>
+                      )}
+
+                      {onTryInDoctor && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const sentence = currentFcWord.examples?.[0]?.en || `Please make sure to apply the concept of ${currentFcWord.word} in our team project.`;
+                            onTryInDoctor(sentence);
+                          }}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            padding: '5px 10px',
+                            borderRadius: '8px',
+                            background: '#ffffff',
+                            border: '1.5px solid #1E1B4B',
+                            color: '#1E1B4B',
+                            fontSize: '0.78rem',
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                            boxShadow: '0 2px 0 #1E1B4B'
+                          }}
+                          title="Thử đặt câu hoặc sửa câu ví dụ trong Bác sĩ ngữ pháp"
+                        >
+                          <Stethoscope size={13} color="#059669" />
+                          <span>🩺 Luyện viết câu</span>
+                        </button>
+                      )}
+
+                      {onViewSynonyms && (
+                        <button
+                          type="button"
+                          onClick={() => onViewSynonyms(currentFcWord.word)}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            padding: '5px 10px',
+                            borderRadius: '8px',
+                            background: '#ffffff',
+                            border: '1.5px solid #1E1B4B',
+                            color: '#1E1B4B',
+                            fontSize: '0.78rem',
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                            boxShadow: '0 2px 0 #1E1B4B'
+                          }}
+                          title="Xem từ đồng nghĩa và biến thể từ"
+                        >
+                          <Repeat size={13} color="#7E22CE" />
+                          <span>🔄 Từ đồng nghĩa</span>
+                        </button>
+                      )}
+
+                      {onOpenIn4Skills && (
+                        <button
+                          type="button"
+                          onClick={() => onOpenIn4Skills(currentFcWord.word)}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            padding: '5px 10px',
+                            borderRadius: '8px',
+                            background: '#ffffff',
+                            border: '1.5px solid #1E1B4B',
+                            color: '#1E1B4B',
+                            fontSize: '0.78rem',
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                            boxShadow: '0 2px 0 #1E1B4B'
+                          }}
+                          title="Mở luyện tập trong bộ 4 Kỹ Năng"
+                        >
+                          <GraduationCap size={13} color="#2563EB" />
+                          <span>⚡ 4 Kỹ Năng</span>
+                        </button>
+                      )}
+
+                      {onOpenVocab && (
+                        <button
+                          type="button"
+                          onClick={onOpenVocab}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '4px',
+                            padding: '5px 10px',
+                            borderRadius: '8px',
+                            background: '#ffffff',
+                            border: '1.5px solid #1E1B4B',
+                            color: '#1E1B4B',
+                            fontSize: '0.78rem',
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                            boxShadow: '0 2px 0 #1E1B4B'
+                          }}
+                          title="Mở xem trong Sổ từ vựng"
+                        >
+                          <BookOpen size={13} color="#4F46E5" />
+                          <span>📚 Sổ từ</span>
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           )}

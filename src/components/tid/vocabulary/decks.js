@@ -2,6 +2,8 @@
 import index from '../../../data/tid/vocabulary/index.json';
 import { getCustomWords } from './store';
 
+// Brand our own deck tab instead of the source site's name.
+for (const t of index.tabs) if (t.id === 'tidvocab') t.label = 'IELTS Vocab';
 export { index };
 const loaders = import.meta.glob('../../../data/tid/vocabulary/decks/*.json');
 const memo = {};
@@ -22,9 +24,49 @@ export const tabOfCard = id => index.tabs.find(t => index.cards[t.id].some(c => 
  *   { cards: [cardId…], units?: [unitId…] }  ->  { key, title, words[] }
  * Several cards of the same tab can be combined (idioms / phrasal verbs: Ctrl/⌘ + click).
  */
-export async function buildSession({ cards, units }) {
-  if (cards[0] === 'custom') {
-    return { key: 'custom', sel: { cards: ['custom'] }, title: 'Bộ từ của bản thân', words: getCustomWords().map(w => ({ ...w, deck: 'Cá nhân', deckId: 'custom' })) };
+export async function buildSession({ cards, units, tag, deckId }) {
+  if (cards && (cards[0] === 'custom' || cards[0].startsWith('custom:'))) {
+    const allCustom = getCustomWords();
+    let picked = allCustom;
+    let title = 'Sổ từ vựng của tôi';
+
+    if (cards[0].startsWith('custom:')) {
+      const rawTarget = decodeURIComponent(cards[0].slice(7)).trim();
+      if (rawTarget && rawTarget.toLowerCase() !== 'all') {
+        const lower = rawTarget.toLowerCase();
+        picked = allCustom.filter(w =>
+          (w.deck && w.deck.toLowerCase() === lower) ||
+          (w.deckId && w.deckId.toLowerCase() === `custom:${lower}`) ||
+          (Array.isArray(w.tags) && w.tags.some(t => t.toLowerCase() === lower))
+        );
+        title = `Bộ từ: ${rawTarget}`;
+      } else {
+        title = 'Tất cả từ vựng của tôi';
+      }
+    } else if (units && units.length > 0) {
+      const lowerUnits = units.map(u => u.toLowerCase());
+      picked = allCustom.filter(w =>
+        lowerUnits.includes((w.deck || '').toLowerCase()) ||
+        lowerUnits.includes((w.deckId || '').toLowerCase()) ||
+        (Array.isArray(w.tags) && w.tags.some(t => lowerUnits.includes(t.toLowerCase())))
+      );
+      title = units.length === 1 ? `Bộ từ: ${units[0]}` : `Đã chọn ${units.length} bộ từ`;
+    }
+
+    if (!cards[0].startsWith('custom:') && !picked.length && allCustom.length) {
+      picked = allCustom;
+    }
+
+    return {
+      key: cards[0] + (units?.length ? `+${units.join('+')}` : ''),
+      sel: { cards, units, tag, deckId },
+      title,
+      words: picked.map(w => ({
+        ...w,
+        deck: w.deck || title,
+        deckId: w.deckId || cards[0]
+      }))
+    };
   }
   const decks = await Promise.all(cards.map(loadDeck));
   const words = [];

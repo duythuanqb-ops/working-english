@@ -52,7 +52,7 @@ const lsSet = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } ca
 // ---- text helpers (ports of the site's Q / Y / K) ----
 function renderInline(text) {
   return text.split(/(\*\*.*?\*\*|\*.*?\*|\[IMG:.*?\])/g).filter(Boolean).map((p, i) => {
-    if (p.startsWith('[IMG:') && p.endsWith(']')) return <img key={i} src={p.slice(5, -1)} className="my-3 max-w-full rounded-lg" alt="" />;
+    if (p.startsWith('[IMG:') && p.endsWith(']')) return <img loading="lazy" decoding="async" key={i} src={p.slice(5, -1)} className="my-3 max-w-full rounded-lg" alt="" />;
     if (p.startsWith('**') && p.endsWith('**') && p.length > 4) return <strong key={i}>{p.slice(2, -2)}</strong>;
     if (p.startsWith('*') && p.endsWith('*') && p.length > 2) return <em key={i}>{p.slice(1, -1)}</em>;
     return <React.Fragment key={i}>{p}</React.Fragment>;
@@ -139,7 +139,7 @@ function Portal({ onBack, counts, onPick }) {
               className="group relative flex cursor-pointer flex-col overflow-hidden rounded-[36px] border-4 border-black bg-white shadow-[8px_8px_0_rgba(0,0,0,1)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[12px_12px_0_rgba(0,0,0,1)]">
               {s.isRecommended && <div className="absolute right-4 top-4 z-10 rotate-3 rounded-full border-2 border-black bg-yellow-300 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-black shadow-[2px_2px_0_rgba(0,0,0,1)]">Recommended by TID</div>}
               <div className="relative aspect-[3/4] w-full overflow-hidden border-b-4 border-black bg-white">
-                <img src={asset(`assets/tid/reading/press/${s.image}`)} alt={s.name} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+                <img loading="lazy" decoding="async" src={asset(`assets/tid/reading/press/${s.image}`)} alt={s.name} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
               </div>
             </div>
           ))}
@@ -181,8 +181,8 @@ function NewspaperHome({ source, articles, saved, onToggleSave, onOpen, onBack }
       <div className="mx-auto mt-12 max-w-7xl px-4 md:px-8">
         {hero && (
           <div onClick={() => onOpen(hero)} className="group relative mb-16 aspect-[16/9] max-h-[600px] w-full cursor-pointer overflow-hidden rounded-[32px] shadow-lg">
-            {hero.image && <img src={hero.image} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" />}
-            <div className="absolute inset-0 bg-black/55 backdrop-blur-[1px] transition-all duration-300 group-hover:bg-black/60" />
+            {hero.image && <img loading="lazy" decoding="async" src={hero.image} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]" />}
+            <div className="absolute inset-0 bg-black/60 transition-colors duration-300 group-hover:bg-black/65" />
             <div className="absolute inset-0 mx-auto flex max-w-4xl flex-col items-center justify-center p-8 text-center">
               {hero.category && <span className="mb-4 rounded-full border border-[#a3cf62]/20 bg-[#a3cf62]/10 px-3.5 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] text-[#a3cf62]">{hero.category}</span>}
               <h2 className="mb-4 font-serif text-3xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">{hero.title}</h2>
@@ -265,7 +265,7 @@ function Paragraph({ text, pi, dark, font, size, activeId, onHover, onLeave, onP
   return (
     <p className="mb-6 leading-relaxed" style={{ fontSize: `${size}px`, fontFamily: font }}>
       {toks.map(tk => {
-        if (tk.img) return <img key={tk.k} src={tk.url} className="my-3 max-w-full rounded-lg" alt="" />;
+        if (tk.img) return <img loading="lazy" decoding="async" key={tk.k} src={tk.url} className="my-3 max-w-full rounded-lg" alt="" />;
         if (!tk.t) return null;
         const id = `${pi}.${tk.k}`;
         const gloss = map[tk.k];

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Repeat,
   Sparkles,
@@ -7,7 +7,12 @@ import {
   Volume2,
   Loader2,
   BookOpen,
-  ArrowRight
+  ArrowRight,
+  Search,
+  Stethoscope,
+  BookmarkPlus,
+  BookmarkCheck,
+  GraduationCap
 } from 'lucide-react';
 import { aiService } from '../services/aiService';
 import { ttsService } from '../services/ttsService';
@@ -16,11 +21,32 @@ export default function SynonymsView({
   words,
   synonymGroups,
   onSaveSynonymGroups,
-  speechVoice
+  speechVoice,
+  initialWord = '',
+  onLookupDictionary,
+  onTryInDoctor,
+  onSaveWord,
+  onStartReview,
+  onOpenIn4Skills
 }) {
   const [searchWord, setSearchWord] = useState('');
   const [isLoadingAi, setIsLoadingAi] = useState(false);
   const [aiResult, setAiResult] = useState(null);
+
+  // Auto-search or prefill when initialWord is passed
+  useEffect(() => {
+    if (initialWord && initialWord.trim()) {
+      const term = initialWord.trim();
+      setSearchWord(term);
+      // Run AI synonym analysis immediately
+      setIsLoadingAi(true);
+      setAiResult(null);
+      aiService.analyzeSynonyms(term)
+        .then((res) => setAiResult(res))
+        .catch((err) => console.error(err))
+        .finally(() => setIsLoadingAi(false));
+    }
+  }, [initialWord]);
 
   // New Group Modal/State
   const [isCreatingGroup, setIsCreatingGroup] = useState(false);
@@ -214,6 +240,127 @@ export default function SynonymsView({
                       {w.exampleVi && <div style={{ marginTop: '2px' }}>➔ {w.exampleVi}</div>}
                     </div>
                   )}
+
+                  {/* Cross-Screen Quick Actions */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      marginTop: '10px',
+                      paddingTop: '8px',
+                      borderTop: '1px dashed var(--border-subtle)',
+                      flexWrap: 'wrap'
+                    }}
+                  >
+                    {onLookupDictionary && (
+                      <button
+                        type="button"
+                        onClick={() => onLookupDictionary(w.word)}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '3px',
+                          padding: '3px 8px',
+                          borderRadius: '6px',
+                          background: '#ffffff',
+                          border: '1px solid #cbd5e1',
+                          color: '#2563eb',
+                          fontSize: '0.72rem',
+                          fontWeight: 700,
+                          cursor: 'pointer'
+                        }}
+                        title="Tra cứu từ điển Anh-Việt chi tiết"
+                      >
+                        <Search size={11} />
+                        <span>Từ điển</span>
+                      </button>
+                    )}
+
+                    {onTryInDoctor && (
+                      <button
+                        type="button"
+                        onClick={() => onTryInDoctor(w.exampleEn || `How do I apply the word ${w.word} effectively?`)}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '3px',
+                          padding: '3px 8px',
+                          borderRadius: '6px',
+                          background: '#ffffff',
+                          border: '1px solid #cbd5e1',
+                          color: '#059669',
+                          fontSize: '0.72rem',
+                          fontWeight: 700,
+                          cursor: 'pointer'
+                        }}
+                        title="Đặt câu trong Bác sĩ ngữ pháp"
+                      >
+                        <Stethoscope size={11} />
+                        <span>Viết câu</span>
+                      </button>
+                    )}
+
+                    {onOpenIn4Skills && (
+                      <button
+                        type="button"
+                        onClick={() => onOpenIn4Skills(w.word)}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '3px',
+                          padding: '3px 8px',
+                          borderRadius: '6px',
+                          background: '#ffffff',
+                          border: '1px solid #cbd5e1',
+                          color: '#7e22ce',
+                          fontSize: '0.72rem',
+                          fontWeight: 700,
+                          cursor: 'pointer'
+                        }}
+                        title="Luyện trong 4 Kỹ Năng"
+                      >
+                        <GraduationCap size={11} />
+                        <span>4 Kỹ Năng</span>
+                      </button>
+                    )}
+
+                    {onSaveWord && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const isAlreadySaved = words?.some((existing) => existing.word.toLowerCase() === w.word.toLowerCase());
+                          if (!isAlreadySaved) {
+                            onSaveWord({
+                              word: w.word,
+                              ipa: w.ipa || '',
+                              meaningVi: w.meaningVi || '',
+                              examples: w.exampleEn ? [{ en: w.exampleEn, vi: w.exampleVi || '' }] : [],
+                              tags: ['Đồng nghĩa', searchWord]
+                            });
+                          }
+                        }}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '3px',
+                          padding: '3px 8px',
+                          borderRadius: '6px',
+                          background: '#ffffff',
+                          border: '1px solid #cbd5e1',
+                          color: '#4f46e5',
+                          fontSize: '0.72rem',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          marginLeft: 'auto'
+                        }}
+                        title="Lưu từ này vào Sổ từ vựng"
+                      >
+                        <BookmarkPlus size={11} />
+                        <span>Lưu sổ từ</span>
+                      </button>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

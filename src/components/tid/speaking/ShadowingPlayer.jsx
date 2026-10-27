@@ -65,7 +65,7 @@ function WordModal({ word, context, onClose, onSaveWord }) {
   const def = data?.lexicalMeanings?.[0]?.definitions?.[0]?.definition;
   return (
     <div className="tid-root fixed inset-0 z-[10050] flex items-center justify-center p-4" onClick={onClose}>
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/40" />
       <div className="relative w-full max-w-sm rounded-[28px] border border-slate-100 bg-white p-6 text-slate-900 shadow-2xl" onClick={e => e.stopPropagation()}>
         <button onClick={onClose} className="absolute right-4 top-4 text-slate-400 transition-colors hover:text-slate-800"><X size={18} /></button>
         <div className="mb-3 flex items-center gap-3 pr-6">
@@ -123,7 +123,7 @@ function ResultScreen({ mode, videoId, title, elapsed, done, total, stats, onJum
               <img src={asset('assets/tid/speaking/dino.webp')} alt="" className="h-40 w-40 object-contain [image-rendering:pixelated]" />
             </div>
           </div>
-          <div className="relative z-10 rounded-[40px] border border-white/20 bg-[#5b6e4e]/90 p-8 shadow-2xl backdrop-blur-md md:p-12">
+          <div className="relative z-10 rounded-[40px] border border-white/20 bg-[#5b6e4e]/90 p-8 shadow-2xl md:p-12">
             <div className="grid grid-cols-1 gap-8 divide-y divide-white/10 md:grid-cols-3 md:gap-4 md:divide-x md:divide-y-0">
               <div className="flex flex-col items-center justify-center space-y-4 px-2 py-4 md:py-0">
                 <img src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} alt="Thumbnail" className="w-full max-w-[200px] rounded-xl border border-white/10 object-cover shadow-md" />
@@ -142,7 +142,7 @@ function ResultScreen({ mode, videoId, title, elapsed, done, total, stats, onJum
             </div>
           </div>
           {stats && (
-            <div className="relative z-10 space-y-8 rounded-[40px] border border-white/20 bg-[#5b6e4e]/90 p-8 shadow-2xl backdrop-blur-md md:p-10">
+            <div className="relative z-10 space-y-8 rounded-[40px] border border-white/20 bg-[#5b6e4e]/90 p-8 shadow-2xl md:p-10">
               <div className="grid grid-cols-3 gap-4 text-center">
                 {[[`${stats.avgScore}%`, 'Điểm trung bình'], [stats.avgAccuracy != null ? `${stats.avgAccuracy}%` : '—', '🎯 Chính xác'], [stats.avgFluency != null ? `${stats.avgFluency}%` : '—', '🌊 Trôi chảy']].map(([v, l]) => (
                   <div key={l}><div className="text-4xl font-black text-white">{v}</div><div className="mt-1 text-[11px] font-bold uppercase tracking-widest text-white/60">{l}</div></div>
@@ -194,7 +194,7 @@ function ResultScreen({ mode, videoId, title, elapsed, done, total, stats, onJum
           </div>
         </div>
       </div>
-      <div className="pointer-events-none fixed bottom-4 right-6 z-[10000] text-xs font-bold tracking-widest text-white/50">theieltsdictionary.com</div>
+      <div className="pointer-events-none fixed bottom-4 right-6 z-[10000] text-xs font-bold tracking-widest text-white/50">workingenglish.edu.vn</div>
     </div>
   );
 }
@@ -740,7 +740,7 @@ export default function ShadowingPlayer({ videoId, initialMode = 'shadowing', on
       )}
 
       {resume && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-md">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4">
           <div className="relative w-full max-w-sm overflow-hidden rounded-3xl shadow-2xl">
             <div style={{ background: 'linear-gradient(145deg, #1a2010 0%, #252e14 60%, #1e2812 100%)', border: '1.5px solid rgba(122,157,49,.35)' }} className="rounded-3xl p-8 text-center">
               <div style={{ background: 'rgba(110,124,63,.22)', border: '1.5px solid rgba(122,157,49,.4)' }} className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl">

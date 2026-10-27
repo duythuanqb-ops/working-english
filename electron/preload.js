@@ -20,5 +20,9 @@ contextBridge.exposeInMainWorld('electronAPI', {
     const handler = (_event, data) => callback(data);
     ipcRenderer.on('exam-media-progress', handler);
     return () => ipcRenderer.removeListener('exam-media-progress', handler);
-  }
+  },
+  sendNotification: (data) => ipcRenderer.invoke('send-desktop-notification', data),
+  saveUserData: (data) => ipcRenderer.invoke('save-user-data', data),
+  loadUserData: () => ipcRenderer.invoke('load-user-data'),
+  getUserDataPath: () => ipcRenderer.invoke('get-user-data-path')
 });

@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
-import { X, Sparkles, Loader2, Volume2, Plus, Trash2 } from 'lucide-react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { X, Sparkles, Loader2, Volume2, Plus, Trash2, FolderPlus } from 'lucide-react';
 import { aiService } from '../services/aiService';
 import { ttsService } from '../services/ttsService';
+import { storageService } from '../services/storageService';
 import CustomSelect from './CustomSelect';
 
-export default function AddWordModal({ isOpen, onClose, onSave, speechVoice }) {
+export default function AddWordModal({ isOpen, onClose, onSave, speechVoice, initialDeck }) {
+  const customDecks = useMemo(() => storageService.getCustomDecks(), [isOpen]);
   const [word, setWord] = useState('');
   const [ipa, setIpa] = useState('');
   const [partOfSpeech, setPartOfSpeech] = useState('noun');
   const [meaningVi, setMeaningVi] = useState('');
   const [meaningEn, setMeaningEn] = useState('');
+  const [deck, setDeck] = useState(initialDeck || customDecks[0]?.name || '__custom_new__');
+  const [newDeckName, setNewDeckName] = useState('');
   const [examples, setExamples] = useState([
     { en: '', vi: '', context: 'Workplace' }
   ]);
@@ -21,6 +25,18 @@ export default function AddWordModal({ isOpen, onClose, onSave, speechVoice }) {
 
   const [isLoadingAi, setIsLoadingAi] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+
+  useEffect(() => {
+    if (isOpen) {
+      if (initialDeck) {
+        setDeck(initialDeck);
+      } else if (customDecks.length > 0) {
+        setDeck(customDecks[0].name);
+      } else {
+        setDeck('__custom_new__');
+      }
+    }
+  }, [isOpen, initialDeck, customDecks]);
 
   if (!isOpen) return null;
 
@@ -99,17 +115,23 @@ export default function AddWordModal({ isOpen, onClose, onSave, speechVoice }) {
       .map((s) => s.trim())
       .filter(Boolean);
 
+    const finalDeck = (deck === '__custom_new__' ? newDeckName.trim() : (deck || '').trim()) || (customDecks[0]?.name || 'Bộ từ của tôi');
+    if (finalDeck && !customDecks.some((d) => d.name.toLowerCase() === finalDeck.toLowerCase())) {
+      storageService.addCustomDeck({ name: finalDeck });
+    }
+
     onSave({
       word: word.trim(),
       ipa: ipa.trim(),
       partOfSpeech,
+      deck: finalDeck,
       meaningVi: meaningVi.trim(),
       meaningEn: meaningEn.trim(),
       examples: examples.filter((ex) => ex.en.trim().length > 0),
       synonyms,
       antonyms,
       collocations,
-      tags: tags.length > 0 ? tags : ['General'],
+      tags: tags.length > 0 ? [finalDeck, ...tags.filter((t) => t.toLowerCase() !== finalDeck.toLowerCase())] : [finalDeck],
       notes: notes.trim()
     });
 
@@ -382,18 +404,48 @@ export default function AddWordModal({ isOpen, onClose, onSave, speechVoice }) {
               </div>
             </div>
 
-            {/* Tags */}
-            <div>
-              <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
-                Thẻ chủ đề (Tags)
-              </label>
-              <input
-                type="text"
-                className="input-field"
-                placeholder="Ví dụ: Meeting, Email, Presentation, Finance..."
-                value={tagsText}
-                onChange={(e) => setTagsText(e.target.value)}
-              />
+            {/* Bộ từ (Deck) & Tags */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+              <div>
+                <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
+                  Gom vào Bộ từ (Deck)
+                </label>
+                <select
+                  className="input-field"
+                  style={{ width: '100%' }}
+                  value={deck}
+                  onChange={(e) => setDeck(e.target.value)}
+                >
+                  {customDecks.map((d) => (
+                    <option key={d.id} value={d.name}>{d.name}</option>
+                  ))}
+                  <option value="__custom_new__">+ Tạo bộ từ mới...</option>
+                </select>
+                {deck === '__custom_new__' && (
+                  <input
+                    type="text"
+                    className="input-field"
+                    style={{ marginTop: '6px' }}
+                    placeholder="Nhập tên bộ từ mới..."
+                    value={newDeckName}
+                    onChange={(e) => setNewDeckName(e.target.value)}
+                    autoFocus
+                  />
+                )}
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '6px' }}>
+                  Thẻ phụ (Tags)
+                </label>
+                <input
+                  type="text"
+                  className="input-field"
+                  placeholder="Ví dụ: Email, Meeting..."
+                  value={tagsText}
+                  onChange={(e) => setTagsText(e.target.value)}
+                />
+              </div>
             </div>
           </div>
 

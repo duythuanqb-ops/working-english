@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Stethoscope,
   Sparkles,
@@ -10,12 +10,21 @@ import {
   Volume2,
   ArrowRight,
   HelpCircle,
-  Lightbulb
+  Lightbulb,
+  Search,
+  BookOpen,
+  BookmarkPlus
 } from 'lucide-react';
 import { aiService } from '../services/aiService';
 import { ttsService } from '../services/ttsService';
 
-export default function GrammarDoctorView({ initialSentence = '', speechVoice }) {
+export default function GrammarDoctorView({
+  initialSentence = '',
+  speechVoice,
+  onLookupDictionary,
+  onSaveWord,
+  onOpenGrammarHandbook
+}) {
   const [inputText, setInputText] = useState(
     initialSentence ||
       'We will discuss about this issue in the meeting and I have some good advices for you.'
@@ -24,6 +33,24 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
   const [analysisResult, setAnalysisResult] = useState(null);
   const [copied, setCopied] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+
+  // Auto-check sentence when passed from another view
+  useEffect(() => {
+    if (initialSentence && initialSentence.trim()) {
+      const sent = initialSentence.trim();
+      setInputText(sent);
+      setIsLoading(true);
+      setAnalysisResult(null);
+      setErrorMsg('');
+      aiService.checkGrammar(sent)
+        .then((res) => setAnalysisResult(res))
+        .catch((err) => {
+          console.error(err);
+          setErrorMsg('Không thể kiểm tra ngữ pháp lúc này.');
+        })
+        .finally(() => setIsLoading(false));
+    }
+  }, [initialSentence]);
 
   // Sample sentences for quick testing
   const sampleSentences = [
@@ -356,6 +383,106 @@ export default function GrammarDoctorView({ initialSentence = '', speechVoice })
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginTop: '4px' }}>
                       <strong style={{ color: 'var(--text-main)' }}>Giải thích:</strong> {issue.explanationVi}
                     </p>
+
+                    {/* Cross-Screen Actions for this Issue */}
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        marginTop: '4px',
+                        paddingTop: '6px',
+                        borderTop: '1px dashed var(--border-subtle)',
+                        flexWrap: 'wrap'
+                      }}
+                    >
+                      {onLookupDictionary && issue.correction && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            // Extract main word if correction has multiple words
+                            const mainWord = issue.correction.split(' ')[0].replace(/[^a-zA-Z]/g, '');
+                            onLookupDictionary(mainWord || issue.correction);
+                          }}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '3px',
+                            padding: '3px 8px',
+                            borderRadius: '6px',
+                            background: '#ffffff',
+                            border: '1px solid #cbd5e1',
+                            color: '#2563eb',
+                            fontSize: '0.72rem',
+                            fontWeight: 700,
+                            cursor: 'pointer'
+                          }}
+                          title={`Tra cứu từ điển cho "${issue.correction}"`}
+                        >
+                          <Search size={11} />
+                          <span>Tra từ điển</span>
+                        </button>
+                      )}
+
+                      {onOpenGrammarHandbook && (
+                        <button
+                          type="button"
+                          onClick={() => onOpenGrammarHandbook(issue.ruleName)}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '3px',
+                            padding: '3px 8px',
+                            borderRadius: '6px',
+                            background: '#ffffff',
+                            border: '1px solid #cbd5e1',
+                            color: '#7e22ce',
+                            fontSize: '0.72rem',
+                            fontWeight: 700,
+                            cursor: 'pointer'
+                          }}
+                          title="Mở Cẩm nang ngữ pháp về chủ đề này"
+                        >
+                          <BookOpen size={11} />
+                          <span>Xem cẩm nang ngữ pháp</span>
+                        </button>
+                      )}
+
+                      {onSaveWord && issue.correction && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const wordToSave = issue.correction.split(' ')[0].replace(/[^a-zA-Z]/g, '');
+                            if (wordToSave) {
+                              onSaveWord({
+                                word: wordToSave,
+                                meaningVi: issue.explanationVi || 'Sửa lỗi ngữ pháp',
+                                examples: [{ en: analysisResult.correctedSentence, vi: '' }],
+                                tags: ['Bác sĩ ngữ pháp', issue.ruleName || 'Grammar']
+                              });
+                            }
+                          }}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '3px',
+                            padding: '3px 8px',
+                            borderRadius: '6px',
+                            background: '#ffffff',
+                            border: '1px solid #cbd5e1',
+                            color: '#059669',
+                            fontSize: '0.72rem',
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                            marginLeft: 'auto'
+                          }}
+                          title="Lưu từ/cụm từ chuẩn vào Sổ tay"
+                        >
+                          <BookmarkPlus size={11} />
+                          <span>Lưu vào Sổ từ</span>
+                        </button>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>

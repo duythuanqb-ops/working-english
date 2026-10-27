@@ -20,6 +20,17 @@ function write(key, value) {
 }
 let version = 0;
 listeners.add(() => { version++; });
+
+if (typeof window !== 'undefined') {
+  const bump = () => {
+    delete cache[KEYS.custom];
+    version++;
+    listeners.forEach(l => l());
+  };
+  window.addEventListener('we-words-updated', bump);
+  window.addEventListener('we-decks-updated', bump);
+}
+
 /** Re-render on any store change. */
 export function useStore() {
   return useSyncExternalStore(cb => { listeners.add(cb); return () => listeners.delete(cb); }, () => version);
@@ -63,6 +74,48 @@ export function rateWord(w, rating, deckId) {
   all[k] = { ease: r.easeFactor, interval: r.intervalDays, count: r.reviewCount, due: r.nextReviewAt, last: rating, at: Date.now(), d: deckId || prev.d };
   write(KEYS.srs, all);
   logActivity();
+
+  // Bi-directional sync: update working_english_words_v1 if present in notebook
+  try {
+    const raw = localStorage.getItem('working_english_words_v1');
+    if (raw) {
+      const words = JSON.parse(raw);
+      let changed = false;
+      const updatedWords = words.map((item) => {
+        if (wordKey(item.word) !== k) return item;
+        changed = true;
+        let newBox = item.box || 1;
+        let isCorrect = false;
+        if (rating === 'forgot') { newBox = 1; isCorrect = false; }
+        else if (rating === 'hard') { newBox = Math.max(1, Math.min(2, newBox)); isCorrect = false; }
+        else if (rating === 'good') { newBox = Math.min(5, newBox + 1); isCorrect = true; }
+        else if (rating === 'easy') { newBox = Math.min(5, Math.max(3, newBox + 2)); isCorrect = true; }
+
+        return {
+          ...item,
+          box: newBox,
+          reviewCount: (item.reviewCount || 0) + 1,
+          correctCount: (item.correctCount || 0) + (isCorrect ? 1 : 0),
+          lastRating: rating,
+          easeFactor: r.easeFactor,
+          intervalDays: r.intervalDays,
+          nextReviewAt: r.nextReviewAt,
+          lastReviewed: new Date().toISOString()
+        };
+      });
+
+      if (changed) {
+        localStorage.setItem('working_english_words_v1', JSON.stringify(updatedWords));
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(new CustomEvent('we-words-updated'));
+          window.dispatchEvent(new CustomEvent('we-activity-updated'));
+        }
+      }
+    }
+  } catch (err) {
+    console.warn('Failed to sync rateWord to working_english_words_v1:', err);
+  }
+
   return all[k];
 }
 /** Preview the interval a rating would give (for the rating buttons' hints). */
@@ -136,15 +189,62 @@ export function streak() {
   return n;
 }
 
-// ---------- user's own words ("Bộ từ của bản thân") ----------
-export const getCustomWords = () => read(KEYS.custom, []);
-export function addCustomWord(word) {
-  const list = getCustomWords().filter(w => wordKey(w.w) !== wordKey(word.w));
-  write(KEYS.custom, [{ ...word, addedAt: Date.now() }, ...list]);
-}
-export function removeCustomWord(w) {
-  write(KEYS.custom, getCustomWords().filter(x => wordKey(x.w) !== wordKey(w)));
-}
+// ---------- user's own words ("Bộ từ của bản thân / Sổ từ vựng") ----------
+export const getCustomWords = () => {
+  const manual = read(KEYS.custom, []) || [];
+  let appWords = [];
+  try {
+    const raw = typeof window !== 'undefined'
+      ? (localStorage.getItem('working_english_words_v1') || localStorage.getItem('working_english_vocab_words_v1'))
+      : null;
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        appWords = parsed.map(w => {
+          const deckName = (w.deck || (Array.isArray(w.tags) && w.tags[0]) || '').trim();
+          return {
+            id: w.id,
+            w: w.word || w.w || '',
+            vi: w.meaningVi || w.meaning || w.vi || '',
+            ex: w.examples?.[0]?.en || w.example || w.ex || '',
+            ipa: w.phonetic || w.ipa || '',
+            pos: w.partOfSpeech || w.pos || 'n',
+            syn: w.synonyms || w.syn || [],
+            ant: w.antonyms || w.ant || [],
+            forms: w.forms || [],
+            deck: deckName,
+            deckId: deckName ? `custom:${deckName}` : 'custom',
+            tags: Array.isArray(w.tags) ? w.tags : (w.tags ? [w.tags] : (deckName ? [deckName] : [])),
+            addedAt: w.createdAt || w.addedAt || w.dateAdded || Date.now()
+          };
+        });
+      }
+    }
+  } catch { /* ignore */ }
+
+  const map = new Map();
+  appWords.forEach(w => {
+    if (w.w && w.w.trim()) map.set(wordKey(w.w), w);
+  });
+  manual.forEach(w => {
+    if (w.w && w.w.trim()) {
+      const k = wordKey(w.w);
+      const prev = map.get(k) || {};
+      const deckName = (w.deck || prev.deck || '').trim();
+      map.set(k, {
+        ...prev,
+        ...w,
+        deck: deckName,
+        deckId: deckName ? `custom:${deckName}` : 'custom',
+        tags: w.tags || prev.tags || (deckName ? [deckName] : [])
+      });
+    }
+  });
+
+  return Array.from(map.values());
+};
+
+// ---------- small settings bag ----------
 
 // ---------- small settings bag ----------
 export function getSetting(name, fallback) { return read(`tid_vocab_${name}`, fallback); }

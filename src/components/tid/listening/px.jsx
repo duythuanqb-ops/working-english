@@ -1,67 +1,15 @@
-// Pixel-theme building blocks shared by the listening pages (ported from theieltsdictionary.com "px" kit).
-import React, { memo, useEffect, useMemo, useRef, useState } from 'react';
-import { asset } from '../shared';
+// Shared building blocks for the listening pages (WorkingEnglish skin) + the local progress store.
+import { useEffect, useState } from 'react';
+
+export { WeBackLink as PxBackLink, CamBadge as CamOrange } from '../weKit';
 
 export const PX_ROOT = 'px-root';
-export const PX_HERO_ART = 'pointer-events-none absolute inset-0 max-sm:[zoom:0.72]';
-export const pxAsset = name => asset(`assets/tid/listening/pixel/${name}`);
-export const GRASS_BG = { backgroundImage: `url('${pxAsset('grass.svg')}')`, backgroundSize: '96px 96px' };
-
-/** Rewrites site asset paths + font vars inside verbatim pixel-art markup. */
-export function localizeArt(html) {
-  return html
-    .replace(/\/assets\/pixel\//g, pxAsset(''))
-    .replace(/var\(--font-be-vietnam\)/g, '"Be Vietnam Pro"')
-    .replace(/var\(--font-bungee\)/g, '"Bungee"');
-}
-
-export function PxImg({ src, alt = '', className, style }) {
-  return <img src={pxAsset(src)} alt={alt} className={className} style={style} draggable={false} />;
-}
-
-export function CamOrange({ className = 'h-[1.1em] w-[1.1em]' }) {
-  return <PxImg src="orange.svg" alt="Cambridge" className={`inline-block shrink-0 ${className}`} />;
-}
-
-/** Replaces every "Cambridge" in a label by the orange icon (site behaviour). */
-export function withCamOrange(text, cls) {
-  const parts = text.split('Cambridge');
-  if (parts.length === 1) return text;
-  return parts.flatMap((p, i) => (i === 0 ? [p] : [<CamOrange key={i} className={cls} />, p]));
-}
-
-/** Animated art layer; animations only run when visible (like the site). */
-export const PixelArt = memo(function PixelArt({ html, className = 'pointer-events-none absolute inset-0' }) {
-  const inner = useMemo(() => ({ __html: localizeArt(html) }), [html]);
-  const ref = useRef(null);
-  const [idle, setIdle] = useState(false);
-  const [visible, setVisible] = useState(true);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || typeof IntersectionObserver === 'undefined') return undefined;
-    const io = new IntersectionObserver(([e]) => setVisible(e.isIntersecting), { rootMargin: '120px' });
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
-  useEffect(() => {
-    const t = setTimeout(() => setIdle(true), 300);
-    return () => clearTimeout(t);
-  }, []);
-  return <div ref={ref} aria-hidden="true" className={`px-art ${className}`} data-px-live={idle && visible ? '' : undefined} dangerouslySetInnerHTML={inner} />;
-});
-
-export function PxBackLink({ onClick, label, className = '' }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`inline-flex min-h-11 items-center gap-2 self-start rounded-full border-[3px] border-[#1F2A1A] bg-[#FDF5E0] px-4 text-[15px] font-bold text-[#1F2A1A] shadow-[0_4px_0_#1F2A1A] transition-[transform,box-shadow,background-color] hover:bg-[#F8BE33] active:translate-y-0.5 active:shadow-[0_2px_0_#1F2A1A] ${className}`}
-    >
-      <span aria-hidden="true">←</span>
-      {label}
-    </button>
-  );
-}
+/** Cream dotted page background shared by every listening screen. */
+export const PAGE_BG = {
+  backgroundColor: '#FFF8E7',
+  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='11' cy='11' r='1.5' fill='%231e1b4b' fill-opacity='.09'/%3E%3C/svg%3E")`,
+  backgroundSize: '22px 22px',
+};
 
 // ---- local progress store (same key scheme as the site: tid_progress_v1:<skill>:<id>) ----
 const PROGRESS_KEY = 'tid_progress_v1';

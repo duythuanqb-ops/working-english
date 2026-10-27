@@ -238,7 +238,7 @@ export default function DubbingPlayer({ videoId, onBack }) {
                       <button onClick={e => { e.stopPropagation(); playOriginal(s); }} className="inline-flex items-center gap-1.5 rounded-lg border-2 border-black bg-white px-3 py-1.5 text-xs font-black hover:bg-slate-50"><Play size={13} /> Câu gốc</button>
                       <button onClick={e => { e.stopPropagation(); speak(s.text, 'British'); }} title="Nghe giọng đọc chậm (TTS)" className="inline-flex items-center gap-1.5 rounded-lg border-2 border-slate-200 bg-white px-2.5 py-1.5 text-xs font-black text-slate-500 hover:border-black"><Volume2 size={13} /></button>
                       {isRec ? (
-                        <button onClick={e => { e.stopPropagation(); stopRec(); }} className="inline-flex items-center gap-1.5 rounded-lg border-2 border-black bg-[#E8505B] px-3 py-1.5 text-xs font-black text-white"><Square size={13} /> Dừng thu</button>
+                        <button onClick={e => { e.stopPropagation(); stopRec(); }} className="inline-flex items-center gap-1.5 rounded-lg border-2 border-black bg-[#F2683A] px-3 py-1.5 text-xs font-black text-white"><Square size={13} /> Dừng thu</button>
                       ) : (
                         <button disabled={recIdx !== null} onClick={e => { e.stopPropagation(); startRec(s); }} className="inline-flex items-center gap-1.5 rounded-lg border-2 border-black bg-[#1E3006] px-3 py-1.5 text-xs font-black text-white hover:bg-[#2c4410] disabled:opacity-40"><Mic size={13} /> {t ? 'Thu lại' : 'Thu giọng'}</button>
                       )}

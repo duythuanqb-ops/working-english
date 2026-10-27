@@ -1,12 +1,12 @@
-/* Vocabulary area — dashboard tokens + keyframes copied from theieltsdictionary.com (.tid-dash / td-* rules). */
+/* Vocabulary area — dashboard tokens (WorkingEnglish palette) + td-* keyframes. */
 .vc-dash {
-  --d-bg: #e9edf3; --d-surf: #fff; --d-surf2: #f1f3f7; --d-card: #fff; --d-ink: #1b1d22;
-  --d-mute: #6b7080; --d-line: #e4e7ed; --d-accent: #4f7cf7;
-  font-family: var(--font-jakarta), var(--font-sans);
+  --d-bg: #fff8e7; --d-surf: #ffffff; --d-surf2: #fbf3dc; --d-card: #ffffff; --d-ink: #1e1b4b;
+  --d-mute: #6b6790; --d-line: #eadfc4; --d-accent: #4f46e5; --d-edge: #1e1b4b;
+  font-family: 'Be Vietnam Pro', 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 .vc-dash.dark {
-  --d-bg: #0e1014; --d-surf: #171a20; --d-surf2: #232833; --d-card: #1f232b; --d-ink: #eef0f4;
-  --d-mute: #8d93a0; --d-line: #2a2f39; --d-accent: #4f7cf7;
+  --d-bg: #22263f; --d-surf: #2f3654; --d-surf2: #3b4366; --d-card: #2f3654; --d-ink: #fff8e7;
+  --d-mute: #b8b5d6; --d-line: #454d75; --d-accent: #8b85ff; --d-edge: #0f0d2b;
 }
 .vc-noscroll { scrollbar-width: none; }
 .vc-noscroll::-webkit-scrollbar { display: none; }

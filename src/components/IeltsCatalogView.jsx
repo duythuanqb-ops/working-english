@@ -355,14 +355,16 @@ export default function IeltsCatalogView({
                 type="button"
                 onClick={() => setSelectedCollection(col)}
                 style={{
-                  border: 'none',
-                  background: selectedCollection === col ? '#0284c7' : '#e2e8f0',
-                  color: selectedCollection === col ? '#ffffff' : '#334155',
-                  padding: '4px 12px',
-                  borderRadius: '10px',
-                  fontSize: '0.75rem',
-                  fontWeight: 700,
+                  border: '2px solid var(--we-ink)',
+                  background: selectedCollection === col ? 'var(--we-sun)' : '#ffffff',
+                  color: 'var(--we-ink)',
+                  padding: '5px 14px',
+                  borderRadius: '12px',
+                  fontSize: '0.8rem',
+                  fontWeight: 800,
                   cursor: 'pointer',
+                  boxShadow: selectedCollection === col ? 'var(--we-pop-sm)' : 'none',
+                  transform: selectedCollection === col ? 'translateY(-1px)' : 'none',
                   transition: 'all 0.15s ease'
                 }}
               >

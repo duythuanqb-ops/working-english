@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Check, Eye, EyeOff, Layers, Search, Sparkles, X 
 import { BUILDER, countWords, loadBuilder, lsGet, lsSet, stripVN } from './data';
 import { ChipRail, FilterChip } from './ui';
 import { SelectToSave } from './saveWord';
+import { aiService } from '../../../services/aiService';
 
 // Writing Builder. On the site this page is gated (TIDian / Writing plan); here it is rebuilt from the `writing_tasks`
 // rows that carry a logical frame (Introduction / Overview / Body…): the learner writes section by section and can
@@ -101,6 +102,9 @@ export function BuilderWorkspace({ item, onBack, onSaveWord, speechVoice }) {
   const [step, setStep] = useState(0);
   const [shown, setShown] = useState({});
   const [assembled, setAssembled] = useState(false);
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiResult, setAiResult] = useState(null);
+  const [aiError, setAiError] = useState(null);
 
   useEffect(() => { loadBuilder(item.id).then(setData); }, [item.id]);
   useEffect(() => { const t = setTimeout(() => lsSet(key, parts), 300); return () => clearTimeout(t); }, [parts, key]);
@@ -115,6 +119,22 @@ export function BuilderWorkspace({ item, onBack, onSaveWord, speechVoice }) {
     const done = lsGet('tid_writing_builder_done', {}) || {};
     done[item.id] = Date.now();
     lsSet('tid_writing_builder_done', done);
+  };
+
+  const handleAIEvaluate = async () => {
+    if (!essay.trim()) return;
+    setAiLoading(true);
+    setAiError(null);
+    try {
+      const promptText = (data.prompt && data.prompt.length) ? data.prompt.join(' ') : data.title;
+      const res = await aiService.evaluateWritingEssay(promptText, essay, 'task1');
+      setAiResult(res);
+    } catch (err) {
+      console.error('Builder AI Error:', err);
+      setAiError(err.message || 'Không thể kết nối AI Examiner');
+    } finally {
+      setAiLoading(false);
+    }
   };
 
   return (
@@ -178,10 +198,99 @@ export function BuilderWorkspace({ item, onBack, onSaveWord, speechVoice }) {
           ) : (
             <div className="flex flex-col gap-5">
               <div className="rounded-2xl border-2 border-black bg-white p-5 shadow-[4px_4px_0_#000]">
-                <p className="mb-2 text-[12px] font-black uppercase tracking-[0.2em] text-slate-500">Bài của bạn · {countWords(essay)} từ</p>
-                {essay ? <div className="whitespace-pre-wrap font-[family-name:var(--font-newsreader)] text-[17px] leading-[1.75]">{essay}</div>
-                  : <p className="text-slate-500">Bạn chưa viết phần nào — chọn một phần ở trên để bắt đầu.</p>}
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <p className="text-[12px] font-black uppercase tracking-[0.2em] text-slate-500">Bài của bạn · {countWords(essay)} từ</p>
+                  {essay && !aiResult && !aiLoading && (
+                    <button
+                      type="button"
+                      onClick={handleAIEvaluate}
+                      className="inline-flex items-center gap-1.5 rounded-xl border-2 border-black bg-[#FFE787] px-3 py-1.5 text-[12.5px] font-black shadow-[2px_2px_0_#000] hover:-translate-y-px"
+                    >
+                      <Sparkles size={14} className="text-[#B45309]" /> AI Examiner Chấm Bài Ghép
+                    </button>
+                  )}
+                </div>
+                {essay ? <div className="mt-3 whitespace-pre-wrap font-[family-name:var(--font-newsreader)] text-[17px] leading-[1.75]">{essay}</div>
+                  : <p className="mt-2 text-slate-500">Bạn chưa viết phần nào — chọn một phần ở trên để bắt đầu.</p>}
               </div>
+
+              {/* AI Evaluation for Builder */}
+              {aiLoading && (
+                <div className="flex items-center justify-center gap-3 rounded-2xl border-2 border-black bg-[#FFFDF5] p-6 shadow-[4px_4px_0_#000]">
+                  <div className="h-6 w-6 animate-spin rounded-full border-3 border-[#4F46E5] border-t-transparent" />
+                  <span className="font-quicksand text-sm font-extrabold text-[#4F46E5]">AI Examiner đang phân tích cấu trúc bài ghép và chấm điểm...</span>
+                </div>
+              )}
+
+              {aiError && (
+                <div className="flex items-center justify-between rounded-xl border-2 border-red-400 bg-red-50 p-3.5 text-[13px] font-bold text-red-700">
+                  <span>{aiError}</span>
+                  <button onClick={handleAIEvaluate} className="underline hover:opacity-80">Thử lại</button>
+                </div>
+              )}
+
+              {aiResult && (
+                <div className="rounded-2xl border-2 border-black bg-[#FFFDF5] p-5 shadow-[4px_4px_0_#000]">
+                  <div className="flex items-center gap-2 border-b-2 border-black/10 pb-3">
+                    <Sparkles size={18} className="text-[#4F46E5]" />
+                    <h3 className="font-quicksand text-[16px] font-black text-[#1E3006]">AI Examiner Nhận Xét Bài Ghép</h3>
+                  </div>
+
+                  <div className="mt-3 flex flex-wrap items-center gap-3">
+                    <div className="rounded-xl border-2 border-black bg-[#F8BE33] px-3.5 py-1.5 shadow-[2px_2px_0_#000]">
+                      <span className="block text-[10px] font-black uppercase text-[#1E3006]">Estimated</span>
+                      <span className="font-quicksand text-xl font-black text-[#1E3006]">Band {aiResult.bandScore || '6.5'}</span>
+                    </div>
+                    <div className="grid flex-1 grid-cols-2 gap-2 sm:grid-cols-4">
+                      <div className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-center">
+                        <span className="block text-[9px] font-bold text-slate-500">Task Ach (TA)</span>
+                        <span className="font-quicksand text-sm font-black text-[#1E3006]">{aiResult.taskResponse || '6.5'}</span>
+                      </div>
+                      <div className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-center">
+                        <span className="block text-[9px] font-bold text-slate-500">Coherence (CC)</span>
+                        <span className="font-quicksand text-sm font-black text-[#1E3006]">{aiResult.coherenceCohesion || '6.5'}</span>
+                      </div>
+                      <div className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-center">
+                        <span className="block text-[9px] font-bold text-slate-500">Lexical (LR)</span>
+                        <span className="font-quicksand text-sm font-black text-[#1E3006]">{aiResult.lexicalResource || '6.5'}</span>
+                      </div>
+                      <div className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-center">
+                        <span className="block text-[9px] font-bold text-slate-500">Grammar (GRA)</span>
+                        <span className="font-quicksand text-sm font-black text-[#1E3006]">{aiResult.grammaticalRange || '6.0'}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {aiResult.generalFeedback && (
+                    <p className="mt-3 text-[13px] font-medium leading-relaxed text-slate-700">
+                      💬 <strong className="font-bold text-[#1E3006]">Nhận xét:</strong> {aiResult.generalFeedback}
+                    </p>
+                  )}
+
+                  <div className="mt-3 grid gap-2.5 sm:grid-cols-2">
+                    {aiResult.strengths?.length > 0 && (
+                      <div className="rounded-xl border border-[#6A8042] bg-[#E3F5E8] p-3">
+                        <span className="text-[10px] font-black uppercase text-[#18542A]">✓ Điểm mạnh</span>
+                        <ul className="mt-1 space-y-1 text-xs font-medium text-slate-800">
+                          {aiResult.strengths.map((s, idx) => (
+                            <li key={idx}>• {s}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {aiResult.improvements?.length > 0 && (
+                      <div className="rounded-xl border border-[#B45309] bg-[#FFF4C2] p-3">
+                        <span className="text-[10px] font-black uppercase text-[#B45309]">⚠ Cần cải thiện</span>
+                        <ul className="mt-1 space-y-1 text-xs font-medium text-slate-800">
+                          {aiResult.improvements.map((s, idx) => (
+                            <li key={idx}>• {s}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
               <div className="rounded-2xl border-2 border-black bg-white p-5 shadow-[4px_4px_0_#000]">
                 <p className="mb-2 text-[12px] font-black uppercase tracking-[0.2em] text-[#B45309]">Bài mẫu · {countWords(model)} từ</p>
                 <SelectToSave onSaveWord={onSaveWord} speechVoice={speechVoice}>

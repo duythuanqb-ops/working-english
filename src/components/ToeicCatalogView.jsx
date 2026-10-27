@@ -380,13 +380,15 @@ export default function ToeicCatalogView({
                 onClick={() => setSelectedCollection(col)}
                 style={{
                   padding: '6px 14px',
-                  borderRadius: '10px',
+                  borderRadius: '12px',
                   fontSize: '0.82rem',
-                  fontWeight: 700,
+                  fontWeight: 800,
                   cursor: 'pointer',
-                  border: isSelected ? '1px solid #4f46e5' : '1px solid var(--border-medium)',
-                  background: isSelected ? '#eef2ff' : '#ffffff',
-                  color: isSelected ? '#4338ca' : 'var(--text-secondary)',
+                  border: '2px solid var(--we-ink)',
+                  background: isSelected ? 'var(--we-sun)' : '#ffffff',
+                  color: 'var(--we-ink)',
+                  boxShadow: isSelected ? 'var(--we-pop-sm)' : 'none',
+                  transform: isSelected ? 'translateY(-1px)' : 'none',
                   transition: 'all 0.15s ease'
                 }}
               >

@@ -49,7 +49,7 @@ function readProgress() {
 function Sidebar({ cat, setCat, level, setLevel, stats, open, setOpen, onHome }) {
   return (
     <>
-      {open && <div className="fixed inset-0 z-40 bg-slate-900/20 backdrop-blur-sm lg:hidden" onClick={() => setOpen(false)} />}
+      {open && <div className="fixed inset-0 z-40 bg-slate-900/20 lg:hidden" onClick={() => setOpen(false)} />}
       <aside className={`fixed left-0 top-0 z-50 flex h-[100dvh] w-72 shrink-0 flex-col overflow-y-auto border-r border-slate-100 bg-white transition-transform duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] [scrollbar-width:none] lg:sticky lg:translate-x-0 [&::-webkit-scrollbar]:hidden ${open ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
         <div className="relative p-6">
           <button onClick={() => setOpen(false)} className="absolute right-6 top-6 rounded-xl bg-slate-50 p-2 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600 lg:hidden"><X size={16} /></button>
@@ -128,7 +128,7 @@ function LessonCard({ lesson, onOpen }) {
         {lesson.is_community
           ? <div className="absolute right-3 top-3 rounded bg-emerald-600 px-2 py-0.5 text-[10px] font-black uppercase tracking-tighter text-white">Cộng đồng</div>
           : lesson.is_custom ? <div className="absolute right-3 top-3 rounded bg-blue-600 px-2 py-0.5 text-[10px] font-black uppercase tracking-tighter text-white">Của tôi</div> : null}
-        <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-lg bg-black/60 px-2 py-1 text-[10px] font-bold text-white backdrop-blur-md"><Clock size={10} /> {lesson.duration || '--:--'}</div>
+        <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-lg bg-black/60 px-2 py-1 text-[10px] font-bold text-white"><Clock size={10} /> {lesson.duration || '--:--'}</div>
       </div>
       <div className="px-5 py-4 pb-6">
         <h3 className="mb-2 line-clamp-2 h-10 text-sm font-bold leading-snug text-slate-800 transition-colors group-hover:text-herb-600">{lesson.title}</h3>
@@ -148,7 +148,7 @@ function UploadCard({ onClick }) {
       <div className="absolute -bottom-32 left-10 h-48 w-48 rounded-full bg-yellow-300 opacity-30 mix-blend-multiply blur-[60px] filter" />
       <div className="relative flex h-full p-6 md:p-8">
         <div className="flex w-[60%] flex-col justify-center pr-4">
-          <div className="mb-4 inline-flex w-fit items-center gap-1.5 rounded-full border border-orange-200 bg-white/80 px-3 py-1 shadow-sm backdrop-blur-md">
+          <div className="mb-4 inline-flex w-fit items-center gap-1.5 rounded-full border border-orange-200 bg-white/80 px-3 py-1 shadow-sm">
             <span className="text-orange-500">✨</span><span className="text-[10px] font-black tracking-wider text-orange-600">MỚI</span>
           </div>
           <h3 className="mb-3 text-[22px] font-black leading-[1.1] text-slate-800 md:text-[28px]">Luyện với <br />nội dung <span className="text-orange-500">bạn</span> <br />yêu thích</h3>
@@ -162,7 +162,7 @@ function UploadCard({ onClick }) {
           <div className="absolute right-[5%] top-[15%] z-10 flex h-16 w-24 items-center justify-center rounded-full bg-white shadow-lg transition-transform duration-500 group-hover:-translate-y-2 md:h-20 md:w-32">
             <svg className="h-8 w-8 text-orange-400 md:h-10 md:w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="17 8 12 3 7 8" /><line x1="12" y1="3" x2="12" y2="15" /></svg>
           </div>
-          <div className="absolute bottom-[20%] right-[20%] z-20 h-20 w-28 rounded-xl border border-white/50 bg-white/90 p-2 shadow-xl backdrop-blur-sm transition-transform duration-500 group-hover:translate-y-2 md:h-24 md:w-36">
+          <div className="absolute bottom-[20%] right-[20%] z-20 h-20 w-28 rounded-xl border border-white/50 bg-white/90 p-2 shadow-xl transition-transform duration-500 group-hover:translate-y-2 md:h-24 md:w-36">
             <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg bg-orange-100">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 shadow-inner md:h-10 md:w-10"><svg className="ml-0.5 h-4 w-4 text-white md:h-5 md:w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l14 9-14 9V3z" /></svg></div>
               <div className="absolute bottom-1 right-2 rounded bg-green-500 px-1.5 py-0.5 text-[8px] font-black text-white">CC</div>
@@ -191,7 +191,7 @@ function AddVideoModal({ lessons, onClose, onOpen }) {
     setErr('Bản offline chưa thể tải phụ đề YouTube mới (cần máy chủ TID). Hãy chọn một bài có sẵn trong thư viện nhé.');
   };
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
       <div className="mx-4 w-full max-w-md rounded-2xl border-2 border-black bg-white p-6 shadow-[8px_8px_0_rgba(0,0,0,1)]">
         <div className="mb-4 flex items-center justify-between">
           <div>

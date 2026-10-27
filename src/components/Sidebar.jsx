@@ -9,81 +9,107 @@ import {
   Settings,
   Zap,
   Sparkles,
-  Flame,
   Award,
   GraduationCap,
   LayoutGrid,
-  TrendingUp
+  TrendingUp,
+  StickyNote
 } from 'lucide-react';
 
-export default function Sidebar({ currentView, setCurrentView, wordCount, dueCount }) {
-  const navItems = [
+export default function Sidebar({ currentView, setCurrentView, wordCount, dueCount, noteCount = 0 }) {
+  const navSections = [
     {
-      id: 'overview',
-      label: 'Tổng quan',
-      icon: LayoutGrid
+      title: 'Học Tập & Từ Vựng',
+      items: [
+        {
+          id: 'overview',
+          label: 'Tổng quan',
+          icon: LayoutGrid
+        },
+        {
+          id: 'vocab',
+          label: 'Sổ từ vựng',
+          icon: BookOpen,
+          badge: wordCount > 0 ? wordCount : null
+        },
+        {
+          id: 'notes',
+          label: 'Sổ ghi chú',
+          icon: StickyNote,
+          badge: noteCount > 0 ? noteCount : null
+        },
+        {
+          id: 'stats',
+          label: 'Thống kê tiến độ',
+          icon: TrendingUp
+        },
+        {
+          id: 'dictionary',
+          label: 'Từ điển Tra cứu',
+          icon: Languages
+        }
+      ]
     },
     {
-      id: 'vocab',
-      label: 'Sổ từ vựng',
-      icon: BookOpen,
-      badge: wordCount
+      title: 'LUYỆN 4 KỸ NĂNG & THI THỬ',
+      items: [
+        {
+          id: 'ielts-dictionary',
+          label: 'Luyện 4 Kỹ Năng',
+          icon: Sparkles,
+          badge: '100+'
+        },
+        {
+          id: 'toeic',
+          label: 'Luyện thi TOEIC',
+          icon: GraduationCap,
+          badge: 'ETS'
+        },
+        {
+          id: 'ielts',
+          label: 'Luyện thi IELTS',
+          icon: Award,
+          badge: 'Cam'
+        }
+      ]
     },
     {
-      id: 'stats',
-      label: 'Thống kê',
-      icon: TrendingUp
+      title: 'ÔN TẬP & CÔNG CỤ AI',
+      items: [
+        {
+          id: 'review',
+          label: 'Ôn tập & Quiz',
+          icon: CalendarCheck,
+          badge: dueCount > 0 ? `${dueCount} cần ôn` : 'Đã thuộc',
+          badgeDue: dueCount > 0
+        },
+        {
+          id: 'synonyms',
+          label: 'Từ đồng nghĩa',
+          icon: Repeat
+        },
+        {
+          id: 'grammar',
+          label: 'Cẩm nang Ngữ pháp',
+          icon: BookMarked
+        },
+        {
+          id: 'doctor',
+          label: 'Bác sĩ Ngữ pháp',
+          icon: Stethoscope,
+          ai: true
+        }
+      ]
     },
     {
-      id: 'dictionary',
-      label: 'Từ điển Tra cứu',
-      icon: Languages
-    },
-    {
-      id: 'toeic',
-      label: 'Luyện thi TOEIC',
-      icon: GraduationCap,
-      badge: 'PRO'
-    },
-    {
-      id: 'ielts',
-      label: 'Luyện thi IELTS',
-      icon: Award,
-      badge: 'PRO'
-    },
-    {
-      id: 'ielts-dictionary',
-      label: 'Luyện 4 Kỹ Năng',
-      icon: Sparkles,
-      badge: '100+'
-    },
-    {
-      id: 'review',
-      label: 'Ôn tập & Quiz',
-      icon: CalendarCheck,
-      badge: dueCount > 0 ? `${dueCount} cần ôn` : 'Đã thuộc',
-      badgeDue: dueCount > 0
-    },
-    {
-      id: 'synonyms',
-      label: 'Từ đồng nghĩa',
-      icon: Repeat
-    },
-    {
-      id: 'grammar',
-      label: 'Cẩm nang Ngữ pháp',
-      icon: BookMarked
-    },
-    {
-      id: 'doctor',
-      label: 'Sửa lỗi',
-      icon: Stethoscope,
-      ai: true
-    },
-    {
-      id: 'settings',
-      label: 'Cài đặt',
-      icon: Settings
+      title: 'HỆ THỐNG',
+      items: [
+        {
+          id: 'settings',
+          label: 'Cài đặt',
+          icon: Settings
+        }
+      ]
     }
   ];
 
@@ -107,9 +133,7 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
     <aside className="sidebar">
       {/* Sidebar Header with macOS Window Drag Area */}
       <div className="sidebar-header titlebar-drag-region">
-        <div className="app-logo no-drag">
-          <Sparkles size={20} />
-        </div>
+        <div className="app-logo no-drag" aria-hidden="true">WE</div>
         <div className="brand-text no-drag">
           <h1>
             WorkingEnglish
@@ -119,48 +143,37 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
         </div>
       </div>
 
-      {/* Navigation List */}
+      {/* Navigation List Organized in Logical Sections */}
       <nav className="sidebar-nav">
-        <div className="nav-section-label">Học & Luyện Tập</div>
-        {navItems.map((item) => {
-          const Icon = item.icon;
-          const isActive = currentView === item.id;
-          return (
-            <button
-              key={item.id}
-              className={`nav-item ${isActive ? 'active' : ''}`}
-              onClick={() => setCurrentView(item.id)}
-            >
-              <div className="nav-item-left">
-                <Icon size={18} />
-                <span>{item.label}</span>
-                {item.ai && (
-                  <span
-                    style={{
-                      fontSize: '0.62rem',
-                      fontWeight: 800,
-                      background: 'rgba(147, 51, 234, 0.12)',
-                      color: '#9333ea',
-                      padding: '1px 6px',
-                      borderRadius: '4px',
-                      border: '1px solid rgba(147, 51, 234, 0.25)',
-                      letterSpacing: '0.04em'
-                    }}
-                  >
-                    AI
-                  </span>
-                )}
-              </div>
-              {item.badge !== undefined && item.badge !== null && (
-                <span
-                  className={`nav-badge ${item.badgeDue ? 'nav-badge-due' : ''}`}
+        {navSections.map((section, idx) => (
+          <div key={section.title} className="nav-section-group" style={{ marginBottom: idx < navSections.length - 1 ? '16px' : '6px' }}>
+            <div className="nav-section-label">{section.title}</div>
+            {section.items.map((item) => {
+              const Icon = item.icon;
+              const isActive = currentView === item.id;
+              return (
+                <button
+                  key={item.id}
+                  className={`nav-item ${isActive ? 'active' : ''}`}
+                  onClick={() => setCurrentView(item.id)}
                 >
-                  {item.badge}
-                </span>
-              )}
-            </button>
-          );
-        })}
+                  <div className="nav-item-left">
+                    <Icon size={18} />
+                    <span>{item.label}</span>
+                    {item.ai && <span className="nav-ai-tag">AI</span>}
+                  </div>
+                  {item.badge !== undefined && item.badge !== null && (
+                    <span
+                      className={`nav-badge ${item.badgeDue ? 'nav-badge-due' : ''}`}
+                    >
+                      {item.badge}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        ))}
       </nav>
 
       {/* Sidebar Footer: Daily Progress & Quick Capture */}
@@ -168,7 +181,7 @@ export default function Sidebar({ currentView, setCurrentView, wordCount, dueCou
         <div className="sidebar-goal-card">
           <div className="goal-card-header">
             <span>Tiến độ ghi nhớ</span>
-            <span style={{ color: 'var(--primary)' }}>{progressPercent}%</span>
+            <span style={{ color: 'var(--primary)', fontWeight: 800 }}>{progressPercent}%</span>
           </div>
           <div className="goal-progress-bar">
             <div

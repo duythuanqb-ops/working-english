@@ -16,7 +16,7 @@ const loadLesson = async id => {
 };
 
 const QS = 'font-[family-name:var(--font-quicksand)]';
-const TONES = { green: { bg: '#eef0e2', bar: '#5f6a45', label: '#5f6a45' }, amber: { bg: '#fdf6e3', bar: '#f96015', label: '#c2490d' }, red: { bg: '#f3e8cc', bar: '#d52518', label: '#d52518' } };
+const TONES = { green: { bg: '#eef0e2', bar: '#4F46E5', label: '#4F46E5' }, amber: { bg: '#fdf6e3', bar: '#f96015', label: '#c2490d' }, red: { bg: '#f3e8cc', bar: '#d52518', label: '#d52518' } };
 
 /** **bold** and ~~strike~~ inline markup (site's M component) with clickable English words. */
 function Rich({ text, onWord }) {
@@ -30,9 +30,9 @@ function Rich({ text, onWord }) {
 /** "(a) Label: text" / "→ text" list-item formatting (site's D component). */
 function Labeled({ text, onWord }) {
   const m = text.match(/^(\([a-z]\)|→)?\s*([^:]{2,48}):\s*(.+)$/);
-  if (m) return <>{m[1] && <span className="mr-1 font-extrabold text-[#5f6a45]">{m[1]}</span>}<strong className="font-extrabold text-[#111]">{m[2]}:</strong> <Rich text={m[3]} onWord={onWord} /></>;
+  if (m) return <>{m[1] && <span className="mr-1 font-extrabold text-[#4F46E5]">{m[1]}</span>}<strong className="font-extrabold text-[#111]">{m[2]}:</strong> <Rich text={m[3]} onWord={onWord} /></>;
   const n = text.match(/^(\([a-z]\)|→)\s*(.+)$/);
-  if (n) return <><span className="mr-1 font-extrabold text-[#5f6a45]">{n[1]}</span><Rich text={n[2]} onWord={onWord} /></>;
+  if (n) return <><span className="mr-1 font-extrabold text-[#4F46E5]">{n[1]}</span><Rich text={n[2]} onWord={onWord} /></>;
   return <Rich text={text} onWord={onWord} />;
 }
 
@@ -60,7 +60,7 @@ function Block({ block: b, onWord }) {
           {b.title && <div className={`mb-2 ${QS} text-[14px] font-bold text-[#111]`}>{b.title}</div>}
           {b.items.map((it, i) => (
             <div key={i} className="mb-1.5 flex gap-2 text-[14px] leading-[1.7] text-[#222]">
-              <span className="flex-none font-bold text-[#5f6a45]">•</span>
+              <span className="flex-none font-bold text-[#4F46E5]">•</span>
               <span><Labeled text={it} onWord={onWord} /></span>
             </div>
           ))}
@@ -211,11 +211,11 @@ export default function GrammarLesson({ lessonId, onExit, onSaveWord, speechVoic
   const meta = index.grm.find(l => l.lesson_id === lessonId) || index.advanced.find(l => l.lessonId === lessonId);
 
   if (loading) {
-    return <div className="flex h-full min-h-[600px] items-center justify-center bg-[#6f8f4b]"><Loader2 className="animate-spin text-white" size={40} /></div>;
+    return <div className="flex h-full min-h-[600px] items-center justify-center bg-[#c2477a]"><Loader2 className="animate-spin text-white" size={40} /></div>;
   }
   if (!lesson || topics.length === 0) {
     return (
-      <div className="flex h-full min-h-[600px] flex-col items-center justify-center gap-4 bg-[#6f8f4b] px-6 text-center" style={GRID_BG}>
+      <div className="flex h-full min-h-[600px] flex-col items-center justify-center gap-4 bg-[#c2477a] px-6 text-center" style={GRID_BG}>
         <p className={`${QS} text-xl font-extrabold text-white`}>Không tải được bài học này.</p>
         {meta && <p className="max-w-md text-[14px] font-semibold text-white/80">“{meta.title}” chưa có trong dữ liệu offline của ứng dụng (bài học chưa được tải về từ website).</p>}
         <button onClick={onExit} className="rounded-xl border-[3px] border-[#111] bg-white px-5 py-2.5 text-sm font-bold text-[#111]">Quay lại Grammar</button>
@@ -224,7 +224,7 @@ export default function GrammarLesson({ lessonId, onExit, onSaveWord, speechVoic
   }
 
   return (
-    <div ref={rootRef} className="flex h-full min-h-[640px] flex-col overflow-hidden bg-[#6f8f4b] p-3 md:p-7" style={{ fontFamily: 'var(--font-nunito), sans-serif', ...GRID_BG }}>
+    <div ref={rootRef} className="flex h-full min-h-[640px] flex-col overflow-hidden bg-[#c2477a] p-3 md:p-7" style={{ fontFamily: 'var(--font-nunito), sans-serif', ...GRID_BG }}>
       <style>{CSS}</style>
       <header className="mx-auto mb-4 flex w-full max-w-[1500px] flex-none flex-wrap items-center justify-between gap-3 rounded-[20px] border-4 border-[#111] bg-white px-4 py-3.5 shadow-[8px_8px_0_rgba(0,0,0,0.15)] md:mb-5 md:px-7 md:py-5">
         <div className="flex items-center gap-3">
@@ -257,7 +257,7 @@ export default function GrammarLesson({ lessonId, onExit, onSaveWord, speechVoic
                     {t.subs.map(s => {
                       const info = [s.subtitle, s.quiz.length ? `${s.quiz.length} câu` : ''].filter(Boolean).join(' · ');
                       return (
-                        <div key={s.id} onClick={() => openSub(t.id, s)} onMouseEnter={blip.hover} className="grm-nav cursor-pointer rounded-lg px-3 py-2.5" style={{ '--tid-bg': s.id === sub?.id ? '#e8f0c9' : 'transparent' }}>
+                        <div key={s.id} onClick={() => openSub(t.id, s)} onMouseEnter={blip.hover} className="grm-nav cursor-pointer rounded-lg px-3 py-2.5" style={{ '--tid-bg': s.id === sub?.id ? '#FFF0C2' : 'transparent' }}>
                           <div className="text-[13px] font-semibold text-[#222]">{s.title}</div>
                           {info && <div className="mt-px text-[11px] font-semibold text-[#777]">{info}</div>}
                         </div>
@@ -302,7 +302,7 @@ export default function GrammarLesson({ lessonId, onExit, onSaveWord, speechVoic
             </div>
           ) : q && (
             <>
-              {sub?.intro && <div className="mb-5 rounded-xl border-2 border-dashed border-[#c9c6b6] bg-[#faf9f2] px-4 py-3 text-[13px] font-semibold leading-[1.6] text-[#5f6a45]">{sub.intro}</div>}
+              {sub?.intro && <div className="mb-5 rounded-xl border-2 border-dashed border-[#c9c6b6] bg-[#faf9f2] px-4 py-3 text-[13px] font-semibold leading-[1.6] text-[#4F46E5]">{sub.intro}</div>}
               <div className="mb-2 text-[13px] font-bold text-[#8a8672]">CÂU {qi + 1} / {quiz.length}<span className="ml-2 font-semibold text-[#b3b0a2]">(đề số {q.number})</span></div>
               <div className="mb-5 h-2 overflow-hidden rounded-md border-2 border-[#111] bg-[#eee]"><div className="h-full bg-[#6b8944] transition-[width] duration-300" style={{ width: `${Math.round(((qi + (answered ? 1 : 0)) / quiz.length) * 100)}%` }} /></div>
               <div className="mb-6 text-[17px] font-bold leading-[1.5] text-[#111] md:text-[18px]"><ClickableText text={q.text} onWord={onWord} /></div>
@@ -345,7 +345,7 @@ export default function GrammarLesson({ lessonId, onExit, onSaveWord, speechVoic
       </div>
 
       {premium && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm" onClick={() => setPremium(false)}>
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 p-4" onClick={() => setPremium(false)}>
           <div onClick={e => e.stopPropagation()} className="w-full max-w-md rounded-[24px] border-[3px] border-[#111] bg-white p-7 text-center shadow-[8px_8px_0_#111]">
             <div className={`${QS} mb-2 text-[22px] font-extrabold text-[#111]`}>Tạo bài tập bằng AI</div>
             <p className="text-[15px] leading-relaxed text-[#444]">Tính năng tạo bài tập bằng AI là quyền dành riêng cho gói <span className="font-bold text-amber-600">TIDian đầy đủ</span>.</p>

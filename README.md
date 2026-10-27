@@ -43,33 +43,88 @@
   - Giải thích **tại sao sai** bằng tiếng Việt theo quy tắc ngữ pháp.
   - Đưa ra **câu sửa chuẩn xác** và **phiên bản viết tự nhiên chuẩn công sở (Native Business Tone)**.
 
-### 6. ⚡ Mini Widget Tra & Note Nhanh Toàn Hệ Thống
+### 6. 📝 Sổ Ghi Chú Học Tập & Dán Hình Ảnh Trực Tiếp (Smart Visual Notes)
+- Lưu trữ mẫu câu, collocations, cấu trúc IELTS/TOEIC và mẹo học.
+- **Hỗ trợ dán ảnh chụp màn hình trực tiếp (`Cmd+V`)**: Nén ảnh canvas siêu nhẹ, tự động tối ưu hóa WebP/JPEG sắc nét.
+- Xem ảnh phóng to toàn màn hình (Lightbox) và tải ảnh về máy.
+- Ghim ghi chú ưu tiên lên đầu trang, phân loại theo bảng màu pastel Soft Aesthetic.
+
+### 7. 🎓 Luyện 4 Kỹ Năng & Luyện Thi Chuẩn Quốc Tế
+- **Luyện thi IELTS & TOEIC**: Trọn bộ đề thi Cambridge 10–20 và ETS có bấm giờ, chấm điểm tự động.
+- **Luyện 4 kỹ năng toàn diện**: Nghe chép chính tả, Shadowing, Đọc báo song ngữ báo chí quốc tế & Viết luận chuẩn 9 bước.
+
+### 8. ⚡ Mini Widget Tra & Note Nhanh Toàn Hệ Thống
 - Phím tắt toàn cục: Nhấn `Command + Shift + E` ở bất kỳ đâu trên MacBook để bật cửa sổ mini nổi trên màn hình.
 - Tra và lưu từ vựng tức thì khi đang đọc tài liệu, họp trực tuyến mà không cần chuyển qua lại ứng dụng.
+
+### 9. 🛡️ Cơ Chế Bảo Toàn Dữ Liệu Khi Cập Nhật (Data Persistence)
+- Tự động đồng bộ liên tục vào tệp đĩa cứng `working_english_data.json` trong thư mục `userData` của hệ điều hành.
+- **Đảm bảo khi cài bản update mới hoặc đóng gói lại DMG/EXE, toàn bộ từ vựng, ghi chú và tiến trình học vẫn được giữ nguyên vẹn 100%.**
+
+---
+
+## 📦 Hướng Dẫn Lệnh Đóng Gói Ứng Dụng (Build & Package)
+
+Tất cả các lệnh đóng gói đều tự động chạy `npm run build` trước khi đóng gói tệp cài đặt:
+
+### 1. Đóng gói cho macOS (`.dmg`)
+```bash
+# Đóng gói tạo file cài đặt .dmg cho macOS (hỗ trợ cả Apple Silicon M1/M2/M3/M4 & Intel):
+npm run dist:dmg
+```
+*Hoặc đóng gói đầy đủ (tạo cả file `.dmg` và `.zip`):*
+```bash
+npm run dist
+```
+> **Đầu ra**: File `.dmg` được lưu tại thư mục `release/`
+> - `release/WorkingEnglish-1.0.0-arm64.dmg` (dành cho MacBook chip M1/M2/M3/M4)
+> - `release/WorkingEnglish-1.0.0-x64.dmg` (dành cho MacBook chip Intel)
+
+---
+
+### 2. Đóng gói cho Windows (`.exe`)
+```bash
+# Đóng gói tạo file cài đặt .exe (trình cài đặt NSIS):
+npm run dist:win
+```
+> **Đầu ra**: `release/WorkingEnglish Setup 1.0.0.exe`
+
+---
+
+### 3. Đóng gói đa nền tảng cùng lúc
+```bash
+npm run dist:all
+```
+
+---
+
+### 4. Kiểm tra biên dịch mã nguồn (Vite Build Test)
+```bash
+npm run build
+```
 
 ---
 
 ## 🛠️ Hướng Dẫn Cài Đặt File `.dmg` Trên MacBook
 
-1. Sau khi build xong, file cài đặt nằm tại thư mục:
-   ```bash
-   release/WorkingEnglish-1.0.0-arm64.dmg
-   ```
-2. Nhấp đúp vào file `.dmg` để mở.
+1. Chạy lệnh đóng gói: `npm run dist:dmg`.
+2. Mở thư mục `release/` và nhấp đúp vào file `.dmg` vừa tạo.
 3. Kéo biểu tượng **WorkingEnglish** vào thư mục **Applications**.
 4. **Mở ứng dụng lần đầu tiên trên macOS**:
-   - Do đây là bản build nội bộ chưa đăng ký chứng chỉ trả phí với Apple ($99/năm), khi mở lần đầu macOS sẽ hiện cảnh báo bảo mật.
-   - Bạn chỉ cần: **Nhấn chuột phải (hoặc giữ Control + nhấp)** vào icon app trong `Applications` -> Chọn **Open** -> Chọn tiếp **Open** trên thông báo.
-   - Hoặc vào **Cài đặt hệ thống (System Settings)** -> **Quyền riêng tư & Bảo mật (Privacy & Security)** -> Chọn **Open Anyway** (Vẫn mở).
+   - Do ứng dụng build dạng cá nhân/nội bộ chưa mua chứng chỉ Apple Developer ($99/năm), Gatekeeper của macOS có thể hiển thị cảnh báo *"App can't be opened because it is from an unidentified developer"*.
+   - **Cách mở cực kỳ đơn giản**:
+     - **Cách 1 (Nhanh nhất)**: Nhấn chuột phải (hoặc giữ `Control` + bấm chuột) vào icon app trong `Applications` -> Chọn **Open** -> Chọn tiếp **Open** trên bảng thông báo.
+     - **Cách 2**: Vào **Cài đặt hệ thống (System Settings)** -> **Quyền riêng tư & Bảo mật (Privacy & Security)** -> Kéo xuống mục Bảo mật và bấm **Open Anyway (Vẫn mở)**.
+     - **Cách 3 (qua Terminal nếu bị chặn Gatekeeper)**:
+       ```bash
+       xattr -cr /Applications/WorkingEnglish.app
+       ```
 
 ---
 
-## 💻 Lệnh Phát Triển (Dành Cho Lập Trình Viên)
+## 💻 Chạy Chế Độ Phát Triển (Development)
 
 ```bash
-# Chạy chế độ phát triển (Live reload Vite + Electron):
+# Chạy cả Vite server và Electron cùng lúc với tính năng Hot-Reload:
 npm run dev
-
-# Đóng gói tạo file cài đặt .dmg:
-npm run dist:dmg
 ```

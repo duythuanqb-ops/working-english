@@ -1,9 +1,10 @@
 // Card Blast — words fall, type the answer to shoot them down (rules, ranks, copy and colours from the site's blast module).
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Maximize2, Minimize2, RotateCcw, X } from 'lucide-react';
 import { gloss } from './decks';
 import { getSetting, logActivity, setSetting } from './store';
 import { WatchingSun } from './fcParts';
+import { ttsService } from '../../../services/ttsService';
 
 const HINT_LETTERS = { easy: 2, normal: 1, hard: 0 };
 const SPEEDS = [{ id: 1, label: 'Rất chậm', mult: 0.55 }, { id: 2, label: 'Chậm', mult: 0.75 }, { id: 3, label: 'Vừa', mult: 1 }, { id: 4, label: 'Nhanh', mult: 1.35 }, { id: 5, label: 'Rất nhanh', mult: 1.8 }];
@@ -32,10 +33,10 @@ const DIFFS = ['easy', 'normal', 'hard'].map(id => {
   return { id, label: id === 'easy' ? 'Dễ' : id === 'normal' ? 'Bình thường' : 'Siêu khó', desc: n > 0 ? `Hé ${n} chữ đầu` : 'Không gợi ý gì', sample: cells.length ? cells.map(c => (c === '' ? '_' : c)).join(' ') : 'không có ô nào' };
 });
 
-function buildPool(words, dir, diff) {
+function buildPool(words = [], dir, diff) {
   const h = HINT_LETTERS[diff] ?? 1;
   const out = [];
-  words.forEach((w, i) => {
+  (words || []).forEach((w, i) => {
     const word = (w.w || '').trim();
     const g = gloss(w).trim();
     if (!word || !g) return;
@@ -55,7 +56,7 @@ function buildPool(words, dir, diff) {
     src.split(SPLIT).forEach(variants);
     const pieces = src.split(SPLIT).map(x => x.replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim()).filter(Boolean);
     const answer = dir === 'vi_en' ? src : pieces.length ? pieces.reduce((a, b) => (b.length < a.length ? b : a)) : src;
-    out.push({ id: String(i), prompt, answer, accepts: [...acc], hint: hintCells(answer, h) });
+    out.push({ id: String(i), prompt, answer, englishWord: word, accepts: [...acc], hint: hintCells(answer, h) });
   });
   return out;
 }
@@ -222,7 +223,7 @@ const WordCard = React.memo(function WordCard({
         className={`pointer-events-auto max-w-[260px] rounded-[16px] px-3.5 py-2 text-[15px] font-black leading-tight shadow-xl ${wasHit ? 'scale-105 brightness-125' : ''}`}
         style={{
           background: isAimed ? '#F6C453' : isNearest ? '#163261' : '#132A54',
-          color: isAimed ? '#1b1d22' : '#EAF1FF',
+          color: isAimed ? '#1E1B4B' : '#EAF1FF',
           border: `2px solid ${isAimed ? '#F6C453' : isNearest ? '#8A8AF6' : isWarning ? '#F87171' : '#2E5AA8'}`,
           boxShadow: isAimed
             ? '0 0 22px rgba(246,196,83,0.55)'
@@ -239,7 +240,7 @@ const WordCard = React.memo(function WordCard({
         </div>
         {isAimed && (
           <div className="mt-1.5 h-[3px] overflow-hidden rounded-full bg-black/20">
-            <div className="h-full bg-[#1b1d22]" style={{ width: `${aimRatio * 100}%` }} />
+            <div className="h-full bg-[#1E1B4B]" style={{ width: `${aimRatio * 100}%` }} />
           </div>
         )}
       </div>
@@ -455,7 +456,7 @@ const GameBottomBar = React.memo(function GameBottomBar({
   );
 });
 
-export default function Blast({ words, full, onToggleFull, onExit }) {
+export default function Blast({ words = [], full, onToggleFull, onExit, speak }) {
   const [dir, setDir] = useState(() => getSetting('blast_dir', 'vi_en'));
   const [diff, setDiff] = useState(() => getSetting('blast_diff', 'normal'));
   const [speed, setSpeed] = useState(() => getSetting('blast_speed', 3));
@@ -481,6 +482,22 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
   const level = Math.floor(stats.hits / 8) + 1;
   const mult = SPEEDS.find(s => s.id === speed)?.mult ?? 1;
   const save = (k, v, set) => { set(v); setSetting(k, v); };
+  const running = playing && !over && !paused && count === 0;
+
+  // Audio speech pronunciation for English words
+  const speakEnglishWord = useCallback((item) => {
+    if (!item) return;
+    const wordToSpeak = item.englishWord || (dir === 'vi_en' ? item.answer : item.prompt);
+    if (!wordToSpeak) return;
+    if (typeof speak === 'function') {
+      speak(wordToSpeak);
+    } else {
+      ttsService.speak(wordToSpeak, 'US');
+    }
+  }, [speak, dir]);
+
+  const speakEnglishWordRef = useRef(speakEnglishWord);
+  speakEnglishWordRef.current = speakEnglishWord;
 
   // Observe play area size changes without forcing reflows during animation frames
   useEffect(() => {
@@ -497,7 +514,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     const ro = new ResizeObserver(updateSize);
     ro.observe(playAreaRef.current);
     return () => ro.disconnect();
-  }, [running]);
+  }, [playing]);
 
   const start = () => {
     if (!pool.length) return;
@@ -507,8 +524,6 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     requestAnimationFrame(() => inputRef.current?.focus());
   };
   useEffect(() => { if (count <= 0) return; const t = setTimeout(() => setCount(c => c - 1), 750); return () => clearTimeout(t); }, [count]);
-
-  const running = playing && !over && !paused && count === 0;
   // ---- game loop ----
   useEffect(() => {
     if (!running) return;
@@ -541,6 +556,11 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
         setFlash({ ok: false, prompt: escaped[0].prompt, answer: escaped[0].answer });
         setStats(v => ({ ...v, streak: 0, lives: s.lives }));
         if (s.lives === 0) { setOver(true); logActivity(); }
+
+        // Phát âm tiếng Anh khi từ rơi đi qua vạch
+        if (escaped[0]) {
+          speakEnglishWordRef.current?.(escaped[0]);
+        }
 
         // Tự động làm trắng input khi từ đang ngắm rơi qua vạch đáy
         const curTyped = norm(s.typed || '');
@@ -633,6 +653,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     if (hitItem) {
       playLaserSound();
       playBoomSound();
+      speakEnglishWord(hitItem);
 
       let targetXPercent = hitItem.x;
       const width = playAreaSizeRef.current.width || 800;
@@ -752,6 +773,7 @@ export default function Blast({ words, full, onToggleFull, onExit }) {
     );
     if (hit) {
       playBoomSound();
+      speakEnglishWord(hit);
       st.current.items = st.current.items.filter(i => i !== hit);
       setItems(st.current.items.map(it => ({ ...it })));
       setBooms(b => [...b, { key: hit.key, x: hit.x, y: hit.y }]);

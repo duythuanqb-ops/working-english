@@ -10,8 +10,8 @@ const SETS = [
   { id: 'q3-2026', label: 'Quý 3 · Tháng 9–12/2026', file: 'forecast-q3-2026' },
   { id: 'q2-2026', label: 'Quý 2 · Tháng 5–8/2026', file: 'forecast-q2-2026' },
 ];
-const GRID = 'bg-[#6f8f4b] bg-[length:24px_24px] bg-[linear-gradient(to_right,rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.18)_1px,transparent_1px)]';
-const GRID_STYLE = { fontFamily: 'var(--font-nunito), sans-serif', backgroundImage: 'linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px)', backgroundSize: '24px 24px' };
+const GRID = 'bg-[var(--we-cream,#FFFDF8)] text-[#1E1B4B]';
+const GRID_STYLE = { fontFamily: 'var(--font-nunito), sans-serif', backgroundColor: 'var(--we-cream, #FFFDF8)', backgroundImage: 'radial-gradient(rgba(30,27,75,0.12) 1.5px, transparent 1.5px)', backgroundSize: '24px 24px' };
 
 // Previous local attempts for one question (replaces the site's session history per question_key)
 function Attempts({ list }) {

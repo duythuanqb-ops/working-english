@@ -48,7 +48,14 @@ function useYoutubeMedia(youtubeId, segments) {
       if (off || !host.current) return;
       player.current = new YT.Player(host.current, {
         videoId: youtubeId,
-        playerVars: { rel: 0, modestbranding: 1, playsinline: 1, cc_load_policy: 0, iv_load_policy: 3 },
+        playerVars: {
+          rel: 0,
+          modestbranding: 1,
+          playsinline: 1,
+          cc_load_policy: 0,
+          iv_load_policy: 3,
+          origin: window.location.protocol.startsWith('http') ? window.location.origin : 'https://workingenglish.app'
+        },
         events: {
           onReady: () => { if (!off) setReady(true); },
           onStateChange: e => setPlaying(e.data === 1),
@@ -84,7 +91,7 @@ function useYoutubeMedia(youtubeId, segments) {
   const cur = segments[seg.current.i] || { start: 0, end: 0 };
   return {
     node: null,
-    frame: <div className="lis-yt-frame aspect-video w-full overflow-hidden rounded-2xl bg-black"><div ref={host} /></div>,
+    frame: <div className="lis-yt-frame aspect-video w-full overflow-hidden rounded-2xl border-[3px] border-[#1E1B4B] bg-black shadow-[0_5px_0_#1E1B4B]"><div ref={host} /></div>,
     playing,
     rate,
     time,
@@ -117,9 +124,8 @@ function VideoDictation({ video, data, onBack, onSaveWord, speechVoice }) {
   const media = useYoutubeMedia(video.youtubeId, data.segments);
   return (
     <div className="relative">
-      <DictationCore data={{ title: video.title, kicker: 'YouTube Dictation', challenges }} storageId={`yt:${video.youtubeId}`} media={{ ...media, node: null }} onBack={onBack} backLabel="Thư viện" onSaveWord={onSaveWord} speechVoice={speechVoice} />
-      {/* Video floats above the sky, beside the dictation card */}
-      <div className="pointer-events-auto fixed bottom-4 right-4 z-40 w-[320px] rounded-2xl bg-white p-1.5 shadow-[0_18px_40px_rgba(20,40,80,.25)] max-sm:w-[220px]">{media.frame}</div>
+      {/* The video sits in the lesson's "screen" slot at the top of the card */}
+      <DictationCore data={{ title: video.title, kicker: 'YouTube Dictation', challenges }} storageId={`yt:${video.youtubeId}`} media={{ ...media, node: null, screen: media.frame, screenLabel: 'Video YouTube · phát đúng đoạn của câu đang làm' }} onBack={onBack} backLabel="Thư viện" onSaveWord={onSaveWord} speechVoice={speechVoice} />
     </div>
   );
 }
@@ -186,7 +192,7 @@ export default function YoutubeDictation({ onBack, onSaveWord, speechVoice }) {
                 <div className="relative m-2 aspect-[4/3] overflow-hidden rounded-[24px]">
                   <img src={v.thumbnail} alt={v.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   {v.level && <div className={`absolute left-3 top-3 rounded px-2 py-0.5 text-[10px] font-black uppercase tracking-tighter text-white ${levelTone(v.level)}`}>{v.level}</div>}
-                  <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-lg bg-black/60 px-2 py-1 text-[10px] font-bold text-white backdrop-blur-md"><Clock size={10} /> {v.duration}</div>
+                  <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-lg bg-black/60 px-2 py-1 text-[10px] font-bold text-white"><Clock size={10} /> {v.duration}</div>
                 </div>
                 <div className="px-5 py-4 pb-6">
                   <h3 className="mb-2 line-clamp-2 h-10 text-sm font-bold leading-snug text-slate-800 transition-colors group-hover:text-herb-600">{v.title}</h3>

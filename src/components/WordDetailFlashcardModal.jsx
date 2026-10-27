@@ -9,9 +9,22 @@ import {
   ChevronRight,
   Tag,
   Sparkles,
-  BookOpen
+  BookOpen,
+  Search,
+  Stethoscope,
+  Repeat,
+  GraduationCap,
+  Brain,
+  HelpCircle
 } from 'lucide-react';
 import { ttsService } from '../services/ttsService';
+
+const RATINGS = [
+  { rating: 'forgot', label: 'Quên', kb: '1', color: '#F2683A', bg: '#FFF2EC', Icon: HelpCircle },
+  { rating: 'hard', label: 'Mơ hồ', kb: '2', color: '#D98A1B', bg: '#FEF9EC', Icon: Brain },
+  { rating: 'good', label: 'Nhớ', kb: '3', color: '#1F9D63', bg: '#EDFAF3', Icon: CheckCircle2 },
+  { rating: 'easy', label: 'Nhớ rồi', kb: '4', color: '#4F46E5', bg: '#EEF2FF', Icon: Sparkles }
+];
 
 export default function WordDetailFlashcardModal({
   isOpen,
@@ -21,7 +34,11 @@ export default function WordDetailFlashcardModal({
   initialWordId,
   wordId,
   onRecordReview,
-  speechVoice
+  speechVoice,
+  onLookupDictionary,
+  onTryInDoctor,
+  onViewSynonyms,
+  onOpenIn4Skills
 }) {
   const activeList = wordList.length > 0 ? wordList : words;
   const activeWordId = initialWordId || wordId;
@@ -39,27 +56,6 @@ export default function WordDetailFlashcardModal({
     setIsFlipped(false);
   }, [activeWordId, activeList]);
 
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (!isOpen) return;
-      if (e.key === ' ' || e.key === 'Enter') {
-        e.preventDefault();
-        setIsFlipped((prev) => !prev);
-      } else if (e.key === 'ArrowRight') {
-        handleNext();
-      } else if (e.key === 'ArrowLeft') {
-        handlePrev();
-      } else if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, currentIndex, activeList.length]);
-
-  if (!isOpen || activeList.length === 0) return null;
-
   const currentWord = activeList[currentIndex] || activeList[0];
 
   const handlePrev = () => {
@@ -72,12 +68,45 @@ export default function WordDetailFlashcardModal({
     setCurrentIndex((prev) => (prev < activeList.length - 1 ? prev + 1 : 0));
   };
 
-  const handleScoreReview = (isCorrect) => {
+  const handleScoreReview = (rating) => {
     if (onRecordReview && currentWord) {
-      onRecordReview(currentWord.id, isCorrect);
+      onRecordReview(currentWord.id, rating);
     }
     handleNext();
   };
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!isOpen) return;
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        setIsFlipped((prev) => !prev);
+      } else if (e.key === '1') {
+        e.preventDefault();
+        handleScoreReview('forgot');
+      } else if (e.key === '2') {
+        e.preventDefault();
+        handleScoreReview('hard');
+      } else if (e.key === '3') {
+        e.preventDefault();
+        handleScoreReview('good');
+      } else if (e.key === '4') {
+        e.preventDefault();
+        handleScoreReview('easy');
+      } else if (e.key === 'ArrowRight') {
+        handleNext();
+      } else if (e.key === 'ArrowLeft') {
+        handlePrev();
+      } else if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, currentIndex, activeList.length, currentWord]);
+
+  if (!isOpen || activeList.length === 0) return null;
 
   const getBoxName = (box) => {
     switch (box) {
@@ -369,50 +398,149 @@ export default function WordDetailFlashcardModal({
                 )}
               </div>
 
-              {/* Assessment Buttons */}
+              {/* Cross-Screen Hub: Liên kết tức thì sang Từ điển, Bác sĩ ngữ pháp, Từ đồng nghĩa, 4 Kỹ Năng */}
               <div
                 style={{
                   display: 'flex',
-                  gap: '10px',
-                  borderTop: '1px solid var(--border-subtle)',
-                  paddingTop: '14px',
-                  marginTop: 'auto'
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '6px',
+                  borderTop: '1.5px dashed var(--border-subtle)',
+                  paddingTop: '10px',
+                  marginTop: '12px',
+                  flexWrap: 'wrap'
                 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <button
-                  type="button"
-                  className="btn"
-                  style={{
-                    flex: 1,
-                    background: '#fef2f2',
-                    border: '1px solid #fecaca',
-                    color: '#dc2626',
-                    padding: '8px 12px',
-                    fontSize: '0.82rem'
-                  }}
-                  onClick={() => handleScoreReview(false)}
-                >
-                  <XCircle size={15} />
-                  <span>Chưa thuộc (Hạ hộp)</span>
-                </button>
+                <span style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-muted)' }}>
+                  Liên kết:
+                </span>
 
-                <button
-                  type="button"
-                  className="btn"
-                  style={{
-                    flex: 1,
-                    background: '#ecfdf5',
-                    border: '1px solid #a7f3d0',
-                    color: '#059669',
-                    padding: '8px 12px',
-                    fontSize: '0.82rem'
-                  }}
-                  onClick={() => handleScoreReview(true)}
-                >
-                  <CheckCircle2 size={15} />
-                  <span>Đã nhớ (Lên hộp)</span>
-                </button>
+                <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                  {onLookupDictionary && (
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      style={{ padding: '3px 8px', fontSize: '0.75rem', gap: '4px' }}
+                      onClick={() => {
+                        onClose();
+                        onLookupDictionary(currentWord.word);
+                      }}
+                      title="Tra từ điển chi tiết"
+                    >
+                      <Search size={12} color="#2563eb" />
+                      <span>Tra từ điển</span>
+                    </button>
+                  )}
+
+                  {onTryInDoctor && (
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      style={{ padding: '3px 8px', fontSize: '0.75rem', gap: '4px' }}
+                      onClick={() => {
+                        onClose();
+                        const sentence = currentWord.examples?.[0]?.en || `We need to examine the ${currentWord.word} closely.`;
+                        onTryInDoctor(sentence);
+                      }}
+                      title="Gửi câu vào Bác sĩ ngữ pháp"
+                    >
+                      <Stethoscope size={12} color="#059669" />
+                      <span>Bác sĩ ngữ pháp</span>
+                    </button>
+                  )}
+
+                  {onViewSynonyms && (
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      style={{ padding: '3px 8px', fontSize: '0.75rem', gap: '4px' }}
+                      onClick={() => {
+                        onClose();
+                        onViewSynonyms(currentWord.word);
+                      }}
+                      title="Xem từ đồng nghĩa"
+                    >
+                      <Repeat size={12} color="#7e22ce" />
+                      <span>Từ đồng nghĩa</span>
+                    </button>
+                  )}
+
+                  {onOpenIn4Skills && (
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      style={{ padding: '3px 8px', fontSize: '0.75rem', gap: '4px' }}
+                      onClick={() => {
+                        onClose();
+                        onOpenIn4Skills(currentWord.word);
+                      }}
+                      title="Luyện 4 Kỹ Năng"
+                    >
+                      <GraduationCap size={12} color="#2563eb" />
+                      <span>4 Kỹ Năng</span>
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              {/* 4-tier SRS Assessment Buttons */}
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(4, 1fr)',
+                  gap: '8px',
+                  borderTop: '1px solid var(--border-subtle)',
+                  paddingTop: '12px',
+                  marginTop: '10px'
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                {RATINGS.map((r) => {
+                  const IconC = r.Icon;
+                  return (
+                    <button
+                      key={r.rating}
+                      type="button"
+                      onClick={() => handleScoreReview(r.rating)}
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '3px',
+                        padding: '8px 4px',
+                        borderRadius: '10px',
+                        background: r.bg,
+                        border: '1.5px solid #1e1b4b',
+                        boxShadow: '0 2px 0 #1e1b4b',
+                        cursor: 'pointer',
+                        transition: 'all 0.12s ease'
+                      }}
+                      title={`Đánh giá [${r.kb}]: ${r.label}`}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                        <IconC size={13} color={r.color} />
+                        <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#1e1b4b' }}>
+                          {r.label}
+                        </span>
+                      </div>
+                      <kbd
+                        style={{
+                          fontSize: '0.62rem',
+                          fontFamily: 'monospace',
+                          fontWeight: 800,
+                          padding: '1px 4px',
+                          background: '#ffffff',
+                          border: '1px solid #1e1b4b',
+                          borderRadius: '3px'
+                        }}
+                      >
+                        {r.kb}
+                      </kbd>
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>

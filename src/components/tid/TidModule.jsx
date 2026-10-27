@@ -1,9 +1,17 @@
 import React, { Suspense, lazy, useState } from 'react';
-import { Headphones, BookOpen, ArrowRight, MessageSquare } from 'lucide-react';
+import {
+  Headphones,
+  BookOpen,
+  ArrowRight,
+  Sparkles,
+  Mic,
+  PenTool,
+  BookMarked
+} from 'lucide-react';
 import './tid.css';
 import { asset } from './shared';
 
-// Each area lives in its own folder and is code-split, mirroring theieltsdictionary.com/practice/*
+// Each area lives in its own folder and is code-split
 const AREAS = {
   listening: lazy(() => import('./listening/ListeningHub')),
   reading: lazy(() => import('./reading/ReadingHub')),
@@ -13,103 +21,241 @@ const AREAS = {
   grammar: lazy(() => import('./grammar/GrammarHub')),
 };
 
-const CARDS = [
-  { id: 'listening', focus: 'Listening Focus', title: 'IELTS LISTENING', desc: 'Luyện nghe chuẩn đề Cambridge, tăng tốc bắt âm mỗi ngày.', bg: 'assets/tid/background-listening-no-text.webp' },
-  { id: 'reading', focus: 'Reading Focus', title: 'IELTS READING', desc: 'Rèn kỹ năng đọc hiểu, scan từ khóa và xử lý bẫy hiệu quả.', bg: 'assets/tid/background-reading-no-text.webp', extra: 'Vào luyện Reading ngay' },
-  { id: 'writing', focus: 'Writing Focus', title: 'IELTS WRITING', desc: 'Nâng cấu trúc bài viết, ideas và grammar theo đúng tiêu chí.', bg: 'assets/tid/background-writting-no-text.webp' },
-  { id: 'speaking', focus: 'Speaking Focus', title: 'IELTS SPEAKING', desc: 'Luyện phản xạ nói, mở rộng ý và tăng độ tự nhiên khi thi.', bg: 'assets/tid/background-listening-no-text.webp' },
-  { id: 'vocabulary', focus: 'Vocabulary Focus', title: 'IELTS VOCABULARY', desc: 'Mở rộng vốn từ theo chủ đề, học collocation và ghi nhớ từ vựng bền vững mỗi ngày.', bg: 'assets/tid/background-vocabulary.webp', wide: true },
+const SKILL_MODULES = [
+  {
+    id: 'vocabulary',
+    focus: 'Vocabulary',
+    title: 'Từ vựng & Flashcard',
+    desc: 'Hơn 1,500 từ vựng cốt lõi theo chủ đề công sở và đề Cambridge. Ôn lặp lại ngắt quãng và mini game Blast luyện phản xạ.',
+    icon: Sparkles,
+    bg: '#4F46E5',
+    tags: ['1,500+ từ', 'Spaced repetition', 'Blast game'],
+    actionText: 'Vào học từ vựng'
+  },
+  {
+    id: 'listening',
+    focus: 'Listening',
+    title: 'Nghe & Chép chính tả',
+    desc: 'Dictation từng câu theo đề Cambridge và video YouTube, luyện tai bắt âm với bài phát âm IPA.',
+    icon: Headphones,
+    bg: '#2F3654',
+    tags: ['Cambridge', 'Dictation', 'IPA'],
+    actionText: 'Bắt đầu luyện nghe'
+  },
+  {
+    id: 'reading',
+    focus: 'Reading',
+    title: 'Đọc hiểu & Báo song ngữ',
+    desc: 'Đề Cambridge đầy đủ, lọc theo dạng câu hỏi, cùng báo song ngữ chạm để tra và lưu từ.',
+    icon: BookOpen,
+    bg: '#3ECF8E',
+    ink: true,
+    tags: ['Cambridge', 'T/F/NG', 'Song ngữ'],
+    actionText: 'Vào luyện đọc'
+  },
+  {
+    id: 'writing',
+    focus: 'Writing',
+    title: 'Viết & Dàn bài 9 bước',
+    desc: 'Dàn ý 9 bước cho Task 1 và Task 2, kho cấu trúc nâng band, collocations công sở và bài mẫu 8.0+.',
+    icon: PenTool,
+    bg: '#F8BE33',
+    ink: true,
+    tags: ['Task 1 & 2', 'Bài mẫu', 'Dịch câu'],
+    actionText: 'Bắt đầu luyện viết'
+  },
+  {
+    id: 'speaking',
+    focus: 'Speaking',
+    title: 'Nói & Shadowing',
+    desc: 'Đề Speaking Forecast theo quý, shadowing theo video, ghi âm so sánh và phỏng vấn thử.',
+    icon: Mic,
+    bg: '#F2683A',
+    tags: ['Forecast', 'Shadowing', 'Mock test'],
+    actionText: 'Luyện phản xạ nói'
+  },
+  {
+    id: 'grammar',
+    focus: 'Grammar',
+    title: 'Ngữ pháp ứng dụng',
+    desc: '7 chuyên đề then chốt từ thì đến mệnh đề quan hệ, đặt câu trong ngữ cảnh công sở.',
+    icon: BookMarked,
+    bg: '#E06A96',
+    tags: ['7 chuyên đề', 'Bài tập', 'Ngữ cảnh'],
+    actionText: 'Học ngữ pháp'
+  }
 ];
 
-function SkillCard({ card, onOpen }) {
+function SkillCard({ item, index, onOpen }) {
+  const Icon = item.icon;
+  const fg = item.ink ? '#1E1B4B' : '#FFF8E7';
   return (
-    <button onClick={() => onOpen(card.id)} className={`w-full text-left ${card.wide ? 'md:col-span-2' : ''}`}>
-      <div className="group relative h-full overflow-hidden rounded-[32px] border border-herb-100 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl will-change-transform min-h-[340px]">
-        <img src={asset(card.bg)} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0b5a37]/85 via-[#0b5a37]/55 to-transparent" />
-        <div className="relative z-10 flex h-full min-h-[340px] flex-col justify-between p-8 md:p-10">
-          <div className="max-w-xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-1.5 text-[10px] font-black uppercase tracking-[2px] text-white backdrop-blur-sm">
-              <Headphones className="h-3.5 w-3.5" /> {card.focus}
-            </div>
-            <h2 className="text-2xl font-black leading-[1] tracking-tight text-white md:text-4xl">{card.title}</h2>
-            <p className="mt-2 max-w-[360px] text-sm font-semibold leading-relaxed text-white/90 md:max-w-[400px] md:text-base">{card.desc}</p>
-          </div>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center gap-3 rounded-full bg-[#0c4d2f] px-5 py-3 text-sm font-black text-white shadow-xl shadow-black/20 transition-all duration-300 group-hover:bg-[#0a4329]">
-              <Headphones className="h-4 w-4" /> Bắt đầu luyện tập ngay <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </span>
-            {card.extra && (
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-5 py-3 text-sm font-black text-white backdrop-blur-sm">
-                <BookOpen className="h-4 w-4" /> {card.extra}
-              </span>
-            )}
-          </div>
+    <button
+      type="button"
+      onClick={() => onOpen(item.id)}
+      className="we-card we-card-hover we-pop-in group flex flex-col overflow-hidden text-left"
+      style={{ '--we-rot': `${index % 2 ? 0.7 : -0.7}deg`, animationDelay: `${index * 60}ms` }}
+    >
+      <div className="relative flex items-start justify-between gap-3 border-b-[2.5px] border-[#1E1B4B] p-5" style={{ background: item.bg, color: fg }}>
+        <span className="we-icon-tile h-14 w-14 rounded-2xl bg-white transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-105">
+          <Icon className="h-7 w-7" strokeWidth={2.5} />
+        </span>
+        <span className="we-chip !bg-[#FFF8E7] uppercase">{item.focus}</span>
+        <span aria-hidden="true" className="pointer-events-none absolute -bottom-6 -right-4 h-20 w-20 rounded-full border-[2.5px] border-current opacity-25" />
+      </div>
+      <div className="flex flex-1 flex-col gap-3 p-5">
+        <h3 className="we-display text-[26px] text-[#1E1B4B]">{item.title}</h3>
+        <p className="text-sm font-semibold leading-relaxed text-[var(--text-muted)]">{item.desc}</p>
+        <div className="flex flex-wrap gap-1.5">
+          {item.tags.map((t) => <span key={t} className="we-chip !bg-[#FFF8E7] !text-[11px]">{t}</span>)}
         </div>
+        <span className="we-btn we-btn-sm mt-auto self-start !px-4 !py-2 group-hover:gap-3" style={{ background: item.bg, color: fg }}>
+          {item.actionText}
+          <ArrowRight className="h-4 w-4" strokeWidth={2.75} />
+        </span>
       </div>
     </button>
   );
 }
 
-function PracticeHome({ onOpen }) {
+function PracticeHome({ onOpen, onLookupDictionary, onTryInDoctor, onStartReview }) {
   return (
-    <div className="mx-auto w-full max-w-7xl px-6 pb-20 pt-16 lg:px-8">
-      <div className="mb-16 space-y-4 text-center">
-        <h1 className="text-4xl font-black leading-tight tracking-tight text-moss md:text-5xl">
-          Hệ Thống Luyện Đề <span className="text-herb-600">IELTS</span>
+    <div className="mx-auto w-full max-w-7xl px-5 py-8 md:px-8 md:py-10">
+      <section className="we-hero we-pop-in mb-8 px-6 pb-12 pt-8 text-center md:px-10">
+        <span className="we-hero-moon" aria-hidden="true" />
+        <span className="we-hero-hill" aria-hidden="true" />
+        <span className="we-sticker">WorkingEnglish · Luyện 4 kỹ năng</span>
+        <h1 className="we-outline mx-auto mt-5 max-w-4xl text-[clamp(36px,5.4vw,68px)]" style={{ '--we-stroke': '6px' }}>
+          Hôm nay luyện kỹ năng nào?
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-slate-500">
-          Chọn một kỹ năng để bắt đầu. Luyện tập với áp lực thời gian như thi thật và nhận kết quả chấm chữa ngay lập tức.
+        <p className="mx-auto mt-4 max-w-2xl text-sm font-bold leading-relaxed text-white/90 md:text-base">
+          Chọn một kỹ năng để bắt đầu. Toàn bộ từ vựng và tiến độ được đồng bộ xuyên suốt với Sổ từ và Flashcard.
         </p>
-      </div>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        {CARDS.map(c => <SkillCard key={c.id} card={c} onOpen={onOpen} />)}
-        <button onClick={() => onOpen('grammar')} className="group rounded-[32px] border border-herb-100 bg-white p-8 text-left shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
-          <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 text-white shadow-lg">
-            <BookOpen className="h-8 w-8" />
+
+        {/* Quick Link bar */}
+        {(onLookupDictionary || onTryInDoctor || onStartReview) && (
+          <div className="mx-auto mt-6 flex max-w-xl flex-wrap items-center justify-center gap-2.5">
+            {onLookupDictionary && (
+              <button
+                type="button"
+                onClick={() => onLookupDictionary('')}
+                className="we-btn we-btn-sm !bg-white !text-[#1E1B4B] !text-xs"
+              >
+                📖 Tra từ điển
+              </button>
+            )}
+            {onTryInDoctor && (
+              <button
+                type="button"
+                onClick={() => onTryInDoctor('')}
+                className="we-btn we-btn-sm !bg-white !text-[#1E1B4B] !text-xs"
+              >
+                🩺 Bác sĩ ngữ pháp
+              </button>
+            )}
+            {onStartReview && (
+              <button
+                type="button"
+                onClick={onStartReview}
+                className="we-btn we-btn-sm !bg-[#FEF08A] !text-[#1E1B4B] !text-xs"
+              >
+                🎯 Ôn tập Flashcard
+              </button>
+            )}
           </div>
-          <h3 className="text-2xl font-bold text-moss">Grammar</h3>
-          <p className="mt-3 text-sm leading-relaxed text-slate-500">Hệ thống ngữ pháp IELTS từ B1–B6: tenses, passive voice, relative clauses và hơn thế nữa. Click vào từ trong ví dụ để lưu vào sổ từ vựng.</p>
-          <span className="mt-8 inline-flex items-center gap-3 text-xs font-black uppercase tracking-[2px] text-herb-700">Vào luyện tập <ArrowRight className="h-5 w-5" /></span>
-        </button>
-        <div className="rounded-[32px] border border-herb-100 bg-white p-8 opacity-60 shadow-sm">
-          <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-herb-400 to-herb-700 text-white shadow-lg">
-            <MessageSquare className="h-8 w-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-moss">Cộng đồng học tập</h3>
-          <p className="mt-3 text-sm leading-relaxed text-slate-500">Bảng tin hỏi bài, giải đáp câu khó, chia sẻ kinh nghiệm học cùng giáo viên và bạn học. (Tính năng sắp ra mắt)</p>
-        </div>
+        )}
+      </section>
+
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {SKILL_MODULES.map((item, i) => (
+          <SkillCard key={item.id} item={item} index={i} onOpen={onOpen} />
+        ))}
       </div>
     </div>
   );
 }
 
-export default function TidModule({ onSaveWord, speechVoice, tidRoute, onClearTidRoute }) {
-  const [area, setArea] = useState(() => tidRoute?.area || null);
+export default function TidModule({
+  onSaveWord,
+  onRemoveWord,
+  speechVoice,
+  tidRoute,
+  onClearTidRoute,
+  initialTopicId,
+  onLookupDictionary,
+  onTryInDoctor,
+  onStartReview
+}) {
+  const [area, setArea] = useState(() => {
+    if (tidRoute?.area) return tidRoute.area;
+    if (initialTopicId) {
+      if (initialTopicId.startsWith('p1-') || initialTopicId.startsWith('p2-') || initialTopicId.startsWith('p3-') || initialTopicId.startsWith('custom-')) {
+        return 'speaking';
+      }
+      return 'vocabulary';
+    }
+    return null;
+  });
 
   React.useEffect(() => {
     if (tidRoute?.area) {
       setArea(tidRoute.area);
+    } else if (initialTopicId && !area) {
+      if (initialTopicId.startsWith('p1-') || initialTopicId.startsWith('p2-') || initialTopicId.startsWith('p3-') || initialTopicId.startsWith('custom-')) {
+        setArea('speaking');
+      } else {
+        setArea('vocabulary');
+      }
     }
-  }, [tidRoute]);
+  }, [tidRoute, initialTopicId]);
+
+  const effectiveRoute = React.useMemo(() => {
+    if (tidRoute) return tidRoute;
+    if (initialTopicId) {
+      if (initialTopicId.startsWith('p1-') || initialTopicId.startsWith('p2-') || initialTopicId.startsWith('p3-') || initialTopicId.startsWith('custom-')) {
+        return { area: 'speaking', view: 'mock', topicId: initialTopicId };
+      }
+      return { area: 'vocabulary', view: 'dash', page: 'flashcard', sessionSel: [initialTopicId] };
+    }
+    return null;
+  });
 
   const Area = area && AREAS[area];
+
   return (
-    <div className="tid-root h-full overflow-y-auto bg-[#fbfcf8]">
+    <div className="tid-root w-full min-h-full bg-[var(--we-cream)] text-[#1E1B4B]">
       {Area ? (
-        <Suspense fallback={<div className="p-20 text-center font-bold text-slate-400">Đang tải…</div>}>
+        <Suspense
+          fallback={
+            <div className="flex h-full items-center justify-center p-20 text-center font-bold text-slate-400">
+              <div className="flex flex-col items-center gap-3">
+                <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-[#1E1B4B] border-t-transparent" />
+                <span>Đang tải học liệu...</span>
+              </div>
+            </div>
+          }
+        >
           <Area
             onBack={() => {
               setArea(null);
               if (onClearTidRoute) onClearTidRoute();
             }}
             onSaveWord={onSaveWord}
+            onRemoveWord={onRemoveWord}
             speechVoice={speechVoice}
-            tidRoute={tidRoute}
+            tidRoute={effectiveRoute}
+            onLookupDictionary={onLookupDictionary}
+            onTryInDoctor={onTryInDoctor}
+            onStartReview={onStartReview}
           />
         </Suspense>
       ) : (
-        <PracticeHome onOpen={setArea} />
+        <PracticeHome
+          onOpen={setArea}
+          onLookupDictionary={onLookupDictionary}
+          onTryInDoctor={onTryInDoctor}
+          onStartReview={onStartReview}
+        />
       )}
     </div>
   );

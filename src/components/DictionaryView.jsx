@@ -17,13 +17,26 @@ import {
   Info,
   CornerDownLeft,
   BookA,
-  Globe
+  Globe,
+  Stethoscope,
+  GraduationCap,
+  ArrowUpRight
 } from 'lucide-react';
 import { dictionaryService, BUSINESS_DICT_TOPICS } from '../services/dictionaryService';
 import { storageService } from '../services/storageService';
 import { ttsService } from '../services/ttsService';
 
-export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }) {
+export default function DictionaryView({
+  words,
+  onSaveWord,
+  speechVoice = 'US',
+  initialWord = '',
+  onTryInDoctor,
+  onViewSynonyms,
+  onOpenIn4Skills,
+  onStartReview,
+  onOpenVocab
+}) {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchHistory, setSearchHistory] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
@@ -38,16 +51,18 @@ export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }
   const searchInputRef = useRef(null);
   const searchWrapperRef = useRef(null);
 
-  // Load search history and default word on initial mount
+  // Auto search when initialWord is passed from another screen
+  useEffect(() => {
+    if (initialWord && initialWord.trim()) {
+      setSearchTerm(initialWord.trim());
+      handleSearch(initialWord.trim());
+    }
+  }, [initialWord]);
+
+  // Load search history on initial mount (without pre-filling or auto-searching any word)
   useEffect(() => {
     const history = storageService.getSearchHistory();
     setSearchHistory(history);
-
-    // Initial default lookup if no result yet
-    if (!result) {
-      const defaultWord = history.length > 0 ? history[0] : 'university';
-      handleSearch(defaultWord, false);
-    }
   }, []);
 
   // Handle outside click to dismiss suggestions dropdown
@@ -489,6 +504,46 @@ export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }
         </div>
       )}
 
+      {/* Empty State / Welcome Guide when no search result yet */}
+      {!result && !isLoading && !error && (
+        <div
+          className="card"
+          style={{
+            padding: '36px 30px',
+            background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+            border: '1px dashed var(--border-medium)',
+            borderRadius: '20px',
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '12px'
+          }}
+        >
+          <div
+            style={{
+              width: '54px',
+              height: '54px',
+              borderRadius: '16px',
+              background: 'rgba(79, 70, 229, 0.08)',
+              color: 'var(--primary)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
+            <Search size={26} />
+          </div>
+          <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-main)', margin: 0 }}>
+            Tra cứu từ điển Anh - Việt & Anh - Anh
+          </h3>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', maxWidth: '520px', margin: 0, lineHeight: 1.5 }}>
+            Nhập từ tiếng Anh bất kỳ vào ô tìm kiếm phía trên để tra cứu nhanh phiên âm IPA, nghĩa tiếng Việt, câu ví dụ và từ đồng nghĩa, hoặc bấm chọn từ trong các chủ đề gợi ý bên dưới.
+          </p>
+        </div>
+      )}
+
       {/* Main TFlat-Style Word Result */}
       {result && !error && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
@@ -711,6 +766,165 @@ export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }
                 }}
               >
                 {result.meaningVi}
+              </div>
+            </div>
+
+            {/* Cross-Screen Hub: Liên kết tức thì sang các màn hình liên quan */}
+            <div
+              style={{
+                marginTop: '16px',
+                padding: '14px 18px',
+                borderRadius: '14px',
+                background: '#faf5ff',
+                border: '2px solid #1e1b4b',
+                boxShadow: '0 3px 0 #1e1b4b',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                gap: '10px'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Sparkles size={16} color="#7e22ce" />
+                <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#1e1b4b' }}>
+                  Liên kết đa năng:
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                {onTryInDoctor && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const sampleSentence = result.bilingualExamples?.[0]?.en || `I would like to improve my use of ${result.word} in professional meetings.`;
+                      onTryInDoctor(sampleSentence);
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
+                      padding: '6px 12px',
+                      borderRadius: '8px',
+                      background: '#ffffff',
+                      border: '1.5px solid #1e1b4b',
+                      color: '#1e1b4b',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 0 #1e1b4b',
+                      transition: 'all 0.15s ease'
+                    }}
+                    title="Gửi câu ví dụ này sang Bác sĩ ngữ pháp để sửa và phân tích"
+                  >
+                    <Stethoscope size={14} color="#059669" />
+                    <span>🩺 Đặt câu với Bác sĩ ngữ pháp</span>
+                  </button>
+                )}
+
+                {onViewSynonyms && (
+                  <button
+                    type="button"
+                    onClick={() => onViewSynonyms(result.word)}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
+                      padding: '6px 12px',
+                      borderRadius: '8px',
+                      background: '#ffffff',
+                      border: '1.5px solid #1e1b4b',
+                      color: '#1e1b4b',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 0 #1e1b4b',
+                      transition: 'all 0.15s ease'
+                    }}
+                    title="Xem từ đồng nghĩa và cách diễn đạt nâng cao"
+                  >
+                    <Repeat size={14} color="#7e22ce" />
+                    <span>🔄 Xem Từ đồng nghĩa</span>
+                  </button>
+                )}
+
+                {onOpenIn4Skills && (
+                  <button
+                    type="button"
+                    onClick={() => onOpenIn4Skills(result.word)}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
+                      padding: '6px 12px',
+                      borderRadius: '8px',
+                      background: '#ffffff',
+                      border: '1.5px solid #1e1b4b',
+                      color: '#1e1b4b',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 0 #1e1b4b',
+                      transition: 'all 0.15s ease'
+                    }}
+                    title="Mở luyện tập Flashcard & Nghe nói trong 4 Kỹ Năng"
+                  >
+                    <GraduationCap size={14} color="#2563eb" />
+                    <span>⚡ Luyện 4 Kỹ Năng</span>
+                  </button>
+                )}
+
+                {onStartReview && (
+                  <button
+                    type="button"
+                    onClick={onStartReview}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
+                      padding: '6px 12px',
+                      borderRadius: '8px',
+                      background: '#fef08a',
+                      border: '1.5px solid #1e1b4b',
+                      color: '#1e1b4b',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 0 #1e1b4b',
+                      transition: 'all 0.15s ease'
+                    }}
+                    title="Mở bài tập Ôn tập Flashcard ngắt quãng Spaced Repetition"
+                  >
+                    <Sparkles size={14} color="#d97706" />
+                    <span>🎯 Ôn tập Flashcard</span>
+                  </button>
+                )}
+
+                {onOpenVocab && (
+                  <button
+                    type="button"
+                    onClick={onOpenVocab}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
+                      padding: '6px 12px',
+                      borderRadius: '8px',
+                      background: '#ffffff',
+                      border: '1.5px solid #1e1b4b',
+                      color: '#1e1b4b',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 0 #1e1b4b',
+                      transition: 'all 0.15s ease'
+                    }}
+                    title="Mở danh sách Sổ từ vựng cá nhân"
+                  >
+                    <BookOpen size={14} color="#4f46e5" />
+                    <span>📚 Mở Sổ từ</span>
+                  </button>
+                )}
               </div>
             </div>
 
@@ -1086,15 +1300,27 @@ export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }
                         <div style={{ fontSize: '1.02rem', fontWeight: 600, color: 'var(--text-main)', lineHeight: 1.45 }}>
                           "{ex.en}"
                         </div>
-                        <button
-                          type="button"
-                          onClick={() => ttsService.speak(ex.en, speechVoice)}
-                          className="icon-ghost"
-                          title="Nghe câu ví dụ"
-                          style={{ flexShrink: 0 }}
-                        >
-                          <Volume2 size={16} />
-                        </button>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
+                          {onTryInDoctor && (
+                            <button
+                              type="button"
+                              onClick={() => onTryInDoctor(ex.en)}
+                              className="icon-ghost"
+                              title="Thử sửa và luyện câu này trong Bác sĩ ngữ pháp"
+                              style={{ color: '#059669' }}
+                            >
+                              <Stethoscope size={16} />
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            onClick={() => ttsService.speak(ex.en, speechVoice)}
+                            className="icon-ghost"
+                            title="Nghe câu ví dụ"
+                          >
+                            <Volume2 size={16} />
+                          </button>
+                        </div>
                       </div>
 
                       <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontWeight: 500 }}>
@@ -1222,8 +1448,21 @@ export default function DictionaryView({ words, onSaveWord, speechVoice = 'US' }
                         gap: '6px'
                       }}
                     >
-                      <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-main)', lineHeight: 1.45 }}>
-                        "{ex.en}"
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '10px' }}>
+                        <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-main)', lineHeight: 1.45 }}>
+                          "{ex.en}"
+                        </div>
+                        {onTryInDoctor && (
+                          <button
+                            type="button"
+                            onClick={() => onTryInDoctor(ex.en)}
+                            className="icon-ghost"
+                            title="Thử sửa câu này trong Bác sĩ ngữ pháp"
+                            style={{ color: '#059669', flexShrink: 0 }}
+                          >
+                            <Stethoscope size={15} />
+                          </button>
+                        )}
                       </div>
                       <div style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                         → {ex.vi}

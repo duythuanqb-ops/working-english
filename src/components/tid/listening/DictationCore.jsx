@@ -1,9 +1,9 @@
 // Sentence-by-sentence dictation (listen & type) — port of theieltsdictionary.com /practice/listening/<lesson>.
 // Media-agnostic: the caller passes a `media` controller (HTML audio for Cambridge lessons, YouTube for videos).
 import React, { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, BookOpen, Eye, Flame, Languages, Lightbulb, Moon, Music2, Pause, Play, RotateCcw, Sun } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, Eye, Flame, Languages, Lightbulb, Moon, Music2, Pause, Play, RotateCcw, Sun, Headphones } from 'lucide-react';
 import { translateVi } from './data';
-import { pxAsset, clearProgress, readProgress, saveProgress } from './px';
+import { clearProgress, readProgress, saveProgress } from './px';
 import WordPopup from './WordPopup';
 import { ttsService } from '../../../services/ttsService';
 
@@ -106,6 +106,12 @@ export default function DictationCore({ data, storageId, media, onBack, backLabe
   const challenges = data.challenges;
   const total = challenges.length;
   const [night, setNight] = useState(() => { try { return localStorage.getItem(THEME_KEY) === 'dark'; } catch { return false; } });
+  const [screenOpen, setScreenOpenState] = useState(() => { try { return localStorage.getItem('dct_screen') !== 'closed'; } catch { return true; } });
+  const setScreenOpen = f => setScreenOpenState(o => {
+    const v = typeof f === 'function' ? f(o) : f;
+    try { localStorage.setItem('dct_screen', v ? 'open' : 'closed'); } catch { /* storage unavailable */ }
+    return v;
+  });
   const [idx, setIdx] = useState(0);
   const [freeInput, setFreeInput] = useState({});
   const [boxes, setBoxes] = useState({});
@@ -482,10 +488,7 @@ export default function DictationCore({ data, storageId, media, onBack, backLabe
               <ArrowLeft className="h-4 w-4" aria-hidden="true" /><span className="hidden sm:inline">{backLabel}</span>
             </button>
             <span aria-hidden="true" className="relative flex h-12 w-12 shrink-0 items-end justify-center overflow-hidden rounded-[14px] border border-[color:var(--dct-efe4d2)] bg-[color:var(--dct-fff6e9)] sm:h-[54px] sm:w-[54px]">
-              <span className="dct-bob relative block h-[88%] w-[88%]">
-                <img src={pxAsset('dino.webp')} alt="" draggable={false} className="h-full w-full [image-rendering:pixelated]" />
-                <img src={pxAsset('headset.svg')} alt="" draggable={false} className="absolute inset-0 h-full w-full" />
-              </span>
+              <span className="dct-bob grid h-full w-full place-items-center bg-[#4F46E5] text-white"><Headphones className="h-6 w-6" strokeWidth={2.5} /></span>
             </span>
             <div className="min-w-0 flex-1">
               <p className="text-[12.5px] text-[color:var(--dct-6b6f66)]">{data.kicker || 'Listening Dictation'}{camTag ? <> · <span className="text-[color:var(--dct-1d211a)]">{camTag}</span></> : null}</p>
@@ -514,6 +517,21 @@ export default function DictationCore({ data, storageId, media, onBack, backLabe
                 <button type="button" onClick={restart} className="inline-flex h-8 items-center gap-1.5 rounded-lg bg-[color:var(--dct-e36f1e)] px-3 text-[13px] font-semibold text-[color:var(--dct-ffffff)] hover:bg-[color:var(--dct-c95f16)]"><RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />Làm lại từ đầu</button>
               </div>
             </div>
+          )}
+
+          {media.screen && (
+            <section aria-label="Màn hình video" className="mt-4">
+              <div className="mx-auto w-full max-w-[760px]">
+                <div className="mb-2 flex items-center justify-between gap-3">
+                  <span className="text-[13px] font-semibold text-[color:var(--dct-6b6f66)]">{media.screenLabel || 'Video'}</span>
+                  <button type="button" onClick={() => setScreenOpen(o => !o)} aria-expanded={screenOpen} className="h-8 rounded-lg border border-[color:var(--dct-e6e6e1)] px-3 text-[13px] font-semibold text-[color:var(--dct-1d211a)] hover:bg-[color:var(--dct-f6f6f3)]">
+                    {screenOpen ? 'Thu gọn' : 'Hiện video'}
+                  </button>
+                </div>
+                {/* collapsed with CSS only: the YouTube player must stay mounted */}
+                <div className={screenOpen ? '' : 'h-0 overflow-hidden'}>{media.screen}</div>
+              </div>
+            </section>
           )}
 
           {view === 'transcript' && (
@@ -779,12 +797,9 @@ export default function DictationCore({ data, storageId, media, onBack, backLabe
       {popup && <WordPopup key={popup.key} word={popup.word} anchor={popup.anchor} context={popup.context} onClose={() => setPopup(null)} onSaveWord={onSaveWord} speechVoice={speechVoice} />}
 
       {reportOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#1d211a]/30 p-4 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#1d211a]/30 p-4">
           <div role="dialog" aria-modal="true" className="relative w-full max-w-md overflow-hidden rounded-[28px] bg-[color:var(--dct-ffffff)] p-7 text-center shadow-2xl sm:p-9">
-            <span className="dct-bob relative mx-auto block h-20 w-20">
-              <img src={pxAsset('dino.webp')} alt="" className="h-full w-full [image-rendering:pixelated]" />
-              <img src={pxAsset('headset.svg')} alt="" className="absolute inset-0 h-full w-full" />
-            </span>
+            <span className="dct-bob mx-auto grid h-20 w-20 place-items-center rounded-[22px] border-[3px] border-[#1E1B4B] bg-[#F8BE33] shadow-[0_4px_0_#1E1B4B]"><Headphones className="h-9 w-9 text-[#1E1B4B]" strokeWidth={2.5} /></span>
             <h2 className="mt-3 font-newsreader text-[30px] font-bold leading-tight">Xong bài rồi!</h2>
             <p className="mt-2 text-[15px] text-[color:var(--dct-6b6f66)] [text-wrap:balance]">Bạn vừa hoàn thành <b className="text-[color:var(--dct-1d211a)]">{titleText}</b>.</p>
             <div className="mt-6 grid grid-cols-2 gap-2.5">

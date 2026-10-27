@@ -1,11 +1,10 @@
 import React, { Suspense, lazy, useMemo, useState } from 'react';
-import { Activity, Award, Flame, Calendar, X, Shuffle, ArrowRight, Play } from 'lucide-react';
+import { Activity, Award, Flame, Calendar, X, Shuffle, ArrowRight, Play, BookOpenCheck, Clapperboard, Mic2, Star, Video } from 'lucide-react';
+import { SkillHero } from '../weKit';
 import './speaking.css';
-import { asset } from '../shared';
-import { HERO_HTML, SNOW_HTML } from './heroArt';
 import { useLocalData, loadData, readHistory } from './speakingUtils';
 
-// Sub-pages mirror theieltsdictionary.com/practice/speaking/*
+// Speaking area (WorkingEnglish skin). Sub-pages are local state routes.
 const MockInterview = lazy(() => import('./MockInterview'));
 const Forecast = lazy(() => import('./Forecast'));
 const Roulette = lazy(() => import('./Roulette'));
@@ -14,11 +13,7 @@ const ShadowingPlayer = lazy(() => import('./ShadowingPlayer'));
 const Dubbing = lazy(() => import('./Dubbing'));
 const DubbingPlayer = lazy(() => import('./DubbingPlayer'));
 
-const INK = '#1F2A1A';
-const BASE = asset('');
-const heroHtml = { __html: HERO_HTML.replaceAll('{{BASE}}', BASE) };
-const snowHtml = { __html: SNOW_HTML.replaceAll('{{BASE}}', BASE) };
-const abs = s => ({ position: 'absolute', ...s });
+const INK = '#1E1B4B';
 
 const CHIP = {
   blue: ['bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100', 'bg-blue-600 text-white border-black shadow-[2px_2px_0_rgba(0,0,0,1)]'],
@@ -32,194 +27,261 @@ const CHIP = {
 const MODE_LABEL = { ai_practice: 'Mock Interview', speaking_roulette: 'Speaking Roulette', forecast_practice: 'Forecast Speaking', shadowing: 'Shadowing', dubbing: 'Lồng tiếng' };
 
 // Screen art inside each cable-car card
-function CardArt({ art }) {
-  const b = `3px solid ${INK}`;
-  switch (art) {
-    case 'book':
-      return (
-        <>
-          <div className="px-display flex items-center justify-center text-center text-[9px] leading-[1.2]" style={abs({ top: 'calc(50% - 45px)', left: '52%', width: '34%', height: 90, background: '#F8BE33', border: b, borderRadius: 8, transform: 'rotate(8deg)' })}>REAL<br />IELTS<br />QUESTIONS</div>
-          <div className="flex flex-col items-center justify-center gap-0.5 text-[#FDF5E0]" style={abs({ top: 'calc(50% - 50px)', left: '22%', width: '36%', height: 100, background: '#2F3A7A', border: b, borderRadius: 8, boxShadow: 'inset 6px 0 0 rgba(0,0,0,.25)', transform: 'rotate(-6deg)', animation: 'pxsFloat 4s ease-in-out infinite' })}>
-            <span className="text-[8px] font-extrabold tracking-[.2em]">IELTS</span>
-            <span className="px-display text-[11px]">SPEAKING</span>
-          </div>
-        </>
-      );
-    case 'calendar':
-      return (
-        <div className="flex flex-col gap-[3px] text-[10px] font-bold" style={abs({ top: '50%', left: '50%', marginLeft: -90, width: 180, background: '#FDF5E0', border: b, borderRadius: 10, padding: '8px 10px', transform: 'translateY(-50%) rotate(3deg)' })}>
-          <span className="px-display border-b-2 border-dashed border-[#1F2A1A]/30 pb-[3px] text-[9px]">SEP - DEC 2026</span>
-          {['September', 'October', 'November'].map(m => <span key={m} className="flex justify-between"><span>{m}</span><span className="opacity-60">5:00 AM</span></span>)}
-          <span className="mt-0.5 rounded-md bg-[#1F2A1A] p-[3px] text-center text-[9px] text-[#FDF5E0]">Set Reminder</span>
-        </div>
-      );
-    case 'cards':
-      return (
-        <>
-          <div className="text-[9px] font-extrabold text-[#FDF5E0]" style={abs({ left: '50%', top: 'calc(50% - 42px)', marginLeft: -6, width: 70, height: 96, background: '#E8505B', border: b, borderRadius: 10, transform: 'rotate(12deg)', padding: 6 })}>PART 2</div>
-          <div className="flex flex-col text-[9px] font-extrabold" style={abs({ left: '50%', top: 'calc(50% - 54px)', marginLeft: -62, width: 70, height: 96, background: '#F8BE33', border: b, borderRadius: 10, transform: 'rotate(-8deg)', padding: 6, animation: 'pxsFloat 3s ease-in-out infinite' })}>
-            PART 1<span className="px-display m-auto text-[32px]">?</span>
-          </div>
-        </>
-      );
-    case 'video':
-      return (
-        <div className="grid place-items-center overflow-hidden" style={abs({ inset: '18px 26px', background: '#FFFFFF', border: b, borderRadius: 10 })}>
-          <span className="grid h-[30px] w-11 place-items-center rounded-[9px] border-[3px] border-[#1F2A1A] bg-[#E8505B] text-xs text-white">▶</span>
-          <span style={abs({ left: 0, right: 0, bottom: 0, height: 9, background: INK })} />
-          <span style={abs({ left: 0, bottom: 0, width: '30%', height: 9, background: '#E8505B' })} />
-        </div>
-      );
-    case 'dub':
-      return (
-        <div className="flex flex-col gap-1.5" style={abs({ inset: '14px 22px' })}>
-          <div className="grid flex-1 place-items-center rounded-[10px] bg-[#1F2A1A]">
-            <span className="grid h-7 w-10 place-items-center rounded-lg border-[3px] border-[#FDF5E0] bg-[#E8505B] text-[11px] text-white">▶</span>
-          </div>
-          <div className="grid grid-cols-9 gap-[3px]">
-            {['#4E9A35', '#4E9A35', '#FFFFFF', '#F8BE33', '#F8BE33', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF'].map((c, i) => <span key={i} className="h-[7px] rounded-[3px]" style={{ background: c }} />)}
-          </div>
-        </div>
-      );
-    case 'score':
-      return (
-        <div className="flex items-center justify-center gap-3 text-[#FDF5E0]" style={abs({ inset: 0 })}>
-          <span className="rotate-180 text-xs font-extrabold tracking-[.2em] [writing-mode:vertical-rl]">SAMPLE</span>
-          <span className="px-display text-[56px] leading-none text-[#F8BE33]">8.0</span>
-        </div>
-      );
-    default:
-      return null;
-  }
-}
+const ART_ICON = { book: BookOpenCheck, calendar: Calendar, cards: Shuffle, video: Video, dub: Clapperboard, score: Star };
 
-function CableCard({ no, title, desc, tag, cab, screen, pattern, art, swingDelay, onClick, href }) {
+function SkillTile({ no, title, desc, tag, cab, art, onClick, href }) {
+  const Icon = ART_ICON[art] || Mic2;
   const inner = (
     <>
-      <span aria-hidden className="absolute -left-[18px] -right-[18px] top-[18px] h-[5px] rounded-[3px] bg-[#1F2A1A] shadow-[0_2px_0_rgba(255,255,255,.4)]" />
-      <div className="px-cab relative flex w-full flex-1 flex-col items-center [animation:pxsCab_4.6s_ease-in-out_infinite] [transform-origin:50%_0] group-hover:[animation-play-state:paused]" style={{ animationDelay: swingDelay }}>
-        <div aria-hidden className="relative -mt-2 flex h-5 w-[54px] items-start justify-around rounded-lg border-[3px] border-[#1F2A1A] bg-[#3A4A5A] px-1.5">
-          <span className="-mt-[9px] h-3.5 w-3.5 rounded-full border-[3px] border-[#1F2A1A] bg-[#C9D4DE]" />
-          <span className="-mt-[9px] h-3.5 w-3.5 rounded-full border-[3px] border-[#1F2A1A] bg-[#C9D4DE]" />
+      <div className="relative flex items-center justify-between border-b-[2.5px] border-[#1E1B4B] p-4" style={{ background: cab }}>
+        <span className="we-icon-tile h-14 w-14 rounded-2xl bg-white transition-transform duration-300 group-hover:-rotate-6"><Icon className="h-7 w-7" strokeWidth={2.5} /></span>
+        <span className="we-display text-4xl text-[#1E1B4B]/30">{String(no).padStart(2, '0')}</span>
+      </div>
+      <div className="flex flex-1 flex-col gap-2.5 p-5">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="we-display text-2xl text-[#1E1B4B]">{title}</span>
+          {tag && <span className="we-chip !py-0.5" style={{ background: tag.bg, color: tag.fg ?? INK }}>{tag.label}</span>}
         </div>
-        <div aria-hidden className="h-[30px] w-2 border-x-[3px] border-[#1F2A1A] bg-[#3A4A5A]" />
-        <div aria-hidden className="flex h-7 w-[62%] items-center justify-center rounded-t-2xl border-4 border-b-0 border-[#1F2A1A] shadow-[inset_0_5px_0_rgba(255,255,255,.35)]" style={{ background: cab }}>
-          <span className="px-display rounded-[5px] border-2 border-[#1F2A1A] bg-[#FDF5E0] px-2 py-[3px] text-xs leading-none text-[#1F2A1A]">{String(no).padStart(2, '0')}</span>
-        </div>
-        <div className="relative flex w-full flex-1 flex-col gap-3.5 rounded-[20px] border-4 border-[#1F2A1A] p-4 shadow-[0_8px_0_rgba(15,34,56,.35),inset_0_-6px_0_rgba(0,0,0,.15)] transition-transform group-hover:-translate-y-1" style={{ background: cab }}>
-          <div aria-hidden className="relative h-[200px] overflow-hidden rounded-xl border-4 border-[#1F2A1A] shadow-[inset_0_0_0_3px_rgba(255,255,255,.5)]" style={{ backgroundColor: screen, backgroundImage: pattern }}>
-            <CardArt art={art} />
-            <span className="pointer-events-none absolute -top-[30px] left-[14%] h-[220px] w-3.5 rotate-[30deg] bg-white/35" />
-            <span className="pointer-events-none absolute -top-[30px] left-[24%] h-[220px] w-[5px] rotate-[30deg] bg-white/30" />
-          </div>
-          <div className="flex flex-1 flex-col gap-2.5 rounded-xl border-[3px] border-[#1F2A1A] bg-[#FDF5E0] p-[18px]">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="px-display text-2xl uppercase leading-[1.2] text-[#1F2A1A]">{title}</span>
-              {tag && <span className="rounded-md border-2 border-[#1F2A1A] px-2 py-[5px] text-[13px] font-extrabold leading-none" style={{ background: tag.bg, color: tag.fg ?? INK }}>{tag.label}</span>}
-            </div>
-            <div className="flex items-end gap-3">
-              <span className="flex-1 text-lg font-semibold leading-normal text-[#1F2A3A] [text-wrap:pretty]">{desc}</span>
-              <span aria-hidden className="grid h-[46px] w-[46px] flex-none place-items-center rounded-xl border-[3px] border-[#1F2A1A] bg-[#1F2A1A] text-lg font-extrabold leading-none text-[#FDF5E0]">→</span>
-            </div>
-          </div>
-        </div>
-        <div aria-hidden className="h-2.5 w-[46%] rounded-b-lg border-[3px] border-t-0 border-[#1F2A1A] bg-[#3A4A5A]" />
+        <span className="flex-1 text-[15px] font-semibold leading-normal text-[var(--text-muted)] [text-wrap:pretty]">{desc}</span>
+        <span className="we-btn we-btn-sm mt-1 self-start" style={{ background: cab }}>{href ? 'Mở tài liệu' : 'Bắt đầu'} <ArrowRight className="h-4 w-4" /></span>
       </div>
     </>
   );
-  const cls = 'group relative flex min-w-0 flex-col items-center pt-5 text-left text-[#1F2A1A] cursor-pointer';
+  const cls = 'we-card we-card-hover group flex min-w-0 flex-col overflow-hidden text-left';
   return href
     ? <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>{inner}</a>
     : <button type="button" onClick={onClick} className={cls}>{inner}</button>;
 }
 
-// "Chọn Chủ Đề" modal (Bộ đề thi thật)
+// "Chọn Chủ Đề" modal (Bộ đề thi thật) - WorkingEnglish Speaking Studio
 function TopicPicker({ onClose, onStart }) {
   const [data] = useLocalData(() => loadData('topics'));
   const [part, setPart] = useState(1);
   const [sel, setSel] = useState(null);
   const custom = (data?.custom || []).filter(t => t.part === part);
+
+  const selectedTopicName = useMemo(() => {
+    if (!sel || !data) return '';
+    return data.topics?.[sel]?.name || custom.find(t => t.id === sel)?.name || sel;
+  }, [sel, data, custom]);
+
   const pickRandom = () => {
     if (!data) return;
     const ids = part === 1 ? data.categories.flatMap(c => c.topics.map(t => t.id)) : (part === 2 ? data.p2 : data.p3).map(t => t.id);
     const all = [...ids, ...custom.map(t => t.id)].filter(id => data.topics[id]);
     setSel(all[Math.floor(Math.random() * all.length)]);
   };
+
+  const PART_TABS = [
+    { p: 1, label: 'PART 1', sub: '50 chủ đề ngắn', color: '#F8BE33' },
+    { p: 2, label: 'PART 2', sub: 'Cue card độc thoại', color: '#3ECF8E' },
+    { p: 3, label: 'PART 3', sub: 'Thảo luận sâu Band 7+', color: '#7CC4F2' },
+  ];
+
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center p-0 sm:items-center sm:p-4">
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
-      <div className="relative flex max-h-[88vh] w-full flex-col rounded-t-3xl border-2 border-black bg-white shadow-[8px_8px_0_rgba(0,0,0,1)] sm:max-w-lg sm:rounded-3xl">
-        <div className="flex shrink-0 items-center justify-between px-6 pb-4 pt-6">
+      <div className="absolute inset-0 bg-[#1E1B4B]/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative flex max-h-[90vh] w-full flex-col rounded-t-[32px] border-[3px] border-[#1E1B4B] bg-[#FFFDF8] shadow-[0_12px_0_#1E1B4B] sm:max-w-xl sm:rounded-[32px]">
+        {/* Modal Header */}
+        <div className="flex shrink-0 items-start justify-between border-b-[2.5px] border-[#1E1B4B] bg-[#FAF8F5] px-6 py-5 rounded-t-[29px]">
           <div>
-            <h2 className="text-2xl font-black leading-none">Chọn Chủ Đề</h2>
-            <p className="mt-1 text-xs font-medium text-slate-400">AI examiner sẽ hỏi theo part bạn chọn</p>
+            <div className="mb-1.5 flex items-center gap-2">
+              <span className="we-sticker !py-0.5 !text-[10px] !bg-[#F43F5E] text-white">
+                <Mic2 size={12} strokeWidth={2.5} /> SPEAKING STUDIO
+              </span>
+            </div>
+            <h2 className="we-display text-2xl font-black uppercase tracking-tight text-[#1E1B4B]">
+              CHỌN CHỦ ĐỀ PHỎNG VẤN
+            </h2>
+            <p className="mt-0.5 text-xs font-semibold text-[#6B6790]">
+              AI Examiner mô phỏng trực tiếp đề thi thật theo từng Part
+            </p>
           </div>
-          <button onClick={onClose} className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-slate-200 bg-slate-100 transition-colors hover:bg-slate-200"><X className="h-4 w-4" /></button>
-        </div>
-        <div className="flex shrink-0 gap-2 px-6 pb-3">
-          {[1, 2, 3].map(p => (
-            <button key={p} onClick={() => { setPart(p); setSel(null); }} className={`flex-1 rounded-xl border-2 py-2 text-sm font-black transition-all ${part === p ? 'border-black bg-black text-white shadow-[2px_2px_0_rgba(0,0,0,0.3)]' : 'border-slate-200 bg-white text-slate-500 hover:border-slate-400'}`}>
-              Part {p}
-              <span className={`mt-0.5 block text-[10px] font-medium ${part === p ? 'text-slate-300' : 'text-slate-400'}`}>{p === 1 ? '50 topics' : p === 2 ? 'Cue card' : 'Discussion'}</span>
-            </button>
-          ))}
-        </div>
-        <div className="mx-6 mb-3 shrink-0 border-t-2 border-slate-100" />
-        <div className="flex-1 overflow-y-auto px-6">
-          <button onClick={pickRandom} className="mb-5 flex w-full items-center justify-center gap-2 rounded-xl border-2 border-dashed border-slate-300 py-2.5 text-sm font-bold text-slate-500 transition-all hover:border-blue-400 hover:bg-blue-50 hover:text-blue-600">
-            <Shuffle className="h-4 w-4" /> Ngẫu nhiên
+          <button
+            onClick={onClose}
+            className="flex h-9 w-9 items-center justify-center rounded-xl border-[2px] border-[#1E1B4B] bg-white text-[#1E1B4B] shadow-[0_2px_0_#1E1B4B] transition-all hover:bg-[#F8BE33] hover:-translate-y-0.5"
+          >
+            <X className="h-4 w-4" strokeWidth={2.5} />
           </button>
-          <div className="mb-6">
-            <div className="mb-3 flex items-center justify-between">
-              <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Your Custom Topics</p>
-              <span className="text-[10px] font-bold text-amber-600">🔒 Thêm topic mới (Premium)</span>
+        </div>
+
+        {/* Part Selector Cards */}
+        <div className="grid grid-cols-3 gap-2.5 px-6 pt-4">
+          {PART_TABS.map(tab => {
+            const on = part === tab.p;
+            return (
+              <button
+                key={tab.p}
+                type="button"
+                onClick={() => { setPart(tab.p); setSel(null); }}
+                className={`flex flex-col items-center justify-center rounded-2xl border-[2.5px] border-[#1E1B4B] p-2.5 text-center transition-all ${
+                  on
+                    ? 'shadow-[0_4px_0_#1E1B4B] -translate-y-0.5 text-[#1E1B4B]'
+                    : 'bg-white text-[#1E1B4B] shadow-[0_2px_0_#1E1B4B] hover:bg-[#FFF8E7]'
+                }`}
+                style={{ backgroundColor: on ? tab.color : '#FFFFFF' }}
+              >
+                <span className="text-xs font-black uppercase tracking-wider">{tab.label}</span>
+                <span className="mt-0.5 text-[11px] font-bold opacity-80">{tab.sub}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Scrollable Topics Area */}
+        <div className="flex-1 overflow-y-auto px-6 py-4">
+          {/* Quick Random Button */}
+          <button
+            type="button"
+            onClick={pickRandom}
+            className="mb-5 flex w-full items-center justify-center gap-2 rounded-2xl border-[2px] border-[#1E1B4B] bg-[#FFF8E7] py-2.5 text-xs font-black uppercase text-[#1E1B4B] shadow-[0_2px_0_#1E1B4B] transition-transform hover:-translate-y-0.5 hover:bg-[#F8BE33]"
+          >
+            <Shuffle className="h-4 w-4" strokeWidth={2.5} /> Chọn ngẫu nhiên một đề thi
+          </button>
+
+          {/* Custom Topics (if any) */}
+          <div className="mb-5">
+            <div className="mb-2 flex items-center justify-between">
+              <span className="text-[10px] font-black uppercase tracking-widest text-[#6B6790]">
+                YOUR CUSTOM TOPICS
+              </span>
+              <span className="text-[10px] font-black uppercase text-[#F2683A]">⭐ Bộ đề thi thật</span>
             </div>
             <div className="flex flex-wrap gap-2">
-              {custom.map(t => (
-                <button key={t.id} onClick={() => setSel(t.id)} className={`flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-bold transition-all ${sel === t.id ? 'border-black bg-slate-800 text-white shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'border-slate-300 bg-white text-slate-700 hover:border-slate-500'}`}>
-                  {t.is_public && <span className="rounded bg-amber-100 px-1 text-[9px] uppercase text-amber-800">TID</span>}{t.name}
-                </button>
-              ))}
-              {custom.length === 0 && <p className="text-xs italic text-slate-400">Chưa có topic nào.</p>}
+              {custom.map(t => {
+                const on = sel === t.id;
+                return (
+                  <button
+                    key={t.id}
+                    type="button"
+                    onClick={() => setSel(t.id)}
+                    className={`flex items-center gap-1.5 rounded-xl border-[2px] border-[#1E1B4B] px-3 py-1.5 text-xs font-black transition-all ${
+                      on
+                        ? 'bg-[#4F46E5] text-white shadow-[0_3px_0_#1E1B4B] scale-105'
+                        : 'bg-white text-[#1E1B4B] shadow-[0_2px_0_#1E1B4B] hover:bg-[#FFF8E7]'
+                    }`}
+                  >
+                    {t.is_public && (
+                      <span className="rounded-md border border-[#1E1B4B] bg-[#F8BE33] px-1 py-0.2 text-[8px] font-black uppercase text-[#1E1B4B]">
+                        Đề thật
+                      </span>
+                    )}
+                    {t.name}
+                  </button>
+                );
+              })}
+              {custom.length === 0 && <p className="text-xs italic text-[#6B6790]">Chưa có topic riêng.</p>}
             </div>
           </div>
+
+          {/* Part 1 Categories & Topics */}
           {part === 1 && data && (
-            <div className="space-y-5 pb-4">
+            <div className="space-y-4 pb-2">
               {data.categories.map(c => (
                 <div key={c.label}>
-                  <p className="mb-2 text-[10px] font-black uppercase tracking-widest text-slate-400">{c.label}</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {c.topics.map(t => <button key={t.id} onClick={() => setSel(t.id)} className={`rounded-lg border px-3 py-1.5 text-xs font-bold transition-all ${CHIP[c.color][sel === t.id ? 1 : 0]}`}>{t.name}</button>)}
+                  <p className="mb-2 text-[10px] font-black uppercase tracking-widest text-[#6B6790]">
+                    {c.label}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {c.topics.map(t => {
+                      const on = sel === t.id;
+                      return (
+                        <button
+                          key={t.id}
+                          type="button"
+                          onClick={() => setSel(t.id)}
+                          className={`rounded-xl border-[2px] border-[#1E1B4B] px-3 py-1.5 text-xs font-bold transition-all ${
+                            on
+                              ? 'bg-[#4F46E5] text-white shadow-[0_3px_0_#1E1B4B] scale-105 font-black'
+                              : 'bg-white text-[#1E1B4B] shadow-[0_2px_0_#1E1B4B] hover:bg-[#FFF8E7] hover:-translate-y-0.5'
+                          }`}
+                        >
+                          {t.name}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
             </div>
           )}
+
+          {/* Part 2 Cue Cards */}
           {part === 2 && data && (
-            <div className="pb-4">
-              <p className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs font-medium leading-relaxed text-slate-600">Giám khảo sẽ đưa ra cue card kiểu <strong>"Describe a ..."</strong> và cho bạn 1 phút chuẩn bị trước khi nói.</p>
+            <div className="pb-2">
+              <div className="mb-4 rounded-2xl border-[2px] border-[#1E1B4B] bg-[#FFF0C2] p-3.5 shadow-[0_2px_0_#1E1B4B]">
+                <p className="text-xs font-bold leading-relaxed text-[#1E1B4B]">
+                  🎯 Giám khảo sẽ đưa ra đề bài độc thoại <strong>"Describe a ..."</strong> và bạn có <strong>1 phút chuẩn bị</strong> trước khi nói trong 2 phút.
+                </p>
+              </div>
               <div className="flex flex-wrap gap-2">
-                {data.p2.map(t => <button key={t.id} onClick={() => setSel(t.id)} className={`rounded-lg border px-3 py-1.5 text-xs font-bold transition-all ${sel === t.id ? 'border-black bg-blue-600 text-white shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'}`}>{t.name}</button>)}
+                {data.p2.map(t => {
+                  const on = sel === t.id;
+                  return (
+                    <button
+                      key={t.id}
+                      type="button"
+                      onClick={() => setSel(t.id)}
+                      className={`rounded-xl border-[2px] border-[#1E1B4B] px-3.5 py-2 text-xs font-bold transition-all ${
+                        on
+                          ? 'bg-[#3ECF8E] text-[#1E1B4B] shadow-[0_3px_0_#1E1B4B] scale-105 font-black'
+                          : 'bg-white text-[#1E1B4B] shadow-[0_2px_0_#1E1B4B] hover:bg-[#FFF8E7] hover:-translate-y-0.5'
+                      }`}
+                    >
+                      {t.name}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
+
+          {/* Part 3 Discussion */}
           {part === 3 && data && (
-            <div className="pb-4">
-              <p className="mb-4 rounded-xl border border-violet-200 bg-violet-50 p-3 text-xs font-medium leading-relaxed text-slate-600">Thảo luận chủ đề trừu tượng — giám khảo hỏi quan điểm, so sánh xã hội, lập luận phản biện. Cần <strong>band 6.5+</strong>.</p>
+            <div className="pb-2">
+              <div className="mb-4 rounded-2xl border-[2px] border-[#1E1B4B] bg-[#E0E7FF] p-3.5 shadow-[0_2px_0_#1E1B4B]">
+                <p className="text-xs font-bold leading-relaxed text-[#1E1B4B]">
+                  💡 Thảo luận sâu các vấn đề xã hội, so sánh đa chiều và phản biện học thuật. Yêu cầu phản xạ và tư duy <strong>Band 6.5+</strong>.
+                </p>
+              </div>
               <div className="flex flex-wrap gap-2">
-                {data.p3.map(t => <button key={t.id} onClick={() => setSel(t.id)} className={`rounded-lg border px-3 py-1.5 text-xs font-bold transition-all ${sel === t.id ? 'border-black bg-violet-600 text-white shadow-[2px_2px_0_rgba(0,0,0,1)]' : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'}`}>{t.name}</button>)}
+                {data.p3.map(t => {
+                  const on = sel === t.id;
+                  return (
+                    <button
+                      key={t.id}
+                      type="button"
+                      onClick={() => setSel(t.id)}
+                      className={`rounded-xl border-[2px] border-[#1E1B4B] px-3.5 py-2 text-xs font-bold transition-all ${
+                        on
+                          ? 'bg-[#7CC4F2] text-[#1E1B4B] shadow-[0_3px_0_#1E1B4B] scale-105 font-black'
+                          : 'bg-white text-[#1E1B4B] shadow-[0_2px_0_#1E1B4B] hover:bg-[#FFF8E7] hover:-translate-y-0.5'
+                      }`}
+                    >
+                      {t.name}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
         </div>
-        <div className="shrink-0 border-t-2 border-slate-100 px-6 py-4">
+
+        {/* Modal Footer / Start Button */}
+        <div className="shrink-0 border-t-[2.5px] border-[#1E1B4B] bg-[#FAF8F5] px-6 py-4 rounded-b-[29px]">
           {sel ? (
-            <button onClick={() => onStart(sel)} className="flex w-full items-center justify-between rounded-xl border-2 border-black bg-blue-600 px-5 py-4 text-lg font-black text-white shadow-[4px_4px_0_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 hover:shadow-[6px_6px_0_rgba(0,0,0,1)]">
-              Bắt đầu luyện tập <ArrowRight className="h-5 w-5" />
+            <button
+              type="button"
+              onClick={() => onStart(sel)}
+              className="flex w-full items-center justify-between rounded-2xl border-[2.5px] border-[#1E1B4B] bg-[#3ECF8E] px-5 py-3.5 text-base font-black uppercase tracking-wider text-[#1E1B4B] shadow-[0_4px_0_#1E1B4B] transition-transform hover:-translate-y-0.5 hover:shadow-[0_6px_0_#1E1B4B]"
+            >
+              <span className="truncate">Bắt đầu: {selectedTopicName}</span>
+              <ArrowRight className="h-5 w-5 shrink-0" strokeWidth={2.5} />
             </button>
           ) : (
-            <div className="flex w-full cursor-not-allowed items-center justify-between rounded-xl border-2 border-slate-200 bg-slate-100 px-5 py-4 text-lg font-black text-slate-400">
-              Chọn một chủ đề để bắt đầu <ArrowRight className="h-5 w-5" />
+            <div className="flex w-full cursor-not-allowed items-center justify-between rounded-2xl border-[2px] border-[#1E1B4B]/30 bg-slate-100 px-5 py-3.5 text-sm font-bold text-slate-400">
+              <span>Chọn một chủ đề ở trên để bắt đầu</span>
+              <ArrowRight className="h-4 w-4" strokeWidth={2} />
             </div>
           )}
         </div>
@@ -235,9 +297,9 @@ function HistoryPanel() {
   if (!rows.length) return null;
   const shown = all ? rows : rows.slice(0, 5);
   return (
-    <div className="rounded-[28px] border-4 border-[#1F2A1A] bg-[#FDF5E0] p-6 shadow-[0_10px_0_#1F2A1A] md:p-8">
-      <div className="mb-6 flex items-end justify-between border-b-[3px] border-dashed border-[#1F2A1A]/25 pb-4">
-        <h3 className="px-display flex items-center gap-2 text-2xl uppercase"><Calendar className="text-[#1F2A1A]/50" /> Lịch sử luyện tập</h3>
+    <div className="rounded-[28px] border-4 border-[#1E1B4B] bg-[#FFF8E7] p-6 shadow-[0_10px_0_#1E1B4B] md:p-8">
+      <div className="mb-6 flex items-end justify-between border-b-[3px] border-dashed border-[#1E1B4B]/25 pb-4">
+        <h3 className="px-display flex items-center gap-2 text-2xl uppercase"><Calendar className="text-[#1E1B4B]/50" /> Lịch sử luyện tập</h3>
         {rows.length > 5 && <button onClick={() => setAll(a => !a)} className="font-bold text-blue-600 hover:underline">{all ? 'Thu gọn' : 'Xem tất cả'}</button>}
       </div>
       <div className="space-y-3">
@@ -274,62 +336,59 @@ function HubHome({ onBack, go }) {
     }
     return { week: rows.filter(r => new Date(r.created_at).getTime() > weekAgo).length, streak };
   }, []);
-  const stripes = 'repeating-linear-gradient(135deg,transparent 0 8px,rgba(255,255,255,.35) 8px 14px)';
   const cards = [
-    { title: 'Bộ đề thi thật', desc: 'Luyện tập với các bộ đề được sưu tập từ các bộ câu hỏi thi thật ở quá khứ', cab: '#E8505B', screen: '#C8DDF7', art: 'book', onClick: () => setPicker(true) },
-    { title: 'Forecast Speaking', tag: { label: 'Quý 3 · Tháng 9-12, 2026', bg: '#F9A8C4' }, desc: 'Dự đoán và cập nhật bộ đề Speaking mới nhất — kèm bộ Quý 2 để ôn lại.', cab: '#F8BE33', screen: '#F6C9D8', art: 'calendar', onClick: () => go('forecast') },
-    { title: 'Speaking Roulette', desc: 'Rút thẻ ngẫu nhiên, luyện tập P1/P2/P3 như thi thật.', cab: '#5BA4E0', screen: '#2E5E8A', pattern: 'radial-gradient(rgba(255,255,255,.25) 2px,transparent 2px)', art: 'cards', onClick: () => go('roulette') },
-    { title: 'Shadowing Mode', desc: 'Nghe và nhại theo video YouTube để chuẩn hóa ngữ điệu.', cab: '#6FBF4A', screen: '#DCEFFA', pattern: stripes, art: 'video', onClick: () => go('shadowing') },
-    { title: 'Lồng tiếng BBC · TED-Ed', tag: { label: 'MỚI', bg: '#D6363F', fg: '#FFFFFF' }, desc: 'Thu giọng từng câu, xem lại video với chính giọng của bạn.', cab: '#F28C38', screen: '#A6D8F4', pattern: stripes, art: 'dub', onClick: () => go('dubbing') },
-    { title: 'Sample 8.0 Speaking', desc: 'Biên soạn bởi giáo viên 10 lần 8.5 IELTS', cab: '#9B7BD8', screen: '#1F2A1A', art: 'score', href: 'https://drive.google.com/file/d/1inr9drBzFyZz8sv4daPcEPZuueXt9YQ9/view?usp=sharing' },
+    { title: 'Bộ đề thi thật', desc: 'Luyện tập với các bộ đề được sưu tập từ các bộ câu hỏi thi thật ở quá khứ', cab: '#F2683A', art: 'book', onClick: () => setPicker(true) },
+    { title: 'Forecast Speaking', tag: { label: 'Quý 3 · Tháng 9-12, 2026', bg: '#F9A8C4' }, desc: 'Dự đoán và cập nhật bộ đề Speaking mới nhất — kèm bộ Quý 2 để ôn lại.', cab: '#F8BE33', art: 'calendar', onClick: () => go('forecast') },
+    { title: 'Speaking Roulette', desc: 'Rút thẻ ngẫu nhiên, luyện tập P1/P2/P3 như thi thật.', cab: '#7CC4F2', art: 'cards', onClick: () => go('roulette') },
+    { title: 'Shadowing Mode', desc: 'Nghe và nhại theo video YouTube để chuẩn hóa ngữ điệu.', cab: '#3ECF8E', art: 'video', onClick: () => go('shadowing') },
+    { title: 'Lồng tiếng BBC · TED-Ed', tag: { label: 'MỚI', bg: '#F2683A', fg: '#FFFFFF' }, desc: 'Thu giọng từng câu, xem lại video với chính giọng của bạn.', cab: '#E06A96', art: 'dub', onClick: () => go('dubbing') },
+    { title: 'Sample 8.0 Speaking', desc: 'Biên soạn bởi giáo viên 10 lần 8.5 IELTS', cab: '#A5B4FC', art: 'score', href: 'https://drive.google.com/file/d/1inr9drBzFyZz8sv4daPcEPZuueXt9YQ9/view?usp=sharing' },
   ];
-  const swing = ['0s', '-1.4s', '-2.9s', '-0.7s', '-3.6s', '-2.1s'];
   return (
-    <div className="px-root min-h-full overflow-x-clip bg-[#1E3A5C] bg-[radial-gradient(rgba(255,255,255,.08)_2px,transparent_2px)] bg-[length:24px_24px]">
-      <header className="relative overflow-hidden bg-[linear-gradient(180deg,#8CC8EC_0%,#CFE9F8_60%,#EAF6FC_100%)] pb-[340px] sm:pb-[470px]">
-        <div aria-hidden className="pointer-events-none absolute inset-0 max-sm:[zoom:0.72]" dangerouslySetInnerHTML={heroHtml} />
-        <div className="relative z-[5] mx-auto flex max-w-[1440px] flex-col items-center gap-4 px-[clamp(20px,4vw,40px)] pt-[60px] text-center">
-          <button onClick={onBack} className="inline-flex min-h-11 items-center gap-2 self-start rounded-full border-[3px] border-[#1F2A1A] bg-[#FDF5E0] px-4 text-[15px] font-bold text-[#1F2A1A] shadow-[0_4px_0_#1F2A1A] transition-[transform,box-shadow,background-color] hover:bg-[#F8BE33] active:translate-y-0.5 active:shadow-[0_2px_0_#1F2A1A]">
-            <span aria-hidden>←</span>Quay lại chọn kỹ năng
-          </button>
-          <span className="mt-2.5 -rotate-2 rounded-full border-[3px] border-[#1F2A1A] bg-white px-4 py-[7px] text-sm font-extrabold tracking-[.08em]">SPEAKING PRACTICE HUB</span>
-          <h1 className="px-display px-outline m-0 text-[clamp(40px,7.4vw,104px)] leading-[1.15] [--px-drop:8px] [--px-stroke:clamp(6px,.9vw,10px)] [text-shadow:0_8px_0_#1F2A1A,0_0_40px_rgba(255,255,255,.7)]">IELTS SPEAKING</h1>
+    <div className="px-root we-page">
+      <SkillHero
+        variant="speaking"
+        onBack={onBack}
+        eyebrow="WorkingEnglish · Speaking Studio"
+        title="Nói"
+        accent="Tự tin từng câu"
+        subtitle="Phỏng vấn thử theo đề thật, forecast theo quý, shadowing và lồng tiếng video. Ghi âm, nghe lại và sửa ngay chỗ còn vấp."
+        stats={[
+          { value: stats.week, label: 'phiên tuần này' },
+          { value: stats.streak, label: 'ngày liên tiếp' },
+        ]}
+      />
+      <main className="relative z-[1] mx-auto max-w-[1280px] px-[clamp(20px,4vw,48px)] pb-[120px] pt-10">
+        <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))]">
+          {cards.map((c, i) => <SkillTile key={c.title} no={i + 1} {...c} />)}
         </div>
-      </header>
-      <div className="relative">
-        <div aria-hidden className="pointer-events-none absolute inset-0 z-0" dangerouslySetInnerHTML={snowHtml} />
-        <main className="relative z-[1] mx-auto max-w-[1400px] px-[clamp(20px,4vw,40px)] pb-[160px] pt-14">
-          <div className="grid gap-x-9 gap-y-12 pt-2 [grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))]">
-            {cards.map((c, i) => <CableCard key={c.title} no={i + 1} swingDelay={swing[i % swing.length]} {...c} />)}
+        <div className="mt-14 space-y-10">
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              { icon: Activity, bg: '#DCF0FD', value: stats.week, label: 'Phiên (tuần)' },
+              { icon: Award, bg: '#D4F5E4', value: '-', label: 'Band TB (7 lần)' },
+              { icon: Flame, bg: '#FFE1D4', value: stats.streak, label: 'Ngày liên tiếp' },
+            ].map(s => (
+              <div key={s.label} className="we-card flex min-w-[160px] flex-col items-center px-6 py-4">
+                <span className="we-icon-tile mb-2 h-10 w-10" style={{ background: s.bg }}><s.icon className="h-5 w-5" strokeWidth={2.5} /></span>
+                <span className="we-display text-3xl">{s.value}</span>
+                <span className="mt-1 text-xs font-extrabold uppercase text-[var(--text-muted)]">{s.label}</span>
+              </div>
+            ))}
           </div>
-          <div className="mt-20 space-y-10">
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                { icon: Activity, color: 'text-[#2F6FB0]', value: stats.week, label: 'Sessions (Tuần)' },
-                { icon: Award, color: 'text-[#2E7D3A]', value: '-', label: 'Avg Band (7 lần)' },
-                { icon: Flame, color: 'text-[#E8505B]', value: stats.streak, label: 'Ngày liên tiếp' },
-              ].map(s => (
-                <div key={s.label} className="flex min-w-[150px] flex-col items-center rounded-2xl border-4 border-[#1F2A1A] bg-[#FDF5E0] px-6 py-4 shadow-[0_6px_0_#1F2A1A]">
-                  <s.icon className={`mb-2 h-6 w-6 ${s.color}`} />
-                  <span className="px-display text-3xl leading-none">{s.value}</span>
-                  <span className="mt-2 text-xs font-extrabold uppercase text-[#5A6450]">{s.label}</span>
-                </div>
-              ))}
-            </div>
-            <HistoryPanel />
-          </div>
-        </main>
-      </div>
+          <HistoryPanel />
+        </div>
+      </main>
       {picker && <TopicPicker onClose={() => setPicker(false)} onStart={id => { setPicker(false); go('mock', id); }} />}
     </div>
   );
 }
 
-export default function SpeakingHub({ onBack, onSaveWord, speechVoice }) {
+export default function SpeakingHub({ onBack, onSaveWord, speechVoice, onLookupDictionary, onTryInDoctor }) {
   const [route, setRoute] = useState({ page: 'hub' });
   const go = (page, id, mode) => setRoute({ page, id, mode });
   const home = () => go('hub');
-  const common = { onSaveWord, speechVoice };
+  const common = { onSaveWord, speechVoice, onLookupDictionary, onTryInDoctor };
   let view;
   switch (route.page) {
     case 'mock': view = <MockInterview topicId={route.id} onBack={home} {...common} />; break;

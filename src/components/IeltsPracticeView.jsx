@@ -27,7 +27,7 @@ import {
 } from 'lucide-react';
 import IeltsCatalogView from './IeltsCatalogView';
 import { IELTS_CATALOG_TESTS, calculateIeltsBand, IELTS_BAND_SCORE_TABLE } from '../data/ieltsData';
-import { getIeltsExam, hasIeltsExam } from '../data/exams';
+import { useExam, loadExam, resolveIeltsExamId } from '../data/exams';
 import { ttsService } from '../services/ttsService';
 
 export default function IeltsPracticeView({ words = [], onSaveWord, speechVoice = 'US' }) {
@@ -90,13 +90,12 @@ export default function IeltsPracticeView({ words = [], onSaveWord, speechVoice 
   const [showResultModal, setShowResultModal] = useState(false);
 
   // Load active full exam data
-  const activeExamData = useMemo(() => {
-    if (!activeCatalogTest) return null;
-    return getIeltsExam(activeCatalogTest.id);
-  }, [activeCatalogTest]);
+  const activeExamData = useExam(resolveIeltsExamId(activeCatalogTest?.id));
 
   // Handle select test from catalog
-  const handleSelectTest = (test) => {
+  const handleSelectTest = async (test) => {
+    // Load the exam content before switching views so the test never renders half-empty
+    await loadExam(resolveIeltsExamId(test.id));
     setActiveCatalogTest(test);
     setViewMode('exam');
     setActiveSkill(test.skill || 'listening');

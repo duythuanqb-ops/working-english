@@ -38,8 +38,29 @@ function serveExamMedia() {
   };
 }
 
+// Lightweight exam manifest (id/category/type/testNum) so src/data/exams can lazy-load each exam file
+// instead of eagerly bundling ~30 MB of JSON into a single chunk.
+const EXAMS_DIR = path.resolve('src/data/exams');
+function examManifest() {
+  const ID = 'virtual:exam-manifest';
+  const RESOLVED = '\0' + ID;
+  return {
+    name: 'exam-manifest',
+    resolveId: id => (id === ID ? RESOLVED : null),
+    load(id) {
+      if (id !== RESOLVED) return null;
+      this.addWatchFile(EXAMS_DIR);
+      const list = fs.readdirSync(EXAMS_DIR).filter(f => f.endsWith('.json')).sort().map(file => {
+        const { id: examId, category, type, testNum } = JSON.parse(fs.readFileSync(path.join(EXAMS_DIR, file), 'utf8'));
+        return { file, id: examId, category, type, testNum };
+      });
+      return `export default ${JSON.stringify(list)};`;
+    }
+  };
+}
+
 export default defineConfig({
-  plugins: [react(), tailwindcss(), serveExamMedia()],
+  plugins: [react(), tailwindcss(), serveExamMedia(), examManifest()],
   base: './',
   server: {
     port: 5174,

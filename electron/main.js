@@ -1,5 +1,6 @@
-const { app, BrowserWindow, globalShortcut, ipcMain, screen, protocol, session } = require('electron');
+const { app, BrowserWindow, globalShortcut, ipcMain, screen, protocol, session, Notification } = require('electron');
 const path = require('path');
+const fs = require('fs');
 const { fileURLToPath } = require('url');
 const { getExamsDir, checkExamMediaStatus, downloadAndExtractMedia } = require('./mediaManager');
 
@@ -27,6 +28,11 @@ let mainWindow = null;
 let miniWindow = null;
 
 const isDev = process.env.NODE_ENV === 'development' || !app.isPackaged;
+
+// Report a clean Chrome user-agent by removing Electron and app tokens (helps compatibility with Google/YouTube services)
+app.userAgentFallback = app.userAgentFallback
+  .replace(/\s+Electron\/\S+/i, '')
+  .replace(new RegExp(`\\s+(?:${app.getName()}|working-english|WorkingEnglish)\\/\\S+`, 'gi'), '');
 
 function createMainWindow() {
   mainWindow = new BrowserWindow({
@@ -172,15 +178,104 @@ ipcMain.handle('download-exam-media', async (_event, type) => {
   }
 });
 
+ipcMain.handle('send-desktop-notification', (_event, { title, body }) => {
+  try {
+    if (Notification.isSupported()) {
+      const notif = new Notification({
+        title: title || 'WorkingEnglish',
+        body: body || 'Đã đến giờ ôn tập tiếng Anh hôm nay!',
+        silent: false
+      });
+      notif.show();
+      notif.on('click', () => {
+        if (mainWindow) {
+          if (mainWindow.isMinimized()) mainWindow.restore();
+          mainWindow.show();
+          mainWindow.focus();
+        }
+      });
+      return { success: true };
+    }
+    return { success: false, reason: 'Notification not supported on this platform' };
+  } catch (err) {
+    console.error('Failed to show notification:', err);
+    return { success: false, error: err.message };
+  }
+});
+
+// Persistent User Data Storage handlers (Disk file + rolling backups)
+function getUserDataFilePath() {
+  return path.join(app.getPath('userData'), 'working_english_data.json');
+}
+
+function getBackupDirPath() {
+  const backupDir = path.join(app.getPath('userData'), 'backups');
+  if (!fs.existsSync(backupDir)) {
+    fs.mkdirSync(backupDir, { recursive: true });
+  }
+  return backupDir;
+}
+
+ipcMain.handle('save-user-data', async (_event, payload) => {
+  try {
+    const filePath = getUserDataFilePath();
+    const dataString = JSON.stringify(payload, null, 2);
+    fs.writeFileSync(filePath, dataString, 'utf8');
+
+    // Rolling daily backup
+    try {
+      const today = new Date().toISOString().slice(0, 10);
+      const backupFile = path.join(getBackupDirPath(), `backup_${today}.json`);
+      if (!fs.existsSync(backupFile)) {
+        fs.writeFileSync(backupFile, dataString, 'utf8');
+      }
+    } catch (bErr) {
+      // backup failure should not block main save
+    }
+
+    return { success: true, path: filePath };
+  } catch (err) {
+    console.error('Failed to save user data to disk:', err);
+    return { success: false, error: err.message };
+  }
+});
+
+ipcMain.handle('load-user-data', async () => {
+  try {
+    const filePath = getUserDataFilePath();
+    if (fs.existsSync(filePath)) {
+      const content = fs.readFileSync(filePath, 'utf8');
+      return { success: true, data: JSON.parse(content), path: filePath };
+    }
+    return { success: true, data: null, path: filePath };
+  } catch (err) {
+    console.error('Failed to load user data from disk:', err);
+    return { success: false, error: err.message };
+  }
+});
+
+ipcMain.handle('get-user-data-path', () => {
+  return {
+    userDataDir: app.getPath('userData'),
+    dataFile: getUserDataFilePath(),
+    backupDir: path.join(app.getPath('userData'), 'backups')
+  };
+});
+
 app.whenReady().then(() => {
   if (!isDev) mapExamMediaRequests();
 
-  // YouTube Referer & Origin interceptor (fixes error 150/152/153 on file://)
+  // YouTube embeds need a valid Referer. When loaded from file:// (packaged app), no Referer is sent,
+  // causing error 153. We set Referer to https://workingenglish.app/.
+  // NOTE: Never set Referer or Origin to https://www.youtube.com because YouTube rejects embedded player
+  // requests whose referer is youtube.com itself with Error 152-4.
   session.defaultSession.webRequest.onBeforeSendHeaders(
-    { urls: ['*://*.youtube.com/*', '*://*.googlevideo.com/*', '*://*.ytimg.com/*'] },
+    { urls: ['*://*.youtube.com/*', '*://*.youtube-nocookie.com/*'] },
     (details, callback) => {
-      details.requestHeaders['Referer'] = 'https://www.youtube.com';
-      details.requestHeaders['Origin'] = 'https://www.youtube.com';
+      const ref = details.requestHeaders['Referer'];
+      if (!ref || ref.startsWith('file:')) {
+        details.requestHeaders['Referer'] = 'https://workingenglish.app/';
+      }
       callback({ cancel: false, requestHeaders: details.requestHeaders });
     }
   );

@@ -34,7 +34,14 @@ export function useYouTube(videoId, { mute = false } = {}) {
       playerRef.current = new YT.Player(el, {
         videoId,
         width: '100%', height: '100%',
-        playerVars: { rel: 0, modestbranding: 1, playsinline: 1, cc_load_policy: 0, iv_load_policy: 3, ...(window.location.protocol.startsWith('http') ? { origin: window.location.origin } : {}) },
+        playerVars: {
+          rel: 0,
+          modestbranding: 1,
+          playsinline: 1,
+          cc_load_policy: 0,
+          iv_load_policy: 3,
+          origin: window.location.protocol.startsWith('http') ? window.location.origin : 'https://workingenglish.app'
+        },
         events: {
           onReady: e => { if (!alive) return; if (mute) e.target.mute(); setReady(true); },
           onStateChange: e => alive && setPlaying(e.data === 1),

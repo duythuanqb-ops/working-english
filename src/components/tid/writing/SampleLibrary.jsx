@@ -54,7 +54,7 @@ export function SampleLibrary({ go, onOpen }) {
 
         <div className="mt-4">
           <ChipRail label="Chủ đề:">
-            <FilterChip pressed={topic === null} onClick={() => setTopic(null)} color="#1F2A1A" icon="◈" label="Tất cả" count={SAMPLES.length} />
+            <FilterChip pressed={topic === null} onClick={() => setTopic(null)} color="#1E1B4B" icon="◈" label="Tất cả" count={SAMPLES.length} />
             {SAMPLE_TOPICS.map(t => {
               const st = SAMPLE_TOPIC_STYLE[t.slug] ?? SAMPLE_TOPIC_FALLBACK;
               return <FilterChip key={t.slug} pressed={topic === t.slug} onClick={() => setTopic(topic === t.slug ? null : t.slug)} color={st.color} icon={st.icon} label={t.vi} count={t.count} />;
@@ -204,7 +204,7 @@ export function SampleReader({ sample, onBack, onWrite, onOpen, onTranslate, onS
           </div>
         ) : (
           <section aria-label="Bài viết">
-            <div className="sticky top-0 z-20 -mx-4 mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-y-2 border-black bg-[#fafaf7]/95 px-4 py-2.5 backdrop-blur sm:mx-0 sm:rounded-xl sm:border-2">
+            <div className="sticky top-0 z-20 -mx-4 mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-y-2 border-black bg-[#fafaf7]/95 px-4 py-2.5 sm:mx-0 sm:rounded-xl sm:border-2">
               <div role="group" aria-label="Cách hiển thị" className="flex rounded-xl border-2 border-black bg-white p-0.5">
                 {[['en', 'Tiếng Anh'], ['both', 'Song ngữ']].map(([k, l]) => (
                   <button key={k} type="button" aria-pressed={view === k} onClick={() => setV(k)}
